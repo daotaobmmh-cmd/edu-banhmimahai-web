@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+scratch/
+*.log
+temp/
+tmp/
+.vscode/
+_export_for_tilog/
+*.zip
+hoinhap_backup_bad_ui/

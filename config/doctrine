@@ -1,0 +1,1021 @@
+<callout icon="🌐" color="blue_bg">
+	Skill này là **Website Skill hợp nhất** cho Antigravity, chạy theo 2 mode: **Full-Stack mode** (mặc định cho site có DB/auth/backend, theo <mention-page url="https://app.notion.com/p/e44655b61eba839fbfb681fe79f7c4fc">AG-06 · Web Engine OS — Full-Stack Doctrine</mention-page>) và **Static sub-mode** (no-DB: landing, docs, blog, trang tài nguyên). Khung vận hành (transfer, QA, recovery, deploy) **dùng chung cho cả hai**. Tilog/Notion viết spec, AG build local, deploy lên GitHub/Cloudflare là slice riêng.
+</callout>
+<callout icon="🔖" color="gray_bg">
+	DOCTRINE_VERSION: v1.3
+	LAST_EDIT: 2026-07-07
+	SKILL: AG-06
+</callout>
+# Production-Ready Skill System (canonical)
+<callout icon="📌" color="green_bg">
+	Đây là khung production-ready cho Website Skill — áp dụng cho **mọi website** tạo bằng Antigravity, không chỉ [hoinhap.trilong.vn](http://hoinhap.trilong.vn). Các section bên dưới (mục 0.x trở đi) là chi tiết stack/workflow/deploy. Phải tuân thủ khung này trước khi đi vào chi tiết.
+</callout>
+## A. Skill overview
+**Purpose.** Cho Antigravity build static website local có kiểm soát: ít drift, có QA đầy đủ, có transfer checklist, có local [AGENTS.md](http://AGENTS.md), có output contract, có recovery protocol, có full QA matrix.
+**When to use.** Landing page, static website, web tài nguyên/khóa học, documentation site, dashboard public từ dữ liệu đã duyệt, website từ Notion/Google Sheet/Apps Script.
+**When NOT to use (toàn skill).** Hardcode API key/password vào source, hoặc chưa rõ domain/audience/pages/content. Riêng **login phức tạp, payment tự động, dashboard động/database** không phải "không dùng skill" mà là dấu hiệu **dùng Full-Stack mode** thay vì Static sub-mode.
+**What AG can do.**
+- Build site local trong workspace đã duyệt.
+- Chạy QA layers (deterministic, browser, product, scope, polish, a11y, cross-browser, all-local).
+- Trả `RUN_PAD_UPDATE` với evidence đầy đủ.
+- Report execution result: `PASS / PARTIAL / FAIL`.
+**What AG cannot do.**
+- Tự assign review outcome (`PASS TO LONG FINAL`, `READY FOR PRODUCTION ROLLOUT`).
+- Push/deploy/DNS/custom domain nếu chưa có slice riêng.
+- Đụng sibling/reference project khi chưa duyệt.
+- Đọc secrets, sửa brain artifacts.
+- Nhảy slice tiếp theo nếu chưa được duyệt.
+**Roles.**
+<table fit-page-width="true" header-row="true">
+<tr>
+<td>Actor</td>
+<td>Vai trò</td>
+</tr>
+<tr>
+<td>Long</td>
+<td>Owner. Duyệt Plan, deploy, DNS. Final human QA: brand, copy, visual, usability.</td>
+</tr>
+<tr>
+<td>Tilog</td>
+<td>Planner / reviewer / memory. Viết contract, slice, assign review outcome dựa trên evidence.</td>
+</tr>
+<tr>
+<td>AG (Antigravity)</td>
+<td>Executor only. Build local, chạy QA, trả RUN_PAD_UPDATE. Không tự review.</td>
+</tr>
+</table>
+**Local preview vs production deploy.**
+- *Local preview* = build local, QA local, screenshots local. Không public.
+- *Production deploy* = push GitHub + Cloudflare Pages + (optional) DNS custom domain. **Là slice riêng**, Long duyệt từng bước.
+**Required human gates.**
+1. Long duyệt Plan trước khi AG build.
+2. Long duyệt từng deploy slice: push, Pages deploy, DNS, custom domain.
+3. Long duyệt recovery slice nếu AG drift.
+4. Tilog assign review outcome sau khi đọc RUN_PAD_UPDATE.
+**Hard rules.**
+```plain text
+Build pass is not QA pass.
+Screenshot exists is not visual-state pass.
+Interaction clicked once is not all-state pass.
+No console error is not enough.
+Automated local QA passed = ready for Long final local review.
+Automated local QA passed != ready for production rollout.
+```
+## B. Transfer Protocol (bắt buộc)
+Transfer = `Notion plan → local AG execution environment → verified feedback loop`.
+**8 lớp transfer.** Thiếu một lớp = `TRANSFER INCOMPLETE`.
+1. Notion contract.
+2. Repo-local [AGENTS.md](http://AGENTS.md).
+3. Runtime sync.
+4. Hard output contract.
+5. QA matrix.
+6. Definition of Ready.
+7. Definition of Done.
+8. Recovery protocol.
+**Rule cứng.**
+```plain text
+No AGENTS.md = transfer incomplete.
+No runtime sync after latest Notion update = transfer incomplete.
+No output contract = transfer incomplete.
+```
+Chi tiết: <mention-page url="https://app.notion.com/p/2bb655b61eba821f8e8a01d124d36c6b">Website Skill Transfer Checklist</mention-page> · <mention-page url="https://app.notion.com/p/d90655b61eba8272a57b013e076d9ffb"/>.
+## C. Rule Hierarchy
+<table fit-page-width="true" header-row="true">
+<tr>
+<td>Layer</td>
+<td>Scope</td>
+<td>Ví dụ</td>
+</tr>
+<tr>
+<td>Global AG rule</td>
+<td>Pattern cho mọi skill/run</td>
+<td>AG là executor only; Notion/Tilog reviews.</td>
+</tr>
+<tr>
+<td>Skill rule</td>
+<td>Pattern cho Website Skill</td>
+<td>Mọi website phải qua QA Matrix trước khi Long final review.</td>
+</tr>
+<tr>
+<td>Run rule</td>
+<td>Constraint của project hiện tại</td>
+<td>Workspace cho run này là `d:\TRILONG-tools\website-projects\<site-slug>`.</td>
+</tr>
+<tr>
+<td>Slice rule</td>
+<td>Quyền trong một bước cụ thể</td>
+<td>Slice này được install đúng `@axe-core/playwright`.</td>
+</tr>
+<tr>
+<td>Evidence rule</td>
+<td>Điều kiện để review</td>
+<td>Phải append/paste full RUN_PAD_UPDATE.</td>
+</tr>
+</table>
+**Cảnh báo.** Không hardcode run-specific project name vào global skill rule.
+- ❌ Bad global rule: `Do not touch mahai-review-web.`
+- ✅ Good global rule: `Do not inspect or modify sibling/reference projects unless explicitly approved.`
+- ✅ Run-specific addendum: `For this run, known sibling/reference projects include mahai-review-web.`
+## D. Generalized Workspace Boundary
+- Work only inside the approved workspace path.
+- Do not inspect, copy, modify, delete, commit, deploy, or infer from sibling/reference projects unless explicitly approved in the current slice.
+- Sibling/reference projects include:
+	- folders next to approved workspace;
+	- prior websites used as inspiration;
+	- template/source/reference repos;
+	- production websites;
+	- old experiments;
+	- unrelated client/internal projects.
+- Nếu AG đụng sibling/reference project mà chưa duyệt: `STOP / RECOVER`.
+- Nếu AG xin đọc reference project: `BLOCKED / needs explicit reference-read approval`.
+Chi tiết: <mention-page url="https://app.notion.com/p/7f2655b61eba83edba2001e55dc6701c">Website Skill Boundary Policy — Generalized Repo Isolation</mention-page>.
+## E. Repo-local [AGENTS.md](http://AGENTS.md)
+Mỗi Website Skill repo phải có `AGENTS.md` ở root theo template chuẩn:
+- Role: AG executor only; Notion/Tilog planner/reviewer/memory; PASS/PARTIAL/FAIL only; cấm nói PASS TO LONG FINAL / READY FOR PRODUCTION ROLLOUT.
+- Workspace boundary: approved path + generic sibling protection + run-specific known risks.
+- Output contract: A) append RUN_PAD_UPDATE; B) `NOTION_APPEND_FAILED — FULL RUN_PAD_UPDATE BELOW` fallback.
+- Safety gates: no Git push, no remote setup, no Cloudflare deploy, no DNS, no production rollout, no backend/auth/payment trừ slice riêng.
+- Product/run facts: routes, product logic, data safety notes.
+- QA commands: deterministic / browser / product / scope / polish / a11y / cross-browser / all-local.
+- QA taxonomy: groups áp dụng.
+- Required RUN_PAD_UPDATE format.
+**Visual Quality Rules (thêm vào mọi **[**AGENTS.md**](http://AGENTS.md)**).** Những rule này phải có trong `AGENTS.md` local của mỗi repo:
+- Không dùng visual pattern ngoài brand token đã duyệt.
+- Không tự thêm animation/motion nếu không có trong contract.
+- Anti-AI-Slop Visual QA phải pass trước khi set `QA`.
+- Nếu design decision ambiguous: default to minimal/neutral — không decorative.
+Template đầy đủ: <mention-page url="https://app.notion.com/p/60f655b61eba82ea94d401f854a2a2eb">Website Skill AGENTS.md Template</mention-page>.
+## F. Runtime Rule Sync Gate (bắt buộc)
+Bắt buộc chạy Runtime Sync khi có một trong các điều kiện:
+- Notion/Tilog vừa update rules, contracts, QA harness, output target, slice logic.
+- AG conversation cũ/stale.
+- Đổi current slice.
+- Đổi workspace.
+- Đổi output target.
+- Có install/build/test/deploy/git/DNS/MCP.
+Runtime sync phải confirm:
+- workspace, active run, current slice, output mode;
+- no self-review;
+- no push/deploy/DNS;
+- evidence required before PASS.
+Nếu thiếu: `BLOCKED / runtime rules not synced`.
+Chi tiết: <mention-page url="https://app.notion.com/p/880655b61eba8370aae8816d22336548"/>.
+## G. Hard Output Contract
+AG **không được** kết thúc slice bằng:
+- chat summary only;
+- `SLICE REVIEW DECISION`;
+- `PASS TO LONG FINAL`;
+- `READY FOR PRODUCTION ROLLOUT`.
+Mọi execution slice phải kết thúc bằng **đúng một** trong:
+```plain text
+A) RUN_PAD_UPDATE appended to target, then short chat summary.
+B) NOTION_APPEND_FAILED — FULL RUN_PAD_UPDATE BELOW, then full RUN_PAD_UPDATE in chat.
+```
+Thiếu → `BLOCKED / missing RUN_PAD_UPDATE`.
+## H. Definition of Ready (per slice)
+A slice is ready only if:
+- [ ] [AGENTS.md](http://AGENTS.md) exists.
+- [ ] Runtime sync passed after latest Notion updates.
+- [ ] Workspace boundary confirmed.
+- [ ] Current slice named.
+- [ ] Output target confirmed.
+- [ ] Allowed files listed.
+- [ ] Forbidden actions listed.
+- [ ] Commands approved.
+- [ ] QA/evidence requirements clear.
+- [ ] Human gate clear.
+Thiếu một mục → `BLOCKED / not ready for execution`.
+## I. Definition of Done (per slice)
+A slice is done only if:
+- [ ] RUN_PAD_UPDATE appended or full RUN_PAD_UPDATE pasted.
+- [ ] Result là PASS / PARTIAL / FAIL.
+- [ ] Files changed listed.
+- [ ] Commands run listed.
+- [ ] QA evidence listed.
+- [ ] Screenshot/evidence paths listed when relevant.
+- [ ] Scope/security check listed.
+- [ ] Next action listed.
+- [ ] AG did not self-assign review outcome.
+Thiếu một mục → `BLOCKED / missing RUN_PAD_UPDATE evidence`.
+## J. QA Matrix (15 groups)
+Full QA Matrix gồm 15 group (A–O): visible text artifact, placeholder leakage, form-control visual-state, component state visual, route/navigation, interaction/state, product logic, layout/responsive, browser/runtime, accessibility, security/privacy/scope, SEO/metadata/polish, performance/asset, cross-browser/device, deployment-readiness.
+QA commands chuẩn: `qa:static`, `build`, `qa:dist`, `qa:scope`, `qa:routes`, `qa:interactions`, `qa:screenshots`, `qa:product`, `qa:a11y`, `qa:cross-browser`, `qa:polish`, `qa:all-local`.
+Optional/unavailable layer phải **explicit PARTIAL**, không silent skip.
+**Anti-AI-Slop Visual QA (Group L extension).** Chạy như một phần của Group L — SEO/metadata/polish trước khi set `QA`:
+- Không dùng gradient tím / "AI default color" nếu không có trong brand token.
+- Không dùng animation bounce, pulse, float vô nghĩa.
+- Spacing dùng đúng scale (4/8/16/24/32/48) — không spacing tự chọn.
+- Font weight có hệ thống — không mix bold/regular tùy tiện.
+- Button/CTA có hierarchy rõ — không phải tất cả đều to và đồng màu accent.
+- Shadow/border-radius đồng nhất theo design token, không mỗi component một kiểu.
+- Motion timing hợp lý: enter 150–300ms, exit nhanh hơn enter.
+- Layout không bị "centered everything" — có visual tension, không flat.
+- Không quá 3 tone màu chủ đạo trong một view.
+- Không để placeholder text "Lorem ipsum" hoặc "Content goes here".
+Chi tiết: <mention-page url="https://app.notion.com/p/778655b61eba82d69ded819e06c30d85">Website QA Master Plan — Full Error Coverage Matrix</mention-page> · <mention-page url="https://app.notion.com/p/853655b61eba83b28fa701009317738a">Website QA Error Taxonomy — Comprehensive</mention-page>.
+## J.1. Taste System Gate — bắt buộc trước visual implementation
+<callout icon="🎚️" color="purple_bg">
+	Website Skill không chỉ build website chạy được. Website Skill phải giữ được **taste system đã duyệt**. Nếu taste chưa được định nghĩa, AG phải dừng trước khi triển khai visual lớn.
+</callout>
+### J.1.1. Design DNA Contract
+Trước khi build website có giao diện public-facing, Tilog phải chốt một **Design DNA Contract** ngắn trong Website Contract hoặc Run Pad:
+- **Brand feel:** ví dụ `premium editorial`, `quiet luxury`, `content-first`, `calm interface`.
+- **Interface type:** editorial/content site, SaaS dashboard, landing conversion, documentation, learning hub…
+- **Allowed visual patterns:** token màu, font, spacing, card, badge, tag, hero, imagery.
+- **Disallowed visual patterns:** animation phô, icon thừa, CTA thừa, gradient/AI slop, centered-everything, hashtag social nếu không hợp ngữ cảnh.
+- **Default decision:** nếu mơ hồ, chọn phương án **calmer / simpler / less decorative**.
+Hard rule:
+```plain text
+If taste is undefined, stop before visual implementation.
+If a component has no approved visual rule, use the quietest standard pattern.
+```
+### J.1.2. Motion Token Contract
+Mọi website phải có motion policy tối thiểu. Default cho editorial/static content site:
+```plain text
+Allowed:
+- opacity fade: 120–180ms
+- border/background transition: 150–220ms
+- card lift: max translateY(-2px) or -4px
+- shadow increase: subtle only
+
+Disallowed:
+- bounce
+- pulse
+- float
+- arrow glide
+- text slide
+- scale above 1.01 unless approved
+- underline animation
+- stagger animation that distracts from reading
+
+Default:
+- If motion is not essential to comprehension or affordance, remove it.
+- Respect prefers-reduced-motion.
+```
+### J.1.3. Component Contract Library
+Với các component lặp lại, Tilog phải ghi rule trước khi AG sửa:
+```plain text
+COMPONENT CONTRACT
+- Purpose:
+- Required content:
+- Visible affordance:
+- Hover/focus behavior:
+- Mobile behavior:
+- Motion:
+- Do:
+- Don't:
+- Evidence required:
+```
+Các component thường cần contract:
+- article/card;
+- tag/chip/badge;
+- hero;
+- filter sheet;
+- nav/header;
+- CTA button;
+- form/input;
+- empty/error state.
+### J.1.4. Component State Evidence Gate
+Trước khi báo PASS cho visual slice, AG phải trả evidence cho state quan trọng:
+```plain text
+COMPONENT STATE EVIDENCE
+- default state
+- hover state
+- keyboard focus state
+- active/selected state if relevant
+- mobile state
+- dark/light variant if relevant
+- reduced-motion behavior
+```
+Nếu thiếu state evidence:
+```plain text
+Status: PARTIAL — visual state evidence missing
+```
+Build pass, route pass, deploy pass **không đủ** để visual pass.
+### J.1.5. Taste Recovery Mode
+Dùng khi website chạy được nhưng “chưa sang”, “motion lạ”, “AI slop”, “visual noise”, “kém premium”.
+Rules:
+```plain text
+You are in Taste Recovery Mode.
+
+Goal:
+Improve perceived taste without changing product logic.
+
+Rules:
+- Do not add new sections.
+- Do not add decorative animation.
+- Do not add icons unless explicitly required.
+- Reduce visual noise before adding new elements.
+- Prefer spacing, typography, contrast, and restraint.
+- Change only the listed components.
+- Build locally first.
+- Deploy preview at most once after fixes.
+- Return before/after notes and component state evidence.
+```
+Taste Recovery không được biến thành build lại website.
+### J.1.6. Visual Fix Deploy Restraint
+For visual fix slices:
+```plain text
+- Build locally first.
+- Inspect locally.
+- Deploy preview at most once after fixes.
+- If visual is still uncertain, stop and return evidence.
+- Do not repeatedly deploy to chase a better hash URL.
+```
+## J.2. Atlas-derived rule pack — reusable lesson
+Từ case `trilong.vn/atlas`, thêm default rule cho editorial card/tag sites:
+```plain text
+EDITORIAL CARD DEFAULTS
+- Whole card can be clickable.
+- Do not add visible "Read more" / "Đọc tiếp" unless conversion requires it.
+- Do not add arrow icons by default.
+- No title underline on hover/focus.
+- Hover max lift: 2–4px.
+- No text shift.
+- No protruding motion.
+- Tags are metadata, not social hashtags, unless the brand explicitly wants social feel.
+- Tags must remain readable on both dark and light cards.
+- If card already communicates affordance, remove extra CTA.
+```
+Câu chốt:
+```plain text
+Website Skill does not only build working websites.
+It builds websites that preserve the approved taste system.
+If taste is undefined, stop before visual implementation.
+```
+## J.3. E-learning / Quiz Website Rule Pack — reusable lesson
+Từ case `edu.banhmimahai.vn/hoinhap`, thêm default rule cho website học + test dùng dữ liệu từ Notion.
+```plain text
+E-LEARNING QUIZ DEFAULTS
+- Notion/source document is the source of truth for question content when the contract says so.
+- If source content is editable and wrong, fix the source before adding permanent runtime filters.
+- Runtime cleanup is temporary only; remove it once generated data is clean, or document why it remains.
+- Unanswered answer must be represented as null/undefined-safe null, never as the correct answer.
+- Scoring must only count correct when selectedAnswer exists and selectedAnswer === correctAnswer.
+- Result review must show all options, correct option, selected option if any, unanswered state if null, and explanation.
+- If unanswered, do not highlight a fake wrong selected option; show a distinct "unanswered" banner/state.
+- Question navigation/grid states must be mutually exclusive: active, answered, unanswered.
+- Learning UI should prefer calm state tints/borders over decorative stars, gold badges, or importance markers unless explicitly approved.
+- Use static-first for self-study/test-in-browser flows; escalate to Full-Stack mode only when the contract requires login, centralized attempt storage, admin dashboard, retake policy enforcement, or reporting sync.
+```
+Hard invariant:
+```plain text
+unanswered !== correct
+unanswered !== selected wrong option
+unanswered = null and must be reviewable
+```
+## K. Slice Template Library
+17 slice templates chuẩn cho Website Skill: Runtime Sync, Create [AGENTS.md](http://AGENTS.md), Scaffold, Deterministic QA, Browser QA, Component State, A11y, Cross-browser, Product Logic, Scope/Security, Polish, `qa:all-local`, Deploy planning, GitHub push, Cloudflare Pages deploy, DNS/custom domain, Recovery.
+Chi tiết: <mention-page url="https://app.notion.com/p/830655b61eba8310879e01b0bd8a1db7">Website Skill Slice Template Library</mention-page>.
+## L. Review Outcome Matrix
+Outcomes Tilog/Long assign sau khi đọc evidence:
+- `PASS TO LONG FINAL` — automated local QA pass + evidence đủ.
+- `PASS WITH WARNINGS` — pass nhưng có cảnh báo nhỏ.
+- `NEEDS FIX` — có lỗi trong scope, dùng FIX LOOP 1.
+- `BLOCKED` — thiếu evidence / build fail / runtime sync missing.
+- `STOP / RECOVER` — sibling/reference touched, push/deploy/DNS drift, secret read.
+- `TRANSFER INCOMPLETE` — thiếu [AGENTS.md](http://AGENTS.md) / Notion contract / runtime sync.
+- `AWAITING MANUAL VISUAL QA` — screenshot N/A và Long chưa xem mắt.
+- `PARTIAL / optional layer unavailable` — optional QA layer chưa có, đã ghi rõ.
+AG **không được** assign các outcome trên.
+Chi tiết: <mention-page url="https://app.notion.com/p/69d655b61eba83538d28812e28073af8">Website Skill Review Outcome Matrix</mention-page>.
+## M. Recovery Protocol
+Dùng recovery khi AG: touch sibling/reference project; push/deploy/DNS chưa duyệt; đọc secrets; sửa brain artifacts; skip output contract; chạy sai slice/folder.
+Steps:
+1. Stop execution.
+2. Do not run further commands.
+3. Report exact files/commands/actions.
+4. Preserve state.
+5. Ask Long/Tilog for recovery decision.
+6. Do not self-fix unless recovery slice approved.
+Outcome: `STOP / RECOVER`.
+Chi tiết: <mention-page url="https://app.notion.com/p/0de655b61eba839283db81634cb3c708">Website Skill Recovery Protocol</mention-page>.
+## N. Final Website Skill Launch Checklist
+Trước khi dùng Website Skill cho website mới:
+- [ ] Notion contract exists.
+- [ ] [AGENTS.md](http://AGENTS.md) created (từ template).
+- [ ] Runtime sync passed.
+- [ ] Output target confirmed.
+- [ ] Workspace boundary confirmed.
+- [ ] Run-specific sibling/reference risks listed.
+- [ ] QA matrix selected (groups áp dụng).
+- [ ] First slice ready (DoR pass).
+- [ ] No push/deploy/DNS unless dedicated slice.
+- [ ] Recovery protocol link ready.
+## Skill module index
+- <mention-page url="https://app.notion.com/p/2bb655b61eba821f8e8a01d124d36c6b">Website Skill Transfer Checklist</mention-page>
+- <mention-page url="https://app.notion.com/p/60f655b61eba82ea94d401f854a2a2eb">Website Skill AGENTS.md Template</mention-page>
+- <mention-page url="https://app.notion.com/p/830655b61eba8310879e01b0bd8a1db7">Website Skill Slice Template Library</mention-page>
+- <mention-page url="https://app.notion.com/p/778655b61eba82d69ded819e06c30d85">Website QA Master Plan — Full Error Coverage Matrix</mention-page>
+- <mention-page url="https://app.notion.com/p/853655b61eba83b28fa701009317738a">Website QA Error Taxonomy — Comprehensive</mention-page>
+- <mention-page url="https://app.notion.com/p/7f2655b61eba83edba2001e55dc6701c">Website Skill Boundary Policy — Generalized Repo Isolation</mention-page>
+- <mention-page url="https://app.notion.com/p/69d655b61eba83538d28812e28073af8">Website Skill Review Outcome Matrix</mention-page>
+- <mention-page url="https://app.notion.com/p/0de655b61eba839283db81634cb3c708">Website Skill Recovery Protocol</mention-page>
+- <mention-page url="https://app.notion.com/p/7d5655b61eba82b6880b810120a2b9d2">Website Skill Operating Loop — Run Pad Transfer</mention-page>
+- <mention-page url="https://app.notion.com/p/d90655b61eba8272a57b013e076d9ffb"/>
+- <mention-page url="https://app.notion.com/p/880655b61eba8370aae8816d22336548"/>
+---
+## 0. Default workflow mới — Full-site Contract
+Mặc định, các yêu cầu tạo website không được chạy theo từng slice rời rạc ngay. Tilog phải tạo **Website Contract** trước, Long review **Plan** một lần, AG build trong scope, tự chạy Website Pre-QA, rồi Long review final preview/deployed URL.
+Trang chuẩn mới: <mention-page url="https://app.notion.com/p/f92655b61eba82d7b1dc016232ab9136">Website Skill — Full-site Contract Spec</mention-page>
+Áp dụng cho:
+- Landing page.
+- Static website.
+- Website tài nguyên / khóa học.
+- Documentation site.
+- Dashboard public từ dữ liệu đã duyệt.
+- Website từ Notion / Google Sheet / Apps Script.
+Default review mode:
+- **Plan + Final**
+- **Max fix loop = 1**
+- Issue severity: Blocker / Should fix / Follow-up / Human judgment
+AG phải tự chạy trước khi set `QA`:
+- Above-the-fold QA
+- Responsive QA
+- Interaction QA
+- Conversion Journey QA
+- Technical QA
+- Data/Public Safety QA nếu có nguồn dữ liệu
+Long chỉ cần final human QA:
+- brand feel;
+- copy/offer/CTA có đúng không;
+- visual có hợp không;
+- user journey có tự nhiên không;
+- website có dùng thật được chưa.
+## 0.1. Use this first
+Khi Long muốn tạo website/landing page/dashboard:
+1. Không gửi AG build prompt ngay.
+2. Tilog tạo Website Contract theo <mention-page url="https://app.notion.com/p/f92655b61eba82d7b1dc016232ab9136">Website Skill — Full-site Contract Spec</mention-page>.
+3. Long review Plan.
+4. Chỉ khi Plan được duyệt mới cho AG build.
+5. AG phải chạy Website Pre-QA trước khi set `QA`.
+## 0.2. Website Pre-QA summary
+Trước khi set `QA`, AG phải có:
+- build result;
+- desktop screenshot;
+- mobile screenshot;
+- above-the-fold QA;
+- responsive QA;
+- interaction QA;
+- conversion journey QA;
+- technical QA;
+- data/public safety QA nếu có nguồn dữ liệu;
+- anti-AI-slop visual QA (Group L extension);
+- remaining human-risk items.
+## 0.3. Deployment Gate warning
+Deploy là approval riêng nếu Website Contract không ghi rõ.
+AG không tự:
+- push GitHub;
+- deploy Cloudflare;
+- sửa DNS;
+- thêm custom domain;
+- configure env vars;
+- chuyển nameserver;
+- public dữ liệu.
+## 0.3A. Website Project Boundary Gate
+Website Skill là **generic capability/workflow**, không phải một folder site cụ thể.
+Mọi website do skill tạo ra phải được xem là **project instance** nằm dưới output root chung:
+```plain text
+d:\TRILONG-tools\website-projects\<site-slug>
+```
+Ví dụ:
+```plain text
+d:\TRILONG-tools\website-projects\hoinhap-trilong-vn
+```
+Không được hiểu `hoinhap-trilong-vn` là skill folder. Nó chỉ là một output project của Website Skill.
+Reference project như `mahai-review-web` chỉ được dùng làm **UX reference** nếu được nêu trong contract. Không được dùng làm target folder, template root, hoặc kiến trúc mặc định của Website Skill.
+## 0.3B. Website Project Preflight Gate
+Trước khi code/sửa file, AG phải report:
+```plain text
+WEBSITE PROJECT PREFLIGHT
+- Skill: Website Skill
+- Site instance:
+- Target folder:
+- Current working folder:
+- Reference folder touched: yes/no
+- Existing files to modify:
+- New files to create:
+- Git/deploy/DNS actions: none
+- Ready to proceed: yes/no
+```
+Nếu current working folder khác target folder, AG phải **stop and report**. Không tự move/copy/delete để “sửa sai”.
+## 0.3C. Return-to-Tilog Contract
+Tilog không review được file chỉ nằm local. Trước khi set `QA`, AG phải trả output review được:
+- local preview URL/path;
+- build command + build result;
+- visual evidence: desktop above-the-fold (1440px), mobile above-the-fold (390px), primary CTA, navigation state, empty/error state nếu có, form/input nếu có — hoặc ghi rõ lý do N/A từng item;
+- `outputs/build-log.md`;
+- `outputs/<project>-handoff.md`;
+- `outputs/<project>-notion-log.md`;
+- full Website Pre-QA block.
+Nếu thiếu output/evidence, Tilog review outcome là **BLOCKED / missing evidence**, không phải pass.
+## 0.3D. Run Pad Activation Gate
+Trước khi đưa AG build prompt cho bất kỳ website nào, Tilog phải kích hoạt **AG Run Pad** hoặc chỉ rõ operating surface tương đương.
+Không được nhảy thẳng:
+```plain text
+Website Contract → AG Prompt rời
+```
+Chuỗi đúng:
+```plain text
+Website Contract → AG Run Pad Current Active Run → AG Prompt → Antigravity Output Inbox → Tilog Review → Long Final → Distillation
+```
+AG output phải quay về:
+```plain text
+AG Run Pad → Antigravity Output Inbox
+```
+Nếu MCP/Notion sync không được bật hoặc bị lỗi, AG phải trả `RUN_PAD_UPDATE` trong chat để Long paste một lần vào Output Inbox. Đây là fallback có cấu trúc, không phải paste thủ công tự do.
+Trang chuẩn bổ sung: <mention-page url="https://app.notion.com/p/7d5655b61eba82b6880b810120a2b9d2">Website Skill Operating Loop — Run Pad Transfer</mention-page>
+## 0.4. Ready-to-copy AG prompt
+```plain text
+You are executing an approved Website Contract.
+
+Read:
+- AG-06 · Antigravity Website Skill (Full-Stack + Static)
+- AG-06 · Web Engine OS — Full-Stack Doctrine
+- Website Skill — Full-site Contract Spec
+
+Rules:
+- Build only within the approved contract.
+- Do not push/deploy/edit DNS unless explicitly approved.
+- Do not hardcode secrets.
+- Do not add backend/database/auth/payment unless approved.
+- Run Website Pre-QA before setting QA.
+- Provide build result + desktop/mobile screenshots.
+- Set QA and stop.
+- Do not set Approved.
+- Do not ask next task.
+```
+---
+# PHẦN II — STATIC SUB-MODE (no-DB)
+<callout icon="🪶" color="gray_bg">
+	Phần dưới là **Static sub-mode**: dùng khi site **không cần DB/auth/backend**. Cần lưu điểm, login, dashboard động → dùng **Full-Stack mode** (<mention-page url="https://app.notion.com/p/e44655b61eba839fbfb681fe79f7c4fc">AG-06 · Web Engine OS — Full-Stack Doctrine</mention-page>). Phần deploy (Cloudflare Pages, password gate, DNS) ở dưới **dùng chung cho cả hai mode**.
+</callout>
+## 1. Mục tiêu
+- Tạo website tĩnh đơn giản, nhanh, dễ deploy, chi phí thấp.
+- Dùng Antigravity làm executor để build code local.
+- Không dùng backend/database nếu chưa thật sự cần.
+- Có chuẩn bảo mật khi deploy: không hardcode secret, không lộ token, có password gate nếu site private.
+- Luôn có preview/build check, handoff và Notion-ready log.
+## 2. Khi nào dùng
+Dùng khi Long muốn tạo:
+- Web cá nhân / private hub.
+- Website Tilog4Edu.
+- Landing page khóa học/tài nguyên.
+- Blog Markdown.
+- Trang tài nguyên PDF/YouTube.
+- Static documentation site.
+- Trang giới thiệu project/nội dung.
+## 3. Khi nào không dùng (static sub-mode)
+- Cần user login phức tạp, payment tự động, dashboard động hoặc database → **chuyển sang Full-Stack mode** (<mention-page url="https://app.notion.com/p/e44655b61eba839fbfb681fe79f7c4fc">AG-06 · Web Engine OS — Full-Stack Doctrine</mention-page>), không build static.
+- Không dùng để hardcode API key/password vào source code.
+- Không dùng nếu chưa rõ domain, audience, pages, content.
+- Không dùng để push GitHub/deploy Cloudflare khi chưa có approval riêng.
+## 4. Kiến trúc khuyến nghị
+```plain text
+Tilog / Notion
+↓
+Spec website + content outline
+↓
+Antigravity
+↓
+Astro static site
+↓
+Local preview/build
+↓
+GitHub
+↓
+Cloudflare Pages
+↓
+Domain + optional password gate
+↓
+Handoff + Notion log
+```
+## 5. Stack mặc định
+### Default stack
+- **Astro**
+- Markdown/MDX blog
+- Static pages
+- Cloudflare Pages
+- GitHub repo
+- Optional Cloudflare Pages Function for Basic Auth
+### Không dùng mặc định
+- Firebase
+- WordPress
+- MySQL/Postgres
+- WooCommerce
+- Server-side rendering
+- Paid hosting
+- Auth SDK
+## 6. Site structure đề xuất
+```plain text
+/
+  Home
+
+/about
+  Giới thiệu
+
+/blog
+  Danh sách bài viết
+
+/blog/<slug>
+  Bài blog Markdown
+
+/resources
+  PDF, template, tài nguyên học tập
+
+/courses
+  YouTube/course links
+
+/contact
+  Email/social
+
+/buy
+  Hướng dẫn mua/thanh toán thủ công
+```
+Có thể thêm sau:
+```plain text
+/library
+/roadmap
+/notes
+/tools
+```
+## 7. Input cần có
+```yaml
+site:
+  name:
+  domain:
+  purpose:
+  audience:
+brand:
+  name:
+  tone:
+  colors:
+  logoPath:
+pages:
+  - home
+  - about
+  - blog
+  - resources
+  - courses
+  - contact
+  - buy
+deployment:
+  platform: "cloudflare_pages"
+  githubRepo:
+  passwordGate: true
+content:
+  source: "manual | notion_page | markdown_folder"
+constraints:
+  staticOnly: true
+  noDatabase: true
+  noFirebase: true
+  noHardcodedSecrets: true
+```
+## 8. Output folder / project chuẩn
+```plain text
+static-site-project/
+  .agent/
+  src/
+  public/
+  content/
+    blog/
+  functions/
+    _middleware.js   # optional password gate
+  package.json
+  astro.config.mjs
+  README.md
+  outputs/
+    preview-notes.md
+    build-log.md
+    deployment-notes.md
+    <project>-handoff.md
+    <project>-notion-log.md
+```
+## 9. Workflow chuẩn
+```mermaid
+flowchart LR
+	A["Spec từ Notion/Tilog"] --> B["Preflight"]
+	B --> C["Scaffold Astro"]
+	C --> D["Create pages"]
+	D --> E["Add Markdown blog/resources"]
+	E --> F["Local preview/build"]
+	F --> G["Password gate optional"]
+	G --> H["GitHub/Cloudflare deploy notes"]
+	H --> I["Handoff + Notion log"]
+```
+## 10. Slice triển khai mặc định
+### Slice 0 — Preflight
+- Xác nhận project folder.
+- Xác nhận site purpose, pages, domain.
+- Xác nhận không cần backend/database.
+- Chưa cài package nếu chưa duyệt.
+### Slice 1 — Scaffold
+- Tạo Astro project hoặc inspect project có sẵn.
+- Không push GitHub.
+- Không deploy.
+### Slice 2 — Layout + navigation
+- Header/nav/footer.
+- Responsive layout.
+- Brand colors.
+### Slice 3 — Core pages
+- Home, About, Resources, Courses, Contact, Buy.
+- Nội dung placeholder rõ ràng nếu chưa có copy final.
+### Slice 4 — Blog/content system
+- Markdown blog.
+- Sample posts.
+- Content collection nếu cần.
+### Slice 5 — Password gate
+- Tạo `functions/_middleware.js` nếu site private.
+- Không hardcode password.
+- Dùng Cloudflare env vars:
+```plain text
+BASIC_USER
+BASIC_PASS
+```
+### Slice 6 — Build/preview
+- Chạy build command được duyệt.
+- Ghi `outputs/build-log.md`.
+### Slice 7 — Deploy guide
+- README hướng dẫn Cloudflare Pages.
+- Không tự push/deploy nếu chưa duyệt.
+### Slice 8 — Handoff / Notion log
+- Tạo handoff kỹ thuật.
+- Tạo Notion-ready log.
+## 11. Prompt mẫu — tạo static site bằng Antigravity
+```plain text
+You are Antigravity executor for Static Web.
+
+Read `.agent/rules/safety.md` and `.agent/workflows/handoff-to-notion.md` first.
+
+You are in SAFE PREFLIGHT MODE first.
+Do not create, edit, install, run, push, or deploy yet.
+
+Context:
+- Tilog/Notion provides the website spec.
+- Antigravity builds the static website locally.
+- GitHub/Cloudflare deployment requires separate approval.
+
+Website spec:
+- Site name:
+- Domain:
+- Purpose:
+- Audience:
+- Pages:
+- Brand direction:
+- Deployment target: Cloudflare Pages
+- Password gate: yes/no
+
+Requirements:
+1. Inspect current folder first.
+2. Propose task slices.
+3. Do not install packages until approved.
+4. Do not push GitHub until approved.
+5. Do not deploy Cloudflare until approved.
+6. Do not hardcode secrets.
+7. End with handoff + Notion log.
+
+Output:
+## PREFLIGHT RESULT
+## PROPOSED STACK
+## PROPOSED FILE STRUCTURE
+## PROPOSED SLICES
+## RISKS
+## NEXT PROMPT TO APPROVE
+```
+## 12. Prompt mẫu — build Astro site
+```plain text
+I approve Static Web Slice: Scaffold Astro site.
+
+You are in LIMITED COMMAND / EDIT MODE.
+
+Allowed:
+- Work only inside current project folder.
+- Create Astro static site files.
+- Use npm only for the approved scaffold/build commands.
+
+Not allowed:
+- Do not push GitHub.
+- Do not deploy.
+- Do not hardcode secrets.
+- Do not add backend/database/Firebase.
+- Do not read secrets.
+
+Goal:
+Create an Astro static site with pages:
+- Home
+- About
+- Blog
+- Resources
+- Courses
+- Contact
+- Buy
+
+Acceptance criteria:
+- Site runs locally.
+- `npm run build` passes.
+- README includes Cloudflare Pages deployment notes.
+- No secrets in source.
+- Handoff and Notion log created.
+```
+## 13. Cloudflare Pages deployment notes
+Cloudflare Pages thường dùng:
+```plain text
+Build command: npm run build
+Output directory: dist
+```
+Domain:
+```plain text
+trilong.vn
+www.trilong.vn
+```
+Nếu dùng password gate:
+```plain text
+functions/_middleware.js
+Cloudflare env vars:
+BASIC_USER
+BASIC_PASS
+```
+Không hardcode password vào GitHub.
+## 13.1. Cloudflare Pages safe deploy workflow
+### Validated deploy path
+```plain text
+Astro static site
+↓
+npm run build
+↓
+GitHub repo main branch
+↓
+Cloudflare Pages GitHub connector
+↓
+*.pages.dev public URL
+```
+### Correct Cloudflare Pages settings
+```plain text
+Framework preset: Astro
+Build command: npm run build
+Build output directory: dist
+Environment variable: NODE_VERSION = 22.12.0
+```
+### Do not use Workers flow for static Pages
+Nếu Cloudflare UI hiện các dấu hiệu này thì đang sai flow:
+- `Configure your Worker project`
+- `npx wrangler deploy`
+- `npx wrangler versions upload`
+- API token field for deploy command
+- Worker project deploy command
+Quay lại Pages flow và chọn **Import an existing Git repository**.
+### Deployment slice gates
+1. **Preflight**: đọc config, không command.
+2. **GitHub prep**: local commit only.
+3. **Remote push**: push repo only.
+4. **Pages setup**: configure Cloudflare Pages in UI.
+5. **Route verification**: verify `/`, secondary routes, and assets.
+6. **Post-deploy docs**: update README/handoff/log.
+7. **Docs commit**: commit docs only; ignore `.vscode/`.
+### Important note
+Cloudflare Pages auto-deploys on push to `main`. A docs-only push may trigger a new deployment even if no local deploy command was run.
+## 13.2. Custom domain with external DNS provider
+### Validated domain path
+```plain text
+Cloudflare Pages project
+↓
+Custom domain: ag.trilong.vn
+↓
+External DNS provider: Tino
+↓
+CNAME ag -> ag-run-pad-landing.pages.dev
+↓
+Cloudflare status: Active
+↓
+SSL: Enabled
+```
+### External DNS rule
+Nếu root domain đang dùng nameserver ngoài Cloudflare, không cần chuyển toàn bộ DNS sang Cloudflare chỉ để gắn một subdomain cho Pages.
+Chọn flow:
+```plain text
+Custom domain
+→ My DNS provider / CNAME setup
+→ Add CNAME at current DNS provider
+```
+### Subdomain isolation rule
+- Chỉ thêm/sửa record subdomain đã được duyệt.
+- Không đụng root domain hoặc `www` nếu chưa có mục tiêu riêng.
+- Với case AG Run Pad Landing:
+	- `ag.trilong.vn` dùng cho AG Run Pad Landing.
+	- `trilong.vn` và `www.trilong.vn` giữ lại cho homepage tương lai.
+### Checklist custom domain
+- [ ] Confirm target subdomain.
+- [ ] Confirm current DNS provider / nameservers.
+- [ ] If DNS is external, use CNAME setup at the current provider.
+- [ ] Add only the required record, e.g. `CNAME ag -> ag-run-pad-landing.pages.dev`.
+- [ ] Wait for Cloudflare custom domain status: **Active**.
+- [ ] Confirm SSL: **Enabled**.
+- [ ] Verify HTTPS routes on the custom domain.
+- [ ] Update README / handoff / Notion log.
+- [ ] Commit docs in a separate approval slice.
+### Anti-patterns
+- Không chuyển nameserver toàn domain nếu mục tiêu chỉ là một subdomain.
+- Không thêm apex/root hoặc `www` khi chưa được duyệt.
+- Không gộp DNS edit, route verification, docs update và git push vào một approval.
+- Không giả định docs-only push là không deploy; Cloudflare Pages có thể auto-deploy khi push lên `main`.
+## 14. Password gate policy
+Dùng Basic Auth Cloudflare Pages Function cho private hub giai đoạn đầu.
+Không nên dùng:
+```plain text
+123456
+trilong
+tilog
+password
+nguyenlong
+```
+Nên dùng password dài từ password manager.
+## 15. QA checklist
+- [ ] `npm run build` pass.
+- [ ] Mobile responsive.
+- [ ] Nav/footer hoạt động.
+- [ ] Blog Markdown render được.
+- [ ] Resources links không lỗi.
+- [ ] YouTube links/embed hoạt động.
+- [ ] Không có API key/token/password trong source.
+- [ ] Nếu có password gate, dùng env vars.
+- [ ] README có deploy guide.
+- [ ] Có handoff.
+- [ ] Có Notion log.
+## 16. Lỗi thường gặp
+<table fit-page-width="true" header-row="true">
+<tr>
+<td>Lỗi</td>
+<td>Cách xử lý</td>
+</tr>
+<tr>
+<td>Build fail do dependency</td>
+<td>Ghi exact error, không tự cài package lung tung.</td>
+</tr>
+<tr>
+<td>Secret hardcoded</td>
+<td>Dừng, chuyển sang env vars, rotate nếu đã lộ.</td>
+</tr>
+<tr>
+<td>Cloudflare output sai</td>
+<td>Kiểm tra `dist` và build command.</td>
+</tr>
+<tr>
+<td>Blog route lỗi</td>
+<td>Kiểm tra content collection/slug.</td>
+</tr>
+<tr>
+<td>Password gate không chạy</td>
+<td>Kiểm tra `_middleware.js` và env vars trên Cloudflare.</td>
+</tr>
+</table>
+## 17. Quan hệ với SK-04 cũ
+SK-04 là quyết định kiến trúc ban đầu: Astro → GitHub → Cloudflare Pages → `trilong.vn` → optional password gate.
+AG-06 là bản vận hành mới:
+```plain text
+SK-04 = concept/reference
+AG-06 = prompt + guardrail để Antigravity build/deploy an toàn
+```
+## 18. Trạng thái / version
+## 18.1. Validation run — AG Run Pad Landing
+- Project: `d:\TRILONG-tools\ag-run-pad-landing`
+- Date: 2026-05-20
+- Result: **PASS — deployed to Cloudflare Pages**
+- Stack: Astro static site + vanilla CSS
+- Routes created:
+	- `/`
+	- `/distilled-lessons`
+	- `/operating-flow`
+- Build: `npm run build` passed
+- Deploy: Cloudflare Pages via GitHub connector
+- Public URL: [https://ag-run-pad-landing.pages.dev](https://ag-run-pad-landing.pages.dev)
+- Route verification: `/`, `/distilled-lessons`, `/operating-flow` all PASS
+- Output: live static site verified and deployment docs committed
+- Security:
+	- No secrets read
+	- Git push separated into its own approval slice
+	- Cloudflare Pages deploy separated into its own setup slice
+	- No backend/database/Firebase
+- Workflow lesson:
+	- Use Antigravity for bounded local build slices.
+	- Use Notion/Run Pad for planning and review.
+	- If MCP fails, return report in chat and let Tilog update Notion manually.
+## 18. Trạng thái / version
+- Trạng thái: **Tested V1**
+- Version: 1.1
+- Nguồn học: SK-04 Antigravity Static Web, AG-02 Output Sync, SK-13 Security & Local Agent Safety, AG Run Pad Landing pilot.
+<page url="https://app.notion.com/p/f92655b61eba82d7b1dc016232ab9136">Website Skill — Full-site Contract Spec</page>
+<page url="https://app.notion.com/p/0de655b61eba839283db81634cb3c708">Website Skill Recovery Protocol</page>
+<page url="https://app.notion.com/p/69d655b61eba83538d28812e28073af8">Website Skill Review Outcome Matrix</page>
+<page url="https://app.notion.com/p/7d5655b61eba82b6880b810120a2b9d2">Website Skill Operating Loop — Run Pad Transfer</page>
+<page url="https://app.notion.com/p/d80655b61eba82b3b91f0188e783c0b0">Website QA Harness — Deterministic Artifact QA</page>
+<page url="https://app.notion.com/p/45a655b61eba83cc8bfa818facf5e484">Website QA Harness — Playwright Smoke + Interaction QA</page>
+<page url="https://app.notion.com/p/853655b61eba83b28fa701009317738a">Website QA Error Taxonomy — Comprehensive</page>
+<page url="https://app.notion.com/p/778655b61eba82d69ded819e06c30d85">Website QA Master Plan — Full Error Coverage Matrix</page>
+<page url="https://app.notion.com/p/7f2655b61eba83edba2001e55dc6701c">Website Skill Boundary Policy — Generalized Repo Isolation</page>
+<page url="https://app.notion.com/p/60f655b61eba82ea94d401f854a2a2eb">Website Skill [AGENTS.md](http://AGENTS.md) Template</page>
+<page url="https://app.notion.com/p/2bb655b61eba821f8e8a01d124d36c6b">Website Skill Transfer Checklist</page>
+<page url="https://app.notion.com/p/830655b61eba8310879e01b0bd8a1db7">Website Skill Slice Template Library</page>
+<page url="https://app.notion.com/p/17c655b61eba82f5a208815a82ab1d74">Case Study: [hoinhap.trilong.vn](http://hoinhap.trilong.vn)</page>
+<page url="https://app.notion.com/p/bc7655b61eba83d2982101b656924b48">Website Skill Ready-to-Copy Prompts</page>
+<page url="https://app.notion.com/p/e44655b61eba839fbfb681fe79f7c4fc">AG-06 · Web Engine OS — Full-Stack Doctrine</page>
+<page url="https://app.notion.com/p/951655b61eba832c909301c9c820cf03">E-Learning Web</page>
