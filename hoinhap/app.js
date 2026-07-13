@@ -1,4 +1,5 @@
 function app() {
+    const DATASET_VERSION = 'v1.4';
     return {
         // App State
         currentView: 'gate', // 'gate', 'study', 'test', 'result'
@@ -41,14 +42,23 @@ function app() {
             this.learnerName = localStorage.getItem('hoinhap:learnerName') || '';
             this.learnerDept = localStorage.getItem('hoinhap:learnerDept') || '';
             
-            // Load study progress from localStorage
-            try {
-                const savedProgress = localStorage.getItem('hoinhap:studyProgress');
-                if (savedProgress) {
-                    this.studyProgress = JSON.parse(savedProgress);
+            // Check dataset version in localStorage
+            const savedVersion = localStorage.getItem('hoinhap:datasetVersion');
+            if (savedVersion !== DATASET_VERSION) {
+                localStorage.removeItem('hoinhap:studyProgress');
+                localStorage.removeItem('hoinhap:lastResult');
+                localStorage.setItem('hoinhap:datasetVersion', DATASET_VERSION);
+                this.studyProgress = {};
+            } else {
+                // Load study progress from localStorage
+                try {
+                    const savedProgress = localStorage.getItem('hoinhap:studyProgress');
+                    if (savedProgress) {
+                        this.studyProgress = JSON.parse(savedProgress);
+                    }
+                } catch (e) {
+                    console.error('Failed to parse study progress', e);
                 }
-            } catch (e) {
-                console.error('Failed to parse study progress', e);
             }
             
             // Initialize sections list
@@ -223,11 +233,6 @@ function app() {
             const selected65 = this.shuffle(q65).slice(0, 10);
             
             let finalSet = [...selected13, ...selected14, ...selected65];
-            
-            if (finalSet.length < 30) {
-                const fallback = this.allQuestions.filter(q => !finalSet.includes(q) && q.active !== false);
-                finalSet = [...finalSet, ...this.shuffle(fallback).slice(0, 30 - finalSet.length)];
-            }
             
             return this.shuffle(finalSet.map(q => ({
                 ...q,
