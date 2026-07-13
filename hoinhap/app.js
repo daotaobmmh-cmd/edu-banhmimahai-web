@@ -68,6 +68,13 @@ function app() {
             if (this.sections.length > 0) {
                 this.activeSectionIndex = 0;
             }
+            
+            // Set initialization flag and hide fallback UI
+            window.alpineInitialized = true;
+            const fallbackEl = document.getElementById('app-fallback');
+            if (fallbackEl) {
+                fallbackEl.style.display = 'none';
+            }
         },
 
         // Helper: Shuffle array

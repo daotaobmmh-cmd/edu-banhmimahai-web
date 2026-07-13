@@ -31,10 +31,10 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <script defer src="./questions.js"></script>
-    <script defer src="./app.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="./styles.css" />
+    <script src="./questions.js?v=1.4"></script>
+    <script src="./app.js?v=1.4"></script>
+    <script defer src="./alpine.min.js?v=1.4"></script>
+    <link rel="stylesheet" href="./styles.css?v=1.4" />
 </head>
 <body class="bg-background text-slate-800 antialiased overflow-x-hidden" x-data="app()">
     
@@ -460,5 +460,28 @@
             </div>
         </div>
     </div>
+    <!-- Fallback Error Message (Visible only if AlpineJS/App fails to boot) -->
+    <div id="app-fallback" class="pt-32 flex flex-col items-center justify-center min-h-[60vh] px-6 text-center hidden">
+        <div class="w-16 h-16 bg-red-50 text-error rounded-full flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-3xl text-error">error</span>
+        </div>
+        <h3 class="text-xl font-bold font-quicksand text-slate-800 mb-2">Không thể tải nội dung đào tạo</h3>
+        <p class="text-slate-500 text-sm max-w-sm mb-8">Đã xảy ra sự cố trong quá trình khởi chạy hệ thống. Vui lòng thử lại hoặc tải lại trang.</p>
+        <button onclick="window.location.reload(true)" class="px-6 py-2.5 rounded-full bg-primary text-white font-quicksand font-bold text-sm shadow-md hover:bg-opacity-90 transition-all focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+            Tải lại trang
+        </button>
+    </div>
+
+    <script>
+        // Check if Alpine loaded and app booted. If not after 1.5s, display the error message.
+        setTimeout(function() {
+            if (!window.alpineInitialized) {
+                const fallback = document.getElementById('app-fallback');
+                if (fallback) {
+                    fallback.classList.remove('hidden');
+                }
+            }
+        }, 1500);
+    </script>
 </body>
 </html>
