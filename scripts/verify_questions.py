@@ -101,6 +101,29 @@ def run_verification():
             print(f"FAIL: Question {q_id} has empty explanation")
             return False
             
+        # Content hygiene checks
+        banned_strings = ["**", "<details", "</details", "<summary", "</summary", "<br"]
+        fields_to_check = [
+            ("question", q.get("question", "")),
+            ("explanation", q.get("explanation", ""))
+        ]
+        for opt in opts:
+            fields_to_check.append((f"option {opt.get('key')}", opt.get("text", "")))
+            
+        for field_name, field_val in fields_to_check:
+            for b in banned_strings:
+                if b in field_val:
+                    print(f"FAIL: Question {q_id} {field_name} contains banned content '{b}': '{field_val}'")
+                    return False
+            # Check for raw HTML tags
+            if re.search(r'</?[a-zA-Z]+[^>]*>', field_val):
+                print(f"FAIL: Question {q_id} {field_name} contains raw HTML tag: '{field_val}'")
+                return False
+            # Check for stray leading punctuation
+            if re.match(r'^[,\.\-\s✅]+', field_val) and len(field_val.strip()) > 0:
+                print(f"FAIL: Question {q_id} {field_name} has stray leading punctuation: '{field_val}'")
+                return False
+
         # Sequential number checks
         num = q.get("number")
         disp_num = q.get("displayNumber")

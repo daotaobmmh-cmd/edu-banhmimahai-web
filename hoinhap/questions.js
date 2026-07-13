@@ -404,19 +404,19 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 12,
-    "question": "VSFer hiểu đúng về **GIÁ TRỊ** và **KẾT QUẢ** như thế nào?",
+    "question": "VSFer hiểu đúng về GIÁ TRỊ và KẾT QUẢ như thế nào?",
     "options": [
       {
         "key": "A",
-        "text": "**GIÁ TRỊ** là làm việc sao cho có ích thật cho khách hàng, đồng nghiệp, công ty và cộng đồng."
+        "text": "GIÁ TRỊ là làm việc sao cho có ích thật cho khách hàng, đồng nghiệp, công ty và cộng đồng."
       },
       {
         "key": "B",
-        "text": "**KẾT QUẢ** là làm ra đầu ra rõ ràng, đo được và đúng điều đã cam kết."
+        "text": "KẾT QUẢ là làm ra đầu ra rõ ràng, đo được và đúng điều đã cam kết."
       },
       {
         "key": "C",
-        "text": "Khi đi cùng nhau, **GIÁ TRỊ** giúp việc làm có ý nghĩa, còn **KẾT QUẢ** giúp việc đó thành sản phẩm hoặc dịch vụ dùng được."
+        "text": "Khi đi cùng nhau, GIÁ TRỊ giúp việc làm có ý nghĩa, còn KẾT QUẢ giúp việc đó thành sản phẩm hoặc dịch vụ dùng được."
       },
       {
         "key": "D",
@@ -424,7 +424,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "**GIÁ TRỊ** giúp VSFer biết việc mình làm có ích cho ai. **KẾT QUẢ** giúp điều có ích đó thành việc rõ ràng và dùng được. Khi làm đúng cả hai, VSF vừa có tâm với khách hàng, vừa làm việc chuyên nghiệp và đáng tin hơn.",
+    "explanation": "GIÁ TRỊ giúp VSFer biết việc mình làm có ích cho ai. KẾT QUẢ giúp điều có ích đó thành việc rõ ràng và dùng được. Khi làm đúng cả hai, VSF vừa có tâm với khách hàng, vừa làm việc chuyên nghiệp và đáng tin hơn.",
     "source": "1.3",
     "sectionNo": 2,
     "sectionName": "Hệ giá trị và tư duy làm việc",
@@ -435,7 +435,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 13,
-    "question": "VSFer hiểu đúng về **TRÁCH NHIỆM** như thế nào?",
+    "question": "VSFer hiểu đúng về TRÁCH NHIỆM như thế nào?",
     "options": [
       {
         "key": "A",
@@ -455,7 +455,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "**TRÁCH NHIỆM** là dám nhận, giữ lời và xử lý lỗi tới cùng. Khi VSFer làm đúng giá trị này, việc của mình chắc hơn, đồng nghiệp tin hơn và công ty cũng vận hành ổn định hơn.",
+    "explanation": "TRÁCH NHIỆM là dám nhận, giữ lời và xử lý lỗi tới cùng. Khi VSFer làm đúng giá trị này, việc của mình chắc hơn, đồng nghiệp tin hơn và công ty cũng vận hành ổn định hơn.",
     "source": "1.3",
     "sectionNo": 2,
     "sectionName": "Hệ giá trị và tư duy làm việc",
@@ -466,7 +466,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 14,
-    "question": "VSFer hiểu đúng về **LÀM CHỦ** như thế nào?",
+    "question": "VSFer hiểu đúng về LÀM CHỦ như thế nào?",
     "options": [
       {
         "key": "A",
@@ -486,7 +486,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "**LÀM CHỦ** là tự chạy việc của mình một cách chủ động và minh bạch. Khi VSFer làm chủ tốt, công ty bớt phải đốc thúc, đội nhóm phối hợp nhẹ nhàng hơn và bản thân mình cũng trưởng thành nhanh hơn.",
+    "explanation": "LÀM CHỦ là tự chạy việc của mình một cách chủ động và minh bạch. Khi VSFer làm chủ tốt, công ty bớt phải đốc thúc, đội nhóm phối hợp nhẹ nhàng hơn và bản thân mình cũng trưởng thành nhanh hơn.",
     "source": "1.3",
     "sectionNo": 2,
     "sectionName": "Hệ giá trị và tư duy làm việc",
@@ -497,7 +497,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 15,
-    "question": "VSFer hiểu đúng về **HỌC HỎI** như thế nào?",
+    "question": "VSFer hiểu đúng về HỌC HỎI như thế nào?",
     "options": [
       {
         "key": "A",
@@ -517,7 +517,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "**HỌC HỎI** là chịu lắng nghe, biết rút bài học và sẵn lòng chia sẻ lại. Khi VSFer luôn học hỏi, mình giỏi hơn mỗi ngày và công ty cũng mạnh lên vì cả đội cùng tiến bộ.",
+    "explanation": "HỌC HỎI là chịu lắng nghe, biết rút bài học và sẵn lòng chia sẻ lại. Khi VSFer luôn học hỏi, mình giỏi hơn mỗi ngày và công ty cũng mạnh lên vì cả đội cùng tiến bộ.",
     "source": "1.3",
     "sectionNo": 2,
     "sectionName": "Hệ giá trị và tư duy làm việc",
@@ -548,7 +548,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Khi có lỗi, VSFer cần báo sớm, cùng tìm cách sửa và rút kinh nghiệm. Đây là cách thể hiện **TRÁCH NHIỆM**, **LÀM CHỦ** và **HỌC HỎI**. Làm đúng giúp mình trưởng thành hơn, đồng nghiệp tránh lặp lỗi và công ty làm việc minh bạch hơn.",
+    "explanation": "Khi có lỗi, VSFer cần báo sớm, cùng tìm cách sửa và rút kinh nghiệm. Đây là cách thể hiện TRÁCH NHIỆM, LÀM CHỦ và HỌC HỎI. Làm đúng giúp mình trưởng thành hơn, đồng nghiệp tránh lặp lỗi và công ty làm việc minh bạch hơn.",
     "source": "1.3",
     "sectionNo": 2,
     "sectionName": "Hệ giá trị và tư duy làm việc",
@@ -559,19 +559,19 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 17,
-    "question": "Khi làm sản phẩm hoặc dịch vụ, VSFer cần nhớ gì về **GIÁ TRỊ** và **KẾT QUẢ**?",
+    "question": "Khi làm sản phẩm hoặc dịch vụ, VSFer cần nhớ gì về GIÁ TRỊ và KẾT QUẢ?",
     "options": [
       {
         "key": "A",
-        "text": "**GIÁ TRỊ** là việc mình làm phải có ích thật cho khách hàng, đồng nghiệp, công ty và cộng đồng."
+        "text": "GIÁ TRỊ là việc mình làm phải có ích thật cho khách hàng, đồng nghiệp, công ty và cộng đồng."
       },
       {
         "key": "B",
-        "text": "**KẾT QUẢ** là công việc có đầu ra rõ ràng, đo được và đúng cam kết."
+        "text": "KẾT QUẢ là công việc có đầu ra rõ ràng, đo được và đúng cam kết."
       },
       {
         "key": "C",
-        "text": "Khi có cả **GIÁ TRỊ** và **KẾT QUẢ**, sản phẩm hoặc dịch vụ của VSF sẽ đáng tin hơn."
+        "text": "Khi có cả GIÁ TRỊ và KẾT QUẢ, sản phẩm hoặc dịch vụ của VSF sẽ đáng tin hơn."
       },
       {
         "key": "D",
@@ -579,7 +579,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "VSFer không chỉ làm cho xong việc mà cần tạo ra điều có ích và có kết quả rõ ràng. Khi làm đúng cả **GIÁ TRỊ** và **KẾT QUẢ**, mình làm việc chắc hơn, khách hàng yên tâm hơn và công ty chuyên nghiệp hơn mỗi ngày.",
+    "explanation": "VSFer không chỉ làm cho xong việc mà cần tạo ra điều có ích và có kết quả rõ ràng. Khi làm đúng cả GIÁ TRỊ và KẾT QUẢ, mình làm việc chắc hơn, khách hàng yên tâm hơn và công ty chuyên nghiệp hơn mỗi ngày.",
     "source": "1.3",
     "sectionNo": 2,
     "sectionName": "Hệ giá trị và tư duy làm việc",
@@ -598,7 +598,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "B",
-        "text": "Hệ Giá Trị Cốt Lõi nhắc VSFer sống đúng tinh thần **Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi**."
+        "text": "Hệ Giá Trị Cốt Lõi nhắc VSFer sống đúng tinh thần Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi."
       },
       {
         "key": "C",
@@ -641,7 +641,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "B",
-    "explanation": "5 giá trị cốt lõi \"**Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi**\" là kim chỉ nam cho mọi hành động tại VSF từ phục vụ khách hàng đến hợp tác đồng nghiệp. Khi bạn sống đúng 5 giá trị, bạn không chỉ đóng góp cho VSF mà còn xây dựng bản thân.",
+    "explanation": "5 giá trị cốt lõi \"Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi\" là kim chỉ nam cho mọi hành động tại VSF từ phục vụ khách hàng đến hợp tác đồng nghiệp. Khi bạn sống đúng 5 giá trị, bạn không chỉ đóng góp cho VSF mà còn xây dựng bản thân.",
     "source": "1.4",
     "sectionNo": 2,
     "sectionName": "Hệ giá trị và tư duy làm việc",
@@ -652,15 +652,15 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 105,
-    "question": "Tại Nhà VSF, cách hiểu nào đúng nhất về tinh thần **\"Làm Chủ\"**?",
+    "question": "Tại Nhà VSF, cách hiểu nào đúng nhất về tinh thần \"Làm Chủ\"?",
     "options": [
       {
         "key": "A",
-        "text": "**LÀM** là làm việc thực tế: không bàn lùi, không nói suông, đã nhận nhiệm vụ thì làm thật, làm sâu sát và làm đến cùng để tạo ra kết quả rõ ràng."
+        "text": "LÀM là làm việc thực tế: không bàn lùi, không nói suông, đã nhận nhiệm vụ thì làm thật, làm sâu sát và làm đến cùng để tạo ra kết quả rõ ràng."
       },
       {
         "key": "B",
-        "text": "**CHỦ** là sự chủ động: không ngồi chờ giao việc, biết tự tìm giải pháp, kiểm soát tiến độ và chịu trách nhiệm với kết quả cuối cùng."
+        "text": "CHỦ là sự chủ động: không ngồi chờ giao việc, biết tự tìm giải pháp, kiểm soát tiến độ và chịu trách nhiệm với kết quả cuối cùng."
       },
       {
         "key": "C",
@@ -672,7 +672,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "**Làm Chủ = LÀM + CHỦ**. Đây không chỉ là khẩu hiệu hay chức danh, mà là tâm thế làm việc của mỗi VSFer: làm thật, chủ động, chịu trách nhiệm và không đổ lỗi",
+    "explanation": "Làm Chủ = LÀM + CHỦ. Đây không chỉ là khẩu hiệu hay chức danh, mà là tâm thế làm việc của mỗi VSFer: làm thật, chủ động, chịu trách nhiệm và không đổ lỗi",
     "source": "1.4",
     "sectionNo": 2,
     "sectionName": "Hệ giá trị và tư duy làm việc",
@@ -703,7 +703,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Phát triển bền vững tại VSF cần cả **tư duy đúng** và **hành động đúng**: sống theo 5 giá trị cốt lõi, làm chủ công việc, học hỏi liên tục, tạo giá trị thật và phối hợp tích cực với tập thể. Khi mỗi VSFer trưởng thành hơn mỗi ngày, Nhà VSF cũng ngày càng vững mạnh hơn.",
+    "explanation": "Phát triển bền vững tại VSF cần cả tư duy đúng và hành động đúng: sống theo 5 giá trị cốt lõi, làm chủ công việc, học hỏi liên tục, tạo giá trị thật và phối hợp tích cực với tập thể. Khi mỗi VSFer trưởng thành hơn mỗi ngày, Nhà VSF cũng ngày càng vững mạnh hơn.",
     "source": "1.4",
     "sectionNo": 2,
     "sectionName": "Hệ giá trị và tư duy làm việc",
@@ -1028,7 +1028,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "A",
-        "text": "Gửi đơn nghỉ trên **1Office.**"
+        "text": "Gửi đơn nghỉ trên 1Office."
       },
       {
         "key": "B",
@@ -1044,7 +1044,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Xin nghỉ đúng là phải có đơn trên **1Office** và được quản lý trực tiếp duyệt trước. VSFer không tự nghỉ, không chỉ nhắn riêng và không nghỉ theo kiểu thích thì nghỉ.",
+    "explanation": "Xin nghỉ đúng là phải có đơn trên 1Office và được quản lý trực tiếp duyệt trước. VSFer không tự nghỉ, không chỉ nhắn riêng và không nghỉ theo kiểu thích thì nghỉ.",
     "source": "1.3",
     "sectionNo": 4,
     "sectionName": "Nghỉ phép, chấm công và quy trình HR",
@@ -1509,7 +1509,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "VSF có nhiều cơ chế hỗ trợ VSFer trong trường hợp khó khăn, đây là một phần của văn hóa *\"Nhà VSF\"*  thực chất, không phải khẩu hiệu.",
+    "explanation": "VSF có nhiều cơ chế hỗ trợ VSFer trong trường hợp khó khăn, đây là một phần của văn hóa *\"Nhà VSF\"* thực chất, không phải khẩu hiệu.",
     "source": "1.4",
     "sectionNo": 5,
     "sectionName": "Phúc lợi, đánh giá và phát triển",
@@ -2268,7 +2268,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "A",
-        "text": ", VSFer được khuyến khích đăng những nội dung nào?</summary>"
+        "text": "Câu chuyện tích cực trong công việc."
       },
       {
         "key": "B",
@@ -2295,7 +2295,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 58,
-    "question": "Khi gặp khách hàng, cách nào thể hiện đúng cụm **DIỆN, DẠ, RÕ, DANH**?",
+    "question": "Khi gặp khách hàng, cách nào thể hiện đúng cụm DIỆN, DẠ, RÕ, DANH?",
     "options": [
       {
         "key": "A",
@@ -2326,7 +2326,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 59,
-    "question": "Khi tiếp nhận khiếu nại của khách hàng, VSFer nên xử lý thế nào theo tinh thần **GỌN, NHẸ, NHẪN, NHƯỜNG**?",
+    "question": "Khi tiếp nhận khiếu nại của khách hàng, VSFer nên xử lý thế nào theo tinh thần GỌN, NHẸ, NHẪN, NHƯỜNG?",
     "options": [
       {
         "key": "A",
@@ -2357,7 +2357,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 60,
-    "question": "Sau khi tư vấn khách hàng hành động nào thể hiện đúng cụm **TRỌNG, TÍN, GHI, ƠN**?",
+    "question": "Sau khi tư vấn khách hàng hành động nào thể hiện đúng cụm TRỌNG, TÍN, GHI, ƠN?",
     "options": [
       {
         "key": "A",
@@ -2388,19 +2388,19 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 61,
-    "question": "Khi làm việc tại VSF, đâu là cách chào hỏi và giới thiệu thể hiện **đầy đủ** cụm Chữ vàng **DIỆN, DẠ, RÕ, DANH**?",
+    "question": "Khi làm việc tại VSF, đâu là cách chào hỏi và giới thiệu thể hiện đầy đủ cụm Chữ vàng DIỆN, DẠ, RÕ, DANH?",
     "options": [
       {
         "key": "A",
-        "text": "**DIỆN, DẠ**: Có mặt đúng giờ với tác phong gọn gàng, chủ động chào và đáp lời tử tế khi gặp đồng nghiệp, cấp quản lý."
+        "text": "DIỆN, DẠ: Có mặt đúng giờ với tác phong gọn gàng, chủ động chào và đáp lời tử tế khi gặp đồng nghiệp, cấp quản lý."
       },
       {
         "key": "B",
-        "text": "**RÕ**: Nêu rõ việc cần phối hợp, hỏi đúng người phụ trách hoặc khu vực cần đến để không làm gián đoạn nhịp làm việc chung."
+        "text": "RÕ: Nêu rõ việc cần phối hợp, hỏi đúng người phụ trách hoặc khu vực cần đến để không làm gián đoạn nhịp làm việc chung."
       },
       {
         "key": "C",
-        "text": "**DANH**: Xưng đúng họ tên, vị trí công việc và bộ phận để đồng nghiệp dễ ghi nhớ và hỗ trợ đúng vai trò."
+        "text": "DANH: Xưng đúng họ tên, vị trí công việc và bộ phận để đồng nghiệp dễ ghi nhớ và hỗ trợ đúng vai trò."
       },
       {
         "key": "D",
@@ -2419,7 +2419,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 62,
-    "question": "Khi được hỏi một chính sách nội bộ bạn chưa chắc, cách trả lời nào vừa giữ chữ **TÍN** vừa bảo vệ bạn?",
+    "question": "Khi được hỏi một chính sách nội bộ bạn chưa chắc, cách trả lời nào vừa giữ chữ TÍN vừa bảo vệ bạn?",
     "options": [
       {
         "key": "A",
@@ -2439,7 +2439,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Chữ **TÍN** không phải là trả lời thật nhanh, mà là trả lời đúng và có căn cứ. Sự rõ ràng  là cách bảo vệ cả người hỏi, người trả lời và uy tín nội bộ.",
+    "explanation": "Chữ TÍN không phải là trả lời thật nhanh, mà là trả lời đúng và có căn cứ. Sự rõ ràng là cách bảo vệ cả người hỏi, người trả lời và uy tín nội bộ.",
     "source": "1.4",
     "sectionNo": 8,
     "sectionName": "12 Chữ vàng và phục vụ khách hàng",
@@ -2450,19 +2450,19 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 64,
-    "question": "Khi trao đổi gấp với đồng nghiệp khác bộ phận, cách nào đúng tinh thần **GỌN, NHẸ, NHẪN, NHƯỜNG**?",
+    "question": "Khi trao đổi gấp với đồng nghiệp khác bộ phận, cách nào đúng tinh thần GỌN, NHẸ, NHẪN, NHƯỜNG?",
     "options": [
       {
         "key": "A",
-        "text": "**GỌN**: Nói rõ việc cần, thời hạn và tài liệu liên quan để người nhận nắm nhanh."
+        "text": "GỌN: Nói rõ việc cần, thời hạn và tài liệu liên quan để người nhận nắm nhanh."
       },
       {
         "key": "B",
-        "text": "**NHẸ**: Giữ giọng lịch sự, mềm mỏng, không tạo áp lực hay làm căng thẳng tình huống."
+        "text": "NHẸ: Giữ giọng lịch sự, mềm mỏng, không tạo áp lực hay làm căng thẳng tình huống."
       },
       {
         "key": "C",
-        "text": "**NHẪN, NHƯỜNG**: Kiên nhẫn lắng nghe phản hồi, biết nhường nhịn để cùng tìm cách xử lý phù hợp."
+        "text": "NHẪN, NHƯỜNG: Kiên nhẫn lắng nghe phản hồi, biết nhường nhịn để cùng tìm cách xử lý phù hợp."
       },
       {
         "key": "D",
@@ -2481,7 +2481,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 67,
-    "question": "Khi nghe tin đồn tiêu cực về công ty, khách hàng hiện hữu hoặc đồng nghiệp, hành động nào đúng tinh thần cụm Chữ vàng **TRỌNG, TÍN, GHI, ƠN**?",
+    "question": "Khi nghe tin đồn tiêu cực về công ty, khách hàng hiện hữu hoặc đồng nghiệp, hành động nào đúng tinh thần cụm Chữ vàng TRỌNG, TÍN, GHI, ƠN?",
     "options": [
       {
         "key": "A",
@@ -2520,7 +2520,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "B",
-        "text": "Để nắm được quy trình làm việc, cách lưu trữ và những điều cần tránh như **12 Trái cấm**."
+        "text": "Để nắm được quy trình làm việc, cách lưu trữ và những điều cần tránh như 12 Trái cấm."
       },
       {
         "key": "C",
@@ -2543,19 +2543,19 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 72,
-    "question": "Đâu là cách hiểu **đầy đủ** về 3 cụm của **12 Chữ vàng, Phục vụ khách hàng** tại VSF?",
+    "question": "Đâu là cách hiểu đầy đủ về 3 cụm của 12 Chữ vàng, Phục vụ khách hàng tại VSF?",
     "options": [
       {
         "key": "A",
-        "text": "**DIỆN, DẠ, RÕ, DANH**: tác phong chuẩn mực và giao tiếp rõ ràng ngay từ ấn tượng đầu."
+        "text": "DIỆN, DẠ, RÕ, DANH: tác phong chuẩn mực và giao tiếp rõ ràng ngay từ ấn tượng đầu."
       },
       {
         "key": "B",
-        "text": "**GỌN, NHẸ, NHẪN, NHƯỜNG**: trao đổi gọn gàng, nhẹ nhàng, kiên nhẫn, biết nhường nhịn."
+        "text": "GỌN, NHẸ, NHẪN, NHƯỜNG: trao đổi gọn gàng, nhẹ nhàng, kiên nhẫn, biết nhường nhịn."
       },
       {
         "key": "C",
-        "text": "**TRỌNG, TÍN, GHI, ƠN**: tôn trọng, giữ chữ tín, ghi ơn khách hàng và đối tác bằng sự tận tâm."
+        "text": "TRỌNG, TÍN, GHI, ƠN: tôn trọng, giữ chữ tín, ghi ơn khách hàng và đối tác bằng sự tận tâm."
       },
       {
         "key": "D",
@@ -2563,7 +2563,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Tinh thần lõi: ***\"Phục vụ khách hàng như phục vụ cha mẹ, Phục vụ vượt trên cả sự kỳ vọng.\"*** Khi sống đủ 3 cụm này, bạn vừa giữ uy tín cá nhân vừa giúp hệ thống VSF vận hành chuyên nghiệp hơn.",
+    "explanation": "Tinh thần lõi: *\"Phục vụ khách hàng như phục vụ cha mẹ, Phục vụ vượt trên cả sự kỳ vọng.\"* Khi sống đủ 3 cụm này, bạn vừa giữ uy tín cá nhân vừa giúp hệ thống VSF vận hành chuyên nghiệp hơn.",
     "source": "1.4",
     "sectionNo": 8,
     "sectionName": "12 Chữ vàng và phục vụ khách hàng",
@@ -2594,7 +2594,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Công thức, nhà cung cấp, giá vốn là tài sản sống còn của hệ thống nhượng quyền, vốn thuộc **Trái cấm số 1: tiết lộ bí mật kinh doanh, công nghệ, tài chính ra ngoài**.",
+    "explanation": "Công thức, nhà cung cấp, giá vốn là tài sản sống còn của hệ thống nhượng quyền, vốn thuộc Trái cấm số 1: tiết lộ bí mật kinh doanh, công nghệ, tài chính ra ngoài.",
     "source": "1.4",
     "sectionNo": 9,
     "sectionName": "12 Trái cấm, bảo mật và tài sản",
@@ -2605,7 +2605,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 65,
-    "question": "Nếu có người yêu cầu bạn ký thay, sửa hồ sơ, chỉnh phiếu giao nhận hoặc \"làm đẹp\" báo cáo cho kịp hạn, cách xử lý nào đúng để không vi phạm **Trái cấm số 2 ?**",
+    "question": "Nếu có người yêu cầu bạn ký thay, sửa hồ sơ, chỉnh phiếu giao nhận hoặc \"làm đẹp\" báo cáo cho kịp hạn, cách xử lý nào đúng để không vi phạm Trái cấm số 2 ?",
     "options": [
       {
         "key": "A",
@@ -2625,7 +2625,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "Theo **Trái cấm số 2 Tham ô, trộm cắp, biển thủ hoặc làm thất thoát tài sản công ty.** VSFer cần từ chối phần không đúng thẩm quyền và báo người phụ trách để xử lý minh bạch, đúng quy trình.",
+    "explanation": "Theo Trái cấm số 2 Tham ô, trộm cắp, biển thủ hoặc làm thất thoát tài sản công ty. VSFer cần từ chối phần không đúng thẩm quyền và báo người phụ trách để xử lý minh bạch, đúng quy trình.",
     "source": "1.4",
     "sectionNo": 9,
     "sectionName": "12 Trái cấm, bảo mật và tài sản",
@@ -2636,7 +2636,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 66,
-    "question": "Bạn muốn đăng ảnh hậu trường văn phòng / kho / xưởng lên mạng xã hội cá nhân. Cách nào vừa lan tỏa hình ảnh đẹp, vừa không rủi ro vi phạm **Trái cấm số 4 (có thể ảnh hưởng đến uy tín, thương hiệu trong một vài trường hợp)**?",
+    "question": "Bạn muốn đăng ảnh hậu trường văn phòng / kho / xưởng lên mạng xã hội cá nhân. Cách nào vừa lan tỏa hình ảnh đẹp, vừa không rủi ro vi phạm Trái cấm số 4 (có thể ảnh hưởng đến uy tín, thương hiệu trong một vài trường hợp)?",
     "options": [
       {
         "key": "A",
@@ -2667,7 +2667,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 68,
-    "question": "Nếu bạn bị đồng nghiệp hoặc người liên quan xúc phạm / đe dọa trong lúc làm việc, cách nào bảo vệ bạn đúng nhất theo **Trái cấm số 8, Đe dọa, xúc phạm, gây gổ, bạo lực**?",
+    "question": "Nếu bạn bị đồng nghiệp hoặc người liên quan xúc phạm / đe dọa trong lúc làm việc, cách nào bảo vệ bạn đúng nhất theo Trái cấm số 8, Đe dọa, xúc phạm, gây gổ, bạo lực?",
     "options": [
       {
         "key": "A",
@@ -2702,7 +2702,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "A",
-        "text": "Không đồng ý chia sẻ thông tin nội bộ (**Trái cấm số 11: Kinh doanh cạnh tranh trực tiếp với công ty khi chưa được phép)**"
+        "text": "Không đồng ý chia sẻ thông tin nội bộ (Trái cấm số 11: Kinh doanh cạnh tranh trực tiếp với công ty khi chưa được phép)"
       },
       {
         "key": "B",
@@ -2718,7 +2718,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "C",
-    "explanation": "**Trái cấm số 11** cấm tham gia làm thêm, cộng tác hoặc tự mở dịch vụ cạnh tranh trực tiếp với công ty khi chưa được phép.",
+    "explanation": "Trái cấm số 11 cấm tham gia làm thêm, cộng tác hoặc tự mở dịch vụ cạnh tranh trực tiếp với công ty khi chưa được phép.",
     "source": "1.4",
     "sectionNo": 9,
     "sectionName": "12 Trái cấm, bảo mật và tài sản",
@@ -2729,7 +2729,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 70,
-    "question": "Trong một cuộc gọi, người lạ tự xưng là đối tác nhượng quyền / nhà cung cấp và hỏi thông tin nhân sự, tiền lương hoặc chính sách nội bộ. Cách trả lời nào đúng với **Trái cấm số 6 ?**",
+    "question": "Trong một cuộc gọi, người lạ tự xưng là đối tác nhượng quyền / nhà cung cấp và hỏi thông tin nhân sự, tiền lương hoặc chính sách nội bộ. Cách trả lời nào đúng với Trái cấm số 6 ?",
     "options": [
       {
         "key": "A",
@@ -2749,7 +2749,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "**Trái cấm số 6** cấm tiết lộ trái phép thông tin nhân sự, bảng lương, hợp đồng lao động và chính sách nội bộ. Cẩn trọng với thông tin người khác cũng là một cách tôn trọng quyền lợi của họ.",
+    "explanation": "Trái cấm số 6 cấm tiết lộ trái phép thông tin nhân sự, bảng lương, hợp đồng lao động và chính sách nội bộ. Cẩn trọng với thông tin người khác cũng là một cách tôn trọng quyền lợi của họ.",
     "source": "1.4",
     "sectionNo": 9,
     "sectionName": "12 Trái cấm, bảo mật và tài sản",
@@ -2760,11 +2760,11 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 73,
-    "question": "Cách hiểu nào **đúng nhất** về **12 Trái cấm** khi làm việc tại VSF?",
+    "question": "Cách hiểu nào đúng nhất về 12 Trái cấm khi làm việc tại VSF?",
     "options": [
       {
         "key": "A",
-        "text": "Vùng vi phạm cao nhất, có thể **sa thải ngay**, thậm chí chuyển cơ quan chức năng."
+        "text": "Vùng vi phạm cao nhất, có thể sa thải ngay, thậm chí chuyển cơ quan chức năng."
       },
       {
         "key": "B",
@@ -2780,7 +2780,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "D",
-    "explanation": "**12 Trái cấm** là vùng cấm tuyệt đối, không phân cấp bậc, không \"linh động\". Biết rõ để chủ động tránh và biết khi nào cần báo đúng kênh.",
+    "explanation": "12 Trái cấm là vùng cấm tuyệt đối, không phân cấp bậc, không \"linh động\". Biết rõ để chủ động tránh và biết khi nào cần báo đúng kênh.",
     "source": "1.4",
     "sectionNo": 9,
     "sectionName": "12 Trái cấm, bảo mật và tài sản",
@@ -3318,7 +3318,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 108,
-    "question": "Trong Má Hải Ways, **Nguyên tắc chơi** nhấn mạnh những điều gì?",
+    "question": "Trong Má Hải Ways, Nguyên tắc chơi nhấn mạnh những điều gì?",
     "options": [
       {
         "key": "A",
@@ -3349,11 +3349,11 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 109,
-    "question": "Theo Má Hải Ways, cách hiểu nào đúng về **Kỹ năng** quan trọng nhất?",
+    "question": "Theo Má Hải Ways, cách hiểu nào đúng về Kỹ năng quan trọng nhất?",
     "options": [
       {
         "key": "A",
-        "text": "Kỹ năng quan trọng nhất là **tập trung**."
+        "text": "Kỹ năng quan trọng nhất là tập trung."
       },
       {
         "key": "B",
@@ -3380,7 +3380,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 110,
-    "question": "Phương châm **“Tập trung làm người khác có thêm thu nhập”** được hiểu như thế nào?",
+    "question": "Phương châm “Tập trung làm người khác có thêm thu nhập” được hiểu như thế nào?",
     "options": [
       {
         "key": "A",
@@ -3411,7 +3411,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 111,
-    "question": "**Triết lý** “Tập trung làm kết quả ngày hôm nay tốt hơn ngày hôm qua” hướng VSFer đến điều gì?",
+    "question": "Triết lý “Tập trung làm kết quả ngày hôm nay tốt hơn ngày hôm qua” hướng VSFer đến điều gì?",
     "options": [
       {
         "key": "A",
@@ -3442,7 +3442,7 @@ window.HOINHAP_QUESTIONS = [
   },
   {
     "sourceOriginalNumber": 112,
-    "question": "Theo Má Hải Ways, **Văn hóa** “Sống luôn luôn phải biết ơn, yêu mến người khác” nhắc VSFer điều gì?",
+    "question": "Theo Má Hải Ways, Văn hóa “Sống luôn luôn phải biết ơn, yêu mến người khác” nhắc VSFer điều gì?",
     "options": [
       {
         "key": "A",
