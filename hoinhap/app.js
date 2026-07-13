@@ -71,6 +71,7 @@ function app() {
             
             // Set initialization flag and hide fallback UI
             window.alpineInitialized = true;
+            document.documentElement.classList.add('alpine-ready');
             const fallbackEl = document.getElementById('app-fallback');
             if (fallbackEl) {
                 fallbackEl.style.display = 'none';
