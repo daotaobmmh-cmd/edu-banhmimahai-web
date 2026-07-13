@@ -35,37 +35,60 @@
         [x-cloak] {
             display: none !important;
         }
-        html:not(.alpine-ready) #app-container {
-            display: none !important;
-        }
     </style>
     <script>
-        // Global error tracking
         window.alpineErrors = [];
+        window.scriptLoadTimes = {};
+        
+        function markScriptLoaded(name) {
+            window.scriptLoadTimes[name] = Date.now() - (window.performance ? window.performance.timing.navigationStart : Date.now());
+            console.log(name + ' loaded at ' + window.scriptLoadTimes[name] + 'ms');
+        }
+        
         window.addEventListener('error', function(e) {
-            console.error('Global Error caught:', e.error || e.message);
-            window.alpineErrors.push(e.error || e.message);
+            console.error('Global Error caught:', e.message);
+            window.alpineErrors.push({
+                type: 'RUNTIME_ERROR',
+                message: e.message,
+                filename: e.filename,
+                lineno: e.lineno,
+                colno: e.colno,
+                stack: e.error ? e.error.stack : ''
+            });
         });
         window.addEventListener('unhandledrejection', function(e) {
             console.error('Unhandled Rejection caught:', e.reason);
-            window.alpineErrors.push(e.reason);
+            window.alpineErrors.push({
+                type: 'UNHANDLED_REJECTION',
+                message: e.reason ? (e.reason.message || e.reason) : 'Promise rejected',
+                stack: e.reason ? e.reason.stack : ''
+            });
         });
 
-        // Abort Alpine boot if core files are missing
         document.addEventListener('alpine:init', function() {
+            markScriptLoaded('alpine:init event');
             if (!window.HOINHAP_QUESTIONS || typeof window.app !== 'function') {
-                console.error('Missing critical dependencies. Aborting boot.');
-                throw new Error('Bootstrap aborted: missing questions or app logic.');
+                const missing = [];
+                if (!window.HOINHAP_QUESTIONS) missing.push('QUESTIONS_MISSING');
+                if (typeof window.app !== 'function') missing.push('APP_MISSING');
+                console.error('Missing dependencies on alpine:init: ' + missing.join(', '));
+                window.alpineErrors.push({
+                    type: missing.join('_AND_'),
+                    message: 'Missing critical bootstrap variables in alpine:init'
+                });
+                throw new Error('Bootstrap aborted: ' + missing.join(' and '));
             }
         });
+        document.addEventListener('alpine:initialized', function() {
+            markScriptLoaded('alpine:initialized event');
+        });
     </script>
-    <script src="./questions.js?v=1.4"></script>
-    <script src="./app.js?v=1.4"></script>
-    <script defer src="./alpine.min.js?v=1.4"></script>
+    <script src="./questions.js?v=1.4" onload="markScriptLoaded('questions.js')"></script>
+    <script src="./app.js?v=1.4" onload="markScriptLoaded('app.js')"></script>
+    <script defer src="./alpine.min.js?v=1.4" onload="markScriptLoaded('alpine.min.js')"></script>
     <link rel="stylesheet" href="./styles.css?v=1.4" />
 </head>
 <body class="bg-background text-slate-800 antialiased overflow-x-hidden" x-data="app()">
-    <div id="app-container" x-cloak>
     
     <!-- Header -->
     <header class="flex justify-between items-center px-8 h-20 w-full fixed top-0 left-0 z-50 bg-white border-b border-slate-100 shadow-sm">
@@ -489,7 +512,6 @@
             </div>
         </div>
     </div>
-    </div> <!-- End of #app-container -->
 
     <!-- Fallback Error Message (Visible only if AlpineJS/App fails to boot) -->
     <div id="app-fallback" class="pt-32 flex flex-col items-center justify-center min-h-[60vh] px-6 text-center hidden">
@@ -497,7 +519,14 @@
             <span class="material-symbols-outlined text-3xl text-error">error</span>
         </div>
         <h3 class="text-xl font-bold font-quicksand text-slate-800 mb-2">Không thể tải nội dung đào tạo</h3>
-        <p class="text-slate-500 text-sm max-w-sm mb-8">Đã xảy ra sự cố trong quá trình khởi chạy hệ thống. Vui lòng thử lại hoặc tải lại trang.</p>
+        <p class="text-slate-500 text-sm max-w-sm mb-4">Đã xảy ra sự cố trong quá trình khởi chạy hệ thống. Vui lòng thử lại hoặc tải lại trang.</p>
+        
+        <!-- Detailed Debug Info -->
+        <div class="w-full max-w-md bg-slate-50 border border-slate-200 rounded-xl p-4 text-left font-mono text-xs text-slate-600 mb-8 overflow-x-auto">
+            <div class="font-bold text-red-600 mb-1">Mã lỗi: <span id="error-code">UNKNOWN_ERROR</span></div>
+            <pre id="error-details" class="whitespace-pre-wrap break-all"></pre>
+        </div>
+
         <button onclick="window.location.reload(true)" class="px-6 py-2.5 rounded-full bg-primary text-white font-quicksand font-bold text-sm shadow-md hover:bg-opacity-90 transition-all focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
             Tải lại trang
         </button>
@@ -509,10 +538,50 @@
             const isReady = document.documentElement.classList.contains('alpine-ready');
             if (!isReady) {
                 console.error('Bootstrap timeout: App was not ready in 1.5s.');
-                const appContainer = document.getElementById('app-container');
-                if (appContainer) {
-                    appContainer.style.display = 'none';
+                
+                let errorCode = 'APP_INIT_TIMEOUT';
+                let errorDetails = '';
+                
+                if (window.alpineErrors.length > 0) {
+                    const firstErr = window.alpineErrors[0];
+                    errorCode = firstErr.type;
+                    errorDetails = 'Message: ' + firstErr.message + 
+                                   '\nFile: ' + (firstErr.filename || 'N/A') + 
+                                   '\nLine: ' + (firstErr.lineno || 'N/A') + 
+                                   '\nStack: ' + (firstErr.stack || 'N/A');
+                } else if (!window.HOINHAP_QUESTIONS) {
+                    errorCode = 'QUESTIONS_MISSING';
+                    errorDetails = 'window.HOINHAP_QUESTIONS is undefined. Check questions.js loading.';
+                } else if (typeof window.app !== 'function') {
+                    errorCode = 'APP_MISSING';
+                    errorDetails = 'window.app is not a function. Check app.js loading.';
+                } else if (typeof window.Alpine === 'undefined') {
+                    errorCode = 'ALPINE_MISSING';
+                    errorDetails = 'window.Alpine is undefined. Check alpine.min.js loading/execution.';
+                } else {
+                    errorDetails = 'Alpine did not execute init() within 1.5s. Possible Alpine initialization freeze.';
                 }
+                
+                // Diagnostics info
+                let diag = '=== DIAGNOSTICS ===\n';
+                diag += 'HOINHAP_QUESTIONS exist: ' + (!!window.HOINHAP_QUESTIONS) + '\n';
+                diag += 'HOINHAP_QUESTIONS length: ' + (window.HOINHAP_QUESTIONS ? window.HOINHAP_QUESTIONS.length : 0) + '\n';
+                diag += 'typeof app: ' + (typeof window.app) + '\n';
+                diag += 'typeof Alpine: ' + (typeof window.Alpine) + '\n';
+                diag += 'Load times: ' + JSON.stringify(window.scriptLoadTimes, null, 2) + '\n';
+                diag += 'Errors count: ' + window.alpineErrors.length + '\n';
+                if (window.alpineErrors.length > 0) {
+                    diag += 'All Errors: ' + JSON.stringify(window.alpineErrors, null, 2) + '\n';
+                }
+                
+                // Set details in fallback UI
+                const codeEl = document.getElementById('error-code');
+                if (codeEl) codeEl.textContent = errorCode;
+                
+                const detailsEl = document.getElementById('error-details');
+                if (detailsEl) detailsEl.textContent = errorDetails + '\n\n' + diag;
+                
+                // Show fallback screen
                 const fallback = document.getElementById('app-fallback');
                 if (fallback) {
                     fallback.classList.remove('hidden');
