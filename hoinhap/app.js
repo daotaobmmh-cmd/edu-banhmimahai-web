@@ -69,11 +69,12 @@ function app() {
                 this.activeSectionIndex = 0;
             }
             
-            // Set initialization flag, add alpine-ready class, and trigger readiness check
+            // Set initialization flag and hide fallback UI
             window.alpineInitialized = true;
             document.documentElement.classList.add('alpine-ready');
-            if (typeof window.checkAppReadiness === 'function') {
-                window.checkAppReadiness();
+            const fallbackEl = document.getElementById('app-fallback');
+            if (fallbackEl) {
+                fallbackEl.style.display = 'none';
             }
         },
 
@@ -247,42 +248,12 @@ function app() {
             })));
         },
 
-        ensureQuestionsLoaded() {
-            if (!this.allQuestions || this.allQuestions.length === 0) {
-                console.log('Lazy loading questions database...');
-                const startTime = performance.now();
-                
-                const jsonEl = document.getElementById('questions-json');
-                if (jsonEl) {
-                    try {
-                        const questions = JSON.parse(jsonEl.textContent);
-                        this.allQuestions = questions || [];
-                        window.HOINHAP_QUESTIONS = this.allQuestions;
-                        
-                        this.updateSections();
-                        
-                        if (this.sections.length > 0) {
-                            this.activeSectionIndex = 0;
-                        }
-                    } catch (e) {
-                        console.error('Failed to parse lazy-loaded questions JSON', e);
-                    }
-                }
-                
-                const duration = performance.now() - startTime;
-                console.log(`Lazy loading completed in ${duration.toFixed(2)}ms. Loaded ${this.allQuestions.length} questions.`);
-            }
-        },
-
         // Test Mode: Start test
         startTest() {
             if (!this.learnerName.trim()) {
                 alert('Vui lòng nhập họ tên trước khi bắt đầu bài thi.');
                 return;
             }
-            
-            // Ensure questions are loaded before starting
-            this.ensureQuestionsLoaded();
             
             // Save info
             localStorage.setItem('hoinhap:learnerName', this.learnerName.trim());
@@ -410,9 +381,6 @@ function app() {
                 alert('Vui lòng nhập họ tên trước khi bắt đầu.');
                 return;
             }
-            
-            // Ensure questions are loaded before starting
-            this.ensureQuestionsLoaded();
             
             // Save info
             localStorage.setItem('hoinhap:learnerName', this.learnerName.trim());
