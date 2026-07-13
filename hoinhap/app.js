@@ -212,18 +212,26 @@ function app() {
             return base;
         },
 
-        // Test Mode: Pick 30 random questions from all active questions
+        // Test Mode: Pick 30 random questions (10 from 1.3, 10 from 1.4, 10 from 65)
         pickTest() {
-            const activeQuestions = this.allQuestions.filter(q => q.active !== false);
-            let finalSet = this.shuffle(activeQuestions).slice(0, 30);
+            const q13 = this.allQuestions.filter(q => q.source === '1.3' && q.active !== false);
+            const q14 = this.allQuestions.filter(q => q.source === '1.4' && q.active !== false);
+            const q65 = this.allQuestions.filter(q => q.source === '65' && q.active !== false);
+            
+            const selected13 = this.shuffle(q13).slice(0, 10);
+            const selected14 = this.shuffle(q14).slice(0, 10);
+            const selected65 = this.shuffle(q65).slice(0, 10);
+            
+            let finalSet = [...selected13, ...selected14, ...selected65];
             
             if (finalSet.length < 30) {
-                finalSet = this.shuffle(this.allQuestions).slice(0, 30);
+                const fallback = this.allQuestions.filter(q => !finalSet.includes(q) && q.active !== false);
+                finalSet = [...finalSet, ...this.shuffle(fallback).slice(0, 30 - finalSet.length)];
             }
             
             return this.shuffle(finalSet.map(q => ({
                 ...q,
-                options: this.shuffle(q.options)
+                options: q.options // Keep options in A/B/C/D order
             })));
         },
 
