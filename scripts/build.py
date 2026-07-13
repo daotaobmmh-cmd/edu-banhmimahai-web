@@ -130,8 +130,15 @@ html = html.replace(style_pattern, replacement_css)
 link_tag = '<link rel="stylesheet" href="./styles.css?v=1.4" />'
 html = html.replace(link_tag, '')
 
+# Extract raw JSON from questions.js contents
+json_content = questions_content.strip()
+if json_content.startswith("window.HOINHAP_QUESTIONS ="):
+    json_content = json_content[len("window.HOINHAP_QUESTIONS ="):].strip()
+if json_content.endswith(";"):
+    json_content = json_content[:-1].strip()
+
 # Replace questions.js
-replacement_q = f"<script id=\"inline-questions\">\n{questions_content}\nmarkScriptLoaded('questions.js');\n</script>"
+replacement_q = f'<script id="questions-json" type="application/json">\n{json_content}\n</script>\n<script id="inline-questions-loaded">\nmarkScriptLoaded("questions.js");\n</script>'
 html = re.sub(r'<script\s+[^>]*src="\.?/questions\.js[^>]*>.*?</script>', lambda m: replacement_q, html, flags=re.DOTALL)
 
 # Replace app.js
