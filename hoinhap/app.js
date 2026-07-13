@@ -69,12 +69,11 @@ function app() {
                 this.activeSectionIndex = 0;
             }
             
-            // Set initialization flag and hide fallback UI
+            // Set initialization flag, add alpine-ready class, and trigger readiness check
             window.alpineInitialized = true;
             document.documentElement.classList.add('alpine-ready');
-            const fallbackEl = document.getElementById('app-fallback');
-            if (fallbackEl) {
-                fallbackEl.style.display = 'none';
+            if (typeof window.checkAppReadiness === 'function') {
+                window.checkAppReadiness();
             }
         },
 

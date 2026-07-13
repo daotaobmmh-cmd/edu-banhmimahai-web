@@ -39,10 +39,23 @@
     <script>
         window.alpineErrors = [];
         window.scriptLoadTimes = {};
+        window.scriptStates = {
+            'questions.js': 'pending',
+            'app.js': 'pending',
+            'alpine.min.js': 'pending'
+        };
         
         function markScriptLoaded(name) {
+            window.scriptStates[name] = 'loaded';
             window.scriptLoadTimes[name] = Date.now() - (window.performance ? window.performance.timing.navigationStart : Date.now());
-            console.log(name + ' loaded at ' + window.scriptLoadTimes[name] + 'ms');
+            console.log(name + ' loaded in ' + window.scriptLoadTimes[name] + 'ms');
+            checkAppReadiness();
+        }
+        
+        function markScriptFailed(name) {
+            window.scriptStates[name] = 'failed';
+            console.error(name + ' failed to load');
+            triggerFallback('SCRIPT_LOAD_FAILED', name + ' failed to download. Please check your internet connection.');
         }
         
         window.addEventListener('error', function(e) {
@@ -82,10 +95,105 @@
         document.addEventListener('alpine:initialized', function() {
             markScriptLoaded('alpine:initialized event');
         });
+
+        function checkAppReadiness() {
+            if (window.alpineInitialized) {
+                if (window.bootTimeout) {
+                    clearTimeout(window.bootTimeout);
+                }
+                const loadingEl = document.getElementById('app-loading');
+                if (loadingEl) {
+                    loadingEl.style.display = 'none';
+                    loadingEl.classList.add('hidden');
+                }
+                const fallbackEl = document.getElementById('app-fallback');
+                if (fallbackEl) {
+                    fallbackEl.style.display = 'none';
+                    fallbackEl.classList.add('hidden');
+                }
+                console.log('App is ready and fully initialized.');
+            }
+        }
+
+        function triggerFallback(code, details) {
+            if (window.bootTimeout) {
+                clearTimeout(window.bootTimeout);
+            }
+            
+            let diag = '=== DIAGNOSTICS ===\n';
+            diag += 'HOINHAP_QUESTIONS exist: ' + (!!window.HOINHAP_QUESTIONS) + '\n';
+            diag += 'HOINHAP_QUESTIONS length: ' + (window.HOINHAP_QUESTIONS ? window.HOINHAP_QUESTIONS.length : 0) + '\n';
+            diag += 'typeof app: ' + (typeof window.app) + '\n';
+            diag += 'typeof Alpine: ' + (typeof window.Alpine) + '\n';
+            diag += 'Script States: ' + JSON.stringify(window.scriptStates, null, 2) + '\n';
+            diag += 'Load times: ' + JSON.stringify(window.scriptLoadTimes, null, 2) + '\n';
+            diag += 'Errors count: ' + window.alpineErrors.length + '\n';
+            if (window.alpineErrors.length > 0) {
+                diag += 'All Errors: ' + JSON.stringify(window.alpineErrors, null, 2) + '\n';
+            }
+            
+            const codeEl = document.getElementById('error-code');
+            if (codeEl) codeEl.textContent = code;
+            
+            const detailsEl = document.getElementById('error-details');
+            if (detailsEl) detailsEl.textContent = details + '\n\n' + diag;
+            
+            const loadingEl = document.getElementById('app-loading');
+            if (loadingEl) {
+                loadingEl.style.display = 'none';
+                loadingEl.classList.add('hidden');
+            }
+            
+            const fallback = document.getElementById('app-fallback');
+            if (fallback) {
+                fallback.classList.remove('hidden');
+                fallback.style.display = 'flex';
+            }
+        }
+
+        window.bootTimeout = setTimeout(function() {
+            if (!window.alpineInitialized) {
+                let errorCode = 'APP_INIT_TIMEOUT';
+                let errorDetails = '';
+                
+                if (window.scriptStates['questions.js'] === 'failed') {
+                    errorCode = 'QUESTIONS_FAILED';
+                    errorDetails = 'questions.js failed to load.';
+                } else if (window.scriptStates['app.js'] === 'failed') {
+                    errorCode = 'APP_FAILED';
+                    errorDetails = 'app.js failed to load.';
+                } else if (window.scriptStates['alpine.min.js'] === 'failed') {
+                    errorCode = 'ALPINE_FAILED';
+                    errorDetails = 'alpine.min.js failed to load.';
+                } else if (window.scriptStates['questions.js'] === 'pending') {
+                    errorCode = 'QUESTIONS_TIMEOUT';
+                    errorDetails = 'questions.js is still pending after 12s.';
+                } else if (window.scriptStates['app.js'] === 'pending') {
+                    errorCode = 'APP_TIMEOUT';
+                    errorDetails = 'app.js is still pending after 12s.';
+                } else if (window.scriptStates['alpine.min.js'] === 'pending') {
+                    errorCode = 'ALPINE_TIMEOUT';
+                    errorDetails = 'alpine.min.js is still pending after 12s.';
+                } else if (!window.HOINHAP_QUESTIONS) {
+                    errorCode = 'QUESTIONS_MISSING';
+                    errorDetails = 'questions.js loaded but window.HOINHAP_QUESTIONS is undefined.';
+                } else if (typeof window.app !== 'function') {
+                    errorCode = 'APP_MISSING';
+                    errorDetails = 'app.js loaded but window.app is not a function.';
+                } else if (typeof window.Alpine === 'undefined') {
+                    errorCode = 'ALPINE_MISSING';
+                    errorDetails = 'alpine.min.js loaded but window.Alpine is undefined.';
+                } else {
+                    errorDetails = 'All scripts loaded but Alpine failed to initialize within 12s.';
+                }
+                
+                triggerFallback(errorCode, errorDetails);
+            }
+        }, 12000);
     </script>
-    <script src="./questions.js?v=1.4" onload="markScriptLoaded('questions.js')"></script>
-    <script src="./app.js?v=1.4" onload="markScriptLoaded('app.js')"></script>
-    <script defer src="./alpine.min.js?v=1.4" onload="markScriptLoaded('alpine.min.js')"></script>
+    <script src="./questions.js?v=1.4" onload="markScriptLoaded('questions.js')" onerror="markScriptFailed('questions.js')"></script>
+    <script src="./app.js?v=1.4" onload="markScriptLoaded('app.js')" onerror="markScriptFailed('app.js')"></script>
+    <script defer src="./alpine.min.js?v=1.4" onload="markScriptLoaded('alpine.min.js')" onerror="markScriptFailed('alpine.min.js')"></script>
     <link rel="stylesheet" href="./styles.css?v=1.4" />
 </head>
 <body class="bg-background text-slate-800 antialiased overflow-x-hidden" x-data="app()">
@@ -513,6 +621,13 @@
         </div>
     </div>
 
+    <!-- Loading Screen (Visible by default) -->
+    <div id="app-loading" class="fixed inset-0 z-[200] bg-background flex flex-col items-center justify-center px-6 text-center">
+        <div class="w-12 h-12 border-4 border-slate-200 border-t-primary rounded-full animate-spin mb-6"></div>
+        <h3 class="text-lg font-bold font-quicksand text-slate-800 mb-2">Đang tải nội dung đào tạo</h3>
+        <p class="text-slate-400 text-sm max-w-xs">Hệ thống đang tải câu hỏi và tài liệu học tập, vui lòng chờ trong giây lát...</p>
+    </div>
+
     <!-- Fallback Error Message (Visible only if AlpineJS/App fails to boot) -->
     <div id="app-fallback" class="pt-32 flex flex-col items-center justify-center min-h-[60vh] px-6 text-center hidden">
         <div class="w-16 h-16 bg-red-50 text-error rounded-full flex items-center justify-center mb-6">
@@ -531,64 +646,5 @@
             Tải lại trang
         </button>
     </div>
-
-    <script>
-        // Check if Alpine loaded and app booted. If not after 1.5s, display the error message.
-        setTimeout(function() {
-            const isReady = document.documentElement.classList.contains('alpine-ready');
-            if (!isReady) {
-                console.error('Bootstrap timeout: App was not ready in 1.5s.');
-                
-                let errorCode = 'APP_INIT_TIMEOUT';
-                let errorDetails = '';
-                
-                if (window.alpineErrors.length > 0) {
-                    const firstErr = window.alpineErrors[0];
-                    errorCode = firstErr.type;
-                    errorDetails = 'Message: ' + firstErr.message + 
-                                   '\nFile: ' + (firstErr.filename || 'N/A') + 
-                                   '\nLine: ' + (firstErr.lineno || 'N/A') + 
-                                   '\nStack: ' + (firstErr.stack || 'N/A');
-                } else if (!window.HOINHAP_QUESTIONS) {
-                    errorCode = 'QUESTIONS_MISSING';
-                    errorDetails = 'window.HOINHAP_QUESTIONS is undefined. Check questions.js loading.';
-                } else if (typeof window.app !== 'function') {
-                    errorCode = 'APP_MISSING';
-                    errorDetails = 'window.app is not a function. Check app.js loading.';
-                } else if (typeof window.Alpine === 'undefined') {
-                    errorCode = 'ALPINE_MISSING';
-                    errorDetails = 'window.Alpine is undefined. Check alpine.min.js loading/execution.';
-                } else {
-                    errorDetails = 'Alpine did not execute init() within 1.5s. Possible Alpine initialization freeze.';
-                }
-                
-                // Diagnostics info
-                let diag = '=== DIAGNOSTICS ===\n';
-                diag += 'HOINHAP_QUESTIONS exist: ' + (!!window.HOINHAP_QUESTIONS) + '\n';
-                diag += 'HOINHAP_QUESTIONS length: ' + (window.HOINHAP_QUESTIONS ? window.HOINHAP_QUESTIONS.length : 0) + '\n';
-                diag += 'typeof app: ' + (typeof window.app) + '\n';
-                diag += 'typeof Alpine: ' + (typeof window.Alpine) + '\n';
-                diag += 'Load times: ' + JSON.stringify(window.scriptLoadTimes, null, 2) + '\n';
-                diag += 'Errors count: ' + window.alpineErrors.length + '\n';
-                if (window.alpineErrors.length > 0) {
-                    diag += 'All Errors: ' + JSON.stringify(window.alpineErrors, null, 2) + '\n';
-                }
-                
-                // Set details in fallback UI
-                const codeEl = document.getElementById('error-code');
-                if (codeEl) codeEl.textContent = errorCode;
-                
-                const detailsEl = document.getElementById('error-details');
-                if (detailsEl) detailsEl.textContent = errorDetails + '\n\n' + diag;
-                
-                // Show fallback screen
-                const fallback = document.getElementById('app-fallback');
-                if (fallback) {
-                    fallback.classList.remove('hidden');
-                    fallback.style.display = 'flex';
-                }
-            }
-        }, 1500);
-    </script>
 </body>
 </html>
