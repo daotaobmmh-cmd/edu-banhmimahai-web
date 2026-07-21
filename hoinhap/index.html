@@ -229,6 +229,35 @@
                                 </div>
                                 <p class="text-[14px] leading-[22px] text-slate-700 font-medium" x-text="currentStudyQuestion?.explanation"></p>
                             </div>
+                            
+                            <!-- Feedback UI Practice Mode -->
+                            <div class="mt-4" x-show="currentStudyQuestion">
+                                <div class="relative">
+                                    <textarea x-model="feedbackTexts[currentStudyQuestion.id]" 
+                                              @input="feedbackStatuses[currentStudyQuestion.id] = 'idle'"
+                                              placeholder="Góp ý của bạn về câu này" 
+                                              rows="1" 
+                                              class="w-full resize-none pl-4 pr-12 py-3 rounded-xl bg-white border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary focus-visible:outline-none transition-all font-medium text-slate-700 text-[13px] custom-scrollbar"
+                                              style="min-height: 44px; max-height: 100px;"></textarea>
+                                    <button @click="submitFeedback(currentStudyQuestion, 'practice')" 
+                                            :disabled="!feedbackTexts[currentStudyQuestion.id] || !feedbackTexts[currentStudyQuestion.id].trim() || feedbackStatuses[currentStudyQuestion.id] === 'sending'" 
+                                            class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-lg transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed group">
+                                        <template x-if="feedbackStatuses[currentStudyQuestion.id] === 'sending'">
+                                            <span class="material-symbols-outlined animate-spin text-slate-400 text-xl">progress_activity</span>
+                                        </template>
+                                        <template x-if="feedbackStatuses[currentStudyQuestion.id] !== 'sending'">
+                                            <span class="material-symbols-outlined text-xl transition-colors"
+                                                  :class="feedbackTexts[currentStudyQuestion.id] && feedbackTexts[currentStudyQuestion.id].trim() ? 'text-primary' : 'text-slate-300'">send</span>
+                                        </template>
+                                    </button>
+                                </div>
+                                <div x-show="feedbackStatuses[currentStudyQuestion.id] === 'success'" x-transition class="mt-2 text-[12px] font-bold text-primary flex items-center gap-1 font-quicksand">
+                                    <span class="material-symbols-outlined text-[14px]">check_circle</span> Đã nhận góp ý của bạn
+                                </div>
+                                <div x-show="feedbackStatuses[currentStudyQuestion.id] === 'error'" x-transition class="mt-2 text-[12px] font-bold text-error flex items-center gap-1 font-quicksand">
+                                    <span class="material-symbols-outlined text-[14px]">error</span> Gửi thất bại, vui lòng thử lại
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Navigation Buttons -->
@@ -445,12 +474,41 @@
                                 </div>
                                 
                                 <!-- Explanation callout -->
-                                                                <div class="bg-secondary/10 border border-secondary/20 p-4 rounded-xl text-left">
-                                                                    <div class="flex items-center gap-1.5 mb-2 text-secondary">
-                                                                        <span class="material-symbols-outlined text-base flex-shrink-0 w-4 h-4 flex items-center justify-center">lightbulb</span>
-                                                                        <span class="font-bold text-xs font-quicksand uppercase tracking-wider">Giải thích</span>
-                                                                    </div>
+                                <div class="bg-secondary/10 border border-secondary/20 p-4 rounded-xl text-left">
+                                    <div class="flex items-center gap-1.5 mb-2 text-secondary">
+                                        <span class="material-symbols-outlined text-base flex-shrink-0 w-4 h-4 flex items-center justify-center">lightbulb</span>
+                                        <span class="font-bold text-xs font-quicksand uppercase tracking-wider">Giải thích</span>
+                                    </div>
                                     <p class="text-xs text-slate-700 leading-relaxed font-medium" x-text="w.question.explanation"></p>
+                                </div>
+                                
+                                <!-- Feedback UI Test Mode -->
+                                <div class="mt-4">
+                                    <div class="relative">
+                                        <textarea x-model="feedbackTexts[w.question.id]" 
+                                                  @input="feedbackStatuses[w.question.id] = 'idle'"
+                                                  placeholder="Góp ý của bạn về câu này" 
+                                                  rows="1" 
+                                                  class="w-full resize-none pl-4 pr-12 py-3 rounded-xl bg-white border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary focus-visible:outline-none transition-all font-medium text-slate-700 text-[13px] custom-scrollbar"
+                                                  style="min-height: 44px; max-height: 100px;"></textarea>
+                                        <button @click="submitFeedback(w.question, 'test')" 
+                                                :disabled="!feedbackTexts[w.question.id] || !feedbackTexts[w.question.id].trim() || feedbackStatuses[w.question.id] === 'sending'" 
+                                                class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-lg transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed group">
+                                            <template x-if="feedbackStatuses[w.question.id] === 'sending'">
+                                                <span class="material-symbols-outlined animate-spin text-slate-400 text-xl">progress_activity</span>
+                                            </template>
+                                            <template x-if="feedbackStatuses[w.question.id] !== 'sending'">
+                                                <span class="material-symbols-outlined text-xl transition-colors"
+                                                      :class="feedbackTexts[w.question.id] && feedbackTexts[w.question.id].trim() ? 'text-primary' : 'text-slate-300'">send</span>
+                                            </template>
+                                        </button>
+                                    </div>
+                                    <div x-show="feedbackStatuses[w.question.id] === 'success'" x-transition class="mt-2 text-[12px] font-bold text-primary flex items-center gap-1 font-quicksand">
+                                        <span class="material-symbols-outlined text-[14px]">check_circle</span> Đã nhận góp ý của bạn
+                                    </div>
+                                    <div x-show="feedbackStatuses[w.question.id] === 'error'" x-transition class="mt-2 text-[12px] font-bold text-error flex items-center gap-1 font-quicksand">
+                                        <span class="material-symbols-outlined text-[14px]">error</span> Gửi thất bại, vui lòng thử lại
+                                    </div>
                                 </div>
                             </div>
                         </template>

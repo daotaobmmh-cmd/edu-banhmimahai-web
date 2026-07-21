@@ -33,6 +33,10 @@ function app() {
         resultTimeSpent: '',
         resultWrongQuestions: [], // questions answered incorrectly in test
         
+        // Feedback State
+        feedbackTexts: {}, // maps question ID to text
+        feedbackStatuses: {}, // maps question ID to 'idle', 'sending', 'success', 'error'
+        
         // Init
         init() {
             // Load questions from window.HOINHAP_QUESTIONS
@@ -408,6 +412,62 @@ function app() {
             localStorage.setItem('hoinhap:learnerDept', this.learnerDept.trim());
             
             this.currentView = 'study';
+        },
+
+        async submitFeedback(q, mode) {
+            const text = (this.feedbackTexts[q.id] || '').trim();
+            if (!text || text.length > 1000) return;
+            if (this.feedbackStatuses[q.id] === 'sending') return;
+
+            this.feedbackStatuses[q.id] = 'sending';
+
+            let displayNumber = 0;
+            if (mode === 'test') {
+                displayNumber = this.testQuestions.findIndex(x => x.id === q.id) + 1;
+            } else {
+                displayNumber = (this.sections.find(s => s.no === q.sectionNo)?.questions.findIndex(x => x.id === q.id) || 0) + 1;
+            }
+
+            const payload = {
+                learnerName: this.learnerName,
+                stableId: q.id,
+                displayNumber: displayNumber,
+                sectionNo: q.sectionNo,
+                sectionName: this.sections.find(s => s.no === q.sectionNo)?.title || '',
+                questionText: q.question,
+                selectedAnswer: mode === 'test' ? this.testAnswers[q.id] : this.studyProgress[q.id],
+                correctAnswer: q.correctAnswer,
+                mode: mode,
+                feedbackText: text,
+                pageUrl: window.location.href,
+                submittedAt: new Date().toISOString()
+            };
+
+            try {
+                const res = await fetch('/api/question-feedback', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+                if (data.ok) {
+                    this.feedbackStatuses[q.id] = 'success';
+                    setTimeout(() => {
+                        this.feedbackStatuses[q.id] = 'idle';
+                        this.feedbackTexts[q.id] = '';
+                    }, 4000);
+                } else {
+                    this.feedbackStatuses[q.id] = 'error';
+                    setTimeout(() => {
+                        if (this.feedbackStatuses[q.id] === 'error') this.feedbackStatuses[q.id] = 'idle';
+                    }, 4000);
+                }
+            } catch (err) {
+                this.feedbackStatuses[q.id] = 'error';
+                setTimeout(() => {
+                    if (this.feedbackStatuses[q.id] === 'error') this.feedbackStatuses[q.id] = 'idle';
+                }, 4000);
+            }
         }
     }
 }
