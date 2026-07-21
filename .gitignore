@@ -15,3 +15,5 @@ hoinhap_backup_bad_ui/
 .vercel
 outputs/
 .wrangler/
+
+.env*

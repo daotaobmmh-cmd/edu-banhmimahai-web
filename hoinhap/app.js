@@ -421,17 +421,10 @@ function app() {
 
             this.feedbackStatuses[q.id] = 'sending';
 
-            let displayNumber = 0;
-            if (mode === 'test') {
-                displayNumber = this.testQuestions.findIndex(x => x.id === q.id) + 1;
-            } else {
-                displayNumber = (this.sections.find(s => s.no === q.sectionNo)?.questions.findIndex(x => x.id === q.id) || 0) + 1;
-            }
-
             const payload = {
                 learnerName: this.learnerName,
-                stableId: q.id,
-                displayNumber: displayNumber,
+                stableId: q.stableId || q.id,
+                displayNumber: q.displayNumber || 0,
                 sectionNo: q.sectionNo,
                 sectionName: this.sections.find(s => s.no === q.sectionNo)?.title || '',
                 questionText: q.question,
@@ -455,7 +448,7 @@ function app() {
                     setTimeout(() => {
                         this.feedbackStatuses[q.id] = 'idle';
                         this.feedbackTexts[q.id] = '';
-                    }, 4000);
+                    }, 1800);
                 } else {
                     this.feedbackStatuses[q.id] = 'error';
                     setTimeout(() => {

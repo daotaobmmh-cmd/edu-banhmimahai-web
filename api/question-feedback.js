@@ -13,14 +13,34 @@ module.exports = async function handler(req, res) {
   const NOTION_TOKEN = process.env.NOTION_TOKEN;
   const NOTION_FEEDBACK_DATA_SOURCE_ID = process.env.NOTION_FEEDBACK_DATA_SOURCE_ID;
 
-  console.log('DEBUG ENV:', { 
-    token_len: NOTION_TOKEN ? NOTION_TOKEN.length : 0, 
-    id_len: NOTION_FEEDBACK_DATA_SOURCE_ID ? NOTION_FEEDBACK_DATA_SOURCE_ID.length : 0 
-  });
-
   if (!NOTION_TOKEN || !NOTION_FEEDBACK_DATA_SOURCE_ID) {
     return res.status(503).json({ ok: false, error: 'Feedback endpoint setup missing.' });
   }
+
+  // Same-origin validation
+  const origin = req.headers.origin || req.headers.referer || '';
+  const host = req.headers.host || '';
+  const isVercelHost = host.includes('vercel.app') || host.includes('banhmimahai.vn') || host.includes('localhost');
+  const isValidOrigin = origin.includes('vercel.app') || origin.includes('banhmimahai.vn') || origin.includes('localhost');
+
+  if (!isVercelHost || (origin && !isValidOrigin)) {
+    return res.status(403).json({ ok: false, error: 'Forbidden.' });
+  }
+
+  // Rate limiting / Cooldown
+  const ip = req.headers['x-forwarded-for'] || req.socket?.remoteAddress || 'unknown';
+  const stableIdForLimiter = String(req.body?.stableId || '').trim();
+  const limiterKey = `${ip}_${stableIdForLimiter}`;
+  
+  if (!global.feedbackCooldowns) {
+    global.feedbackCooldowns = new Map();
+  }
+  
+  const lastSubmit = global.feedbackCooldowns.get(limiterKey);
+  if (lastSubmit && Date.now() - lastSubmit < 60000) { // 60s cooldown per question per IP
+    return res.status(429).json({ ok: false, error: 'Vui lòng đợi một lát trước khi gửi tiếp góp ý cho câu này.' });
+  }
+
 
   const body = req.body || {};
   const feedbackText = String(body.feedbackText || '').trim().slice(0, 1000);
@@ -39,6 +59,8 @@ module.exports = async function handler(req, res) {
   if (!feedbackText || !learnerName || !stableId || !questionText) {
     return res.status(400).json({ ok: false, error: 'Thiếu thông tin bắt buộc.' });
   }
+
+  global.feedbackCooldowns.set(limiterKey, Date.now());
 
   const notionPayload = {
     parent: { type: 'database_id', database_id: NOTION_FEEDBACK_DATA_SOURCE_ID },
