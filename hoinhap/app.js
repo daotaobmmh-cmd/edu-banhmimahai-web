@@ -230,11 +230,11 @@ function app() {
             return base;
         },
 
-        // Test Mode: Pick 30 random questions (10 from 1.3, 10 from 1.4, 10 from 65)
+        // Test Mode: Pick 30 random questions (10 from group 1, 10 from group 2, 10 from MHW)
         pickTest() {
-            const q13 = this.allQuestions.filter(q => q.source === '1.3' && q.active !== false);
-            const q14 = this.allQuestions.filter(q => q.source === '1.4' && q.active !== false);
-            const q65 = this.allQuestions.filter(q => q.source === '65' && q.active !== false);
+            const q13 = this.allQuestions.filter(q => q.stableId && q.stableId.startsWith('HN-') && parseInt(q.stableId.split('-')[1]) <= 57 && q.active !== false);
+            const q14 = this.allQuestions.filter(q => q.stableId && q.stableId.startsWith('HN-') && parseInt(q.stableId.split('-')[1]) > 57 && q.active !== false);
+            const q65 = this.allQuestions.filter(q => q.stableId && q.stableId.startsWith('MHW-') && q.active !== false);
             
             const selected13 = this.shuffle(q13).slice(0, 10);
             const selected14 = this.shuffle(q14).slice(0, 10);
