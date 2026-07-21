@@ -1,8 +1,30 @@
 const NOTION_VERSION = '2025-09-03';
 
 module.exports = async function handler(req, res) {
+  const host = req.headers.host || '';
+  const originHeader = req.headers.origin || req.headers.referer || '';
+  let originHost = '';
+  
+  if (originHeader) {
+    try {
+      originHost = new URL(originHeader).host;
+    } catch (e) {
+      return res.status(403).json({ ok: false, error: 'Invalid Origin.' });
+    }
+  }
+
+  // Exact matching for Vercel preview or production host, no loose includes
+  const isVercelApp = host === 'edu-banhmimahai-web.vercel.app' || (host.startsWith('edu-banhmimahai-web-') && host.endsWith('.vercel.app'));
+  const isApprovedHost = isVercelApp || host === 'daotao.banhmimahai.vn' || host.startsWith('localhost:') || host.startsWith('127.0.0.1:');
+
+  if (!isApprovedHost || (originHost && originHost !== host)) {
+    return res.status(403).json({ ok: false, error: 'Forbidden.' });
+  }
+
   if (req.method === 'OPTIONS') {
-    res.setHeader('Allow', 'POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Origin', originHeader || '*');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     return res.status(204).end();
   }
 
@@ -15,16 +37,6 @@ module.exports = async function handler(req, res) {
 
   if (!NOTION_TOKEN || !NOTION_FEEDBACK_DATA_SOURCE_ID) {
     return res.status(503).json({ ok: false, error: 'Feedback endpoint setup missing.' });
-  }
-
-  // Same-origin validation
-  const origin = req.headers.origin || req.headers.referer || '';
-  const host = req.headers.host || '';
-  const isVercelHost = host.includes('vercel.app') || host.includes('banhmimahai.vn') || host.includes('localhost');
-  const isValidOrigin = origin.includes('vercel.app') || origin.includes('banhmimahai.vn') || origin.includes('localhost');
-
-  if (!isVercelHost || (origin && !isValidOrigin)) {
-    return res.status(403).json({ ok: false, error: 'Forbidden.' });
   }
 
   // Rate limiting / Cooldown
@@ -43,7 +55,11 @@ module.exports = async function handler(req, res) {
 
 
   const body = req.body || {};
-  const feedbackText = String(body.feedbackText || '').trim().slice(0, 1000);
+  const rawFeedbackText = String(body.feedbackText || '').trim();
+  if (rawFeedbackText.length > 1000) {
+    return res.status(400).json({ ok: false, error: 'Góp ý không được vượt quá 1000 ký tự.' });
+  }
+  const feedbackText = rawFeedbackText;
   const learnerName = String(body.learnerName || '').trim().slice(0, 100);
   const stableId = String(body.stableId || '').trim();
   const displayNumber = String(body.displayNumber || '').trim();
@@ -59,8 +75,6 @@ module.exports = async function handler(req, res) {
   if (!feedbackText || !learnerName || !stableId || !questionText) {
     return res.status(400).json({ ok: false, error: 'Thiếu thông tin bắt buộc.' });
   }
-
-  global.feedbackCooldowns.set(limiterKey, Date.now());
 
   const notionPayload = {
     parent: { type: 'database_id', database_id: NOTION_FEEDBACK_DATA_SOURCE_ID },
@@ -98,6 +112,7 @@ module.exports = async function handler(req, res) {
       return res.status(502).json({ ok: false, error: 'Không thể lưu góp ý vào Notion.' });
     }
 
+    global.feedbackCooldowns.set(limiterKey, Date.now());
     return res.status(200).json({ ok: true });
   } catch (err) {
     console.error('Fetch error:', err);
