@@ -85,12 +85,33 @@ function app() {
 
         // Update Sections list progress
         updateSections() {
+            const canonicalTitles = [
+                "Hành trình, sản phẩm và địa điểm VSF",
+                "Hệ giá trị và tư duy làm việc",
+                "Hợp đồng lao động và kỷ luật",
+                "Nghỉ phép, chấm công và quy trình HR",
+                "Phúc lợi, đánh giá và phát triển",
+                "Tác phong và giao tiếp khách hàng",
+                "Văn hóa nội bộ và tinh thần đồng đội",
+                "12 Chữ vàng và phục vụ khách hàng",
+                "12 Trái cấm, bảo mật và tài sản",
+                "Công cụ, sơ đồ tổ chức và báo cáo",
+                "An toàn, PCCC, vệ sinh và môi trường",
+                "Má Hải Ways — 5 nguyên lý nền tảng",
+                "Làm chủ công việc và dám nhận thử thách",
+                "Tập trung, thời gian và nguồn lực",
+                "Biết ơn và yêu mến",
+                "Làm vì người khác, 5 node và đại sứ thương hiệu",
+                "Học hỏi, cải tiến và tiến bộ mỗi ngày",
+                "Làm chuẩn, làm thật và kỷ luật vận hành"
+            ];
+            
             const map = new Map();
             this.allQuestions.forEach(q => {
                 if (!map.has(q.sectionNo)) {
                     map.set(q.sectionNo, {
                         no: q.sectionNo,
-                        title: q.sectionName,
+                        title: canonicalTitles[q.sectionNo - 1] || q.sectionName,
                         questions: []
                     });
                 }
