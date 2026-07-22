@@ -247,7 +247,7 @@
                                         </template>
                                         <template x-if="feedbackStatuses[currentStudyQuestion.id] !== 'sending'">
                                             <span class="material-symbols-outlined text-[18px] leading-none transition-[color] duration-200 motion-reduce:transition-none"
-                                                  :class="feedbackTexts[currentStudyQuestion.id] && feedbackTexts[currentStudyQuestion.id].trim() ? 'text-amber-500' : 'text-amber-300 group-focus-within:text-amber-500'">send</span>
+                                                  :class="feedbackTexts[currentStudyQuestion.id] && feedbackTexts[currentStudyQuestion.id].trim() ? 'text-amber-500' : 'text-amber-300 group-focus-within:text-amber-500'">outgoing_mail</span>
                                         </template>
                                     </button>
                                 </div>
@@ -499,7 +499,7 @@
                                             </template>
                                             <template x-if="feedbackStatuses[w.question.id] !== 'sending'">
                                                 <span class="material-symbols-outlined text-[18px] leading-none transition-[color] duration-200 motion-reduce:transition-none"
-                                                      :class="feedbackTexts[w.question.id] && feedbackTexts[w.question.id].trim() ? 'text-amber-500' : 'text-amber-300 group-focus-within:text-amber-500'">send</span>
+                                                      :class="feedbackTexts[w.question.id] && feedbackTexts[w.question.id].trim() ? 'text-amber-500' : 'text-amber-300 group-focus-within:text-amber-500'">outgoing_mail</span>
                                             </template>
                                         </button>
                                     </div>
