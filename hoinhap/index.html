@@ -233,7 +233,7 @@
                             <!-- Feedback UI Practice Mode -->
                             <div class="mt-4" x-show="currentStudyQuestion">
                                 <div class="relative group">
-                                    <textarea x-ref="practiceFeedbackInput"
+                                    <textarea :data-feedback-qid="currentStudyQuestion?.id"
                                               x-model="feedbackTexts[currentStudyQuestion.id]"
                                               @input="feedbackStatuses[currentStudyQuestion.id] = 'idle'"
                                               placeholder="Góp ý của bạn về câu này" 
@@ -253,7 +253,7 @@
                                     </button>
                                 </div>
                                 <div x-show="feedbackStatuses[currentStudyQuestion.id] === 'error'" x-transition class="mt-2 text-[12px] font-bold text-error flex items-center gap-1 font-quicksand">
-                                    <span class="material-symbols-outlined text-14px">error</span> Gửi thất bại, vui lòng thử lại
+                                    <span class="material-symbols-outlined text-[14px]">error</span> Gửi thất bại, vui lòng thử lại
                                 </div>
                             </div>
                         </div>
@@ -483,7 +483,8 @@
                                 <!-- Feedback UI Test Mode -->
                                 <div class="mt-4">
                                     <div class="relative group">
-                                        <textarea x-model="feedbackTexts[w.question.id]" 
+                                        <textarea :data-feedback-qid="w.question.id"
+                                                  x-model="feedbackTexts[w.question.id]"
                                                   @input="feedbackStatuses[w.question.id] = 'idle'"
                                                   placeholder="Góp ý của bạn về câu này" 
                                                   rows="1" 

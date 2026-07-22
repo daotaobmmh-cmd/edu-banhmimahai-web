@@ -596,12 +596,16 @@ function app() {
                             fn();
                             this.focusActiveQuestionTarget();
                         } else {
-                            // Direct submission: return focus to textarea or usable control for current question
-                            if (directSubmitFocusEl && typeof directSubmitFocusEl.focus === 'function' && document.body.contains(directSubmitFocusEl) && !directSubmitFocusEl.disabled) {
-                                directSubmitFocusEl.focus();
-                            } else if (this.$refs.practiceFeedbackInput) {
-                                this.$refs.practiceFeedbackInput.focus();
-                            }
+                            // Direct submission: return focus to exact matching textarea for this question
+                            this.$nextTick(() => {
+                                const textareas = Array.from(document.querySelectorAll('textarea[data-feedback-qid]'));
+                                const target = textareas.find(el => el.dataset.feedbackQid === q.id && el.offsetParent !== null && !el.disabled);
+                                if (target && typeof target.focus === 'function') {
+                                    target.focus();
+                                } else {
+                                    this.focusActiveQuestionTarget();
+                                }
+                            });
                         }
                     }, 800);
                 } else {
