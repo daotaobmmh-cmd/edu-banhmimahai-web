@@ -36,11 +36,13 @@ function app() {
         // Feedback State & Micro-interactions
         feedbackTexts: {}, // maps question ID to text
         feedbackStatuses: {}, // maps question ID to 'idle', 'sending', 'success', 'error'
-        lastSubmittedFeedback: {}, // maps question ID to last successfully submitted trimmed text
         showUnsentGuard: false,
         pendingNavigationFn: null,
         showSuccessOverlay: false,
         isGuardSubmitting: false,
+        guardErrorText: '',
+        previouslyFocusedElement: null,
+        successOverlayTimer: null,
         
         // Init
         init() {
@@ -146,9 +148,7 @@ function app() {
         hasUnsentFeedback(qId) {
             if (!qId) return false;
             const currentText = (this.feedbackTexts[qId] || '').trim();
-            if (!currentText) return false;
-            const lastText = this.lastSubmittedFeedback[qId] || '';
-            return currentText !== lastText;
+            return currentText.length > 0;
         },
 
         getCurrentActiveQuestion() {
@@ -160,7 +160,9 @@ function app() {
         guardNavigation(targetFn) {
             const currentQ = this.getCurrentActiveQuestion();
             if (currentQ && this.hasUnsentFeedback(currentQ.id)) {
+                this.previouslyFocusedElement = document.activeElement;
                 this.pendingNavigationFn = targetFn;
+                this.guardErrorText = '';
                 this.showUnsentGuard = true;
                 return;
             }
@@ -169,33 +171,73 @@ function app() {
             }
         },
 
+        cancelGuard() {
+            if (this.isGuardSubmitting) return;
+            this.showUnsentGuard = false;
+            this.guardErrorText = '';
+            this.pendingNavigationFn = null;
+            if (this.previouslyFocusedElement && typeof this.previouslyFocusedElement.focus === 'function' && document.body.contains(this.previouslyFocusedElement)) {
+                this.previouslyFocusedElement.focus();
+            }
+            this.previouslyFocusedElement = null;
+        },
+
         confirmDiscardGuard() {
+            if (this.isGuardSubmitting) return;
             const fn = this.pendingNavigationFn;
             this.showUnsentGuard = false;
+            this.guardErrorText = '';
             this.pendingNavigationFn = null;
+            this.previouslyFocusedElement = null;
             if (typeof fn === 'function') {
                 fn();
+                this.focusActiveQuestionArea();
             }
         },
 
-        cancelGuard() {
-            this.showUnsentGuard = false;
-            this.pendingNavigationFn = null;
-        },
-
         async confirmSendGuard() {
+            if (this.isGuardSubmitting) return;
             const currentQ = this.getCurrentActiveQuestion();
-            if (!currentQ || this.isGuardSubmitting) return;
-            const mode = this.currentView === 'test' ? 'test' : 'practice';
+            if (!currentQ) return;
+
             this.isGuardSubmitting = true;
-            await this.submitFeedback(currentQ, mode, { fromGuard: true });
-            this.isGuardSubmitting = false;
+            this.guardErrorText = '';
+            const mode = this.currentView === 'test' ? 'test' : 'practice';
+
+            try {
+                await this.submitFeedback(currentQ, mode, { fromGuard: true });
+            } finally {
+                this.isGuardSubmitting = false;
+            }
         },
 
-        goHome() {
-            this.guardNavigation(() => {
-                this.currentView = 'gate';
-            });
+        handleGuardTab(e) {
+            if (!this.showUnsentGuard) return;
+            const focusables = [this.$refs.guardDiscardBtn, this.$refs.guardSendBtn].filter(Boolean);
+            if (focusables.length === 0) return;
+            const first = focusables[0];
+            const last = focusables[focusables.length - 1];
+
+            if (e.shiftKey) {
+                if (document.activeElement === first || !focusables.includes(document.activeElement)) {
+                    e.preventDefault();
+                    last.focus();
+                }
+            } else {
+                if (document.activeElement === last || !focusables.includes(document.activeElement)) {
+                    e.preventDefault();
+                    first.focus();
+                }
+            }
+        },
+
+        focusActiveQuestionArea() {
+            setTimeout(() => {
+                const el = document.querySelector('h2.font-quicksand') || document.querySelector('[tabindex="0"]');
+                if (el && typeof el.focus === 'function') {
+                    el.focus();
+                }
+            }, 50);
         },
 
         // Study Mode: select section
@@ -493,6 +535,9 @@ function app() {
             if (this.feedbackStatuses[q.id] === 'sending') return;
 
             this.feedbackStatuses[q.id] = 'sending';
+            if (options.fromGuard) {
+                this.guardErrorText = '';
+            }
 
             const payload = {
                 learnerName: this.learnerName,
@@ -518,31 +563,45 @@ function app() {
                 const data = await res.json();
                 if (data.ok) {
                     this.feedbackStatuses[q.id] = 'success';
-                    this.lastSubmittedFeedback[q.id] = text;
                     this.feedbackTexts[q.id] = '';
                     this.showUnsentGuard = false;
+                    this.guardErrorText = '';
 
-                    // Trigger Polished Success Moment Overlay (~800ms)
+                    // Trigger Polished Success Moment Overlay (~800ms) with timer safety
+                    if (this.successOverlayTimer) {
+                        clearTimeout(this.successOverlayTimer);
+                        this.successOverlayTimer = null;
+                    }
+
                     this.showSuccessOverlay = true;
-                    setTimeout(() => {
+                    this.successOverlayTimer = setTimeout(() => {
                         this.showSuccessOverlay = false;
+                        this.successOverlayTimer = null;
                         this.feedbackStatuses[q.id] = 'idle';
 
                         // If submitted from navigation guard, complete pending navigation after success moment
                         if (options.fromGuard && typeof this.pendingNavigationFn === 'function') {
                             const fn = this.pendingNavigationFn;
                             this.pendingNavigationFn = null;
+                            this.previouslyFocusedElement = null;
                             fn();
+                            this.focusActiveQuestionArea();
                         }
                     }, 800);
                 } else {
                     this.feedbackStatuses[q.id] = 'error';
+                    if (options.fromGuard) {
+                        this.guardErrorText = 'Gửi thất bại, vui lòng thử lại';
+                    }
                     setTimeout(() => {
                         if (this.feedbackStatuses[q.id] === 'error') this.feedbackStatuses[q.id] = 'idle';
                     }, 4000);
                 }
             } catch (err) {
                 this.feedbackStatuses[q.id] = 'error';
+                if (options.fromGuard) {
+                    this.guardErrorText = 'Gửi thất bại, vui lòng thử lại';
+                }
                 setTimeout(() => {
                     if (this.feedbackStatuses[q.id] === 'error') this.feedbackStatuses[q.id] = 'idle';
                 }, 4000);
