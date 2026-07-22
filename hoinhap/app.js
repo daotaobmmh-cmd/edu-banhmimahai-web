@@ -540,8 +540,6 @@ function app() {
                 this.guardErrorText = '';
             }
 
-            const directSubmitFocusEl = !options.fromGuard ? document.activeElement : null;
-
             const payload = {
                 learnerName: this.learnerName,
                 stableId: q.stableId || q.id,
