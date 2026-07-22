@@ -232,22 +232,22 @@
                             
                             <!-- Feedback UI Practice Mode -->
                             <div class="mt-4" x-show="currentStudyQuestion">
-                                <div class="relative">
+                                <div class="relative group">
                                     <textarea x-model="feedbackTexts[currentStudyQuestion.id]" 
                                               @input="feedbackStatuses[currentStudyQuestion.id] = 'idle'"
                                               placeholder="Góp ý của bạn về câu này" 
                                               rows="1" 
-                                              class="w-full resize-none pl-4 pr-12 py-3 rounded-xl bg-white border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary focus-visible:outline-none transition-all font-medium text-slate-700 text-[13px] custom-scrollbar"
+                                              class="w-full resize-none pl-4 pr-11 py-3 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 motion-reduce:transition-none font-medium text-slate-700 text-[13px] custom-scrollbar"
                                               style="min-height: 44px; max-height: 100px;"></textarea>
                                     <button @click="submitFeedback(currentStudyQuestion, 'practice')" 
                                             :disabled="!feedbackTexts[currentStudyQuestion.id] || !feedbackTexts[currentStudyQuestion.id].trim() || feedbackStatuses[currentStudyQuestion.id] === 'sending'" 
-                                            class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-lg transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed group">
+                                            class="absolute right-1.5 top-1/2 -translate-y-1/2 w-8 h-8 inline-flex items-center justify-center rounded-lg transition-[background-color,color] duration-200 motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:cursor-not-allowed hover:bg-amber-100/50 active:bg-amber-100">
                                         <template x-if="feedbackStatuses[currentStudyQuestion.id] === 'sending'">
-                                            <span class="material-symbols-outlined animate-spin text-slate-400 text-xl">progress_activity</span>
+                                            <span class="material-symbols-outlined animate-spin text-amber-500 text-[18px] leading-none">progress_activity</span>
                                         </template>
                                         <template x-if="feedbackStatuses[currentStudyQuestion.id] !== 'sending'">
-                                            <span class="material-symbols-outlined text-xl transition-colors"
-                                                  :class="feedbackTexts[currentStudyQuestion.id] && feedbackTexts[currentStudyQuestion.id].trim() ? 'text-primary' : 'text-slate-300'">send</span>
+                                            <span class="material-symbols-outlined text-[18px] leading-none transition-[color] duration-200 motion-reduce:transition-none"
+                                                  :class="feedbackTexts[currentStudyQuestion.id] && feedbackTexts[currentStudyQuestion.id].trim() ? 'text-amber-500' : 'text-amber-300 group-focus-within:text-amber-500'">send</span>
                                         </template>
                                     </button>
                                 </div>
@@ -484,22 +484,22 @@
                                 
                                 <!-- Feedback UI Test Mode -->
                                 <div class="mt-4">
-                                    <div class="relative">
+                                    <div class="relative group">
                                         <textarea x-model="feedbackTexts[w.question.id]" 
                                                   @input="feedbackStatuses[w.question.id] = 'idle'"
                                                   placeholder="Góp ý của bạn về câu này" 
                                                   rows="1" 
-                                                  class="w-full resize-none pl-4 pr-12 py-3 rounded-xl bg-white border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary focus-visible:outline-none transition-all font-medium text-slate-700 text-[13px] custom-scrollbar"
+                                                  class="w-full resize-none pl-4 pr-11 py-3 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 motion-reduce:transition-none font-medium text-slate-700 text-[13px] custom-scrollbar"
                                                   style="min-height: 44px; max-height: 100px;"></textarea>
                                         <button @click="submitFeedback(w.question, 'test')" 
                                                 :disabled="!feedbackTexts[w.question.id] || !feedbackTexts[w.question.id].trim() || feedbackStatuses[w.question.id] === 'sending'" 
-                                                class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-lg transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed group">
+                                                class="absolute right-1.5 top-1/2 -translate-y-1/2 w-8 h-8 inline-flex items-center justify-center rounded-lg transition-[background-color,color] duration-200 motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:cursor-not-allowed hover:bg-amber-100/50 active:bg-amber-100">
                                             <template x-if="feedbackStatuses[w.question.id] === 'sending'">
-                                                <span class="material-symbols-outlined animate-spin text-slate-400 text-xl">progress_activity</span>
+                                                <span class="material-symbols-outlined animate-spin text-amber-500 text-[18px] leading-none">progress_activity</span>
                                             </template>
                                             <template x-if="feedbackStatuses[w.question.id] !== 'sending'">
-                                                <span class="material-symbols-outlined text-xl transition-colors"
-                                                      :class="feedbackTexts[w.question.id] && feedbackTexts[w.question.id].trim() ? 'text-primary' : 'text-slate-300'">send</span>
+                                                <span class="material-symbols-outlined text-[18px] leading-none transition-[color] duration-200 motion-reduce:transition-none"
+                                                      :class="feedbackTexts[w.question.id] && feedbackTexts[w.question.id].trim() ? 'text-amber-500' : 'text-amber-300 group-focus-within:text-amber-500'">send</span>
                                             </template>
                                         </button>
                                     </div>
