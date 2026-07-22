@@ -33,9 +33,16 @@ function app() {
         resultTimeSpent: '',
         resultWrongQuestions: [], // questions answered incorrectly in test
         
-        // Feedback State
+        // Feedback State & Micro-interactions
         feedbackTexts: {}, // maps question ID to text
         feedbackStatuses: {}, // maps question ID to 'idle', 'sending', 'success', 'error'
+        showUnsentGuard: false,
+        pendingNavigationFn: null,
+        showSuccessOverlay: false,
+        isGuardSubmitting: false,
+        guardErrorText: '',
+        previouslyFocusedElement: null,
+        successOverlayTimer: null,
         
         // Init
         init() {
@@ -137,10 +144,109 @@ function app() {
                 });
         },
 
+        // Helper: Check if question has unsent non-empty feedback
+        hasUnsentFeedback(qId) {
+            if (!qId) return false;
+            const currentText = (this.feedbackTexts[qId] || '').trim();
+            return currentText.length > 0;
+        },
+
+        getCurrentActiveQuestion() {
+            if (this.currentView === 'study') return this.currentStudyQuestion;
+            if (this.currentView === 'test') return this.currentTestQuestion;
+            return null;
+        },
+
+        guardNavigation(targetFn) {
+            const currentQ = this.getCurrentActiveQuestion();
+            if (currentQ && this.hasUnsentFeedback(currentQ.id)) {
+                this.previouslyFocusedElement = document.activeElement;
+                this.pendingNavigationFn = targetFn;
+                this.guardErrorText = '';
+                this.showUnsentGuard = true;
+                return;
+            }
+            if (typeof targetFn === 'function') {
+                targetFn();
+            }
+        },
+
+        cancelGuard() {
+            if (this.isGuardSubmitting || this.showSuccessOverlay) return;
+            this.showUnsentGuard = false;
+            this.guardErrorText = '';
+            this.pendingNavigationFn = null;
+            if (this.previouslyFocusedElement && typeof this.previouslyFocusedElement.focus === 'function' && document.body.contains(this.previouslyFocusedElement)) {
+                this.previouslyFocusedElement.focus();
+            }
+            this.previouslyFocusedElement = null;
+        },
+
+        confirmDiscardGuard() {
+            if (this.isGuardSubmitting || this.showSuccessOverlay) return;
+            const fn = this.pendingNavigationFn;
+            this.showUnsentGuard = false;
+            this.guardErrorText = '';
+            this.pendingNavigationFn = null;
+            this.previouslyFocusedElement = null;
+            if (typeof fn === 'function') {
+                fn();
+                this.focusActiveQuestionTarget();
+            }
+        },
+
+        async confirmSendGuard() {
+            if (this.isGuardSubmitting) return;
+            const currentQ = this.getCurrentActiveQuestion();
+            if (!currentQ) return;
+
+            this.isGuardSubmitting = true;
+            this.guardErrorText = '';
+            const mode = this.currentView === 'test' ? 'test' : 'practice';
+
+            try {
+                await this.submitFeedback(currentQ, mode, { fromGuard: true });
+            } finally {
+                this.isGuardSubmitting = false;
+            }
+        },
+
+        handleGuardTab(e) {
+            if (!this.showUnsentGuard) return;
+            const focusables = [this.$refs.guardDiscardBtn, this.$refs.guardSendBtn].filter(Boolean);
+            if (focusables.length === 0) return;
+            const first = focusables[0];
+            const last = focusables[focusables.length - 1];
+
+            if (e.shiftKey) {
+                if (document.activeElement === first || !focusables.includes(document.activeElement)) {
+                    e.preventDefault();
+                    last.focus();
+                }
+            } else {
+                if (document.activeElement === last || !focusables.includes(document.activeElement)) {
+                    e.preventDefault();
+                    first.focus();
+                }
+            }
+        },
+
+        focusActiveQuestionTarget() {
+            this.$nextTick(() => {
+                if (this.currentView === 'study' && this.$refs.practiceQuestionHeading) {
+                    this.$refs.practiceQuestionHeading.focus();
+                } else if (this.currentView === 'test' && this.$refs.testQuestionHeading) {
+                    this.$refs.testQuestionHeading.focus();
+                }
+            });
+        },
+
         // Study Mode: select section
         selectSection(index) {
-            this.activeSectionIndex = index;
-            this.studyIndex = 0;
+            this.guardNavigation(() => {
+                this.activeSectionIndex = index;
+                this.studyIndex = 0;
+            });
         },
 
         // Study Mode: get current question
@@ -165,13 +271,17 @@ function app() {
 
         // Study Mode: navigation
         prevStudyQuestion() {
-            this.studyIndex = Math.max(0, this.studyIndex - 1);
+            this.guardNavigation(() => {
+                this.studyIndex = Math.max(0, this.studyIndex - 1);
+            });
         },
         nextStudyQuestion() {
-            const sec = this.sections[this.activeSectionIndex];
-            if (sec && this.studyIndex < sec.questions.length - 1) {
-                this.studyIndex++;
-            }
+            this.guardNavigation(() => {
+                const sec = this.sections[this.activeSectionIndex];
+                if (sec && this.studyIndex < sec.questions.length - 1) {
+                    this.studyIndex++;
+                }
+            });
         },
 
         // Study Mode: Styling helpers
@@ -319,17 +429,23 @@ function app() {
 
         // Test Mode: navigation
         prevTestQuestion() {
-            this.testCurrentIndex = Math.max(0, this.testCurrentIndex - 1);
+            this.guardNavigation(() => {
+                this.testCurrentIndex = Math.max(0, this.testCurrentIndex - 1);
+            });
         },
         nextTestQuestion() {
-            if (this.testCurrentIndex < 29) {
-                this.testCurrentIndex++;
-            } else {
-                this.showConfirmSubmit = true;
-            }
+            this.guardNavigation(() => {
+                if (this.testCurrentIndex < 29) {
+                    this.testCurrentIndex++;
+                } else {
+                    this.showConfirmSubmit = true;
+                }
+            });
         },
         jumpToTestQuestion(index) {
-            this.testCurrentIndex = index;
+            this.guardNavigation(() => {
+                this.testCurrentIndex = index;
+            });
         },
 
         // Helper to format seconds to mm:ss
@@ -414,12 +530,15 @@ function app() {
             this.currentView = 'study';
         },
 
-        async submitFeedback(q, mode) {
+        async submitFeedback(q, mode, options = {}) {
             const text = (this.feedbackTexts[q.id] || '').trim();
             if (!text || text.length > 1000) return;
             if (this.feedbackStatuses[q.id] === 'sending') return;
 
             this.feedbackStatuses[q.id] = 'sending';
+            if (options.fromGuard) {
+                this.guardErrorText = '';
+            }
 
             const payload = {
                 learnerName: this.learnerName,
@@ -445,18 +564,62 @@ function app() {
                 const data = await res.json();
                 if (data.ok) {
                     this.feedbackStatuses[q.id] = 'success';
-                    setTimeout(() => {
+                    this.feedbackTexts[q.id] = '';
+                    this.showUnsentGuard = false;
+                    this.guardErrorText = '';
+
+                    // Trigger Polished Success Moment Overlay (~800ms) with timer safety
+                    if (this.successOverlayTimer) {
+                        clearTimeout(this.successOverlayTimer);
+                        this.successOverlayTimer = null;
+                    }
+
+                    this.showSuccessOverlay = true;
+                    this.$nextTick(() => {
+                        if (this.$refs.successOverlayBox) {
+                            this.$refs.successOverlayBox.focus();
+                        }
+                    });
+
+                    this.successOverlayTimer = setTimeout(() => {
+                        this.showSuccessOverlay = false;
+                        this.successOverlayTimer = null;
                         this.feedbackStatuses[q.id] = 'idle';
-                        this.feedbackTexts[q.id] = '';
-                    }, 1800);
+
+                        // If submitted from navigation guard, complete pending navigation after success moment
+                        if (options.fromGuard && typeof this.pendingNavigationFn === 'function') {
+                            const fn = this.pendingNavigationFn;
+                            this.pendingNavigationFn = null;
+                            this.previouslyFocusedElement = null;
+                            fn();
+                            this.focusActiveQuestionTarget();
+                        } else {
+                            // Direct submission: return focus to exact matching textarea for this question
+                            this.$nextTick(() => {
+                                const textareas = Array.from(document.querySelectorAll('textarea[data-feedback-qid]'));
+                                const target = textareas.find(el => el.dataset.feedbackQid === q.id && el.offsetParent !== null && !el.disabled);
+                                if (target && typeof target.focus === 'function') {
+                                    target.focus();
+                                } else {
+                                    this.focusActiveQuestionTarget();
+                                }
+                            });
+                        }
+                    }, 800);
                 } else {
                     this.feedbackStatuses[q.id] = 'error';
+                    if (options.fromGuard) {
+                        this.guardErrorText = 'Gửi thất bại, vui lòng thử lại';
+                    }
                     setTimeout(() => {
                         if (this.feedbackStatuses[q.id] === 'error') this.feedbackStatuses[q.id] = 'idle';
                     }, 4000);
                 }
             } catch (err) {
                 this.feedbackStatuses[q.id] = 'error';
+                if (options.fromGuard) {
+                    this.guardErrorText = 'Gửi thất bại, vui lòng thử lại';
+                }
                 setTimeout(() => {
                     if (this.feedbackStatuses[q.id] === 'error') this.feedbackStatuses[q.id] = 'idle';
                 }, 4000);
