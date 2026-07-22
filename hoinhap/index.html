@@ -199,7 +199,7 @@
                                 <span class="text-slate-400 text-[11px] font-bold font-quicksand uppercase tracking-wider" x-text="'Phần ' + currentStudyQuestion?.sectionNo + ' · Câu ' + (studyIndex + 1) + '/' + sections[activeSectionIndex]?.total"></span>
                             </div>
                         </div>
-                        <h2 class="text-[19px] md:text-[21px] lg:text-[24px] font-bold font-quicksand text-slate-800 mb-8 leading-snug" x-text="currentStudyQuestion?.question"></h2>
+                        <h2 x-ref="practiceQuestionHeading" id="practice-question-heading" tabindex="-1" class="text-[19px] md:text-[21px] lg:text-[24px] font-bold font-quicksand text-slate-800 mb-8 leading-snug focus:outline-none" x-text="currentStudyQuestion?.question"></h2>
                         
                         <div class="grid grid-cols-1 gap-4">
                             <template :key="idx" x-for="(opt, idx) in currentStudyQuestion?.options">
@@ -233,7 +233,8 @@
                             <!-- Feedback UI Practice Mode -->
                             <div class="mt-4" x-show="currentStudyQuestion">
                                 <div class="relative group">
-                                    <textarea x-model="feedbackTexts[currentStudyQuestion.id]" 
+                                    <textarea x-ref="practiceFeedbackInput"
+                                              x-model="feedbackTexts[currentStudyQuestion.id]"
                                               @input="feedbackStatuses[currentStudyQuestion.id] = 'idle'"
                                               placeholder="Góp ý của bạn về câu này" 
                                               rows="1" 
@@ -251,11 +252,8 @@
                                         </template>
                                     </button>
                                 </div>
-                                    <div x-show="false" class="mt-2 text-[12px] font-bold text-primary flex items-center gap-1 font-quicksand">
-                                        <span class="material-symbols-outlined text-[14px]">check_circle</span> Đã nhận góp ý của bạn
-                                    </div>
                                 <div x-show="feedbackStatuses[currentStudyQuestion.id] === 'error'" x-transition class="mt-2 text-[12px] font-bold text-error flex items-center gap-1 font-quicksand">
-                                    <span class="material-symbols-outlined text-[14px]">error</span> Gửi thất bại, vui lòng thử lại
+                                    <span class="material-symbols-outlined text-14px">error</span> Gửi thất bại, vui lòng thử lại
                                 </div>
                             </div>
                         </div>
@@ -324,7 +322,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <h2 class="text-2xl font-bold font-quicksand leading-snug text-slate-800 mb-8" x-text="currentTestQuestion?.question"></h2>
+                            <h2 x-ref="testQuestionHeading" id="test-question-heading" tabindex="-1" class="text-2xl font-bold font-quicksand leading-snug text-slate-800 mb-8 focus:outline-none" x-text="currentTestQuestion?.question"></h2>
                             
                             <div class="grid grid-cols-1 gap-4">
                                 <template :key="idx" x-for="(opt, idx) in currentTestQuestion?.options">
@@ -503,9 +501,6 @@
                                             </template>
                                         </button>
                                     </div>
-                                    <div x-show="false" class="mt-2 text-[12px] font-bold text-primary flex items-center gap-1 font-quicksand">
-                                        <span class="material-symbols-outlined text-[14px]">check_circle</span> Đã nhận góp ý của bạn
-                                    </div>
                                     <div x-show="feedbackStatuses[w.question.id] === 'error'" x-transition class="mt-2 text-[12px] font-bold text-error flex items-center gap-1 font-quicksand">
                                         <span class="material-symbols-outlined text-[14px]">error</span> Gửi thất bại, vui lòng thử lại
                                     </div>
@@ -560,7 +555,7 @@
 
     <!-- Unsent Feedback Guard Dialog -->
     <div x-show="showUnsentGuard"
-         x-effect="if (showUnsentGuard) { $nextTick(() => { $refs.guardSendBtn && $refs.guardSendBtn.focus(); }); }"
+         x-effect="if (showUnsentGuard && !showSuccessOverlay) { $nextTick(() => { $refs.guardSendBtn && $refs.guardSendBtn.focus(); }); }"
          x-transition:enter="transition-opacity ease-out duration-200"
          x-transition:enter-start="opacity-0"
          x-transition:enter-end="opacity-100"
@@ -569,7 +564,7 @@
          x-transition:leave-end="opacity-0"
          class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/20 backdrop-blur-[2px]"
          style="display: none;"
-         @keydown.escape.window="if (showUnsentGuard && !isGuardSubmitting) cancelGuard()"
+         @keydown.escape.window="if (showUnsentGuard && !isGuardSubmitting && !showSuccessOverlay) cancelGuard()"
          @keydown.tab="handleGuardTab($event)"
          role="dialog"
          aria-modal="true"
@@ -577,10 +572,11 @@
          aria-describedby="unsent-guard-desc">
         <!-- Backdrop -->
         <div class="fixed inset-0 transition-opacity"
-             @click="if (!isGuardSubmitting) cancelGuard()"></div>
+             @click="if (!isGuardSubmitting && !showSuccessOverlay) cancelGuard()"></div>
 
         <!-- Dialog Card -->
-        <div x-transition:enter="transition-all ease-out duration-200 motion-reduce:transition-opacity"
+        <div x-show="showUnsentGuard"
+             x-transition:enter="transition-all ease-out duration-200 motion-reduce:transition-opacity"
              x-transition:enter-start="opacity-0 scale-95 motion-reduce:scale-100"
              x-transition:enter-end="opacity-100 scale-100"
              x-transition:leave="transition-all ease-in duration-150 motion-reduce:transition-opacity"
@@ -626,15 +622,19 @@
          x-transition:leave-end="opacity-0"
          class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/20 backdrop-blur-[2px] pointer-events-auto"
          style="display: none;"
+         @keydown.window="if (showSuccessOverlay) { $event.preventDefault(); $event.stopPropagation(); }"
          role="status"
          aria-live="polite">
-        <div x-transition:enter="transition-all ease-out duration-200 motion-reduce:transition-opacity"
+        <div x-show="showSuccessOverlay"
+             x-ref="successOverlayBox"
+             tabindex="-1"
+             x-transition:enter="transition-all ease-out duration-200 motion-reduce:transition-opacity"
              x-transition:enter-start="opacity-0 scale-95 motion-reduce:scale-100"
              x-transition:enter-end="opacity-100 scale-100"
              x-transition:leave="transition-all ease-in duration-150 motion-reduce:transition-opacity"
              x-transition:leave-start="opacity-100 scale-100"
              x-transition:leave-end="opacity-0 scale-95 motion-reduce:scale-100"
-             class="bg-white/95 backdrop-blur-md rounded-2xl p-5 shadow-xl border border-slate-100/80 flex flex-col items-center justify-center text-center transform motion-reduce:transform-none">
+             class="bg-white/95 backdrop-blur-md rounded-2xl p-5 shadow-xl border border-slate-100/80 flex flex-col items-center justify-center text-center transform motion-reduce:transform-none focus:outline-none">
             <div class="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 text-white shadow-md shadow-emerald-500/20 flex items-center justify-center mb-2.5">
                 <span class="material-symbols-outlined text-2xl font-bold">check</span>
             </div>

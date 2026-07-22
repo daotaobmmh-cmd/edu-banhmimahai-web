@@ -172,7 +172,7 @@ function app() {
         },
 
         cancelGuard() {
-            if (this.isGuardSubmitting) return;
+            if (this.isGuardSubmitting || this.showSuccessOverlay) return;
             this.showUnsentGuard = false;
             this.guardErrorText = '';
             this.pendingNavigationFn = null;
@@ -183,7 +183,7 @@ function app() {
         },
 
         confirmDiscardGuard() {
-            if (this.isGuardSubmitting) return;
+            if (this.isGuardSubmitting || this.showSuccessOverlay) return;
             const fn = this.pendingNavigationFn;
             this.showUnsentGuard = false;
             this.guardErrorText = '';
@@ -191,7 +191,7 @@ function app() {
             this.previouslyFocusedElement = null;
             if (typeof fn === 'function') {
                 fn();
-                this.focusActiveQuestionArea();
+                this.focusActiveQuestionTarget();
             }
         },
 
@@ -231,13 +231,14 @@ function app() {
             }
         },
 
-        focusActiveQuestionArea() {
-            setTimeout(() => {
-                const el = document.querySelector('h2.font-quicksand') || document.querySelector('[tabindex="0"]');
-                if (el && typeof el.focus === 'function') {
-                    el.focus();
+        focusActiveQuestionTarget() {
+            this.$nextTick(() => {
+                if (this.currentView === 'study' && this.$refs.practiceQuestionHeading) {
+                    this.$refs.practiceQuestionHeading.focus();
+                } else if (this.currentView === 'test' && this.$refs.testQuestionHeading) {
+                    this.$refs.testQuestionHeading.focus();
                 }
-            }, 50);
+            });
         },
 
         // Study Mode: select section
@@ -539,6 +540,8 @@ function app() {
                 this.guardErrorText = '';
             }
 
+            const directSubmitFocusEl = !options.fromGuard ? document.activeElement : null;
+
             const payload = {
                 learnerName: this.learnerName,
                 stableId: q.stableId || q.id,
@@ -574,6 +577,12 @@ function app() {
                     }
 
                     this.showSuccessOverlay = true;
+                    this.$nextTick(() => {
+                        if (this.$refs.successOverlayBox) {
+                            this.$refs.successOverlayBox.focus();
+                        }
+                    });
+
                     this.successOverlayTimer = setTimeout(() => {
                         this.showSuccessOverlay = false;
                         this.successOverlayTimer = null;
@@ -585,7 +594,14 @@ function app() {
                             this.pendingNavigationFn = null;
                             this.previouslyFocusedElement = null;
                             fn();
-                            this.focusActiveQuestionArea();
+                            this.focusActiveQuestionTarget();
+                        } else {
+                            // Direct submission: return focus to textarea or usable control for current question
+                            if (directSubmitFocusEl && typeof directSubmitFocusEl.focus === 'function' && document.body.contains(directSubmitFocusEl) && !directSubmitFocusEl.disabled) {
+                                directSubmitFocusEl.focus();
+                            } else if (this.$refs.practiceFeedbackInput) {
+                                this.$refs.practiceFeedbackInput.focus();
+                            }
                         }
                     }, 800);
                 } else {
