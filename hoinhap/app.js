@@ -33,9 +33,14 @@ function app() {
         resultTimeSpent: '',
         resultWrongQuestions: [], // questions answered incorrectly in test
         
-        // Feedback State
+        // Feedback State & Micro-interactions
         feedbackTexts: {}, // maps question ID to text
         feedbackStatuses: {}, // maps question ID to 'idle', 'sending', 'success', 'error'
+        lastSubmittedFeedback: {}, // maps question ID to last successfully submitted trimmed text
+        showUnsentGuard: false,
+        pendingNavigationFn: null,
+        showSuccessOverlay: false,
+        isGuardSubmitting: false,
         
         // Init
         init() {
@@ -137,10 +142,68 @@ function app() {
                 });
         },
 
+        // Helper: Check if question has unsent non-empty feedback
+        hasUnsentFeedback(qId) {
+            if (!qId) return false;
+            const currentText = (this.feedbackTexts[qId] || '').trim();
+            if (!currentText) return false;
+            const lastText = this.lastSubmittedFeedback[qId] || '';
+            return currentText !== lastText;
+        },
+
+        getCurrentActiveQuestion() {
+            if (this.currentView === 'study') return this.currentStudyQuestion;
+            if (this.currentView === 'test') return this.currentTestQuestion;
+            return null;
+        },
+
+        guardNavigation(targetFn) {
+            const currentQ = this.getCurrentActiveQuestion();
+            if (currentQ && this.hasUnsentFeedback(currentQ.id)) {
+                this.pendingNavigationFn = targetFn;
+                this.showUnsentGuard = true;
+                return;
+            }
+            if (typeof targetFn === 'function') {
+                targetFn();
+            }
+        },
+
+        confirmDiscardGuard() {
+            const fn = this.pendingNavigationFn;
+            this.showUnsentGuard = false;
+            this.pendingNavigationFn = null;
+            if (typeof fn === 'function') {
+                fn();
+            }
+        },
+
+        cancelGuard() {
+            this.showUnsentGuard = false;
+            this.pendingNavigationFn = null;
+        },
+
+        async confirmSendGuard() {
+            const currentQ = this.getCurrentActiveQuestion();
+            if (!currentQ || this.isGuardSubmitting) return;
+            const mode = this.currentView === 'test' ? 'test' : 'practice';
+            this.isGuardSubmitting = true;
+            await this.submitFeedback(currentQ, mode, { fromGuard: true });
+            this.isGuardSubmitting = false;
+        },
+
+        goHome() {
+            this.guardNavigation(() => {
+                this.currentView = 'gate';
+            });
+        },
+
         // Study Mode: select section
         selectSection(index) {
-            this.activeSectionIndex = index;
-            this.studyIndex = 0;
+            this.guardNavigation(() => {
+                this.activeSectionIndex = index;
+                this.studyIndex = 0;
+            });
         },
 
         // Study Mode: get current question
@@ -165,13 +228,17 @@ function app() {
 
         // Study Mode: navigation
         prevStudyQuestion() {
-            this.studyIndex = Math.max(0, this.studyIndex - 1);
+            this.guardNavigation(() => {
+                this.studyIndex = Math.max(0, this.studyIndex - 1);
+            });
         },
         nextStudyQuestion() {
-            const sec = this.sections[this.activeSectionIndex];
-            if (sec && this.studyIndex < sec.questions.length - 1) {
-                this.studyIndex++;
-            }
+            this.guardNavigation(() => {
+                const sec = this.sections[this.activeSectionIndex];
+                if (sec && this.studyIndex < sec.questions.length - 1) {
+                    this.studyIndex++;
+                }
+            });
         },
 
         // Study Mode: Styling helpers
@@ -319,17 +386,23 @@ function app() {
 
         // Test Mode: navigation
         prevTestQuestion() {
-            this.testCurrentIndex = Math.max(0, this.testCurrentIndex - 1);
+            this.guardNavigation(() => {
+                this.testCurrentIndex = Math.max(0, this.testCurrentIndex - 1);
+            });
         },
         nextTestQuestion() {
-            if (this.testCurrentIndex < 29) {
-                this.testCurrentIndex++;
-            } else {
-                this.showConfirmSubmit = true;
-            }
+            this.guardNavigation(() => {
+                if (this.testCurrentIndex < 29) {
+                    this.testCurrentIndex++;
+                } else {
+                    this.showConfirmSubmit = true;
+                }
+            });
         },
         jumpToTestQuestion(index) {
-            this.testCurrentIndex = index;
+            this.guardNavigation(() => {
+                this.testCurrentIndex = index;
+            });
         },
 
         // Helper to format seconds to mm:ss
@@ -414,7 +487,7 @@ function app() {
             this.currentView = 'study';
         },
 
-        async submitFeedback(q, mode) {
+        async submitFeedback(q, mode, options = {}) {
             const text = (this.feedbackTexts[q.id] || '').trim();
             if (!text || text.length > 1000) return;
             if (this.feedbackStatuses[q.id] === 'sending') return;
@@ -445,10 +518,23 @@ function app() {
                 const data = await res.json();
                 if (data.ok) {
                     this.feedbackStatuses[q.id] = 'success';
+                    this.lastSubmittedFeedback[q.id] = text;
+                    this.feedbackTexts[q.id] = '';
+                    this.showUnsentGuard = false;
+
+                    // Trigger Polished Success Moment Overlay (~800ms)
+                    this.showSuccessOverlay = true;
                     setTimeout(() => {
+                        this.showSuccessOverlay = false;
                         this.feedbackStatuses[q.id] = 'idle';
-                        this.feedbackTexts[q.id] = '';
-                    }, 1800);
+
+                        // If submitted from navigation guard, complete pending navigation after success moment
+                        if (options.fromGuard && typeof this.pendingNavigationFn === 'function') {
+                            const fn = this.pendingNavigationFn;
+                            this.pendingNavigationFn = null;
+                            fn();
+                        }
+                    }, 800);
                 } else {
                     this.feedbackStatuses[q.id] = 'error';
                     setTimeout(() => {
