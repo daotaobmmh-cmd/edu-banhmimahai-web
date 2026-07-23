@@ -39,20 +39,6 @@ module.exports = async function handler(req, res) {
     return res.status(503).json({ ok: false, error: 'Feedback endpoint setup missing.' });
   }
 
-  // Rate limiting / Cooldown
-  const ip = req.headers['x-forwarded-for'] || req.socket?.remoteAddress || 'unknown';
-  const stableIdForLimiter = String(req.body?.stableId || '').trim();
-  const limiterKey = `${ip}_${stableIdForLimiter}`;
-  
-  if (!global.feedbackCooldowns) {
-    global.feedbackCooldowns = new Map();
-  }
-  
-  const lastSubmit = global.feedbackCooldowns.get(limiterKey);
-  if (lastSubmit && Date.now() - lastSubmit < 60000) { // 60s cooldown per question per IP
-    return res.status(429).json({ ok: false, error: 'Vui lòng đợi một lát trước khi gửi tiếp góp ý cho câu này.' });
-  }
-
 
   const body = req.body || {};
   const rawFeedbackText = String(body.feedbackText || '').trim();
@@ -112,7 +98,6 @@ module.exports = async function handler(req, res) {
       return res.status(502).json({ ok: false, error: 'Không thể lưu góp ý vào Notion.' });
     }
 
-    global.feedbackCooldowns.set(limiterKey, Date.now());
     return res.status(200).json({ ok: true });
   } catch (err) {
     console.error('Fetch error:', err);
