@@ -201,7 +201,21 @@ module.exports = async function handler(req, res) {
     }
   }
 
-async function fetchWithRetry(url, options = {}, maxRetries = 3, timeoutMs = 6000) {
+function parseRetryAfterMs(headerVal) {
+  if (!headerVal) return null;
+  const parsedInt = parseInt(headerVal, 10);
+  if (!isNaN(parsedInt) && parsedInt >= 0) {
+    return parsedInt * 1000;
+  }
+  const parsedDate = Date.parse(headerVal);
+  if (!isNaN(parsedDate)) {
+    const diff = parsedDate - Date.now();
+    return diff > 0 ? diff : 1000;
+  }
+  return null;
+}
+
+async function fetchWithRetry(url, options = {}, maxRetries = 10, timeoutMs = 12000) {
   let attempt = 0;
   let lastError = null;
 
@@ -219,18 +233,16 @@ async function fetchWithRetry(url, options = {}, maxRetries = 3, timeoutMs = 600
         return res;
       }
 
-      const isRetryable = res.status === 429 || (res.status >= 500 && res.status <= 599);
+      const isRetryable = res.status === 429 || res.status === 409 || (res.status >= 500 && res.status <= 599);
       if (!isRetryable || attempt > maxRetries) {
         return res;
       }
 
       let delayMs = 200 * Math.pow(2, attempt - 1) + Math.floor(Math.random() * 100);
       const retryAfterHeader = (res.headers && typeof res.headers.get === 'function') ? res.headers.get('retry-after') : null;
-      if (retryAfterHeader) {
-        const parsed = parseInt(retryAfterHeader, 10);
-        if (!isNaN(parsed) && parsed > 0) {
-          delayMs = Math.min(parsed * 1000, 5000);
-        }
+      const parsedDelay = parseRetryAfterMs(retryAfterHeader);
+      if (parsedDelay !== null) {
+        delayMs = Math.min(parsedDelay + Math.floor(Math.random() * 300), 10000);
       }
 
       await new Promise(resolve => setTimeout(resolve, delayMs));
@@ -345,20 +357,85 @@ async function fetchWithRetry(url, options = {}, maxRetries = 3, timeoutMs = 600
       }
     };
 
-    // 3. Create Page on Notion
+    // 3. Create Page on Notion with Preflight Re-check on Retry
     let createRes;
-    try {
-      createRes = await fetchWithRetry('https://api.notion.com/v1/pages', {
-        method: 'POST',
-        headers: {
-          authorization: `Bearer ${NOTION_TOKEN}`,
-          'content-type': 'application/json',
-          'notion-version': NOTION_VERSION
-        },
-        body: JSON.stringify(notionPayload)
-      });
-    } catch (err) {
-      throw new Error('Không thể kết nối đến dịch vụ lưu trữ để ghi nhận kết quả thi.');
+    let createAttempt = 0;
+    const maxCreateRetries = 10;
+
+    while (createAttempt <= maxCreateRetries) {
+      createAttempt++;
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 12000);
+      let pageError = null;
+
+      try {
+        const fetchFn = global.customFetch || fetch;
+        createRes = await fetchFn('https://api.notion.com/v1/pages', {
+          method: 'POST',
+          headers: {
+            authorization: `Bearer ${NOTION_TOKEN}`,
+            'content-type': 'application/json',
+            'notion-version': NOTION_VERSION
+          },
+          body: JSON.stringify(notionPayload),
+          signal: controller.signal
+        });
+        clearTimeout(timer);
+
+        if (createRes.ok) {
+          break;
+        }
+
+        const isRetryable = createRes.status === 429 || createRes.status === 409 || (createRes.status >= 500 && createRes.status <= 599);
+        if (!isRetryable || createAttempt > maxCreateRetries) {
+          break;
+        }
+
+        const retryAfterHeader = (createRes.headers && typeof createRes.headers.get === 'function') ? createRes.headers.get('retry-after') : null;
+        const parsedDelay = parseRetryAfterMs(retryAfterHeader);
+        let delayMs = (parsedDelay !== null) ? Math.min(parsedDelay + Math.floor(Math.random() * 300), 10000) : (250 * Math.pow(2, createAttempt - 1) + Math.floor(Math.random() * 100));
+        await new Promise(resolve => setTimeout(resolve, delayMs));
+
+      } catch (err) {
+        clearTimeout(timer);
+        pageError = err;
+      }
+
+      // Recheck Notion DB before repeating POST /v1/pages
+      try {
+        const fetchFn = global.customFetch || fetch;
+        const recheckRes = await fetchFn(`https://api.notion.com/v1/databases/${NOTION_QUIZ_RESULT_DATA_SOURCE_ID}/query`, {
+          method: 'POST',
+          headers: {
+            authorization: `Bearer ${NOTION_TOKEN}`,
+            'content-type': 'application/json',
+            'notion-version': NOTION_VERSION
+          },
+          body: JSON.stringify({
+            filter: { property: 'Result ID', title: { equals: attemptId } }
+          })
+        });
+        if (recheckRes.ok) {
+          const recheckData = await recheckRes.json();
+          if (recheckData && Array.isArray(recheckData.results) && recheckData.results.length > 0) {
+            const pageProps = recheckData.results[0].properties || {};
+            const score = typeof pageProps['Điểm']?.number === 'number' ? pageProps['Điểm'].number : 0;
+            const threshold = typeof pageProps['Ngưỡng đạt']?.number === 'number' ? pageProps['Ngưỡng đạt'].number : getThresholdForUnit(unit);
+            const statusName = pageProps['Kết quả']?.status?.name || (score >= threshold ? 'Đạt' : 'Chưa đạt');
+            const passed = statusName === 'Đạt';
+            const wrong = typeof pageProps['Số câu sai']?.number === 'number' ? pageProps['Số câu sai'].number : 0;
+            const unanswered = typeof pageProps['Số câu chưa trả lời']?.number === 'number' ? pageProps['Số câu chưa trả lời'].number : 0;
+
+            const storedResult = { attemptId, duplicate: true, score, total: 30, threshold, passed, wrong, unanswered };
+            global.quizResultCache.set(attemptId, storedResult);
+            return storedResult;
+          }
+        }
+      } catch (e) {}
+
+      if (pageError && createAttempt > maxCreateRetries) {
+        throw pageError;
+      }
     }
 
     if (!createRes.ok) {

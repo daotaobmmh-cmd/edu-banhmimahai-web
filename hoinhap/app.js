@@ -606,30 +606,50 @@ function app() {
             } catch (e) {}
 
             try {
+                const controller = new AbortController();
+                const timer = setTimeout(() => controller.abort(), 10000);
                 const res = await fetch('/api/quiz-result', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
+                    body: JSON.stringify(payload),
+                    signal: controller.signal
                 });
+                clearTimeout(timer);
                 const data = await res.json();
                 if (data.ok) {
                     if (typeof data.score === 'number') this.resultScore = data.score;
                     if (typeof data.passed === 'boolean') this.resultPassed = data.passed;
                     if (typeof data.threshold === 'number') this.resultThreshold = data.threshold;
                     this.resultSendingStatus = 'success';
+                    this.resultAutoRetryAttempt = 0;
                     try {
                         localStorage.removeItem('hoinhap:pendingQuizResult');
                     } catch (e) {}
                 } else {
                     this.resultSendingStatus = 'error';
                     this.resultErrorMessage = data.error || 'Không thể lưu kết quả thi.';
+                    this.scheduleClientAutoRetry(payload);
                 }
             } catch (err) {
                 this.resultSendingStatus = 'error';
                 this.resultErrorMessage = 'Không thể kết nối đến máy chủ.';
+                this.scheduleClientAutoRetry(payload);
             } finally {
                 this.isSubmittingResult = false;
             }
+        },
+
+        scheduleClientAutoRetry(payload) {
+            if (!this.resultAutoRetryAttempt) this.resultAutoRetryAttempt = 0;
+            if (this.resultAutoRetryAttempt >= 3) return; // Limit background auto-retries while tab open to 3
+            this.resultAutoRetryAttempt++;
+            const backoffMs = Math.min(5000 * Math.pow(2, this.resultAutoRetryAttempt - 1), 20000);
+            setTimeout(() => {
+                const rawPending = localStorage.getItem('hoinhap:pendingQuizResult');
+                if (rawPending && this.resultSendingStatus === 'error') {
+                    this.postQuizResult(payload).catch(() => {});
+                }
+            }, backoffMs);
         },
 
         // Study Mode: Enter study view

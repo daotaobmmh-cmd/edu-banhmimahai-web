@@ -81,7 +81,21 @@ module.exports = async function handler(req, res) {
     }
   };
 
-async function fetchWithRetry(url, options = {}, maxRetries = 3, timeoutMs = 6000) {
+function parseRetryAfterMs(headerVal) {
+  if (!headerVal) return null;
+  const parsedInt = parseInt(headerVal, 10);
+  if (!isNaN(parsedInt) && parsedInt >= 0) {
+    return parsedInt * 1000;
+  }
+  const parsedDate = Date.parse(headerVal);
+  if (!isNaN(parsedDate)) {
+    const diff = parsedDate - Date.now();
+    return diff > 0 ? diff : 1000;
+  }
+  return null;
+}
+
+async function fetchWithRetry(url, options = {}, maxRetries = 10, timeoutMs = 12000) {
   let attempt = 0;
   let lastError = null;
 
@@ -99,18 +113,16 @@ async function fetchWithRetry(url, options = {}, maxRetries = 3, timeoutMs = 600
         return res;
       }
 
-      const isRetryable = res.status === 429 || (res.status >= 500 && res.status <= 599);
+      const isRetryable = res.status === 429 || res.status === 409 || (res.status >= 500 && res.status <= 599);
       if (!isRetryable || attempt > maxRetries) {
         return res;
       }
 
       let delayMs = 200 * Math.pow(2, attempt - 1) + Math.floor(Math.random() * 100);
       const retryAfterHeader = (res.headers && typeof res.headers.get === 'function') ? res.headers.get('retry-after') : null;
-      if (retryAfterHeader) {
-        const parsed = parseInt(retryAfterHeader, 10);
-        if (!isNaN(parsed) && parsed > 0) {
-          delayMs = Math.min(parsed * 1000, 5000);
-        }
+      const parsedDelay = parseRetryAfterMs(retryAfterHeader);
+      if (parsedDelay !== null) {
+        delayMs = Math.min(parsedDelay + Math.floor(Math.random() * 300), 10000);
       }
 
       await new Promise(resolve => setTimeout(resolve, delayMs));
