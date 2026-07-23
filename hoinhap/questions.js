@@ -60,27 +60,27 @@ window.HOINHAP_QUESTIONS = [
     "stableId": "HN-3",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "Người làm việc tại VSF được gọi chung là gì?",
+    "question": "Trong nội bộ VSF, người làm việc tại công ty có thể được gọi bằng những cách nào?",
     "options": [
       {
         "key": "a",
-        "text": "Đồng nghiệp."
-      },
-      {
-        "key": "b",
-        "text": "Sếp."
-      },
-      {
-        "key": "c",
         "text": "VSFer."
       },
       {
+        "key": "b",
+        "text": "Mahaier."
+      },
+      {
+        "key": "c",
+        "text": "Anh em."
+      },
+      {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Tất cả các đáp án trên."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Người làm việc tại VSF được gọi chung là VSFer. Đây là cách gọi thân thuộc trong công ty, giúp mọi người thấy mình là một phần của tập thể VSF.",
+    "correctAnswer": "d",
+    "explanation": "Cả ba cách gọi đều được sử dụng trong nội bộ VSF theo từng bối cảnh. VSFer gắn với thương hiệu VSF, Mahaier gắn với nguồn gốc Nhà Má – Má Hải, còn anh em là cách gọi thân mật trong giao tiếp nội bộ. Trong tài liệu chính thức, nên ưu tiên VSFer để thống nhất cách gọi.",
     "displayNumber": 3
   },
   {
@@ -388,7 +388,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "LÀM CHỦ là tự chạy việc của mình một cách chủ động và minh bạch. Khi VSFer làm chủ tốt, công ty bớt phải đốc thúc, đội nhóm phối hợp nhẹ nhàng hơn và bản thân mình cũng trưởng thành nhanh hơn.",
+    "explanation": "LÀM CHỦ là chủ động thực hiện, theo dõi và chịu trách nhiệm với công việc của mình. Làm tốt giúp VSFer ít phải chờ nhắc, phối hợp rõ ràng hơn và tiến bộ nhanh hơn.",
     "displayNumber": 14
   },
   {
@@ -528,7 +528,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Văn phòng là nơi làm việc và hỗ trợ khách hàng; Kho vận phụ trách hàng hóa, giao nhận; Nhà máy MHF phụ trách sản xuất chả cá sợi. Hiểu đúng chức năng giúp nhân sự mới liên hệ đúng đơn vị và xử lý công việc nhanh hơn.",
+    "explanation": "Văn phòng là nơi làm việc và hỗ trợ khách hàng. Kho vận phụ trách hàng hóa, giao nhận. Nhà máy MHF phụ trách sản xuất chả cá sợi. Hiểu đúng chức năng giúp nhân sự mới liên hệ đúng đơn vị và xử lý công việc nhanh hơn.",
     "displayNumber": 19
   },
   {
@@ -536,19 +536,19 @@ window.HOINHAP_QUESTIONS = [
     "stableId": "HN-20",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "VSF áp dụng những loại hợp đồng lao động ( HĐLĐ) nào?",
+    "question": "VSF đang áp dụng những loại hợp đồng nào?",
     "options": [
       {
         "key": "a",
-        "text": "HĐLĐ xác định thời hạn (dưới 12 tháng hoặc 12–36 tháng)."
+        "text": "Hợp đồng lao động xác định thời hạn."
       },
       {
         "key": "b",
-        "text": "HĐLĐ không xác định thời hạn."
+        "text": "Hợp đồng lao động không xác định thời hạn."
       },
       {
         "key": "c",
-        "text": "Hợp đồng dịch vụ (áp dụng cho Tổ Shipper)."
+        "text": "Hợp đồng dịch vụ áp dụng cho Tổ Shipper."
       },
       {
         "key": "d",
@@ -556,7 +556,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "VSF có 3 loại hợp đồng: HĐLĐ xác định thời hạn (phần lớn nhân sự), HĐLĐ không xác định thời hạn (gắn bó lâu dài), và Hợp đồng dịch vụ (Tổ Shipper).",
+    "explanation": "VSF áp dụng hợp đồng lao động xác định thời hạn, hợp đồng lao động không xác định thời hạn và hợp đồng dịch vụ cho Tổ Shipper. VSFer cần xem đúng loại hợp đồng mình đã ký để hiểu quyền và nghĩa vụ liên quan.",
     "displayNumber": 20
   },
   {
@@ -580,7 +580,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Chọn a và b."
+        "text": "Đáp án a và b đúng."
       }
     ],
     "correctAnswer": "d",
@@ -696,7 +696,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Xử lý kỷ luật lao động phải đúng hình thức, đúng căn cứ và đúng trình tự. Hồ sơ, giải trình và quyết định cần được lưu vết rõ ràng; không tự bổ sung hình thức kỷ luật ngoài quy định.",
+    "explanation": "Xử lý kỷ luật lao động phải đúng hình thức, đúng căn cứ và đúng trình tự. Hồ sơ, giải trình và quyết định cần được lưu vết rõ ràng. Không tự bổ sung hình thức kỷ luật ngoài quy định.",
     "displayNumber": 25
   },
   {
@@ -704,19 +704,19 @@ window.HOINHAP_QUESTIONS = [
     "stableId": "HN-26",
     "sectionNo": 3,
     "sectionName": "",
-    "question": "Với vi phạm 12 Trái Cấm, VSF xử lý theo nguyên tắc nào?",
+    "question": "Với hành vi thuộc 12 Trái cấm người VSF không được ăn, VSF xử lý theo nguyên tắc nào?",
     "options": [
       {
         "key": "a",
-        "text": "Đây là nhóm vi phạm nghiêm trọng và có thể bị sa thải ngay."
+        "text": "Đây là nhóm vi phạm nghiêm trọng và có thể bị xem xét sa thải khi có căn cứ, đồng thời phải thực hiện đúng trình tự, thủ tục."
       },
       {
         "key": "b",
-        "text": "Nếu có dấu hiệu pháp lý, hồ sơ có thể chuyển cho cơ quan chức năng."
+        "text": "Nếu có dấu hiệu vi phạm pháp luật, hồ sơ có thể được chuyển cho cơ quan chức năng."
       },
       {
         "key": "c",
-        "text": "Dù xử lý nghiêm, vẫn cần đúng quy trình, có giải trình, biên bản và quyết định bằng văn bản."
+        "text": "Việc xử lý cần có giải trình, biên bản, căn cứ và quyết định bằng văn bản."
       },
       {
         "key": "d",
@@ -724,7 +724,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "12 Trái Cấm là vùng không được xem nhẹ. VSF có thể xử lý nghiêm để bảo vệ tập thể và công ty. Nhưng xử lý nghiêm vẫn phải đúng quy trình, có căn cứ và có lưu vết.",
+    "explanation": "12 Trái cấm người VSF không được ăn là nhóm hành vi vi phạm nghiêm trọng, nhưng không có nghĩa là tự động sa thải mà không xem xét. Mọi quyết định xử lý phải dựa trên căn cứ, mức độ vi phạm và đúng trình tự. Làm đúng quy trình giúp bảo vệ người lao động, người xử lý và công ty.",
     "displayNumber": 26
   },
   {
@@ -768,7 +768,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "12 ngày/năm (1 ngày/tháng), cộng thêm 1 ngày/5 năm thâm niên."
+        "text": "12 ngày/năm, cộng thêm 1 ngày sau mỗi 5 năm làm việc."
       },
       {
         "key": "c",
@@ -780,7 +780,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "VSFer chính thức có 12 ngày phép/năm, tính đều 1 ngày/tháng, cộng thêm 1 ngày thâm niên sau mỗi 5 năm. Đây là mức chuẩn theo Bộ luật Lao động. Các công ty ngoài như 6 hay 20 ngày đều không áp dụng cho VSF.",
+    "explanation": "VSFer làm đủ 12 tháng có 12 ngày phép năm trong điều kiện làm việc bình thường và được cộng thêm 1 ngày khi đủ mỗi 5 năm làm việc. Trường hợp chưa làm đủ 12 tháng, số ngày phép được tính theo thời gian làm việc và quy định đang áp dụng. VSFer nên theo dõi số phép trên hệ thống và liên hệ Phòng Nhân sự khi dữ liệu chưa chính xác.",
     "displayNumber": 28
   },
   {
@@ -836,7 +836,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Xin nghỉ đúng là phải có đơn trên 1Office và được quản lý trực tiếp duyệt trước. VSFer không tự nghỉ, không chỉ nhắn riêng và không nghỉ theo kiểu thích thì nghỉ.",
+    "explanation": "VSFer cần lập đơn trên 1Office, thông báo cho quản lý trực tiếp và theo dõi đến khi có phản hồi. Nếu đơn chưa được xử lý, cần chủ động nhắc người duyệt và bàn giao công việc. Không tự nghỉ chỉ vì đã gửi đơn.",
     "displayNumber": 30
   },
   {
@@ -852,7 +852,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Sau đó bổ sung đơn chứng từ y tế."
+        "text": "Sau đó bổ sung đơn và chứng từ y tế theo hướng dẫn đang áp dụng."
       },
       {
         "key": "c",
@@ -860,7 +860,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cả a và b."
+        "text": "Cả a và b đều đúng."
       }
     ],
     "correctAnswer": "d",
@@ -872,19 +872,19 @@ window.HOINHAP_QUESTIONS = [
     "stableId": "HN-32",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "Quản lý phép năm tại VSF cần nhớ gì?",
+    "question": "Khi quản lý phép năm, VSFer cần nhớ gì?",
     "options": [
       {
         "key": "a",
-        "text": "Sau mỗi tháng làm việc sẽ được cộng 1 ngày phép năm."
+        "text": "Theo dõi số phép được ghi nhận trên hệ thống."
       },
       {
         "key": "b",
-        "text": "Mỗi tháng được nghỉ tối đa 3 ngày phép. Trường hợp nghỉ vượt quá tối đa 3 ngày phép thì số ngày vượt được tính là nghỉ không lương."
+        "text": "Lập đơn và chờ phê duyệt trước khi nghỉ, trừ trường hợp khẩn cấp cần báo ngay."
       },
       {
         "key": "c",
-        "text": "Những ngày nghỉ đặc biệt như nghỉ lễ, Tết, nghỉ bù hoặc các ngày nghỉ khác theo thông báo chính thức của công ty không tính vào 3 ngày phép/tháng."
+        "text": "Theo dõi thông báo chính thức về ngày lễ, Tết, nghỉ bù và các ngày nghỉ đặc biệt."
       },
       {
         "key": "d",
@@ -892,7 +892,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "VSFer cần theo dõi số phép, dùng phép đúng quy định nội bộ và cập nhật các thông báo chính thức của công ty về ngày nghỉ đặc biệt.",
+    "explanation": "Số phép và cách tính ngày nghỉ có thể thay đổi theo thời gian làm việc và quy định đang áp dụng. VSFer cần theo dõi trên hệ thống, gửi đơn đúng quy trình và kiểm tra thông báo chính thức để quyền lợi được ghi nhận đúng.",
     "displayNumber": 32
   },
   {
@@ -900,19 +900,19 @@ window.HOINHAP_QUESTIONS = [
     "stableId": "HN-33",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "VSFer chính thức có những phúc lợi nền tảng nào?",
+    "question": "VSFer chính thức có thể được hưởng những nhóm quyền lợi nào?",
     "options": [
       {
         "key": "a",
-        "text": "Lương tháng 13 tùy theo kết quả kinh doanh của công ty."
+        "text": "Lương, thưởng và các khoản hỗ trợ theo chính sách đang áp dụng."
       },
       {
         "key": "b",
-        "text": "Phụ cấp, bảo hiểm, công cụ làm việc và đào tạo nội bộ theo nhu cầu công việc."
+        "text": "Bảo hiểm, công cụ làm việc và đào tạo theo nhu cầu công việc."
       },
       {
         "key": "c",
-        "text": "Chỉ có lương."
+        "text": "Chỉ có lương, không có quyền lợi nào khác."
       },
       {
         "key": "d",
@@ -920,7 +920,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Đây là nhóm phúc lợi gắn với công việc chính thức của VSFer. Hiểu đúng nhóm này giúp VSFer biết quyền lợi của mình và tránh nhầm với quà tặng hoặc phúc lợi công đoàn.",
+    "explanation": "Quyền lợi của VSFer gồm nhiều nhóm khác nhau và có thể được điều chỉnh theo từng giai đoạn. Khi cần kiểm tra mức hưởng hoặc điều kiện áp dụng, VSFer nên xem quy chế hiện hành hoặc liên hệ Phòng Nhân sự.",
     "displayNumber": 33
   },
   {
@@ -928,32 +928,32 @@ window.HOINHAP_QUESTIONS = [
     "stableId": "HN-34",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "VSFer có những phúc lợi cá nhân và gia đình nào?",
+    "question": "Cách hiểu nào KHÔNG đúng về phúc lợi tại VSF?",
     "options": [
       {
         "key": "a",
-        "text": "Quà cưới 1.500.000đ khi VSFer kết hôn khi có hồ sơ phù hợp."
+        "text": "Phúc lợi được áp dụng theo quy chế hoặc thông báo đang có hiệu lực."
       },
       {
         "key": "b",
-        "text": "Khám tổng quát định kỳ hàng năm"
+        "text": "Mỗi chương trình có thể có đối tượng và điều kiện khác nhau."
       },
       {
         "key": "c",
-        "text": "Quà cho con VSFer vào các dịp như Trung Thu, 1/6, Tết và khen thưởng học sinh giỏi theo quy định."
+        "text": "VSFer nên kiểm tra trên kênh chính thức khi chưa rõ quyền lợi."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Mọi phúc lợi đều cố định và áp dụng giống nhau cho tất cả VSFer."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Đây là nhóm phúc lợi chăm sóc đời sống cá nhân và gia đình của VSFer. VSFer cần căn cứ theo quy chế hoặc thông báo chính thức, không nghe theo tin đồn.",
+    "explanation": "Phúc lợi có thể thay đổi theo từng chương trình, từng đối tượng và từng thời kỳ. VSFer cần xem quy chế hoặc thông báo chính thức, không tự suy đoán từ thông tin truyền miệng.",
     "displayNumber": 34
   },
   {
-    "id": "HN-38",
-    "stableId": "HN-38",
+    "id": "HN-35",
+    "stableId": "HN-35",
     "sectionNo": 4,
     "sectionName": "",
     "question": "VSFer khi làm việc tại VSF cần mặc trang phục như thế nào?",
@@ -980,15 +980,15 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 35
   },
   {
-    "id": "HN-39",
-    "stableId": "HN-39",
+    "id": "HN-36",
+    "stableId": "HN-36",
     "sectionNo": 4,
     "sectionName": "",
     "question": "VSFer cần lưu ý gì về ngoại hình khi làm việc tại VSF?",
     "options": [
       {
         "key": "a",
-        "text": "Tóc tai gọn gàng, móng tay cắt ngắn và không sơn."
+        "text": "Tóc tai gọn gàng, móng tay sạch sẽ và phù hợp với yêu cầu của vị trí làm việc."
       },
       {
         "key": "b",
@@ -1008,8 +1008,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 36
   },
   {
-    "id": "HN-40",
-    "stableId": "HN-40",
+    "id": "HN-37",
+    "stableId": "HN-37",
     "sectionNo": 4,
     "sectionName": "",
     "question": "Khi giao tiếp với khách hàng, VSFer phải xưng hô như thế nào?",
@@ -1036,8 +1036,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 37
   },
   {
-    "id": "HN-41",
-    "stableId": "HN-41",
+    "id": "HN-38",
+    "stableId": "HN-38",
     "sectionNo": 4,
     "sectionName": "",
     "question": "Thái độ VSFer khi gặp khách hàng phải như thế nào?",
@@ -1064,79 +1064,79 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 38
   },
   {
-    "id": "HN-42",
-    "stableId": "HN-42",
+    "id": "HN-39",
+    "stableId": "HN-39",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "Sử dụng điện thoại cá nhân trong giờ làm được quy định như thế nào?",
+    "question": "VSFer nên sử dụng điện thoại cá nhân trong giờ làm như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Được phép dùng khi cần nhưng phải đúng lúc."
+        "text": "Chỉ sử dụng khi cần thiết và vào thời điểm phù hợp."
       },
       {
         "key": "b",
-        "text": "Dùng hợp lý, không ảnh hưởng công việc."
+        "text": "Không để việc riêng ảnh hưởng đến công việc, khách hàng hoặc an toàn tại nơi làm việc."
       },
       {
         "key": "c",
-        "text": "Biết kiểm soát thời gian việc riêng."
+        "text": "Chủ động kiểm soát thời gian sử dụng và tuân thủ quy định của vị trí làm việc."
       },
       {
         "key": "d",
-        "text": "Câu b và c đều đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Điện thoại cá nhân cần dùng đúng mức và không làm ảnh hưởng công việc. VSFer biết kiểm soát việc riêng sẽ tập trung hơn và giữ hình ảnh chuyên nghiệp hơn.",
+    "explanation": "Điện thoại cá nhân chỉ nên được sử dụng khi cần và không làm gián đoạn công việc, ảnh hưởng khách hàng hoặc gây mất an toàn. Kiểm soát tốt việc riêng giúp VSFer giữ sự tập trung và hình ảnh chuyên nghiệp.",
     "displayNumber": 39
   },
   {
-    "id": "HN-43",
-    "stableId": "HN-43",
-    "sectionNo": 4,
+    "id": "HN-40",
+    "stableId": "HN-40",
+    "sectionNo": 5,
     "sectionName": "",
-    "question": "Các cuộc họp nội bộ tại VSF yêu cầu gì?",
+    "question": "Các cuộc họp nội bộ tại VSF cần bảo đảm những gì?",
     "options": [
       {
         "key": "a",
-        "text": "Có mặt đúng giờ, chuẩn bị tài liệu, giữ trật tự và tôn trọng người trình bày."
+        "text": "Có mặt đúng giờ và chuẩn bị trước nội dung, tài liệu cần trao đổi."
       },
       {
         "key": "b",
-        "text": "Phải có kịch bản và biên bản họp."
+        "text": "Có kịch bản hoặc chương trình họp để cuộc họp đi đúng trọng tâm."
       },
       {
         "key": "c",
-        "text": "Đến trễ giờ và không chuẩn bị trước nội dung trình bày."
+        "text": "Có biên bản hoặc bản ghi nhận kết luận, người phụ trách và thời hạn thực hiện."
       },
       {
         "key": "d",
-        "text": "Câu a và b đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Họp đúng giờ, có chuẩn bị và biết tôn trọng người khác giúp cả đội làm việc nhanh hơn. Kịch bản hay biên bản có thể cần trong một số cuộc họp, nhưng không phải yêu cầu bắt buộc cho mọi cuộc họp.",
+    "correctAnswer": "d",
+    "explanation": "Trước cuộc họp cần xác định rõ nội dung cần trao đổi. Sau cuộc họp cần ghi lại kết luận, người phụ trách, thời hạn và nơi theo dõi tiến độ. Cách làm này giúp công việc không dừng ở lời nói và hạn chế bỏ sót trách nhiệm.",
     "displayNumber": 40
   },
   {
-    "id": "HN-44",
-    "stableId": "HN-44",
+    "id": "HN-41",
+    "stableId": "HN-41",
     "sectionNo": 5,
     "sectionName": "",
-    "question": "Thời gian bắt đầu làm việc, VSFer phải đến nơi trước bao lâu?",
+    "question": "Trước giờ bắt đầu làm việc, VSFer nên chuẩn bị như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Đến sớm để chuẩn bị thiết bị và chỉnh chu tác phong."
+        "text": "Có mặt sớm để kiểm tra thiết bị và chuẩn bị tác phong."
       },
       {
         "key": "b",
-        "text": "Đến sớm ít nhất 10–15 phút để chuẩn bị tinh thần, công cụ và chấm công."
+        "text": "Có mặt sớm khoảng 10–15 phút để chuẩn bị tinh thần, công cụ và chấm công."
       },
       {
         "key": "c",
-        "text": "Chỉ cần chấm công đúng giờ, chưa cần kiểm tra công cụ."
+        "text": "Chỉ cần chấm công đúng giờ, không cần kiểm tra công cụ."
       },
       {
         "key": "d",
@@ -1144,12 +1144,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "VSFer nên đến sớm ít nhất 10–15 phút để chuẩn bị tinh thần, kiểm tra công cụ, thiết bị, chỉnh chu tác phong và chấm công đúng giờ.",
+    "explanation": "Có mặt sớm khoảng 10–15 phút là khuyến nghị để VSFer kiểm tra công cụ, thiết bị, chuẩn bị tác phong chỉn chu và chấm công đúng giờ. Khoảng thời gian này không được hiểu là yêu cầu kéo dài giờ làm ngoài quy định.",
     "displayNumber": 41
   },
   {
-    "id": "HN-45",
-    "stableId": "HN-45",
+    "id": "HN-42",
+    "stableId": "HN-42",
     "sectionNo": 5,
     "sectionName": "",
     "question": "Việc đến sớm mang lại lợi ích gì cho VSFer?",
@@ -1176,8 +1176,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 42
   },
   {
-    "id": "HN-46",
-    "stableId": "HN-46",
+    "id": "HN-43",
+    "stableId": "HN-43",
     "sectionNo": 5,
     "sectionName": "",
     "question": "Khi làm việc trên mạng xã hội, VSFer nên cân nhắc những nội dung nào liên quan đến công ty?",
@@ -1200,12 +1200,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "VSFer chỉ nên chia sẻ thông tin, hình ảnh hoặc video đã được công ty công bố chính thức. Không tự đăng thông tin nội bộ hoặc nội dung chưa kiểm chứng để tránh ảnh hưởng đến công ty.",
+    "explanation": "VSFer chỉ nên chia sẻ thông tin, hình ảnh hoặc video đã được công ty công bố hoặc cho phép chia sẻ. Không tự đăng thông tin nội bộ hoặc nội dung chưa kiểm chứng để tránh ảnh hưởng đến công ty.",
     "displayNumber": 43
   },
   {
-    "id": "HN-47",
-    "stableId": "HN-47",
+    "id": "HN-44",
+    "stableId": "HN-44",
     "sectionNo": 5,
     "sectionName": "",
     "question": "Văn hóa xưng hô chính thức trong nội bộ VSF là gì?",
@@ -1228,12 +1228,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Xưng hô VSF kết hợp hai lớp: với nhân viên chung dùng “Đồng nghiệp”, với ban lãnh đạo hoặc quản lý trực tiếp dùng “Sếp”. Tất cả giữ nguyên tắc tôn trọng lẫn nhau, không phân biệt chức vụ.",
+    "explanation": "Trong nội bộ, VSFer gọi nhân sự chung là “Đồng nghiệp” và gọi ban lãnh đạo hoặc quản lý trực tiếp là “Sếp”. Dù ở vị trí nào, mọi người vẫn cần xưng hô lịch sự và tôn trọng nhau.",
     "displayNumber": 44
   },
   {
-    "id": "HN-48",
-    "stableId": "HN-48",
+    "id": "HN-45",
+    "stableId": "HN-45",
     "sectionNo": 5,
     "sectionName": "",
     "question": "Trong giao tiếp với cấp trên, VSFer thể hiện sự tôn trọng như thế nào?",
@@ -1260,8 +1260,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 45
   },
   {
-    "id": "HN-49",
-    "stableId": "HN-49",
+    "id": "HN-46",
+    "stableId": "HN-46",
     "sectionNo": 5,
     "sectionName": "",
     "question": "Trong giao tiếp với cấp dưới, cấp quản lý VSF cần làm gì?",
@@ -1284,12 +1284,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Cấp quản lý không chỉ giao việc mà còn tạo môi trường để nhân sự hiểu việc, dám nói và cùng tiến bộ. Khi quản lý đúng cách, đội nhóm làm việc rõ ràng hơn, ít phòng thủ hơn và dễ tạo kết quả tốt hơn.",
+    "explanation": "Cấp quản lý cần giao việc rõ, lắng nghe ý kiến và hướng dẫn nhân sự khi cần. Cách làm này giúp mọi người dễ trao đổi, sửa sai và hoàn thành công việc tốt hơn.",
     "displayNumber": 46
   },
   {
-    "id": "HN-50",
-    "stableId": "HN-50",
+    "id": "HN-47",
+    "stableId": "HN-47",
     "sectionNo": 5,
     "sectionName": "",
     "question": "Đối với đồng nghiệp khác bộ phận, VSFer cần gì?",
@@ -1316,36 +1316,36 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 47
   },
   {
-    "id": "HN-51",
-    "stableId": "HN-51",
-    "sectionNo": 5,
+    "id": "HN-48",
+    "stableId": "HN-48",
+    "sectionNo": 6,
     "sectionName": "",
-    "question": "Văn hóa họp tại VSF yêu cầu gì?",
+    "question": "Biên bản hoặc bản ghi nhận sau cuộc họp cần làm rõ những nội dung nào?",
     "options": [
       {
         "key": "a",
-        "text": "Đúng giờ, chuẩn bị đầy đủ tài liệu, tham gia chủ động."
+        "text": "Kết luận hoặc quyết định đã được thống nhất."
       },
       {
         "key": "b",
-        "text": "Phải ghi chép cẩn thận."
+        "text": "Người phụ trách, công việc cần thực hiện và thời hạn hoàn thành."
       },
       {
         "key": "c",
-        "text": "Phải có kịch bản và biên bản họp."
+        "text": "Nơi cập nhật tiến độ để các bên liên quan cùng theo dõi."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Một cuộc họp tốt phải giúp mọi người hiểu rõ việc cần làm sau đó, không chỉ ngồi nghe cho đủ mặt. Khi họp có chuẩn bị và có ghi nhận rõ, VSF giảm hiểu lầm, giảm việc sót và phối hợp chuyên nghiệp hơn.",
+    "explanation": "Biên bản họp cần giúp người đọc biết rõ việc gì đã được thống nhất, ai chịu trách nhiệm, khi nào hoàn thành và cập nhật ở đâu. Ghi rõ các nội dung này giúp công việc được thực hiện và kiểm tra, thay vì bị quên sau cuộc họp.",
     "displayNumber": 48
   },
   {
-    "id": "HN-52",
-    "stableId": "HN-52",
+    "id": "HN-49",
+    "stableId": "HN-49",
     "sectionNo": 6,
     "sectionName": "",
     "question": "Khi có mâu thuẫn với đồng nghiệp, VSFer phải xử lý như thế nào?",
@@ -1372,8 +1372,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 49
   },
   {
-    "id": "HN-53",
-    "stableId": "HN-53",
+    "id": "HN-50",
+    "stableId": "HN-50",
     "sectionNo": 6,
     "sectionName": "",
     "question": "Khi thấy đồng nghiệp gặp khó khăn trong công việc, VSFer nên làm gì?",
@@ -1400,8 +1400,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 50
   },
   {
-    "id": "HN-54",
-    "stableId": "HN-54",
+    "id": "HN-51",
+    "stableId": "HN-51",
     "sectionNo": 6,
     "sectionName": "",
     "question": "Khi VSFer thấy đồng nghiệp vi phạm quy định như không sơ vin hoặc mặc sai đồng phục, cách ứng xử đúng là gì?",
@@ -1428,8 +1428,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 51
   },
   {
-    "id": "HN-55",
-    "stableId": "HN-55",
+    "id": "HN-52",
+    "stableId": "HN-52",
     "sectionNo": 6,
     "sectionName": "",
     "question": "Kết quả làm việc của VSFer được đánh giá dựa trên những tiêu chí nào?",
@@ -1456,36 +1456,36 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 52
   },
   {
-    "id": "HN-56",
-    "stableId": "HN-56",
+    "id": "HN-53",
+    "stableId": "HN-53",
     "sectionNo": 6,
     "sectionName": "",
-    "question": "Trong đội nhóm, nếu một thành viên không hoàn thành nhiệm vụ, VSFer khác xử lý như thế nào?",
+    "question": "Trong đội nhóm, nếu một thành viên chưa hoàn thành nhiệm vụ, VSFer khác nên làm gì?",
     "options": [
       {
         "key": "a",
-        "text": "Chủ động hỗ trợ (nếu khả năng cho phép)"
+        "text": "Chủ động hỗ trợ trong khả năng cho phép."
       },
       {
         "key": "b",
-        "text": "Báo cấp quản lý để điều phối phương án."
+        "text": "Báo quản lý để điều phối khi công việc có nguy cơ bị tắc."
       },
       {
         "key": "c",
-        "text": "Hướng đến kết quả chung, không để việc bị tắc."
+        "text": "Cùng hướng đến kết quả chung, không đổ lỗi hoặc bỏ mặc."
       },
       {
         "key": "d",
-        "text": "Tất cả đáp án trên đều đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Tinh thần đồng đội: chủ động hỗ trợ trong khả năng, báo cấp quản lý để điều phối, hướng đến kết quả chung.",
+    "explanation": "Hỗ trợ đồng đội không có nghĩa là làm thay toàn bộ công việc. VSFer cần hỗ trợ trong khả năng, báo quản lý khi cần điều phối và cùng giữ tiến độ chung của đội.",
     "displayNumber": 53
   },
   {
-    "id": "HN-57",
-    "stableId": "HN-57",
+    "id": "HN-54",
+    "stableId": "HN-54",
     "sectionNo": 6,
     "sectionName": "",
     "question": "Trong các kênh truyền thông (group nội bộ, bảng tin văn hóa), VSFer được khuyến khích đăng những nội dung nào?",
@@ -1500,7 +1500,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Thành tích đồng đội và cá nhân công nhận lẫn nhau."
+        "text": "Thành tích của đồng đội, cá nhân và những lời ghi nhận lẫn nhau."
       },
       {
         "key": "d",
@@ -1508,12 +1508,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Kênh truyền thông nội bộ là nơi lan tỏa điều tốt và giúp mọi người thấy nỗ lực của nhau. Khi VSFer chia sẻ đúng nội dung, văn hóa tích cực được nhân lên và đồng nghiệp có thêm động lực làm việc tốt hơn.",
+    "explanation": "Kênh truyền thông nội bộ nên dùng để chia sẻ câu chuyện tích cực, sáng kiến và thành tích. Những nội dung này giúp đồng nghiệp học hỏi, ghi nhận nhau và có thêm động lực làm việc.",
     "displayNumber": 54
   },
   {
-    "id": "HN-58",
-    "stableId": "HN-58",
+    "id": "HN-55",
+    "stableId": "HN-55",
     "sectionNo": 6,
     "sectionName": "",
     "question": "Khi gặp khách hàng, cách nào thể hiện đúng cụm DIỆN, DẠ, RÕ, DANH?",
@@ -1536,12 +1536,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Ấn tượng đầu tiên với khách hàng bắt đầu từ tác phong, lời chào, cách trả lời rõ ràng và giới thiệu đúng danh phận. Làm tốt 4 chữ này giúp khách hàng dễ tin tưởng và sẵn sàng lắng nghe hơn.",
+    "explanation": "Khi gặp khách hàng, VSFer cần giữ tác phong gọn gàng, chào hỏi lịch sự, trả lời rõ ràng và giới thiệu đúng tên, vai trò. Làm đúng giúp khách hàng dễ hiểu thông tin và tin tưởng hơn.",
     "displayNumber": 55
   },
   {
-    "id": "HN-59",
-    "stableId": "HN-59",
+    "id": "HN-56",
+    "stableId": "HN-56",
     "sectionNo": 6,
     "sectionName": "",
     "question": "Khi tiếp nhận khiếu nại của khách hàng, VSFer nên xử lý thế nào theo tinh thần GỌN, NHẸ, NHẪN, NHƯỜNG?",
@@ -1568,11 +1568,11 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 56
   },
   {
-    "id": "HN-60",
-    "stableId": "HN-60",
-    "sectionNo": 6,
+    "id": "HN-57",
+    "stableId": "HN-57",
+    "sectionNo": 7,
     "sectionName": "",
-    "question": "Sau khi tư vấn khách hàng hành động nào thể hiện đúng cụm TRỌNG, TÍN, GHI, ƠN?",
+    "question": "Sau khi tư vấn khách hàng, hành động nào thể hiện đúng cụm TRỌNG, TÍN, GHI, ƠN?",
     "options": [
       {
         "key": "a",
@@ -1592,27 +1592,27 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Khách hàng cần được tôn trọng, phục vụ đúng cam kết và ghi nhận đầy đủ phản hồi. Một lời cảm ơn chân thành giúp kết thúc trải nghiệm đẹp và tạo cơ hội gặp lại khách hàng lần sau.",
+    "explanation": "VSFer cần tôn trọng khách hàng, làm đúng điều đã hứa, ghi nhận phản hồi và nói lời cảm ơn. Những việc này giúp khách hàng cảm thấy được tôn trọng và yên tâm hơn.",
     "displayNumber": 57
   },
   {
-    "id": "HN-61",
-    "stableId": "HN-61",
+    "id": "HN-58",
+    "stableId": "HN-58",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Khi làm việc tại VSF, đâu là cách chào hỏi và giới thiệu thể hiện đầy đủ cụm Chữ vàng DIỆN, DẠ, RÕ, DANH?",
+    "question": "Khi làm việc tại VSF, cách nào thể hiện đầy đủ cụm Chữ vàng DIỆN, DẠ, RÕ, DANH?",
     "options": [
       {
         "key": "a",
-        "text": "DIỆN, DẠ: Có mặt đúng giờ với tác phong gọn gàng, chủ động chào và đáp lời tử tế khi gặp đồng nghiệp, cấp quản lý."
+        "text": "DIỆN, DẠ: Giữ diện mạo gọn gàng, chủ động chào hỏi và đáp lời tử tế."
       },
       {
         "key": "b",
-        "text": "RÕ: Nêu rõ việc cần phối hợp, hỏi đúng người phụ trách hoặc khu vực cần đến để không làm gián đoạn nhịp làm việc chung."
+        "text": "RÕ: Nói rõ việc cần trao đổi và hỏi đúng người phụ trách."
       },
       {
         "key": "c",
-        "text": "DANH: Xưng đúng họ tên, vị trí công việc và bộ phận để đồng nghiệp dễ ghi nhớ và hỗ trợ đúng vai trò."
+        "text": "DANH: Giới thiệu đúng họ tên, vị trí và bộ phận khi cần phối hợp."
       },
       {
         "key": "d",
@@ -1620,23 +1620,23 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Khi mỗi người xuất hiện đúng tác phong, giao tiếp rõ ràng và giới thiệu đúng vai trò, tập thể sẽ phối hợp thuận lợi hơn và tạo nên hình ảnh VSF chuyên nghiệp, có tổ chức.",
+    "explanation": "Diện mạo gọn gàng, lời chào tử tế, thông tin rõ ràng và cách giới thiệu đúng vai trò giúp đồng nghiệp dễ phối hợp và tạo hình ảnh chuyên nghiệp cho VSF.",
     "displayNumber": 58
   },
   {
-    "id": "HN-62",
-    "stableId": "HN-62",
+    "id": "HN-59",
+    "stableId": "HN-59",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Khi được hỏi một chính sách nội bộ bạn chưa chắc, cách trả lời nào vừa giữ chữ TÍN vừa bảo vệ bạn?",
+    "question": "Khi được hỏi một chính sách nội bộ mà bạn chưa chắc, cách trả lời nào vừa giữ chữ TÍN vừa bảo vệ bạn?",
     "options": [
       {
         "key": "a",
-        "text": "Hướng dẫn các đồng nghiệp liên hệ với chuyên gia có chuyên môn."
+        "text": "Hướng dẫn đồng nghiệp liên hệ với chuyên gia có chuyên môn."
       },
       {
         "key": "b",
-        "text": "Hướng dẫn các kênh công khai để đồng nghiệp tham khảo tài liệu chính thức."
+        "text": "Hướng dẫn đồng nghiệp kiểm tra tài liệu trên kênh chính thức."
       },
       {
         "key": "c",
@@ -1648,12 +1648,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Chữ TÍN không phải là trả lời thật nhanh, mà là trả lời đúng và có căn cứ. Sự rõ ràng  là cách bảo vệ cả người hỏi, người trả lời và uy tín nội bộ.",
+    "explanation": "Chữ TÍN không phải là trả lời thật nhanh mà là trả lời đúng và có căn cứ. Hướng người hỏi đến chuyên gia có chuyên môn hoặc tài liệu chính thức giúp bảo vệ cả người hỏi, người trả lời và uy tín nội bộ.",
     "displayNumber": 59
   },
   {
-    "id": "HN-63",
-    "stableId": "HN-63",
+    "id": "HN-60",
+    "stableId": "HN-60",
     "sectionNo": 7,
     "sectionName": "",
     "question": "Người quen hỏi bạn công thức, nhà cung cấp hoặc giá vốn của VSF, nói \"chỉ tham khảo thôi\". Bạn KHÔNG nên làm gì?",
@@ -1676,12 +1676,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Công thức, nhà cung cấp, giá vốn là tài sản sống còn của hệ thống nhượng quyền, vốn thuộc Trái cấm số 1: tiết lộ bí mật kinh doanh, công nghệ, tài chính ra ngoài.",
+    "explanation": "Công thức, nhà cung cấp và giá vốn là thông tin nội bộ quan trọng. Việc tiết lộ các thông tin này ra ngoài thuộc Trái cấm số 1 và có thể ảnh hưởng trực tiếp đến năng lực cạnh tranh của VSF.",
     "displayNumber": 60
   },
   {
-    "id": "HN-64",
-    "stableId": "HN-64",
+    "id": "HN-61",
+    "stableId": "HN-61",
     "sectionNo": 7,
     "sectionName": "",
     "question": "Khi trao đổi gấp với đồng nghiệp khác bộ phận, cách nào đúng tinh thần GỌN, NHẸ, NHẪN, NHƯỜNG?",
@@ -1704,27 +1704,27 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "GỌN giúp thông tin rõ và nhanh. NHẸ giúp cuộc trao đổi dễ tiếp nhận. NHẪN, NHƯỜNG giúp phối hợp bền hơn khi việc gấp hoặc có nhiều bên liên quan. Làm đủ 4 chữ giúp công việc chạy nhanh mà vẫn giữ tinh thần tôn trọng nhau.",
+    "explanation": "GỌN giúp người nghe nắm việc nhanh. NHẸ giúp cuộc trao đổi bớt căng thẳng. NHẪN, NHƯỜNG giúp các bên lắng nghe và cùng xử lý công việc. Làm đúng 4 chữ này giúp việc gấp vẫn được giải quyết rõ ràng và tôn trọng.",
     "displayNumber": 61
   },
   {
-    "id": "HN-65",
-    "stableId": "HN-65",
+    "id": "HN-62",
+    "stableId": "HN-62",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Nếu có người yêu cầu bạn ký thay, sửa hồ sơ, chỉnh phiếu giao nhận hoặc \"làm đẹp\" báo cáo cho kịp hạn, cách xử lý nào đúng để không vi phạm Trái cấm số 2 ?",
+    "question": "Nếu có người yêu cầu bạn ký thay, tự ý sửa hồ sơ, làm sai lệch phiếu giao nhận hoặc \"làm đẹp\" báo cáo cho kịp hạn, cách xử lý nào đúng để không vi phạm Trái cấm số 3?",
     "options": [
       {
         "key": "a",
-        "text": "Từ chối vì đây là hành vi vượt thẩm quyền, có thể làm sai lệch hồ sơ, dữ liệu hoặc gây thất thoát tài sản công ty."
+        "text": "Từ chối vì việc ký thay, tự ý sửa hồ sơ hoặc làm sai lệch báo cáo có thể tạo ra chứng từ và dữ liệu không trung thực."
       },
       {
         "key": "b",
-        "text": "Báo người phụ trách để xử lý lại đúng quy trình, đảm bảo minh bạch và bảo vệ hệ thống."
+        "text": "Báo người phụ trách để hồ sơ được kiểm tra và xử lý lại đúng thẩm quyền, đúng quy trình."
       },
       {
         "key": "c",
-        "text": "Ký nháy hoặc sửa tạm cho kịp hạn rồi bổ sung hồ sơ sau nếu chưa gây thiệt hại ngay."
+        "text": "Sửa tạm cho kịp hạn rồi bổ sung hồ sơ sau nếu chưa gây thiệt hại ngay."
       },
       {
         "key": "d",
@@ -1732,19 +1732,19 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Theo Trái cấm số 2 Tham ô, trộm cắp, biển thủ hoặc làm thất thoát tài sản công ty. VSFer cần từ chối phần không đúng thẩm quyền và báo người phụ trách để xử lý minh bạch, đúng quy trình.",
+    "explanation": "Trái cấm số 3 nghiêm cấm làm giả hồ sơ, giấy tờ, chữ ký và gian lận trong báo cáo hoặc quy trình quản lý. Khi gặp yêu cầu không đúng thẩm quyền, VSFer cần từ chối và báo người phụ trách để xử lý minh bạch, đúng quy trình.",
     "displayNumber": 62
   },
   {
-    "id": "HN-66",
-    "stableId": "HN-66",
+    "id": "HN-63",
+    "stableId": "HN-63",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Bạn muốn đăng ảnh hậu trường văn phòng / kho / xưởng lên mạng xã hội cá nhân. Cách nào vừa lan tỏa hình ảnh đẹp, vừa không rủi ro vi phạm Trái cấm số 4 (có thể ảnh hưởng đến uy tín, thương hiệu trong một vài trường hợp)?",
+    "question": "Bạn muốn đăng ảnh hậu trường văn phòng, kho hoặc xưởng lên mạng xã hội cá nhân. Cách nào giúp hạn chế rủi ro?",
     "options": [
       {
         "key": "a",
-        "text": "Kiểm tra khung hình không lộ công thức, bảng lương, dữ liệu khách / đối tác, chứng từ, màn hình hệ thống."
+        "text": "Kiểm tra khung hình không làm lộ công thức, bảng lương, dữ liệu khách hàng, chứng từ hoặc màn hình hệ thống."
       },
       {
         "key": "b",
@@ -1752,63 +1752,63 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Kiểm chứng nội dung và chú thích để tránh hiểu sai ngữ cảnh."
+        "text": "Chỉ đăng khi nội dung được phép công khai và chú thích không làm người xem hiểu sai ngữ cảnh."
       },
       {
         "key": "d",
-        "text": "Cả 3 đáp án trên."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Trước khi đăng ảnh hậu trường, cần kiểm tra dữ liệu nhạy cảm, xin phép người xuất hiện và viết chú thích đúng ngữ cảnh. Làm đủ 3 bước giúp lan tỏa hình ảnh đẹp mà vẫn an toàn cho cá nhân và công ty.",
+    "explanation": "Ảnh hậu trường có thể làm lộ bí mật kinh doanh, thông tin nhân sự, tài khoản hoặc dữ liệu bảo mật. Trước khi đăng, VSFer cần kiểm tra khung hình, xin phép người xuất hiện, xác nhận nội dung được phép công khai và viết chú thích đúng ngữ cảnh.",
     "displayNumber": 63
   },
   {
-    "id": "HN-67",
-    "stableId": "HN-67",
+    "id": "HN-64",
+    "stableId": "HN-64",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Khi nghe tin đồn tiêu cực về công ty, khách hàng hiện hữu hoặc đồng nghiệp, hành động nào đúng tinh thần cụm Chữ vàng TRỌNG, TÍN, GHI, ƠN?",
+    "question": "Khi nghe tin đồn tiêu cực về công ty, khách hàng hoặc đồng nghiệp, VSFer nên làm gì?",
     "options": [
       {
         "key": "a",
-        "text": "Không lan truyền bất kì thông tin gì có ảnh hưởng đến công ty."
+        "text": "Không lan truyền thông tin chưa được xác minh."
       },
       {
         "key": "b",
-        "text": "Nếu có người thăm dò thì thẳng thắn trả lời là Thông tin chưa xác thực."
+        "text": "Nói rõ đây là thông tin chưa xác thực và hướng người hỏi đến kênh chính thức."
       },
       {
         "key": "c",
-        "text": "Tung thêm những thông tin không đúng sự thật để bôi nhọ công ty."
+        "text": "Thêm thông tin chưa kiểm chứng để câu chuyện thu hút hơn."
       },
       {
         "key": "d",
-        "text": "đáp án a và b đúng."
+        "text": "Đáp án a và b đúng."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Một tin đồn nhỏ nếu thiếu kiểm chứng có thể làm tổn thương con người, ảnh hưởng uy tín tập thể và gây rủi ro cho chính người phát tán.",
+    "explanation": "Tin đồn chưa được kiểm chứng có thể làm tổn thương con người và ảnh hưởng uy tín tập thể. VSFer không nên lan truyền mà cần nói rõ thông tin chưa xác thực, đồng thời kiểm tra hoặc hướng người hỏi đến kênh chính thức.",
     "displayNumber": 64
   },
   {
-    "id": "HN-68",
-    "stableId": "HN-68",
+    "id": "HN-65",
+    "stableId": "HN-65",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Nếu bạn bị đồng nghiệp hoặc người liên quan xúc phạm / đe dọa trong lúc làm việc, cách nào bảo vệ bạn đúng nhất theo Trái cấm số 8, Đe dọa, xúc phạm, gây gổ, bạo lực?",
+    "question": "Nếu bạn bị đồng nghiệp hoặc người liên quan xúc phạm hay đe dọa trong lúc làm việc, cách nào bảo vệ bạn đúng nhất theo Trái cấm số 8?",
     "options": [
       {
         "key": "a",
-        "text": "Giữ khoảng cách an toàn, không đáp trả bằng lời xúc phạm."
+        "text": "Giữ khoảng cách an toàn và không đáp trả bằng lời xúc phạm."
       },
       {
         "key": "b",
-        "text": "Báo quản lý / Phòng Nhân sự để hỗ trợ và ghi nhận sự việc."
+        "text": "Báo quản lý hoặc Phòng Nhân sự để được hỗ trợ và ghi nhận sự việc."
       },
       {
         "key": "c",
-        "text": "Cả a và b đều đúng"
+        "text": "Cả a và b đều đúng."
       },
       {
         "key": "d",
@@ -1816,23 +1816,23 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Khi bị xúc phạm hoặc đe dọa, hãy giữ an toàn, không đáp trả bằng bạo lực hay lời lẽ xúc phạm, đồng thời báo đúng kênh để được ghi nhận và hỗ trợ.",
+    "explanation": "Khi bị xúc phạm hoặc đe dọa, VSFer cần ưu tiên an toàn, không đáp trả bằng bạo lực hoặc lời lẽ xúc phạm và báo đúng kênh để được hỗ trợ.",
     "displayNumber": 65
   },
   {
-    "id": "HN-69",
-    "stableId": "HN-69",
+    "id": "HN-66",
+    "stableId": "HN-66",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Bạn được rủ làm thêm cho một mô hình kinh doanh cạnh tranh trực tiếp với VSF hoặc dùng hiểu biết nội bộ để tư vấn bên ngoài. Bạn sẽ làm gì?",
+    "question": "Bạn được rủ làm thêm cho một mô hình cạnh tranh trực tiếp với VSF hoặc dùng thông tin nội bộ để tư vấn bên ngoài. Bạn nên làm gì?",
     "options": [
       {
         "key": "a",
-        "text": "Không đồng ý chia sẻ thông tin nội bộ (Trái cấm số 11: Kinh doanh cạnh tranh trực tiếp với công ty khi chưa được phép)"
+        "text": "Không chia sẻ hoặc sử dụng thông tin nội bộ của VSF cho hoạt động bên ngoài."
       },
       {
         "key": "b",
-        "text": "Từ chối ngay lập tức hoặc xin ý kiến công ty trước nếu có nguy cơ xung đột lợi ích."
+        "text": "Từ chối tham gia hoạt động cạnh tranh trực tiếp. Nếu chưa rõ có xung đột lợi ích hay không, cần xin ý kiến qua kênh chính thức trước khi nhận việc."
       },
       {
         "key": "c",
@@ -1844,41 +1844,41 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Trái cấm số 11 cấm tham gia làm thêm, cộng tác hoặc tự mở dịch vụ cạnh tranh trực tiếp với công ty khi chưa được phép.",
+    "explanation": "Trái cấm số 11 không cho phép VSFer tham gia hoạt động cạnh tranh trực tiếp với công ty khi chưa được phép. Khi một công việc bên ngoài có nguy cơ xung đột lợi ích, VSFer cần dừng lại, không dùng thông tin nội bộ và xin ý kiến trước khi quyết định.",
     "displayNumber": 66
   },
   {
-    "id": "HN-70",
-    "stableId": "HN-70",
+    "id": "HN-67",
+    "stableId": "HN-67",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Trong một cuộc gọi, người lạ tự xưng là đối tác nhượng quyền / nhà cung cấp và hỏi thông tin nhân sự, tiền lương hoặc chính sách nội bộ. Cách trả lời nào đúng với Trái cấm số 6 ?",
+    "question": "Người lạ tự xưng là Khách hàng nhượng quyền 1B hoặc Nhà cung cấp 3A và hỏi thông tin nhân sự, tiền lương hoặc chính sách nội bộ. Bạn nên làm gì?",
     "options": [
       {
         "key": "a",
-        "text": "Đề nghị gửi yêu cầu qua email chính thức và báo Phòng Nhân sự / quản lý để xác minh."
+        "text": "Đề nghị người đó gửi yêu cầu qua kênh chính thức và báo Phòng Nhân sự hoặc quản lý để xác minh."
       },
       {
         "key": "b",
-        "text": "Không cung cấp bất kì thông tin , chính sách nội bộ nào."
+        "text": "Không cung cấp thông tin khi chưa xác minh danh tính, mục đích và thẩm quyền của người yêu cầu."
       },
       {
         "key": "c",
-        "text": "Gửi cho họ tất cả thông tin của công ty."
+        "text": "Gửi toàn bộ thông tin vì người đó nói đang hợp tác với công ty."
       },
       {
         "key": "d",
-        "text": "Cả câu a và b đúng."
+        "text": "Cả a và b đều đúng."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Trái cấm số 6 cấm tiết lộ trái phép thông tin nhân sự, bảng lương, hợp đồng lao động và chính sách nội bộ. Cẩn trọng với thông tin người khác cũng là một cách tôn trọng quyền lợi của họ.",
+    "explanation": "Trái cấm số 6 không cho phép tiết lộ trái phép thông tin nhân sự, tiền lương, hợp đồng lao động và chính sách nội bộ. Xác minh trước khi cung cấp thông tin là cách bảo vệ quyền lợi của người có dữ liệu và bảo vệ VSF.",
     "displayNumber": 67
   },
   {
-    "id": "HN-71",
-    "stableId": "HN-71",
-    "sectionNo": 7,
+    "id": "HN-68",
+    "stableId": "HN-68",
+    "sectionNo": 8,
     "sectionName": "",
     "question": "Vì sao VSFer cần học đào tạo hội nhập nghiêm túc ngay từ đầu?",
     "options": [
@@ -1888,7 +1888,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Để nắm được quy trình làm việc, cách lưu trữ và những điều cần tránh như 12 Trái cấm."
+        "text": "Để nắm được quy trình làm việc, cách lưu trữ và những điều cần tránh trong 12 Trái cấm người VSF không được ăn."
       },
       {
         "key": "c",
@@ -1904,11 +1904,11 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 68
   },
   {
-    "id": "HN-72",
-    "stableId": "HN-72",
+    "id": "HN-69",
+    "stableId": "HN-69",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Đâu là cách hiểu đầy đủ về 3 cụm của 12 Chữ vàng, Phục vụ khách hàng tại VSF?",
+    "question": "Đâu là cách hiểu đầy đủ về 3 cụm của 12 Chữ vàng - Phục vụ khách hàng tại VSF?",
     "options": [
       {
         "key": "a",
@@ -1920,7 +1920,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "TRỌNG, TÍN, GHI, ƠN: tôn trọng, giữ chữ tín, ghi ơn khách hàng và đối tác bằng sự tận tâm."
+        "text": "TRỌNG, TÍN, GHI, ƠN: tôn trọng, giữ chữ tín và ghi ơn Khách hàng nhượng quyền 1B, Đối tác 3B bằng sự tận tâm."
       },
       {
         "key": "d",
@@ -1928,27 +1928,27 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Tinh thần lõi: \"Phục vụ khách hàng như phục vụ cha mẹ, Phục vụ vượt trên cả sự kỳ vọng.\" Khi sống đủ 3 cụm này, bạn vừa giữ uy tín cá nhân vừa giúp hệ thống VSF vận hành chuyên nghiệp hơn.",
+    "explanation": "Tinh thần lõi: \"Phục vụ khách hàng như phục vụ cha mẹ, Phục vụ vượt trên cả sự kỳ vọng.\" Khi thực hiện đúng 3 cụm này, bạn giữ được uy tín cá nhân và giúp VSF phục vụ khách hàng rõ ràng, chuyên nghiệp hơn.",
     "displayNumber": 69
   },
   {
-    "id": "HN-73",
-    "stableId": "HN-73",
+    "id": "HN-70",
+    "stableId": "HN-70",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Cách hiểu nào đúng nhất về 12 Trái cấm khi làm việc tại VSF?",
+    "question": "Cách hiểu nào đúng nhất về 12 Trái cấm người VSF không được ăn khi làm việc tại VSF?",
     "options": [
       {
         "key": "a",
-        "text": "Vùng vi phạm cao nhất, có thể sa thải ngay, thậm chí chuyển cơ quan chức năng."
+        "text": "Đây là nhóm hành vi vi phạm nghiêm trọng. Người vi phạm có thể bị xem xét sa thải khi có căn cứ và đúng trình tự, hoặc bị chuyển hồ sơ cho cơ quan chức năng nếu có dấu hiệu vi phạm pháp luật."
       },
       {
         "key": "b",
-        "text": "Áp dụng với tất cả đồng nghiệp trong công ty."
+        "text": "Quy định áp dụng với tất cả VSFer, không phân biệt chức vụ."
       },
       {
         "key": "c",
-        "text": "Chỉ áp dụng với quản lý hoặc người giữ tài sản lớn."
+        "text": "Quy định chỉ áp dụng với quản lý hoặc người giữ tài sản lớn."
       },
       {
         "key": "d",
@@ -1956,12 +1956,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "12 Trái cấm là vùng cấm tuyệt đối, không phân cấp bậc, không \"linh động\". Biết rõ để chủ động tránh và biết khi nào cần báo đúng kênh.",
+    "explanation": "12 Trái cấm người VSF không được ăn áp dụng với tất cả VSFer và không được xem nhẹ. Khi phát hiện vi phạm, công ty cần xác minh căn cứ, đánh giá mức độ và xử lý đúng trình tự. Trường hợp có dấu hiệu vi phạm pháp luật có thể được chuyển cho cơ quan chức năng.",
     "displayNumber": 70
   },
   {
-    "id": "HN-74",
-    "stableId": "HN-74",
+    "id": "HN-71",
+    "stableId": "HN-71",
     "sectionNo": 8,
     "sectionName": "",
     "question": "Vì sao 1Office được chọn là \"xương sống\" của hệ thống vận hành VSF?",
@@ -1976,7 +1976,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Vì nhà nước bắt buộc sử dụng 1Office ."
+        "text": "Vì nhà nước bắt buộc sử dụng 1Office."
       },
       {
         "key": "d",
@@ -1988,8 +1988,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 71
   },
   {
-    "id": "HN-75",
-    "stableId": "HN-75",
+    "id": "HN-72",
+    "stableId": "HN-72",
     "sectionNo": 8,
     "sectionName": "",
     "question": "Vì sao VSFer cần hiểu sơ đồ tổ chức tại VSF?",
@@ -2016,23 +2016,23 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 72
   },
   {
-    "id": "HN-76",
-    "stableId": "HN-76",
+    "id": "HN-73",
+    "stableId": "HN-73",
     "sectionNo": 8,
     "sectionName": "",
     "question": "Khi có vấn đề công việc hoặc cần xin ý kiến, VSFer nên trao đổi như thế nào cho đúng tuyến?",
     "options": [
       {
         "key": "a",
-        "text": "Trao đổi trước với quản lý trực tiếp hoặc người phụ trách gần nhất."
+        "text": "Trong công việc thông thường, trao đổi trước với quản lý trực tiếp hoặc người phụ trách gần nhất."
       },
       {
         "key": "b",
-        "text": "Chuẩn bị thông tin rõ ràng: vấn đề là gì, đã xử lý đến đâu và cần hỗ trợ điều gì."
+        "text": "Chuẩn bị rõ vấn đề, việc đã xử lý, rủi ro hiện có và nội dung cần hỗ trợ."
       },
       {
         "key": "c",
-        "text": "Không được báo cáo vượt cấp khi chưa có sự đồng ý của Quản lý trực tiếp."
+        "text": "Khi có tình huống khẩn cấp, rủi ro an toàn, bảo mật hoặc xung đột lợi ích, báo ngay qua kênh có thẩm quyền và lưu lại thông tin xử lý."
       },
       {
         "key": "d",
@@ -2040,75 +2040,75 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Trao đổi đúng tuyến giúp công việc được xử lý rõ trách nhiệm, đúng người và không làm rối luồng thông tin. Khi có vấn đề hoặc cần xin ý kiến, VSFer cần báo trước với quản lý trực tiếp, chuẩn bị thông tin đầy đủ và chỉ báo cáo lên cấp cao hơn khi đã có sự đồng ý hoặc hướng dẫn phù hợp.",
+    "explanation": "Đúng tuyến là nguyên tắc áp dụng trong công việc thông thường. Khi có nguy cơ khẩn cấp, mất an toàn, lộ dữ liệu, dấu hiệu vi phạm hoặc xung đột lợi ích, VSFer cần báo ngay qua kênh có thẩm quyền để hạn chế thiệt hại. Thông tin phải rõ ràng và được lưu vết để việc xử lý minh bạch.",
     "displayNumber": 73
   },
   {
-    "id": "HN-77",
-    "stableId": "HN-77",
+    "id": "HN-74",
+    "stableId": "HN-74",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Cách phối hợp nào giúp VSFer vừa chủ động, vừa tôn trọng cấp bậc trong tổ chức?",
+    "question": "Cách phối hợp nào giúp VSFer vừa chủ động, vừa đúng trách nhiệm?",
     "options": [
       {
         "key": "a",
-        "text": "Chủ động báo cáo, xin ý kiến và cập nhật tiến độ với quản lý trực tiếp trước khi phối hợp công việc."
+        "text": "Chủ động phối hợp trong phạm vi công việc và cập nhật quản lý khi tiến độ hoặc nguồn lực của đơn vị bị ảnh hưởng."
       },
       {
         "key": "b",
-        "text": "Không tự ý nhận việc, giao việc hoặc phối hợp với bộ phận khác khi chưa thông qua quản lý trực tiếp."
+        "text": "Không tự ý cam kết thay cho bộ phận khác hoặc giao việc ngoài thẩm quyền."
       },
       {
         "key": "c",
-        "text": "Cứ báo cáo trực tiếp với CEO mọi vấn đề."
+        "text": "Làm rõ người phụ trách, thời hạn, kết quả cần có và nơi cập nhật tiến độ."
       },
       {
         "key": "d",
-        "text": "Cả câu a và b đều đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Phối hợp đúng tuyến nghĩa là không vượt cấp, không tự ý nhận việc hay làm việc ngang cấp khi chưa thông qua quản lý trực tiếp. Việc báo cáo và xin ý kiến trước hết phải báo với quản lý trực tiếp và các bộ phận liên quan chứ không được vượt cấp và báo với CEO.",
+    "explanation": "Phối hợp đúng tuyến không có nghĩa là phải chờ phê duyệt cho mọi trao đổi. VSFer có thể chủ động phối hợp trong phạm vi trách nhiệm, nhưng cần tôn trọng thẩm quyền và làm rõ cách theo dõi công việc chung.",
     "displayNumber": 74
   },
   {
-    "id": "HN-78",
-    "stableId": "HN-78",
+    "id": "HN-75",
+    "stableId": "HN-75",
     "sectionNo": 8,
     "sectionName": "",
     "question": "Để ngày nghỉ phép được ghi nhận đầy đủ và lương không bị ảnh hưởng, VSFer KHÔNG nên làm gì?",
     "options": [
       {
         "key": "a",
-        "text": "Lập đơn nghỉ phép trên 1Office trước ngày nghỉ."
+        "text": "Lập đơn trên 1Office, ghi rõ lý do và gửi trước khi nghỉ nếu tình huống cho phép."
       },
       {
         "key": "b",
-        "text": "Bắt buộc phải có phê duyệt của cấp quản lý và Phòng Nhân sự."
+        "text": "Chủ động thông báo cho quản lý trực tiếp và bàn giao hoặc cập nhật cho người liên quan."
       },
       {
         "key": "c",
-        "text": "Thông tin sớm cho quản lý và Phòng Hành chính nhân sự."
+        "text": "Nếu đơn chưa được phản hồi, chủ động nhắc người duyệt trong thời hạn xử lý. Không tự xem việc gửi đơn là đã được duyệt."
       },
       {
         "key": "d",
-        "text": "Chỉ cần im lặng và nghỉ thôi mọi người sẽ tự hiểu."
+        "text": "Chỉ cần gửi đơn hoặc nhắn riêng rồi tự nghỉ dù chưa được phản hồi."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Lập đơn trên 1Office giúp ngày phép được ghi nhận đúng kỳ, lương và phép năm không bị tính sai. Quy trình này được thiết kế để bảo vệ quyền lợi của VSFer ,hãy xem việc lập đơn như cách đảm bảo quyền lợi cho chính mình.",
+    "explanation": "Gửi đơn chưa có nghĩa là ngày nghỉ đã được duyệt. VSFer cần theo dõi phản hồi, chủ động nhắc người duyệt và bàn giao công việc để ngày nghỉ được ghi nhận đúng, đồng thời tránh ảnh hưởng đến lương, phép và tiến độ của đội.",
     "displayNumber": 75
   },
   {
-    "id": "HN-79",
-    "stableId": "HN-79",
+    "id": "HN-76",
+    "stableId": "HN-76",
     "sectionNo": 8,
     "sectionName": "",
     "question": "Mỗi VSFer nên sử dụng tài khoản 1Office của mình như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Báo cáo tiến độ công việc/quy trình trên 1Office để thành quả cá nhân được ghi nhận."
+        "text": "Báo cáo tiến độ công việc và quy trình trên 1Office để thành quả cá nhân được ghi nhận."
       },
       {
         "key": "b",
@@ -2116,11 +2116,11 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Không cần để ý cứ làm việc qua Zalo."
+        "text": "Không cần để ý, cứ làm việc qua Zalo."
       },
       {
         "key": "d",
-        "text": "Đáp án a và b đúng"
+        "text": "Đáp án a và b đúng."
       }
     ],
     "correctAnswer": "d",
@@ -2128,51 +2128,51 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 76
   },
   {
-    "id": "HN-80",
-    "stableId": "HN-80",
-    "sectionNo": 8,
+    "id": "HN-77",
+    "stableId": "HN-77",
+    "sectionNo": 9,
     "sectionName": "",
-    "question": "VSF đang sử dụng những phần mềm nào ?",
+    "question": "VSF đang sử dụng những hệ thống và phần mềm nào trong công việc?",
     "options": [
       {
         "key": "a",
-        "text": "Phần mềm chính 1Office dùng để chấm công, cập nhật thông tin nội bộ."
+        "text": "1Office để chấm công, xử lý đơn từ và cập nhật thông tin nội bộ."
       },
       {
         "key": "b",
-        "text": "Phần mềm NAS, Google Drive dùng để lưu trữ dữ liệu, thông tin ,hình ảnh."
+        "text": "NAS và Google Drive để lưu trữ dữ liệu, tài liệu và hình ảnh theo quyền truy cập."
       },
       {
         "key": "c",
-        "text": "Chuyên dụng theo phòng ban (MISA, CRM, Map Tracker, v.v.) ."
+        "text": "Các phần mềm chuyên dụng theo từng phòng ban như MISA, CRM và Map Tracker."
       },
       {
         "key": "d",
-        "text": "Tất cả đáp án trên đều đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Khi VSFer dùng đúng phần mềm, thông tin sẽ bớt thất lạc, phối hợp giữa các bộ phận thuận lợi hơn và dữ liệu quan trọng được quản lý an toàn hơn.",
+    "explanation": "Mỗi hệ thống có một mục đích sử dụng và phạm vi truy cập riêng. VSFer cần lưu thông tin đúng nơi, dùng đúng tài khoản và tuân thủ quyền truy cập để công việc dễ phối hợp và dữ liệu được bảo vệ.",
     "displayNumber": 77
   },
   {
-    "id": "HN-81",
-    "stableId": "HN-81",
+    "id": "HN-78",
+    "stableId": "HN-78",
     "sectionNo": 9,
     "sectionName": "",
     "question": "Mỗi VSFer nên có cách nhìn như thế nào để góp phần phòng cháy chữa cháy (PCCC) tại nơi làm việc?",
     "options": [
       {
         "key": "a",
-        "text": "Chủ động quan sát các nguy cơ cháy nổ như ổ điện quá tải, vật dễ cháy đặt sai chỗ , biết vị trí bình chữa cháy hoặc lối thoát hiểm bị che chắn."
+        "text": "Chủ động quan sát các nguy cơ cháy nổ như ổ điện quá tải, vật dễ cháy đặt sai chỗ, bình chữa cháy hoặc lối thoát hiểm bị che chắn."
       },
       {
         "key": "b",
-        "text": "Tuân thủ hướng dẫn PCCC"
+        "text": "Tuân thủ hướng dẫn PCCC."
       },
       {
         "key": "c",
-        "text": "Không cần quan tâm , chỉ cần đi làm rồi về."
+        "text": "Không cần quan tâm, chỉ cần đi làm rồi về."
       },
       {
         "key": "d",
@@ -2184,8 +2184,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 78
   },
   {
-    "id": "HN-82",
-    "stableId": "HN-82",
+    "id": "HN-79",
+    "stableId": "HN-79",
     "sectionNo": 9,
     "sectionName": "",
     "question": "Cách hiểu nào đầy đủ nhất về \"văn hóa an toàn\" tại VSF?",
@@ -2208,12 +2208,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Văn hóa an toàn của VSF được xây dựng trên nguyên tắc \"mỗi người là một mắt xích\" từ quan sát đến phản ánh đều được đón nhận và khen thưởng xứng đáng. Khi an toàn trở thành phản xạ tập thể, môi trường làm việc và thu nhập của tất cả cùng được bảo vệ.",
+    "explanation": "Văn hóa an toàn được tạo nên từ việc mỗi VSFer biết quan sát, phản ánh và xử lý đúng phạm vi. Khi nguy cơ được báo sớm, bản thân, đồng nghiệp, khách hàng và tài sản chung đều được bảo vệ tốt hơn.",
     "displayNumber": 79
   },
   {
-    "id": "HN-83",
-    "stableId": "HN-83",
+    "id": "HN-80",
+    "stableId": "HN-80",
     "sectionNo": 9,
     "sectionName": "",
     "question": "CHỌN CÂU KHÔNG ĐÚNG về việc giữ gìn vệ sinh và môi trường làm việc tại VSF?",
@@ -2228,7 +2228,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Không gian sạch đẹp giúp VSF chuyên nghiệp hơn trong mắt khách hàng, đối tác và đồng nghiệp."
+        "text": "Không gian sạch đẹp giúp VSF chuyên nghiệp hơn trong mắt Khách hàng nhượng quyền 1B, Đối tác 3B và đồng nghiệp."
       },
       {
         "key": "d",
@@ -2240,8 +2240,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 80
   },
   {
-    "id": "HN-84",
-    "stableId": "HN-84",
+    "id": "HN-81",
+    "stableId": "HN-81",
     "sectionNo": 9,
     "sectionName": "",
     "question": "Mỗi VSFer nên làm gì để tiết kiệm điện, nước và tài nguyên tại nơi làm việc?",
@@ -2268,8 +2268,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 81
   },
   {
-    "id": "HN-85",
-    "stableId": "HN-85",
+    "id": "HN-82",
+    "stableId": "HN-82",
     "sectionNo": 9,
     "sectionName": "",
     "question": "Khi thấy rác thải, nước đổ, mùi lạ hoặc nguy cơ gây mất vệ sinh môi trường tại nơi làm việc, VSFer nên làm gì?",
@@ -2296,15 +2296,15 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 82
   },
   {
-    "id": "HN-86",
-    "stableId": "HN-86",
+    "id": "HN-83",
+    "stableId": "HN-83",
     "sectionNo": 9,
     "sectionName": "",
     "question": "Vì sao bí mật kinh doanh (công thức, nhà cung cấp, giá vốn) được xem là tài sản quan trọng hàng đầu của VSF?",
     "options": [
       {
         "key": "a",
-        "text": "Vì đây là kết tinh công sức của cả tập thể và là nguồn tạo doanh thu."
+        "text": "Vì đây là thông tin quan trọng, tạo lợi thế kinh doanh và nguồn doanh thu cho VSF."
       },
       {
         "key": "b",
@@ -2320,12 +2320,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Bí mật kinh doanh là thành quả nhiều thế hệ VSFer dày công xây dựng và là nguồn tạo doanh thu. Bảo vệ bí mật này cũng là bảo vệ năng lực cạnh tranh và thu nhập chung của mọi VSFer.",
+    "explanation": "Công thức, nhà cung cấp và giá vốn giúp VSF duy trì lợi thế kinh doanh và tạo doanh thu. Không tiết lộ các thông tin này ra ngoài là cách bảo vệ công việc và thu nhập chung.",
     "displayNumber": 83
   },
   {
-    "id": "HN-87",
-    "stableId": "HN-87",
+    "id": "HN-84",
+    "stableId": "HN-84",
     "sectionNo": 9,
     "sectionName": "",
     "question": "Khi được cấp quyền truy cập dữ liệu, tài liệu hoặc thông tin nội bộ của VSF, VSFer nên sử dụng như thế nào?",
@@ -2352,8 +2352,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 84
   },
   {
-    "id": "HN-88",
-    "stableId": "HN-88",
+    "id": "HN-85",
+    "stableId": "HN-85",
     "sectionNo": 9,
     "sectionName": "",
     "question": "Khi có người bên ngoài muốn phỏng vấn, chụp hình, viết bài hoặc xin thông tin đại diện cho VSF, VSFer nên làm gì?",
@@ -2368,7 +2368,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Chuyển yêu cầu về bộ phận Truyền thông / Marketing hoặc quản lý phụ trách để xử lý theo kênh chính thức."
+        "text": "Chuyển yêu cầu về bộ phận Truyền thông, Marketing hoặc quản lý phụ trách để xử lý theo kênh chính thức."
       },
       {
         "key": "d",
@@ -2380,8 +2380,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 85
   },
   {
-    "id": "HN-89",
-    "stableId": "HN-89",
+    "id": "HN-86",
+    "stableId": "HN-86",
     "sectionNo": 9,
     "sectionName": "",
     "question": "Để bảo vệ thiết bị và tài sản của công ty, VSFer nên làm gì?",
@@ -2408,8 +2408,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 86
   },
   {
-    "id": "HN-90",
-    "stableId": "HN-90",
+    "id": "HN-87",
+    "stableId": "HN-87",
     "sectionNo": 9,
     "sectionName": "",
     "question": "Khi nghỉ việc, bạn nên bàn giao dữ liệu và tài khoản công việc do công ty cấp như thế nào?",
@@ -2420,15 +2420,15 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Bàn giao đầy đủ các trang thiết bị được cung cấp trong quá trình làm việc bằng biên bản cho quản lý trực tiếp/ phòng Hành chính nhân sự."
+        "text": "Bàn giao đầy đủ trang thiết bị đã được cấp bằng biên bản cho quản lý trực tiếp hoặc Phòng Hành chính Nhân sự."
       },
       {
         "key": "c",
-        "text": "Đảm bảo xoá dữ liệu cá nhân khỏi thiết bị công ty."
+        "text": "Đảm bảo xóa dữ liệu cá nhân khỏi thiết bị công ty."
       },
       {
         "key": "d",
-        "text": "Tất cả các đáp án trên"
+        "text": "Tất cả các đáp án trên."
       }
     ],
     "correctAnswer": "d",
@@ -2436,8 +2436,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 87
   },
   {
-    "id": "HN-91",
-    "stableId": "HN-91",
+    "id": "HN-88",
+    "stableId": "HN-88",
     "sectionNo": 9,
     "sectionName": "",
     "question": "Thói quen nào giúp mỗi VSFer bảo vệ thông tin và tài sản số trong công việc hằng ngày?",
@@ -2448,7 +2448,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Cẩn trọng với đường link, file , email lạ hoặc yêu cầu cung cấp thông tin bất thường."
+        "text": "Cẩn trọng với đường link, file, email lạ hoặc yêu cầu cung cấp thông tin bất thường."
       },
       {
         "key": "c",
@@ -2464,23 +2464,23 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 88
   },
   {
-    "id": "HN-92",
-    "stableId": "HN-92",
+    "id": "HN-89",
+    "stableId": "HN-89",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "Vì sao VSF yêu cầu chấm công đầy đủ vào, ra mỗi ngày làm việc?",
+    "question": "Vì sao VSFer cần chấm công đầy đủ theo ca làm việc?",
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc chấm công 2 lần mỗi ngày (trước giờ làm và trước khi về)"
+        "text": "Để thời gian vào và ra được ghi nhận trên hệ thống."
       },
       {
         "key": "b",
-        "text": "Để mọi giờ làm của VSFer được ghi nhận chính xác."
+        "text": "Để giờ làm của VSFer được ghi nhận chính xác."
       },
       {
         "key": "c",
-        "text": "Làm cơ sở tính lương, phụ cấp, phép và bảo vệ quyền lợi của chính bạn."
+        "text": "Làm cơ sở tính lương, phụ cấp, phép và các quyền lợi liên quan."
       },
       {
         "key": "d",
@@ -2488,27 +2488,27 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Chấm công đầy đủ là cách mỗi giờ làm của bạn được hệ thống ghi nhận là cơ sở để bảo vệ quyền lợi về lương và phép năm. Khi có bất kỳ sai sót nào, dữ liệu chấm công trên 1Office là căn cứ để rà soát và điều chỉnh nhanh.",
+    "explanation": "Dữ liệu chấm công là căn cứ để rà soát thời gian làm việc và các quyền lợi liên quan. VSFer cần chấm công theo quy định của ca làm việc và kiểm tra dữ liệu khi phát hiện sai sót.",
     "displayNumber": 89
   },
   {
-    "id": "HN-93",
-    "stableId": "HN-93",
-    "sectionNo": 9,
+    "id": "HN-90",
+    "stableId": "HN-90",
+    "sectionNo": 10,
     "sectionName": "",
-    "question": "Khi quên chấm công vào, ra, cách xử lý đúng để quyền lợi không bị ảnh hưởng là gì?",
+    "question": "Khi quên chấm công vào hoặc ra, VSFer cần làm gì để quyền lợi không bị ảnh hưởng?",
     "options": [
       {
         "key": "a",
-        "text": "Tạo đơn Check in, Check out trên 1Office trong vòng 24h."
+        "text": "Tạo đơn bổ sung Check-in hoặc Check-out trên 1Office trong thời hạn quy định."
       },
       {
         "key": "b",
-        "text": "Bắt buộc có xác nhận của cấp quản lý, sau đó báo lại Phòng Nhân sự."
+        "text": "Gửi quản lý trực tiếp xác nhận và theo dõi đến khi dữ liệu được ghi nhận."
       },
       {
         "key": "c",
-        "text": "Không cần làm gì Phòng Nhân sự sẽ tự biết."
+        "text": "Không cần xử lý vì Phòng Nhân sự sẽ tự bổ sung."
       },
       {
         "key": "d",
@@ -2516,27 +2516,27 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Khi quên chấm công, VSFer cần tạo đơn Check in, Check out trên 1Office trong vòng 24h và có xác nhận của cấp quản lý để Phòng Nhân sự ghi nhận đúng dữ liệu.",
+    "explanation": "Khi quên chấm công, VSFer cần tạo đơn bổ sung trong thời hạn quy định, gửi quản lý trực tiếp xác nhận và kiểm tra lại dữ liệu. Xử lý sớm giúp giờ làm, lương, phụ cấp và phép được tính đúng.",
     "displayNumber": 90
   },
   {
-    "id": "HN-94",
-    "stableId": "HN-94",
+    "id": "HN-91",
+    "stableId": "HN-91",
     "sectionNo": 10,
     "sectionName": "",
-    "question": "Khi cần nghỉ ốm cần biết quy trình nào giúp quyền lợi của bạn được bảo đảm?",
+    "question": "Khi cần nghỉ ốm, VSFer phải làm gì để quyền lợi được ghi nhận đúng?",
     "options": [
       {
         "key": "a",
-        "text": "Thông báo sớm cho cấp quản lý để được sắp xếp công việc phù hợp."
+        "text": "Thông báo sớm cho quản lý trực tiếp để đơn vị sắp xếp công việc."
       },
       {
         "key": "b",
-        "text": "Lập đơn nghỉ ốm trên 1Office theo đúng quy trình."
+        "text": "Lập đơn nghỉ ốm trên 1Office theo quy trình."
       },
       {
         "key": "c",
-        "text": "Nộp giấy khám bệnh / giấy ra viện hợp lệ ."
+        "text": "Bổ sung chứng từ y tế theo hướng dẫn đang áp dụng."
       },
       {
         "key": "d",
@@ -2544,12 +2544,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Nghỉ ốm đúng quy trình cần đủ 3 bước: báo sớm, lập đơn trên 1Office và nộp giấy tờ y tế hợp lệ. Làm đầy đủ giúp quyền lợi được ghi nhận đúng và tránh ảnh hưởng đến lương.",
+    "explanation": "Khi nghỉ ốm, VSFer cần báo sớm, lập đơn và bổ sung hồ sơ theo hướng dẫn. Thực hiện đủ các bước giúp ngày nghỉ và quyền lợi liên quan được xem xét đúng.",
     "displayNumber": 91
   },
   {
-    "id": "HN-95",
-    "stableId": "HN-95",
+    "id": "HN-92",
+    "stableId": "HN-92",
     "sectionNo": 10,
     "sectionName": "",
     "question": "Các đóng góp của bạn tại VSF sẽ được đo lường như thế nào?",
@@ -2576,36 +2576,36 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 92
   },
   {
-    "id": "HN-96",
-    "stableId": "HN-96",
+    "id": "HN-93",
+    "stableId": "HN-93",
     "sectionNo": 10,
     "sectionName": "",
-    "question": "Để các phúc lợi và quyền lợi cá nhân được ghi nhận đầy đủ, VSFer nên chủ động như thế nào?",
+    "question": "Khi có đề xuất giúp tăng doanh thu hoặc tiết kiệm chi phí, VSFer nên làm gì?",
     "options": [
       {
         "key": "a",
-        "text": "Cập nhật đúng và đủ thông tin cá nhân, hồ sơ liên quan khi có thay đổi."
+        "text": "Trao đổi ý tưởng với quản lý trực tiếp và nêu rõ lợi ích dự kiến."
       },
       {
         "key": "b",
-        "text": "Theo dõi các thông báo, chính sách phúc lợi và thực hiện đúng quy trình trên kênh chính thức."
+        "text": "Cung cấp thông tin cần thiết để đề xuất được xem xét và ghi nhận theo chính sách đang áp dụng."
       },
       {
         "key": "c",
-        "text": "Trao đổi với quản lý trực tiếp hoặc Phòng Nhân sự khi cần được hướng dẫn về quyền lợi, phúc lợi hoặc nhu cầu hỗ trợ phù hợp."
+        "text": "Giữ ý tưởng cho riêng mình vì công ty sẽ không xem xét."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Cả a và b đều đúng."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Phúc lợi chỉ phát huy trọn vẹn khi thông tin của mỗi VSFer được ghi nhận đúng và các đề xuất được gửi đúng kênh. Chủ động cập nhật hồ sơ, theo dõi chính sách và trao đổi với người quản lý trực tiếp bạn bảo vệ quyền lợi cá nhân, đồng thời giúp công ty hỗ trợ đúng người, đúng nhu cầu.",
+    "explanation": "Một đề xuất tốt cần nêu rõ vấn đề, cách làm và lợi ích dự kiến. Gửi đúng kênh giúp ý tưởng có căn cứ để được xem xét, thử nghiệm và ghi nhận.",
     "displayNumber": 93
   },
   {
-    "id": "HN-99",
-    "stableId": "HN-99",
+    "id": "HN-94",
+    "stableId": "HN-94",
     "sectionNo": 10,
     "sectionName": "",
     "question": "CHỌN CÂU KHÔNG ĐÚNG về vai trò của Hệ Giá Trị Cốt Lõi tại VSF?",
@@ -2624,17 +2624,17 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Hệ Giá Trị Cốt Lõi không dành cho VSFer"
+        "text": "Hệ Giá Trị Cốt Lõi không dành cho VSFer."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Đây là cách hiểu không đúng. Hệ Giá Trị Cốt Lõi là “Ngọn Hải Đăng” chung cho mọi VSFer trong từng hành động đó là làm thật, tạo giá trị thật, có trách nhiệm, biết làm chủ và không ngừng học hỏi.",
+    "explanation": "Đây là cách hiểu không đúng. Hệ Giá Trị Cốt Lõi là định hướng chung cho mọi VSFer. Các giá trị này cần được thể hiện qua cách làm việc, tạo kết quả, chịu trách nhiệm, làm chủ và học hỏi mỗi ngày.",
     "displayNumber": 94
   },
   {
-    "id": "HN-100",
-    "stableId": "HN-100",
-    "sectionNo": 10,
+    "id": "HN-95",
+    "stableId": "HN-95",
+    "sectionNo": 11,
     "sectionName": "",
     "question": "Ngoài lương cơ bản, VSFer nên hiểu quyền lợi của mình bao gồm những nhóm nào?",
     "options": [
@@ -2656,13 +2656,13 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Quyền lợi của VSFer không chỉ nằm ở lương hằng tháng, mà còn gồm các chế độ theo luật, phúc lợi nội bộ và kênh hướng dẫn để mỗi người biết cách sử dụng đúng. Hiểu đầy đủ giúp VSFer chủ động bảo vệ quyền lợi cá nhân và yên tâm đồng hành lâu dài với VSF.",
+    "explanation": "Quyền lợi của VSFer gồm lương, các chế độ theo luật, phúc lợi nội bộ đang áp dụng và kênh hướng dẫn. VSFer cần kiểm tra thông tin chính thức để thực hiện đúng quy trình và bảo vệ quyền lợi của mình.",
     "displayNumber": 95
   },
   {
-    "id": "HN-102",
-    "stableId": "HN-102",
-    "sectionNo": 10,
+    "id": "HN-96",
+    "stableId": "HN-96",
+    "sectionNo": 11,
     "sectionName": "",
     "question": "Về phúc lợi đào tạo và phát triển tại VSF, cách hiểu nào phù hợp?",
     "options": [
@@ -2684,19 +2684,19 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Đào tạo và phát triển là một phần trong phúc lợi mà VSF hướng đến cho VSFer. Khi được hướng dẫn, được khuyến khích học hỏi và được ghi nhận nỗ lực, mỗi người sẽ có thêm động lực nâng cao năng lực, làm việc tốt hơn và đồng hành lâu dài hơn với Nhà VSF.",
+    "explanation": "Đào tạo giúp VSFer hiểu việc, nâng cao kỹ năng và giảm sai sót. Chủ động học hỏi và làm theo hướng dẫn giúp mỗi người làm việc tốt hơn và phát triển năng lực.",
     "displayNumber": 96
   },
   {
-    "id": "HN-103",
-    "stableId": "HN-103",
+    "id": "HN-97",
+    "stableId": "HN-97",
     "sectionNo": 11,
     "sectionName": "",
     "question": "5 giá trị cốt lõi của VSF là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Trung thực, Kỷ luật, Sáng tạo, Hợp tác ."
+        "text": "Trung thực, Kỷ luật, Sáng tạo, Hợp tác."
       },
       {
         "key": "b",
@@ -2712,27 +2712,27 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "5 giá trị cốt lõi \"Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi\" là kim chỉ nam cho mọi hành động tại VSF từ phục vụ khách hàng đến hợp tác đồng nghiệp. Khi bạn sống đúng 5 giá trị, bạn không chỉ đóng góp cho VSF mà còn xây dựng bản thân.",
+    "explanation": "5 giá trị cốt lõi \"Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi\" là kim chỉ nam cho cách VSFer làm việc, phục vụ khách hàng và phối hợp với đồng nghiệp. Thực hiện đúng 5 giá trị giúp bạn làm việc rõ ràng và tiến bộ hơn.",
     "displayNumber": 97
   },
   {
-    "id": "HN-104",
-    "stableId": "HN-104",
+    "id": "HN-98",
+    "stableId": "HN-98",
     "sectionNo": 11,
     "sectionName": "",
-    "question": "Lộ trình thăng tiến tại VSF được thiết kế như thế nào để tạo cơ hội công bằng cho mọi VSFer?",
+    "question": "Khi quan tâm đến cơ hội phát triển hoặc thăng tiến tại VSF, VSFer nên làm gì?",
     "options": [
       {
         "key": "a",
-        "text": "Mỗi vị trí có tiêu chí năng lực và tiêu chí đánh giá rõ ràng."
+        "text": "Tìm hiểu tiêu chí năng lực và tiêu chí đánh giá đang áp dụng cho vị trí."
       },
       {
         "key": "b",
-        "text": "VSFer có thể tự đánh giá và đề xuất khi thấy đủ điều kiện; việc đánh giá được thực hiện định kỳ, minh bạch."
+        "text": "Trao đổi với quản lý trực tiếp khi muốn được hướng dẫn hoặc đề xuất đánh giá năng lực."
       },
       {
         "key": "c",
-        "text": "Do cấp quản lý quyết định cảm tính và không theo tiêu chí cụ thể."
+        "text": "Chờ quyết định cảm tính mà không cần quan tâm đến tiêu chí công việc."
       },
       {
         "key": "d",
@@ -2740,27 +2740,27 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Lộ trình thăng tiến minh bạch cần cả tiêu chí rõ ràng và cơ chế để VSFer tự đánh giá, đề xuất, được xem xét định kỳ dựa trên dữ liệu thay vì cảm tính.",
+    "explanation": "VSFer cần hiểu tiêu chí của vị trí và chủ động trao đổi qua đúng kênh. Việc xem xét cơ hội phát triển được thực hiện theo quy trình và chính sách đang áp dụng.",
     "displayNumber": 98
   },
   {
-    "id": "HN-105",
-    "stableId": "HN-105",
+    "id": "HN-99",
+    "stableId": "HN-99",
     "sectionNo": 11,
     "sectionName": "",
     "question": "Tại Nhà VSF, cách hiểu nào đúng nhất về tinh thần \"Làm Chủ\"?",
     "options": [
       {
         "key": "a",
-        "text": "LÀM là làm việc thực tế: không bàn lùi, không nói suông, đã nhận nhiệm vụ thì làm thật, làm sâu sát và làm đến cùng để tạo ra kết quả rõ ràng."
+        "text": "LÀM là bắt tay vào việc và theo đến kết quả."
       },
       {
         "key": "b",
-        "text": "CHỦ là sự chủ động: không ngồi chờ giao việc, biết tự tìm giải pháp, kiểm soát tiến độ và chịu trách nhiệm với kết quả cuối cùng."
+        "text": "CHỦ là chủ động tìm cách làm, theo dõi tiến độ và chịu trách nhiệm."
       },
       {
         "key": "c",
-        "text": "Người có tinh thần Làm Chủ xem công việc là sự nghiệp của mình, chủ động học hỏi để nâng cấp bản thân và khi gặp khó khăn thì mang theo phương án giải quyết để cùng thảo luận."
+        "text": "Khi gặp khó khăn, VSFer cần mang theo thông tin và phương án để cùng thảo luận."
       },
       {
         "key": "d",
@@ -2768,27 +2768,27 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Làm Chủ = LÀM + CHỦ. Đây không chỉ là khẩu hiệu hay chức danh, mà là tâm thế làm việc của mỗi VSFer: làm thật, chủ động, chịu trách nhiệm và không đổ lỗi",
+    "explanation": "Làm Chủ = LÀM + CHỦ. Đây là tâm thế làm việc thực tế, chủ động và có trách nhiệm. VSFer không chỉ nêu vấn đề mà cần cùng tìm cách xử lý để tạo ra kết quả.",
     "displayNumber": 99
   },
   {
-    "id": "HN-106",
-    "stableId": "HN-106",
-    "sectionNo": 11,
+    "id": "HN-100",
+    "stableId": "HN-100",
+    "sectionNo": 12,
     "sectionName": "",
-    "question": "Đâu là tư duy đúng đắn khi nhìn nhận mối quan hệ giữa VSFer và VSF?",
+    "question": "Đâu là cách hiểu đúng về mối quan hệ giữa VSFer và VSF?",
     "options": [
       {
         "key": "a",
-        "text": "Hai bên cùng đồng hành, cùng phát triển."
+        "text": "Hai bên cùng đồng hành và cùng phát triển."
       },
       {
         "key": "b",
-        "text": "VSFer mang năng lực và nhiệt huyết, VSF mang môi trường, cơ hội và phúc lợi; cả hai cùng lớn mạnh."
+        "text": "VSFer đóng góp năng lực, còn VSF tạo môi trường và cơ hội để mỗi người phát triển."
       },
       {
         "key": "c",
-        "text": "VSF phục vụ VSFer một chiều, không đòi hỏi ngược lại."
+        "text": "VSF chỉ phục vụ VSFer một chiều và không cần sự đóng góp ngược lại."
       },
       {
         "key": "d",
@@ -2796,27 +2796,27 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Mối quan hệ VSFer và VSF được xây trên hai chiều tôn trọng: VSFer đóng góp năng lực và tâm huyết; VSF đóng góp môi trường, cơ hội và phúc lợi. Khi cả hai cùng cam kết, mỗi người và công ty cùng trưởng thành.",
+    "explanation": "Mối quan hệ giữa VSFer và VSF được xây dựng từ sự tôn trọng và đóng góp hai chiều. Khi mỗi bên thực hiện tốt vai trò của mình, cả con người và công ty đều có cơ hội phát triển.",
     "displayNumber": 100
   },
   {
-    "id": "HN-107",
-    "stableId": "HN-107",
-    "sectionNo": 11,
+    "id": "HN-101",
+    "stableId": "HN-101",
+    "sectionNo": 12,
     "sectionName": "",
     "question": "Sau khi hoàn thành hội nhập và bước vào công việc chính thức, tư duy nào giúp VSFer phát triển bền vững tại VSF?",
     "options": [
       {
         "key": "a",
-        "text": "Làm thật và tạo ra giá trị thật kết quả thật, có trách nhiệm , làm chủ công việc và không ngừng học hỏi."
+        "text": "Làm việc thực chất, tạo ra giá trị và kết quả rõ ràng."
       },
       {
         "key": "b",
-        "text": "Dùng năng lực, tinh thần trách nhiệm và nhiệt huyết để tạo ra giá trị thật, kết quả thật."
+        "text": "Có trách nhiệm, chủ động làm chủ công việc và không ngừng học hỏi."
       },
       {
         "key": "c",
-        "text": "Tôn trọng đồng nghiệp, phối hợp tích cực, đóng góp ý kiến xây dựng và cùng tận hưởng hành trình tại “Nhà VSF”."
+        "text": "Tôn trọng đồng nghiệp, phối hợp tích cực và đóng góp ý kiến xây dựng cho Nhà VSF."
       },
       {
         "key": "d",
@@ -2824,12 +2824,12 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Phát triển bền vững tại VSF cần cả tư duy đúng và hành động đúng: sống theo 5 giá trị cốt lõi, làm chủ công việc, học hỏi liên tục, tạo giá trị thật và phối hợp tích cực với tập thể. Khi mỗi VSFer trưởng thành hơn mỗi ngày, Nhà VSF cũng ngày càng vững mạnh hơn.",
+    "explanation": "Để phát triển tại VSF, bạn cần làm ra kết quả, chịu trách nhiệm, chủ động xử lý công việc và tiếp tục học hỏi. Phối hợp tốt với đồng nghiệp giúp công việc chung hiệu quả hơn.",
     "displayNumber": 101
   },
   {
-    "id": "HN-108",
-    "stableId": "HN-108",
+    "id": "HN-102",
+    "stableId": "HN-102",
     "sectionNo": 12,
     "sectionName": "",
     "question": "Trong Má Hải Ways, Nguyên tắc chơi nhấn mạnh những điều gì?",
@@ -2856,8 +2856,8 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 102
   },
   {
-    "id": "HN-109",
-    "stableId": "HN-109",
+    "id": "HN-103",
+    "stableId": "HN-103",
     "sectionNo": 12,
     "sectionName": "",
     "question": "Theo Má Hải Ways, cách hiểu nào đúng về Kỹ năng quan trọng nhất?",
@@ -2884,23 +2884,23 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 103
   },
   {
-    "id": "HN-110",
-    "stableId": "HN-110",
+    "id": "HN-104",
+    "stableId": "HN-104",
     "sectionNo": 12,
     "sectionName": "",
     "question": "Phương châm “Tập trung làm người khác có thêm thu nhập” được hiểu như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Giúp đối tác nhượng quyền bán tốt hơn, vận hành hiệu quả hơn và có thêm thu nhập."
+        "text": "Giúp Khách hàng nhượng quyền 1B bán tốt hơn, vận hành hiệu quả hơn và có thêm thu nhập."
       },
       {
         "key": "b",
-        "text": "Hỗ trợ đồng đội giỏi hơn, tạo nhiều giá trị hơn và có cơ hội được ghi nhận xứng đáng."
+        "text": "Hỗ trợ đồng đội nâng cao năng lực, tạo nhiều giá trị hơn và có cơ hội được ghi nhận xứng đáng."
       },
       {
         "key": "c",
-        "text": "Mọi người vì một người thì mọi người sẽ vì một người."
+        "text": "Một người vì mọi người, mọi người vì một người."
       },
       {
         "key": "d",
@@ -2908,13 +2908,13 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "“Tập trung làm người khác có thêm thu nhập” nghĩa là cùng tạo điều kiện để đối tác kinh doanh hiệu quả hơn, đồng đội nâng cao năng lực và mỗi người có cơ hội được ghi nhận xứng đáng. Khi tập thể cùng hỗ trợ một người tạo ra giá trị và có thêm thu nhập, tinh thần đó sẽ tiếp tục được lan tỏa để từng thành viên đều nhận lại sự đồng hành từ tập thể. Nhờ vậy, hệ sinh thái VSF cùng phát triển và mọi người đều có thêm cơ hội nâng cao thu nhập.",
+    "explanation": "“Tập trung làm người khác có thêm thu nhập” là giúp Khách hàng nhượng quyền 1B kinh doanh hiệu quả hơn và giúp đồng đội nâng cao năng lực, tạo thêm giá trị. Khi mỗi người hỗ trợ người khác làm việc tốt hơn, cả tập thể sẽ có thêm cơ hội phát triển và nâng cao thu nhập.",
     "displayNumber": 104
   },
   {
-    "id": "HN-111",
-    "stableId": "HN-111",
-    "sectionNo": 12,
+    "id": "HN-105",
+    "stableId": "HN-105",
+    "sectionNo": 15,
     "sectionName": "",
     "question": "Triết lý “Tập trung làm kết quả ngày hôm nay tốt hơn ngày hôm qua” hướng VSFer đến điều gì?",
     "options": [
@@ -2940,9 +2940,9 @@ window.HOINHAP_QUESTIONS = [
     "displayNumber": 105
   },
   {
-    "id": "HN-112",
-    "stableId": "HN-112",
-    "sectionNo": 12,
+    "id": "HN-106",
+    "stableId": "HN-106",
+    "sectionNo": 15,
     "sectionName": "",
     "question": "Theo Má Hải Ways, Văn hóa “Sống luôn luôn phải biết ơn, yêu mến người khác” nhắc VSFer điều gì?",
     "options": [
@@ -2964,7 +2964,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Biết ơn và yêu mến người khác giúp VSFer giữ thái độ tích cực, xây dựng quan hệ tốt đẹp và nuôi dưỡng văn hóa làm việc nhân văn.",
+    "explanation": "Biết ơn và yêu mến người khác giúp VSFer tôn trọng, hỗ trợ đồng nghiệp và giữ quan hệ tốt với khách hàng, những người xung quanh.",
     "displayNumber": 106
   },
   {
