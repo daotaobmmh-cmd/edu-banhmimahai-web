@@ -272,7 +272,7 @@ module.exports = async function handler(req, res) {
 
     const threshold = getThresholdForUnit(unit);
     const passed = score >= threshold;
-    const DATASET_VERSION = '690c828e5c97f54574a1ac5e9ba8aeae47861934';
+    const DATASET_VERSION = 'cbf8d32b291af09f5bdceb487fb895d059ed55e2751725d86b27170a4bc7c964';
     const serverSubmittedAt = new Date().toISOString();
     const derivedPageUrl = `${originUrl.origin}/hoinhap/`;
 
