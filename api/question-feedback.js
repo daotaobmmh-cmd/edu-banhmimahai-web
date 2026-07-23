@@ -81,8 +81,58 @@ module.exports = async function handler(req, res) {
     }
   };
 
+async function fetchWithRetry(url, options = {}, maxRetries = 3, timeoutMs = 6000) {
+  let attempt = 0;
+  let lastError = null;
+
+  while (attempt <= maxRetries) {
+    attempt++;
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+    try {
+      const fetchFn = global.customFetch || fetch;
+      const res = await fetchFn(url, { ...options, signal: controller.signal });
+      clearTimeout(timer);
+
+      if (res.ok) {
+        return res;
+      }
+
+      const isRetryable = res.status === 429 || (res.status >= 500 && res.status <= 599);
+      if (!isRetryable || attempt > maxRetries) {
+        return res;
+      }
+
+      let delayMs = 200 * Math.pow(2, attempt - 1) + Math.floor(Math.random() * 100);
+      const retryAfterHeader = (res.headers && typeof res.headers.get === 'function') ? res.headers.get('retry-after') : null;
+      if (retryAfterHeader) {
+        const parsed = parseInt(retryAfterHeader, 10);
+        if (!isNaN(parsed) && parsed > 0) {
+          delayMs = Math.min(parsed * 1000, 5000);
+        }
+      }
+
+      await new Promise(resolve => setTimeout(resolve, delayMs));
+    } catch (err) {
+      clearTimeout(timer);
+      lastError = err;
+
+      if (attempt > maxRetries) {
+        throw err;
+      }
+
+      const delayMs = 250 * Math.pow(2, attempt - 1) + Math.floor(Math.random() * 100);
+      await new Promise(resolve => setTimeout(resolve, delayMs));
+    }
+  }
+
+  if (lastError) throw lastError;
+  throw new Error('Request failed after retries.');
+}
+
   try {
-    const response = await fetch('https://api.notion.com/v1/pages', {
+    const response = await fetchWithRetry('https://api.notion.com/v1/pages', {
       method: 'POST',
       headers: {
         authorization: `Bearer ${NOTION_TOKEN}`,

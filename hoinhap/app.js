@@ -98,6 +98,17 @@ function app() {
             if (this.sections.length > 0) {
                 this.activeSectionIndex = 0;
             }
+
+            // Auto-resend pending quiz result if browser closed/refreshed after error
+            try {
+                const rawPending = localStorage.getItem('hoinhap:pendingQuizResult');
+                if (rawPending) {
+                    const pendingPayload = JSON.parse(rawPending);
+                    if (pendingPayload && pendingPayload.attemptId) {
+                        this.postQuizResult(pendingPayload).catch(() => {});
+                    }
+                }
+            } catch (e) {}
             
             // Set initialization flag and hide fallback UI
             window.alpineInitialized = true;
@@ -559,21 +570,40 @@ function app() {
             await this.postQuizResult();
         },
 
-        async postQuizResult() {
+        async postQuizResult(overridePayload = null) {
             if (this.isSubmittingResult) return;
             this.isSubmittingResult = true;
             this.resultSendingStatus = 'sending';
             this.resultErrorMessage = '';
 
-            const payload = {
-                attemptId: this.testAttemptId,
-                learnerName: this.learnerName.trim(),
-                unit: this.learnerDept,
-                testAnswers: this.testAnswers,
-                testQuestions: this.testQuestions.map(q => q.id),
-                pageUrl: window.location.href,
-                submittedAt: new Date().toISOString()
-            };
+            let payload = overridePayload;
+            if (!payload) {
+                try {
+                    const rawPending = localStorage.getItem('hoinhap:pendingQuizResult');
+                    if (rawPending) {
+                        const parsedPending = JSON.parse(rawPending);
+                        if (parsedPending && parsedPending.attemptId === this.testAttemptId) {
+                            payload = parsedPending;
+                        }
+                    }
+                } catch (e) {}
+
+                if (!payload) {
+                    payload = {
+                        attemptId: this.testAttemptId,
+                        learnerName: this.learnerName.trim(),
+                        unit: this.learnerDept,
+                        testAnswers: this.testAnswers,
+                        testQuestions: this.testQuestions.map(q => q.id),
+                        pageUrl: window.location.href,
+                        submittedAt: new Date().toISOString()
+                    };
+                }
+            }
+
+            try {
+                localStorage.setItem('hoinhap:pendingQuizResult', JSON.stringify(payload));
+            } catch (e) {}
 
             try {
                 const res = await fetch('/api/quiz-result', {
@@ -587,6 +617,9 @@ function app() {
                     if (typeof data.passed === 'boolean') this.resultPassed = data.passed;
                     if (typeof data.threshold === 'number') this.resultThreshold = data.threshold;
                     this.resultSendingStatus = 'success';
+                    try {
+                        localStorage.removeItem('hoinhap:pendingQuizResult');
+                    } catch (e) {}
                 } else {
                     this.resultSendingStatus = 'error';
                     this.resultErrorMessage = data.error || 'Không thể lưu kết quả thi.';
