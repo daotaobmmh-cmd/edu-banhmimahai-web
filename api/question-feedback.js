@@ -1,4 +1,4 @@
-const NOTION_VERSION = '2025-09-03';
+const NOTION_VERSION = '2022-06-28';
 
 module.exports = async function handler(req, res) {
   const host = req.headers.host || '';
@@ -63,7 +63,7 @@ module.exports = async function handler(req, res) {
   }
 
   const notionPayload = {
-    parent: { type: 'data_source_id', data_source_id: NOTION_FEEDBACK_DATA_SOURCE_ID },
+    parent: { database_id: NOTION_FEEDBACK_DATA_SOURCE_ID },
     properties: {
       'Góp ý': { title: [{ type: 'text', text: { content: feedbackText } }] },
       'Trạng thái': { status: { name: 'Mới' } },
