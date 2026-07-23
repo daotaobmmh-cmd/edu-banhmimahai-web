@@ -1,5 +1,5 @@
 function app() {
-    const DATASET_VERSION = 'v1.4';
+    const DATASET_VERSION = 'v1.7';
     return {
         // App State
         currentView: 'gate', // 'gate', 'study', 'test', 'result'
@@ -384,10 +384,10 @@ function app() {
             return base;
         },
 
-        // Test Mode: Pick 30 random questions (10 from group 1, 10 from group 2, 10 from MHW)
+        // Test Mode: Pick 30 random questions (10 from group 1: HN 1-54, 10 from group 2: HN 55-106, 10 from MHW)
         pickTest() {
-            const q13 = this.allQuestions.filter(q => q.stableId && q.stableId.startsWith('HN-') && parseInt(q.stableId.split('-')[1]) <= 57 && q.active !== false);
-            const q14 = this.allQuestions.filter(q => q.stableId && q.stableId.startsWith('HN-') && parseInt(q.stableId.split('-')[1]) > 57 && q.active !== false);
+            const q13 = this.allQuestions.filter(q => q.stableId && q.stableId.startsWith('HN-') && parseInt(q.stableId.split('-')[1]) <= 54 && q.active !== false);
+            const q14 = this.allQuestions.filter(q => q.stableId && q.stableId.startsWith('HN-') && parseInt(q.stableId.split('-')[1]) > 54 && q.active !== false);
             const q65 = this.allQuestions.filter(q => q.stableId && q.stableId.startsWith('MHW-') && q.active !== false);
             
             const selected13 = this.shuffle(q13).slice(0, 10);
