@@ -1,4 +1,4 @@
-const NOTION_VERSION = '2025-09-03';
+const NOTION_VERSION = '2022-06-28';
 const fs = require('fs');
 const path = require('path');
 
@@ -206,7 +206,7 @@ module.exports = async function handler(req, res) {
     // 1. Notion Data Source Preflight Query (Fail-Closed)
     let checkRes;
     try {
-      checkRes = await fetch(`https://api.notion.com/v1/data_sources/${NOTION_QUIZ_RESULT_DATA_SOURCE_ID}/query`, {
+      checkRes = await fetch(`https://api.notion.com/v1/databases/${NOTION_QUIZ_RESULT_DATA_SOURCE_ID}/query`, {
         method: 'POST',
         headers: {
           authorization: `Bearer ${NOTION_TOKEN}`,
@@ -277,7 +277,7 @@ module.exports = async function handler(req, res) {
     const derivedPageUrl = `${originUrl.origin}/hoinhap/`;
 
     const notionPayload = {
-      parent: { type: 'data_source_id', data_source_id: NOTION_QUIZ_RESULT_DATA_SOURCE_ID },
+      parent: { database_id: NOTION_QUIZ_RESULT_DATA_SOURCE_ID },
       properties: {
         'Result ID': { title: [{ type: 'text', text: { content: attemptId } }] },
         'Họ tên': { rich_text: [{ type: 'text', text: { content: learnerName } }] },
