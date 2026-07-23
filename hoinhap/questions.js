@@ -1852,7 +1852,7 @@ window.HOINHAP_QUESTIONS = [
     "stableId": "HN-67",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Người lạ tự xưng là Khách hàng nhượng quyền 1B hoặc Nhà cung cấp 3A và hỏi thông tin nhân sự, tiền lương hoặc chính sách nội bộ. Bạn nên làm gì?",
+    "question": "Người lạ tự xưng là khách hàng nhượng quyền hoặc nhà cung cấp và hỏi thông tin nhân sự, tiền lương hoặc chính sách nội bộ. Bạn nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -1920,7 +1920,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "TRỌNG, TÍN, GHI, ƠN: tôn trọng, giữ chữ tín và ghi ơn Khách hàng nhượng quyền 1B bằng sự tận tâm."
+        "text": "TRỌNG, TÍN, GHI, ƠN: tôn trọng, giữ chữ tín và ghi ơn khách hàng bằng sự tận tâm."
       },
       {
         "key": "d",
@@ -2228,7 +2228,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Không gian sạch đẹp giúp VSF chuyên nghiệp hơn trong mắt Khách hàng nhượng quyền 1B và đồng nghiệp."
+        "text": "Không gian sạch đẹp giúp VSF chuyên nghiệp hơn trong mắt khách hàng và đồng nghiệp."
       },
       {
         "key": "d",
@@ -2892,7 +2892,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Giúp Khách hàng nhượng quyền 1B bán tốt hơn, vận hành hiệu quả hơn và có thêm thu nhập."
+        "text": "Giúp khách hàng nhượng quyền bán tốt hơn, vận hành hiệu quả hơn và có thêm thu nhập."
       },
       {
         "key": "b",
@@ -2908,7 +2908,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "“Tập trung làm người khác có thêm thu nhập” là giúp Khách hàng nhượng quyền 1B kinh doanh hiệu quả hơn và giúp đồng đội nâng cao năng lực, tạo thêm giá trị. Khi mỗi người hỗ trợ người khác làm việc tốt hơn, cả tập thể sẽ có thêm cơ hội phát triển và nâng cao thu nhập.",
+    "explanation": "“Tập trung làm người khác có thêm thu nhập” là giúp khách hàng nhượng quyền kinh doanh hiệu quả hơn và giúp đồng đội nâng cao năng lực, tạo thêm giá trị. Khi mỗi người hỗ trợ người khác làm việc tốt hơn, cả tập thể sẽ có thêm cơ hội phát triển và nâng cao thu nhập.",
     "displayNumber": 104
   },
   {
@@ -3624,7 +3624,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Nhân sự được chăm sóc tốt sẽ có động lực chăm sóc lại khách hàng và Khách hàng nhượng quyền 1B trên cả mong đợi."
+        "text": "Nhân sự được chăm sóc tốt sẽ có động lực chăm sóc khách hàng trên cả mong đợi."
       },
       {
         "key": "c",
