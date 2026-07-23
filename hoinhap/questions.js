@@ -1920,7 +1920,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "TRỌNG, TÍN, GHI, ƠN: tôn trọng, giữ chữ tín và ghi ơn Khách hàng nhượng quyền 1B, Đối tác 3B bằng sự tận tâm."
+        "text": "TRỌNG, TÍN, GHI, ƠN: tôn trọng, giữ chữ tín và ghi ơn Khách hàng nhượng quyền 1B bằng sự tận tâm."
       },
       {
         "key": "d",
@@ -2228,7 +2228,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Không gian sạch đẹp giúp VSF chuyên nghiệp hơn trong mắt Khách hàng nhượng quyền 1B, Đối tác 3B và đồng nghiệp."
+        "text": "Không gian sạch đẹp giúp VSF chuyên nghiệp hơn trong mắt Khách hàng nhượng quyền 1B và đồng nghiệp."
       },
       {
         "key": "d",
@@ -3624,7 +3624,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Nhân sự được chăm sóc tốt sẽ có động lực chăm sóc lại khách hàng và đối tác nhượng quyền trên cả mong đợi."
+        "text": "Nhân sự được chăm sóc tốt sẽ có động lực chăm sóc lại khách hàng và Khách hàng nhượng quyền 1B trên cả mong đợi."
       },
       {
         "key": "c",
