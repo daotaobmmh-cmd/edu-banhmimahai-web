@@ -9,6 +9,18 @@ function app() {
         // Learner State
         learnerName: '',
         learnerDept: '',
+        unitAllowlist: [
+            "Bộ phận Phát triển Khách hàng hiện hữu",
+            "Phòng Marketing",
+            "Bộ phận Phát triển nhượng quyền",
+            "Phòng Kinh doanh",
+            "Nhà máy MHF",
+            "Phòng Kho vận",
+            "Phòng Hành chính - Nhân sự",
+            "Phòng Tài chính - Kế toán",
+            "Ban Quản lý Quy trình",
+            "VSF University"
+        ],
         
         // Questions Data
         allQuestions: [],
@@ -26,12 +38,18 @@ function app() {
         testTimer: 1800, // 30 minutes in seconds
         testTimerInterval: null,
         testStartTime: null,
+        testAttemptId: '',
         
         // Result State
         resultScore: 0,
         resultPassed: false,
+        resultThreshold: 25,
         resultTimeSpent: '',
         resultWrongQuestions: [], // questions answered incorrectly in test
+        resultUnansweredCount: 0,
+        resultSendingStatus: 'idle', // 'idle', 'sending', 'success', 'error'
+        resultErrorMessage: '',
+        isSubmittingResult: false,
         
         // Feedback State & Micro-interactions
         feedbackTexts: {}, // maps question ID to text
@@ -51,7 +69,8 @@ function app() {
             
             // Load learner info from localStorage
             this.learnerName = localStorage.getItem('hoinhap:learnerName') || '';
-            this.learnerDept = localStorage.getItem('hoinhap:learnerDept') || '';
+            const savedDept = localStorage.getItem('hoinhap:learnerDept') || '';
+            this.learnerDept = this.unitAllowlist.includes(savedDept) ? savedDept : '';
             
             // Check dataset version in localStorage
             const savedVersion = localStorage.getItem('hoinhap:datasetVersion');
@@ -385,14 +404,29 @@ function app() {
 
         // Test Mode: Start test
         startTest() {
-            if (!this.learnerName.trim()) {
-                alert('Vui lòng nhập họ tên trước khi bắt đầu bài thi.');
+            const name = this.learnerName.trim();
+            if (!name || name.length > 100) {
+                alert('Vui lòng nhập họ tên (từ 1 đến 100 ký tự) trên màn hình chính trước khi bắt đầu bài thi.');
+                this.currentView = 'gate';
                 return;
             }
-            
+
+            if (!this.learnerDept || !this.unitAllowlist.includes(this.learnerDept)) {
+                alert('Vui lòng chọn Đơn vị trên màn hình chính trước khi bắt đầu bài thi.');
+                this.currentView = 'gate';
+                return;
+            }
+
             // Save info
-            localStorage.setItem('hoinhap:learnerName', this.learnerName.trim());
-            localStorage.setItem('hoinhap:learnerDept', this.learnerDept.trim());
+            localStorage.setItem('hoinhap:learnerName', name);
+            localStorage.setItem('hoinhap:learnerDept', this.learnerDept);
+
+            // Generate stable attemptId for this attempt
+            if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+                this.testAttemptId = crypto.randomUUID();
+            } else {
+                this.testAttemptId = 'attempt_' + Date.now() + '_' + Math.random().toString(36).slice(2, 10) + '_' + Math.random().toString(36).slice(2, 10);
+            }
             
             // Initialize test state
             this.testQuestions = this.pickTest();
@@ -400,6 +434,8 @@ function app() {
             this.testCurrentIndex = 0;
             this.testTimer = 1800; // 30 minutes
             this.testStartTime = new Date();
+            this.resultSendingStatus = 'idle';
+            this.resultErrorMessage = '';
             
             // Launch timer
             if (this.testTimerInterval) clearInterval(this.testTimerInterval);
@@ -456,7 +492,7 @@ function app() {
         },
 
         // Test Mode: Submit test
-        submitTest(auto = false) {
+        async submitTest(auto = false) {
             if (!auto) {
                 const unansweredCount = 30 - Object.keys(this.testAnswers).length;
                 if (unansweredCount > 0 && !confirm(`Bạn còn ${unansweredCount} câu chưa trả lời. Vẫn nộp bài?`)) {
@@ -468,13 +504,14 @@ function app() {
             this.showConfirmSubmit = false;
             if (this.testTimerInterval) clearInterval(this.testTimerInterval);
             
-            // Calculate score
+            // Pre-calculate score
             let correct = 0;
+            let unanswered = 0;
             const wrong = [];
             this.testQuestions.forEach((q, idx) => {
                 const ans = this.testAnswers[q.id];
-                if (ans === undefined || ans === null) {
-                    // Unanswered: marked as wrong
+                if (ans === undefined || ans === null || ans === '') {
+                    unanswered++;
                     wrong.push({
                         question: q,
                         index: idx,
@@ -491,41 +528,90 @@ function app() {
                 }
             });
             
+            const threshold = (this.learnerDept === 'Nhà máy MHF' || this.learnerDept === 'Phòng Kho vận') ? 20 : 25;
             this.resultScore = correct;
-            this.resultPassed = correct >= 24; // 80% correct (24/30)
+            this.resultPassed = correct >= threshold;
+            this.resultThreshold = threshold;
+            this.resultUnansweredCount = unanswered;
+            this.resultWrongQuestions = wrong;
             
             // Calculate time spent
             const endTime = new Date();
-            const diffMs = endTime - this.testStartTime;
+            const diffMs = endTime - (this.testStartTime || endTime);
             const diffSecs = Math.floor(diffMs / 1000);
             const m = Math.floor(diffSecs / 60);
             const s = diffSecs % 60;
             this.resultTimeSpent = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
             
-            this.resultWrongQuestions = wrong;
-            
             // Save last result
             localStorage.setItem('hoinhap:lastResult', JSON.stringify({
                 name: this.learnerName.trim(),
-                dept: this.learnerDept.trim(),
+                dept: this.learnerDept,
                 correct,
                 pass: this.resultPassed,
+                threshold,
                 at: new Date().toISOString()
             }));
             
             this.currentView = 'result';
+
+            // Post result to server
+            await this.postQuizResult();
+        },
+
+        async postQuizResult() {
+            if (this.isSubmittingResult) return;
+            this.isSubmittingResult = true;
+            this.resultSendingStatus = 'sending';
+            this.resultErrorMessage = '';
+
+            const payload = {
+                attemptId: this.testAttemptId,
+                learnerName: this.learnerName.trim(),
+                unit: this.learnerDept,
+                testAnswers: this.testAnswers,
+                testQuestions: this.testQuestions.map(q => q.id),
+                pageUrl: window.location.href,
+                submittedAt: new Date().toISOString()
+            };
+
+            try {
+                const res = await fetch('/api/quiz-result', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+                if (data.ok) {
+                    if (typeof data.score === 'number') this.resultScore = data.score;
+                    if (typeof data.passed === 'boolean') this.resultPassed = data.passed;
+                    if (typeof data.threshold === 'number') this.resultThreshold = data.threshold;
+                    this.resultSendingStatus = 'success';
+                } else {
+                    this.resultSendingStatus = 'error';
+                    this.resultErrorMessage = data.error || 'Không thể lưu kết quả thi.';
+                }
+            } catch (err) {
+                this.resultSendingStatus = 'error';
+                this.resultErrorMessage = 'Không thể kết nối đến máy chủ.';
+            } finally {
+                this.isSubmittingResult = false;
+            }
         },
 
         // Study Mode: Enter study view
         startStudy() {
-            if (!this.learnerName.trim()) {
+            const name = this.learnerName.trim();
+            if (!name) {
                 alert('Vui lòng nhập họ tên trước khi bắt đầu.');
                 return;
             }
             
             // Save info
-            localStorage.setItem('hoinhap:learnerName', this.learnerName.trim());
-            localStorage.setItem('hoinhap:learnerDept', this.learnerDept.trim());
+            localStorage.setItem('hoinhap:learnerName', name);
+            if (this.learnerDept) {
+                localStorage.setItem('hoinhap:learnerDept', this.learnerDept);
+            }
             
             this.currentView = 'study';
         },
