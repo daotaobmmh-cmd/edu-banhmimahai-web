@@ -60,7 +60,7 @@ window.HOINHAP_QUESTIONS = [
     "stableId": "HN-3",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "Trong nội bộ VSF, người làm việc tại công ty có thể được gọi bằng những cách nào?",
+    "question": "Trong nội bộ VSF, cách gọi thống nhất dành cho người làm việc tại công ty là gì?",
     "options": [
       {
         "key": "a",
@@ -76,11 +76,11 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các đáp án trên."
+        "text": "Cả ba cách gọi trên."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Cả ba cách gọi đều được sử dụng trong nội bộ VSF theo từng bối cảnh. VSFer gắn với thương hiệu VSF, Mahaier gắn với nguồn gốc Nhà Má – Má Hải, còn anh em là cách gọi thân mật trong giao tiếp nội bộ. Trong tài liệu chính thức, nên ưu tiên VSFer để thống nhất cách gọi.",
+    "correctAnswer": "a",
+    "explanation": "VSFer là cách gọi thống nhất dành cho người làm việc tại VSF. Mahaier và anh em không phải cách gọi chính thức trong nội bộ công ty.",
     "displayNumber": 3
   },
   {
