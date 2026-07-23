@@ -3244,7 +3244,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Lãng phí lớn nhất là \"làm lại\", làm đúng ngay từ đầu chính là cách tiết kiệm nhất.\n## Đợt 2 · Tập trung, dùng tốt thời gian và nguồn lực",
+    "explanation": "Lãng phí lớn nhất là \"làm lại\", làm đúng ngay từ đầu chính là cách tiết kiệm nhất.",
     "displayNumber": 116
   },
   {
@@ -3552,7 +3552,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Tiền mất có thể kiếm lại, nhưng thời gian một khi đã trôi qua thì không bao giờ quay lại. Đây là điều Nhà VSF nhấn mạnh.\n## Đợt 3 · Biết ơn và yêu mến",
+    "explanation": "Tiền mất có thể kiếm lại, nhưng thời gian một khi đã trôi qua thì không bao giờ quay lại. Đây là điều Nhà VSF nhấn mạnh.",
     "displayNumber": 127
   },
   {
@@ -3832,7 +3832,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Nhà VSF xác định gia đình nhân sự chính là hậu phương vững chắc. Muốn công ty đi xa, phải bắt đầu từ việc quan tâm đến người nhân sự và gia đình họ.\n## Đợt 4 · Làm vì người khác, 5 node, đại sứ thương hiệu",
+    "explanation": "Nhà VSF xác định gia đình nhân sự chính là hậu phương vững chắc. Muốn công ty đi xa, phải bắt đầu từ việc quan tâm đến người nhân sự và gia đình họ.",
     "displayNumber": 137
   },
   {
@@ -4168,7 +4168,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Nhà VSF khẳng định: thành công của tổ chức không đến từ quyền lực của người quản lý mà từ cách họ phục vụ và hỗ trợ đội ngũ người thực hiện công việc.\n## Đợt 5 · Tiến bộ mỗi ngày, học hỏi, cải tiến",
+    "explanation": "Nhà VSF khẳng định: thành công của tổ chức không đến từ quyền lực của người quản lý mà từ cách họ phục vụ và hỗ trợ đội ngũ người thực hiện công việc.",
     "displayNumber": 149
   },
   {
@@ -4476,7 +4476,7 @@ window.HOINHAP_QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Quy trình không bắt đầu từ con số 0 mà từ việc nhìn lại điều đã trải qua.\n## Đợt 6 · Làm chuẩn, làm thật, kỷ luật vận hành",
+    "explanation": "Quy trình không bắt đầu từ con số 0 mà từ việc nhìn lại điều đã trải qua.",
     "displayNumber": 160
   },
   {
