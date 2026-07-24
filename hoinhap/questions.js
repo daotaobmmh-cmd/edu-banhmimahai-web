@@ -40,7 +40,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -76,7 +76,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Cả ba cách gọi trên."
       }
     ],
     "correctAnswer": "a",
@@ -104,7 +104,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
@@ -216,7 +216,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
@@ -264,7 +264,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -296,7 +296,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -328,7 +328,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
@@ -344,7 +344,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -376,7 +376,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -408,7 +408,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -456,7 +456,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -488,7 +488,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -520,7 +520,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -600,7 +600,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -632,7 +632,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -680,7 +680,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -712,7 +712,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -888,7 +888,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
@@ -968,7 +968,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -1000,7 +1000,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
@@ -1080,7 +1080,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -1112,7 +1112,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
@@ -1160,7 +1160,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1224,7 +1224,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên đều đúng."
       }
     ],
     "correctAnswer": "d",
@@ -1240,7 +1240,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1336,7 +1336,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
@@ -1464,7 +1464,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1496,7 +1496,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1520,7 +1520,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1552,7 +1552,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1584,7 +1584,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -1616,7 +1616,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
@@ -1696,7 +1696,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -1744,7 +1744,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1888,7 +1888,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1920,7 +1920,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2000,7 +2000,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2032,7 +2032,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2064,7 +2064,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
@@ -2144,7 +2144,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2256,7 +2256,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2336,7 +2336,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2368,7 +2368,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2400,7 +2400,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
@@ -2416,7 +2416,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2448,7 +2448,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2480,7 +2480,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2528,7 +2528,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2560,7 +2560,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2640,7 +2640,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2672,7 +2672,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2752,7 +2752,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2816,7 +2816,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2848,7 +2848,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên."
       }
     ],
     "correctAnswer": "d",
@@ -2896,7 +2896,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2928,7 +2928,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -3232,7 +3232,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -3488,7 +3488,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -3520,7 +3520,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên"
       }
     ],
     "correctAnswer": "d",
@@ -3568,7 +3568,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -3904,7 +3904,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -4096,7 +4096,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -4128,7 +4128,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -4304,7 +4304,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Cả ba vai trò trên cùng tạo nên sự chuyển mình của tổ chức"
       }
     ],
     "correctAnswer": "d",
@@ -4352,7 +4352,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -4496,7 +4496,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -4688,7 +4688,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A, C và D đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -4752,7 +4752,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Tất cả các ý trên"
       }
     ],
     "correctAnswer": "d",
