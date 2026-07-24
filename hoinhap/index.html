@@ -237,7 +237,7 @@
                             
                             <!-- Feedback UI Practice Mode -->
                             <div class="mt-4" x-show="currentStudyQuestion">
-                                <div class="flex items-center gap-2.5">
+                                <div class="flex items-start gap-2.5">
                                     <textarea :data-feedback-qid="currentStudyQuestion?.id"
                                               x-model="feedbackTexts[currentStudyQuestion.id]"
                                               @input="feedbackStatuses[currentStudyQuestion.id] = 'idle'"
@@ -250,12 +250,12 @@
                                             aria-label="Góp ý câu này"
                                             class="h-10 min-h-[40px] px-3.5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold font-quicksand text-[13px] flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-amber-50 disabled:hover:border-amber-300">
                                         <template x-if="feedbackStatuses[currentStudyQuestion.id] === 'sending'">
-                                            <span class="material-symbols-outlined animate-spin text-[18px] leading-none">progress_activity</span>
+                                            <span aria-hidden="true" class="w-4 h-4 rounded-full border-2 border-amber-300 border-t-amber-800 animate-spin flex-shrink-0"></span>
                                         </template>
                                         <template x-if="feedbackStatuses[currentStudyQuestion.id] !== 'sending'">
                                             <span class="material-symbols-outlined text-[18px] leading-none">rate_review</span>
                                         </template>
-                                        <span>Góp ý</span>
+                                        <span x-text="feedbackStatuses[currentStudyQuestion.id] === 'sending' ? 'Đang gửi...' : 'Góp ý'">Góp ý</span>
                                     </button>
                                 </div>
                                 <div x-show="feedbackStatuses[currentStudyQuestion.id] === 'error'" x-transition class="mt-2 text-[12px] font-bold text-error flex items-center gap-1 font-quicksand">
@@ -519,7 +519,7 @@
                                 
                                 <!-- Feedback UI Test Mode -->
                                 <div class="mt-4">
-                                    <div class="flex items-center gap-2.5">
+                                    <div class="flex items-start gap-2.5">
                                         <textarea :data-feedback-qid="w.question.id"
                                                   x-model="feedbackTexts[w.question.id]"
                                                   @input="feedbackStatuses[w.question.id] = 'idle'"
@@ -532,12 +532,12 @@
                                                 aria-label="Góp ý câu này"
                                                 class="h-10 min-h-[40px] px-3.5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold font-quicksand text-[13px] flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-amber-50 disabled:hover:border-amber-300">
                                             <template x-if="feedbackStatuses[w.question.id] === 'sending'">
-                                                <span class="material-symbols-outlined animate-spin text-[18px] leading-none">progress_activity</span>
+                                                <span aria-hidden="true" class="w-4 h-4 rounded-full border-2 border-amber-300 border-t-amber-800 animate-spin flex-shrink-0"></span>
                                             </template>
                                             <template x-if="feedbackStatuses[w.question.id] !== 'sending'">
                                                 <span class="material-symbols-outlined text-[18px] leading-none">rate_review</span>
                                             </template>
-                                            <span>Góp ý</span>
+                                            <span x-text="feedbackStatuses[w.question.id] === 'sending' ? 'Đang gửi...' : 'Góp ý'">Góp ý</span>
                                         </button>
                                     </div>
                                     <div x-show="feedbackStatuses[w.question.id] === 'error'" x-transition class="mt-2 text-[12px] font-bold text-error flex items-center gap-1 font-quicksand">
