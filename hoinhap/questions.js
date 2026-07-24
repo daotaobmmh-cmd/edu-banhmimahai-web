@@ -40,7 +40,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -120,7 +120,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Cả hai ý b và c."
+        "text": "Năm 2021, VSF hợp tác cùng Chợ Tốt trong chiến dịch Mua bánh mì, tặng việc làm, tạo hơn 1.000.000 cơ hội việc làm."
       },
       {
         "key": "b",
@@ -128,14 +128,14 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Năm 2021, VSF hợp tác cùng Chợ Tốt trong chiến dịch Mua bánh mì, tặng việc làm, tạo hơn 1.000.000 cơ hội việc làm."
+        "text": "Cả hai ý a và b."
       },
       {
         "key": "d",
         "text": "VSF chưa có hoạt động cộng đồng chính thức."
       }
     ],
-    "correctAnswer": "a",
+    "correctAnswer": "c",
     "explanation": "Hai hoạt động này cho thấy VSF không chỉ bán sản phẩm mà còn tạo cơ hội việc làm và hỗ trợ sinh kế. Khi hiểu điều này, VSFer thấy công việc của mình có ý nghĩa hơn và tự hào hơn vì đang góp phần làm điều tốt cho cộng đồng.",
     "displayNumber": 5
   },
@@ -152,7 +152,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Trở thành thương hiệu ẩm thực đường phố Việt Nam hàng đầu, đưa ẩm thực bình dân Việt ra thế giới bằng nhượng quyền và chuỗi cung ứng bền vững."
+        "text": "Trở thành thương hiệu ẩm thực đường phố Việt Nam hàng đầu, đ��a ẩm thực bình dân Việt ra thế giới bằng nhượng quyền và chuỗi cung ứng bền vững."
       },
       {
         "key": "c",
@@ -264,7 +264,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -296,7 +296,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -344,7 +344,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -360,7 +360,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "TRÁCH NHIỆM là dám nhận, giữ lời và xử lý lỗi tới cùng. Khi VSFer làm đúng giá trị này, việc của mình chắc hơn, đồng nghiệp tin hơn và công ty cũng vận hành ổn định hơn.",
+    "explanation": "TRÁCH NHIỆM là dám nhận, giữ lời và xử lý lỗi tới cùng. Khi VSFer làm đúng giá trị này, việc của mình chắc hơn, đồng nghi��p tin hơn và công ty cũng vận hành ổn định hơn.",
     "displayNumber": 13
   },
   {
@@ -376,7 +376,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -408,7 +408,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -456,7 +456,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -488,7 +488,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -520,7 +520,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -568,7 +568,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Đáp án b và d đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -600,7 +600,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -632,7 +632,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -680,7 +680,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -696,7 +696,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Xử lý kỷ luật lao động phải đúng hình thức, đúng căn cứ và đúng trình tự. Hồ sơ, giải trình và quyết định cần được lưu vết rõ ràng. Không tự bổ sung hình thức kỷ luật ngoài quy định.",
+    "explanation": "Xử lý kỷ luật lao động phải đúng hình thức, đúng căn cứ và đúng trình tự. Hồ sơ, giải trình và quyết định cần được lưu vết rõ ràng. Không tự bổ sung hình thức kỷ lu��t ngoài quy định.",
     "displayNumber": 25
   },
   {
@@ -712,7 +712,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -744,7 +744,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Đáp án a và b đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "d",
@@ -824,7 +824,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Cả a và d đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -856,7 +856,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Cả a và b đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "d",
@@ -904,7 +904,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Câu a và b đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -968,7 +968,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -1016,7 +1016,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Câu a và b đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -1048,7 +1048,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Câu a và b đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -1080,7 +1080,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -1128,7 +1128,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Câu a và b đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -1160,7 +1160,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả đáp án trên đều đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1240,7 +1240,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các đáp án trên."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1272,7 +1272,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Đáp án a và d đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -1304,7 +1304,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Đáp án a và b đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "d",
@@ -1352,7 +1352,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Cả b và d đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -1384,7 +1384,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Đáp án a và d đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -1464,7 +1464,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1496,7 +1496,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Cả ba ý a, b và c."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1520,7 +1520,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1552,7 +1552,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1584,7 +1584,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -1632,7 +1632,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Cả b và c đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -1644,7 +1644,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cả b và c đều sai."
+        "text": "Hướng dẫn đồng nghiệp đến chuyên gia hoặc tài liệu chính thức đều sai."
       }
     ],
     "correctAnswer": "a",
@@ -1696,7 +1696,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các đáp án trên đều đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -1744,7 +1744,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1776,7 +1776,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Đáp án a và d đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -1840,7 +1840,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cả a và b đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       }
     ],
     "correctAnswer": "d",
@@ -1856,7 +1856,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Cả b và d đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -1888,7 +1888,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1920,7 +1920,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -1968,7 +1968,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Câu a và b đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -2000,7 +2000,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2032,7 +2032,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2112,7 +2112,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Đáp án a và d đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -2144,7 +2144,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2192,7 +2192,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Đáp án b và d đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -2256,7 +2256,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2304,7 +2304,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Câu a và b đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -2336,7 +2336,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2368,7 +2368,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các đáp án trên đều đúng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2416,7 +2416,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các đáp án trên."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2448,7 +2448,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2480,7 +2480,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2528,7 +2528,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2560,7 +2560,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2592,7 +2592,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Cả a và b đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "d",
@@ -2640,7 +2640,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2672,7 +2672,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2752,7 +2752,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2784,7 +2784,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Cả a và d đều đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -2816,7 +2816,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -2864,7 +2864,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Đáp án b và d đúng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -2896,7 +2896,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2928,7 +2928,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -3232,7 +3232,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -3488,7 +3488,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -3568,7 +3568,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -3904,7 +3904,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -4096,7 +4096,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -4128,7 +4128,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -4352,7 +4352,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -4496,7 +4496,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
@@ -4688,7 +4688,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tất cả các ý được nêu đều đúng"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
