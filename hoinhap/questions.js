@@ -64,7 +64,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Anh em."
+        "text": "VSFer."
       },
       {
         "key": "b",
@@ -72,14 +72,14 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "VSFer."
+        "text": "Anh em."
       },
       {
         "key": "d",
         "text": "Cả ba cách gọi trên."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "explanation": "VSFer là cách gọi thống nhất dành cho người làm việc tại VSF. Mahaier và anh em không phải cách gọi chính thức trong nội bộ công ty.",
     "displayNumber": 3
   },
