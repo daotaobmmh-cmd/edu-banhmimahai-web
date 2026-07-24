@@ -152,7 +152,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Vạch ra mục tiêu rõ ràng và chủ động đưa giải pháp để đạt được."
+        "text": "Trở thành thương hiệu ẩm thực đường phố Việt Nam hàng đầu, đưa ẩm thực bình dân Việt ra thế giới bằng nhượng quyền và chuỗi cung ứng bền vững."
       },
       {
         "key": "c",
@@ -360,7 +360,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Chữ TÍNH trong phong cách làm việc của VSFer thể hiện qua sự chủ động, tinh thần trách nhiệm và tính chuyên nghiệp trong công việc.",
+    "explanation": "TRÁCH NHIỆM là dám nhận, giữ lời và xử lý lỗi tới cùng. Khi VSFer làm đúng giá trị này, việc của mình chắc hơn, đồng nghiệp tin hơn và công ty cũng vận hành ổn định hơn.",
     "displayNumber": 13
   },
   {
@@ -696,7 +696,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Kỷ luật và tuân thủ quy trình giúp đảm bảo chất lượng, sự an toàn và hiệu quả bền vững cho cả cá nhân và tập thể VSF.",
+    "explanation": "Xử lý kỷ luật lao động phải đúng hình thức, đúng căn cứ và đúng trình tự. Hồ sơ, giải trình và quyết định cần được lưu vết rõ ràng. Không tự bổ sung hình thức kỷ luật ngoài quy định.",
     "displayNumber": 25
   },
   {
