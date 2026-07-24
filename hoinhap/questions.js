@@ -1,4 +1,4 @@
-window.HOINHAP_QUESTIONS = [
+const QUESTIONS = [
   {
     "id": "HN-1",
     "stableId": "HN-1",
@@ -8,11 +8,11 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Năm 2017, vốn 20 triệu đồng."
+        "text": "Năm 2013, chỉ với 2 triệu đồng, từ chiếc xe bánh mì đầu tiên."
       },
       {
         "key": "b",
-        "text": "Năm 2013, chỉ với 2 triệu đồng, từ chiếc xe bánh mì đầu tiên."
+        "text": "Năm 2017, vốn 20 triệu đồng."
       },
       {
         "key": "c",
@@ -23,7 +23,7 @@ window.HOINHAP_QUESTIONS = [
         "text": "Năm 2010, vốn 10 triệu đồng."
       }
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "VSF (tiền thân là Bánh Mì Má Hải) khởi nghiệp năm 2013 với 2 triệu đồng và một chiếc xe bánh mì. Năm 2017 là mốc thành lập công ty cổ phần, không phải mốc khởi nghiệp. Hai mốc này hay bị nhầm khi giới thiệu công ty.",
     "displayNumber": 1
   },
@@ -40,7 +40,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Năm 2017: thành lập Công ty Cổ phần Bánh Mì Má Hải."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -48,10 +48,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Năm 2017: thành lập Công ty Cổ phần Bánh Mì Má Hải."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Hành trình VSF đi từ khởi nghiệp nhỏ năm 2013, thành lập công ty năm 2017, đến đổi tên thành Viet Street Food năm 2025. Nhớ đúng ba mốc này giúp VSFer hiểu nguồn gốc, tên pháp lý và giai đoạn phát triển hiện tại của công ty.",
     "displayNumber": 2
   },
@@ -184,14 +184,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Góp phần nâng cao giá trị ẩm thực Việt."
+        "text": "Trở thành công ty thực phẩm có vốn hóa lớn nhất sàn chứng khoán Việt Nam."
       },
       {
         "key": "d",
-        "text": "Trở thành công ty thực phẩm có vốn hóa lớn nhất sàn chứng khoán Việt Nam."
+        "text": "Góp phần nâng cao giá trị ẩm thực Việt."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Sứ mệnh của VSF tập trung vào con người, sản phẩm và giá trị ẩm thực Việt. Mục tiêu vốn hóa trên sàn chứng khoán không phải sứ mệnh được nêu trong tài liệu này.",
     "displayNumber": 7
   },
@@ -232,11 +232,11 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "TP.HCM, Quận 1."
+        "text": "Ấp Phú Lộc, xã Hòa Hiệp, TP.HCM (Bà Rịa – Vũng Tàu cũ)."
       },
       {
         "key": "b",
-        "text": "Ấp Phú Lộc, xã Hòa Hiệp, TP.HCM (Bà Rịa – Vũng Tàu cũ)."
+        "text": "TP.HCM, Quận 1."
       },
       {
         "key": "c",
@@ -247,7 +247,7 @@ window.HOINHAP_QUESTIONS = [
         "text": "Long An."
       }
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "Nhà máy MHF là nơi sản xuất chả cá sợi cho hệ thống VSF. Nhớ đúng địa chỉ giúp nhân sự mới biết nơi liên hệ khi có công việc liên quan đến sản xuất.",
     "displayNumber": 9
   },
@@ -264,7 +264,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Mở rộng phân phối chả cá sợi MHF ra ngoài hệ thống."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -272,10 +272,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Mở rộng phân phối chả cá sợi MHF ra ngoài hệ thống."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "VSF mở rộng theo ba hướng là xe đẩy nhượng quyền, chả cá sợi MHF và ẩm thực đường phố Việt. Nắm được ba hướng này giúp VSFer hiểu bức tranh phát triển chung của công ty.",
     "displayNumber": 10
   },
@@ -296,14 +296,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Làm chủ và Học hỏi."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Làm chủ và Học hỏi."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "VSF có 5 giá trị cốt lõi là Giá trị, Kết quả, Trách nhiệm, Làm chủ và Học hỏi. Đây là cách VSFer nhìn việc, làm việc và phối hợp mỗi ngày. Nhớ đủ 5 giá trị giúp bạn hiểu công ty mong đợi điều gì ở từng người.",
     "displayNumber": 11
   },
@@ -344,7 +344,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Dám nhận việc đã hứa và làm tới nơi tới chốn."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -356,10 +356,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Dám nhận việc đã hứa và làm tới nơi tới chốn."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "TRÁCH NHIỆM là dám nhận, giữ lời và xử lý lỗi tới cùng. Khi VSFer làm đúng giá trị này, việc của mình chắc hơn, đồng nghiệp tin hơn và công ty cũng vận hành ổn định hơn.",
     "displayNumber": 13
   },
@@ -376,7 +376,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Xem việc của mình như việc chung, không đùn đẩy cho đồng nghiệp."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -384,10 +384,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Xem việc của mình như việc chung, không đùn đẩy cho đồng nghiệp."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "LÀM CHỦ là chủ động thực hiện, theo dõi và chịu trách nhiệm với công việc của mình. Làm tốt giúp VSFer ít phải chờ nhắc, phối hợp rõ ràng hơn và tiến bộ nhanh hơn.",
     "displayNumber": 14
   },
@@ -408,14 +408,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Chia sẻ cách làm hay để cả đội cùng tiến bộ."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Chia sẻ cách làm hay để cả đội cùng tiến bộ."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "HỌC HỎI là chịu lắng nghe, biết rút bài học và sẵn lòng chia sẻ lại. Khi VSFer luôn học hỏi, mình giỏi hơn mỗi ngày và công ty cũng mạnh lên vì cả đội cùng tiến bộ.",
     "displayNumber": 15
   },
@@ -436,14 +436,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Báo ngay cho quản lý trực tiếp, đề xuất cách sửa và lưu lại bài học."
+        "text": "Im lặng, che lỗi hoặc đổ lỗi cho hoàn cảnh."
       },
       {
         "key": "d",
-        "text": "Im lặng, che lỗi hoặc đổ lỗi cho hoàn cảnh."
+        "text": "Báo ngay cho quản lý trực tiếp, đề xuất cách sửa và lưu lại bài học."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "d",
     "explanation": "Khi có lỗi, VSFer cần báo sớm, cùng tìm cách sửa và rút kinh nghiệm. Đây là cách thể hiện TRÁCH NHIỆM, LÀM CHỦ và HỌC HỎI. Làm đúng giúp mình trưởng thành hơn, đồng nghiệp tránh lặp lỗi và công ty làm việc minh bạch hơn.",
     "displayNumber": 16
   },
@@ -456,7 +456,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "GIÁ TRỊ là việc mình làm phải có ích thật cho khách hàng, đồng nghiệp, công ty và cộng đồng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -468,10 +468,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "GIÁ TRỊ là việc mình làm phải có ích thật cho khách hàng, đồng nghiệp, công ty và cộng đồng."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "VSFer không chỉ làm cho xong việc mà cần tạo ra điều có ích và có kết quả rõ ràng. Khi làm đúng cả GIÁ TRỊ và KẾT QUẢ, mình làm việc chắc hơn, khách hàng yên tâm hơn và công ty chuyên nghiệp hơn mỗi ngày.",
     "displayNumber": 17
   },
@@ -488,7 +488,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Kho vận tại đường Trịnh Quang Nghị, TP.HCM (huyện Bình Chánh cũ)."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -496,10 +496,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Kho vận tại đường Trịnh Quang Nghị, TP.HCM (huyện Bình Chánh cũ)."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "VSF có ba địa điểm chính: Văn phòng, Kho vận và Nhà máy MHF. Nhân sự mới cần nhớ đúng địa chỉ để đi đúng nơi và liên hệ đúng đơn vị khi có công việc.",
     "displayNumber": 18
   },
@@ -520,14 +520,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Nhà máy MHF tại ấp Phú Lộc, xã Hòa Hiệp, TP.HCM (Bà Rịa – Vũng Tàu cũ) phù hợp với công việc liên quan đến sản xuất chả cá sợi."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Nhà máy MHF tại ấp Phú Lộc, xã Hòa Hiệp, TP.HCM (Bà Rịa – Vũng Tàu cũ) phù hợp với công việc liên quan đến sản xuất chả cá sợi."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Văn phòng là nơi làm việc và hỗ trợ khách hàng. Kho vận phụ trách hàng hóa, giao nhận. Nhà máy MHF phụ trách sản xuất chả cá sợi. Hiểu đúng chức năng giúp nhân sự mới liên hệ đúng đơn vị và xử lý công việc nhanh hơn.",
     "displayNumber": 19
   },
@@ -568,7 +568,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Có loại dưới 12 tháng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -580,10 +580,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Đáp án a và b đúng."
+        "text": "Có loại dưới 12 tháng."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "HĐLĐ xác định thời hạn tại VSF gồm dưới 12 tháng hoặc từ 12 đến 36 tháng. Nhớ đúng hai nhóm này giúp VSFer hiểu tính chất loại hợp đồng của mình.",
     "displayNumber": 21
   },
@@ -600,7 +600,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "HĐLĐ từ 12 đến 36 tháng cần báo trước ít nhất 30 ngày."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -608,10 +608,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "HĐLĐ từ 12 đến 36 tháng cần báo trước ít nhất 30 ngày."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Mỗi loại HĐLĐ có thời hạn báo trước khác nhau. Nhớ đúng 45 ngày, 30 ngày và 03 ngày làm việc giúp VSFer nghỉ đúng luật, giữ quyền lợi và giúp công ty sắp xếp công việc không bị động.",
     "displayNumber": 22
   },
@@ -632,14 +632,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Trong thời gian thử việc, mỗi bên có quyền hủy bỏ thỏa thuận thử việc mà không cần báo trước và không phải bồi thường."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Trong thời gian thử việc, mỗi bên có quyền hủy bỏ thỏa thuận thử việc mà không cần báo trước và không phải bồi thường."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Thử việc cần đúng thời hạn theo vị trí, lương ít nhất bằng 85% mức lương của công việc đó. Trong thời gian thử việc, mỗi bên có quyền hủy bỏ thỏa thuận thử việc mà không cần báo trước và không phải bồi thường.",
     "displayNumber": 23
   },
@@ -652,7 +652,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Trong vòng 30 ngày kể từ ngày hết hạn."
+        "text": "Khi nào cũng được."
       },
       {
         "key": "b",
@@ -664,10 +664,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Khi nào cũng được."
+        "text": "Trong vòng 30 ngày kể từ ngày hết hạn."
       }
     ],
-    "correctAnswer": "a",
+    "correctAnswer": "d",
     "explanation": "Nếu sau 30 ngày kể từ khi hết hạn mà chưa ký tiếp, hợp đồng tự động chuyển thành hợp đồng không xác định thời hạn theo luật.",
     "displayNumber": 24
   },
@@ -680,7 +680,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Khiển trách."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -692,10 +692,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Khiển trách."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Xử lý kỷ luật lao động phải đúng hình thức, đúng căn cứ và đúng trình tự. Hồ sơ, giải trình và quyết định cần được lưu vết rõ ràng. Không tự bổ sung hình thức kỷ luật ngoài quy định.",
     "displayNumber": 25
   },
@@ -712,7 +712,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Nếu có dấu hiệu vi phạm pháp luật, hồ sơ có thể được chuyển cho cơ quan chức năng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -720,10 +720,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Nếu có dấu hiệu vi phạm pháp luật, hồ sơ có thể được chuyển cho cơ quan chức năng."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "12 Trái cấm người VSF không được ăn là nhóm hành vi vi phạm nghiêm trọng, nhưng không có nghĩa là tự động sa thải mà không xem xét. Mọi quyết định xử lý phải dựa trên căn cứ, mức độ vi phạm và đúng trình tự. Làm đúng quy trình giúp bảo vệ người lao động, người xử lý và công ty.",
     "displayNumber": 26
   },
@@ -744,14 +744,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Lập bè phái, tụ tập bàn tán tiêu cực về công ty."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "d",
-        "text": "Đáp án a và b đúng."
+        "text": "Lập bè phái, tụ tập bàn tán tiêu cực về công ty."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Khi không đồng ý với quyết định kỷ luật, VSFer cần phản hồi qua kênh chính thức: gửi khiếu nại bằng văn bản tới Phòng Nhân sự và báo cáo người quản lý thường trực để được xem xét lại.",
     "displayNumber": 27
   },
@@ -768,7 +768,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "12 ngày/năm, cộng thêm 1 ngày sau mỗi 5 năm làm việc."
+        "text": "Không có ngày phép."
       },
       {
         "key": "c",
@@ -776,10 +776,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Không có ngày phép."
+        "text": "12 ngày/năm, cộng thêm 1 ngày sau mỗi 5 năm làm việc."
       }
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "VSFer làm đủ 12 tháng có 12 ngày phép năm trong điều kiện làm việc bình thường và được cộng thêm 1 ngày khi đủ mỗi 5 năm làm việc. Trường hợp chưa làm đủ 12 tháng, số ngày phép được tính theo thời gian làm việc và quy định đang áp dụng. VSFer nên theo dõi số phép trên hệ thống và liên hệ Phòng Nhân sự khi dữ liệu chưa chính xác.",
     "displayNumber": 28
   },
@@ -792,7 +792,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "6 ngày."
+        "text": "11 ngày bao gồm Tết âm lịch, Tết dương lịch, 30/4, 1/5, Quốc khánh 2/9 và các ngày lễ khác theo Luật Lao động."
       },
       {
         "key": "b",
@@ -800,14 +800,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "11 ngày bao gồm Tết âm lịch, Tết dương lịch, 30/4, 1/5, Quốc khánh 2/9 và các ngày lễ khác theo Luật Lao động."
+        "text": "6 ngày."
       },
       {
         "key": "d",
         "text": "Không có nghỉ lễ."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "explanation": "VSF áp dụng đủ 11 ngày nghỉ lễ theo Luật Lao động, nguyên lương. Thời gian nghỉ lễ được cập nhật vào lịch hệ thống hàng năm. VSFer không được tự cộng ít hơn hay nhiều hơn.",
     "displayNumber": 29
   },
@@ -824,7 +824,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Báo và chờ quản lý trực tiếp duyệt trước khi nghỉ."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -832,10 +832,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cả a và b đều đúng."
+        "text": "Báo và chờ quản lý trực tiếp duyệt trước khi nghỉ."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "VSFer cần lập đơn trên 1Office, thông báo cho quản lý trực tiếp và theo dõi đến khi có phản hồi. Nếu đơn chưa được xử lý, cần chủ động nhắc người duyệt và bàn giao công việc. Không tự nghỉ chỉ vì đã gửi đơn.",
     "displayNumber": 30
   },
@@ -856,14 +856,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Nghỉ không cần báo."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "d",
-        "text": "Cả a và b đều đúng."
+        "text": "Nghỉ không cần báo."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Dù nghỉ theo trường hợp nào, VSFer vẫn cần báo đúng người, có hồ sơ phù hợp và lưu vết rõ ràng. Làm đúng giúp bảo vệ quyền lợi về lương, bảo hiểm và giúp đội sắp xếp công việc.",
     "displayNumber": 31
   },
@@ -904,7 +904,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Lương, thưởng và các khoản hỗ trợ theo chính sách đang áp dụng."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -916,10 +916,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Câu a và b đúng."
+        "text": "Lương, thưởng và các khoản hỗ trợ theo chính sách đang áp dụng."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Quyền lợi của VSFer gồm nhiều nhóm khác nhau và có thể được điều chỉnh theo từng giai đoạn. Khi cần kiểm tra mức hưởng hoặc điều kiện áp dụng, VSFer nên xem quy chế hiện hành hoặc liên hệ Phòng Nhân sự.",
     "displayNumber": 33
   },
@@ -936,7 +936,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Mỗi chương trình có thể có đối tượng và điều kiện khác nhau."
+        "text": "Mọi phúc lợi đều cố định và áp dụng giống nhau cho tất cả VSFer."
       },
       {
         "key": "c",
@@ -944,10 +944,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Mọi phúc lợi đều cố định và áp dụng giống nhau cho tất cả VSFer."
+        "text": "Mỗi chương trình có thể có đối tượng và điều kiện khác nhau."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Phúc lợi có thể thay đổi theo từng chương trình, từng đối tượng và từng thời kỳ. VSFer cần xem quy chế hoặc thông báo chính thức, không tự suy đoán từ thông tin truyền miệng.",
     "displayNumber": 34
   },
@@ -968,14 +968,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Đồng nghiệp nam cần sơ vin khi đến nơi làm việc."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Đồng nghiệp nam cần sơ vin khi đến nơi làm việc."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Trang phục đúng giúp VSFer gọn gàng, chuyên nghiệp và giữ hình ảnh VSF trong mắt đồng nghiệp, khách hàng.",
     "displayNumber": 35
   },
@@ -1016,7 +1016,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Dùng anh/chị, xưng em và nói dạ/vâng khi phù hợp."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -1028,10 +1028,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Câu a và b đều đúng."
+        "text": "Dùng anh/chị, xưng em và nói dạ/vâng khi phù hợp."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Giao tiếp lịch sự giúp khách hàng thấy được tôn trọng. VSFer cần xưng hô đúng mực, nói rõ ràng và giữ hình ảnh chuyên nghiệp cho công ty.",
     "displayNumber": 37
   },
@@ -1048,7 +1048,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Giữ bình tĩnh, giải thích rõ ràng, nếu cần thì chuyển quản lý trực tiếp hoặc hotline công ty xử lý."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -1056,10 +1056,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Câu a và b đều đúng."
+        "text": "Giữ bình tĩnh, giải thích rõ ràng, nếu cần thì chuyển quản lý trực tiếp hoặc hotline công ty xử lý."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Khi gặp khách hàng, VSFer cần biết lắng nghe, giữ bình tĩnh và giải thích rõ ràng. Nếu vượt thẩm quyền, cần chuyển quản lý trực tiếp hoặc hotline công ty để xử lý đúng kênh.",
     "displayNumber": 38
   },
@@ -1080,14 +1080,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Chủ động kiểm soát thời gian sử dụng và tuân thủ quy định của vị trí làm việc."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Chủ động kiểm soát thời gian sử dụng và tuân thủ quy định của vị trí làm việc."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Điện thoại cá nhân chỉ nên được sử dụng khi cần và không làm gián đoạn công việc, ảnh hưởng khách hàng hoặc gây mất an toàn. Kiểm soát tốt việc riêng giúp VSFer giữ sự tập trung và hình ảnh chuyên nghiệp.",
     "displayNumber": 39
   },
@@ -1128,7 +1128,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Có mặt sớm để kiểm tra thiết bị và chuẩn bị tác phong."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -1140,10 +1140,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Câu a và b đúng."
+        "text": "Có mặt sớm để kiểm tra thiết bị và chuẩn bị tác phong."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Có mặt sớm khoảng 10–15 phút là khuyến nghị để VSFer kiểm tra công cụ, thiết bị, chuẩn bị tác phong chỉn chu và chấm công đúng giờ. Khoảng thời gian này không được hiểu là yêu cầu kéo dài giờ làm ngoài quy định.",
     "displayNumber": 41
   },
@@ -1160,7 +1160,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Giúp chuẩn bị tinh thần và kiểm tra trang phục."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1168,10 +1168,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả đáp án trên đều đúng."
+        "text": "Giúp chuẩn bị tinh thần và kiểm tra trang phục."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Đến sớm giúp VSFer bắt đầu ngày làm chủ động hơn. Mình có thời gian chuẩn bị, kiểm tra lại mọi thứ và xử lý việc phát sinh trước khi vào làm.",
     "displayNumber": 42
   },
@@ -1240,7 +1240,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Cư xử đúng chừng mực với cấp trên và đồng nghiệp."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1252,10 +1252,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các đáp án trên."
+        "text": "Cư xử đúng chừng mực với cấp trên và đồng nghiệp."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Tôn trọng được thể hiện qua cách cư xử đúng mực, chào hỏi và báo cáo đầy đủ, đồng thời biết lắng nghe, đặt câu hỏi và góp ý xây dựng đúng chỗ.",
     "displayNumber": 45
   },
@@ -1272,7 +1272,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tôn trọng ý kiến."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -1280,10 +1280,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Đáp án a và b đều đúng."
+        "text": "Tôn trọng ý kiến."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Cấp quản lý cần giao việc rõ, lắng nghe ý kiến và hướng dẫn nhân sự khi cần. Cách làm này giúp mọi người dễ trao đổi, sửa sai và hoàn thành công việc tốt hơn.",
     "displayNumber": 46
   },
@@ -1304,14 +1304,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Làm thay luôn việc bộ phận khác cho nhanh, không cần báo quản lý."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "d",
-        "text": "Đáp án a và b đều đúng."
+        "text": "Làm thay luôn việc bộ phận khác cho nhanh, không cần báo quản lý."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Khi làm việc với đồng nghiệp khác bộ phận, VSFer cần hợp tác, tôn trọng và hỗ trợ đúng cách. Làm vậy giúp công việc chung không bị tắc và cả đội phối hợp tốt hơn.",
     "displayNumber": 47
   },
@@ -1352,7 +1352,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tìm giải pháp chung, nếu không xử lý được thì báo cấp quản lý hoặc Phòng Nhân sự."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -1364,10 +1364,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cả a và b đều đúng."
+        "text": "Tìm giải pháp chung, nếu không xử lý được thì báo cấp quản lý hoặc Phòng Nhân sự."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Khi có mâu thuẫn, VSFer nên trao đổi riêng, bình tĩnh và cùng tìm cách xử lý. Nếu chưa giải quyết được, cần báo đúng kênh để bảo vệ mình, đồng nghiệp và môi trường làm việc chung.",
     "displayNumber": 49
   },
@@ -1384,7 +1384,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Kết nối với người có chuyên môn thích hợp."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -1392,10 +1392,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Đáp án a và b đều đúng."
+        "text": "Kết nối với người có chuyên môn thích hợp."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Văn hóa đồng đội không phải là ai giỏi thì tự lo phần người đó. Khi một người được hỗ trợ đúng lúc, công việc chung bớt tắc và cả đội cùng học được cách làm tốt hơn.",
     "displayNumber": 50
   },
@@ -1464,7 +1464,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Chủ động hỗ trợ trong khả năng cho phép."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1476,10 +1476,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Chủ động hỗ trợ trong khả năng cho phép."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Hỗ trợ đồng đội không có nghĩa là làm thay toàn bộ công việc. VSFer cần hỗ trợ trong khả năng, báo quản lý khi cần điều phối và cùng giữ tiến độ chung của đội.",
     "displayNumber": 53
   },
@@ -1496,7 +1496,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Sáng kiến cải tiến quy trình."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1504,10 +1504,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cả ba ý a, b và c."
+        "text": "Sáng kiến cải tiến quy trình."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Kênh truyền thông nội bộ nên dùng để chia sẻ câu chuyện tích cực, sáng kiến và thành tích. Những nội dung này giúp đồng nghiệp học hỏi, ghi nhận nhau và có thêm động lực làm việc.",
     "displayNumber": 54
   },
@@ -1520,7 +1520,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tác phong gọn gàng, lịch sự và chủ động chào khách."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1532,10 +1532,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Tác phong gọn gàng, lịch sự và chủ động chào khách."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Khi gặp khách hàng, VSFer cần giữ tác phong gọn gàng, chào hỏi lịch sự, trả lời rõ ràng và giới thiệu đúng tên, vai trò. Làm đúng giúp khách hàng dễ hiểu thông tin và tin tưởng hơn.",
     "displayNumber": 55
   },
@@ -1552,7 +1552,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Giữ giọng nhẹ nhàng, không tranh cãi hoặc đổ lỗi."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1560,10 +1560,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Giữ giọng nhẹ nhàng, không tranh cãi hoặc đổ lỗi."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "VSFer nên giữ bình tĩnh khi gặp tình huống khó. Một lời phản hồi đúng mực không chỉ giải quyết vấn đề trước mắt, mà còn giữ niềm tin của khách hàng và bảo vệ hình ảnh chuyên nghiệp của VSF.",
     "displayNumber": 56
   },
@@ -1584,14 +1584,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Ghi nhận phản hồi và cảm ơn khách hàng chân thành."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Ghi nhận phản hồi và cảm ơn khách hàng chân thành."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "VSFer cần tôn trọng khách hàng, làm đúng điều đã hứa, ghi nhận phản hồi và nói lời cảm ơn. Những việc này giúp khách hàng cảm thấy được tôn trọng và yên tâm hơn.",
     "displayNumber": 57
   },
@@ -1632,7 +1632,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Hướng dẫn đồng nghiệp liên hệ với chuyên gia có chuyên môn."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -1640,14 +1640,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Cả a và b đều đúng."
+        "text": "Hướng dẫn đồng nghiệp liên hệ với chuyên gia có chuyên môn."
       },
       {
         "key": "d",
-        "text": "Cả a và b đều sai."
+        "text": "Hướng dẫn đồng nghiệp đến chuyên gia hoặc tài liệu chính thức đều sai."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "explanation": "Chữ TÍN không phải là trả lời thật nhanh mà là trả lời đúng và có căn cứ. Hướng người hỏi đến chuyên gia có chuyên môn hoặc tài liệu chính thức giúp bảo vệ cả người hỏi, người trả lời và uy tín nội bộ.",
     "displayNumber": 59
   },
@@ -1664,7 +1664,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Chỉ họ xem các thông tin VSF đã công bố trên kênh chính thức."
+        "text": "Chia sẻ tất cả vì là chỗ thân quen."
       },
       {
         "key": "c",
@@ -1672,10 +1672,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Chia sẻ tất cả vì là chỗ thân quen."
+        "text": "Chỉ họ xem các thông tin VSF đã công bố trên kênh chính thức."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Công thức, nhà cung cấp và giá vốn là thông tin nội bộ quan trọng. Việc tiết lộ các thông tin này ra ngoài thuộc Trái cấm số 1 và có thể ảnh hưởng trực tiếp đến năng lực cạnh tranh của VSF.",
     "displayNumber": 60
   },
@@ -1696,14 +1696,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "NHẪN, NHƯỜNG: Kiên nhẫn lắng nghe phản hồi, biết nhường nhịn để cùng tìm cách xử lý phù hợp."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các đáp án trên đều đúng."
+        "text": "NHẪN, NHƯỜNG: Kiên nhẫn lắng nghe phản hồi, biết nhường nhịn để cùng tìm cách xử lý phù hợp."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "GỌN giúp người nghe nắm việc nhanh. NHẸ giúp cuộc trao đổi bớt căng thẳng. NHẪN, NHƯỜNG giúp các bên lắng nghe và cùng xử lý công việc. Làm đúng 4 chữ này giúp việc gấp vẫn được giải quyết rõ ràng và tôn trọng.",
     "displayNumber": 61
   },
@@ -1744,7 +1744,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Kiểm tra khung hình không làm lộ công thức, bảng lương, dữ liệu khách hàng, chứng từ hoặc màn hình hệ thống."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -1756,10 +1756,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Kiểm tra khung hình không làm lộ công thức, bảng lương, dữ liệu khách hàng, chứng từ hoặc màn hình hệ thống."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Ảnh hậu trường có thể làm lộ bí mật kinh doanh, thông tin nhân sự, tài khoản hoặc dữ liệu bảo mật. Trước khi đăng, VSFer cần kiểm tra khung hình, xin phép người xuất hiện, xác nhận nội dung được phép công khai và viết chú thích đúng ngữ cảnh.",
     "displayNumber": 63
   },
@@ -1776,7 +1776,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Nói rõ đây là thông tin chưa xác thực và hướng người hỏi đến kênh chính thức."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -1784,10 +1784,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Đáp án a và b đúng."
+        "text": "Nói rõ đây là thông tin chưa xác thực và hướng người hỏi đến kênh chính thức."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Tin đồn chưa được kiểm chứng có thể làm tổn thương con người và ảnh hưởng uy tín tập thể. VSFer không nên lan truyền mà cần nói rõ thông tin chưa xác thực, đồng thời kiểm tra hoặc hướng người hỏi đến kênh chính thức.",
     "displayNumber": 64
   },
@@ -1836,14 +1836,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Cả a và b đều đúng."
+        "text": "Cả a và b đều sai."
       },
       {
         "key": "d",
-        "text": "Cả a và b đều sai."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "d",
     "explanation": "Trái cấm số 11 không cho phép VSFer tham gia hoạt động cạnh tranh trực tiếp với công ty khi chưa được phép. Khi một công việc bên ngoài có nguy cơ xung đột lợi ích, VSFer cần dừng lại, không dùng thông tin nội bộ và xin ý kiến trước khi quyết định.",
     "displayNumber": 66
   },
@@ -1856,7 +1856,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Đề nghị người đó gửi yêu cầu qua kênh chính thức và báo Phòng Nhân sự hoặc quản lý để xác minh."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -1868,10 +1868,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cả a và b đều đúng."
+        "text": "Đề nghị người đó gửi yêu cầu qua kênh chính thức và báo Phòng Nhân sự hoặc quản lý để xác minh."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Trái cấm số 6 không cho phép tiết lộ trái phép thông tin nhân sự, tiền lương, hợp đồng lao động và chính sách nội bộ. Xác minh trước khi cung cấp thông tin là cách bảo vệ quyền lợi của người có dữ liệu và bảo vệ VSF.",
     "displayNumber": 67
   },
@@ -1888,7 +1888,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Để nắm được quy trình làm việc, cách lưu trữ và những điều cần tránh trong 12 Trái cấm người VSF không được ăn."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -1896,10 +1896,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Để nắm được quy trình làm việc, cách lưu trữ và những điều cần tránh trong 12 Trái cấm người VSF không được ăn."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Đào tạo hội nhập không chỉ để hoàn thành bài trắc nghiệm, mà giúp VSFer hiểu đúng cách làm việc tại VSF, biết quyền lợi của mình, tuân thủ đúng quy trình và tránh những lỗi có thể ảnh hưởng đến cá nhân, đồng đội và công ty.",
     "displayNumber": 68
   },
@@ -1920,14 +1920,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "TRỌNG, TÍN, GHI, ƠN: tôn trọng, giữ chữ tín và ghi ơn khách hàng bằng sự tận tâm."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "TRỌNG, TÍN, GHI, ƠN: tôn trọng, giữ chữ tín và ghi ơn khách hàng bằng sự tận tâm."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Tinh thần lõi: \"Phục vụ khách hàng như phục vụ cha mẹ, Phục vụ vượt trên cả sự kỳ vọng.\" Khi thực hiện đúng 3 cụm này, bạn giữ được uy tín cá nhân và giúp VSF phục vụ khách hàng rõ ràng, chuyên nghiệp hơn.",
     "displayNumber": 69
   },
@@ -1968,7 +1968,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Vì 1Office giúp quyền lợi, công sức và trách nhiệm của VSFer được ghi nhận minh bạch trên hệ thống."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -1980,10 +1980,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Câu a và b đúng."
+        "text": "Vì 1Office giúp quyền lợi, công sức và trách nhiệm của VSFer được ghi nhận minh bạch trên hệ thống."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Khi dữ liệu được cập nhật đúng nơi, quyền lợi, trách nhiệm và kết quả làm việc đều có căn cứ rõ ràng hơn.",
     "displayNumber": 71
   },
@@ -2000,7 +2000,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Để khi cần hỗ trợ, VSFer biết liên hệ đúng người, đúng cấp và đúng phạm vi trách nhiệm."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2008,10 +2008,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Để khi cần hỗ trợ, VSFer biết liên hệ đúng người, đúng cấp và đúng phạm vi trách nhiệm."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Sơ đồ tổ chức cho thấy tuyến phối hợp trong công việc. Hiểu đúng tuyến giúp VSFer biết mình cần trao đổi với ai trước, được hỗ trợ đúng người và tránh làm rối luồng thông tin chung.",
     "displayNumber": 72
   },
@@ -2032,14 +2032,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Khi có tình huống khẩn cấp, rủi ro an toàn, bảo mật hoặc xung đột lợi ích, báo ngay qua kênh có thẩm quyền và lưu lại thông tin xử lý."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Khi có tình huống khẩn cấp, rủi ro an toàn, bảo mật hoặc xung đột lợi ích, báo ngay qua kênh có thẩm quyền và lưu lại thông tin xử lý."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Đúng tuyến là nguyên tắc áp dụng trong công việc thông thường. Khi có nguy cơ khẩn cấp, mất an toàn, lộ dữ liệu, dấu hiệu vi phạm hoặc xung đột lợi ích, VSFer cần báo ngay qua kênh có thẩm quyền để hạn chế thiệt hại. Thông tin phải rõ ràng và được lưu vết để việc xử lý minh bạch.",
     "displayNumber": 73
   },
@@ -2080,7 +2080,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Lập đơn trên 1Office, ghi rõ lý do và gửi trước khi nghỉ nếu tình huống cho phép."
+        "text": "Chỉ cần gửi đơn hoặc nhắn riêng rồi tự nghỉ dù chưa được phản hồi."
       },
       {
         "key": "b",
@@ -2092,10 +2092,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Chỉ cần gửi đơn hoặc nhắn riêng rồi tự nghỉ dù chưa được phản hồi."
+        "text": "Lập đơn trên 1Office, ghi rõ lý do và gửi trước khi nghỉ nếu tình huống cho phép."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Gửi đơn chưa có nghĩa là ngày nghỉ đã được duyệt. VSFer cần theo dõi phản hồi, chủ động nhắc người duyệt và bàn giao công việc để ngày nghỉ được ghi nhận đúng, đồng thời tránh ảnh hưởng đến lương, phép và tiến độ của đội.",
     "displayNumber": 75
   },
@@ -2112,7 +2112,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Sử dụng để chấm công, theo dõi bảng lương và cập nhật kịp thời thông tin nội bộ."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -2120,10 +2120,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Đáp án a và b đúng."
+        "text": "Sử dụng để chấm công, theo dõi bảng lương và cập nhật kịp thời thông tin nội bộ."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Tài khoản giúp mọi công việc, báo cáo tiến độ và đóng góp của bạn được ghi nhận rõ ràng trên 1Office. Đồng thời, đây cũng là kênh để VSFer chấm công, theo dõi bảng lương và cập nhật thông tin nội bộ kịp thời, giúp bảo vệ quyền lợi cá nhân và minh bạch trách nhiệm.",
     "displayNumber": 76
   },
@@ -2144,14 +2144,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Các phần mềm chuyên dụng theo từng phòng ban như MISA, CRM và Map Tracker."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Các phần mềm chuyên dụng theo từng phòng ban như MISA, CRM và Map Tracker."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Mỗi hệ thống có một mục đích sử dụng và phạm vi truy cập riêng. VSFer cần lưu thông tin đúng nơi, dùng đúng tài khoản và tuân thủ quyền truy cập để công việc dễ phối hợp và dữ liệu được bảo vệ.",
     "displayNumber": 77
   },
@@ -2192,7 +2192,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Là trách nhiệm chung của mọi VSFer."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -2204,10 +2204,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Đáp án a và b đúng."
+        "text": "Là trách nhiệm chung của mọi VSFer."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Văn hóa an toàn được tạo nên từ việc mỗi VSFer biết quan sát, phản ánh và xử lý đúng phạm vi. Khi nguy cơ được báo sớm, bản thân, đồng nghiệp, khách hàng và tài sản chung đều được bảo vệ tốt hơn.",
     "displayNumber": 79
   },
@@ -2224,7 +2224,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Bỏ rác đúng nơi, dọn gọn sau khi sử dụng và nhắc nhau giữ sạch là trách nhiệm chung của mỗi VSFer."
+        "text": "Môi trường bẩn một chút cũng không sao, miễn doanh thu tốt là được."
       },
       {
         "key": "c",
@@ -2232,10 +2232,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Môi trường bẩn một chút cũng không sao, miễn doanh thu tốt là được."
+        "text": "Bỏ rác đúng nơi, dọn gọn sau khi sử dụng và nhắc nhau giữ sạch là trách nhiệm chung của mỗi VSFer."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Đây là cách hiểu sai và rất nguy hiểm. Môi trường làm việc không sạch có thể ảnh hưởng trực tiếp đến sức khỏe, trải nghiệm khách hàng và hình ảnh VSF. Giữ vệ sinh không phải việc nhỏ bên lề, mà là ý thức văn hóa của mỗi VSFer.",
     "displayNumber": 80
   },
@@ -2256,14 +2256,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Chủ động nhắc nhau tiết kiệm tài nguyên vì đó là tài sản chung và cũng là trách nhiệm với môi trường."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Cả 3 ý trên đều đúng."
+        "text": "Chủ động nhắc nhau tiết kiệm tài nguyên vì đó là tài sản chung và cũng là trách nhiệm với môi trường."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Tiết kiệm không phải là cắt giảm bất tiện, mà là sử dụng tài nguyên có trách nhiệm. Mỗi hành động nhỏ như tắt thiết bị khi không dùng, dùng nước vừa đủ, hạn chế lãng phí giấy và vật tư đều góp phần giảm chi phí chung, bảo vệ môi trường và thể hiện tinh thần làm chủ của VSFer.",
     "displayNumber": 81
   },
@@ -2304,7 +2304,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Vì đây là thông tin quan trọng, tạo lợi thế kinh doanh và nguồn doanh thu cho VSF."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -2316,10 +2316,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Câu a và b đều đúng."
+        "text": "Vì đây là thông tin quan trọng, tạo lợi thế kinh doanh và nguồn doanh thu cho VSF."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Công thức, nhà cung cấp và giá vốn giúp VSF duy trì lợi thế kinh doanh và tạo doanh thu. Không tiết lộ các thông tin này ra ngoài là cách bảo vệ công việc và thu nhập chung.",
     "displayNumber": 83
   },
@@ -2336,7 +2336,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Lưu trữ đúng nơi quy định, không tự ý tải về thiết bị cá nhân hoặc gửi qua kênh cá nhân khi chưa được phép."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2344,10 +2344,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Lưu trữ đúng nơi quy định, không tự ý tải về thiết bị cá nhân hoặc gửi qua kênh cá nhân khi chưa được phép."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Được cấp quyền truy cập không có nghĩa là được sử dụng tùy ý. Mỗi VSFer cần dùng dữ liệu đúng phạm vi, lưu trữ đúng nơi và chia sẻ đúng người để bảo vệ thông tin, tài sản và uy tín chung của VSF.",
     "displayNumber": 84
   },
@@ -2368,14 +2368,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Chuyển yêu cầu về bộ phận Truyền thông, Marketing hoặc quản lý phụ trách để xử lý theo kênh chính thức."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các đáp án trên đều đúng."
+        "text": "Chuyển yêu cầu về bộ phận Truyền thông, Marketing hoặc quản lý phụ trách để xử lý theo kênh chính thức."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Hình ảnh và tiếng nói của VSF cần được truyền tải thống nhất, đúng thẩm quyền và đúng ngữ cảnh. VSFer không tự ý đại diện công ty phát ngôn là cách bảo vệ bản thân, bảo vệ thương hiệu và tránh rủi ro thông tin bị hiểu sai.",
     "displayNumber": 85
   },
@@ -2416,7 +2416,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Bàn giao đầy đủ tài khoản công việc do công ty cấp, mật khẩu và dữ liệu cho người kế nhiệm theo biên bản."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2428,10 +2428,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các đáp án trên."
+        "text": "Bàn giao đầy đủ tài khoản công việc do công ty cấp, mật khẩu và dữ liệu cho người kế nhiệm theo biên bản."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Bàn giao đầy đủ và minh bạch là cách kết thúc công việc chuyên nghiệp, giữ được uy tín cá nhân cho con đường sự nghiệp kế tiếp và tạo thiện cảm với đồng nghiệp cũ.",
     "displayNumber": 87
   },
@@ -2448,7 +2448,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Cẩn trọng với đường link, file, email lạ hoặc yêu cầu cung cấp thông tin bất thường."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2456,10 +2456,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Cẩn trọng với đường link, file, email lạ hoặc yêu cầu cung cấp thông tin bất thường."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Bảo mật không chỉ là quy định lớn, mà bắt đầu từ những thói quen nhỏ mỗi ngày. Khóa màn hình, giữ mật khẩu an toàn, cẩn trọng với link lạ và bảo vệ tài liệu nhạy cảm giúp VSFer phòng tránh rủi ro cho chính mình và cho tập thể.",
     "displayNumber": 88
   },
@@ -2480,14 +2480,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Làm cơ sở tính lương, phụ cấp, phép và các quyền lợi liên quan."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Làm cơ sở tính lương, phụ cấp, phép và các quyền lợi liên quan."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Dữ liệu chấm công là căn cứ để rà soát thời gian làm việc và các quyền lợi liên quan. VSFer cần chấm công theo quy định của ca làm việc và kiểm tra dữ liệu khi phát hiện sai sót.",
     "displayNumber": 89
   },
@@ -2528,7 +2528,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Thông báo sớm cho quản lý trực tiếp để đơn vị sắp xếp công việc."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2540,10 +2540,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Thông báo sớm cho quản lý trực tiếp để đơn vị sắp xếp công việc."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Khi nghỉ ốm, VSFer cần báo sớm, lập đơn và bổ sung hồ sơ theo hướng dẫn. Thực hiện đủ các bước giúp ngày nghỉ và quyền lợi liên quan được xem xét đúng.",
     "displayNumber": 91
   },
@@ -2560,7 +2560,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Qua tinh thần trách nhiệm, thái độ làm việc, khả năng phối hợp và những đóng góp tạo giá trị cho tập thể."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2568,10 +2568,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Qua tinh thần trách nhiệm, thái độ làm việc, khả năng phối hợp và những đóng góp tạo giá trị cho tập thể."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Khi bạn làm tốt và tạo ra giá trị thật, những nỗ lực đó sẽ có cơ sở để được ghi nhận công bằng hơn trong đánh giá, phát triển và cơ hội thăng tiến.",
     "displayNumber": 92
   },
@@ -2592,14 +2592,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Giữ ý tưởng cho riêng mình vì công ty sẽ không xem xét."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "d",
-        "text": "Cả a và b đều đúng."
+        "text": "Giữ ý tưởng cho riêng mình vì công ty sẽ không xem xét."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Một đề xuất tốt cần nêu rõ vấn đề, cách làm và lợi ích dự kiến. Gửi đúng kênh giúp ý tưởng có căn cứ để được xem xét, thử nghiệm và ghi nhận.",
     "displayNumber": 93
   },
@@ -2640,7 +2640,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Các quyền lợi theo luật như bảo hiểm, phép năm và các chế độ nghỉ liên quan."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2652,10 +2652,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Các quyền lợi theo luật như bảo hiểm, phép năm và các chế độ nghỉ liên quan."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Quyền lợi của VSFer gồm lương, các chế độ theo luật, phúc lợi nội bộ đang áp dụng và kênh hướng dẫn. VSFer cần kiểm tra thông tin chính thức để thực hiện đúng quy trình và bảo vệ quyền lợi của mình.",
     "displayNumber": 95
   },
@@ -2672,7 +2672,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "VSF khuyến khích VSFer học hỏi kỹ năng, nâng cao năng lực và cải thiện bản thân trong quá trình làm việc."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2680,10 +2680,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "VSF khuyến khích VSFer học hỏi kỹ năng, nâng cao năng lực và cải thiện bản thân trong quá trình làm việc."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Đào tạo giúp VSFer hiểu việc, nâng cao kỹ năng và giảm sai sót. Chủ động học hỏi và làm theo hướng dẫn giúp mỗi người làm việc tốt hơn và phát triển năng lực.",
     "displayNumber": 96
   },
@@ -2700,18 +2700,18 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi."
+        "text": "Chất lượng, Tốc độ, An toàn, Hiệu quả, Chuyên nghiệp, Xã hội."
       },
       {
         "key": "c",
-        "text": "Chất lượng, Tốc độ, An toàn, Hiệu quả, Chuyên nghiệp, Xã hội."
+        "text": "Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi."
       },
       {
         "key": "d",
         "text": "Khách hàng, Nhân viên, Đối tác, Cổ đông."
       }
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "5 giá trị cốt lõi \"Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi\" là kim chỉ nam cho cách VSFer làm việc, phục vụ khách hàng và phối hợp với đồng nghiệp. Thực hiện đúng 5 giá trị giúp bạn làm việc rõ ràng và tiến bộ hơn.",
     "displayNumber": 97
   },
@@ -2752,7 +2752,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "LÀM là bắt tay vào việc và theo đến kết quả."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -2764,10 +2764,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "LÀM là bắt tay vào việc và theo đến kết quả."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Làm Chủ = LÀM + CHỦ. Đây là tâm thế làm việc thực tế, chủ động và có trách nhiệm. VSFer không chỉ nêu vấn đề mà cần cùng tìm cách xử lý để tạo ra kết quả.",
     "displayNumber": 99
   },
@@ -2784,7 +2784,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "VSFer đóng góp năng lực, còn VSF tạo môi trường và cơ hội để mỗi người phát triển."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "c",
@@ -2792,10 +2792,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cả a và b đều đúng."
+        "text": "VSFer đóng góp năng lực, còn VSF tạo môi trường và cơ hội để mỗi người phát triển."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Mối quan hệ giữa VSFer và VSF được xây dựng từ sự tôn trọng và đóng góp hai chiều. Khi mỗi bên thực hiện tốt vai trò của mình, cả con người và công ty đều có cơ hội phát triển.",
     "displayNumber": 100
   },
@@ -2816,14 +2816,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tôn trọng đồng nghiệp, phối hợp tích cực và đóng góp ý kiến xây dựng cho Nhà VSF."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Tôn trọng đồng nghiệp, phối hợp tích cực và đóng góp ý kiến xây dựng cho Nhà VSF."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Để phát triển tại VSF, bạn cần làm ra kết quả, chịu trách nhiệm, chủ động xử lý công việc và tiếp tục học hỏi. Phối hợp tốt với đồng nghiệp giúp công việc chung hiệu quả hơn.",
     "displayNumber": 101
   },
@@ -2864,7 +2864,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Kỹ năng quan trọng nhất là tập trung."
+        "text": "Có hai phương án đúng trong ba phương án còn lại."
       },
       {
         "key": "b",
@@ -2876,10 +2876,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Đáp án a và b đúng."
+        "text": "Kỹ năng quan trọng nhất là tập trung."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Tập trung là kỹ năng nền tảng giúp VSFer đi vào trọng tâm, giữ chất lượng công việc và tạo kết quả rõ ràng hơn.",
     "displayNumber": 103
   },
@@ -2896,7 +2896,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Hỗ trợ đồng đội nâng cao năng lực, tạo nhiều giá trị hơn và có cơ hội được ghi nhận xứng đáng."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -2904,10 +2904,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Hỗ trợ đồng đội nâng cao năng lực, tạo nhiều giá trị hơn và có cơ hội được ghi nhận xứng đáng."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "“Tập trung làm người khác có thêm thu nhập” là giúp khách hàng nhượng quyền kinh doanh hiệu quả hơn và giúp đồng đội nâng cao năng lực, tạo thêm giá trị. Khi mỗi người hỗ trợ người khác làm việc tốt hơn, cả tập thể sẽ có thêm cơ hội phát triển và nâng cao thu nhập.",
     "displayNumber": 104
   },
@@ -2928,14 +2928,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Chủ động học hỏi để nâng chất lượng công việc."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Chủ động học hỏi để nâng chất lượng công việc."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Triết lý này khuyến khích VSFer cải tiến liên tục: không cần hoàn hảo ngay, nhưng cần tốt hơn qua từng ngày bằng sự học hỏi và hành động cụ thể.",
     "displayNumber": 105
   },
@@ -2976,7 +2976,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Khó khăn, thử thách đòi hỏi nỗ lực gấp đôi, nhưng mang lại trải nghiệm và bài học quý"
+        "text": "Cứ né việc khó, chọn việc dễ cho an toàn thì vẫn phát triển như nhau"
       },
       {
         "key": "b",
@@ -2988,10 +2988,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cứ né việc khó, chọn việc dễ cho an toàn thì vẫn phát triển như nhau"
+        "text": "Khó khăn, thử thách đòi hỏi nỗ lực gấp đôi, nhưng mang lại trải nghiệm và bài học quý"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Né thử thách thì cũng từ chối luôn cơ hội trưởng thành và phần thưởng xứng đáng.",
     "displayNumber": 107
   },
@@ -3008,7 +3008,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Bắt tay làm thật mới thấy thực tế khác lý thuyết và mới học được cách xử lý"
+        "text": "Cứ chờ đủ điều kiện thật hoàn hảo rồi mới bắt đầu cũng không sao"
       },
       {
         "key": "c",
@@ -3016,10 +3016,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cứ chờ đủ điều kiện thật hoàn hảo rồi mới bắt đầu cũng không sao"
+        "text": "Bắt tay làm thật mới thấy thực tế khác lý thuyết và mới học được cách xử lý"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "VSF không chờ đủ điều kiện mới bắt đầu mà bắt đầu ngay từ những điều nhỏ nhất.",
     "displayNumber": 108
   },
@@ -3040,14 +3040,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Không cần chức danh lớn, chỉ cần đặt tâm đúng chỗ thì sự nghiệp sẽ mở ra"
+        "text": "Cứ làm cho xong việc, tâm để ở đâu cũng được, miễn hết giờ là về"
       },
       {
         "key": "d",
-        "text": "Cứ làm cho xong việc, tâm để ở đâu cũng được, miễn hết giờ là về"
+        "text": "Không cần chức danh lớn, chỉ cần đặt tâm đúng chỗ thì sự nghiệp sẽ mở ra"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Khi tâm chỉ để \"làm cho xong\", kết quả sẽ mờ nhạt và không mở lối cho tương lai.",
     "displayNumber": 109
   },
@@ -3088,7 +3088,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Đội mạnh là đội cùng một hướng đi, một tinh thần, một cam kết"
+        "text": "Mỗi người cứ làm theo ý riêng của mình, nay đồng ý mai đổi cũng được"
       },
       {
         "key": "b",
@@ -3100,10 +3100,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Mỗi người cứ làm theo ý riêng của mình, nay đồng ý mai đổi cũng được"
+        "text": "Đội mạnh là đội cùng một hướng đi, một tinh thần, một cam kết"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Khi tất cả cùng nhìn về một hướng, không ai đi lệch thì sức mạnh tập thể là không gì cản nổi.",
     "displayNumber": 111
   },
@@ -3120,7 +3120,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Không chờ ai nhắc mới làm, không cần ai thúc mới tiến bước"
+        "text": "Cứ chờ người khác đốc thúc, nhắc nhở rồi mới chịu làm cũng được"
       },
       {
         "key": "c",
@@ -3128,10 +3128,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cứ chờ người khác đốc thúc, nhắc nhở rồi mới chịu làm cũng được"
+        "text": "Không chờ ai nhắc mới làm, không cần ai thúc mới tiến bước"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Người không lãnh đạo được chính mình thì khó lãnh đạo được người khác.",
     "displayNumber": 112
   },
@@ -3152,14 +3152,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Hoàn thành việc quan trọng nhất trong ngày là nền tảng cho thành công ngày mai"
+        "text": "Cứ đẩy việc sang ngày mai cho thong thả, mai tính tiếp cũng được"
       },
       {
         "key": "d",
-        "text": "Cứ đẩy việc sang ngày mai cho thong thả, mai tính tiếp cũng được"
+        "text": "Hoàn thành việc quan trọng nhất trong ngày là nền tảng cho thành công ngày mai"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Ngày mai còn có việc của ngày mai, dồn lại sẽ thành đống việc không ai gỡ nổi.",
     "displayNumber": 113
   },
@@ -3200,7 +3200,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Quy trình là đúc kết từ thực tế để đảm bảo chất lượng, làm sai là phá vỡ cam kết chất lượng"
+        "text": "Quy trình chỉ là hình thức, cứ làm theo ý mình cho nhanh cũng được"
       },
       {
         "key": "b",
@@ -3212,10 +3212,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Quy trình chỉ là hình thức, cứ làm theo ý mình cho nhanh cũng được"
+        "text": "Quy trình là đúc kết từ thực tế để đảm bảo chất lượng, làm sai là phá vỡ cam kết chất lượng"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Sự tùy tiện là kẻ thù của hệ thống, làm đúng quy trình là trách nhiệm tối thiểu.",
     "displayNumber": 115
   },
@@ -3232,7 +3232,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Lãng phí nguồn lực: dùng điện, nước, văn phòng phẩm, nguyên vật liệu cẩu thả"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -3240,10 +3240,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên"
+        "text": "Lãng phí nguồn lực: dùng điện, nước, văn phòng phẩm, nguyên vật liệu cẩu thả"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Lãng phí lớn nhất là \"làm lại\", làm đúng ngay từ đầu chính là cách tiết kiệm nhất.",
     "displayNumber": 116
   },
@@ -3264,14 +3264,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tập trung và chuyên sâu là cách để bứt phá, không cần ôm đồm nhiều ngành"
+        "text": "Cứ làm thật nhiều ngành nghề một lúc thì mới mau lớn mạnh"
       },
       {
         "key": "d",
-        "text": "Cứ làm thật nhiều ngành nghề một lúc thì mới mau lớn mạnh"
+        "text": "Tập trung và chuyên sâu là cách để bứt phá, không cần ôm đồm nhiều ngành"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Sức mạnh thật sự đến từ sự tập trung, chỉ khi tinh thông một nghề mới có vinh quang.",
     "displayNumber": 117
   },
@@ -3312,7 +3312,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Làm nhiều mà không đúng hướng chính là lãng phí thời gian và nguồn lực"
+        "text": "Cứ bận rộn cả ngày là tốt rồi, không cần biết việc đó có dẫn tới mục tiêu hay không"
       },
       {
         "key": "b",
@@ -3324,10 +3324,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cứ bận rộn cả ngày là tốt rồi, không cần biết việc đó có dẫn tới mục tiêu hay không"
+        "text": "Làm nhiều mà không đúng hướng chính là lãng phí thời gian và nguồn lực"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Bận rộn mà không gắn với mục tiêu chung thì chỉ là quay vòng tại chỗ.",
     "displayNumber": 119
   },
@@ -3344,7 +3344,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Dồn mọi nguồn lực vào đúng một hướng mạnh nhất thay vì rải đều"
+        "text": "Cứ làm thật nhiều lĩnh vực cùng lúc thì mới nổi bật"
       },
       {
         "key": "c",
@@ -3352,10 +3352,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cứ làm thật nhiều lĩnh vực cùng lúc thì mới nổi bật"
+        "text": "Dồn mọi nguồn lực vào đúng một hướng mạnh nhất thay vì rải đều"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "VSF không cần làm nhiều để nổi bật, chỉ cần làm giỏi nhất trong lĩnh vực mình chọn.",
     "displayNumber": 120
   },
@@ -3376,14 +3376,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Đi họp nên ghi chép nhiều để nắm bao trùm và không bỏ sót thông tin quan trọng"
+        "text": "Cứ giữ hết mọi thứ trong đầu, không cần ghi ra giấy hay không gian số"
       },
       {
         "key": "d",
-        "text": "Cứ giữ hết mọi thứ trong đầu, không cần ghi ra giấy hay không gian số"
+        "text": "Đi họp nên ghi chép nhiều để nắm bao trùm và không bỏ sót thông tin quan trọng"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Đừng để bộ não phải ghi nhớ mọi thứ, ý tưởng tốt và việc quan trọng dễ bị quên nếu không ghi lại.",
     "displayNumber": 121
   },
@@ -3424,7 +3424,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Đúng giờ là thước đo của sự chuyên nghiệp và tôn trọng thời gian của mọi người"
+        "text": "Trễ vài phút trong cuộc hẹn là chuyện nhỏ, không ảnh hưởng tới ai"
       },
       {
         "key": "b",
@@ -3436,10 +3436,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Trễ vài phút trong cuộc hẹn là chuyện nhỏ, không ảnh hưởng tới ai"
+        "text": "Đúng giờ là thước đo của sự chuyên nghiệp và tôn trọng thời gian của mọi người"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Một phút trễ có thể khiến cả buổi làm việc bị xáo trộn và làm mất nhịp nhàng của cả đội.",
     "displayNumber": 123
   },
@@ -3456,7 +3456,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Khi không phải gánh việc ghi nhớ, đầu óc rảnh để suy nghĩ, sáng tạo và cải tiến"
+        "text": "Ghi chép chỉ tốn thời gian, nhớ trong đầu là đủ rồi"
       },
       {
         "key": "c",
@@ -3464,10 +3464,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Ghi chép chỉ tốn thời gian, nhớ trong đầu là đủ rồi"
+        "text": "Khi không phải gánh việc ghi nhớ, đầu óc rảnh để suy nghĩ, sáng tạo và cải tiến"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Duy trì thói quen ghi chép, sau 6 tháng sẽ thấy thay đổi tích cực và bất ngờ.",
     "displayNumber": 124
   },
@@ -3488,14 +3488,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Không gian số: chỉ mở những nội dung liên quan tới việc, không sa vào mạng xã hội"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên"
+        "text": "Không gian số: chỉ mở những nội dung liên quan tới việc, không sa vào mạng xã hội"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Chỉ một phút lơ là cũng đủ gây sai sót, mỗi phút tập trung là một viên gạch xây nền móng tương lai.",
     "displayNumber": 125
   },
@@ -3536,7 +3536,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Cá nhân tận dụng tốt 24h/ngày sẽ tiến bộ nhanh hơn và tạo ra nhiều cơ hội hơn."
+        "text": "Tiền mất có thể kiếm lại, thời gian trôi qua cũng có thể lấy lại nếu cố gắng đủ nhiều."
       },
       {
         "key": "b",
@@ -3544,14 +3544,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tiền mất có thể kiếm lại, thời gian trôi qua cũng có thể lấy lại nếu cố gắng đủ nhiều."
+        "text": "Cá nhân tận dụng tốt 24h/ngày sẽ tiến bộ nhanh hơn và tạo ra nhiều cơ hội hơn."
       },
       {
         "key": "d",
         "text": "Mỗi cuộc họp đúng giờ là biểu hiện của sự tôn trọng và chuyên nghiệp."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "explanation": "Tiền mất có thể kiếm lại, nhưng thời gian một khi đã trôi qua thì không bao giờ quay lại. Đây là điều Nhà VSF nhấn mạnh.",
     "displayNumber": 127
   },
@@ -3568,7 +3568,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Biết ơn người quản lý vì họ chỉ đường và rèn kỷ luật; biết ơn công ty vì đã tạo ra việc làm và cơ hội phát triển."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -3576,10 +3576,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên"
+        "text": "Biết ơn người quản lý vì họ chỉ đường và rèn kỷ luật; biết ơn công ty vì đã tạo ra việc làm và cơ hội phát triển."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Nhà VSF nhấn mạnh biết ơn không chỉ là lời nói mà là hành động cụ thể, thể hiện qua cả 5 node và sự nỗ lực mỗi ngày.",
     "displayNumber": 128
   },
@@ -3628,14 +3628,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Việc quan tâm đến gia đình nhân sự là chuyện riêng tư, công ty không nên can thiệp."
+        "text": "Phần lớn nhân sự đi làm cũng vì muốn phụng dưỡng cha mẹ, chăm sóc gia đình, đây là thực tế công ty cần nhìn nhận."
       },
       {
         "key": "d",
-        "text": "Phần lớn nhân sự đi làm cũng vì muốn phụng dưỡng cha mẹ, chăm sóc gia đình, đây là thực tế công ty cần nhìn nhận."
+        "text": "Việc quan tâm đến gia đình nhân sự là chuyện riêng tư, công ty không nên can thiệp."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "d",
     "explanation": "Nhà VSF xác định gia đình nhân sự cũng là một phần của gốc rễ công ty. Nhà Má đồng hành cùng nhân sự và người thân của họ.",
     "displayNumber": 130
   },
@@ -3648,7 +3648,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Không có khách hàng, không có doanh thu để trả lương và không có lý do để bất kỳ bộ phận nào hoạt động."
+        "text": "Chỉ cần giao đúng bánh mì là đã hoàn thành nhiệm vụ phục vụ khách hàng."
       },
       {
         "key": "b",
@@ -3656,14 +3656,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Chỉ cần giao đúng bánh mì là đã hoàn thành nhiệm vụ phục vụ khách hàng."
+        "text": "Không có khách hàng, không có doanh thu để trả lương và không có lý do để bất kỳ bộ phận nào hoạt động."
       },
       {
         "key": "d",
         "text": "Phục vụ khách hàng là danh dự và niềm tự hào, không chỉ là nghĩa vụ."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "explanation": "Nhà VSF nhấn mạnh phục vụ không chỉ đúng quy trình mà còn đúng cảm xúc, mang đến trải nghiệm tốt đẹp chứ không dừng lại ở việc giao sản phẩm.",
     "displayNumber": 131
   },
@@ -3680,18 +3680,18 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Khi phục vụ khách hàng với trái tim, hãy nhớ họ cũng là người cha, người mẹ, người con đang tìm kiếm sự tin tưởng."
+        "text": "Sự thấu cảm chỉ nên dành cho người thân trong gia đình, không nên mang vào nơi làm việc vì dễ mất tính chuyên nghiệp."
       },
       {
         "key": "c",
-        "text": "Sự thấu cảm chỉ nên dành cho người thân trong gia đình, không nên mang vào nơi làm việc vì dễ mất tính chuyên nghiệp."
+        "text": "Khi phục vụ khách hàng với trái tim, hãy nhớ họ cũng là người cha, người mẹ, người con đang tìm kiếm sự tin tưởng."
       },
       {
         "key": "d",
         "text": "Nhà Má đang xây dựng tinh thần: gia đình nhân sự, cha mẹ và con cái của họ cũng là người thân của Nhà Má."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "b",
     "explanation": "Nhà VSF xây dựng tổ chức bằng tình người. Mở rộng sự thấu cảm ra với mọi người xung quanh chính là nền tảng của văn hóa gắn kết bền vững.",
     "displayNumber": 132
   },
@@ -3760,7 +3760,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Lòng trắc ẩn với quê hương, con người và môi trường là bản năng và giá trị sâu nhất trong mỗi người."
+        "text": "Lợi nhuận luôn phải được đặt lên trước lòng trắc ẩn, nếu không công ty sẽ không tồn tại được."
       },
       {
         "key": "b",
@@ -3768,14 +3768,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Lợi nhuận luôn phải được đặt lên trước lòng trắc ẩn, nếu không công ty sẽ không tồn tại được."
+        "text": "Lòng trắc ẩn với quê hương, con người và môi trường là bản năng và giá trị sâu nhất trong mỗi người."
       },
       {
         "key": "d",
         "text": "Chỉ có lòng trắc ẩn mới tạo ra ý nghĩa, và chính ý nghĩa ấy sẽ đưa VSF đi thật xa và bền vững."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "explanation": "Nhà VSF xác định: lợi nhuận là điều tất yếu đến sau khi phục vụ tốt 5 node, không phải thứ phải đặt trước lòng trắc ẩn.",
     "displayNumber": 135
   },
@@ -3792,18 +3792,18 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Khi có đoàn kết, xung đột có thể hóa giải và mọi khó khăn có thể vượt qua."
+        "text": "Đi nhanh một mình tốt hơn đi chậm cùng tập thể, vì phụ thuộc vào nhau dễ kéo chậm tiến độ."
       },
       {
         "key": "c",
-        "text": "Đi nhanh một mình tốt hơn đi chậm cùng tập thể, vì phụ thuộc vào nhau dễ kéo chậm tiến độ."
+        "text": "Khi có đoàn kết, xung đột có thể hóa giải và mọi khó khăn có thể vượt qua."
       },
       {
         "key": "d",
         "text": "Đại thành công chỉ đến khi tất cả cùng tiến về phía trước, không bỏ ai lại phía sau."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "b",
     "explanation": "Nhà VSF xác định rõ: chúng ta không đi nhanh một mình mà đi xa cùng nhau, đó mới là con đường đến đại thành công.",
     "displayNumber": 136
   },
@@ -3872,11 +3872,11 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Thương hiệu sống trong từng hành vi, lời nói và cách nhân sự xuất hiện mỗi ngày."
+        "text": "Chỉ đội ngũ kinh doanh và marketing mới cần giữ hình ảnh thương hiệu vì họ trực tiếp tiếp xúc khách hàng."
       },
       {
         "key": "b",
-        "text": "Chỉ đội ngũ kinh doanh và marketing mới cần giữ hình ảnh thương hiệu vì họ trực tiếp tiếp xúc khách hàng."
+        "text": "Thương hiệu sống trong từng hành vi, lời nói và cách nhân sự xuất hiện mỗi ngày."
       },
       {
         "key": "c",
@@ -3887,7 +3887,7 @@ window.HOINHAP_QUESTIONS = [
         "text": "Khách hàng không phân biệt bộ phận, họ chỉ thấy một điều: đây là con người của Bánh Mì Má Hải."
       }
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "Mọi nhân sự ở bất kỳ vị trí nào, từ xưởng, kho, shipper đến văn phòng, đều là đại diện thương hiệu Bánh Mì Má Hải.",
     "displayNumber": 139
   },
@@ -3904,7 +3904,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tiện lợi: nhanh, gọn, đúng giờ, đúng nhu cầu"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -3912,10 +3912,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên"
+        "text": "Tiện lợi: nhanh, gọn, đúng giờ, đúng nhu cầu"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "VSF tồn tại là nhờ node 1A và lớn lên nhờ làm tốt node 1A mỗi ngày.",
     "displayNumber": 140
   },
@@ -3936,14 +3936,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tôn trọng sự chủ động, sáng tạo của mỗi người, nhưng lấy khách hàng làm trung tâm"
+        "text": "Cứ làm theo ý mình là đủ, khách hàng nghĩ gì không quan trọng"
       },
       {
         "key": "d",
-        "text": "Cứ làm theo ý mình là đủ, khách hàng nghĩ gì không quan trọng"
+        "text": "Tôn trọng sự chủ động, sáng tạo của mỗi người, nhưng lấy khách hàng làm trung tâm"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Chúng ta làm việc để phục vụ tốt nhất cho khách hàng, không phải để thỏa mãn quan điểm cá nhân.",
     "displayNumber": 141
   },
@@ -3964,14 +3964,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "VSF chỉ có thể mở rộng quy mô khi có đủ nguồn lực tài chính, dù chất lượng phục vụ của 2A còn yếu."
+        "text": "Phát triển bền vững bắt đầu từ nội lực, phục vụ tốt Node 1A và 1B là con đường nhanh nhất để VSF lớn mạnh."
       },
       {
         "key": "d",
-        "text": "Phát triển bền vững bắt đầu từ nội lực, phục vụ tốt Node 1A và 1B là con đường nhanh nhất để VSF lớn mạnh."
+        "text": "VSF chỉ có thể mở rộng quy mô khi có đủ nguồn lực tài chính, dù chất lượng phục vụ của 2A còn yếu."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "d",
     "explanation": "Nhà VSF khẳng định: quy mô không bị giới hạn bởi nguồn lực tài chính mà được mở rộng bởi chất lượng con người và năng lực phục vụ.",
     "displayNumber": 142
   },
@@ -3984,7 +3984,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Mỗi bên đều phải bỏ ra một cái GIÁ để nhận về một cái TRỊ tương xứng, đây là quy luật cốt lõi."
+        "text": "Quan hệ với nhà cung cấp chỉ cần giữ ở mức mua bán sòng phẳng, không cần đầu tư xây dựng hợp tác lâu dài."
       },
       {
         "key": "b",
@@ -3996,10 +3996,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Quan hệ với nhà cung cấp chỉ cần giữ ở mức mua bán sòng phẳng, không cần đầu tư xây dựng hợp tác lâu dài."
+        "text": "Mỗi bên đều phải bỏ ra một cái GIÁ để nhận về một cái TRỊ tương xứng, đây là quy luật cốt lõi."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Nhà VSF xác định đây không phải quan hệ mua đứt bán đoạn mà là sự cộng hưởng nguồn lực, cùng nhau phát triển bền vững.",
     "displayNumber": 143
   },
@@ -4016,7 +4016,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Bảo vệ và phát triển điểm bán là trách nhiệm của toàn hệ thống"
+        "text": "Điểm bán chỉ là việc của bộ phận kinh doanh, người khác không liên quan"
       },
       {
         "key": "c",
@@ -4024,10 +4024,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Điểm bán chỉ là việc của bộ phận kinh doanh, người khác không liên quan"
+        "text": "Bảo vệ và phát triển điểm bán là trách nhiệm của toàn hệ thống"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Nếu điểm bán dừng, khách rời đi thì tất cả chúng ta đều mất việc, nên đó là việc của cả hệ thống.",
     "displayNumber": 144
   },
@@ -4048,14 +4048,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Hệ thống là để vận hành, công ty không nên phụ thuộc vào một người duy nhất"
+        "text": "Nên giữ riêng bí quyết, gây khó để công ty không thể thiếu mình"
       },
       {
         "key": "d",
-        "text": "Nên giữ riêng bí quyết, gây khó để công ty không thể thiếu mình"
+        "text": "Hệ thống là để vận hành, công ty không nên phụ thuộc vào một người duy nhất"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Cố \"làm ngôi sao để không thể thay thế\" là một căn bệnh, điều đáng quý là liên tục tạo giá trị và giúp đội ngũ tiến bộ.",
     "displayNumber": 145
   },
@@ -4096,7 +4096,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Cách làm ra sản phẩm chất lượng và vận hành mô hình kinh doanh bài bản."
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "b",
@@ -4108,10 +4108,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên."
+        "text": "Cách làm ra sản phẩm chất lượng và vận hành mô hình kinh doanh bài bản."
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Nhà VSF hướng tới môi trường học hỏi liên tục, từ chất lượng sản phẩm, vận hành, phục vụ khách hàng đến lãnh đạo và tạo giá trị cộng đồng.",
     "displayNumber": 147
   },
@@ -4128,7 +4128,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tối ưu: tiết kiệm nguồn lực, tránh chồng chéo, làm đúng ngay từ đầu"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -4136,10 +4136,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên"
+        "text": "Tối ưu: tiết kiệm nguồn lực, tránh chồng chéo, làm đúng ngay từ đầu"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Việc liên quan đến vận hành và kết quả cuối cùng là việc chung của tất cả, cùng chung tay thì không gì là không hoàn thành.",
     "displayNumber": 148
   },
@@ -4208,7 +4208,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Hỏi để hiểu bản chất, làm đúng, tránh sai và kết nối với người đi trước"
+        "text": "Không hỏi, không học vẫn giỏi, vì đứng yên cũng chẳng sao"
       },
       {
         "key": "b",
@@ -4220,10 +4220,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Không hỏi, không học vẫn giỏi, vì đứng yên cũng chẳng sao"
+        "text": "Hỏi để hiểu bản chất, làm đúng, tránh sai và kết nối với người đi trước"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Đứng yên trong một thị trường thay đổi chính là đang tụt lùi.",
     "displayNumber": 151
   },
@@ -4240,7 +4240,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Hồi tưởng giúp ta không đi vào lối mòn, không lặp lại sai lầm"
+        "text": "Cứ làm xong là quên hết, không cần nhìn lại ngày đã qua"
       },
       {
         "key": "c",
@@ -4248,10 +4248,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cứ làm xong là quên hết, không cần nhìn lại ngày đã qua"
+        "text": "Hồi tưởng giúp ta không đi vào lối mòn, không lặp lại sai lầm"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Người biết hồi tưởng học hỏi từ mỗi ngày sẽ không giậm chân tại chỗ.",
     "displayNumber": 152
   },
@@ -4272,14 +4272,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Xâu chuỗi giúp ta tìm ra quy luật và con đường cải tiến"
+        "text": "Cứ làm cho nhiều, không cần nhìn lại hay rút kinh nghiệm gì"
       },
       {
         "key": "d",
-        "text": "Cứ làm cho nhiều, không cần nhìn lại hay rút kinh nghiệm gì"
+        "text": "Xâu chuỗi giúp ta tìm ra quy luật và con đường cải tiến"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "VSF không chạy theo \"làm nhiều\" mà hướng tới làm tốt hơn mỗi ngày, muốn nâng cấp tổ chức thì từng người phải tự nâng cấp mình.",
     "displayNumber": 153
   },
@@ -4320,7 +4320,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Thành công đến từ những bước tiến nhỏ nhưng đều đặn mỗi ngày"
+        "text": "Phải nhảy vọt thật nhanh ngay từ đầu, không cần đều đặn"
       },
       {
         "key": "b",
@@ -4332,10 +4332,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phải nhảy vọt thật nhanh ngay từ đầu, không cần đều đặn"
+        "text": "Thành công đến từ những bước tiến nhỏ nhưng đều đặn mỗi ngày"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Triết lý \"muốn nhanh thì phải từ từ\", mỗi ngày một bước thì một năm đã đi được 365 bước.",
     "displayNumber": 155
   },
@@ -4352,7 +4352,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Những yếu tố nào cần tăng thêm để khách hàng cảm nhận rõ giá trị"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -4360,10 +4360,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên"
+        "text": "Những yếu tố nào cần tăng thêm để khách hàng cảm nhận rõ giá trị"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Giảm cái dư thừa, tăng cái cần thiết, loại bỏ cái cũ kỹ và sáng tạo cái mới mẻ.",
     "displayNumber": 156
   },
@@ -4384,14 +4384,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Văn hóa huấn luyện tạo ra cá nhân giỏi, đội ngũ mạnh, công ty vươn cao"
+        "text": "Đã giỏi rồi thì không cần ai huấn luyện, một mình là đủ"
       },
       {
         "key": "d",
-        "text": "Đã giỏi rồi thì không cần ai huấn luyện, một mình là đủ"
+        "text": "Văn hóa huấn luyện tạo ra cá nhân giỏi, đội ngũ mạnh, công ty vươn cao"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Chỉ thiểu số siêu giỏi mới thành công một mình, có người huấn luyện mới dễ chạm tới đỉnh cao.",
     "displayNumber": 157
   },
@@ -4432,7 +4432,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Mỗi vị trí cần có người kế cận, được hướng dẫn và giao việc từ sớm"
+        "text": "Cứ giữ việc cho riêng mình, không cần đào tạo ai thay thế"
       },
       {
         "key": "b",
@@ -4444,10 +4444,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cứ giữ việc cho riêng mình, không cần đào tạo ai thay thế"
+        "text": "Mỗi vị trí cần có người kế cận, được hướng dẫn và giao việc từ sớm"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Không có kế thừa thì tổ chức dễ đứt gãy. Có người kế cận chuẩn bị trước thì khi ai đó chuyển vai trò, công việc vẫn trôi chảy.",
     "displayNumber": 159
   },
@@ -4464,7 +4464,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Nhìn lại để thấy bước nào tốt thì giữ, bước nào chưa tốt thì bỏ"
+        "text": "Quy trình nên nghĩ ra từ giấy trắng, không cần nhìn lại việc đã từng làm"
       },
       {
         "key": "c",
@@ -4472,10 +4472,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Quy trình nên nghĩ ra từ giấy trắng, không cần nhìn lại việc đã từng làm"
+        "text": "Nhìn lại để thấy bước nào tốt thì giữ, bước nào chưa tốt thì bỏ"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Quy trình không bắt đầu từ con số 0 mà từ việc nhìn lại điều đã trải qua.",
     "displayNumber": 160
   },
@@ -4496,14 +4496,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Làm đúng ngay cả khi không có ai nhìn, nhất quán, không có ngoại lệ"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên"
+        "text": "Làm đúng ngay cả khi không có ai nhìn, nhất quán, không có ngoại lệ"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Kỷ luật không gò bó, nó là bệ phóng giúp Nhà VSF phát triển bền vững và đi xa.",
     "displayNumber": 161
   },
@@ -4544,7 +4544,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Ghi nhận sai sót trong quá trình làm việc để nhận ra và sửa kịp thời"
+        "text": "Là cách để soi mói, hạ thấp nhau mỗi khi có người làm sai"
       },
       {
         "key": "b",
@@ -4556,10 +4556,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Là cách để soi mói, hạ thấp nhau mỗi khi có người làm sai"
+        "text": "Ghi nhận sai sót trong quá trình làm việc để nhận ra và sửa kịp thời"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "KLO là tấm gương soi giúp mỗi người hoàn thiện hơn. Làm đúng, làm đủ thì KLO không còn chỗ xuất hiện.",
     "displayNumber": 163
   },
@@ -4576,7 +4576,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Giữ gìn hình ảnh công ty, phát ngôn cẩn trọng vì mỗi nhân sự là một đại sứ"
+        "text": "Làm giả hồ sơ, giấy tờ, chữ ký để có lợi nhỏ trước mắt"
       },
       {
         "key": "c",
@@ -4584,10 +4584,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Làm giả hồ sơ, giấy tờ, chữ ký để có lợi nhỏ trước mắt"
+        "text": "Giữ gìn hình ảnh công ty, phát ngôn cẩn trọng vì mỗi nhân sự là một đại sứ"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Một chữ ký giả hay một con số chấm công sai có thể lợi trước mắt nhưng phá hủy niềm tin lâu dài.",
     "displayNumber": 164
   },
@@ -4608,14 +4608,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Dùng lý lẽ để thuyết phục thay vì lời lẽ gây tổn thương"
+        "text": "Đe dọa, gây gổ hoặc quấy rối đồng nghiệp, cấp trên, khách hàng"
       },
       {
         "key": "d",
-        "text": "Đe dọa, gây gổ hoặc quấy rối đồng nghiệp, cấp trên, khách hàng"
+        "text": "Dùng lý lẽ để thuyết phục thay vì lời lẽ gây tổn thương"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Môi trường làm việc chỉ hạnh phúc khi mọi người thấy an toàn và được tôn trọng.",
     "displayNumber": 165
   },
@@ -4656,7 +4656,7 @@ window.HOINHAP_QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Muốn biết một người mong điều gì, hãy nhìn cách họ làm việc và thái độ của họ"
+        "text": "Chỉ cần nói cho hay, mơ cho lớn là mọi điều mong muốn sẽ tự thành"
       },
       {
         "key": "b",
@@ -4668,10 +4668,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Chỉ cần nói cho hay, mơ cho lớn là mọi điều mong muốn sẽ tự thành"
+        "text": "Muốn biết một người mong điều gì, hãy nhìn cách họ làm việc và thái độ của họ"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Nói thì không xong việc, chỉ có làm mới xong việc.",
     "displayNumber": 167
   },
@@ -4688,7 +4688,7 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Mỗi quy trình, mỗi vị trí cần được mô tả cụ thể để chất lượng đồng đều"
+        "text": "Cả ba phương án còn lại đều đúng."
       },
       {
         "key": "c",
@@ -4696,10 +4696,10 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tất cả các ý trên"
+        "text": "Mỗi quy trình, mỗi vị trí cần được mô tả cụ thể để chất lượng đồng đều"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Chi tiết không làm ta chậm lại mà giúp ta đi xa một cách chắc chắn.",
     "displayNumber": 168
   },
@@ -4720,14 +4720,14 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "\"Nói có sách, mách có chứng\", có dữ liệu thì mới dám làm chủ quyết định"
+        "text": "Cứ làm theo cảm tính và ý thích cá nhân, không cần số liệu gì cả"
       },
       {
         "key": "d",
-        "text": "Cứ làm theo cảm tính và ý thích cá nhân, không cần số liệu gì cả"
+        "text": "\"Nói có sách, mách có chứng\", có dữ liệu thì mới dám làm chủ quyết định"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Cảm xúc có thể đổi, nhưng dữ liệu không nói dối.",
     "displayNumber": 169
   },
@@ -4776,15 +4776,19 @@ window.HOINHAP_QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Xem chất vấn của khách hàng nhượng quyền là cơ hội hoàn thiện hệ thống"
+        "text": "Lảng tránh, im lặng cho qua để khỏi phải đụng tới chuyện khó"
       },
       {
         "key": "d",
-        "text": "Lảng tránh, im lặng cho qua để khỏi phải đụng tới chuyện khó"
+        "text": "Xem chất vấn của khách hàng nhượng quyền là cơ hội hoàn thiện hệ thống"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "c",
     "explanation": "Thẳng thắn không phải chỉ trích mà là trách nhiệm.",
     "displayNumber": 171
   }
 ];
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = QUESTIONS;
+}
