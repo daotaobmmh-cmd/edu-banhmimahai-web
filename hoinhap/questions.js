@@ -3844,7 +3844,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B, C và D đúng."
+        "text": "Node 1 gồm người tiêu dùng (1a) và khách hàng nhượng quyền (1b) là đỉnh kim tự tháp, quyết định 4 node nền tảng còn lại; Node 2 gồm nhân sự công ty (2a) và nhà đầu tư (2b); Node 3 gồm nhà cung cấp (3a) và đối tác (3b); Node 4 gồm nhà nước (4a) và cộng đồng (4b); Node 5 là môi trường và trái đất."
       },
       {
         "key": "b",
@@ -3856,7 +3856,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Chỉ cần tập trung vào Node 1, các node còn lại sẽ tự vận hành tốt mà không cần quan tâm."
       }
     ],
     "correctAnswer": "d",
