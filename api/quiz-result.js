@@ -334,7 +334,7 @@ async function fetchWithRetry(url, options = {}, maxRetries = 10, timeoutMs = 12
 
     const threshold = getThresholdForUnit(unit);
     const passed = score >= threshold;
-    const DATASET_VERSION = 'c968cbb0aecbada3a1da2c15587464ece56876bb4119095bb4eedf08e47b80dd';
+    const DATASET_VERSION = 'e7c59c7cfe2b1c8228e0a87a4ca8e5d8fac51a1f455a66df827f07fe3e4cecd4';
     const serverSubmittedAt = new Date().toISOString();
     const derivedPageUrl = `${originUrl.origin}/hoinhap/`;
 
