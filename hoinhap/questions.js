@@ -824,7 +824,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A và C đúng."
+        "text": "Phương án A và D đúng."
       },
       {
         "key": "c",
@@ -1856,7 +1856,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B và C đúng."
+        "text": "Phương án B và D đúng."
       },
       {
         "key": "b",
