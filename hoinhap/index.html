@@ -243,8 +243,8 @@
                                               @input="feedbackStatuses[currentStudyQuestion.id] = 'idle'"
                                               placeholder="Góp ý của bạn về câu này" 
                                               rows="1" 
-                                              class="flex-1 min-w-0 resize-none px-4 py-2.5 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 motion-reduce:transition-none font-medium text-slate-700 text-[13px] custom-scrollbar h-[44px] min-h-[44px] max-h-[100px]"
-                                              style="min-height: 44px; height: 44px; max-height: 100px;"></textarea>
+                                              class="flex-1 min-w-0 resize-none px-4 py-2.5 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 motion-reduce:transition-none font-medium text-slate-700 text-[13px] overflow-hidden h-[44px] min-h-[44px] max-h-[100px]"
+                                              style="min-height: 44px; height: 44px; max-height: 100px; overflow-y: hidden;"></textarea>
                                     <button @click="submitFeedback(currentStudyQuestion, 'practice')" 
                                             :disabled="!feedbackTexts[currentStudyQuestion.id] || !feedbackTexts[currentStudyQuestion.id].trim() || feedbackStatuses[currentStudyQuestion.id] === 'sending'" 
                                             aria-label="Góp ý câu này"
@@ -525,8 +525,8 @@
                                                   @input="feedbackStatuses[w.question.id] = 'idle'"
                                                   placeholder="Góp ý của bạn về câu này" 
                                                   rows="1" 
-                                                  class="flex-1 min-w-0 resize-none px-4 py-2.5 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 motion-reduce:transition-none font-medium text-slate-700 text-[13px] custom-scrollbar h-[44px] min-h-[44px] max-h-[100px]"
-                                                  style="min-height: 44px; height: 44px; max-height: 100px;"></textarea>
+                                                  class="flex-1 min-w-0 resize-none px-4 py-2.5 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 motion-reduce:transition-none font-medium text-slate-700 text-[13px] overflow-hidden h-[44px] min-h-[44px] max-h-[100px]"
+                                                  style="min-height: 44px; height: 44px; max-height: 100px; overflow-y: hidden;"></textarea>
                                         <button @click="submitFeedback(w.question, 'test')" 
                                                 :disabled="!feedbackTexts[w.question.id] || !feedbackTexts[w.question.id].trim() || feedbackStatuses[w.question.id] === 'sending'" 
                                                 aria-label="Góp ý câu này"
