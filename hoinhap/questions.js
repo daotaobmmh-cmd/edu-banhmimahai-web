@@ -904,7 +904,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B và C đúng."
+        "text": "Phương án B và D đúng."
       },
       {
         "key": "b",
@@ -1016,7 +1016,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B và C đúng."
+        "text": "Phương án B và D đúng."
       },
       {
         "key": "b",
@@ -1048,7 +1048,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A và C đúng."
+        "text": "Phương án A và D đúng."
       },
       {
         "key": "c",
@@ -1128,7 +1128,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B và C đúng."
+        "text": "Phương án B và D đúng."
       },
       {
         "key": "b",
@@ -1272,7 +1272,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A và C đúng."
+        "text": "Phương án A và D đúng."
       },
       {
         "key": "c",
@@ -1352,7 +1352,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Phương án B và C đúng."
+        "text": "Phương án B và D đúng."
       },
       {
         "key": "b",
@@ -1384,7 +1384,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Phương án A và C đúng."
+        "text": "Phương án A và D đúng."
       },
       {
         "key": "c",
@@ -1416,11 +1416,11 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phương án A, B và D đúng."
+        "text": "Phương án A và B đúng."
       },
       {
         "key": "d",
-        "text": "Phương án A, B và C đúng."
+        "text": "Kêu gọi nhiều người vào nói cùng cho họ xấu hổ."
       }
     ],
     "correctAnswer": "c",
