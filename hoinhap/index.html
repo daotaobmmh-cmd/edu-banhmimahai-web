@@ -237,18 +237,18 @@
                             
                             <!-- Feedback UI Practice Mode -->
                             <div class="mt-4" x-show="currentStudyQuestion">
-                                <div class="flex items-stretch gap-2.5">
+                                <div class="flex items-center gap-2.5">
                                     <textarea :data-feedback-qid="currentStudyQuestion?.id"
                                               x-model="feedbackTexts[currentStudyQuestion.id]"
                                               @input="feedbackStatuses[currentStudyQuestion.id] = 'idle'"
                                               placeholder="Góp ý của bạn về câu này" 
                                               rows="1" 
-                                              class="flex-1 min-w-0 resize-none px-4 py-2.5 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 motion-reduce:transition-none font-medium text-slate-700 text-[13px] custom-scrollbar"
-                                              style="min-height: 44px; max-height: 100px;"></textarea>
+                                              class="flex-1 min-w-0 resize-none px-4 py-2.5 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 motion-reduce:transition-none font-medium text-slate-700 text-[13px] custom-scrollbar h-[44px] min-h-[44px] max-h-[100px]"
+                                              style="min-height: 44px; height: 44px; max-height: 100px;"></textarea>
                                     <button @click="submitFeedback(currentStudyQuestion, 'practice')" 
                                             :disabled="!feedbackTexts[currentStudyQuestion.id] || !feedbackTexts[currentStudyQuestion.id].trim() || feedbackStatuses[currentStudyQuestion.id] === 'sending'" 
                                             aria-label="Góp ý câu này"
-                                            class="self-stretch min-w-[115px] px-3.5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold font-quicksand text-[13px] flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-amber-50 disabled:hover:border-amber-300">
+                                            class="h-[44px] min-h-[44px] w-[125px] min-w-[125px] px-3.5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold font-quicksand text-[13px] flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-amber-50 disabled:hover:border-amber-300">
                                         <template x-if="feedbackStatuses[currentStudyQuestion.id] === 'sending'">
                                             <span aria-hidden="true" class="w-4 h-4 rounded-full border-2 border-amber-300 border-t-amber-800 animate-spin flex-shrink-0"></span>
                                         </template>
@@ -519,18 +519,18 @@
                                 
                                 <!-- Feedback UI Test Mode -->
                                 <div class="mt-4">
-                                    <div class="flex items-stretch gap-2.5">
+                                    <div class="flex items-center gap-2.5">
                                         <textarea :data-feedback-qid="w.question.id"
                                                   x-model="feedbackTexts[w.question.id]"
                                                   @input="feedbackStatuses[w.question.id] = 'idle'"
                                                   placeholder="Góp ý của bạn về câu này" 
                                                   rows="1" 
-                                                  class="flex-1 min-w-0 resize-none px-4 py-2.5 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 motion-reduce:transition-none font-medium text-slate-700 text-[13px] custom-scrollbar"
-                                                  style="min-height: 44px; max-height: 100px;"></textarea>
+                                                  class="flex-1 min-w-0 resize-none px-4 py-2.5 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 motion-reduce:transition-none font-medium text-slate-700 text-[13px] custom-scrollbar h-[44px] min-h-[44px] max-h-[100px]"
+                                                  style="min-height: 44px; height: 44px; max-height: 100px;"></textarea>
                                         <button @click="submitFeedback(w.question, 'test')" 
                                                 :disabled="!feedbackTexts[w.question.id] || !feedbackTexts[w.question.id].trim() || feedbackStatuses[w.question.id] === 'sending'" 
                                                 aria-label="Góp ý câu này"
-                                                class="self-stretch min-w-[115px] px-3.5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold font-quicksand text-[13px] flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-amber-50 disabled:hover:border-amber-300">
+                                                class="h-[44px] min-h-[44px] w-[125px] min-w-[125px] px-3.5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold font-quicksand text-[13px] flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-amber-50 disabled:hover:border-amber-300">
                                             <template x-if="feedbackStatuses[w.question.id] === 'sending'">
                                                 <span aria-hidden="true" class="w-4 h-4 rounded-full border-2 border-amber-300 border-t-amber-800 animate-spin flex-shrink-0"></span>
                                             </template>
