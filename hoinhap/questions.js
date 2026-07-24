@@ -4789,6 +4789,10 @@ const QUESTIONS = [
   }
 ];
 
+if (typeof window !== 'undefined') {
+  window.HOINHAP_QUESTIONS = QUESTIONS;
+}
+
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = QUESTIONS;
 }
