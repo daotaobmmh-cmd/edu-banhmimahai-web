@@ -373,28 +373,6 @@ async function fetchWithRetry(url, options = {}, maxRetries = 10, timeoutMs = 12
     const passed = score >= threshold;
     const DATASET_VERSION = 'a155b467c6990e7b9f51060f9ddad6ffbb196443c61afc2a9b1f830e987cb3c4';
     const serverSubmittedAt = new Date().toISOString();
-    const submittedAt = (typeof rawSubmittedAt === 'string' && rawSubmittedAt.trim()) ? rawSubmittedAt.trim() : serverSubmittedAt;
-    let startedAt = (typeof rawStartedAt === 'string' && rawStartedAt.trim()) ? rawStartedAt.trim() : submittedAt;
-    if (isNaN(Date.parse(startedAt))) startedAt = submittedAt;
-
-    let durationSeconds;
-    if (typeof rawDurationSeconds === 'number' && Number.isInteger(rawDurationSeconds) && rawDurationSeconds >= 0) {
-      durationSeconds = rawDurationSeconds;
-    } else if (typeof rawDurationSeconds === 'string' && /^\d+$/.test(rawDurationSeconds.trim())) {
-      durationSeconds = parseInt(rawDurationSeconds.trim(), 10);
-    } else {
-      const startMs = Date.parse(startedAt);
-      const subMs = Date.parse(submittedAt);
-      durationSeconds = (!isNaN(startMs) && !isNaN(subMs) && subMs >= startMs) ? Math.round((subMs - startMs) / 1000) : 0;
-    }
-    durationSeconds = Math.max(0, Math.min(1800, durationSeconds));
-
-    let durationMinutes;
-    if (typeof rawDurationMinutes === 'number' && !isNaN(rawDurationMinutes)) {
-      durationMinutes = Math.round(rawDurationMinutes * 100) / 100;
-    } else {
-      durationMinutes = Math.round((durationSeconds / 60) * 100) / 100;
-    }
 
     const derivedPageUrl = `${originUrl.origin}/hoinhap/`;
 
@@ -409,7 +387,7 @@ async function fetchWithRetry(url, options = {}, maxRetries = 10, timeoutMs = 12
         'Ngưỡng đạt': { number: threshold },
         'Kết quả': { status: { name: passed ? 'Đạt' : 'Chưa đạt' } },
         'Thời gian bắt đầu': { date: { start: startedAt } },
-        'Thời gian nộp': { date: { start: submittedAt } },
+        'Thời gian nộp': { date: { start: serverSubmittedAt } },
         'Thời lượng (giây)': { number: durationSeconds },
         'Thời lượng (phút)': { number: durationMinutes },
         'URL': { url: derivedPageUrl },
@@ -489,7 +467,7 @@ async function fetchWithRetry(url, options = {}, maxRetries = 10, timeoutMs = 12
             const wrong = typeof pageProps['Số câu sai']?.number === 'number' ? pageProps['Số câu sai'].number : 0;
             const unanswered = typeof pageProps['Số câu chưa trả lời']?.number === 'number' ? pageProps['Số câu chưa trả lời'].number : 0;
 
-            const storedResult = { attemptId, duplicate: true, score, total: 30, threshold, passed, wrong, unanswered };
+            const storedResult = { attemptId, duplicate: true, score, total: 30, threshold, passed, wrong, unanswered, startedAt, durationSeconds, durationMinutes };
             global.quizResultCache.set(attemptId, storedResult);
             return storedResult;
           }
