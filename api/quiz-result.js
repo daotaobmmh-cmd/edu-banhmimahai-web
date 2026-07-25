@@ -108,6 +108,10 @@ module.exports = async function handler(req, res) {
   const unit = String(body.unit || '').trim();
   const testAnswers = body.testAnswers;
   const rawQuestions = body.testQuestions;
+  const rawStartedAt = body.startedAt;
+  const rawSubmittedAt = body.submittedAt;
+  const rawDurationSeconds = body.durationSeconds;
+  const rawDurationMinutes = body.durationMinutes;
 
   // Strict Payload Validation
   const attemptIdRegex = /^[a-zA-Z0-9_-]{16,100}$/;
@@ -305,8 +309,11 @@ async function fetchWithRetry(url, options = {}, maxRetries = 10, timeoutMs = 12
       const passed = statusName === 'Đạt';
       const wrong = typeof pageProps['Số câu sai']?.number === 'number' ? pageProps['Số câu sai'].number : 0;
       const unanswered = typeof pageProps['Số câu chưa trả lời']?.number === 'number' ? pageProps['Số câu chưa trả lời'].number : 0;
+      const startedAt = pageProps['Thời gian bắt đầu']?.date?.start || null;
+      const durationSeconds = typeof pageProps['Thời lượng (giây)']?.number === 'number' ? pageProps['Thời lượng (giây)'].number : 0;
+      const durationMinutes = typeof pageProps['Thời lượng (phút)']?.number === 'number' ? pageProps['Thời lượng (phút)'].number : 0;
 
-      const storedResult = { attemptId, duplicate: true, score, total: 30, threshold, passed, wrong, unanswered };
+      const storedResult = { attemptId, duplicate: true, score, total: 30, threshold, passed, wrong, unanswered, startedAt, durationSeconds, durationMinutes };
       global.quizResultCache.set(attemptId, storedResult);
       return storedResult;
     }
@@ -336,6 +343,29 @@ async function fetchWithRetry(url, options = {}, maxRetries = 10, timeoutMs = 12
     const passed = score >= threshold;
     const DATASET_VERSION = 'a155b467c6990e7b9f51060f9ddad6ffbb196443c61afc2a9b1f830e987cb3c4';
     const serverSubmittedAt = new Date().toISOString();
+    const submittedAt = (typeof rawSubmittedAt === 'string' && rawSubmittedAt.trim()) ? rawSubmittedAt.trim() : serverSubmittedAt;
+    let startedAt = (typeof rawStartedAt === 'string' && rawStartedAt.trim()) ? rawStartedAt.trim() : submittedAt;
+    if (isNaN(Date.parse(startedAt))) startedAt = submittedAt;
+
+    let durationSeconds;
+    if (typeof rawDurationSeconds === 'number' && Number.isInteger(rawDurationSeconds) && rawDurationSeconds >= 0) {
+      durationSeconds = rawDurationSeconds;
+    } else if (typeof rawDurationSeconds === 'string' && /^\d+$/.test(rawDurationSeconds.trim())) {
+      durationSeconds = parseInt(rawDurationSeconds.trim(), 10);
+    } else {
+      const startMs = Date.parse(startedAt);
+      const subMs = Date.parse(submittedAt);
+      durationSeconds = (!isNaN(startMs) && !isNaN(subMs) && subMs >= startMs) ? Math.round((subMs - startMs) / 1000) : 0;
+    }
+    durationSeconds = Math.max(0, Math.min(1800, durationSeconds));
+
+    let durationMinutes;
+    if (typeof rawDurationMinutes === 'number' && !isNaN(rawDurationMinutes)) {
+      durationMinutes = Math.round(rawDurationMinutes * 100) / 100;
+    } else {
+      durationMinutes = Math.round((durationSeconds / 60) * 100) / 100;
+    }
+
     const derivedPageUrl = `${originUrl.origin}/hoinhap/`;
 
     const notionPayload = {
@@ -348,7 +378,10 @@ async function fetchWithRetry(url, options = {}, maxRetries = 10, timeoutMs = 12
         'Tổng số câu': { number: 30 },
         'Ngưỡng đạt': { number: threshold },
         'Kết quả': { status: { name: passed ? 'Đạt' : 'Chưa đạt' } },
-        'Thời gian nộp': { date: { start: serverSubmittedAt } },
+        'Thời gian bắt đầu': { date: { start: startedAt } },
+        'Thời gian nộp': { date: { start: submittedAt } },
+        'Thời lượng (giây)': { number: durationSeconds },
+        'Thời lượng (phút)': { number: durationMinutes },
         'URL': { url: derivedPageUrl },
         'Chế độ': { select: { name: 'Thi chính thức' } },
         'Dataset version': { rich_text: [{ type: 'text', text: { content: DATASET_VERSION } }] },
@@ -443,7 +476,7 @@ async function fetchWithRetry(url, options = {}, maxRetries = 10, timeoutMs = 12
       throw new Error(`Không thể ghi kết quả thi vào hệ thống (Mã lỗi HTTP ${createRes.status}).`);
     }
 
-    const newResultData = { attemptId, duplicate: false, score, total: 30, threshold, passed, wrong, unanswered };
+    const newResultData = { attemptId, duplicate: false, score, total: 30, threshold, passed, wrong, unanswered, startedAt, durationSeconds, durationMinutes };
     global.quizResultCache.set(attemptId, newResultData);
     return newResultData;
   })();

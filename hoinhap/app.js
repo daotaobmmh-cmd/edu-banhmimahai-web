@@ -445,6 +445,7 @@ function app() {
             this.testCurrentIndex = 0;
             this.testTimer = 1800; // 30 minutes
             this.testStartTime = new Date();
+            this.testStartedAtISO = new Date().toISOString();
             this.resultSendingStatus = 'idle';
             this.resultErrorMessage = '';
             
