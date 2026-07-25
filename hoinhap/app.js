@@ -548,12 +548,13 @@ function app() {
             this.resultUnansweredCount = unanswered;
             this.resultWrongQuestions = wrong;
             
-            // Calculate time spent & timing contract fields
-            const endTime = new Date();
-            const submittedAtISO = endTime.toISOString();
-            const startedAtISO = this.testStartedAtISO || (this.testStartTime ? this.testStartTime.toISOString() : submittedAtISO);
+            // Calculate time spent & timing contract fields (Fix for browser timer throttling on auto-submit)
+            const startMs = this.testStartTime ? this.testStartTime.getTime() : Date.now();
+            const submittedAtDate = auto ? new Date(startMs + 1800000) : new Date();
+            const submittedAtISO = submittedAtDate.toISOString();
+            const startedAtISO = this.testStartedAtISO || new Date(startMs).toISOString();
             
-            let diffSecs = auto ? 1800 : Math.max(1, Math.round((endTime.getTime() - (this.testStartTime ? this.testStartTime.getTime() : endTime.getTime())) / 1000));
+            let diffSecs = auto ? 1800 : Math.max(1, Math.round((submittedAtDate.getTime() - startMs) / 1000));
             if (diffSecs > 1800) diffSecs = 1800;
             
             this.resultTimeSpent = this.formatTime(diffSecs);
@@ -607,17 +608,8 @@ function app() {
             }
 
             if (!payload) {
-                payload = {
-                    attemptId: this.testAttemptId,
-                    learnerName: this.learnerName.trim(),
-                    unit: this.learnerDept,
-                    testAnswers: this.testAnswers,
-                    testQuestions: this.testQuestions.map(q => q.id),
-                    pageUrl: window.location.href,
-                    startedAt: this.testStartedAtISO || new Date().toISOString(),
-                    submittedAt: this.testSubmittedAtISO || new Date().toISOString(),
-                    durationSeconds: typeof this.testDurationSeconds === 'number' ? this.testDurationSeconds : 0
-                };
+                this.isSubmittingResult = false;
+                return; // Do NOT generate dummy payload if no pending/override payload exists
             }
 
             try {
