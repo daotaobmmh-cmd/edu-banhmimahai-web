@@ -444,8 +444,9 @@ function app() {
             this.testAnswers = {};
             this.testCurrentIndex = 0;
             this.testTimer = 1800; // 30 minutes
-            this.testStartTime = new Date();
-            this.testStartedAtISO = new Date().toISOString();
+            const now = new Date();
+            this.testStartTime = now;
+            this.testStartedAtISO = now.toISOString();
             this.resultSendingStatus = 'idle';
             this.resultErrorMessage = '';
             
@@ -572,33 +573,20 @@ function app() {
         },
 
         async postQuizResult(overridePayload = null) {
-            if (this.isSubmittingResult) return;
-            this.isSubmittingResult = true;
-            this.resultSendingStatus = 'sending';
-            this.resultErrorMessage = '';
-
             let payload = overridePayload;
             if (!payload) {
-                try {
-                    const rawPending = localStorage.getItem('hoinhap:pendingQuizResult');
-                    if (rawPending) {
-                        const parsedPending = JSON.parse(rawPending);
-                        if (parsedPending && parsedPending.attemptId === this.testAttemptId) {
-                            payload = parsedPending;
-                        }
-                    }
-                } catch (e) {}
-
-                if (!payload) {
-                    payload = {
-                        attemptId: this.testAttemptId,
-                        learnerName: this.learnerName.trim(),
-                        unit: this.learnerDept,
-                        testAnswers: this.testAnswers,
-                        testQuestions: this.testQuestions.map(q => q.id),
-                        pageUrl: window.location.href,
-                        submittedAt: new Date().toISOString()
-                    };
+                payload = {
+                    attemptId: this.testAttemptId,
+                    learnerName: this.learnerName.trim(),
+                    unit: this.learnerDept,
+                    testAnswers: this.testAnswers,
+                    testQuestions: this.testQuestions.map(q => q.id),
+                    pageUrl: window.location.href,
+                    startedAt: this.testStartedAtISO || new Date().toISOString(),
+                    submittedAt: this.testSubmittedAtISO || new Date().toISOString(),
+                    durationSeconds: typeof this.testDurationSeconds === 'number' ? this.testDurationSeconds : 0
+                };
+            }
                 }
             }
 
