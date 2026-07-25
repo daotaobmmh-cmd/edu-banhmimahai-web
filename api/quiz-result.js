@@ -171,6 +171,36 @@ module.exports = async function handler(req, res) {
     }
   }
 
+  // Strict Timing Payload Validation (Section 75 TRACK-QUIZ-DURATION-CORRECTION)
+  if (typeof rawStartedAt !== 'string' || !rawStartedAt.trim() || isNaN(Date.parse(rawStartedAt.trim()))) {
+    return res.status(400).json({ ok: false, error: 'Trường startedAt phải là chuỗi ISO 8601 hợp lệ.' });
+  }
+  if (typeof rawSubmittedAt !== 'string' || !rawSubmittedAt.trim() || isNaN(Date.parse(rawSubmittedAt.trim()))) {
+    return res.status(400).json({ ok: false, error: 'Trường submittedAt phải là chuỗi ISO 8601 hợp lệ.' });
+  }
+
+  const startedAt = rawStartedAt.trim();
+  const submittedAt = rawSubmittedAt.trim();
+
+  const startMs = Date.parse(startedAt);
+  const subMs = Date.parse(submittedAt);
+
+  if (subMs < startMs) {
+    return res.status(400).json({ ok: false, error: 'Thời điểm nộp bài (submittedAt) không được nhỏ hơn thời điểm bắt đầu (startedAt).' });
+  }
+
+  if (typeof rawDurationSeconds !== 'number' || !Number.isInteger(rawDurationSeconds) || rawDurationSeconds < 0 || rawDurationSeconds > 1800) {
+    return res.status(400).json({ ok: false, error: 'Trường durationSeconds phải là số nguyên (integer JSON number) trong khoảng [0, 1800].' });
+  }
+
+  const durationSeconds = rawDurationSeconds;
+  const calculatedDeltaSecs = Math.round((subMs - startMs) / 1000);
+  if (Math.abs(calculatedDeltaSecs - durationSeconds) > 2) {
+    return res.status(400).json({ ok: false, error: 'Thời lượng durationSeconds không khớp với độ lệch (submittedAt - startedAt) vượt quá sai số 2 giây.' });
+  }
+
+  const durationMinutes = Math.round((durationSeconds / 60) * 100) / 100;
+
   // Validate canonical answer key
   const answerKeyMap = getCanonicalAnswerKey();
   if (!answerKeyMap || answerKeyMap.size !== 171) {
