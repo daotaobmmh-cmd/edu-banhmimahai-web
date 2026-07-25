@@ -548,13 +548,35 @@ function app() {
             this.resultUnansweredCount = unanswered;
             this.resultWrongQuestions = wrong;
             
-            // Calculate time spent
+            // Calculate time spent & timing contract fields
             const endTime = new Date();
-            const diffMs = endTime - (this.testStartTime || endTime);
-            const diffSecs = Math.floor(diffMs / 1000);
-            const m = Math.floor(diffSecs / 60);
-            const s = diffSecs % 60;
-            this.resultTimeSpent = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+            const submittedAtISO = endTime.toISOString();
+            const startedAtISO = this.testStartedAtISO || (this.testStartTime ? this.testStartTime.toISOString() : submittedAtISO);
+            
+            let diffSecs = auto ? 1800 : Math.max(1, Math.round((endTime.getTime() - (this.testStartTime ? this.testStartTime.getTime() : endTime.getTime())) / 1000));
+            if (diffSecs > 1800) diffSecs = 1800;
+            
+            this.resultTimeSpent = this.formatTime(diffSecs);
+            this.testStartedAtISO = startedAtISO;
+            this.testSubmittedAtISO = submittedAtISO;
+            this.testDurationSeconds = diffSecs;
+
+            // Build initial payload with timing contract fields
+            const initialPayload = {
+                attemptId: this.testAttemptId,
+                learnerName: this.learnerName.trim(),
+                unit: this.learnerDept,
+                testAnswers: this.testAnswers,
+                testQuestions: this.testQuestions.map(q => q.id),
+                pageUrl: window.location.href,
+                startedAt: this.testStartedAtISO,
+                submittedAt: this.testSubmittedAtISO,
+                durationSeconds: this.testDurationSeconds
+            };
+            
+            try {
+                localStorage.setItem('hoinhap:pendingQuizResult', JSON.stringify(initialPayload));
+            } catch (e) {}
             
             // Save last result
             localStorage.setItem('hoinhap:lastResult', JSON.stringify({
@@ -569,11 +591,21 @@ function app() {
             this.currentView = 'result';
 
             // Post result to server
-            await this.postQuizResult();
+            await this.postQuizResult(initialPayload);
         },
 
         async postQuizResult(overridePayload = null) {
+            if (this.isSubmittingResult) return;
+            this.isSubmittingResult = true;
+
             let payload = overridePayload;
+            if (!payload) {
+                try {
+                    const pendingStr = localStorage.getItem('hoinhap:pendingQuizResult');
+                    if (pendingStr) payload = JSON.parse(pendingStr);
+                } catch (e) {}
+            }
+
             if (!payload) {
                 payload = {
                     attemptId: this.testAttemptId,
@@ -586,8 +618,6 @@ function app() {
                     submittedAt: this.testSubmittedAtISO || new Date().toISOString(),
                     durationSeconds: typeof this.testDurationSeconds === 'number' ? this.testDurationSeconds : 0
                 };
-            }
-                }
             }
 
             try {
@@ -628,7 +658,7 @@ function app() {
             }
         },
 
-        scheduleClientAutoRetry(payload) {
+                scheduleClientAutoRetry(payload) {
             if (!this.resultAutoRetryAttempt) this.resultAutoRetryAttempt = 0;
             if (this.resultAutoRetryAttempt >= 3) return; // Limit background auto-retries while tab open to 3
             this.resultAutoRetryAttempt++;
