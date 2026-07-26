@@ -58,7 +58,7 @@
         <div class="prompt-toolbar"><strong>Prompt để sao chép</strong><div class="tool-actions"><button class="tool-button expand-button" type="button" aria-expanded="false">Mở rộng</button><button class="tool-button primary copy-button" type="button">Sao chép</button></div></div>
         <pre class="prompt-code"><code>${escapeHtml(prompt.prompt)}</code></pre>
       </div>
-      <form class="feedback" data-feedback-form>
+      <form class="feedback" data-feedback-form><input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" style="display:none!important;" aria-hidden="true" />
         <label for="feedback-${escapeHtml(prompt.id)}">Góp ý để prompt tốt hơn</label>
         <textarea id="feedback-${escapeHtml(prompt.id)}" name="feedback" maxlength="1500" placeholder="Ví dụ: thiếu tình huống…, output nên ngắn hơn…"></textarea>
         <div class="feedback-row"><span class="feedback-status" aria-live="polite"></span><button class="submit-feedback" type="submit">Gửi góp ý</button></div>

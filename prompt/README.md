@@ -30,7 +30,7 @@ Nếu dùng Cloudflare Pages Functions, giữ thư mục `functions/` ở root p
 
 ```text
 NOTION_TOKEN=<integration token>
-NOTION_FEEDBACK_DATA_SOURCE_ID=34115a1d78e94d8caec3fab256711f85
+NOTION_PROMPT_FEEDBACK_DATA_SOURCE_ID=<data source id>
 ```
 
 Database góp ý trong Notion: `GĐPTNQ AI · Góp ý Prompt`.
