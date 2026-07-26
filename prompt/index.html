@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Thư viện prompt GĐPTNQ AI dành cho đội ngũ PTNQ Bánh Mì Má Hải." />
+  <meta name="theme-color" content="#0f5f66" />
+  <title>Thư viện Prompt AI · VSF University</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#prompt-grid">Bỏ qua đến thư viện prompt</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="Trang đầu thư viện Prompt AI">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span><strong>VSF University</strong><small>Thư viện Prompt AI</small></span>
+      </a>
+      <div class="header-actions">
+        <label class="search-box">
+          <span class="sr-only">Tìm kiếm prompt</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+          <input id="search-input" type="search" placeholder="Tìm prompt…" autocomplete="off" />
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <aside class="filter-rail" aria-label="Bộ lọc prompt">
+      <p class="eyebrow">Bộ lọc</p>
+      <nav id="category-nav" class="category-nav"></nav>
+      <div class="rail-note">
+        <strong>Cách dùng</strong>
+        <p>Chọn đúng prompt, đọc phần Input, sao chép rồi dán vào chat của khách trong GPT Project.</p>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="intro">
+        <div>
+          <p class="eyebrow">GĐPTNQ AI · Nội bộ VSF</p>
+          <h1>Thư viện Prompt AI</h1>
+          <p class="intro-copy">28 prompt thực chiến để đọc khách, tìm blocker, chọn nước đi và follow đến khi chốt hoặc đóng lead.</p>
+        </div>
+        <div class="intro-meta" aria-label="Thông tin thư viện">
+          <span><b id="visible-count">28</b> prompt</span>
+          <span>GPT Project</span>
+        </div>
+      </div>
+
+      <div class="mobile-filter" aria-label="Lọc nhanh">
+        <span>Lọc:</span>
+        <div id="mobile-category-nav"></div>
+      </div>
+
+      <div id="empty-state" class="empty-state" hidden>
+        <h2>Không tìm thấy prompt</h2>
+        <p>Thử từ khóa khác hoặc chọn “Tất cả”.</p>
+      </div>
+      <div id="prompt-grid" class="prompt-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Thư viện nội bộ · Bánh Mì Má Hải / Viet Street Food</p>
+    <p>Luôn kiểm tra chính sách và cá nhân hóa trước khi gửi khách.</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="./assets/config.js"></script>
+  <script src="./assets/prompts.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

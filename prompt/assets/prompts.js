@@ -1,0 +1,254 @@
+window.PROMPTS = [
+  {
+    "id": "S0",
+    "title": "Output mặc định để tác nghiệp nhanh",
+    "category": "Hệ thống",
+    "usedWhen": "Cần một output đủ sáu phần để tác nghiệp ngay sau bất kỳ lần tương tác nào.",
+    "notWhen": "",
+    "input": "Cuộc gọi đầu ưu tiên Transcript; các lần sau dùng Chat Zalo, Ghi nhớ cuộc gọi hoặc Cập nhật ngắn. Tối thiểu phải có nội dung khách vừa nói/làm.",
+    "prompt": "Sales AI, hãy đọc transcript vừa upload, lịch sử chat của khách và toàn bộ source trong GPT Project. Phân tích case này theo Canon GĐPTNQ AI và trả output MẶC ĐỊNH.\n\nBắt buộc trả đúng 6 phần:\n1. BLOCKER ANALYSIS — blocker bề mặt, blocker thật, hidden barrier, mức tin cậy và bằng chứng nguyên văn.\n2. USP SELECTION — 1 USP chính, 1 USP phụ nếu thật sự cần, các USP không nên dùng; gắn đúng Trust Access/Trust Asset và tên tài liệu nguồn.\n3. CALL SCRIPT — kịch bản gọi dùng ngay, giọng MHG: thẳng, chắc, ngắn, chân thành, có lửa; không đọc như robot.\n4. ZALO RESPONSE — tin nhắn ngắn để sale cá nhân hóa trước khi gửi.\n5. FOLLOW-UP PLAN — thời điểm, kênh, mục tiêu, CTA và trigger cần quan sát.\n6. COACHING NOTE — sale làm tốt gì, cần sửa gì và một bài tập ngắn.\n\nMở đầu output bằng:\n- Nhóm PLKH: N1 / N2a / N2b / N2c / N2d / N3 / L\n- Bước quy trình hiện tại: B1 / B2 / B3\n- Reality check: Fit / Không fit / Fit có điều kiện / Chưa đủ dữ liệu\n\nKết thúc bằng một BEST NEXT MOVE phải làm trong 24 giờ: ai làm gì, khi nào, qua kênh nào.\nNếu là N1, nói rõ “chốt thẳng theo quy trình 3 bước, không cần phân tích sâu”. Nếu là L, đề xuất đóng lead và ghi lý do."
+  },
+  {
+    "id": "S1",
+    "title": "Phân tích toàn diện cho case khó/leader review",
+    "category": "Hệ thống",
+    "usedWhen": "Case N2 phức tạp, nhiều blocker, kéo dài hoặc cần leader cùng review.",
+    "notWhen": "",
+    "input": "Tốt nhất có Transcript cuộc gọi đầu + ít nhất một Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn về lần follow sau. Nếu chỉ có một Ghi nhớ cuộc gọi ngắn, AI chỉ được phân tích tạm thời.",
+    "prompt": "Sales AI, hãy phân tích TOÀN DIỆN case này từ transcript, lịch sử chat và source trong GPT Project.\n\nTrả về 12 phần:\n1. Case snapshot và dữ liệu còn thiếu.\n2. Phân loại N1/N2a–d/N3/L theo 4 yếu tố: nhân sự, mặt bằng, tiền, quyền quyết định.\n3. Bước hiện tại trong quy trình B1/B2/B3.\n4. Customer pattern và cấu trúc ra quyết định.\n5. Mục tiêu bề mặt, nút thắt thật và hidden barrier.\n6. Reality check: mặt bằng/vị trí/thực địa — Fit, Không fit, Fit có điều kiện hoặc Chưa đủ dữ liệu.\n7. Tín hiệu nóng, lạnh, mâu thuẫn và cửa sổ chốt.\n8. Case tương đồng trong Case Study Library; nêu pattern, sales move và outcome. Không bịa nếu không tìm thấy.\n9. USP chính + Trust Access/Trust Asset + Q&A/case phù hợp; nêu tên source.\n10. Hai phương án xử lý; chọn một phương án khuyến nghị và nêu rủi ro.\n11. Call script + Zalo xác nhận + follow-up plan.\n12. Coaching note và CRM note.\n\nOutput tối thiểu phải khóa được: Stage + Insight + Hidden barrier + Best next move + CTA.\nKết thúc bằng hành động trong 24 giờ và điều kiện đóng vòng lặp."
+  },
+  {
+    "id": "S2",
+    "title": "Rút Case Study sau khi chốt/thua",
+    "category": "Hệ thống",
+    "usedWhen": "Case đã Won/Lost/Pending/Rescue và cần chuyển chất xám vào Case Library.",
+    "notWhen": "",
+    "input": "Toàn bộ dữ liệu đang có + kết quả cuối do sale xác nhận + sales move đã dùng; nên bổ sung Reality Check nếu có.",
+    "prompt": "Case này vừa kết thúc. Hãy đọc transcript, lịch sử chat và kết quả cuối để rút Case Study theo đúng chuẩn kho GĐPTNQ AI.\n\nTrả về 6 block:\nI. CASE SNAPSHOT — Case ID, nhóm N1/N2a–d/N3, khu vực, stage, outcome Won/Lost/Pending/Rescue, sale phụ trách nếu có.\nII. CUSTOMER PATTERN — chân dung 2–3 dòng, loại khách, readiness, decision pattern.\nIII. CORE SITUATION — mục tiêu bề mặt, nút thắt thật, hidden barrier.\nIV. REALITY CHECK — mặt bằng/vị trí, vấn đề thực địa, Fit/Không fit/Fit có điều kiện.\nV. SALES MOVE — chiến thuật đã dùng, đòn bẻ lái hiệu quả nhất, best next move cho ca tương tự.\nVI. OUTCOME & LESSON — kết quả, lý do thắng/thua, sai lầm, bài học chuyển giao, nhóm khách có thể tái dùng.\n\nGắn đủ 5 tag: Outcome | Customer pattern | Core blocker | Sales move | Decision pattern.\nSau đó kiểm tra 5 điều kiện vào kho lõi: Pattern + Nút thắt thật + Reality check + Sales move + Bài học chuyển giao.\nNếu thiếu điều kiện nào, kết luận “CHỈ LƯU CRM — CHƯA ĐỦ CHUẨN VÀO CASE LIBRARY” và nêu phần cần bổ sung.\nCuối cùng tạo bản public nội bộ 7 dòng để team đọc trong 2 phút."
+  },
+  {
+    "id": "01",
+    "title": "CRM Note & Data QA",
+    "category": "Lõi",
+    "usedWhen": "Vừa kết thúc cuộc gọi, buổi gặp hoặc một chuỗi tin nhắn quan trọng.",
+    "notWhen": "Chỉ có một tin nhắn ngắn, không phát sinh thông tin mới.",
+    "input": "Cuộc gọi đầu dùng Transcript nếu có; các lần sau dùng Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn. Tối thiểu phải biết đã xảy ra tương tác gì và có next step nào được nhắc tới hay chưa.",
+    "prompt": "Bạn là trợ lý CRM của dự án GĐPTNQ AI. Nhiệm vụ của bạn là chuyển dữ liệu hội thoại thành ghi chú CRM ngắn, chính xác và có thể hành động ngay.\n\nNGUYÊN TẮC\n1. Không bịa thông tin. Không biến suy luận thành sự thật.\n2. Phân biệt rõ: khách đã nói / sale đã nói / AI suy luận / dữ liệu còn thiếu.\n3. Không chỉ tóm tắt; phải xác định next step và ngày follow phù hợp.\n4. Nếu nội dung liên quan chính sách, giá, quyền lợi hoặc cam kết, chỉ ghi đúng dữ liệu có trong Canon hoặc hội thoại.\n\nINPUT\nTranscript ghi âm vừa được upload trong chat này. Hãy đọc toàn bộ transcript và lịch sử chat của khách. Tự trích xuất tên/mã khách, thời điểm, stage và các dữ liệu liên quan nếu có. Không yêu cầu tôi nhập lại thông tin đã xuất hiện trong transcript.\n\nHÃY TRẢ VỀ ĐÚNG CẤU TRÚC\nA. CRM NOTE — tối đa 10 dòng\n- Nhu cầu/mục tiêu của khách\n- Bốn yếu tố: nhân sự | mặt bằng | tiền/thanh khoản | quyền quyết định\n- Nhóm PLKH đề xuất: N1/N2a–d/N3/L\n- Bước quy trình hiện tại: B1/B2/B3\n- Bối cảnh hiện tại\n- Điều kiện thuận lợi\n- Blocker khách nói trực tiếp\n- Tín hiệu quan tâm hoặc tín hiệu giảm nhiệt\n- Nội dung sale đã tư vấn/cam kết\n- Tài liệu đã gửi\n- Next step hai bên đã thống nhất\n\nB. DATA QA\n- Trường dữ liệu đã đủ\n- Trường còn thiếu\n- 3 câu hỏi quan trọng nhất cần bổ sung\n\nC. ACTION\n- Stage đề xuất\n- Mức ưu tiên: Cao / Trung bình / Thấp\n- Hành động tiếp theo duy nhất\n- Người thực hiện\n- Thời hạn follow\n- Mục tiêu của lần follow\n\nD. ĐỘ TIN CẬY\n- Kết luận chắc chắn\n- Suy luận cần kiểm chứng"
+  },
+  {
+    "id": "02",
+    "title": "Lead Assessment & Segmentation",
+    "category": "Lõi",
+    "usedWhen": "Đánh giá một khách sau khi upload transcript để xác định mức ưu tiên và nhóm chăm sóc.",
+    "notWhen": "",
+    "input": "Cuộc gọi đầu ưu tiên Transcript để khai thác bốn yếu tố; các lần sau dùng Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn để cập nhật nhóm. Cần tối thiểu một dữ kiện PLKH; nếu chưa có, AI chỉ lập câu hỏi khai thác, chưa phân nhóm.",
+    "prompt": "Bạn là Sales Operations Analyst của GĐPTNQ AI. Hãy đọc transcript vừa upload, lịch sử chat và source trong GPT Project để phân loại khách đúng Canon PTNQ.\n\nINPUT\nKhông yêu cầu tôi nhập lại dữ liệu đã có. Với mỗi yếu tố chưa xuất hiện trong transcript, ghi “chưa đủ dữ liệu”, không tự cho điểm và không tự suy diễn.\n\nBỐN YẾU TỐ BẮT BUỘC\n1. Nhân sự: khách tự đứng bán hay thuê người?\n2. Mặt bằng: đã có chưa, ở đâu, mức fit thế nào?\n3. Tiền/thanh khoản: đã sẵn nguồn lực đầu tư chưa?\n4. Quyền quyết định: tự quyết hay có người ảnh hưởng?\n\nPHÂN LOẠI\n- N1 — sẵn sàng cọc ngay: chốt thẳng theo quy trình 3 bước, không cần AI phân tích sâu.\n- N2a — đã khai thác 4/4 yếu tố; còn blocker, cần xử lý để chốt.\n- N2b — 3/4 yếu tố.\n- N2c — 2/4 yếu tố.\n- N2d — 1/4 yếu tố.\n- N3 — nhu cầu thấp/chưa rõ, bận, trì hoãn hoặc không phản hồi; giãn lịch hoặc thử nâng lên N2.\n- L — sai lead/không phù hợp; đóng pipeline.\n\nOUTPUT\n1. Nhóm đề xuất và mức tin cậy.\n2. Bảng 4 yếu tố: Đã rõ | Bằng chứng | Còn thiếu.\n3. Blocker thuộc “thiếu nguồn lực” hay “chưa thỏa mãn”, hoặc chưa đủ dữ liệu.\n4. Bước hiện tại B1/B2/B3.\n5. Tối đa 3 câu hỏi cần hỏi tiếp; ưu tiên Bộ 2 câu hỏi Nóng Giòn khi ở B2.\n6. Next action và hạn follow.\n7. Reality check: Fit/Không fit/Fit có điều kiện/Chưa đủ dữ liệu."
+  },
+  {
+    "id": "03",
+    "title": "Deal Diagnosis",
+    "category": "Lõi",
+    "usedWhen": "Case bị kẹt, khách trì hoãn, hỏi giảm giá, nhiều yêu cầu, im lặng hoặc chưa chốt sau 7 ngày.",
+    "notWhen": "",
+    "input": "Transcript nếu cần phân tích sâu cuộc gọi đầu; Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn cho diễn biến mới. Tối thiểu phải có một lời nói, hành vi hoặc lý do trì hoãn của khách.",
+    "prompt": "Bạn là Giám đốc PTNQ AI, có nhiệm vụ chẩn đoán một deal dựa trên toàn bộ dữ liệu hiện có và Canon nội bộ.\n\nMỤC TIÊU\nXác định khách đang ở đâu, blocker thật có khả năng là gì và sale cần kiểm chứng điều gì trước khi chọn nước đi.\n\nINPUT\nĐọc transcript vừa được upload, toàn bộ lịch sử chat của khách và nguồn trong GPT Project. Tự nhận diện stage, mục tiêu của khách, nội dung đã tư vấn, USP/Trust Asset đã dùng và kết quả tương tác nếu transcript thể hiện. Không yêu cầu tôi nhập lại dữ liệu đã có.\n\nNếu transcript chưa thể hiện rõ mục tiêu tiếp theo của sale, hãy đề xuất mục tiêu hợp lý nhất và đánh dấu đây là suy luận cần sale duyệt.\n\nPHÂN TÍCH\n1. Stage hiện tại và bằng chứng\n2. Mục tiêu bề mặt khách đang nói\n3. Nhu cầu hoặc nội lo sâu hơn có khả năng tồn tại\n4. Blocker bề mặt\n5. Hidden barrier có khả năng là thật\n6. Người ra quyết định và người ảnh hưởng\n7. Tín hiệu nóng, tín hiệu lạnh, tín hiệu mâu thuẫn\n8. Điểm khách còn chưa hiểu hoặc có thể đã quên\n9. Reality check: mặt bằng, vị trí, khoảng cách, lưu lượng hoặc điều kiện thực địa — Fit/Không fit/Fit có điều kiện/Chưa đủ dữ liệu\n10. Điểm sale đang làm khách rối hoặc kéo khách xa quyết định\n11. Dữ liệu còn thiếu để chẩn đoán chắc chắn\n12. Bước quy trình hiện tại B1/B2/B3\n\nOUTPUT BẮT BUỘC\n- STAGE\n- INSIGHT CỐT LÕI\n- HIDDEN BARRIER — kèm mức tin cậy Cao/Trung bình/Thấp\n- 3 BẰNG CHỨNG từ hội thoại\n- GIẢ THUYẾT CẦN KIỂM CHỨNG\n- 3 CÂU HỎI sale nên hỏi tiếp\n- BEST NEXT MOVE duy nhất\n- CTA đề xuất\n- ĐIỀU KHÔNG NÊN LÀM\n\nKhông viết kịch bản dài trước khi xác định blocker. Nếu dữ liệu chưa đủ, ưu tiên câu hỏi chẩn đoán thay vì cố thuyết phục."
+  },
+  {
+    "id": "04",
+    "title": "Next Best Action",
+    "category": "Lõi",
+    "usedWhen": "Đã có chẩn đoán nhưng sale chưa biết hành động tiếp theo nên là gọi, nhắn, gửi tài liệu, mời gặp hay giãn lịch.",
+    "notWhen": "",
+    "input": "Chẩn đoán trước đó trong cùng chat + Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn mới nhất; nếu là ngay sau cuộc gọi đầu thì dùng Transcript. Cần biết mục tiêu lần tiếp theo hoặc để AI đề xuất mục tiêu chờ sale duyệt.",
+    "prompt": "Bạn là Sales Coach của GĐPTNQ AI. Từ chẩn đoán deal dưới đây, hãy chọn MỘT nước đi tốt nhất để đưa khách tiến gần hơn tới mục tiêu.\n\nINPUT\nSử dụng transcript vừa được upload, lịch sử chat, kết quả chẩn đoán trước đó trong cùng chat và nguồn của GPT Project. Tự truy hồi USP/Trust Asset phù hợp từ nguồn Project. Không yêu cầu tôi dán lại output Prompt 03.\n\nNếu chưa có kết quả chẩn đoán trong chat, hãy chẩn đoán ngắn trước khi chọn nước đi. Nếu chưa rõ kênh có thể dùng, đề xuất kênh phù hợp nhất và một phương án dự phòng.\n\nQUY TẮC\n1. Chỉ chọn một primary action; có thể thêm một phương án dự phòng.\n2. Ưu tiên gọi điện cho nội dung phức tạp; tin nhắn dùng để mở cửa, xác nhận hoặc chốt lịch.\n3. Không gửi quá nhiều tài liệu. Chỉ chọn tài liệu trực tiếp xử lý blocker.\n4. Không đưa khách thêm nhiều lựa chọn nếu điều đó làm tăng nhiễu.\n5. Mỗi hành động phải có mục tiêu đo được.\n\nOUTPUT\n- Mục tiêu cần đạt\n- Primary action\n- Vì sao đây là nước đi tốt nhất\n- Thời điểm thực hiện\n- Kênh thực hiện\n- Kịch bản mở đầu ngắn\n- 3 câu hỏi chính\n- 1 USP phù hợp\n- 1 Trust Asset phù hợp\n- CTA cuối cuộc trao đổi\n- Dấu hiệu thành công\n- Phương án dự phòng nếu khách không phản hồi\n- Nội dung cần cập nhật lại CRM"
+  },
+  {
+    "id": "05",
+    "title": "Follow-up Planner",
+    "category": "Lõi",
+    "usedWhen": "Khách cần lộ trình chăm sóc thay vì một hành động đơn lẻ.",
+    "notWhen": "",
+    "input": "Nhóm PLKH + blocker + input mới nhất Transcript/Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn; nên có số ngày trong pipeline và lịch sử follow. Nếu thiếu mốc thời gian, AI phải hỏi xác minh trước khi chốt lịch.",
+    "prompt": "Bạn là chuyên gia thiết kế hành trình follow-up của GĐPTNQ AI. Hãy tạo lộ trình vừa đủ, có mục tiêu cho từng lần chạm và không làm khách bị ngợp.\n\nINPUT\nSử dụng transcript vừa được upload, lịch sử chat và các kết quả phân tích trước đó trong cùng chat. Tự xác định nhóm thời gian, mục tiêu, kênh phù hợp, tài liệu đã dùng và điều cần tránh nếu dữ liệu cho phép. Truy hồi USP/Trust Asset từ nguồn của GPT Project.\n\nNếu không xác định được khách đã nằm trong pipeline bao lâu, hãy tạo lộ trình theo tín hiệu hiện tại và yêu cầu sale xác minh đúng **một thông tin**: số ngày kể từ lần tương tác đầu tiên.\n\nNGUYÊN TẮC\n1. Không follow mỗi ngày nếu không có lý do.\n2. Mỗi lần chạm chỉ có một mục tiêu chính.\n3. Niềm tin trước, thông tin sau.\n4. Không lặp lại cùng một nội dung.\n5. Mỗi bước phải dựa trên phản ứng của khách; nếu khách chuyển trạng thái thì dừng lịch cũ và chẩn đoán lại.\n6. Với lead dài hạn, phải có trigger để quay lại đúng thời điểm thay vì nhắn hỏi thăm chung chung.\n\nOUTPUT DẠNG BẢNG\n- Ngày/mốc\n- Mục tiêu lần chạm\n- Kênh\n- Nội dung hoặc câu hỏi chính\n- USP/Trust Asset nếu cần\n- CTA\n- Tín hiệu cần quan sát\n- Nếu tích cực thì làm gì\n- Nếu im lặng/từ chối thì làm gì\n\nSAU BẢNG, BỔ SUNG\n- Ba mốc quan trọng nhất\n- Điều kiện tạm dừng\n- Điều kiện chuyển sang gần chốt\n- Điều kiện giãn lịch hoặc đóng vòng\n- Trường CRM cần cập nhật ở mỗi mốc"
+  },
+  {
+    "id": "06",
+    "title": "Conversation Review & Sales Coaching",
+    "category": "Lõi",
+    "usedWhen": "Cuối ngày/tuần, review cuộc gọi hoặc case để nâng kỹ năng sale.",
+    "notWhen": "",
+    "input": "Transcript là tốt nhất để review câu chữ cuộc gọi đầu; Chat Zalo dùng để review chat; Ghi nhớ cuộc gọi/Cập nhật ngắn chỉ dùng để review tư duy và kết quả, không được trích dẫn nguyên văn lời khách.",
+    "prompt": "Bạn là Sales Coach của GĐPTNQ AI. Hãy review cuộc hội thoại để giúp sale cải thiện tư duy và hành vi bán hàng, không chỉ sửa câu chữ.\n\nINPUT\nĐọc transcript vừa được upload và lịch sử chat của khách. Tự suy ra mục tiêu cuộc gọi, kết quả, stage trước/sau và cách sale tự xử lý nếu dữ liệu thể hiện. Không yêu cầu sale nhập lại một form đánh giá.\n\nNếu kết quả sau cuộc gọi chưa xuất hiện trong transcript, vẫn review chất lượng cuộc gọi và ghi rõ “chưa có dữ liệu kết quả thực tế”.\n\nĐÁNH GIÁ\n1. Sale có khóa đúng mục tiêu không?\n2. Sale thu thập đủ dữ liệu trước khi tư vấn chưa?\n3. Sale đang dẫn dắt hay bị khách dẫn?\n4. Sale đã tìm blocker thật hay chỉ trả lời câu hỏi bề mặt?\n5. Sale có cung cấp quá nhiều thông tin không?\n6. Có đoạn nào làm khách rối hoặc xa vùng ra quyết định?\n7. Sale có nghiệm thu khách nhớ/hiểu gì không?\n8. Có CTA và next step cụ thể không?\n9. Câu nào làm tốt và nên giữ lại?\n10. Câu nào cần thay đổi?\n\nOUTPUT\n- Kết luận ngắn về chất lượng cuộc gọi\n- 3 điểm sale làm tốt — trích dẫn nguyên văn\n- 3 điểm cần cải thiện — trích dẫn nguyên văn\n- Khoảnh khắc khách thay đổi trạng thái/cảm xúc\n- Cơ hội bị bỏ lỡ\n- Một cách xử lý tốt hơn cho đoạn quan trọng nhất\n- 3 kỹ năng ưu tiên luyện trong tuần tới\n- Một bài tập thực hành\n- Phiên bản prompt/câu hỏi sale nên dùng ở case tương tự\n\nKhông đưa quá 3 ưu tiên cải thiện trong một tuần."
+  },
+  {
+    "id": "07",
+    "title": "Tìm dữ liệu còn thiếu sau cuộc gọi",
+    "category": "Tình huống",
+    "usedWhen": "Sau bất kỳ lần tương tác nào, sale chưa rõ còn phải hỏi gì.",
+    "notWhen": "",
+    "input": "Transcript/Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn; cuộc gọi đầu ưu tiên Transcript, các lần sau dùng dữ liệu đang có. Tối thiểu phải có một phần nội dung tương tác.",
+    "prompt": "Đọc transcript vừa upload, lịch sử chat của khách và nguồn trong GPT Project.\n\nHãy lập “Bản đồ dữ liệu còn thiếu” để sale không hỏi lan man:\n1. Dữ liệu đã xác nhận chắc chắn.\n2. Dữ liệu mới chỉ là suy luận.\n3. Dữ liệu còn thiếu theo 6 nhóm: nhu cầu, nguồn lực, mặt bằng, thời điểm, người quyết định, blocker.\n4. Chọn tối đa 3 dữ liệu thiếu có ảnh hưởng lớn nhất tới khả năng chốt.\n5. Viết 3 câu hỏi tự nhiên để xác minh, không tạo cảm giác điều tra.\n6. Nêu dữ liệu nào chưa cần hỏi ở thời điểm này.\n7. Đề xuất cập nhật CRM ngắn gọn.\n\nKhông hỏi lại điều khách đã nói rõ trong transcript."
+  },
+  {
+    "id": "08",
+    "title": "So sánh hai lần tương tác",
+    "category": "Tình huống",
+    "usedWhen": "Có tương tác mới và cần biết khách đang nóng lên hay nguội đi.",
+    "notWhen": "",
+    "input": "Ít nhất hai mốc, ví dụ Transcript cuộc gọi đầu + Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn lần sau; nên có thời điểm và kết quả của từng mốc.",
+    "prompt": "So sánh transcript mới nhất với toàn bộ lịch sử chat của khách trong GPT Project.\n\nTrả về:\n1. Điều gì đã thay đổi về nhu cầu, niềm tin, blocker, nguồn lực và thời điểm.\n2. Tín hiệu nóng lên.\n3. Tín hiệu nguội đi hoặc mâu thuẫn.\n4. Điều sale đã xử lý được.\n5. Điều vẫn chưa được xử lý.\n6. Stage trước → stage hiện tại, kèm bằng chứng.\n7. Nước đi tiếp theo duy nhất.\n8. Một cảnh báo nếu sale đang lặp lại thông tin hoặc follow sai nhịp.\n\nKhông chỉ tóm tắt hai cuộc gọi; phải chỉ ra chuyển động của deal."
+  },
+  {
+    "id": "09",
+    "title": "Chẩn đoán sau cuộc gọi đầu tiên",
+    "category": "Tình huống",
+    "usedWhen": "Vừa hoàn thành cuộc gọi đầu để thu thập thông tin.",
+    "notWhen": "",
+    "input": "Ưu tiên Transcript cuộc gọi đầu. Nếu cuộc gọi đầu không được ghi âm, dùng Ghi nhớ cuộc gọi ngay sau khi gọi và ghi rõ phần sale không chắc nhớ.",
+    "prompt": "Đọc transcript cuộc gọi đầu tiên và nguồn trong GPT Project. Chưa vội viết kịch bản chốt.\n\nHãy trả về:\n1. Khách thực sự đang tìm kiếm điều gì.\n2. Nội lo lớn nhất hiện thấy.\n3. Điều kiện thuận lợi và điều kiện cản trở.\n4. Người quyết định/người ảnh hưởng đã xuất hiện chưa.\n5. Khách đang nhớ được 1–2 giá trị nào về mô hình.\n6. Sale đã cung cấp quá nhiều thông tin ở đoạn nào.\n7. Ba câu hỏi cần dùng ở cuộc gọi thứ hai.\n8. Mục tiêu duy nhất của cuộc gọi tiếp theo.\n9. Có nên dùng AI follow dài hay sale có thể xử lý nhanh.\n10. CRM note tối đa 8 dòng."
+  },
+  {
+    "id": "10",
+    "title": "Khách đang nóng rồi nguội dần",
+    "category": "Tình huống",
+    "usedWhen": "Khách từng rất quan tâm nhưng mức phản hồi giảm.",
+    "notWhen": "",
+    "input": "Một mốc từng nóng + một mốc nguội; thường là Transcript cuộc gọi đầu + Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn follow-up. Cần biết khoảng thời gian và nội dung sale đã gửi.",
+    "prompt": "Đọc toàn bộ lịch sử và transcript mới nhất. Chẩn đoán vì sao khách từ nóng chuyển sang nguội.\n\nPhân biệt 5 khả năng: mất niềm tin, quá tải thông tin, thay đổi nguồn lực, người quyết định phản đối, hoặc sale follow sai nhịp.\n\nOutput:\n1. Khả năng cao nhất và mức tin cậy.\n2. Ba bằng chứng nguyên văn.\n3. Điểm ngoặt khiến trạng thái thay đổi.\n4. Điều sale tuyệt đối không nên nhắc lại.\n5. Một câu hỏi mở để kiểm chứng nguyên nhân.\n6. Một hành động khơi lại không gây áp lực.\n7. Tin nhắn mở cửa tối đa 60 từ.\n8. Khi nào nên giãn lịch hoặc đóng vòng."
+  },
+  {
+    "id": "11",
+    "title": "Khách im lặng sau khi nhận thông tin",
+    "category": "Tình huống",
+    "usedWhen": "Đã gửi tài liệu/báo giá nhưng khách không phản hồi.",
+    "notWhen": "",
+    "input": "Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn ghi rõ đã gửi gì, gửi khi nào, khách phản ứng thế nào trước đó và đã im lặng bao lâu; Transcript cuộc gọi trước là tùy chọn.",
+    "prompt": "Dựa trên transcript, lịch sử chat và nguồn Project, xác định sự im lặng này có khả năng đến từ đâu.\n\nTrả về:\n1. Khách đã nhận thông tin gì.\n2. Thông tin nào có thể gây ngợp, lo lắng hoặc chưa đủ tin.\n3. Blocker có khả năng nhất.\n4. Nên gọi, nhắn hay chờ — chọn một.\n5. Mục tiêu của lần chạm lại.\n6. Tin nhắn mở cửa tối đa 50 từ, không dùng câu “anh/chị đã xem chưa?”.\n7. Một câu hỏi chẩn đoán nếu khách phản hồi.\n8. Phương án sau 24 giờ, 3 ngày và 7 ngày nếu tiếp tục im lặng.\n9. Điều kiện dừng follow."
+  },
+  {
+    "id": "12",
+    "title": "Khách liên tục hỏi giảm giá",
+    "category": "Tình huống",
+    "usedWhen": "Khách tập trung vào giá hoặc yêu cầu ưu đãi nhiều lần.",
+    "notWhen": "",
+    "input": "Transcript/Chat Zalo có câu phản đối nguyên văn là tốt nhất; Ghi nhớ cuộc gọi/Cập nhật ngắn phải ghi đúng ý khách, gói/giá đang nói tới và phản ứng sau khi sale trả lời.",
+    "prompt": "Đọc transcript và xác định khách đang thật sự thiếu ngân sách, đang thử biên độ, chưa thấy đủ giá trị hay chưa đủ niềm tin.\n\nOutput:\n1. Dạng phản đối về giá có khả năng nhất.\n2. Bằng chứng trong lời khách.\n3. Điều cần hỏi trước khi nói về giá tiếp.\n4. Giá trị/USP phù hợp từ nguồn Project, không bịa thêm.\n5. Một cách trả lời giữ giá trị mà không đối đầu.\n6. Một câu hỏi đưa khách quay lại tiêu chí ra quyết định.\n7. CTA phù hợp.\n8. Khi nào cần xin duyệt chính sách thay vì tự cam kết.\n9. Câu sale không nên dùng."
+  },
+  {
+    "id": "13",
+    "title": "Người thân hoặc người khác mới là người quyết định",
+    "category": "Tình huống",
+    "usedWhen": "Khách quan tâm nhưng cần hỏi chồng/vợ/gia đình/đối tác.",
+    "notWhen": "",
+    "input": "Transcript/Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn có dấu hiệu về người ảnh hưởng; nên có lý do người đó chưa đồng ý và khách có sẵn sàng kết nối sale với người đó hay không.",
+    "prompt": "Đọc transcript và lập bản đồ người ra quyết định.\n\nTrả về:\n1. Ai đang nói chuyện với sale.\n2. Ai có quyền quyết định cuối.\n3. Ai có thể phản đối và phản đối về điều gì.\n4. Khách hiện tại đã đủ niềm tin để truyền đạt lại chưa.\n5. Ba thông tin cốt lõi khách cần nhớ để nói lại đúng.\n6. Cách mời người quyết định tham gia cuộc gọi mà không gây áp lực.\n7. Kịch bản mở lời tối đa 80 từ.\n8. Tài liệu/Trust Asset phù hợp để người quyết định xem nhanh.\n9. Next step cụ thể và thời hạn."
+  },
+  {
+    "id": "14",
+    "title": "Tách blocker: vốn, mặt bằng, pháp lý hay thời điểm",
+    "category": "Tình huống",
+    "usedWhen": "Khách nêu nhiều lý do trì hoãn cùng lúc.",
+    "notWhen": "",
+    "input": "Transcript/Chat Zalo/Ghi nhớ cuộc gọi có ít nhất hai lý do trì hoãn hoặc một lý do còn mơ hồ; Cập nhật ngắn dùng để cập nhật sau câu hỏi đào sâu.",
+    "prompt": "Đọc transcript và không coi mọi lý do khách nói là blocker ngang nhau.\n\nHãy:\n1. Liệt kê từng blocker được nhắc tới.\n2. Phân loại: blocker thật, blocker bề mặt, điều kiện chưa rõ.\n3. Chọn một blocker gốc cần xử lý trước.\n4. Nêu bằng chứng và mức tin cậy.\n5. Viết 3 câu hỏi “tách lớp” để kiểm chứng.\n6. Chọn đúng tài liệu/USP/Trust Asset từ Project cho blocker gốc.\n7. Đề xuất nước đi tiếp theo duy nhất.\n8. Nêu điều gì chưa nên tư vấn lúc này."
+  },
+  {
+    "id": "15",
+    "title": "Khách bị rối hoặc còn “điểm mờ”",
+    "category": "Tình huống",
+    "usedWhen": "Sau tư vấn, khách hỏi lại nhiều hoặc hiểu sai.",
+    "notWhen": "",
+    "input": "Transcript/Chat Zalo có đoạn khách hỏi lại là tốt nhất; Ghi nhớ cuộc gọi/Cập nhật ngắn cần ghi khách đã hỏi/hiểu sai điều gì và sale đã giải thích gì trước đó.",
+    "prompt": "Đọc transcript theo kỹ thuật “đốt tre”: xác định khách có khả năng nhớ gì, quên gì và hiểu sai gì.\n\nOutput:\n1. Ba điểm khách có khả năng đã hiểu đúng.\n2. Ba điểm khách có khả năng chưa hiểu/đã quên.\n3. Điểm nào do sale giải thích quá nhiều hoặc thiếu cấu trúc.\n4. Một câu hỏi nghiệm thu để kiểm tra hiểu biết thật.\n5. Chỉ chọn 1–2 nội dung cần làm rõ ở lần tới.\n6. Viết lại phần giải thích theo ngôn ngữ ngắn, dễ nhớ.\n7. Một CTA đưa khách quay lại vùng ra quyết định.\n8. Không bổ sung kiến thức mới nếu chưa xử lý điểm mờ hiện tại."
+  },
+  {
+    "id": "16",
+    "title": "Phát hiện tín hiệu khách gần chốt",
+    "category": "Tình huống",
+    "usedWhen": "Cần biết đã tới cửa sổ chốt hay chưa.",
+    "notWhen": "",
+    "input": "Transcript/Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn có hành vi cụ thể như hỏi hợp đồng, giao xe, ngày khai trương, thủ tục, cọc; nên có bốn yếu tố PLKH.",
+    "prompt": "Đọc transcript và tìm các tín hiệu ra quyết định, không đánh đồng việc khách hỏi nhiều với gần chốt.\n\nTrả về:\n1. Tín hiệu về thủ tục, hợp đồng, giao hàng, thời gian, mặt bằng, nguồn lực và người quyết định.\n2. Tín hiệu nào mạnh/yếu, kèm trích dẫn.\n3. Khách đã đủ điều kiện để chốt chưa.\n4. Một điều còn thiếu trước khi đề nghị cam kết.\n5. Câu hỏi kiểm tra mức sẵn sàng.\n6. CTA phù hợp nhất: chốt lịch, chốt hồ sơ, chốt bước thẩm định hay đặt cọc.\n7. Kịch bản chốt ngắn.\n8. Cảnh báo nếu chốt lúc này còn quá sớm."
+  },
+  {
+    "id": "17",
+    "title": "Cá nhân hóa giọng điệu theo bằng chứng",
+    "category": "Tình huống",
+    "usedWhen": "Cần viết tin nhắn phù hợp với cách giao tiếp của khách.",
+    "notWhen": "",
+    "input": "Bắt buộc có Transcript hoặc Chat Zalo chứa ngôn ngữ thật của khách. Không dùng Ghi nhớ cuộc gọi do sale kể lại để suy luận phong cách/giọng điệu.",
+    "prompt": "Dựa trên cách khách nói trong transcript, hãy đề xuất phong cách giao tiếp phù hợp mà không gán nhãn DISC cứng.\n\nOutput:\n1. Ba dấu hiệu ngôn ngữ quan sát được.\n2. Khách có vẻ thích: ngắn/gọn hay chi tiết; lý trí hay cảm xúc; trực tiếp hay mềm.\n3. Mức tin cậy của nhận định.\n4. Giọng điệu nên dùng.\n5. Từ/cách nói nên tránh.\n6. Viết một tin nhắn tối đa 80 từ cho next action hiện tại.\n7. Viết thêm một phiên bản ngắn tối đa 40 từ.\n8. Giữ đúng chính sách và cách xưng hô đã có trong cuộc trò chuyện."
+  },
+  {
+    "id": "18",
+    "title": "Chuẩn bị cuộc gọi tiếp theo",
+    "category": "Tình huống",
+    "usedWhen": "Trước khi gọi lại một khách đã có dữ liệu tương tác trước đó.",
+    "notWhen": "",
+    "input": "Transcript cuộc gọi đầu nếu có + Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn gần nhất + mục tiêu cuộc gọi tới; nên có tài liệu đã gửi và lịch hẹn cũ.",
+    "prompt": "Đọc toàn bộ lịch sử chat, transcript và nguồn Project. Chuẩn bị “Call Brief” để sale xem trong 2 phút trước khi gọi.\n\nGồm:\n1. Stage và nhiệt độ lead.\n2. Mục tiêu duy nhất của cuộc gọi.\n3. Blocker chính và điều cần kiểm chứng.\n4. Ba dữ kiện sale phải nhớ.\n5. Ba câu hỏi chính theo đúng thứ tự.\n6. Một USP và một Trust Asset phù hợp.\n7. Câu mở đầu tự nhiên.\n8. CTA cuối cuộc gọi.\n9. Tín hiệu để biết nên chốt, tiếp tục nuôi hay giãn lịch.\n10. Điều tuyệt đối không nên lặp lại."
+  },
+  {
+    "id": "19",
+    "title": "Chọn đúng USP và Trust Asset",
+    "category": "Tình huống",
+    "usedWhen": "Sale chưa biết nên gửi lợi thế, case hay bằng chứng nào.",
+    "notWhen": "",
+    "input": "Transcript/Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn có blocker hoặc mối quan tâm đã được xác nhận; nên có customer pattern và danh sách tài liệu đã gửi.",
+    "prompt": "Từ transcript và chẩn đoán hiện tại, truy hồi nguồn trong GPT Project để chọn tài sản thuyết phục phù hợp nhất.\n\nOutput:\n1. Blocker/mối quan tâm đang cần xử lý.\n2. Một USP chính phù hợp nhất.\n3. Một Trust Asset hỗ trợ trực tiếp.\n4. Vì sao phù hợp với đúng khách này.\n5. Không chọn các tài liệu nào và vì sao.\n6. Cách giới thiệu tài liệu trong 2–3 câu, không gửi trống không.\n7. Câu hỏi nghiệm thu sau khi khách xem.\n8. Next step nếu khách đồng tình.\n\nKhông bịa tên tài liệu hoặc bằng chứng không tồn tại trong Project."
+  },
+  {
+    "id": "20",
+    "title": "Xử lý một phản đối cụ thể",
+    "category": "Tình huống",
+    "usedWhen": "Khách vừa nêu một phản đối rõ ràng.",
+    "notWhen": "",
+    "input": "Transcript/Chat Zalo có câu phản đối nguyên văn là tốt nhất; Ghi nhớ cuộc gọi/Cập nhật ngắn phải ghi đúng ý phản đối và bối cảnh trước/sau. Mỗi lần chỉ xử lý một phản đối.",
+    "prompt": "Đọc transcript và chỉ xử lý MỘT phản đối quan trọng nhất ở thời điểm hiện tại.\n\nTrả về:\n1. Phản đối nguyên văn.\n2. Đây là câu hỏi thông tin, lo ngại thật hay lý do trì hoãn.\n3. Câu hỏi làm rõ trước khi trả lời.\n4. Cách phản hồi theo cấu trúc: ghi nhận → chẩn đoán → bằng chứng → kiểm tra lại.\n5. USP/Trust Asset được phép dùng từ Project.\n6. Kịch bản nói qua điện thoại tối đa 120 từ.\n7. Tin nhắn xác nhận sau cuộc gọi tối đa 60 từ.\n8. CTA.\n9. Điều không được cam kết."
+  },
+  {
+    "id": "21",
+    "title": "Chốt bước tiếp theo hoặc cọc 2 triệu",
+    "category": "Tình huống",
+    "usedWhen": "Khách không còn trăn trở hoặc đã có tín hiệu N1; cần đưa khách tới cam kết đúng bước.",
+    "notWhen": "",
+    "input": "Transcript/Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn có bằng chứng sẵn sàng + bốn yếu tố PLKH + bước B1/B2/B3 hiện tại. Không chạy chỉ vì khách hỏi nhiều.",
+    "prompt": "Đọc transcript và xác định mức cam kết phù hợp nhất hiện tại. Không mặc định lúc nào cũng yêu cầu đặt cọc.\n\nOutput:\n1. Khách đã sẵn sàng cho bước nào.\n2. Bằng chứng cho mức sẵn sàng đó.\n3. Điều cuối cùng cần xác nhận.\n4. CTA chính xác: lịch gọi, gặp mặt, hồ sơ, thẩm định, hợp đồng hoặc **cọc 2 triệu** theo quy trình hiện hành.\n5. Kịch bản chốt ngắn, rõ, không gây áp lực sai.\n6. Cách xử lý nếu khách nói “để suy nghĩ thêm”.\n7. Mốc follow cụ thể.\n8. CRM note cần cập nhật.\n9. Cảnh báo nếu chưa đủ điều kiện chốt."
+  },
+  {
+    "id": "22",
+    "title": "Lộ trình khách 7–30 ngày",
+    "category": "Tình huống",
+    "usedWhen": "Khách N2 có tiềm năng nhưng chưa thể chốt nhanh.",
+    "notWhen": "",
+    "input": "Transcript cuộc gọi đầu nếu có + Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn mới nhất + blocker + mục tiêu + số ngày trong pipeline và lịch sử follow đã biết.",
+    "prompt": "Từ transcript và lịch sử chat, thiết kế lộ trình 7–30 ngày cho khách này.\n\nYêu cầu:\n1. Chọn 3–5 lần chạm, không follow hằng ngày.\n2. Mỗi lần chạm có một mục tiêu riêng.\n3. Sắp thứ tự: chẩn đoán → xây niềm tin → xử blocker → kiểm tra sẵn sàng → CTA.\n4. Mỗi mốc ghi: ngày, kênh, nội dung, tài liệu nếu cần, CTA, tín hiệu cần quan sát.\n5. Không lặp lại cùng một USP/tài liệu.\n6. Có nhánh nếu khách phản hồi tích cực, im lặng hoặc trì hoãn.\n7. Có điều kiện dừng lịch cũ và chẩn đoán lại.\n8. Kết thúc bằng next action cần làm trong 24 giờ."
+  },
+  {
+    "id": "23",
+    "title": "Lộ trình khách trên 30 ngày",
+    "category": "Tình huống",
+    "usedWhen": "Khách cần nuôi dài, phụ thuộc thời điểm hoặc điều kiện tương lai.",
+    "notWhen": "",
+    "input": "Dữ liệu hiện có phải thể hiện trigger dài hạn như vốn, mặt bằng, gia đình, công việc hoặc pháp lý; nên có mốc dự kiến, không bắt buộc transcript mới.",
+    "prompt": "Đọc transcript, lịch sử và nguồn Project. Thiết kế lộ trình trên 30 ngày dựa trên trigger thật, không nhắn hỏi thăm vô nghĩa.\n\nOutput:\n1. Lý do khách cần nuôi dài.\n2. Các trigger cần theo dõi: vốn, mặt bằng, gia đình, công việc, thời điểm, pháp lý hoặc sự kiện khác.\n3. Lộ trình 30/60/90 ngày với số lần chạm vừa đủ.\n4. Giá trị mới ở từng lần chạm.\n5. Câu hỏi kiểm tra thay đổi điều kiện.\n6. Trust Asset/case phù hợp từng giai đoạn.\n7. Dấu hiệu chuyển sang nhóm gần chốt.\n8. Điều kiện giãn lịch hoặc đóng vòng.\n9. Trường CRM và lịch nhắc cần tạo ngay."
+  },
+  {
+    "id": "24",
+    "title": "Khơi lại lead cũ",
+    "category": "Tình huống",
+    "usedWhen": "Khách đã lâu không được chăm nhưng từng có nhu cầu.",
+    "notWhen": "",
+    "input": "Lần tương tác cuối dưới dạng Transcript/Chat Zalo/Ghi nhớ cuộc gọi + blocker cuối + thời gian đã trôi qua; Cập nhật ngắn dùng để cập nhật nếu khách vừa phản hồi lại.",
+    "prompt": "Đọc toàn bộ lịch sử cũ và transcript gần nhất. Hãy thiết kế một lần khơi lại có lý do cụ thể.\n\nTrả về:\n1. Nhu cầu và blocker cuối cùng đã biết.\n2. Vì sao lead này đáng khơi lại hoặc không đáng.\n3. Điều gì có thể đã thay đổi theo thời gian.\n4. Một “lý do liên hệ lại” dựa trên giá trị thật từ Project, không giả tạo.\n5. Tin nhắn khơi lại tối đa 70 từ.\n6. Kịch bản gọi nếu khách phản hồi.\n7. Ba câu hỏi cập nhật tình hình.\n8. CTA nhỏ, dễ đồng ý.\n9. Lịch follow 3 bước nếu khách chưa phản hồi.\n10. Điều kiện đóng vòng."
+  },
+  {
+    "id": "25",
+    "title": "Review tuần và chọn 3 điểm cải thiện",
+    "category": "Tình huống",
+    "usedWhen": "Cuối tuần, sau khi sale gom dữ liệu case vào một chat review riêng. GPT Project không tự tổng hợp các chat khách khác.",
+    "notWhen": "",
+    "input": "Nhiều Transcript/Chat Zalo/Ghi nhớ cuộc gọi/Cập nhật ngắn hoặc tóm tắt case được đưa vào chat review + kết quả từng case; tối thiểu 3 case để tìm mô thức lặp lại.",
+    "prompt": "Dựa trên các transcript/case được cung cấp cho phiên review này và tiêu chuẩn trong GPT Project, hãy review mô thức bán hàng của sale.\n\nOutput:\n1. Ba thế mạnh lặp lại, có bằng chứng.\n2. Ba lỗi hoặc điểm nghẽn lặp lại, có bằng chứng.\n3. Tỷ lệ cuộc gọi có mục tiêu rõ, chẩn đoán blocker và CTA.\n4. Kiểu khách sale đang xử lý tốt nhất.\n5. Kiểu case cần hỗ trợ từ leader/đồng đội.\n6. Chỉ chọn 3 ưu tiên cải thiện cho tuần tới.\n7. Một bài tập cho mỗi ưu tiên.\n8. Một prompt/câu hỏi sale nên dùng nhiều hơn.\n9. Tiêu chí đo tiến bộ vào cuối tuần sau.\n10. Một case tốt có thể đề cử vào Case Study Library và lý do."
+  }
+];
