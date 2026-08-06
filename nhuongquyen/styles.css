@@ -1,0 +1,84 @@
+/* Viet Street Food Calm Onboarding UI Custom Styles */
+
+html {
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #FAF7F2;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgba(110, 123, 106, 0.24);
+    border-radius: 999px;
+    border: 3px solid #FAF7F2;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgba(110, 123, 106, 0.38);
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #FAF7F2;
+}
+
+h1, h2, h3, h4, h5, h6, .font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #e4e2e2;
+    border-radius: 10px;
+}
+
+.bento-card {
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.timer-warning {
+    color: #EC1C24 !important;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

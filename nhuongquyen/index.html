@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Bánh Mì Má Hải · Cổng Đào Tạo Nhượng Quyền</title>
+    
+    <!-- Tailwind CSS CDN and Configuration -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        window.tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: "#E8821E", // Má Hải Orange
+                error: "#EC1C24",
+                secondary: "#00ADEF", // Má Hải Aqua
+                warning: "#F4CC34",
+                background: "#FAF7F2",
+                "surface-variant": "#e4e2e2",
+                "on-surface-variant": "#3e4a3c"
+              },
+              borderRadius: {
+                xl: "0.75rem",
+                "2xl": "1.25rem"
+              }
+            }
+          }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media='all'"/>
+    <style>
+        [x-cloak] {
+            display: none !important;
+        }
+
+        /* Certificate Printing Overrides */
+        @media print {
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            #app-container > header,
+            #app-container > footer,
+            #app-container nav,
+            #app-container button,
+            #app-container main > div > div:not(.certificate-print-area),
+            #app-container .wrong-questions-section {
+                display: none !important;
+            }
+            .certificate-print-area {
+                display: block !important;
+                position: absolute !important;
+                left: 0 !important;
+                top: 0 !important;
+                width: 297mm !important;
+                height: 210mm !important;
+                margin: 0 !important;
+                padding: 10mm !important;
+                box-shadow: none !important;
+                border: none !important;
+                background: white !important;
+            }
+            @page {
+                size: A4 landscape;
+                margin: 0;
+            }
+        }
+
+        /* Ornaments for certificate */
+        .floral-corner {
+            width: 40px;
+            height: 40px;
+            border-top: 3px solid #E8821E;
+            border-left: 3px solid #E8821E;
+            position: absolute;
+        }
+        .floral-corner-tr {
+            top: 16px;
+            right: 16px;
+            transform: rotate(90deg);
+        }
+        .floral-corner-bl {
+            bottom: 16px;
+            left: 16px;
+            transform: rotate(-90deg);
+        }
+        .floral-corner-br {
+            bottom: 16px;
+            right: 16px;
+            transform: rotate(180deg);
+        }
+        .floral-corner-tl {
+            top: 16px;
+            left: 16px;
+        }
+    </style>
+    <script>
+        // Global error tracking
+        window.alpineErrors = [];
+        window.addEventListener('error', function(e) {
+            console.error('Global Error caught:', e.error || e.message);
+            window.alpineErrors.push(e.error || e.message);
+        });
+        window.addEventListener('unhandledrejection', function(e) {
+            console.error('Unhandled Rejection caught:', e.reason);
+            window.alpineErrors.push(e.reason);
+        });
+
+        function handleScriptError(name) {
+            console.error(name + ' failed to load');
+            const fallback = document.getElementById('app-fallback');
+            if (fallback) {
+                fallback.classList.remove('hidden');
+                fallback.style.display = 'flex';
+                const details = document.getElementById('error-details');
+                if (details) {
+                    details.textContent = name + ' failed to download. Please check network routing or reload.';
+                }
+            }
+        }
+
+        // Abort Alpine boot if core files are missing
+        document.addEventListener('alpine:init', function() {
+            if (!window.HOINHAP_QUESTIONS || typeof window.app !== 'function') {
+                console.error('Missing critical dependencies. Aborting boot.');
+                throw new Error('Bootstrap aborted: missing questions or app logic.');
+            }
+        });
+    </script>
+    <script src="/nhuongquyen/questions.js" onerror="handleScriptError('questions.js')"></script>
+    <script src="/nhuongquyen/app.js" onerror="handleScriptError('app.js')"></script>
+    <script defer src="/nhuongquyen/alpine.min.js" onerror="handleScriptError('alpine.min.js')"></script>
+    <link rel="stylesheet" href="/nhuongquyen/styles.css" />
+</head>
+<body class="bg-background text-slate-800 antialiased overflow-x-hidden" x-data="app()">
+    <div id="app-container">
+    
+    <!-- Header -->
+    <header class="flex justify-between items-center px-8 h-20 w-full fixed top-0 left-0 z-50 bg-white border-b border-slate-100 shadow-sm">
+        <div class="flex items-center gap-3">
+            <img src="/nhuongquyen/logo.png" class="h-10 w-auto object-contain" alt="Logo Má Hải" />
+            <h1 @click="currentView = 'gate'" tabindex="0" class="font-bold text-xl tracking-tight text-primary cursor-pointer font-quicksand focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none rounded-lg p-1">BÁNH MÌ MÁ HẢI</h1>
+        </div>
+        <nav class="hidden md:flex gap-10 absolute left-1/2 -translate-x-1/2">
+            <button :class="currentView === 'study' ? 'text-primary border-b-2 border-primary' : 'text-slate-500 hover:text-primary'" @click="startStudy()" class="font-quicksand font-bold pb-1 transition-all focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none rounded-lg">Luyện tập</button>
+            <button :class="currentView === 'test' ? 'text-primary border-b-2 border-primary' : 'text-slate-500 hover:text-primary'" @click="startTest()" class="font-quicksand font-bold pb-1 transition-all focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none rounded-lg">Thi chính thức</button>
+        </nav>
+        <div class="flex items-center">
+            <button @click="showGuide = true" class="flex items-center gap-2 px-5 py-2 rounded-full bg-slate-50 text-slate-600 hover:bg-slate-100 transition-all font-quicksand font-bold text-sm focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                <span class="material-symbols-outlined text-[20px] flex-shrink-0 w-5 h-5 flex items-center justify-center">help</span>
+                <span>Hướng dẫn</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Gate Screen -->
+    <template x-if="currentView === 'gate'">
+        <main class="pt-32 flex flex-col items-center justify-center min-h-[80vh] px-6 text-center">
+            <div class="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center mb-8">
+                <span class="material-symbols-outlined text-primary text-4xl">store</span>
+            </div>
+            <h2 class="text-4xl font-bold font-quicksand text-slate-900 mb-4">Đào Tạo Đối Tác Nhượng Quyền</h2>
+            <p class="text-slate-500 max-w-lg mb-12">Chào mừng anh/chị đối tác đến với hệ thống kiểm tra kiến thức nhượng quyền Bánh Mì Má Hải. Vui lòng nhập thông tin để bắt đầu.</p>
+            
+            <!-- Personnel Info Form Card -->
+            <div class="bento-card p-6 w-full max-w-xl mb-12 text-left border border-slate-100">
+                <h3 class="text-lg font-bold font-quicksand mb-4 text-slate-800 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary flex-shrink-0 w-6 h-6 flex items-center justify-center">person</span>
+                    Thông tin đối tác
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-slate-500 font-bold text-xs mb-1.5 uppercase tracking-wider font-quicksand">Họ tên đối tác <span class="text-error">*</span></label>
+                        <input type="text" x-model="learnerName" @input="localStorage.setItem('nhuongquyen:learnerName', learnerName)" placeholder="Nhập họ tên đối tác" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none transition-all font-medium text-slate-800 text-sm" />
+                    </div>
+                    <div>
+                        <label class="block text-slate-500 font-bold text-xs mb-1.5 uppercase tracking-wider font-quicksand">Địa chỉ điểm bán <span class="text-error">*</span></label>
+                        <input type="text" x-model="storeAddress" @input="localStorage.setItem('nhuongquyen:storeAddress', storeAddress)" placeholder="Nhập địa chỉ xe/điểm bán" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none transition-all font-medium text-slate-800 text-sm" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mode Selection Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+                <div @click="startStudy()" tabindex="0" class="bento-card p-8 group cursor-pointer border-2 border-transparent hover:border-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none transition-all text-left">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-primary">local_library</span>
+                    </div>
+                    <h3 class="text-xl font-bold font-quicksand mb-2">Chế độ Luyện tập</h3>
+                    <p class="text-slate-500 text-sm mb-4 leading-relaxed">Học theo từng phần, không giới hạn thời gian tổng quát, có giải thích đáp án ngay sau mỗi câu.</p>
+                    <div class="flex items-center text-primary font-bold text-sm gap-1 transition-all font-quicksand">
+                        <span>Bắt đầu ngay</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </div>
+                </div>
+                <div @click="startTest()" tabindex="0" class="bento-card p-8 group cursor-pointer border-2 border-transparent hover:border-secondary focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none transition-all text-left">
+                    <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-secondary">verified</span>
+                    </div>
+                    <h3 class="text-xl font-bold font-quicksand mb-2">Thi chính thức</h3>
+                    <p class="text-slate-500 text-sm mb-4 leading-relaxed">30 câu hỏi ngẫu nhiên trong 30 phút. Ngưỡng đạt: 20/30 (66.6%) câu đúng để được cấp chứng nhận.</p>
+                    <div class="flex items-center text-secondary font-bold text-sm gap-1 transition-all font-quicksand">
+                        <span>Thử thách ngay</span>
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 text-slate-400 text-xs flex items-center gap-2 mb-10">
+                <span class="material-symbols-outlined text-sm">security</span>
+                Hệ thống đào tạo nội bộ và đối tác nhượng quyền Bánh Mì Má Hải
+            </div>
+        </main>
+    </template>
+
+    <!-- Study Mode -->
+    <template x-if="currentView === 'study'">
+        <div class="flex flex-col md:flex-row">
+            <!-- Sidebar -->
+            <aside class="w-full bg-white border-b border-slate-100 p-6 pt-24 md:fixed md:left-0 md:top-20 md:h-[calc(100vh-80px)] md:w-[300px] md:border-r md:border-b-0 md:p-6 md:pt-6 overflow-y-auto custom-scrollbar z-40">
+                <div>
+                    <h2 class="font-bold font-quicksand text-primary text-[18px] leading-[24px] mb-4 text-left">Lộ trình học tập</h2>
+                    
+                    <div class="flex gap-3 overflow-x-auto pb-3 px-6 md:px-0 md:block md:space-y-3 md:overflow-x-visible md:pb-0 custom-scrollbar snap-x snap-mandatory scroll-pl-6">
+                        <template :key="index" x-for="(section, index) in sections">
+                            <div :class="getSectionCardClass(index, activeSectionIndex)" @click="selectSection(index)" tabindex="0" class="flex-shrink-0 w-[290px] md:w-full snap-start flex flex-col justify-between p-4 rounded-2xl cursor-pointer transition-all focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                                <!-- Top Row: Section & Check Icon -->
+                                <div class="flex justify-between items-center mb-1.5">
+                                    <div class="flex items-center gap-1.5 min-w-0">
+                                        <span x-show="activeSectionIndex === index" class="material-symbols-outlined text-[16px] flex-shrink-0 text-secondary w-4 h-4 flex items-center justify-center">book_5</span>
+                                        <span class="font-bold font-quicksand text-xs leading-none text-slate-500 uppercase tracking-wider" x-text="'Phần ' + section.no"></span>
+                                    </div>
+                                    <span x-show="section.progress === 100" class="material-symbols-outlined text-mh-aqua font-bold text-[18px] flex-shrink-0 w-[18px] h-[18px] flex items-center justify-center">check_circle</span>
+                                </div>
+                                
+                                <div class="text-[13px] leading-[18px] font-semibold text-slate-700 mb-3 text-left line-clamp-2" x-text="section.title"></div>
+                                
+                                <div>
+                                    <div class="w-full bg-slate-100 h-1 rounded-full overflow-hidden mb-1.5">
+                                        <div :style="'width:' + section.progress + '%'" :class="section.progress === 100 ? 'bg-mh-aqua' : 'bg-primary'" class="h-full transition-all duration-500"></div>
+                                    </div>
+                                    <div class="flex justify-between text-[11px] leading-[16px] font-bold opacity-75">
+                                        <span x-text="section.answered + '/' + section.total"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </aside>
+            <!-- Content -->
+            <main class="w-full pt-4 md:ml-[300px] md:pt-20 min-h-screen">
+                <div class="max-w-[860px] mx-auto p-8">
+                    <!-- Study Panel -->
+                    <div class="bento-card p-8 mb-8 relative overflow-hidden" x-show="currentStudyQuestion">
+                        <div class="flex justify-between items-center mb-6">
+                            <div class="flex items-center gap-3">
+                                <span class="text-slate-400 text-[11px] font-bold font-quicksand uppercase tracking-wider" x-text="'Phần ' + currentStudyQuestion?.sectionNo + ' · Câu ' + (studyIndex + 1) + '/' + sections[activeSectionIndex]?.total"></span>
+                            </div>
+                        </div>
+                        <h2 x-ref="practiceQuestionHeading" id="practice-question-heading" tabindex="-1" class="text-[19px] md:text-[21px] lg:text-[24px] font-bold font-quicksand text-slate-800 mb-8 leading-snug focus:outline-none" x-text="currentStudyQuestion?.question"></h2>
+                        
+                        <div class="grid grid-cols-1 gap-4">
+                            <template :key="idx" x-for="(opt, idx) in currentStudyQuestion?.options">
+                                <button :class="getStudyOptionClass(opt)" :disabled="studyProgress[currentStudyQuestion.id] !== undefined" @click="selectStudyAnswer(opt.key)" class="group flex items-center justify-between min-h-[56px] py-[14px] px-[16px] rounded-2xl border-2 transition-all w-full focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                                    <div class="flex items-center flex-1 min-w-0">
+                                        <span :class="getStudyLetterClass(opt)" class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-xl font-bold font-quicksand mr-4 transition-colors text-sm" x-text="opt.key"></span>
+                                        <span class="flex-1 min-w-0 text-[15px] leading-[23px] font-medium text-slate-700 text-left" x-text="opt.text"></span>
+                                    </div>
+                                    
+                                    <template x-if="studyProgress[currentStudyQuestion.id] !== undefined">
+                                        <div class="flex-shrink-0 ml-3">
+                                            <span x-show="opt.key === currentStudyQuestion.correctAnswer" class="material-symbols-outlined text-mh-aqua font-bold text-[22px] flex-shrink-0 w-[22px] h-[22px] flex items-center justify-center">check_circle</span>
+                                            <span x-show="opt.key === studyProgress[currentStudyQuestion.id] && opt.key !== currentStudyQuestion.correctAnswer" class="material-symbols-outlined text-error font-bold text-[22px] flex-shrink-0 w-[22px] h-[22px] flex items-center justify-center">cancel</span>
+                                        </div>
+                                    </template>
+                                </button>
+                            </template>
+                        </div>
+                        
+                        <!-- Combined Feedback & Explanation Callout -->
+                        <div class="mt-8 animate-in fade-in slide-in-from-bottom-4 duration-500" x-show="studyProgress[currentStudyQuestion?.id] !== undefined">
+                            <div class="bg-secondary/10 border border-secondary/20 p-6 rounded-xl text-left">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="material-symbols-outlined text-[20px] flex-shrink-0 w-5 h-5 flex items-center justify-center" :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'text-mh-aqua' : 'text-error'" x-text="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'check_circle' : 'cancel'"></span>
+                                    <span class="font-bold text-[15px] font-quicksand" :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'text-mh-aqua-deep' : 'text-error'" x-text="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'Đúng rồi · Đáp án: ' + currentStudyQuestion?.correctAnswer : 'Chưa chính xác · Đáp án đúng: ' + currentStudyQuestion?.correctAnswer"></span>
+                                </div>
+                                <p class="text-[14px] leading-[22px] text-slate-700 font-medium" x-text="currentStudyQuestion?.explanation"></p>
+                            </div>
+                            
+                            <!-- Feedback UI Practice Mode -->
+                            <div class="mt-4" x-show="currentStudyQuestion">
+                                <div class="flex items-center gap-2.5">
+                                    <textarea :data-feedback-qid="currentStudyQuestion?.id"
+                                              x-model="feedbackTexts[currentStudyQuestion.id]"
+                                              @input="feedbackStatuses[currentStudyQuestion.id] = 'idle'"
+                                              placeholder="Góp ý của bạn về câu này" 
+                                              rows="1" 
+                                              class="flex-1 min-w-0 resize-none px-4 py-2.5 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 font-medium text-slate-700 text-[13px] overflow-hidden h-[44px] min-h-[44px] max-h-[100px]"
+                                              style="min-height: 44px; height: 44px; max-height: 100px; overflow-y: hidden;"></textarea>
+                                    <button @click="submitFeedback(currentStudyQuestion, 'practice')" 
+                                            :disabled="!feedbackTexts[currentStudyQuestion.id] || !feedbackTexts[currentStudyQuestion.id].trim() || feedbackStatuses[currentStudyQuestion.id] === 'sending'" 
+                                            aria-label="Góp ý câu này"
+                                            class="h-[44px] min-h-[44px] w-[125px] min-w-[125px] px-3.5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold font-quicksand text-[13px] flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed">
+                                        <template x-if="feedbackStatuses[currentStudyQuestion.id] === 'sending'">
+                                            <span aria-hidden="true" class="w-4 h-4 rounded-full border-2 border-amber-300 border-t-amber-800 animate-spin flex-shrink-0"></span>
+                                        </template>
+                                        <template x-if="feedbackStatuses[currentStudyQuestion.id] !== 'sending'">
+                                            <span class="material-symbols-outlined text-[18px] leading-none">rate_review</span>
+                                        </template>
+                                        <span x-text="feedbackStatuses[currentStudyQuestion.id] === 'sending' ? 'Đang gửi...' : 'Góp ý'">Góp ý</span>
+                                    </button>
+                                </div>
+                                <div x-show="feedbackStatuses[currentStudyQuestion.id] === 'error'" x-transition class="mt-2 text-[12px] font-bold text-error flex items-center gap-1 font-quicksand">
+                                    <span class="material-symbols-outlined text-[14px]">error</span> Gửi thất bại, vui lòng thử lại
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="flex justify-between items-center mt-8 pt-4 border-t border-slate-100">
+                            <button @click="prevStudyQuestion()" :disabled="studyIndex === 0" class="px-6 py-3 rounded-xl border border-slate-200 text-slate-500 font-bold font-quicksand flex items-center gap-2 hover:bg-slate-50 transition-all disabled:opacity-50 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                                <span class="material-symbols-outlined text-lg">arrow_back</span>
+                                Câu trước
+                            </button>
+                            <button @click="nextStudyQuestion()" :disabled="studyIndex === (sections[activeSectionIndex]?.total - 1)" class="bg-primary hover:bg-opacity-90 text-white px-8 py-3 rounded-xl font-bold transition-all flex items-center gap-2 font-quicksand shadow-lg shadow-primary/20 disabled:opacity-50 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none">
+                                Câu tiếp
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Stats -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bento-card p-6 flex items-center gap-6">
+                            <div class="relative w-16 h-16 flex-shrink-0">
+                                <svg class="w-full h-full -rotate-90">
+                                    <circle class="text-slate-100" cx="32" cy="32" fill="none" r="28" stroke="currentColor" stroke-width="6"></circle>
+                                    <circle class="text-primary transition-all duration-1000" cx="32" cy="32" fill="none" r="28" stroke="currentColor" :stroke-dasharray="175.9" :stroke-dashoffset="175.9 - (175.9 * currentSectionProgress / 100)" stroke-width="6"></circle>
+                                </svg>
+                                <span class="absolute inset-0 flex items-center justify-center font-bold text-xs font-quicksand" x-text="currentSectionProgress + '%'"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold font-quicksand text-sm text-slate-800">Tiến độ phần</h4>
+                                <p class="text-slate-400 text-xs mt-1" x-text="currentSectionRemaining > 0 ? 'Còn ' + currentSectionRemaining + ' câu để hoàn thành' : 'Đã hoàn thành phần này'"></p>
+                            </div>
+                        </div>
+                        <div class="bento-card p-6 flex items-center gap-6">
+                            <div class="relative w-16 h-16 flex-shrink-0">
+                                <svg class="w-full h-full -rotate-90">
+                                    <circle class="text-slate-100" cx="32" cy="32" fill="none" r="28" stroke="currentColor" stroke-width="6"></circle>
+                                    <circle class="text-secondary transition-all duration-1000" cx="32" cy="32" fill="none" r="28" stroke="currentColor" :stroke-dasharray="175.9" :stroke-dashoffset="175.9 - (175.9 * roadProgress / 100)" stroke-width="6"></circle>
+                                </svg>
+                                <span class="absolute inset-0 flex items-center justify-center font-bold text-xs font-quicksand" x-text="roadProgress + '%'"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold font-quicksand text-sm text-slate-800">Tiến độ lộ trình</h4>
+                                <p class="text-slate-400 text-xs mt-1" x-text="'Hoàn thành ' + roadCompletedSections + '/' + sections.length + ' phần'"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </template>
+
+    <!-- Test Mode -->
+    <template x-if="currentView === 'test'">
+        <main class="pt-24 bg-slate-50 min-h-screen">
+            <div class="max-w-6xl mx-auto p-8 grid grid-cols-12 gap-8">
+                <!-- Question Area -->
+                <div class="col-span-12 lg:col-span-8">
+                    <div class="bento-card p-10 min-h-[500px] flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="flex items-center gap-2">
+                                    <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-[10px] font-bold font-quicksand uppercase tracking-wider" x-text="'Câu ' + (testCurrentIndex + 1) + '/30'"></span>
+                                    <span class="bg-slate-100 text-slate-500 px-3 py-1 rounded-full text-[10px] font-bold font-quicksand uppercase tracking-wider flex items-center gap-1" :class="testTimer < 300 && 'timer-warning'">
+                                        <span class="material-symbols-outlined text-[12px]">timer</span>
+                                        <span x-text="'Thời gian còn lại: ' + formatTime(testTimer)"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <h2 x-ref="testQuestionHeading" id="test-question-heading" tabindex="-1" class="text-2xl font-bold font-quicksand leading-snug text-slate-800 mb-8 focus:outline-none" x-text="currentTestQuestion?.question"></h2>
+                            
+                            <div class="grid grid-cols-1 gap-4">
+                                <template :key="idx" x-for="(opt, idx) in currentTestQuestion?.options">
+                                    <button :class="testAnswers[currentTestQuestion.id] === opt.key ? 'border-secondary bg-secondary/5 border-2' : 'border-slate-100 hover:border-slate-200 border-2'" @click="selectTestAnswer(opt.key)" class="flex items-center p-6 rounded-2xl transition-all text-left w-full focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                                        <span :class="testAnswers[currentTestQuestion.id] === opt.key ? 'bg-secondary text-white' : 'bg-slate-50 text-slate-400'" class="w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-xl font-bold font-quicksand mr-4" x-text="opt.key"></span>
+                                        <span class="text-slate-700 font-medium" x-text="opt.text"></span>
+                                    </button>
+                                </template>
+                            </div>
+                        </div>
+
+                        <div class="mt-12 flex justify-between items-center pt-6 border-t border-slate-100">
+                            <button @click="prevTestQuestion()" :disabled="testCurrentIndex === 0" class="px-6 py-3 rounded-xl border border-slate-200 text-slate-500 font-bold font-quicksand flex items-center gap-2 hover:bg-slate-100 transition-all disabled:opacity-50 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                                <span class="material-symbols-outlined text-lg">arrow_back</span> Quay lại
+                            </button>
+                            <button @click="nextTestQuestion()" class="px-10 py-3 bg-secondary text-white rounded-xl font-bold font-quicksand shadow-lg shadow-secondary/20 transition-all flex items-center gap-2 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none">
+                                <span x-text="testCurrentIndex === 29 ? 'Nộp bài thi' : 'Câu kế tiếp'"></span> 
+                                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control Panel / Question Navigation Grid -->
+                <div class="col-span-12 lg:col-span-4">
+                    <div class="bento-card p-6 mb-6">
+                        <h3 class="font-bold font-quicksand text-slate-800 mb-4 flex items-center gap-2 border-b border-slate-50 pb-2">
+                            <span class="material-symbols-outlined text-secondary">grid_view</span> Bảng câu hỏi
+                        </h3>
+                        <div class="grid grid-cols-6 gap-2">
+                            <template :key="idx" x-for="(q, idx) in testQuestions">
+                                <div :class="[
+                                    testCurrentIndex === idx 
+                                        ? 'border-warning ring-2 ring-warning/30 bg-warning/5 text-slate-800 font-bold border-2' 
+                                        : (testAnswers[q.id] !== undefined 
+                                            ? 'bg-secondary/10 text-secondary border-secondary/20 font-bold border-2' 
+                                            : 'border-slate-200 text-slate-400 bg-white border')
+                                ].join(' ')"
+                                @click="jumpToTestQuestion(idx)"
+                                tabindex="0"
+                                class="h-10 rounded-lg flex items-center justify-center text-xs font-bold font-quicksand transition-all cursor-pointer hover:border-secondary focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none" x-text="idx + 1"></div>
+                            </template>
+                        </div>
+                    </div>
+                    <button @click="showConfirmSubmit = true" class="w-full py-4 bg-primary hover:bg-opacity-90 text-white rounded-2xl font-bold font-quicksand text-lg shadow-xl shadow-primary/20 transition-all focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none">
+                        Nộp bài thi
+                    </button>
+                    <button @click="if(confirm('Hủy bài thi hiện tại và quay lại màn hình chính?')) currentView = 'gate'" class="w-full mt-3 py-3 bg-white border border-slate-200 text-slate-500 rounded-2xl font-bold font-quicksand text-sm hover:bg-slate-100 transition-all focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                        Hủy làm bài
+                    </button>
+                    <p class="text-center text-slate-400 text-xs mt-4 font-medium">Lưu ý: Không thể sửa sau khi đã nộp bài</p>
+                </div>
+            </div>
+        </main>
+    </template>
+
+    <!-- Results Screen -->
+    <template x-if="currentView === 'result'">
+        <main class="pt-24 bg-background min-h-screen p-6 pb-20">
+            <div class="max-w-4xl mx-auto space-y-10">
+                <!-- Inline Certificate Panel (Only displayed when candidate passes) -->
+                <div x-show="resultPassed" class="certificate-print-area max-w-4xl mx-auto bg-white border-[16px] border-double border-primary rounded-3xl p-12 relative shadow-xl text-center font-sans tracking-wide">
+                    <!-- Background watermark / ornaments -->
+                    <div class="absolute inset-4 border border-primary/20 pointer-events-none"></div>
+                    <div class="floral-corner floral-corner-tl"></div>
+                    <div class="floral-corner floral-corner-tr"></div>
+                    <div class="floral-corner floral-corner-bl"></div>
+                    <div class="floral-corner floral-corner-br"></div>
+                    
+                    <div class="flex flex-col items-center justify-between h-full py-2">
+                        <!-- Certificate Header -->
+                        <div class="space-y-3">
+                            <div class="flex justify-center items-center gap-2.5">
+                                <img src="/nhuongquyen/logo.png" class="h-14 w-auto object-contain" alt="Logo Má Hải" />
+                            </div>
+                            <h3 class="text-3xl font-extrabold text-primary font-quicksand uppercase tracking-widest mt-2">CHỨNG NHẬN ĐÀO TẠO</h3>
+                            <div class="h-[2px] w-48 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto"></div>
+                        </div>
+
+                        <!-- Certificate Body -->
+                        <div class="my-6 space-y-4">
+                            <p class="text-slate-500 font-medium italic text-base">Hội đồng Đào tạo và Phát triển Nhượng quyền trân trọng chứng nhận:</p>
+                            <h2 class="text-3xl font-black text-slate-800 font-quicksand" x-text="learnerName"></h2>
+                            <div class="text-md text-slate-600 font-bold max-w-lg mx-auto" x-text="'Địa chỉ điểm bán: ' + storeAddress"></div>
+                            <p class="text-slate-600 text-sm leading-relaxed max-w-xl mx-auto font-medium">
+                                Đã hoàn thành xuất sắc kỳ kiểm tra kiến thức và đạt tiêu chuẩn vận hành xe bánh mì chả cá thuộc hệ thống nhượng quyền thương hiệu <strong class="text-primary font-bold">Bánh Mì Má Hải</strong>.
+                            </p>
+                        </div>
+
+                        <!-- Certificate Footer -->
+                        <div class="flex justify-between items-end w-full px-12 mt-6">
+                            <div class="text-left text-xs font-semibold text-slate-500 space-y-1">
+                                <div>Mã chứng nhận: <span class="font-mono text-slate-800" x-text="testAttemptId"></span></div>
+                                <div>Ngày cấp: <span class="text-slate-800" x-text="new Date().toLocaleDateString('vi-VN')"></span></div>
+                            </div>
+                            <div class="text-center space-y-16">
+                                <div class="text-xs font-bold text-slate-700 tracking-wider uppercase">ĐẠI DIỆN HỘI ĐỒNG ĐÀO TẠO</div>
+                                <div class="text-xs font-bold text-primary font-quicksand tracking-widest uppercase">BÁNH MÌ MÁ HẢI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Print button (Only displayed when candidate passes) -->
+                <div x-show="resultPassed" class="flex justify-center">
+                    <button @click="window.print()" class="px-8 py-3.5 bg-primary hover:bg-opacity-90 text-white rounded-2xl font-bold font-quicksand shadow-lg shadow-primary/20 flex items-center gap-2 transition-all transform active:scale-95 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none">
+                        <span class="material-symbols-outlined text-xl">print</span>
+                        <span>In chứng nhận vận hành (A4)</span>
+                    </button>
+                </div>
+
+                <!-- Score statistics container -->
+                <div class="bento-card w-full max-w-xl mx-auto p-8 text-center border border-slate-100 shadow-sm">
+                    <div :class="resultPassed ? 'bg-primary/10 text-primary' : 'bg-error/10 text-error'" class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="material-symbols-outlined text-5xl" x-text="resultPassed ? 'check_circle' : 'cancel'"></span>
+                    </div>
+                    <h2 class="text-2xl font-bold font-quicksand text-slate-900 mb-2">Hoàn thành bài thi</h2>
+                    <div :class="resultPassed ? 'text-primary' : 'text-error'" class="font-bold text-lg mb-6 uppercase tracking-widest font-quicksand" x-text="(resultPassed ? 'VƯỢT QUA' : 'CHƯA ĐẠT') + ': ' + resultScore + '/30 (' + Math.round((resultScore / 30) * 100) + '%)'"></div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6 text-left">
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="text-[9px] font-bold text-slate-400 uppercase mb-0.5">Đối tác</div>
+                            <div class="font-bold font-quicksand text-slate-700 text-xs truncate" x-text="learnerName"></div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 truncate" x-text="storeAddress || 'Chưa nhập địa chỉ'"></div>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="text-[9px] font-bold text-slate-400 uppercase mb-0.5">Thời gian làm</div>
+                            <div class="font-bold font-quicksand text-slate-700 text-xs" x-text="resultTimeSpent"></div>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="text-[9px] font-bold text-slate-400 uppercase mb-0.5">Tiêu chuẩn đạt</div>
+                            <div class="font-bold font-quicksand text-slate-700 text-xs" x-text="resultThreshold + '/30 (66.6%)'"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Result Storage Status Banner -->
+                    <div class="mb-6 p-3 rounded-xl text-xs font-bold font-quicksand flex items-center justify-center gap-2 border"
+                         :class="{
+                             'bg-slate-50 border-slate-200 text-slate-600': resultSendingStatus === 'sending',
+                             'bg-primary/10 border-primary/20 text-primary': resultSendingStatus === 'success',
+                             'bg-error/10 border-error/20 text-error': resultSendingStatus === 'error'
+                         }"
+                         x-show="resultSendingStatus !== 'idle'">
+                        <template x-if="resultSendingStatus === 'sending'">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined animate-spin text-sm">progress_activity</span>
+                                <span>Đang lưu kết quả thi vào hệ thống...</span>
+                            </div>
+                        </template>
+                        <template x-if="resultSendingStatus === 'success'">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-sm">check_circle</span>
+                                <span>Đã lưu kết quả thi thành công</span>
+                            </div>
+                        </template>
+                        <template x-if="resultSendingStatus === 'error'">
+                            <div class="flex items-center gap-2 flex-wrap justify-center">
+                                <span class="material-symbols-outlined text-sm">error</span>
+                                <span x-text="resultErrorMessage || 'Chưa thể lưu kết quả thi.'"></span>
+                                <button @click="postQuizResult()" :disabled="isSubmittingResult" class="ml-2 px-3 py-1 bg-error text-white rounded-lg text-xs font-bold hover:bg-red-700 transition-colors disabled:opacity-50">
+                                    Thử lưu lại
+                                </button>
+                            </div>
+                        </template>
+                    </div>
+
+                    <div class="flex gap-4 max-w-sm mx-auto">
+                        <button @click="currentView = 'gate'" class="flex-1 py-3 bg-primary hover:bg-opacity-95 text-white rounded-xl font-bold font-quicksand shadow-md shadow-primary/20 transition-all">Quay lại</button>
+                        <button @click="startTest()" class="flex-1 py-3 bg-white border border-slate-200 text-slate-600 rounded-xl font-bold font-quicksand hover:bg-slate-50 transition-all">Thi lại</button>
+                    </div>
+                </div>
+
+                <!-- Wrong Questions Review List -->
+                <div class="wrong-questions-section mt-12 text-left" x-show="resultWrongQuestions.length > 0">
+                    <h3 class="text-xl font-bold font-quicksand text-slate-800 mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-error flex-shrink-0 w-6 h-6 flex items-center justify-center">report_problem</span>
+                        <span>Các câu trả lời chưa chính xác cần ôn lại</span>
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <template :key="w.question.id" x-for="w in resultWrongQuestions">
+                            <div class="bento-card p-6 border border-slate-100 bg-white shadow-sm">
+                                <div class="text-[11px] font-bold text-slate-400 uppercase mb-2" x-text="'Câu ' + (w.index + 1) + ' · ' + w.question.sectionName"></div>
+                                <h4 class="text-base font-bold font-quicksand text-slate-800 mb-2 leading-snug" x-text="w.question.question"></h4>
+                                
+                                <template x-if="w.selectedAnswer === null || w.selectedAnswer === undefined">
+                                    <div class="mb-3 text-xs font-bold text-error bg-error/5 border border-error/15 px-4 py-2 rounded-xl inline-flex items-center gap-1.5 font-quicksand uppercase">
+                                        <span class="material-symbols-outlined text-sm flex-shrink-0 w-4 h-4 flex items-center justify-center">warning</span>
+                                        <span>Bạn chưa trả lời câu này</span>
+                                    </div>
+                                </template>
+                                
+                                <div class="space-y-2 mb-4">
+                                    <template :key="opt.key" x-for="opt in w.question.options">
+                                        <div :class="[
+                                            opt.key === w.question.correctAnswer ? 'bg-primary/10 border-primary/20 text-slate-800 border-2' : '',
+                                            opt.key === w.selectedAnswer && opt.key !== w.question.correctAnswer ? 'bg-error/10 border-error/20 text-error border-2' : '',
+                                            opt.key !== w.question.correctAnswer && opt.key !== w.selectedAnswer ? 'bg-white border-slate-100 border text-slate-500' : ''
+                                        ].join(' ')"
+                                        class="flex items-center justify-between min-h-[48px] py-2.5 px-4 rounded-xl">
+                                            <div class="flex items-center min-w-0 flex-1">
+                                                <span :class="[
+                                                    opt.key === w.question.correctAnswer ? 'bg-primary text-white' : '',
+                                                    opt.key === w.selectedAnswer && opt.key !== w.question.correctAnswer ? 'bg-error text-white' : '',
+                                                    opt.key !== w.question.correctAnswer && opt.key !== w.selectedAnswer ? 'bg-slate-100 text-slate-400' : ''
+                                                ].join(' ')"
+                                                class="w-7 h-7 flex-shrink-0 flex items-center justify-center rounded-lg font-bold font-quicksand mr-3 text-xs" x-text="opt.key"></span>
+                                                <span class="text-sm font-medium" x-text="opt.text"></span>
+                                            </div>
+                                            
+                                            <div class="flex items-center gap-2 flex-shrink-0 ml-2">
+                                                <template x-if="opt.key === w.question.correctAnswer">
+                                                    <div class="flex items-center gap-1 bg-primary/20 text-primary px-2.5 py-0.5 rounded-full text-[10px] font-bold font-quicksand uppercase">
+                                                        <span class="material-symbols-outlined text-[14px] flex-shrink-0 w-3.5 h-3.5 flex items-center justify-center">check</span>
+                                                        <span>Đáp án đúng</span>
+                                                    </div>
+                                                </template>
+                                                <template x-if="opt.key === w.selectedAnswer && opt.key !== w.question.correctAnswer">
+                                                    <div class="flex items-center gap-1 bg-error/20 text-error px-2.5 py-0.5 rounded-full text-[10px] font-bold font-quicksand uppercase">
+                                                        <span class="material-symbols-outlined text-[14px] flex-shrink-0 w-3.5 h-3.5 flex items-center justify-center">close</span>
+                                                        <span>Bạn chọn</span>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </div>
+                                    </template>
+                                </div>
+                                
+                                <div class="bg-secondary/10 border border-secondary/20 p-4 rounded-xl text-left">
+                                    <div class="flex items-center gap-1.5 mb-2 text-secondary">
+                                        <span class="material-symbols-outlined text-base flex-shrink-0 w-4 h-4 flex items-center justify-center">lightbulb</span>
+                                        <span class="font-bold text-xs font-quicksand uppercase tracking-wider">Giải thích</span>
+                                    </div>
+                                    <p class="text-xs text-slate-700 leading-relaxed font-medium" x-text="w.question.explanation"></p>
+                                </div>
+                                
+                                <div class="mt-4">
+                                    <div class="flex items-center gap-2.5">
+                                        <textarea :data-feedback-qid="w.question.id"
+                                                  x-model="feedbackTexts[w.question.id]"
+                                                  @input="feedbackStatuses[w.question.id] = 'idle'"
+                                                  placeholder="Góp ý của bạn về câu này" 
+                                                  rows="1" 
+                                                  class="flex-1 min-w-0 resize-none px-4 py-2.5 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 font-medium text-slate-700 text-[13px] overflow-hidden h-[44px] min-h-[44px] max-h-[100px]"
+                                                  style="min-height: 44px; height: 44px; max-height: 100px; overflow-y: hidden;"></textarea>
+                                        <button @click="submitFeedback(w.question, 'test')" 
+                                                :disabled="!feedbackTexts[w.question.id] || !feedbackTexts[w.question.id].trim() || feedbackStatuses[w.question.id] === 'sending'" 
+                                                aria-label="Góp ý câu này"
+                                                class="h-[44px] min-h-[44px] w-[125px] min-w-[125px] px-3.5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold font-quicksand text-[13px] flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed">
+                                            <template x-if="feedbackStatuses[w.question.id] === 'sending'">
+                                                <span aria-hidden="true" class="w-4 h-4 rounded-full border-2 border-amber-300 border-t-amber-800 animate-spin flex-shrink-0"></span>
+                                            </template>
+                                            <template x-if="feedbackStatuses[w.question.id] !== 'sending'">
+                                                <span class="material-symbols-outlined text-[18px] leading-none">rate_review</span>
+                                            </template>
+                                            <span x-text="feedbackStatuses[w.question.id] === 'sending' ? 'Đang gửi...' : 'Góp ý'">Góp ý</span>
+                                        </button>
+                                    </div>
+                                    <div x-show="feedbackStatuses[w.question.id] === 'error'" x-transition class="mt-2 text-[12px] font-bold text-error flex items-center gap-1 font-quicksand">
+                                        <span class="material-symbols-outlined text-[14px]">error</span> Gửi thất bại, vui lòng thử lại
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </template>
+
+    <!-- Guide Modal -->
+    <div class="fixed inset-0 z-[100] flex items-center justify-center p-6" x-cloak x-show="showGuide">
+        <div @click="showGuide = false" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm"></div>
+        <div class="relative bg-white rounded-[32px] max-w-lg w-full p-10 shadow-2xl animate-in fade-in zoom-in-95 duration-300">
+            <h3 class="text-2xl font-bold font-quicksand text-slate-900 mb-6 flex items-center gap-3">
+                <span class="material-symbols-outlined text-warning text-3xl flex-shrink-0 w-9 h-9 flex items-center justify-center">auto_stories</span>
+                Hướng dẫn hệ thống
+            </h3>
+            <div class="space-y-6 text-slate-600">
+                <div class="flex gap-4">
+                    <span class="w-8 h-8 rounded-full bg-slate-100 flex-shrink-0 flex items-center justify-center font-bold text-xs">1</span>
+                    <p class="text-sm leading-relaxed"><strong class="text-slate-900">Luyện tập:</strong> Học theo từng phần cốt lõi (Lý thuyết & Thực hành). Xem ngay giải thích chi tiết và đáp án đúng sau khi lựa chọn phương án.</p>
+                </div>
+                <div class="flex gap-4">
+                    <span class="w-8 h-8 rounded-full bg-slate-100 flex-shrink-0 flex items-center justify-center font-bold text-xs">2</span>
+                    <p class="text-sm leading-relaxed"><strong class="text-slate-900">Thi chính thức:</strong> 30 câu hỏi ngẫu nhiên được lựa chọn từ bộ đề chính thức làm trong 30 phút. Không có giải thích và kết quả hiển thị trước khi bạn nộp bài.</p>
+                </div>
+                <div class="flex gap-4">
+                    <span class="w-8 h-8 rounded-full bg-slate-100 flex-shrink-0 flex items-center justify-center font-bold text-xs">3</span>
+                    <p class="text-sm leading-relaxed"><strong class="text-slate-900">Tiêu chuẩn đạt:</strong> Đạt từ 20/30 (66.6%) câu đúng trở lên để vượt qua bài kiểm tra và nhận chứng nhận vận hành.</p>
+                </div>
+            </div>
+            <button @click="showGuide = false" class="w-full mt-10 py-4 bg-slate-900 text-white rounded-2xl font-bold font-quicksand hover:brightness-110 transition-all focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">Đã rõ</button>
+        </div>
+    </div>
+
+    <!-- Confirm Submit Modal -->
+    <div class="fixed inset-0 z-[100] flex items-center justify-center p-6" x-cloak x-show="showConfirmSubmit">
+        <div @click="showConfirmSubmit = false" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm"></div>
+        <div class="relative bg-white rounded-[32px] max-w-md w-full p-8 text-center shadow-2xl">
+            <span class="material-symbols-outlined text-warning text-5xl mb-4">report_problem</span>
+            <h3 class="text-xl font-bold font-quicksand text-slate-900 mb-2">Bạn có chắc chắn?</h3>
+            <p class="text-slate-500 text-sm mb-8" x-text="'Vẫn còn ' + (30 - Object.keys(testAnswers).length) + ' câu chưa được hoàn thành. Bạn sẽ không thể thay đổi đáp án sau khi nộp.'"></p>
+            <div class="flex gap-4">
+                <button @click="showConfirmSubmit = false" class="flex-1 py-3 bg-slate-100 text-slate-600 rounded-xl font-bold font-quicksand hover:bg-slate-200 transition-all focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">Quay lại</button>
+                <button @click="submitTest()" class="flex-1 py-3 bg-primary text-white rounded-xl font-bold font-quicksand hover:bg-opacity-90 transition-all focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none">Nộp bài ngay</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unsent Feedback Guard Dialog -->
+    <div x-show="showUnsentGuard"
+         x-effect="if (showUnsentGuard && !showSuccessOverlay) { $nextTick(() => { $refs.guardSendBtn && $refs.guardSendBtn.focus(); }); }"
+         x-transition:enter="transition-opacity ease-out duration-200"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="transition-opacity ease-in duration-150"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
+         class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/20 backdrop-blur-[2px]"
+         style="display: none;"
+         @keydown.escape.window="if (showUnsentGuard && !isGuardSubmitting && !showSuccessOverlay) cancelGuard()"
+         @keydown.tab="handleGuardTab($event)"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="unsent-guard-title"
+         aria-describedby="unsent-guard-desc">
+        <div class="fixed inset-0 transition-opacity" @click="if (!isGuardSubmitting && !showSuccessOverlay) cancelGuard()"></div>
+
+        <!-- Dialog Card -->
+        <div x-show="showUnsentGuard"
+             x-transition:enter="transition-all ease-out duration-200"
+             x-transition:enter-start="opacity-0 scale-95"
+             x-transition:enter-end="opacity-100 scale-100"
+             x-transition:leave="transition-all ease-in duration-150"
+             x-transition:leave-start="opacity-100 scale-100"
+             x-transition:leave-end="opacity-0 scale-95"
+             class="relative bg-white rounded-2xl p-6 shadow-lg border border-slate-100 max-w-sm w-full z-10 text-center">
+            <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mx-auto mb-4">
+                <span class="material-symbols-outlined text-2xl">outgoing_mail</span>
+            </div>
+            <h3 id="unsent-guard-title" class="text-lg font-bold font-quicksand text-slate-800 mb-2">Bạn chưa gửi góp ý</h3>
+            <p id="unsent-guard-desc" class="text-sm text-slate-600 font-medium mb-4 leading-relaxed">Bạn muốn gửi góp ý trước khi rời câu này không?</p>
+            <div x-show="guardErrorText" class="mb-4 text-xs font-bold text-error flex items-center justify-center gap-1 font-quicksand">
+                <span class="material-symbols-outlined text-sm">error</span>
+                <span x-text="guardErrorText"></span>
+            </div>
+            <div class="flex items-center gap-3">
+                <button x-ref="guardDiscardBtn"
+                        @click="confirmDiscardGuard()"
+                        :disabled="isGuardSubmitting"
+                        class="flex-1 py-2.5 px-4 rounded-xl border border-slate-200 text-slate-600 font-bold font-quicksand hover:bg-slate-50 transition-colors text-sm disabled:opacity-50 focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                    Bỏ qua
+                </button>
+                <button x-ref="guardSendBtn"
+                        @click="confirmSendGuard()"
+                        :disabled="isGuardSubmitting"
+                        class="flex-1 py-2.5 px-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold font-quicksand shadow-md shadow-amber-500/20 transition-colors text-sm disabled:opacity-50 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none flex items-center justify-center gap-1.5">
+                    <template x-if="isGuardSubmitting">
+                        <span class="material-symbols-outlined animate-spin text-base">progress_activity</span>
+                    </template>
+                    <span>Gửi góp ý</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Polished Success Moment Overlay -->
+    <div x-show="showSuccessOverlay"
+         x-transition:enter="transition-opacity ease-out duration-200"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="transition-opacity ease-in duration-150"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
+         class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/20 backdrop-blur-[2px]"
+         style="display: none;"
+         @keydown.window="if (showSuccessOverlay) { $event.preventDefault(); $event.stopPropagation(); }"
+         role="status"
+         aria-live="polite">
+        <div x-show="showSuccessOverlay"
+             x-ref="successOverlayBox"
+             tabindex="-1"
+             x-transition:enter="transition-all ease-out duration-200"
+             x-transition:enter-start="opacity-0 scale-95"
+             x-transition:enter-end="opacity-100 scale-100"
+             x-transition:leave="transition-all ease-in duration-150"
+             x-transition:leave-start="opacity-100 scale-100"
+             x-transition:leave-end="opacity-0 scale-95"
+             class="bg-white/95 backdrop-blur-md rounded-2xl p-5 shadow-xl border border-slate-100/80 flex flex-col items-center justify-center text-center focus:outline-none">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 text-white shadow-md shadow-emerald-500/20 flex items-center justify-center mb-2.5">
+                <span class="material-symbols-outlined text-2xl font-bold">check</span>
+            </div>
+            <span class="text-sm font-bold font-quicksand text-slate-800 tracking-wide">Đã nhận góp ý</span>
+        </div>
+    </div>
+    </div> <!-- End of #app-container -->
+
+    <!-- Fallback Error Message (Visible only if AlpineJS/App fails to boot) -->
+    <div id="app-fallback" class="pt-32 flex flex-col items-center justify-center min-h-[60vh] px-6 text-center hidden">
+        <div class="w-16 h-16 bg-red-50 text-error rounded-full flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined text-3xl text-error">error</span>
+        </div>
+        <h3 class="text-xl font-bold font-quicksand text-slate-800 mb-2">Không thể tải nội dung đào tạo</h3>
+        <p id="error-details" class="text-slate-500 text-sm max-w-sm mb-8">Đã xảy ra sự cố trong quá trình khởi chạy hệ thống. Vui lòng thử lại hoặc tải lại trang.</p>
+        <button onclick="window.location.reload(true)" class="px-6 py-2.5 rounded-full bg-primary text-white font-quicksand font-bold text-sm shadow-md hover:bg-opacity-90 transition-all focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+            Tải lại trang
+        </button>
+    </div>
+</body>
+</html>
