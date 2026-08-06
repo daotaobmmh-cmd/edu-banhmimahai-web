@@ -55,32 +55,35 @@ function app() {
             // Load questions from window.HOINHAP_QUESTIONS
             const rawQuestions = window.HOINHAP_QUESTIONS || [];
             
-            // Map questions to 7 chunks of 20 questions
+            // Map questions to 8 chunks
             this.allQuestions = rawQuestions.map((q, index) => {
                 let sectionNo = 1;
                 let sectionName = "";
                 
                 if (index < 20) {
                     sectionNo = 1;
-                    sectionName = "Tổng quan & Chính sách Nhượng quyền";
+                    sectionName = "Tổng quan Thương hiệu & Chuẩn bị Khai trương";
                 } else if (index < 40) {
                     sectionNo = 2;
-                    sectionName = "Chuẩn bị Khai trương & Thu hút Khách";
+                    sectionName = "Quản lý Tài chính & Vận hành Giai đoạn Đầu";
                 } else if (index < 60) {
                     sectionNo = 3;
-                    sectionName = "Quy trình Chế biến & Tiêu chuẩn";
+                    sectionName = "Kỹ thuật Chiên chả & Kỹ năng Bán hàng";
                 } else if (index < 80) {
                     sectionNo = 4;
-                    sectionName = "Vận hành Thiết bị & Truyền thông";
+                    sectionName = "Kiểm soát Nguyên liệu & Truyền thông Điểm bán";
                 } else if (index < 100) {
                     sectionNo = 5;
-                    sectionName = "Vệ sinh ATTP & An toàn Vận hành";
-                } else if (index < 120) {
+                    sectionName = "An toàn Vận hành & Vệ sinh Xe đẩy";
+                } else if (index < 110) {
                     sectionNo = 6;
-                    sectionName = "Quy trình Đặt hàng qua Zalo";
-                } else {
+                    sectionName = "Quy trình Nhập hàng & Kiểm kê trên Zalo OA";
+                } else if (index < 120) {
                     sectionNo = 7;
-                    sectionName = "Quy trình Thực tế & Phục vụ Khách";
+                    sectionName = "Chuẩn bị Điểm bán & Kỹ thuật Rã đông, Chiên chả";
+                } else {
+                    sectionNo = 8;
+                    sectionName = "Quy trình Phục vụ & Chế biến Bánh mì Thực tế";
                 }
                 
                 return {
@@ -149,13 +152,14 @@ function app() {
         // Update Sections list progress
         updateSections() {
             const canonicalTitles = [
-                "Tổng quan & Chính sách Nhượng quyền",
-                "Chuẩn bị Khai trương & Thu hút Khách",
-                "Quy trình Chế biến & Tiêu chuẩn",
-                "Vận hành Thiết bị & Truyền thông",
-                "Vệ sinh ATTP & An toàn Vận hành",
-                "Quy trình Đặt hàng qua Zalo",
-                "Quy trình Thực tế & Phục vụ Khách"
+                "Tổng quan Thương hiệu & Chuẩn bị Khai trương",
+                "Quản lý Tài chính & Vận hành Giai đoạn Đầu",
+                "Kỹ thuật Chiên chả & Kỹ năng Bán hàng",
+                "Kiểm soát Nguyên liệu & Truyền thông Điểm bán",
+                "An toàn Vận hành & Vệ sinh Xe đẩy",
+                "Quy trình Nhập hàng & Kiểm kê trên Zalo OA",
+                "Chuẩn bị Điểm bán & Kỹ thuật Rã đông, Chiên chả",
+                "Quy trình Phục vụ & Chế biến Bánh mì Thực tế"
             ];
             
             const map = new Map();
