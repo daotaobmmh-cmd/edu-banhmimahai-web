@@ -53,7 +53,42 @@ function app() {
         // Init
         init() {
             // Load questions from window.HOINHAP_QUESTIONS
-            this.allQuestions = window.HOINHAP_QUESTIONS || [];
+            const rawQuestions = window.HOINHAP_QUESTIONS || [];
+            
+            // Map questions to 7 chunks of 20 questions
+            this.allQuestions = rawQuestions.map((q, index) => {
+                let sectionNo = 1;
+                let sectionName = "";
+                
+                if (index < 20) {
+                    sectionNo = 1;
+                    sectionName = "Tổng quan & Chính sách Nhượng quyền";
+                } else if (index < 40) {
+                    sectionNo = 2;
+                    sectionName = "Chuẩn bị Khai trương & Thu hút Khách";
+                } else if (index < 60) {
+                    sectionNo = 3;
+                    sectionName = "Quy trình Chế biến & Tiêu chuẩn";
+                } else if (index < 80) {
+                    sectionNo = 4;
+                    sectionName = "Vận hành Thiết bị & Truyền thông";
+                } else if (index < 100) {
+                    sectionNo = 5;
+                    sectionName = "Vệ sinh ATTP & An toàn Vận hành";
+                } else if (index < 120) {
+                    sectionNo = 6;
+                    sectionName = "Quy trình Đặt hàng qua Zalo";
+                } else {
+                    sectionNo = 7;
+                    sectionName = "Quy trình Thực tế & Phục vụ Khách";
+                }
+                
+                return {
+                    ...q,
+                    sectionNo,
+                    sectionName
+                };
+            });
             
             // Load learner info from localStorage
             this.learnerName = localStorage.getItem('nhuongquyen:learnerName') || '';
@@ -114,8 +149,13 @@ function app() {
         // Update Sections list progress
         updateSections() {
             const canonicalTitles = [
-                "Lý thuyết vận hành",
-                "Thực hành trực quan"
+                "Tổng quan & Chính sách Nhượng quyền",
+                "Chuẩn bị Khai trương & Thu hút Khách",
+                "Quy trình Chế biến & Tiêu chuẩn",
+                "Vận hành Thiết bị & Truyền thông",
+                "Vệ sinh ATTP & An toàn Vận hành",
+                "Quy trình Đặt hàng qua Zalo",
+                "Quy trình Thực tế & Phục vụ Khách"
             ];
             
             const map = new Map();
