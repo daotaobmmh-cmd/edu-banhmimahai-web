@@ -162,19 +162,19 @@
             <div class="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center mb-8">
                 <span class="material-symbols-outlined text-primary text-4xl">store</span>
             </div>
-            <h2 class="text-4xl font-bold font-quicksand text-slate-900 mb-4">Đào Tạo Đối Tác Nhượng Quyền</h2>
-            <p class="text-slate-500 max-w-lg mb-12">Chào mừng anh/chị đối tác đến với hệ thống kiểm tra kiến thức nhượng quyền Bánh Mì Má Hải. Vui lòng nhập thông tin để bắt đầu.</p>
+            <h2 class="text-4xl font-bold font-quicksand text-slate-900 mb-4">Đào Tạo Khách Hàng Nhượng Quyền</h2>
+            <p class="text-slate-500 max-w-lg mb-12">Những kinh nghiệm từ rất nhiều khách hàng thành công của Bánh Mì Má Hải đã được tổng hợp trong website này. Cùng nhau học hỏi nhé!</p>
             
             <!-- Personnel Info Form Card -->
             <div class="bento-card p-6 w-full max-w-xl mb-12 text-left border border-slate-100">
                 <h3 class="text-lg font-bold font-quicksand mb-4 text-slate-800 flex items-center gap-2">
                     <span class="material-symbols-outlined text-primary flex-shrink-0 w-6 h-6 flex items-center justify-center">person</span>
-                    Thông tin đối tác
+                    Thông tin khách hàng
                 </h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-slate-500 font-bold text-xs mb-1.5 uppercase tracking-wider font-quicksand">Họ tên đối tác <span class="text-error">*</span></label>
-                        <input type="text" x-model="learnerName" @input="localStorage.setItem('nhuongquyen:learnerName', learnerName)" placeholder="Nhập họ tên đối tác" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none transition-all font-medium text-slate-800 text-sm" />
+                        <label class="block text-slate-500 font-bold text-xs mb-1.5 uppercase tracking-wider font-quicksand">Họ tên khách hàng <span class="text-error">*</span></label>
+                        <input type="text" x-model="learnerName" @input="localStorage.setItem('nhuongquyen:learnerName', learnerName)" placeholder="Nhập họ tên khách hàng" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none transition-all font-medium text-slate-800 text-sm" />
                     </div>
                     <div>
                         <label class="block text-slate-500 font-bold text-xs mb-1.5 uppercase tracking-wider font-quicksand">Địa chỉ điểm bán <span class="text-error">*</span></label>
@@ -210,7 +210,7 @@
             </div>
             <div class="mt-16 text-slate-400 text-xs flex items-center gap-2 mb-10">
                 <span class="material-symbols-outlined text-sm">security</span>
-                Hệ thống đào tạo nội bộ và đối tác nhượng quyền Bánh Mì Má Hải
+                Hệ thống đào tạo khách hàng nhượng quyền Bánh Mì Má Hải
             </div>
         </main>
     </template>
@@ -505,7 +505,7 @@
                     
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6 text-left">
                         <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
-                            <div class="text-[9px] font-bold text-slate-400 uppercase mb-0.5">Đối tác</div>
+                            <div class="text-[9px] font-bold text-slate-400 uppercase mb-0.5">Khách hàng</div>
                             <div class="font-bold font-quicksand text-slate-700 text-xs truncate" x-text="learnerName"></div>
                             <div class="text-[10px] text-slate-500 mt-0.5 truncate" x-text="storeAddress || 'Chưa nhập địa chỉ'"></div>
                         </div>
