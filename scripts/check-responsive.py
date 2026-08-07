@@ -157,7 +157,7 @@ def test_responsive():
                     if (!dlBtn) return { status: false, msg: "Download button not found" };
                     
                     var rect = certWrapper.getBoundingClientRect();
-                    var ratio = rect.height / rect.width;
+                    var ratio = rect.width / rect.height;
                     var targetRatio = 1131 / 800;
                     var ratioError = Math.abs(ratio - targetRatio) / targetRatio;
                     
