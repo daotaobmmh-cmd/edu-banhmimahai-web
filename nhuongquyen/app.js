@@ -138,6 +138,17 @@ function app() {
                 }
             } catch (e) {}
             
+            // Watch changes to adjust certificate text sizes
+            this.$watch('learnerName', () => this.adjustCertLayout());
+            this.$watch('storeAddress', () => this.adjustCertLayout());
+            this.$watch('currentView', (view) => {
+                if (view === 'result') {
+                    setTimeout(() => {
+                        this.adjustCertLayout();
+                    }, 50);
+                }
+            });
+
             // Set initialization flag and hide fallback UI
             window.alpineInitialized = true;
             document.documentElement.classList.add('alpine-ready');
@@ -792,6 +803,41 @@ function app() {
                     if (this.feedbackStatuses[q.id] === 'error') this.feedbackStatuses[q.id] = 'idle';
                 }, 4000);
             }
+        },
+
+        adjustCertLayout() {
+            this.$nextTick(() => {
+                const nameEl = document.getElementById('certificate-name');
+                const addrEl = document.getElementById('certificate-address');
+                if (nameEl) {
+                    nameEl.style.whiteSpace = 'nowrap';
+                    nameEl.style.fontSize = '80px';
+                    if (nameEl.scrollWidth > 955) {
+                        nameEl.style.fontSize = '64px';
+                    }
+                    if (nameEl.scrollWidth > 955) {
+                        nameEl.style.fontSize = '48px';
+                    }
+                    if (nameEl.scrollWidth > 955) {
+                        nameEl.style.fontSize = '40px';
+                        nameEl.style.whiteSpace = 'normal';
+                    }
+                }
+                if (addrEl) {
+                    addrEl.style.whiteSpace = 'nowrap';
+                    addrEl.style.fontSize = '30px';
+                    if (addrEl.scrollWidth > 955) {
+                        addrEl.style.fontSize = '26px';
+                    }
+                    if (addrEl.scrollWidth > 955) {
+                        addrEl.style.fontSize = '24px';
+                    }
+                    if (addrEl.scrollWidth > 955) {
+                        addrEl.style.fontSize = '22px';
+                        addrEl.style.whiteSpace = 'normal';
+                    }
+                }
+            });
         },
 
         async downloadCertificate() {

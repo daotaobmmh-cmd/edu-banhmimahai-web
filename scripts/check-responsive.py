@@ -140,6 +140,8 @@ def test_responsive():
                         data = el._x_dataStack[0];
                     }
                     if (data) {
+                        data.learnerName = "NGUYỄN THỊ THANH TUYỀN";
+                        data.storeAddress = "Số 123 Đường Ba Tháng Hai, Phường 14, Quận 10, TP. Hồ Chí Minh";
                         data.resultPassed = true;
                         data.currentView = 'result';
                         data.testAttemptId = 'test-12345';
@@ -171,15 +173,61 @@ def test_responsive():
                         return { status: false, msg: "Cert Aspect Ratio error: " + (ratioError * 100).toFixed(2) + "% is > 1% (Ratio: " + ratio.toFixed(4) + ")" };
                     }
                     
+                    var scale = rect.width / 1131;
+                    var leftSafe = certPrintArea.getBoundingClientRect().left + 64 * scale;
+                    var rightSafe = certPrintArea.getBoundingClientRect().right - 64 * scale;
+                    var topSafe = certPrintArea.getBoundingClientRect().top + 64 * scale;
+                    var bottomSafe = certPrintArea.getBoundingClientRect().bottom - 64 * scale;
+                    
                     var titleEl = certPrintArea.querySelector('h3');
-                    var nameEl = certPrintArea.querySelector('h2');
+                    var nameEl = document.getElementById('certificate-name');
+                    var addrEl = document.getElementById('certificate-address');
                     var descEl = certPrintArea.querySelector('p.max-w-4xl') || certPrintArea.querySelector('p:nth-of-type(2)');
                     var metaEl = certPrintArea.querySelector('div.text-left');
+                    var sigEl = certPrintArea.querySelector('div.text-center');
                     
                     if (!titleEl) return { status: false, msg: "Title (h3) inside certificate not found" };
                     if (!nameEl) return { status: false, msg: "Name (h2) inside certificate not found" };
+                    if (!addrEl) return { status: false, msg: "Address (div) inside certificate not found" };
                     if (!descEl) return { status: false, msg: "Description (p) inside certificate not found" };
                     if (!metaEl) return { status: false, msg: "Meta block (div.text-left) inside certificate not found" };
+                    if (!sigEl) return { status: false, msg: "Signature block (div.text-center) inside certificate not found" };
+                    
+                    var checkEls = [titleEl, nameEl, addrEl, descEl, metaEl, sigEl];
+                    for (var i = 0; i < checkEls.length; i++) {
+                        var el = checkEls[i];
+                        var r = el.getBoundingClientRect();
+                        if (r.left < leftSafe - 2 || r.right > rightSafe + 2) {
+                            return { status: false, msg: "Element " + el.tagName + " (id=" + el.id + ") overflows horizontal safe area boundary (64px padding)!" };
+                        }
+                        if (r.top < topSafe - 2 || r.bottom > bottomSafe + 2) {
+                            return { status: false, msg: "Element " + el.tagName + " (id=" + el.id + ") overflows vertical safe area boundary (64px padding)!" };
+                        }
+                        if (el.scrollWidth > el.clientWidth + 1) {
+                            return { status: false, msg: "Element " + el.tagName + " (id=" + el.id + ") is horizontally clipped! scrollWidth: " + el.scrollWidth + "px > clientWidth: " + el.clientWidth + "px" };
+                        }
+                    }
+                    
+                    var nameBottom = (nameEl.getBoundingClientRect().bottom - certPrintArea.getBoundingClientRect().top) / scale;
+                    var addrTop = (addrEl.getBoundingClientRect().top - certPrintArea.getBoundingClientRect().top) / scale;
+                    var addrBottom = (addrEl.getBoundingClientRect().bottom - certPrintArea.getBoundingClientRect().top) / scale;
+                    var descTop = (descEl.getBoundingClientRect().top - certPrintArea.getBoundingClientRect().top) / scale;
+                    var descBottom = (descEl.getBoundingClientRect().bottom - certPrintArea.getBoundingClientRect().top) / scale;
+                    var footerTop = (metaEl.parentElement.getBoundingClientRect().top - certPrintArea.getBoundingClientRect().top) / scale;
+                    
+                    var gapNameAddr = Math.round(addrTop - nameBottom);
+                    var gapAddrDesc = Math.round(descTop - addrBottom);
+                    var gapDescFooter = Math.round(footerTop - descBottom);
+                    
+                    if (gapAddrDesc < 2 * gapNameAddr) {
+                        return { status: false, msg: "Gap Proximity Rule Violated: gap(address->desc) [" + gapAddrDesc + "px] must be >= 2 * gap(name->address) [" + (2 * gapNameAddr) + "px]" };
+                    }
+                    if (gapAddrDesc < 56) {
+                        return { status: false, msg: "Gap Proximity Rule Violated: gap(address->desc) [" + gapAddrDesc + "px] must be >= 56px" };
+                    }
+                    if (gapDescFooter < 48) {
+                        return { status: false, msg: "Gap Proximity Rule Violated: gap(desc->footer) [" + gapDescFooter + "px] must be >= 48px" };
+                    }
                     
                     var titleFs = parseInt(window.getComputedStyle(titleEl).fontSize);
                     var nameFs = parseInt(window.getComputedStyle(nameEl).fontSize);
@@ -187,12 +235,12 @@ def test_responsive():
                     var metaFs = parseInt(window.getComputedStyle(metaEl).fontSize);
                     
                     if (titleFs < 44) return { status: false, msg: "Title font-size (" + titleFs + "px) is less than 44px" };
-                    if (nameFs < 64) return { status: false, msg: "Name font-size (" + nameFs + "px) is less than 64px" };
+                    if (nameFs < 40) return { status: false, msg: "Name font-size (" + nameFs + "px) is less than floor 40px" };
                     if (descFs < 24) return { status: false, msg: "Description font-size (" + descFs + "px) is less than 24px" };
                     if (metaFs < 22) return { status: false, msg: "Meta font-size (" + metaFs + "px) is less than 22px" };
                     
                     function getLuminance(rgbStr) {
-                        var parts = rgbStr.match(/\\d+/g).map(Number);
+                        var parts = rgbStr.match(/\d+/g).map(Number);
                         var r = parts[0] / 255;
                         var g = parts[1] / 255;
                         var b = parts[2] / 255;
@@ -213,6 +261,37 @@ def test_responsive():
                         return { status: false, msg: "Meta text color contrast ratio (" + contrast.toFixed(2) + ":1) is less than 4.5:1 (fg: " + fgColor + ")" };
                     }
                     
+                    var range = document.createRange();
+                    range.selectNodeContents(descEl);
+                    var rects = Array.from(range.getClientRects());
+                    if (rects.length > 1) {
+                        var maxLineW = Math.max.apply(null, rects.map(r => r.width));
+                        var lastLineW = rects[rects.length - 1].width;
+                        if (lastLineW < maxLineW * 0.25) {
+                            return { status: false, msg: "Widow Line detected in description! Last line width (" + lastLineW.toFixed(1) + "px) is less than 25% of max line width (" + (maxLineW * 0.25).toFixed(1) + "px)" };
+                        }
+                    }
+                    
+                    var metaBottom = metaEl.getBoundingClientRect().bottom;
+                    var sigBottom = sigEl.getBoundingClientRect().bottom;
+                    if (Math.abs(metaBottom - sigBottom) > 2) {
+                        return { status: false, msg: "Footer elements are not on the same baseline! Left bottom: " + metaBottom + ", Right bottom: " + sigBottom };
+                    }
+                    
+                    var codeEl = certPrintArea.querySelector('span.font-mono');
+                    var thinBorderEl = certPrintArea.querySelector('.absolute.inset-6');
+                    if (codeEl && thinBorderEl) {
+                        var codeRect = codeEl.getBoundingClientRect();
+                        var borderRect = thinBorderEl.getBoundingClientRect();
+                        var okBorder = (codeRect.left > borderRect.left + 5) && 
+                                       (codeRect.right < borderRect.right - 5) && 
+                                       (codeRect.top > borderRect.top + 5) && 
+                                       (codeRect.bottom < borderRect.bottom - 5);
+                        if (!okBorder) {
+                            return { status: false, msg: "Code text overlaps thin border line! codeRect: " + JSON.stringify(codeRect) + ", borderRect: " + JSON.stringify(borderRect) };
+                        }
+                    }
+                    
                     var dlRect = dlBtn.getBoundingClientRect();
                     if (dlRect.height < 44) {
                         return { status: false, msg: "Download button touch height (" + dlRect.height + "px) is less than 44px" };
@@ -224,7 +303,7 @@ def test_responsive():
                         ratioError: ratioError,
                         dlWidth: dlRect.width,
                         dlHeight: dlRect.height,
-                        msg: "Cert Aspect Ratio: " + ratio.toFixed(4) + " (Target: " + targetRatio.toFixed(4) + ", Error: " + (ratioError * 100).toFixed(2) + "%), Title FS: " + titleFs + "px (>=44), Name FS: " + nameFs + "px (>=64), Desc FS: " + descFs + "px (>=24), Meta FS: " + metaFs + "px (>=22), Contrast: " + contrast.toFixed(2) + ":1 (>=4.5:1), Download height: " + dlRect.height + "px (>=44px)"
+                        msg: "Cert Aspect Ratio: " + ratio.toFixed(4) + " (Target: " + targetRatio.toFixed(4) + ", Error: " + (ratioError * 100).toFixed(2) + "%), Title FS: " + titleFs + "px (>=44), Name FS: " + nameFs + "px (>=40), Desc FS: " + descFs + "px (>=24), Meta FS: " + metaFs + "px (>=22), Contrast: " + contrast.toFixed(2) + ":1 (>=4.5:1), Download height: " + dlRect.height + "px (>=44px)"
                     };
                 """)
                 print(f"360px Cert Layout Assert: {cert_spec['msg']}")

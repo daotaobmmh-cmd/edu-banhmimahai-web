@@ -81,23 +81,23 @@
             position: absolute;
         }
         .floral-corner-tr {
-            top: 16px;
-            right: 16px;
+            top: 24px;
+            right: 24px;
             transform: rotate(90deg);
         }
         .floral-corner-bl {
-            bottom: 16px;
-            left: 16px;
+            bottom: 24px;
+            left: 24px;
             transform: rotate(-90deg);
         }
         .floral-corner-br {
-            bottom: 16px;
-            right: 16px;
+            bottom: 24px;
+            right: 24px;
             transform: rotate(180deg);
         }
         .floral-corner-tl {
-            top: 16px;
-            left: 16px;
+            top: 24px;
+            left: 24px;
         }
     </style>
     <script>
@@ -470,40 +470,42 @@
                          :style="'width: 1131px; height: 800px; transform: scale(' + scale + '); transform-origin: top center; margin-bottom: ' + ((scale - 1) * 800) + 'px;'"
                          class="relative flex-shrink-0 transition-transform duration-200 overflow-visible">
                          
-                         <div id="certificate-print-area" class="certificate-print-area w-[1131px] h-[800px] bg-white border-[24px] border-double border-primary rounded-3xl p-12 relative shadow-xl text-center tracking-wide flex flex-col justify-between select-none">
+                         <div id="certificate-print-area" class="certificate-print-area w-[1131px] h-[800px] bg-white border-[24px] border-double border-primary rounded-3xl p-16 relative shadow-xl text-center tracking-wide flex flex-col justify-between select-none">
                              <!-- Background watermark / ornaments -->
-                             <div class="absolute inset-4 border border-primary/20 pointer-events-none"></div>
+                             <div class="absolute inset-6 border border-primary/20 pointer-events-none"></div>
                              <div class="floral-corner floral-corner-tl"></div>
                              <div class="floral-corner floral-corner-tr"></div>
                              <div class="floral-corner floral-corner-bl"></div>
                              <div class="floral-corner floral-corner-br"></div>
                              
-                             <!-- Certificate Header -->
-                             <div class="space-y-1">
+                             <!-- CỤM HEADER (logo + tiêu đề, ~22% height) -->
+                             <div class="flex flex-col items-center justify-start select-none" style="height: 120px;">
                                  <div class="flex justify-center items-center">
                                      <img src="/nhuongquyen/logo.png" class="h-16 w-auto object-contain" alt="Logo Bánh Mì Má Hải" />
                                  </div>
-                                 <h3 class="text-[48px] leading-tight font-extrabold text-primary uppercase tracking-widest mt-2 font-quicksand">CHỨNG NHẬN ĐÀO TẠO</h3>
-                                 <div class="h-[2px] w-64 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto"></div>
+                                 <h3 class="text-[48px] leading-none font-extrabold text-primary uppercase tracking-widest mt-2 font-quicksand">CHỨNG NHẬN ĐÀO TẠO</h3>
+                                 <div class="h-[2px] w-64 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mt-1"></div>
                              </div>
      
-                             <!-- Certificate Body -->
-                             <div class="my-2 space-y-2">
-                                 <p class="text-[26px] text-[#444444] font-bold italic font-quicksand">Bánh Mì Má Hải trân trọng chứng nhận Anh/chị:</p>
-                                 <h2 class="text-[72px] leading-none font-black text-slate-900 uppercase tracking-wide font-quicksand" x-text="learnerName" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 950px; margin-left: auto; margin-right: auto;"></h2>
-                                 <div class="text-[26px] text-[#444444] font-bold max-w-3xl mx-auto font-quicksand" x-text="'Địa chỉ điểm bán: ' + storeAddress" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"></div>
-                                 <p class="text-[24px] text-[#444444] leading-relaxed max-w-4xl mx-auto font-bold font-quicksand mt-1">
-                                     Đã hoàn thành xuất sắc kỳ kiểm tra kiến thức và đạt tiêu chuẩn vận hành xe bánh mì chả cá thuộc hệ thống nhượng quyền thương hiệu <strong class="text-primary font-extrabold">Bánh Mì Má Hải</strong>.
+                             <!-- CỤM NHÂN DANH + MÔ TẢ (ở giữa, ~52% height) -->
+                             <div class="flex flex-col items-center justify-start" style="margin-top: 48px;">
+                                 <p class="text-[26px] text-[#444444] font-bold italic font-quicksand leading-none">Bánh Mì Má Hải trân trọng chứng nhận Anh/chị:</p>
+                                 <h2 id="certificate-name" class="text-[80px] leading-none font-black text-slate-900 uppercase tracking-wide font-quicksand" x-text="learnerName" style="margin-top: 20px; white-space: nowrap; transition: font-size 0.1s; overflow: visible; width: auto; max-width: 100%;"></h2>
+                                 <div id="certificate-address" class="text-[30px] text-[#444444] font-bold mx-auto font-quicksand" x-text="'Địa chỉ điểm bán: ' + storeAddress" style="margin-top: 16px; white-space: nowrap; transition: font-size 0.1s; overflow: visible; width: auto; max-width: 100%;"></div>
+                                 
+                                 <!-- Khoảng thở lớn: 56px gap tách cụm nhân danh và mô tả -->
+                                 <p class="text-[24px] text-[#444444] leading-relaxed max-w-4xl mx-auto font-bold font-quicksand" style="margin-top: 56px; text-wrap: balance;">
+                                     Đã hoàn thành xuất sắc kỳ kiểm tra kiến thức và đạt tiêu chuẩn vận hành xe bánh mì chả cá thuộc hệ thống nhượng quyền thương hiệu&nbsp;<strong class="text-primary font-extrabold" style="white-space: nowrap;">Bánh Mì Má Hải.</strong>
                                  </p>
                              </div>
      
-                             <!-- Certificate Footer -->
-                             <div class="flex justify-between items-end w-full px-12 mt-2">
-                                 <div class="text-left text-[22px] font-bold text-[#444444] space-y-1 font-quicksand">
+                             <!-- CỤM FOOTER (baseline ngang ở ~26% dưới cùng) -->
+                             <div class="flex justify-between items-end w-full px-8 select-none" style="margin-top: 48px;">
+                                 <div class="text-left text-[22px] font-bold text-[#444444] space-y-1 font-quicksand leading-normal">
                                      <div style="white-space: nowrap;">Mã chứng nhận: <span class="font-mono text-slate-900" x-text="testAttemptId"></span></div>
                                      <div style="white-space: nowrap;">Ngày cấp: <span class="text-slate-900" x-text="new Date().toLocaleDateString('vi-VN')"></span></div>
                                  </div>
-                                 <div class="text-center space-y-10">
+                                 <div class="text-center space-y-8 select-none">
                                      <div class="text-[22px] font-extrabold text-[#444444] tracking-wider uppercase font-quicksand" style="white-space: nowrap;">ĐẠI DIỆN BÁNH MÌ MÁ HẢI</div>
                                      <div class="text-[22px] font-extrabold text-primary tracking-widest uppercase font-quicksand" style="white-space: nowrap;">BÁNH MÌ MÁ HẢI</div>
                                  </div>
