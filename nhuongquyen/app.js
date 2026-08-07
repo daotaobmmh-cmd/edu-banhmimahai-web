@@ -50,6 +50,8 @@ function app() {
         previouslyFocusedElement: null,
         successOverlayTimer: null,
         downloadingCertificate: false,
+        resultSaved: false,
+        certificateDownloadFailed: false,
         
         // Init
         init() {
@@ -452,6 +454,9 @@ function app() {
                 this.testAttemptId = 'attempt_nq_' + Date.now() + '_' + Math.random().toString(36).slice(2, 10);
             }
             
+            this.resultSaved = false;
+            this.certificateDownloadFailed = false;
+            
             // Initialize test state
             this.testQuestions = this.pickTest();
             this.testAnswers = {};
@@ -645,6 +650,7 @@ function app() {
                     if (typeof data.passed === 'boolean') this.resultPassed = data.passed;
                     if (typeof data.threshold === 'number') this.resultThreshold = data.threshold;
                     this.resultSendingStatus = 'success';
+                    this.resultSaved = true;
                     this.resultAutoRetryAttempt = 0;
                     try {
                         localStorage.removeItem('nhuongquyen:pendingQuizResult');
@@ -791,6 +797,7 @@ function app() {
         async downloadCertificate() {
                 if (this.downloadingCertificate) return;
                 this.downloadingCertificate = true;
+                this.certificateDownloadFailed = false;
                 
                 try {
                     if (typeof html2canvas === 'undefined') {
@@ -816,7 +823,8 @@ function app() {
                     link.click();
                 } catch (err) {
                     console.error('Error generating certificate image:', err);
-                    alert('Có lỗi xảy ra khi tải ảnh chứng nhận. Chúng tôi sẽ chuyển hướng sang chế độ In để thay thế.');
+                    this.certificateDownloadFailed = true;
+                    alert('Có lỗi xảy ra khi tạo ảnh chứng nhận. Kết quả thi đã được lưu thành công trên hệ thống. Chúng tôi sẽ chuyển sang chế độ In dự phòng để thay thế.');
                     window.print();
                 } finally {
                     this.downloadingCertificate = false;
