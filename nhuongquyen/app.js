@@ -335,10 +335,10 @@ function app() {
             if (!q) return '';
             const answeredKey = this.studyProgress[q.id];
             if (answeredKey === undefined) {
-                return 'border-slate-100 bg-white hover:border-mh-orange/30 hover:bg-slate-50';
+                return 'border-slate-100 bg-white hover:border-primary/30 hover:bg-slate-50';
             }
             if (option.key === q.correctAnswer) {
-                return 'border-mh-aqua/20 bg-mh-aqua/10 text-slate-800 border-2';
+                return 'border-emerald-200 bg-emerald-50 text-emerald-900 border-2';
             }
             if (option.key === answeredKey) {
                 return 'border-error/20 bg-error/10 text-error border-2';
@@ -350,10 +350,10 @@ function app() {
             if (!q) return '';
             const answeredKey = this.studyProgress[q.id];
             if (answeredKey === undefined) {
-                return 'bg-slate-50 text-slate-400 group-hover:bg-mh-orange group-hover:text-white';
+                return 'bg-slate-50 text-slate-400 group-hover:bg-primary group-hover:text-white';
             }
             if (option.key === q.correctAnswer) {
-                return 'bg-mh-aqua-deep text-white';
+                return 'bg-emerald-600 text-white';
             }
             if (option.key === answeredKey) {
                 return 'bg-error text-white';
@@ -389,19 +389,19 @@ function app() {
             const sec = this.sections[idx];
             if (!sec) return '';
             
-            let base = 'relative p-4 rounded-2xl cursor-pointer transition-all focus-visible:ring-2 focus-visible:ring-mh-orange focus-visible:outline-none border-2 ';
+            let base = 'relative p-4 rounded-2xl cursor-pointer transition-all focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none border-2 ';
             
             if (activeSectionIndex === idx) {
                 // Active Card: Orange border, light orange tint
-                base += 'border-mh-orange bg-mh-orange/5 ring-1 ring-mh-orange/35 ';
+                base += 'border-primary bg-primary/5 ring-1 ring-primary/35 ';
             } else {
                 // Learning Status Card
                 if (sec.progress === 100) {
-                    // Đã học xong: Aqua border, light aqua tint
-                    base += 'border-mh-aqua/20 bg-mh-aqua/5 text-slate-800';
+                    // Đã học xong: Emerald border, light emerald tint
+                    base += 'border-emerald-200 bg-emerald-50/50 text-slate-800';
                 } else if (idx === this.shouldContinueSectionIndex || sec.progress > 0) {
-                    // Đang học / nên tiếp tục: Warning border (yellow/orange), white bg
-                    base += 'border-mh-orange/40 bg-white text-slate-800';
+                    // Đang học / nên tiếp tục: Primary border (orange), white bg
+                    base += 'border-primary/40 bg-white text-slate-800';
                 } else {
                     // Chưa học: Gray border, white background
                     base += 'border-slate-100 bg-white text-slate-500 hover:border-slate-200';
