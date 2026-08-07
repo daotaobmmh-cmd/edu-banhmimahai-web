@@ -6,6 +6,7 @@
     <title>Bánh Mì Má Hải · Cổng Đào Tạo Nhượng Quyền</title>
     <link rel="shortcut icon" href="/nhuongquyen/favicon.png" type="image/png" />
     <link rel="icon" href="/nhuongquyen/favicon.png" type="image/png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     
     <!-- Tailwind CSS CDN and Configuration -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -489,12 +490,14 @@
                     </div>
                 </div>
 
-                <!-- Print button (Only displayed when candidate passes) -->
-                <div x-show="resultPassed" class="flex justify-center">
-                    <button @click="window.print()" class="px-8 py-3.5 bg-primary hover:bg-opacity-90 text-white rounded-2xl font-bold font-quicksand shadow-lg shadow-primary/20 flex items-center gap-2 transition-all transform active:scale-95 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none">
-                        <span class="material-symbols-outlined text-xl">print</span>
-                        <span>In chứng nhận vận hành (A4)</span>
+                <!-- Download button (Only displayed when candidate passes) -->
+                <div x-show="resultPassed" class="flex flex-col items-center gap-3">
+                    <button @click="downloadCertificate()" :disabled="downloadingCertificate" class="px-8 py-3.5 bg-primary hover:bg-opacity-90 text-white rounded-2xl font-bold font-quicksand shadow-lg shadow-primary/20 flex items-center gap-2 transition-all transform active:scale-95 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none disabled:opacity-75 disabled:cursor-wait">
+                        <span x-show="!downloadingCertificate" class="material-symbols-outlined text-xl">download</span>
+                        <span x-show="downloadingCertificate" class="w-5 h-5 rounded-full border-2 border-white border-t-transparent animate-spin"></span>
+                        <span x-text="downloadingCertificate ? 'Đang tạo ảnh chứng nhận...' : 'Tải xuống chứng nhận đào tạo'"></span>
                     </button>
+                    <p class="text-xs text-slate-400 font-medium">Bản ảnh chất lượng cao để lưu trữ và in ấn</p>
                 </div>
 
                 <!-- Score statistics container -->

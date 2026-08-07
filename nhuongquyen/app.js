@@ -49,6 +49,7 @@ function app() {
         guardErrorText: '',
         previouslyFocusedElement: null,
         successOverlayTimer: null,
+        downloadingCertificate: false,
         
         // Init
         init() {
@@ -784,6 +785,41 @@ function app() {
                 setTimeout(() => {
                     if (this.feedbackStatuses[q.id] === 'error') this.feedbackStatuses[q.id] = 'idle';
                 }, 4000);
+            },
+
+            async downloadCertificate() {
+                if (this.downloadingCertificate) return;
+                this.downloadingCertificate = true;
+                
+                try {
+                    if (typeof html2canvas === 'undefined') {
+                        throw new Error('html2canvas is not loaded');
+                    }
+                    
+                    const element = document.getElementById('certificate-print-area');
+                    if (!element) {
+                        throw new Error('Certificate print area not found');
+                    }
+                    
+                    const canvas = await html2canvas(element, {
+                        scale: 3,
+                        useCORS: true,
+                        backgroundColor: "#ffffff",
+                        logging: false
+                    });
+                    
+                    const link = document.createElement('a');
+                    const cleanName = (this.learnerName || 'Doi_Tac').trim().replace(/\s+/g, '_');
+                    link.download = `Chung_Nhan_Dao_Tao_${cleanName}.png`;
+                    link.href = canvas.toDataURL('image/png');
+                    link.click();
+                } catch (err) {
+                    console.error('Error generating certificate image:', err);
+                    alert('Có lỗi xảy ra khi tải ảnh chứng nhận. Chúng tôi sẽ chuyển hướng sang chế độ In để thay thế.');
+                    window.print();
+                } finally {
+                    this.downloadingCertificate = false;
+                }
             }
         }
     }
