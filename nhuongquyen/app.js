@@ -785,9 +785,10 @@ function app() {
                 setTimeout(() => {
                     if (this.feedbackStatuses[q.id] === 'error') this.feedbackStatuses[q.id] = 'idle';
                 }, 4000);
-            },
+            }
+        },
 
-            async downloadCertificate() {
+        async downloadCertificate() {
                 if (this.downloadingCertificate) return;
                 this.downloadingCertificate = true;
                 
@@ -823,4 +824,3 @@ function app() {
             }
         }
     }
-}
