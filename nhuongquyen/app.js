@@ -5,6 +5,7 @@ function app() {
         currentView: 'gate', // 'gate', 'study', 'test', 'result'
         showGuide: false,
         showConfirmSubmit: false,
+        showFullscreenCert: false,
         
         // Learner State
         learnerName: '',
@@ -795,40 +796,39 @@ function app() {
         },
 
         async downloadCertificate() {
-                if (this.downloadingCertificate) return;
-                this.downloadingCertificate = true;
-                this.certificateDownloadFailed = false;
-                
-                try {
-                    if (typeof html2canvas === 'undefined') {
-                        throw new Error('html2canvas is not loaded');
-                    }
-                    
-                    const element = document.getElementById('certificate-print-area');
-                    if (!element) {
-                        throw new Error('Certificate print area not found');
-                    }
-                    
-                    const canvas = await html2canvas(element, {
-                        scale: 3,
-                        useCORS: true,
-                        backgroundColor: "#ffffff",
-                        logging: false
-                    });
-                    
-                    const link = document.createElement('a');
-                    const cleanName = (this.learnerName || 'Doi_Tac').trim().replace(/\s+/g, '_');
-                    link.download = `Chung_Nhan_Dao_Tao_${cleanName}.png`;
-                    link.href = canvas.toDataURL('image/png');
-                    link.click();
-                } catch (err) {
-                    console.error('Error generating certificate image:', err);
-                    this.certificateDownloadFailed = true;
-                    alert('Có lỗi xảy ra khi tạo ảnh chứng nhận. Kết quả thi đã được lưu thành công trên hệ thống. Chúng tôi sẽ chuyển sang chế độ In dự phòng để thay thế.');
-                    window.print();
-                } finally {
-                    this.downloadingCertificate = false;
+            if (this.downloadingCertificate) return;
+            this.downloadingCertificate = true;
+            this.certificateDownloadFailed = false;
+            
+            try {
+                if (typeof html2canvas === 'undefined') {
+                    throw new Error('html2canvas is not loaded');
                 }
+                
+                const element = document.getElementById('certificate-print-area');
+                if (!element) {
+                    throw new Error('Certificate print area not found');
+                }
+                
+                const canvas = await html2canvas(element, {
+                    scale: 2,
+                    useCORS: true,
+                    backgroundColor: "#ffffff",
+                    logging: false
+                });
+                
+                const link = document.createElement('a');
+                link.download = `chung-nhan-${this.testAttemptId}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            } catch (err) {
+                console.error('Error generating certificate image:', err);
+                this.certificateDownloadFailed = true;
+                alert('Có lỗi xảy ra khi tạo ảnh chứng nhận. Kết quả thi đã được lưu thành công trên hệ thống. Chúng tôi sẽ chuyển sang chế độ In dự phòng để thay thế.');
+                window.print();
+            } finally {
+                this.downloadingCertificate = false;
             }
+        }
         }
     }

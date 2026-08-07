@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 def test_responsive():
-    url = "https://daotao.banhmimahai.vn/nhuongquyen/?v=5"
+    url = "https://daotao.banhmimahai.vn/nhuongquyen/?v=6"
     viewports = [320, 360, 390, 768, 1280]
     height = 900
     
@@ -128,6 +128,64 @@ def test_responsive():
                     failed = True
                 else:
                     print(f"PASS: 360px layout spec matches responsive priority constraints!")
+                
+                # Assert 4: Transition to results view to verify Certificate scaling & touch targets
+                print("Transitioning to Results view to verify Certificate specifications...")
+                driver.execute_script("""
+                    var el = document.querySelector('[x-data]');
+                    var data = null;
+                    if (el.__x) {
+                        data = el.__x.$data;
+                    } else if (el._x_dataStack) {
+                        data = el._x_dataStack[0];
+                    }
+                    if (data) {
+                        data.resultPassed = true;
+                        data.currentView = 'result';
+                        data.testAttemptId = 'test-12345';
+                    }
+                """)
+                time.sleep(2)
+                
+                cert_spec = driver.execute_script("""
+                    var certWrapper = document.getElementById('certificate-scale-wrapper');
+                    var viewBtn = Array.from(document.querySelectorAll('button')).find(el => el.textContent.includes('Xem lớn'));
+                    var dlBtn = Array.from(document.querySelectorAll('button')).find(el => el.textContent.includes('Tải chứng nhận'));
+                    
+                    if (!certWrapper) return { status: false, msg: "Certificate scale wrapper not found" };
+                    if (!viewBtn) return { status: false, msg: "View large button not found" };
+                    if (!dlBtn) return { status: false, msg: "Download button not found" };
+                    
+                    var rect = certWrapper.getBoundingClientRect();
+                    var ratio = rect.height / rect.width;
+                    var targetRatio = 1131 / 800;
+                    var ratioError = Math.abs(ratio - targetRatio) / targetRatio;
+                    
+                    var viewRect = viewBtn.getBoundingClientRect();
+                    var dlRect = dlBtn.getBoundingClientRect();
+                    
+                    var ratioOk = ratioError <= 0.01;
+                    var viewBtnOk = viewRect.width >= 44 && viewRect.height >= 44;
+                    var dlBtnOk = dlRect.width >= 44 && dlRect.height >= 44;
+                    
+                    var ok = ratioOk && viewBtnOk && dlBtnOk;
+                    return {
+                        status: ok,
+                        ratio: ratio,
+                        ratioError: ratioError,
+                        viewWidth: viewRect.width,
+                        viewHeight: viewRect.height,
+                        dlWidth: dlRect.width,
+                        dlHeight: dlRect.height,
+                        msg: "Cert Aspect Ratio: " + ratio.toFixed(4) + " (Target: " + targetRatio.toFixed(4) + ", Error: " + (ratioError * 100).toFixed(2) + "%), View Button Touch Target: " + viewRect.width + "x" + viewRect.height + "px (>=44px), Download Button Touch Target: " + dlRect.width + "x" + dlRect.height + "px (>=44px)"
+                    };
+                """)
+                print(f"360px Cert Layout Assert: {cert_spec['msg']}")
+                if not cert_spec['status']:
+                    print("FAIL: Certificate responsive or touch target requirements violated!")
+                    failed = True
+                else:
+                    print("PASS: Certificate aspect ratio scaled correctly and touch targets are valid!")
                     
         except Exception as e:
             print(f"ERROR during check at {width}px: {e}")
