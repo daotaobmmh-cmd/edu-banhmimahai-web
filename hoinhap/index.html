@@ -78,18 +78,24 @@
     <div id="app-container">
     
     <!-- Header -->
-    <header class="flex justify-between items-center px-8 h-20 w-full fixed top-0 left-0 z-50 bg-white border-b border-slate-100 shadow-sm">
+    <header class="flex justify-between items-center px-4 sm:px-8 h-16 sm:h-20 w-full fixed top-0 left-0 z-50 bg-white border-b border-slate-100 shadow-sm">
         <div class="flex items-center gap-2">
             <h1 @click="currentView = 'gate'" tabindex="0" class="font-bold text-xl tracking-tight text-primary cursor-pointer font-quicksand focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none rounded-lg p-1">VIET STREET FOOD</h1>
         </div>
-        <nav class="hidden md:flex gap-10 absolute left-1/2 -translate-x-1/2">
-            <button :class="currentView === 'study' ? 'text-primary border-b-2 border-primary' : 'text-slate-500 hover:text-primary'" @click="startStudy()" class="font-quicksand font-bold pb-1 transition-all focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none rounded-lg">Luyện tập</button>
-            <button :class="currentView === 'test' ? 'text-primary border-b-2 border-primary' : 'text-slate-500 hover:text-primary'" @click="startTest()" class="font-quicksand font-bold pb-1 transition-all focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none rounded-lg">Thi chính thức</button>
+        <nav class="flex bg-slate-100/80 p-1 rounded-xl items-center absolute left-1/2 -translate-x-1/2">
+            <button :class="currentView === 'study' ? 'bg-white text-primary shadow-sm font-bold' : 'text-slate-600 hover:text-slate-900 font-medium'" @click="startStudy()" class="px-2.5 py-1 sm:px-4 sm:py-1.5 rounded-lg transition-all text-[13px] sm:text-sm focus-visible:outline-none font-quicksand">
+                <span class="inline md:hidden">Luyện tập</span>
+                <span class="hidden md:inline">Luyện tập</span>
+            </button>
+            <button :class="currentView === 'test' ? 'bg-white text-primary shadow-sm font-bold' : 'text-slate-600 hover:text-slate-900 font-medium'" @click="startTest()" class="px-2.5 py-1 sm:px-4 sm:py-1.5 rounded-lg transition-all text-[13px] sm:text-sm focus-visible:outline-none font-quicksand">
+                <span class="inline md:hidden">Thi</span>
+                <span class="hidden md:inline">Thi chính thức</span>
+            </button>
         </nav>
         <div class="flex items-center">
-            <button @click="showGuide = true" class="flex items-center gap-2 px-5 py-2 rounded-full bg-slate-50 text-slate-600 hover:bg-slate-100 transition-all font-quicksand font-bold text-sm focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+            <button @click="showGuide = true" class="flex items-center justify-center gap-2 w-10 h-10 md:w-auto md:h-auto md:px-5 md:py-2 rounded-full bg-slate-50 text-slate-600 hover:bg-slate-100 transition-all font-quicksand font-bold text-sm focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none" aria-label="Hướng dẫn">
                 <span class="material-symbols-outlined text-[20px] flex-shrink-0 w-5 h-5 flex items-center justify-center">help</span>
-                <span>Hướng dẫn</span>
+                <span class="hidden md:inline">Hướng dẫn</span>
             </button>
         </div>
     </header>
