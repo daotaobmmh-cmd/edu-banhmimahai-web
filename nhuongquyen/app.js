@@ -5,7 +5,6 @@ function app() {
         currentView: 'gate', // 'gate', 'study', 'test', 'result'
         showGuide: false,
         showConfirmSubmit: false,
-        showFullscreenCert: false,
         
         // Learner State
         learnerName: '',

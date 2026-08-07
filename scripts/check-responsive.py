@@ -149,37 +149,138 @@ def test_responsive():
                 
                 cert_spec = driver.execute_script("""
                     var certWrapper = document.getElementById('certificate-scale-wrapper');
+                    var certPrintArea = document.getElementById('certificate-print-area');
                     var dlBtn = Array.from(document.querySelectorAll('button')).find(el => el.textContent.includes('Tải chứng nhận'));
+                    var viewBtn = Array.from(document.querySelectorAll('button')).find(el => el.textContent.includes('Xem lớn'));
                     
-                    if (!certWrapper) return { status: false, msg: "Certificate scale wrapper not found" };
+                    if (!certWrapper) return { status: false, msg: "Certificate scale wrapper not found (#certificate-scale-wrapper)" };
+                    if (!certPrintArea) return { status: false, msg: "Certificate print area not found (#certificate-print-area)" };
                     if (!dlBtn) return { status: false, msg: "Download button not found" };
+                    if (viewBtn) return { status: false, msg: "View large button found but it should be completely removed" };
+                    
+                    var tag = certPrintArea.tagName.toUpperCase();
+                    if (tag === 'IMG' || tag === 'CANVAS') {
+                        return { status: false, msg: "Certificate print area should not be an <img> or <canvas> element" };
+                    }
                     
                     var rect = certWrapper.getBoundingClientRect();
                     var ratio = rect.width / rect.height;
                     var targetRatio = 1131 / 800;
                     var ratioError = Math.abs(ratio - targetRatio) / targetRatio;
+                    if (ratioError > 0.01) {
+                        return { status: false, msg: "Cert Aspect Ratio error: " + (ratioError * 100).toFixed(2) + "% is > 1% (Ratio: " + ratio.toFixed(4) + ")" };
+                    }
+                    
+                    var titleEl = certPrintArea.querySelector('h3');
+                    var nameEl = certPrintArea.querySelector('h2');
+                    var descEl = certPrintArea.querySelector('p.max-w-4xl') || certPrintArea.querySelector('p:nth-of-type(2)');
+                    var metaEl = certPrintArea.querySelector('div.text-left');
+                    
+                    if (!titleEl) return { status: false, msg: "Title (h3) inside certificate not found" };
+                    if (!nameEl) return { status: false, msg: "Name (h2) inside certificate not found" };
+                    if (!descEl) return { status: false, msg: "Description (p) inside certificate not found" };
+                    if (!metaEl) return { status: false, msg: "Meta block (div.text-left) inside certificate not found" };
+                    
+                    var titleFs = parseInt(window.getComputedStyle(titleEl).fontSize);
+                    var nameFs = parseInt(window.getComputedStyle(nameEl).fontSize);
+                    var descFs = parseInt(window.getComputedStyle(descEl).fontSize);
+                    var metaFs = parseInt(window.getComputedStyle(metaEl).fontSize);
+                    
+                    if (titleFs < 44) return { status: false, msg: "Title font-size (" + titleFs + "px) is less than 44px" };
+                    if (nameFs < 64) return { status: false, msg: "Name font-size (" + nameFs + "px) is less than 64px" };
+                    if (descFs < 24) return { status: false, msg: "Description font-size (" + descFs + "px) is less than 24px" };
+                    if (metaFs < 22) return { status: false, msg: "Meta font-size (" + metaFs + "px) is less than 22px" };
+                    
+                    function getLuminance(rgbStr) {
+                        var parts = rgbStr.match(/\\d+/g).map(Number);
+                        var r = parts[0] / 255;
+                        var g = parts[1] / 255;
+                        var b = parts[2] / 255;
+                        var a = [r, g, b].map(function(v) {
+                            return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+                        });
+                        return 0.2126 * a[0] + 0.7152 * a[1] + 0.0722 * a[2];
+                    }
+                    var fgColor = window.getComputedStyle(metaEl).color;
+                    var bgColor = "rgb(255, 255, 255)";
+                    var l1 = getLuminance(fgColor);
+                    var l2 = getLuminance(bgColor);
+                    var brightest = Math.max(l1, l2);
+                    var darkest = Math.min(l1, l2);
+                    var contrast = (brightest + 0.05) / (darkest + 0.05);
+                    
+                    if (contrast < 4.5) {
+                        return { status: false, msg: "Meta text color contrast ratio (" + contrast.toFixed(2) + ":1) is less than 4.5:1 (fg: " + fgColor + ")" };
+                    }
                     
                     var dlRect = dlBtn.getBoundingClientRect();
+                    if (dlRect.height < 44) {
+                        return { status: false, msg: "Download button touch height (" + dlRect.height + "px) is less than 44px" };
+                    }
                     
-                    var ratioOk = ratioError <= 0.01;
-                    var dlBtnOk = dlRect.width >= 44 && dlRect.height >= 44;
-                    
-                    var ok = ratioOk && dlBtnOk;
                     return {
-                        status: ok,
+                        status: true,
                         ratio: ratio,
                         ratioError: ratioError,
                         dlWidth: dlRect.width,
                         dlHeight: dlRect.height,
-                        msg: "Cert Aspect Ratio: " + ratio.toFixed(4) + " (Target: " + targetRatio.toFixed(4) + ", Error: " + (ratioError * 100).toFixed(2) + "%), Download Button Touch Target: " + dlRect.width + "x" + dlRect.height + "px (>=44px)"
+                        msg: "Cert Aspect Ratio: " + ratio.toFixed(4) + " (Target: " + targetRatio.toFixed(4) + ", Error: " + (ratioError * 100).toFixed(2) + "%), Title FS: " + titleFs + "px (>=44), Name FS: " + nameFs + "px (>=64), Desc FS: " + descFs + "px (>=24), Meta FS: " + metaFs + "px (>=22), Contrast: " + contrast.toFixed(2) + ":1 (>=4.5:1), Download height: " + dlRect.height + "px (>=44px)"
                     };
                 """)
                 print(f"360px Cert Layout Assert: {cert_spec['msg']}")
                 if not cert_spec['status']:
-                    print("FAIL: Certificate responsive or touch target requirements violated!")
+                    print("FAIL: Certificate responsive or design requirements violated!")
                     failed = True
                 else:
-                    print("PASS: Certificate aspect ratio scaled correctly and touch targets are valid!")
+                    print("PASS: Certificate design specifications and aspect ratio constraints match successfully!")
+                    
+                # Assert 5: Mock html2canvas download and verify 2x output canvas size 2262x1600
+                print("Mocking html2canvas to verify high-res export logic (2262x1600)...")
+                driver.execute_script("""
+                    window.mockHtml2canvasCalled = false;
+                    window.mockCanvasWidth = 0;
+                    window.mockCanvasHeight = 0;
+                    window.originalHtml2canvas = window.html2canvas;
+                    
+                    window.html2canvas = function(el, options) {
+                        window.mockHtml2canvasCalled = true;
+                        var mockScale = options && options.scale ? options.scale : 1;
+                        var canvas = document.createElement('canvas');
+                        canvas.width = 1131 * mockScale;
+                        canvas.height = 800 * mockScale;
+                        window.mockCanvasWidth = canvas.width;
+                        window.mockCanvasHeight = canvas.height;
+                        
+                        canvas.toDataURL = function() {
+                            return "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
+                        };
+                        return Promise.resolve(canvas);
+                    };
+                    
+                    var dlBtn = Array.from(document.querySelectorAll('button')).find(el => el.textContent.includes('Tải chứng nhận'));
+                    if (dlBtn) {
+                        dlBtn.click();
+                    }
+                """)
+                time.sleep(2)
+                
+                export_spec = driver.execute_script("""
+                    var passed = window.mockHtml2canvasCalled && window.mockCanvasWidth === 2262 && window.mockCanvasHeight === 1600;
+                    window.html2canvas = window.originalHtml2canvas;
+                    return {
+                        status: passed,
+                        called: window.mockHtml2canvasCalled,
+                        w: window.mockCanvasWidth,
+                        h: window.mockCanvasHeight,
+                        msg: "html2canvas invoked: " + window.mockHtml2canvasCalled + " (Expected: true), Generated canvas size: " + window.mockCanvasWidth + "x" + window.mockCanvasHeight + "px (Expected: 2262x1600px)"
+                    };
+                """)
+                print(f"Export high-res PNG Assert: {export_spec['msg']}")
+                if not export_spec['status']:
+                    print("FAIL: Certificate download function did not produce a 2262x1600 image!")
+                    failed = True
+                else:
+                    print("PASS: High-res PNG export logic is verified and correct!")
                     
         except Exception as e:
             print(f"ERROR during check at {width}px: {e}")
