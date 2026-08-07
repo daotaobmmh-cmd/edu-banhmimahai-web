@@ -284,7 +284,7 @@
                         
                         <!-- Combined Feedback & Explanation Callout -->
                         <div class="mt-8 animate-in fade-in slide-in-from-bottom-4 duration-500" x-show="studyProgress[currentStudyQuestion?.id] !== undefined">
-                            <div :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'bg-emerald-50/60 border border-emerald-100/80' : 'bg-slate-50 border border-slate-200'" class="p-6 rounded-xl text-left">
+                            <div :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'bg-emerald-50/60 border border-emerald-100/80' : 'bg-red-50/60 border border-red-100/80'" class="p-6 rounded-xl text-left">
                                 <div class="flex items-center gap-2 mb-3">
                                     <span class="material-symbols-outlined text-[20px] flex-shrink-0 w-5 h-5 flex items-center justify-center" :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'text-emerald-500' : 'text-error'" x-text="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'check_circle' : 'cancel'"></span>
                                     <span class="font-bold text-[15px] font-quicksand" :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'text-emerald-700' : 'text-error'" x-text="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'Đúng rồi · Đáp án: ' + currentStudyQuestion?.correctAnswer : 'Chưa chính xác · Đáp án đúng: ' + currentStudyQuestion?.correctAnswer"></span>
