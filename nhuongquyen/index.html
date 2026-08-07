@@ -270,7 +270,7 @@
                                 <button :class="getStudyOptionClass(opt)" :disabled="studyProgress[currentStudyQuestion.id] !== undefined" @click="selectStudyAnswer(opt.key)" class="group flex items-center justify-between min-h-[44px] py-2.5 px-3.5 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
                                     <div class="flex items-center flex-1 min-w-0">
                                         <span :class="getStudyLetterClass(opt)" class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold font-quicksand mr-3 transition-colors text-base" x-text="opt.key"></span>
-                                        <span class="flex-1 min-w-0 text-base leading-snug font-medium text-slate-700 text-left" x-text="opt.text"></span>
+                                        <span class="flex-1 min-w-0 text-base leading-snug font-medium text-slate-700 text-left font-quicksand" x-text="opt.text"></span>
                                     </div>
                                     
                                     <template x-if="studyProgress[currentStudyQuestion.id] !== undefined">
@@ -290,7 +290,7 @@
                                     <span class="material-symbols-outlined text-lg flex-shrink-0 w-4 h-4 flex items-center justify-center" :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'text-emerald-500' : 'text-error'" x-text="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'check' : 'close'"></span>
                                     <span class="font-bold text-base font-quicksand" :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'text-emerald-700' : 'text-error'" x-text="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'Đúng rồi · Đáp án: ' + currentStudyQuestion?.correctAnswer : 'Chưa chính xác · Đáp án đúng: ' + currentStudyQuestion?.correctAnswer"></span>
                                 </div>
-                                <p class="text-base leading-relaxed text-slate-700 font-medium" x-text="currentStudyQuestion?.explanation"></p>
+                                <p class="text-base leading-relaxed text-slate-700 font-medium font-quicksand" x-text="currentStudyQuestion?.explanation"></p>
                             </div>
                             
                             <!-- Feedback UI Practice Mode -->
@@ -301,7 +301,7 @@
                                               @input="feedbackStatuses[currentStudyQuestion.id] = 'idle'"
                                               placeholder="Góp ý của bạn về câu này" 
                                               rows="1" 
-                                              class="flex-1 min-w-0 resize-none px-4 py-2 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 font-medium text-slate-700 text-base overflow-hidden h-[44px] min-h-[44px] max-h-[100px]"
+                                              class="flex-1 min-w-0 resize-none px-4 py-2 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 font-medium text-slate-700 text-base font-quicksand overflow-hidden h-[44px] min-h-[44px] max-h-[100px]"
                                               style="min-height: 44px; height: 44px; max-height: 100px; overflow-y: hidden;"></textarea>
                                     <button @click="submitFeedback(currentStudyQuestion, 'practice')" 
                                             :disabled="!feedbackTexts[currentStudyQuestion.id] || !feedbackTexts[currentStudyQuestion.id].trim() || feedbackStatuses[currentStudyQuestion.id] === 'sending'" 
@@ -393,7 +393,7 @@
                                     <button :class="testAnswers[currentTestQuestion.id] === opt.key ? 'border-secondary bg-secondary/5 border-2 font-semibold' : 'border-slate-100 hover:border-slate-200 border-2'" @click="selectTestAnswer(opt.key)" class="flex items-center justify-between min-h-[44px] py-2.5 px-3.5 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full text-left focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
                                         <div class="flex items-center flex-1 min-w-0">
                                             <span :class="testAnswers[currentTestQuestion.id] === opt.key ? 'bg-secondary text-white' : 'bg-slate-50 text-slate-400'" class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold font-quicksand mr-3 text-base" x-text="opt.key"></span>
-                                            <span class="text-slate-700 font-medium text-base leading-snug" x-text="opt.text"></span>
+                                            <span class="text-slate-700 font-medium text-base leading-snug font-quicksand" x-text="opt.text"></span>
                                         </div>
                                     </button>
                                 </template>
@@ -598,7 +598,7 @@
                                                     opt.key !== w.question.correctAnswer && opt.key !== w.selectedAnswer ? 'bg-slate-100 text-slate-400' : ''
                                                 ].join(' ')"
                                                 class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold font-quicksand mr-3 text-base" x-text="opt.key"></span>
-                                                <span class="text-base font-medium leading-snug text-left" x-text="opt.text"></span>
+                                                <span class="text-base font-medium leading-snug text-left font-quicksand" x-text="opt.text"></span>
                                             </div>
                                             
                                             <div class="flex-shrink-0 ml-3">
@@ -614,7 +614,7 @@
                                         <span class="material-symbols-outlined text-base flex-shrink-0 w-4 h-4 flex items-center justify-center">lightbulb</span>
                                         <span class="font-bold text-base font-quicksand uppercase tracking-wider">Giải thích</span>
                                     </div>
-                                    <p class="text-base text-slate-700 leading-relaxed font-medium" x-text="w.question.explanation"></p>
+                                    <p class="text-base text-slate-700 leading-relaxed font-medium font-quicksand" x-text="w.question.explanation"></p>
                                 </div>
                                 
                                 <div class="mt-4">
@@ -624,7 +624,7 @@
                                                   @input="feedbackStatuses[w.question.id] = 'idle'"
                                                   placeholder="Góp ý của bạn về câu này" 
                                                   rows="1" 
-                                                  class="flex-1 min-w-0 resize-none px-4 py-2 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 font-medium text-slate-700 text-base overflow-hidden h-[44px] min-h-[44px] max-h-[100px]"
+                                                  class="flex-1 min-w-0 resize-none px-4 py-2 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 font-medium text-slate-700 text-base font-quicksand overflow-hidden h-[44px] min-h-[44px] max-h-[100px]"
                                                   style="min-height: 44px; height: 44px; max-height: 100px; overflow-y: hidden;"></textarea>
                                         <button @click="submitFeedback(w.question, 'test')" 
                                                 :disabled="!feedbackTexts[w.question.id] || !feedbackTexts[w.question.id].trim() || feedbackStatuses[w.question.id] === 'sending'" 
