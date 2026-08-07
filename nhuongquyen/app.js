@@ -62,28 +62,28 @@ function app() {
                 
                 if (index < 20) {
                     sectionNo = 1;
-                    sectionName = "Tổng quan Thương hiệu & Chuẩn bị Khai trương";
+                    sectionName = "Nhập môn Má Hải & Chuẩn bị khai trương";
                 } else if (index < 40) {
                     sectionNo = 2;
-                    sectionName = "Quản lý Tài chính & Vận hành Giai đoạn Đầu";
+                    sectionName = "Bí quyết bán hàng & Quản lý tiền nong";
                 } else if (index < 60) {
                     sectionNo = 3;
-                    sectionName = "Kỹ thuật Chiên chả & Kỹ năng Bán hàng";
+                    sectionName = "Công thức làm bánh & Kỹ năng phục vụ";
                 } else if (index < 80) {
                     sectionNo = 4;
-                    sectionName = "Kiểm soát Nguyên liệu & Truyền thông Điểm bán";
+                    sectionName = "Quản lý nguyên liệu & Quảng bá điểm bán";
                 } else if (index < 100) {
                     sectionNo = 5;
-                    sectionName = "An toàn Vận hành & Vệ sinh Xe đẩy";
+                    sectionName = "Giữ gìn vệ sinh & An toàn xe đẩy";
                 } else if (index < 110) {
                     sectionNo = 6;
-                    sectionName = "Quy trình Nhập hàng & Kiểm kê trên Zalo OA";
+                    sectionName = "Quy trình nhập hàng & Kiểm hàng";
                 } else if (index < 120) {
                     sectionNo = 7;
-                    sectionName = "Chuẩn bị Điểm bán & Kỹ thuật Rã đông, Chiên chả";
+                    sectionName = "Bày trí quầy kệ & Kỹ thuật chiên chả";
                 } else {
                     sectionNo = 8;
-                    sectionName = "Quy trình Phục vụ & Chế biến Bánh mì Thực tế";
+                    sectionName = "Thực hành làm bánh & Xử lý tình huống";
                 }
                 
                 return {
@@ -152,14 +152,14 @@ function app() {
         // Update Sections list progress
         updateSections() {
             const canonicalTitles = [
-                "Tổng quan Thương hiệu & Chuẩn bị Khai trương",
-                "Quản lý Tài chính & Vận hành Giai đoạn Đầu",
-                "Kỹ thuật Chiên chả & Kỹ năng Bán hàng",
-                "Kiểm soát Nguyên liệu & Truyền thông Điểm bán",
-                "An toàn Vận hành & Vệ sinh Xe đẩy",
-                "Quy trình Nhập hàng & Kiểm kê trên Zalo OA",
-                "Chuẩn bị Điểm bán & Kỹ thuật Rã đông, Chiên chả",
-                "Quy trình Phục vụ & Chế biến Bánh mì Thực tế"
+                "Nhập môn Má Hải & Chuẩn bị khai trương",
+                "Bí quyết bán hàng & Quản lý tiền nong",
+                "Công thức làm bánh & Kỹ năng phục vụ",
+                "Quản lý nguyên liệu & Quảng bá điểm bán",
+                "Giữ gìn vệ sinh & An toàn xe đẩy",
+                "Quy trình nhập hàng & Kiểm hàng",
+                "Bày trí quầy kệ & Kỹ thuật chiên chả",
+                "Thực hành làm bánh & Xử lý tình huống"
             ];
             
             const map = new Map();
