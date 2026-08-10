@@ -137,7 +137,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "a",
     "explanation": "Khung giá bán là 15.000đ đến 20.000đ mỗi ổ. Mức thấp nhất là 15k. Ở TP.HCM thường bán 20k, ở tỉnh có thể 15k đến 17k tùy mặt bằng khu vực. Bán dưới khung này thì lời mỗi ổ rất mỏng, ngày nào nguyên liệu lên giá là dễ bán mà gần như không còn lời.",
-    "displayNumber": 5
+    "displayNumber": 5,
+    "image": "/nhuongquyen/images/questions/lt-5.png"
   },
   {
     "id": "theory-6",
@@ -305,7 +306,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Bộ nhận diện chuẩn của Má Hải có 3 phần: đồng phục cam gồm áo, nón và tạp dề, decal dán xe cùng standee đặt cạnh, và dù Má Hải che phía trên. Đủ 3 phần thì khách đi ngang nhìn phát là nhận ra xe của hệ thống Má Hải, không nhầm với xe bánh mì khác.",
-    "displayNumber": 11
+    "displayNumber": 11,
+    "image": "/nhuongquyen/images/questions/lt-11.png"
   },
   {
     "id": "theory-12",
@@ -473,7 +475,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "a",
     "explanation": "Mức tối thiểu là trên 30 ổ liên tục ở nhà. Chưa đạt mức này thì ngày khai trương gặp 5 tới 7 khách dồn cùng lúc là tay run, ổ bánh mì ra dở, khách ăn lần đầu thấy chán không quay lại. Tốc độ thì cứ nhanh hết sức mình mà vẫn giữ ổ bánh mì đúng vị. Càng luyện tập thì sẽ càng quen.",
-    "displayNumber": 17
+    "displayNumber": 17,
+    "image": "/nhuongquyen/images/questions/lt-17.png"
   },
   {
     "id": "theory-18",
@@ -613,7 +616,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Khách tới rồi mới chiên là sai, vì lúc đó khách phải đợi cả thời gian chiên một mẻ mới, giờ cao điểm dồn 5 tới 7 khách là không kịp. Cách đúng là chiên gối đầu: chiên trước một mẻ, đóng nắp thùng giữ nhiệt sau mỗi lần gắp, vơi còn 5 tới 7 ổ là bắt mẻ tiếp ngay để khách luôn có chả nóng.",
-    "displayNumber": 22
+    "displayNumber": 22,
+    "image": "/nhuongquyen/images/questions/lt-22.png"
   },
   {
     "id": "theory-23",
@@ -669,7 +673,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "a",
     "explanation": "15 ngày đầu là khoảng cần thiết để khách đi đường và bà con quanh khu vực quen được chỗ xe. Tuần đầu khách mới thấy lần đầu, chỉ ngó qua chứ chưa ghé thử, phải qua tuần thứ hai bà con mới có phản xạ tạt vào mua bánh mì Má Hải. Dời xe sớm hơn 15 ngày là bao nhiêu công lan tin từ ngày khai trương coi như bỏ. Sau 15 ngày mà thấy điểm bán không hiệu quả thật thì lúc đó mới cân nhắc đổi chỗ.",
-    "displayNumber": 24
+    "displayNumber": 24,
+    "image": "/nhuongquyen/images/questions/lt-24.png"
   },
   {
     "id": "theory-25",
@@ -809,7 +814,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "b",
     "explanation": "Ví dụ dự kiến bán 50 ổ thì nhập nguyên liệu cho 60 ổ, dự kiến 100 ổ thì nhập cho 120 ổ. Đủ phòng khi khách đông bất ngờ, mà cũng không dư để nguyên liệu mất tươi. Nhập quá nhiều thì chả tồn, rau héo; nhập quá ít thì hết hàng giữa ca, khách bỏ đi luôn.",
-    "displayNumber": 29
+    "displayNumber": 29,
+    "image": "/nhuongquyen/images/questions/lt-29.png"
   },
   {
     "id": "theory-30",
@@ -865,7 +871,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "b",
     "explanation": "Bán nhiều hay ít, ngày nào cũng tách một phần nhỏ bỏ riêng làm quỹ dự phòng trước, phần còn lại mới đụng tới việc mua nguyên liệu. Quỹ này dùng cho ngày mưa, ngày bệnh, ngày xe hỏng cần sửa.",
-    "displayNumber": 31
+    "displayNumber": 31,
+    "image": "/nhuongquyen/images/questions/lt-31.png"
   },
   {
     "id": "theory-32",
@@ -1089,7 +1096,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Vỏ ổ bánh mì đạt chuẩn cần có 3 dấu hiệu dễ nhận: vỏ giòn nghe tiếng \"rắc\" khi bóp, có mùi thơm bánh mì mới ra lò, và được đặt bên cạnh bếp / trong lò nướng xe để giữ được độ giòn đến lúc khách mua.",
-    "displayNumber": 39
+    "displayNumber": 39,
+    "image": "/nhuongquyen/images/questions/lt-39.png"
   },
   {
     "id": "theory-40",
@@ -1117,7 +1125,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Chả chuẩn của Má Hải cần đủ cả 3 dấu hiệu trên cùng lúc: màu đúng, kết cấu đúng và mùi đúng. Thiếu 1 trong 3 là mẻ đó chưa đạt, phải chiên thêm hoặc bỏ ra để lại lần sau. Khách ăn bánh mì lần đầu thường nhớ vị chả nhiều nhất, gặp mẻ chưa đạt là khó quay lại.",
-    "displayNumber": 40
+    "displayNumber": 40,
+    "image": "/nhuongquyen/images/questions/lt-40.png"
   },
   {
     "id": "theory-41",
@@ -1145,7 +1154,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Sốt tứ vị là đặc trưng của Má Hải, phết phải gọn trong ruột bánh mì thì gặp đủ cả 3 cái lợi trên. Cái quan trọng nhất là khách ăn nhớ vị sốt mà không có cảm giác tay áo dính sốt hay vỏ bánh mì mềm xốp giữa chừng. Phết tràn ra ngoài vỏ là mất hết, khách ăn 1 lần là khó quay lại.",
-    "displayNumber": 41
+    "displayNumber": 41,
+    "image": "/nhuongquyen/images/questions/lt-41.png"
   },
   {
     "id": "theory-42",
@@ -1201,7 +1211,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "a",
     "explanation": "Chả ngon nhất trong 15 phút đầu sau khi chiên. Đặt vào thùng giữ nóng đúng chuẩn thì dùng trong 45 phút đến 1 tiếng, qua mốc này chả bắt đầu nguội và mất vị. Anh chị canh nhịp chiên gối đầu để chả trong thùng luôn ở trong khung này.",
-    "displayNumber": 43
+    "displayNumber": 43,
+    "image": "/nhuongquyen/images/questions/lt-43.png"
   },
   {
     "id": "theory-44",
@@ -1229,7 +1240,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "b",
     "explanation": "Chả khô xác, cứng và bay mất mùi cá tươi là dấu hiệu mẻ chả đã quá lâu trong thùng giữ nóng, thường là quá khung 45 phút đến 1 tiếng hoặc bị mở nắp ra vào quá nhiều. Lúc này anh chị gắp mẻ ra ngoài, mang về nhà ăn được bình thường, chỉ là không bán cho khách nữa để giữ chất lượng đều giữa các ổ.",
-    "displayNumber": 44
+    "displayNumber": 44,
+    "image": "/nhuongquyen/images/questions/lt-44.png"
   },
   {
     "id": "theory-45",
@@ -1285,7 +1297,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Câu chào hiệu quả cần đủ cả 3 yếu tố trên cùng lúc. Khách chỉ liếc xe trong một vài giây, thiếu 1 trong 3 yếu tố thì khách đi luôn, không có cơ hội chào lại lần thứ hai trong buổi sáng đó.",
-    "displayNumber": 46
+    "displayNumber": 46,
+    "image": "/nhuongquyen/images/questions/lt-46.png"
   },
   {
     "id": "theory-47",
@@ -1313,7 +1326,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Khi đưa bánh mì cho khách, anh chị nên làm đủ cả 3 việc: tay sạch và đưa bằng 2 tay, có nụ cười kèm câu mời ngắn, và dừng việc khác vài giây để khách thấy mình được trân trọng. Những chi tiết này rất nhỏ nhưng làm khách thấy ấm lòng, dễ quay lại.",
-    "displayNumber": 47
+    "displayNumber": 47,
+    "image": "/nhuongquyen/images/questions/lt-47.png"
   },
   {
     "id": "theory-48",
@@ -1341,7 +1355,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "a",
     "explanation": "Định lượng nội bộ có thể quy ra gam, nhưng lúc bán thật anh chị cần cách nhớ đơn giản hơn: ổ cỡ thường gắp khoảng 7 tới 8 sợi chả cá cỡ vừa và rải đều dọc ổ. Tuần đầu có thể cân thử vài lần để quen mắt, sau đó nhìn số sợi và độ phủ trong ổ là làm được nhanh hơn.",
-    "displayNumber": 48
+    "displayNumber": 48,
+    "image": "/nhuongquyen/images/questions/lt-48.png"
   },
   {
     "id": "theory-49",
@@ -1369,7 +1384,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Đóng gói 2 lớp gặp đủ cả 3 cái lợi trên cùng lúc: túi giấy bên trong an toàn hơn khi tiếp xúc trực tiếp với bánh mì, túi nilon bên ngoài giúp khách cầm sạch tay, và cả ổ bánh mì được giữ gọn khi mang đi.",
-    "displayNumber": 49
+    "displayNumber": 49,
+    "image": "/nhuongquyen/images/questions/lt-49.png"
   },
   {
     "id": "theory-50",
@@ -1621,7 +1637,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Dưa leo trong bánh mì Má Hải cần giòn, mát và chạy dọc theo ổ. Chọn dưa non, rửa sạch, cắt dọc thành thanh rồi xếp đều trong ruột bánh mì thì khách cắn miếng nào cũng cảm nhận được độ tươi.",
-    "displayNumber": 58
+    "displayNumber": 58,
+    "image": "/nhuongquyen/images/questions/lt-58.png"
   },
   {
     "id": "theory-59",
@@ -2825,7 +2842,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "c",
     "explanation": "Mỗi đơn có phiếu và mã QR thanh toán riêng. Anh chị cần gửi đơn, chờ phiếu, kiểm tra lại rồi mới quét đúng mã trên phiếu.",
-    "displayNumber": 101
+    "displayNumber": 101,
+    "image": "/nhuongquyen/images/questions/th-101.png"
   },
   {
     "id": "practice-2",
@@ -2853,7 +2871,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "a",
     "explanation": "Liên kết đúng số điện thoại và tạo phím tắt giúp anh chị vào ứng dụng nhanh, không phải quét lại mã từ đầu.",
-    "displayNumber": 102
+    "displayNumber": 102,
+    "image": "/nhuongquyen/images/questions/th-102.png"
   },
   {
     "id": "practice-3",
@@ -2881,7 +2900,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "c",
     "explanation": "Danh sách món và số lượng giúp anh chị chọn đủ ngay từ đầu, tránh gửi thiếu rồi phải xử lý lại đơn.",
-    "displayNumber": 103
+    "displayNumber": 103,
+    "image": "/nhuongquyen/images/questions/th-103.png"
   },
   {
     "id": "practice-4",
@@ -2909,7 +2929,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Anh chị cần gửi đơn, chờ phiếu, kiểm tra lại rồi mới quét đúng mã QR trên phiếu để thanh toán.",
-    "displayNumber": 104
+    "displayNumber": 104,
+    "image": "/nhuongquyen/images/questions/th-104.png"
   },
   {
     "id": "practice-5",
@@ -2937,7 +2958,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "b",
     "explanation": "Lịch sử đơn giúp anh chị xem lại mã đơn và trạng thái xử lý mà không phải tìm lại trong nhiều đoạn trò chuyện.",
-    "displayNumber": 105
+    "displayNumber": 105,
+    "image": "/nhuongquyen/images/questions/th-105.png"
   },
   {
     "id": "practice-6",
@@ -2965,7 +2987,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Video cần bắt đầu khi thùng còn nguyên và chạy liên tục trong lúc mở hàng. Đây là căn cứ rõ nhất nếu cần báo thiếu hoặc lỗi.",
-    "displayNumber": 106
+    "displayNumber": 106,
+    "image": "/nhuongquyen/images/questions/th-106.png"
   },
   {
     "id": "practice-7",
@@ -2993,7 +3016,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "b",
     "explanation": "Bao bì đạt cần còn nguyên, kín, không phồng và có tem nhãn rõ để anh chị kiểm tra trước khi cất hàng.",
-    "displayNumber": 107
+    "displayNumber": 107,
+    "image": "/nhuongquyen/images/questions/th-107.png"
   },
   {
     "id": "practice-8",
@@ -3021,7 +3045,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "c",
     "explanation": "Chả đổi màu, có mùi lạ, dính nhớt hoặc vụn bất thường thì không dùng để bán cho khách.",
-    "displayNumber": 108
+    "displayNumber": 108,
+    "image": "/nhuongquyen/images/questions/th-108.png"
   },
   {
     "id": "practice-9",
@@ -3049,7 +3074,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "a",
     "explanation": "Video, hình ảnh và thông tin cụ thể giúp Má Hải có đủ căn cứ để đối chiếu và xử lý nhanh hơn.",
-    "displayNumber": 109
+    "displayNumber": 109,
+    "image": "/nhuongquyen/images/questions/th-109.png"
   },
   {
     "id": "practice-10",
@@ -3077,7 +3103,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "b",
     "explanation": "Chả cá cần được đưa vào ngăn đông và bảo quản sạch, tách khỏi dụng cụ có thể làm bẩn hoặc làm rách bao.",
-    "displayNumber": 110
+    "displayNumber": 110,
+    "image": "/nhuongquyen/images/questions/th-110.png"
   },
   {
     "id": "practice-11",
@@ -3105,7 +3132,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Xe, hướng nhận diện và standee cần hỗ trợ nhau để khách nhận ra điểm bán từ xa.",
-    "displayNumber": 111
+    "displayNumber": 111,
+    "image": "/nhuongquyen/images/questions/th-111.png"
   },
   {
     "id": "practice-12",
@@ -3133,7 +3161,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "c",
     "explanation": "Chia khu rõ giúp điểm bán vừa an toàn vừa sạch, đồng thời hạn chế lấy nhầm đồ khi đang đông khách.",
-    "displayNumber": 112
+    "displayNumber": 112,
+    "image": "/nhuongquyen/images/questions/th-112.png"
   },
   {
     "id": "practice-13",
@@ -3189,7 +3218,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "b",
     "explanation": "Mã QR bị che hoặc đặt quá thấp sẽ làm khách khó quét và kéo dài bước thanh toán.",
-    "displayNumber": 114
+    "displayNumber": 114,
+    "image": "/nhuongquyen/images/questions/th-114.png"
   },
   {
     "id": "practice-15",
@@ -3245,7 +3275,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "c",
     "explanation": "Nước nóng và việc mở bao ngâm trực tiếp dễ làm chả mềm, nát và nhiễm bẩn. Cách đúng là rã đông trong ngăn mát hoặc giữ nguyên bao khi xả nước lạnh.",
-    "displayNumber": 116
+    "displayNumber": 116,
+    "image": "/nhuongquyen/images/questions/th-116.png"
   },
   {
     "id": "practice-17",
@@ -3273,7 +3304,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "b",
     "explanation": "Chả đạt cần giữ được độ đàn hồi, không dính, không vụn và không có mùi lạ trước khi đưa vào chiên.",
-    "displayNumber": 117
+    "displayNumber": 117,
+    "image": "/nhuongquyen/images/questions/th-117.png"
   },
   {
     "id": "practice-18",
@@ -3301,7 +3333,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "a",
     "explanation": "Dầu đủ nóng nhưng chưa quá già giúp chả phồng đẹp, chín đều và ít bị cháy.",
-    "displayNumber": 118
+    "displayNumber": 118,
+    "image": "/nhuongquyen/images/questions/th-118.png"
   },
   {
     "id": "practice-19",
@@ -3329,7 +3362,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Chiên lượng vừa và đảo nhẹ giúp chả phồng, chín đều; thả quá nhiều cùng lúc sẽ làm dầu nguội nhanh.",
-    "displayNumber": 119
+    "displayNumber": 119,
+    "image": "/nhuongquyen/images/questions/th-119.png"
   },
   {
     "id": "practice-20",
@@ -3357,7 +3391,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "c",
     "explanation": "Giữ chả nóng và làm sạch dầu sau mỗi mẻ giúp chả bán ra ngon hơn, còn mẻ sau ít bị ám mùi khét.",
-    "displayNumber": 120
+    "displayNumber": 120,
+    "image": "/nhuongquyen/images/questions/th-120.png"
   },
   {
     "id": "practice-21",
@@ -3385,7 +3420,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "a",
     "explanation": "Chuẩn bị đủ nguyên liệu và vật dụng giúp anh chị làm liên tục, không phải dừng giữa chừng khi đang có khách.",
-    "displayNumber": 121
+    "displayNumber": 121,
+    "image": "/nhuongquyen/images/questions/th-121.png"
   },
   {
     "id": "practice-22",
@@ -3413,7 +3449,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "c",
     "explanation": "Rạch bánh, rưới sốt bên trong rồi thêm đúng phần nhân giúp ổ bánh mì gọn và hạn chế sốt lem ra ngoài.",
-    "displayNumber": 122
+    "displayNumber": 122,
+    "image": "/nhuongquyen/images/questions/th-122.png"
   },
   {
     "id": "practice-23",
@@ -3441,7 +3478,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "b",
     "explanation": "Giảm bớt chả ở ổ có trứng giúp phần nhân nằm gọn, dễ cầm và dễ đóng gói hơn.",
-    "displayNumber": 123
+    "displayNumber": 123,
+    "image": "/nhuongquyen/images/questions/th-123.png"
   },
   {
     "id": "practice-24",
@@ -3469,7 +3507,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Sốt nằm bên trong giúp bánh mì gọn và sạch hơn khi giao cho khách.",
-    "displayNumber": 124
+    "displayNumber": 124,
+    "image": "/nhuongquyen/images/questions/th-124.png"
   },
   {
     "id": "practice-25",
@@ -3497,7 +3536,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "a",
     "explanation": "Ba lớp đóng gói giúp ổ bánh mì sạch, gọn và thuận tay khi khách cầm hoặc mang đi.",
-    "displayNumber": 125
+    "displayNumber": 125,
+    "image": "/nhuongquyen/images/questions/th-125.png"
   },
   {
     "id": "practice-26",
@@ -3525,7 +3565,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "c",
     "explanation": "“Ít cay” chưa nói rõ khách muốn giảm phần nào. Hỏi lại một câu ngắn giúp anh chị làm đúng ý khách ngay từ đầu.",
-    "displayNumber": 126
+    "displayNumber": 126,
+    "image": "/nhuongquyen/images/questions/th-126.png"
   },
   {
     "id": "practice-27",
@@ -3553,7 +3594,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "b",
     "explanation": "Bánh mì trứng là món chính song song nhưng anh chị không được tự ý đổi món khi khách chưa đồng ý.",
-    "displayNumber": 127
+    "displayNumber": 127,
+    "image": "/nhuongquyen/images/questions/th-127.png"
   },
   {
     "id": "practice-28",
@@ -3581,7 +3623,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "d",
     "explanation": "Giữ thứ tự, xác nhận đơn và nói rõ thời gian chờ giúp điểm bán đông nhưng vẫn công bằng và ít nhầm món.",
-    "displayNumber": 128
+    "displayNumber": 128,
+    "image": "/nhuongquyen/images/questions/th-128.png"
   },
   {
     "id": "practice-29",
@@ -3609,7 +3652,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "a",
     "explanation": "Anh chị cần kiểm tra xác nhận tiền vào và đúng số tiền trước khi giao bánh mì cho khách.",
-    "displayNumber": 129
+    "displayNumber": 129,
+    "image": "/nhuongquyen/images/questions/th-129.png"
   },
   {
     "id": "practice-30",
@@ -3637,7 +3681,8 @@ const QUESTIONS = [
     ],
     "correctAnswer": "b",
     "explanation": "Thái độ hợp tác, giấy tờ Má Hải cung cấp và chứng từ nguồn hàng rõ ràng giúp anh chị xử lý tình huống bình tĩnh, đúng việc.",
-    "displayNumber": 130
+    "displayNumber": 130,
+    "image": "/nhuongquyen/images/questions/th-130.png"
   }
 ];
 

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đánh giá hình ảnh minh họa câu hỏi Nhượng quyền</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbf7ef;
+        }
+        .font-quicksand {
+            font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+</head>
+<body class="py-12 px-6 max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-orange-100 pb-6 mb-8 gap-4">
+        <div>
+            <div class="flex items-center gap-2 mb-2">
+                <span class="px-2.5 py-1 bg-amber-500/10 text-amber-600 rounded-full text-xs font-bold uppercase tracking-wider">Review Mode</span>
+                <span id="stat-count" class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-bold uppercase tracking-wider">0 câu có hình ảnh</span>
+            </div>
+            <h1 class="text-3xl font-bold font-quicksand text-slate-800">Danh Sách Câu Hỏi Trắc Nghiệm Có Ảnh Minh Họa</h1>
+            <p class="text-slate-500 mt-1 text-sm">Anh chị có thể mở trực tiếp file này trên trình duyệt để kiểm tra toàn bộ 45 câu hỏi có hình ảnh đã đồng bộ.</p>
+        </div>
+        <div class="flex gap-2">
+            <button onclick="filterType('all')" id="btn-all" class="px-4 py-2 rounded-xl bg-orange-500 text-white font-bold text-sm shadow-md transition-all">Tất cả</button>
+            <button onclick="filterType('theory')" id="btn-theory" class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 transition-all">Lý thuyết</button>
+            <button onclick="filterType('practice')" id="btn-practice" class="px-4 py-2 rounded-xl bg-white border border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 transition-all">Thực hành</button>
+        </div>
+    </div>
+
+    <!-- Questions Grid -->
+    <div id="questions-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically -->
+    </div>
+
+    <script src="questions.js"></script>
+    <script>
+        let currentFilter = 'all';
+
+        function getSectionName(index) {
+            if (index < 20) return "Nhập môn Má Hải & Chuẩn bị khai trương";
+            if (index < 40) return "Bí quyết bán hàng & Quản lý tiền nong";
+            if (index < 60) return "Công thức làm bánh & Kỹ năng phục vụ";
+            if (index < 80) return "Quản lý nguyên liệu & Quảng bá điểm bán";
+            if (index < 100) return "Giữ gìn vệ sinh & An toàn xe đẩy";
+            if (index < 110) return "Quy trình nhập hàng & Kiểm hàng";
+            if (index < 120) return "Bày trí quầy kệ & Kỹ thuật chiên chả";
+            return "Thực hành làm bánh & Xử lý tình huống";
+        }
+
+        function renderQuestions() {
+            const container = document.getElementById('questions-container');
+            container.innerHTML = '';
+            
+            // Map the questions with section info like in app.js
+            const mappedQuestions = QUESTIONS.map((q, idx) => {
+                let sectionNo = 1;
+                if (idx < 20) sectionNo = 1;
+                else if (idx < 40) sectionNo = 2;
+                else if (idx < 60) sectionNo = 3;
+                else if (idx < 80) sectionNo = 4;
+                else if (idx < 100) sectionNo = 5;
+                else if (idx < 110) sectionNo = 6;
+                else if (idx < 120) sectionNo = 7;
+                else sectionNo = 8;
+                return { ...q, sectionNo, sectionName: getSectionName(idx) };
+            });
+
+            // Filter questions that have images
+            let filtered = mappedQuestions.filter(q => q.image);
+            
+            if (currentFilter === 'theory') {
+                filtered = filtered.filter(q => q.id.startsWith('theory-'));
+            } else if (currentFilter === 'practice') {
+                filtered = filtered.filter(q => q.id.startsWith('practice-'));
+            }
+
+            document.getElementById('stat-count').innerText = `${filtered.length} câu có hình ảnh`;
+
+            filtered.forEach(q => {
+                const card = document.createElement('div');
+                card.className = "bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow";
+                
+                // Get correct answer text
+                const correctOpt = q.options.find(o => o.key === q.correctAnswer);
+                const correctText = correctOpt ? `${correctOpt.key.toUpperCase()}. ${correctOpt.text}` : '';
+
+                // Build HTML
+                card.innerHTML = `
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-[10px] font-bold text-amber-600 bg-amber-500/10 px-2 py-0.5 rounded-full uppercase tracking-wider">
+                                ${q.id.startsWith('theory-') ? 'Lý Thuyết' : 'Thực Hành'}
+                            </span>
+                            <span class="text-[10px] font-medium text-slate-400">
+                                Câu ${q.displayNumber} · Phần ${q.sectionNo}
+                            </span>
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-sm md:text-base leading-snug mb-4">${q.question}</h3>
+                        
+                        <div class="mb-4 rounded-xl overflow-hidden bg-slate-50 border border-slate-100 flex justify-center items-center h-48">
+                            <img src="${q.image}" alt="Minh họa" class="max-h-full max-w-full object-contain" />
+                        </div>
+                        
+                        <!-- Options List -->
+                        <div class="space-y-1.5 mb-4 text-xs text-slate-600">
+                            ${q.options.map(o => `
+                                <div class="px-3 py-1.5 rounded-lg border ${o.key === q.correctAnswer ? 'border-emerald-200 bg-emerald-50 text-emerald-900 font-semibold' : 'border-slate-100 bg-slate-50/50'}">
+                                    <span class="font-bold mr-1">${o.key.toUpperCase()}.</span> ${o.text}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-slate-100 pt-3 mt-auto">
+                        <div class="bg-amber-500/5 border border-amber-500/10 p-3 rounded-xl text-[11px] text-slate-700">
+                            <strong class="text-amber-700 block uppercase tracking-wider mb-1">Giải thích:</strong>
+                            <p class="leading-relaxed font-medium">${q.explanation}</p>
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+
+        function filterType(type) {
+            currentFilter = type;
+            ['all', 'theory', 'practice'].forEach(t => {
+                const btn = document.getElementById(`btn-${t}`);
+                if (t === type) {
+                    btn.className = "px-4 py-2 rounded-xl bg-orange-500 text-white font-bold text-sm shadow-md transition-all";
+                } else {
+                    btn.className = "px-4 py-2 rounded-xl bg-white border border-slate-200 text-slate-600 font-bold text-sm hover:bg-slate-50 transition-all";
+                }
+            });
+            renderQuestions();
+        }
+
+        // Initial render
+        renderQuestions();
+    </script>
+</body>
+</html>

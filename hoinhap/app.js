@@ -10,11 +10,11 @@ function app() {
         learnerName: '',
         learnerDept: '',
         unitAllowlist: [
+            "Ban giám đốc",
+            "Phòng Kinh doanh",
             "Bộ phận Phát triển Khách hàng hiện hữu",
             "Phòng Marketing",
             "Bộ phận Phát triển nhượng quyền",
-            "Phòng Kinh doanh",
-            "Nhà máy MHF",
             "Phòng Kho vận",
             "Phòng Hành chính - Nhân sự",
             "Phòng Tài chính - Kế toán",
@@ -61,6 +61,8 @@ function app() {
         guardErrorText: '',
         previouslyFocusedElement: null,
         successOverlayTimer: null,
+        downloadingCertificate: false,
+        certificateDownloadFailed: false,
         
         // Init
         init() {
@@ -117,6 +119,23 @@ function app() {
             if (fallbackEl) {
                 fallbackEl.style.display = 'none';
             }
+            
+            // Watch changes to adjust certificate text sizes
+            this.$watch('learnerName', () => this.adjustCertLayout());
+            this.$watch('learnerDept', () => this.adjustCertLayout());
+            this.$watch('currentView', (view) => {
+                if (view === 'result') {
+                    const delays = [50, 150, 300, 600, 1000, 2000];
+                    delays.forEach(delay => {
+                        setTimeout(() => this.adjustCertLayout(), delay);
+                    });
+                    if (document.fonts) {
+                        document.fonts.ready.then(() => {
+                            this.adjustCertLayout();
+                        });
+                    }
+                }
+            });
         },
 
         // Helper: Shuffle array
@@ -127,7 +146,7 @@ function app() {
         // Update Sections list progress
         updateSections() {
             const canonicalTitles = [
-                "Hành trình, sản phẩm và địa điểm VSF",
+                "Hành trình, sản phẩm và địa điểm Má Hải",
                 "Hệ giá trị và tư duy làm việc",
                 "Hợp đồng lao động và kỷ luật",
                 "Nghỉ phép, chấm công và quy trình HR",
@@ -453,9 +472,12 @@ function app() {
             // Launch timer
             if (this.testTimerInterval) clearInterval(this.testTimerInterval);
             this.testTimerInterval = setInterval(() => {
-                if (this.currentView === 'test' && this.testTimer > 0) {
-                    this.testTimer--;
-                    if (this.testTimer === 0) {
+                if (this.currentView === 'test') {
+                    const elapsed = Math.floor((Date.now() - this.testStartTime.getTime()) / 1000);
+                    this.testTimer = 1800 - elapsed;
+                    if (this.testTimer <= 0) {
+                        this.testTimer = 0;
+                        clearInterval(this.testTimerInterval);
                         this.submitTest(true);
                     }
                 }
@@ -541,7 +563,7 @@ function app() {
                 }
             });
             
-            const threshold = (this.learnerDept === 'Nhà máy MHF' || this.learnerDept === 'Phòng Kho vận') ? 20 : 25;
+            const threshold = (this.learnerDept === 'Phòng Kho vận') ? 20 : 25;
             this.resultScore = correct;
             this.resultPassed = correct >= threshold;
             this.resultThreshold = threshold;
@@ -550,12 +572,17 @@ function app() {
             
             // Calculate time spent & timing contract fields (Fix for browser timer throttling on auto-submit)
             const startMs = this.testStartTime ? this.testStartTime.getTime() : Date.now();
-            const submittedAtDate = auto ? new Date(startMs + 1800000) : new Date();
-            const submittedAtISO = submittedAtDate.toISOString();
-            const startedAtISO = this.testStartedAtISO || new Date(startMs).toISOString();
+            let elapsedSecs = Math.max(1, Math.round((Date.now() - startMs) / 1000));
             
-            let diffSecs = auto ? 1800 : Math.max(1, Math.round((submittedAtDate.getTime() - startMs) / 1000));
-            if (diffSecs > 1800) diffSecs = 1800;
+            let diffSecs = auto ? 1800 : elapsedSecs;
+            if (diffSecs > 1800) {
+                diffSecs = 1800;
+                auto = true;
+            }
+            
+            const submittedAtDate = new Date(startMs + diffSecs * 1000);
+            const submittedAtISO = submittedAtDate.toISOString();
+            const startedAtISO = new Date(startMs).toISOString();
             
             this.resultTimeSpent = this.formatTime(diffSecs);
             this.testStartedAtISO = startedAtISO;
@@ -773,6 +800,90 @@ function app() {
                 setTimeout(() => {
                     if (this.feedbackStatuses[q.id] === 'error') this.feedbackStatuses[q.id] = 'idle';
                 }, 4000);
+            }
+        },
+
+        adjustCertLayout(retryCount = 0) {
+            this.$nextTick(() => {
+                const nameEl = document.getElementById('certificate-name');
+                const addrEl = document.getElementById('certificate-address');
+                if (nameEl) {
+                    if (nameEl.scrollWidth === 0 && retryCount < 10) {
+                        setTimeout(() => this.adjustCertLayout(retryCount + 1), 50);
+                        return;
+                    }
+                    nameEl.style.whiteSpace = 'nowrap';
+                    nameEl.style.fontSize = '64px';
+                    if (nameEl.scrollWidth > 955) {
+                        nameEl.style.fontSize = '52px';
+                    }
+                    if (nameEl.scrollWidth > 955) {
+                        nameEl.style.fontSize = '40px';
+                    }
+                    if (nameEl.scrollWidth > 955) {
+                        nameEl.style.fontSize = '32px';
+                        nameEl.style.whiteSpace = 'normal';
+                    }
+                }
+                if (addrEl) {
+                    addrEl.style.whiteSpace = 'nowrap';
+                    addrEl.style.fontSize = '22px';
+                    if (addrEl.scrollWidth > 955) {
+                        addrEl.style.fontSize = '20px';
+                    }
+                    if (addrEl.scrollWidth > 955) {
+                        addrEl.style.fontSize = '18px';
+                        addrEl.style.whiteSpace = 'normal';
+                    }
+                }
+            });
+        },
+
+        async downloadCertificate() {
+            if (this.downloadingCertificate) return;
+            this.downloadingCertificate = true;
+            this.certificateDownloadFailed = false;
+            
+            try {
+                if (typeof html2canvas === 'undefined') {
+                    throw new Error('html2canvas is not loaded');
+                }
+                
+                const element = document.getElementById('certificate-print-area');
+                const scaleWrapper = document.getElementById('certificate-scale-wrapper');
+                if (!element || !scaleWrapper) {
+                    throw new Error('Certificate elements not found');
+                }
+                
+                const originalTransform = scaleWrapper.style.transform;
+                const originalMarginBottom = scaleWrapper.style.marginBottom;
+                
+                scaleWrapper.style.transform = 'none';
+                scaleWrapper.style.marginBottom = '0px';
+                
+                void scaleWrapper.offsetHeight;
+                
+                const canvas = await html2canvas(element, {
+                    scale: 2,
+                    useCORS: true,
+                    backgroundColor: "#ffffff",
+                    logging: false
+                });
+                
+                scaleWrapper.style.transform = originalTransform;
+                scaleWrapper.style.marginBottom = originalMarginBottom;
+                
+                const link = document.createElement('a');
+                link.download = `chung-nhan-${this.testAttemptId}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            } catch (err) {
+                console.error('Error generating certificate image:', err);
+                this.certificateDownloadFailed = true;
+                alert('Có lỗi xảy ra khi tạo ảnh chứng nhận. Kết quả thi đã được lưu thành công trên hệ thống. Chúng tôi sẽ chuyển sang chế độ In dự phòng để thay thế.');
+                window.print();
+            } finally {
+                this.downloadingCertificate = false;
             }
         }
     }

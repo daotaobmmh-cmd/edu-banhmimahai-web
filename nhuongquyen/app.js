@@ -4,6 +4,7 @@ function app() {
         // App State
         currentView: 'gate', // 'gate', 'study', 'test', 'result'
         showGuide: false,
+        lightboxImage: null,
         showConfirmSubmit: false,
         
         // Learner State
@@ -95,6 +96,14 @@ function app() {
                     sectionName
                 };
             });
+
+            // Preload question images in the background for instant rendering
+            this.allQuestions.forEach(q => {
+                if (q.image) {
+                    const img = new Image();
+                    img.src = q.image;
+                }
+            });
             
             // Load learner info from localStorage
             this.learnerName = localStorage.getItem('nhuongquyen:learnerName') || '';
@@ -143,9 +152,15 @@ function app() {
             this.$watch('storeAddress', () => this.adjustCertLayout());
             this.$watch('currentView', (view) => {
                 if (view === 'result') {
-                    setTimeout(() => {
-                        this.adjustCertLayout();
-                    }, 50);
+                    const delays = [50, 150, 300, 600, 1000, 2000];
+                    delays.forEach(delay => {
+                        setTimeout(() => this.adjustCertLayout(), delay);
+                    });
+                    if (document.fonts) {
+                        document.fonts.ready.then(() => {
+                            this.adjustCertLayout();
+                        });
+                    }
                 }
             });
 
@@ -482,9 +497,12 @@ function app() {
             // Launch timer
             if (this.testTimerInterval) clearInterval(this.testTimerInterval);
             this.testTimerInterval = setInterval(() => {
-                if (this.currentView === 'test' && this.testTimer > 0) {
-                    this.testTimer--;
-                    if (this.testTimer === 0) {
+                if (this.currentView === 'test') {
+                    const elapsed = Math.floor((Date.now() - this.testStartTime.getTime()) / 1000);
+                    this.testTimer = 1800 - elapsed;
+                    if (this.testTimer <= 0) {
+                        this.testTimer = 0;
+                        clearInterval(this.testTimerInterval);
                         this.submitTest(true);
                     }
                 }
@@ -579,12 +597,17 @@ function app() {
             
             // Calculate time spent & timing contract fields
             const startMs = this.testStartTime ? this.testStartTime.getTime() : Date.now();
-            const submittedAtDate = auto ? new Date(startMs + 1800000) : new Date();
-            const submittedAtISO = submittedAtDate.toISOString();
-            const startedAtISO = this.testStartedAtISO || new Date(startMs).toISOString();
+            let elapsedSecs = Math.max(1, Math.round((Date.now() - startMs) / 1000));
             
-            let diffSecs = auto ? 1800 : Math.max(1, Math.round((submittedAtDate.getTime() - startMs) / 1000));
-            if (diffSecs > 1800) diffSecs = 1800;
+            let diffSecs = auto ? 1800 : elapsedSecs;
+            if (diffSecs > 1800) {
+                diffSecs = 1800;
+                auto = true;
+            }
+            
+            const submittedAtDate = new Date(startMs + diffSecs * 1000);
+            const submittedAtISO = submittedAtDate.toISOString();
+            const startedAtISO = new Date(startMs).toISOString();
             
             this.resultTimeSpent = this.formatTime(diffSecs);
             this.testStartedAtISO = startedAtISO;
@@ -691,6 +714,14 @@ function app() {
                     this.postQuizResult(payload).catch(() => {});
                 }
             }, backoffMs);
+        },
+
+        openImageLightbox(src) {
+            this.lightboxImage = src;
+        },
+
+        closeImageLightbox() {
+            this.lightboxImage = null;
         },
 
         // Study Mode: Enter study view
@@ -805,35 +836,37 @@ function app() {
             }
         },
 
-        adjustCertLayout() {
+        adjustCertLayout(retryCount = 0) {
             this.$nextTick(() => {
                 const nameEl = document.getElementById('certificate-name');
                 const addrEl = document.getElementById('certificate-address');
                 if (nameEl) {
-                    nameEl.style.whiteSpace = 'nowrap';
-                    nameEl.style.fontSize = '80px';
-                    if (nameEl.scrollWidth > 955) {
-                        nameEl.style.fontSize = '64px';
+                    // Retry layout computation if element has 0 width (not rendered yet)
+                    if (nameEl.scrollWidth === 0 && retryCount < 10) {
+                        setTimeout(() => this.adjustCertLayout(retryCount + 1), 50);
+                        return;
                     }
+                    nameEl.style.whiteSpace = 'nowrap';
+                    nameEl.style.fontSize = '64px';
                     if (nameEl.scrollWidth > 955) {
-                        nameEl.style.fontSize = '48px';
+                        nameEl.style.fontSize = '52px';
                     }
                     if (nameEl.scrollWidth > 955) {
                         nameEl.style.fontSize = '40px';
+                    }
+                    if (nameEl.scrollWidth > 955) {
+                        nameEl.style.fontSize = '32px';
                         nameEl.style.whiteSpace = 'normal';
                     }
                 }
                 if (addrEl) {
                     addrEl.style.whiteSpace = 'nowrap';
-                    addrEl.style.fontSize = '30px';
+                    addrEl.style.fontSize = '22px';
                     if (addrEl.scrollWidth > 955) {
-                        addrEl.style.fontSize = '26px';
+                        addrEl.style.fontSize = '20px';
                     }
                     if (addrEl.scrollWidth > 955) {
-                        addrEl.style.fontSize = '24px';
-                    }
-                    if (addrEl.scrollWidth > 955) {
-                        addrEl.style.fontSize = '22px';
+                        addrEl.style.fontSize = '18px';
                         addrEl.style.whiteSpace = 'normal';
                     }
                 }
@@ -851,9 +884,20 @@ function app() {
                 }
                 
                 const element = document.getElementById('certificate-print-area');
-                if (!element) {
-                    throw new Error('Certificate print area not found');
+                const scaleWrapper = document.getElementById('certificate-scale-wrapper');
+                if (!element || !scaleWrapper) {
+                    throw new Error('Certificate elements not found');
                 }
+                
+                // Save original styles to disable scale transform temporarily during capture
+                const originalTransform = scaleWrapper.style.transform;
+                const originalMarginBottom = scaleWrapper.style.marginBottom;
+                
+                scaleWrapper.style.transform = 'none';
+                scaleWrapper.style.marginBottom = '0px';
+                
+                // Force browser reflow to settle layout at 1:1 scale
+                void scaleWrapper.offsetHeight;
                 
                 const canvas = await html2canvas(element, {
                     scale: 2,
@@ -861,6 +905,10 @@ function app() {
                     backgroundColor: "#ffffff",
                     logging: false
                 });
+                
+                // Restore scale transform immediately
+                scaleWrapper.style.transform = originalTransform;
+                scaleWrapper.style.marginBottom = originalMarginBottom;
                 
                 const link = document.createElement('a');
                 link.download = `chung-nhan-${this.testAttemptId}.png`;

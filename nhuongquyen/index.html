@@ -271,6 +271,13 @@
                         </div>
                         <h2 x-ref="practiceQuestionHeading" id="practice-question-heading" tabindex="-1" class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-5 leading-snug focus:outline-none" x-text="currentStudyQuestion?.question"></h2>
                         
+                        <!-- Question Image -->
+                        <template x-if="currentStudyQuestion?.image">
+                            <div class="mt-4 mb-6 flex justify-center">
+                                <img :src="currentStudyQuestion.image" alt="Hình minh họa" class="max-h-[320px] w-auto rounded-2xl cursor-pointer hover:opacity-90 transition-opacity border border-slate-100 shadow-sm" @click="openImageLightbox(currentStudyQuestion.image)" />
+                            </div>
+                        </template>
+                        
                         <div class="grid grid-cols-1 gap-3">
                             <template :key="idx" x-for="(opt, idx) in currentStudyQuestion?.options">
                                 <button :class="getStudyOptionClass(opt)" :disabled="studyProgress[currentStudyQuestion.id] !== undefined" @click="selectStudyAnswer(opt.key)" class="group flex items-center justify-between min-h-[44px] py-2.5 px-3.5 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
@@ -394,6 +401,13 @@
                             </div>
                             <h2 x-ref="testQuestionHeading" id="test-question-heading" tabindex="-1" class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-5 leading-snug focus:outline-none" x-text="currentTestQuestion?.question"></h2>
                             
+                            <!-- Question Image -->
+                            <template x-if="currentTestQuestion?.image">
+                                <div class="mt-4 mb-6 flex justify-center">
+                                    <img :src="currentTestQuestion.image" alt="Hình minh họa" class="max-h-[320px] w-auto rounded-2xl cursor-pointer hover:opacity-90 transition-opacity border border-slate-100 shadow-sm" @click="openImageLightbox(currentTestQuestion.image)" />
+                                </div>
+                            </template>
+                            
                             <div class="grid grid-cols-1 gap-3">
                                 <template :key="idx" x-for="(opt, idx) in currentTestQuestion?.options">
                                     <button :class="testAnswers[currentTestQuestion.id] === opt.key ? 'border-secondary bg-secondary/5 border-2 font-semibold' : 'border-slate-100 hover:border-slate-200 border-2'" @click="selectTestAnswer(opt.key)" class="flex items-center justify-between min-h-[44px] py-2.5 px-3.5 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full text-left focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
@@ -453,10 +467,11 @@
 
     <!-- Results Screen -->
     <template x-if="currentView === 'result'">
-        <main class="pt-24 bg-background min-h-screen p-6 pb-20">
+        <main class="pt-20 bg-background min-h-screen p-6 pb-20">
             <div class="max-w-4xl mx-auto space-y-10">
                 <!-- Inline Certificate Panel (Only displayed when candidate passes) -->
-                <div x-show="resultPassed" class="w-full overflow-hidden flex flex-col items-center gap-4">
+                <div x-show="resultPassed" class="w-full overflow-hidden flex flex-col items-center">
+
                     <div id="certificate-scale-wrapper" 
                          x-data="{
                              scale: 1,
@@ -465,61 +480,58 @@
                                  const targetWidth = 1131;
                                  this.scale = Math.min(parentWidth / targetWidth, 1);
                              }
-                         }"
-                         x-init="updateScale(); window.addEventListener('resize', () => updateScale()); $watch('currentView', () => setTimeout(() => updateScale(), 100))"
-                         :style="'width: 1131px; height: 800px; transform: scale(' + scale + '); transform-origin: top center; margin-bottom: ' + ((scale - 1) * 800) + 'px;'"
-                         class="relative flex-shrink-0 transition-transform duration-200 overflow-visible">
-                         
-                         <div id="certificate-print-area" class="certificate-print-area w-[1131px] h-[800px] bg-white border-[24px] border-double border-primary rounded-3xl p-16 relative shadow-xl text-center tracking-wide flex flex-col justify-between select-none">
-                             <!-- Background watermark / ornaments -->
-                             <div class="absolute inset-6 border border-primary/20 pointer-events-none"></div>
-                             <div class="floral-corner floral-corner-tl"></div>
-                             <div class="floral-corner floral-corner-tr"></div>
-                             <div class="floral-corner floral-corner-bl"></div>
-                             <div class="floral-corner floral-corner-br"></div>
+                          }"
+                          x-init="updateScale(); window.addEventListener('resize', () => updateScale()); $watch('currentView', () => setTimeout(() => updateScale(), 100))"
+                          :style="'width: 1131px; height: 800px; transform: scale(' + scale + '); transform-origin: top center; margin-bottom: ' + ((scale - 1) * 800) + 'px;'"
+                          class="relative flex-shrink-0 transition-transform duration-200 overflow-visible">
+                          
+                         <div id="certificate-print-area" class="certificate-print-area w-[1131px] h-[800px] bg-white border-[16px] border-double border-primary rounded-3xl pt-16 pb-20 px-24 relative shadow-xl shadow-slate-100/50 text-center tracking-wide flex flex-col justify-between select-none">
                              
-                             <!-- CỤM HEADER (logo + tiêu đề, ~22% height) -->
-                             <div class="flex flex-col items-center justify-start select-none" style="height: 120px;">
-                                 <div class="flex justify-center items-center">
-                                     <img src="/nhuongquyen/logo.png" class="h-16 w-auto object-contain" alt="Logo Bánh Mì Má Hải" />
-                                 </div>
-                                 <h3 class="text-[48px] leading-none font-extrabold text-primary uppercase tracking-widest mt-2 font-quicksand">CHỨNG NHẬN ĐÀO TẠO</h3>
-                                 <div class="h-[2px] w-64 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mt-1"></div>
+                             <!-- Elegant inner border outline -->
+                             <div class="absolute inset-8 border border-primary/10 rounded-2xl pointer-events-none"></div>
+                             
+                             <!-- CỤM HEADER -->
+                             <div class="flex flex-col items-center justify-start select-none" style="height: 140px; padding-top: 10px;">
+                                 <img src="/nhuongquyen/logo.png" class="h-14 w-auto object-contain" alt="Logo Bánh Mì Má Hải" />
+                                 <h3 class="text-[40px] leading-none font-bold text-primary uppercase tracking-[0.22em] mt-8 font-quicksand">CHỨNG NHẬN ĐÀO TẠO</h3>
                              </div>
      
-                             <!-- CỤM NHÂN DANH + MÔ TẢ (ở giữa, ~52% height) -->
-                             <div class="flex flex-col items-center justify-start" style="margin-top: 48px;">
-                                 <p class="text-[26px] text-[#444444] font-bold italic font-quicksand leading-none">Bánh Mì Má Hải trân trọng chứng nhận Anh/chị:</p>
-                                 <h2 id="certificate-name" class="text-[80px] leading-none font-black text-slate-900 uppercase tracking-wide font-quicksand" x-text="learnerName" style="margin-top: 20px; white-space: nowrap; transition: font-size 0.1s; overflow: visible; width: auto; max-width: 100%;"></h2>
-                                 <div id="certificate-address" class="text-[30px] text-[#444444] font-bold mx-auto font-quicksand" x-text="'Địa chỉ điểm bán: ' + storeAddress" style="margin-top: 16px; white-space: nowrap; transition: font-size 0.1s; overflow: visible; width: auto; max-width: 100%;"></div>
+                             <!-- CỤM NHÂN DANH + MÔ TẢ -->
+                             <div class="flex flex-col items-center justify-center flex-1" style="margin-top: 16px; margin-bottom: 16px;">
+                                 <p class="text-[16px] text-slate-400 font-bold uppercase tracking-[0.15em] font-quicksand leading-normal">Bánh Mì Má Hải trân trọng chứng nhận Anh/Chị:</p>
+                                 <h2 id="certificate-name" class="text-[64px] font-bold text-slate-800 uppercase tracking-wide font-quicksand" x-text="learnerName" style="margin-top: 16px; line-height: 1.4; white-space: nowrap; transition: font-size 0.1s; overflow: visible; width: auto; max-width: 100%;"></h2>
+                                 <div id="certificate-address" class="text-[20px] text-slate-500 font-bold mx-auto font-quicksand" x-text="'Địa chỉ điểm bán: ' + storeAddress" style="margin-top: 12px; line-height: 1.4; white-space: nowrap; transition: font-size 0.1s; overflow: visible; width: auto; max-width: 100%;"></div>
                                  
-                                 <!-- Khoảng thở lớn: 56px gap tách cụm nhân danh và mô tả -->
-                                 <p class="text-[24px] text-[#444444] leading-relaxed max-w-4xl mx-auto font-bold font-quicksand" style="margin-top: 56px; text-wrap: balance;">
-                                     Đã hoàn thành xuất sắc kỳ kiểm tra kiến thức và đạt tiêu chuẩn vận hành xe bánh mì chả cá thuộc hệ thống nhượng quyền thương hiệu&nbsp;<strong class="text-primary font-extrabold" style="white-space: nowrap;">Bánh Mì Má Hải.</strong>
+                                 <div class="w-16 h-[2px] bg-primary/25 my-6"></div>
+                                 
+                                 <p class="text-[20px] text-slate-500 leading-relaxed max-w-3xl mx-auto font-medium font-quicksand" style="text-wrap: balance; line-height: 1.5;">
+                                     Đã hoàn thành xuất sắc kỳ kiểm tra kiến thức và đạt tiêu chuẩn vận hành xe bánh mì chả cá thuộc hệ thống nhượng quyền thương hiệu&nbsp;<strong class="text-primary font-bold" style="white-space: nowrap;">Bánh Mì Má Hải.</strong>
                                  </p>
                              </div>
      
-                             <!-- CỤM FOOTER (baseline ngang ở ~26% dưới cùng) -->
-                             <div class="flex justify-between items-end w-full px-8 select-none" style="margin-top: 48px;">
-                                 <div class="text-left text-[22px] font-bold text-[#444444] space-y-1 font-quicksand leading-normal">
-                                     <div style="white-space: nowrap;">Mã chứng nhận: <span class="font-mono text-slate-900" x-text="testAttemptId"></span></div>
-                                     <div style="white-space: nowrap;">Ngày cấp: <span class="text-slate-900" x-text="new Date().toLocaleDateString('vi-VN')"></span></div>
+                             <!-- CỤM FOOTER -->
+                             <div class="flex justify-between items-end w-full px-8 select-none">
+                                 <div class="text-left text-[15px] font-semibold text-slate-400 space-y-1.5 font-quicksand leading-normal">
+                                     <div style="white-space: nowrap;">Mã chứng nhận: <span class="font-mono text-slate-700 font-bold" x-text="testAttemptId"></span></div>
+                                     <div style="white-space: nowrap;">Ngày cấp: <span class="text-slate-700 font-bold" x-text="new Date().toLocaleDateString('vi-VN')"></span></div>
                                  </div>
-                                 <div class="text-center space-y-8 select-none">
-                                     <div class="text-[22px] font-extrabold text-[#444444] tracking-wider uppercase font-quicksand" style="white-space: nowrap;">ĐẠI DIỆN BÁNH MÌ MÁ HẢI</div>
-                                     <div class="text-[22px] font-extrabold text-primary tracking-widest uppercase font-quicksand" style="white-space: nowrap;">BÁNH MÌ MÁ HẢI</div>
+                                 <div class="text-center select-none" style="width: 240px;">
+                                     <div class="text-[13px] font-bold text-slate-400 tracking-wider uppercase font-quicksand" style="white-space: nowrap;">ĐẠI DIỆN BÁNH MÌ MÁ HẢI</div>
+                                     <div class="w-40 h-[1px] bg-slate-200 mx-auto my-3.5"></div>
+                                     <div class="text-[16px] font-bold text-primary tracking-widest uppercase font-quicksand" style="white-space: nowrap;">BÁNH MÌ MÁ HẢI</div>
                                  </div>
                              </div>
                          </div>
                     </div>
                     
                     <!-- Download cert action container -->
-                    <div class="flex justify-center mt-6">
-                        <button @click="downloadCertificate()" :disabled="downloadingCertificate" class="px-8 py-3.5 bg-primary hover:bg-opacity-90 text-white rounded-xl font-bold shadow-lg shadow-primary/20 flex items-center gap-2 transition-all active:scale-95 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none disabled:opacity-75 disabled:cursor-wait min-h-[44px] font-quicksand">
-                            <span x-show="!downloadingCertificate" class="material-symbols-outlined text-lg">download</span>
+                    <div class="flex flex-col items-center gap-3 mt-10 w-full max-w-md">
+                        <button @click="downloadCertificate()" :disabled="downloadingCertificate" class="group px-8 py-3.5 bg-primary hover:bg-primary/95 text-white rounded-xl font-bold shadow-lg shadow-primary/20 hover:shadow-primary/30 flex items-center justify-center gap-2.5 transition-all active:scale-95 disabled:opacity-75 disabled:cursor-wait min-h-[48px] font-quicksand text-sm tracking-wide w-full">
+                            <span x-show="!downloadingCertificate" class="material-symbols-outlined text-lg transition-transform group-hover:translate-y-0.5">download</span>
                             <span x-show="downloadingCertificate" class="w-4 h-4 rounded-full border-2 border-white border-t-transparent animate-spin"></span>
                             <span x-text="downloadingCertificate ? 'Đang tạo ảnh...' : 'Tải chứng nhận (PNG)'"></span>
                         </button>
+                        <p class="text-slate-400 text-xs font-medium select-none">Chứng nhận được tải xuống dưới dạng hình ảnh PNG chất lượng cao</p>
                     </div>
                 </div>
 
@@ -596,6 +608,13 @@
                             <div class="bento-card p-6 border border-slate-100 bg-white shadow-sm">
                                 <div class="text-[11px] font-bold text-slate-400 uppercase mb-2" x-text="'Câu ' + (w.index + 1) + ' · ' + w.question.sectionName"></div>
                                 <h4 class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-5 leading-snug" x-text="w.question.question"></h4>
+                                
+                                <!-- Question Image -->
+                                <template x-if="w.question.image">
+                                    <div class="mt-4 mb-5 flex justify-center">
+                                        <img :src="w.question.image" alt="Hình minh họa" class="max-h-[320px] w-auto rounded-2xl cursor-pointer hover:opacity-90 transition-opacity border border-slate-100 shadow-sm" @click="openImageLightbox(w.question.image)" />
+                                    </div>
+                                </template>
                                 
                                 <template x-if="w.selectedAnswer === null || w.selectedAnswer === undefined">
                                     <div class="mb-3 text-xs font-bold text-error bg-error/5 border border-error/15 px-4 py-2 rounded-xl inline-flex items-center gap-1.5 uppercase">
@@ -802,7 +821,33 @@
                  </div>
              </div>
          </div>
+    <!-- Image Lightbox Modal -->
+    <div x-show="lightboxImage" 
+         x-transition:enter="transition-opacity ease-out duration-300"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="transition-opacity ease-in duration-200"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
+         class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm"
+         style="display: none;"
+         @click="closeImageLightbox()"
+         @keydown.escape.window="closeImageLightbox()">
+        
+        <!-- Modal Content Container -->
+        <div class="relative max-w-[90vw] max-h-[90vh] flex items-center justify-center" @click.stop>
+            <!-- Image -->
+            <img :src="lightboxImage" alt="Phóng to hình minh họa" class="max-w-full max-h-[85vh] rounded-xl object-contain shadow-2xl border border-white/10" />
+            
+            <!-- Close Button -->
+            <button @click="closeImageLightbox()" 
+                    class="absolute -top-12 right-0 flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                    aria-label="Đóng">
+                <span class="material-symbols-outlined text-2xl">close</span>
+            </button>
+        </div>
     </div>
+
     </div> <!-- End of #app-container -->
 
     <!-- Fallback Error Message (Visible only if AlpineJS/App fails to boot) -->
