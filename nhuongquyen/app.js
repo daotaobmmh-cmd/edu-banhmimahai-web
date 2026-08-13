@@ -724,6 +724,15 @@ function app() {
             this.lightboxImage = null;
         },
 
+        handleImageError(e) {
+            if (e && e.target) {
+                e.target.style.display = 'none';
+                if (e.target.parentElement) {
+                    e.target.parentElement.style.display = 'none';
+                }
+            }
+        },
+
         // Study Mode: Enter study view
         startStudy() {
             const name = this.learnerName.trim();

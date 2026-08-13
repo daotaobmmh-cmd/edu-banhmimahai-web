@@ -1,4 +1,4 @@
-/* Viet Street Food Calm Onboarding UI Custom Styles */
+/* Bánh Mì Má Hải Franchise Onboarding UI Custom Styles */
 
 html {
     overflow-y: scroll;
@@ -14,18 +14,22 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: rgba(110, 123, 106, 0.24);
+    background: rgba(232, 130, 30, 0.25);
     border-radius: 999px;
     border: 3px solid #FAF7F2;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-    background: rgba(110, 123, 106, 0.38);
+    background: rgba(232, 130, 30, 0.45);
 }
 
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
     background-color: #FAF7F2;
+    background-image: 
+        radial-gradient(at 10% 10%, rgba(232, 130, 30, 0.08) 0px, transparent 50%),
+        radial-gradient(at 90% 90%, rgba(244, 204, 52, 0.08) 0px, transparent 50%);
+    background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6, .font-quicksand {
@@ -53,10 +57,46 @@ h1, h2, h3, h4, h5, h6, .font-quicksand {
     border-radius: 10px;
 }
 
+/* Premium Glassmorphic Cards & Elevate Effects */
 .bento-card {
     background: #FFFFFF;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+    box-shadow: 0 20px 40px rgba(232, 130, 30, 0.08), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.bento-card-interactive {
+    background: #FFFFFF;
+    border-radius: 24px;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card-interactive:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(232, 130, 30, 0.12);
+}
+
+.brand-gradient-text {
+    background: linear-gradient(135deg, #E8821E 0%, #D96B00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brand-bg-gradient {
+    background: linear-gradient(135deg, #E8821E 0%, #F4CC34 100%);
+}
+
+.brand-badge {
+    background: rgba(232, 130, 30, 0.1);
+    color: #E8821E;
+    border: 1px solid rgba(232, 130, 30, 0.2);
+    border-radius: 9999px;
 }
 
 .timer-warning {

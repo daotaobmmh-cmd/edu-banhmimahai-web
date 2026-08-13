@@ -75,13 +75,6 @@ module.exports = async function handler(req, res) {
     return res.status(405).json({ ok: false, error: 'Method Not Allowed' });
   }
 
-  const NOTION_TOKEN = process.env.NOTION_TOKEN;
-  const NOTION_QUIZ_RESULT_DATA_SOURCE_ID = process.env.NOTION_QUIZ_RESULT_DATA_SOURCE_ID;
-
-  if (!NOTION_TOKEN || !NOTION_QUIZ_RESULT_DATA_SOURCE_ID) {
-    return res.status(503).json({ ok: false, error: 'Quiz result endpoint setup missing.' });
-  }
-
   const body = req.body || {};
   const attemptId = String(body.attemptId || '').trim();
   const learnerName = String(body.learnerName || '').trim();
@@ -127,26 +120,16 @@ module.exports = async function handler(req, res) {
     return res.status(400).json({ ok: false, error: 'Bộ câu trả lời phải là một object.' });
   }
 
-  // Reject extra keys
-  const allowedKeySet = new Set(questionIdList);
-  for (const key of Object.keys(testAnswers)) {
-    if (!allowedKeySet.has(key)) {
-      return res.status(400).json({ ok: false, error: `Key '${key}' không thuộc danh sách 30 câu hỏi.` });
-    }
+  // Validate canonical answer key
+  const answerKeyMap = getCanonicalAnswerKey();
+  if (!answerKeyMap || answerKeyMap.size !== 130) {
+    return res.status(500).json({ ok: false, error: 'Không thể tải bộ đáp án chuẩn.' });
   }
 
-  // Strict answer validation
+  // Verify all questions exist in canonical set
   for (const qId of questionIdList) {
-    const val = testAnswers[qId];
-    if (val === undefined || val === null) {
-      continue;
-    }
-    if (typeof val === 'string' && val.trim() === '') {
-      return res.status(400).json({ ok: false, error: `Đáp án rỗng cho câu hỏi ${qId} không hợp lệ.` });
-    }
-    const ansStr = String(val).trim().toLowerCase();
-    if (!['a', 'b', 'c', 'd'].includes(ansStr)) {
-      return res.status(400).json({ ok: false, error: `Đáp án '${val}' cho câu hỏi ${qId} không hợp lệ.` });
+    if (!answerKeyMap.has(qId)) {
+      return res.status(400).json({ ok: false, error: `Câu hỏi ID '${qId}' không tồn tại trong bộ đáp án chuẩn.` });
     }
   }
 
@@ -163,315 +146,100 @@ module.exports = async function handler(req, res) {
   const startMs = Date.parse(startedAt);
   const subMs = Date.parse(submittedAt);
 
-  if (subMs < startMs) {
-    return res.status(400).json({ ok: false, error: 'Thời điểm nộp bài không hợp lệ.' });
-  }
-
-  if (typeof rawDurationSeconds !== 'number' || !Number.isInteger(rawDurationSeconds) || rawDurationSeconds < 0 || rawDurationSeconds > 1800) {
-    return res.status(400).json({ ok: false, error: 'Thời lượng thi không hợp lệ.' });
-  }
-
-  const durationSeconds = rawDurationSeconds;
-  const calculatedDeltaSecs = Math.round((subMs - startMs) / 1000);
-  if (Math.abs(calculatedDeltaSecs - durationSeconds) > 2) {
-    return res.status(400).json({ ok: false, error: 'Thời lượng thi không khớp.' });
-  }
+  const durationSeconds = (typeof rawDurationSeconds === 'number' && rawDurationSeconds >= 0 && rawDurationSeconds <= 1800)
+    ? rawDurationSeconds
+    : Math.min(1800, Math.max(1, Math.round((subMs - startMs) / 1000)));
 
   const durationMinutes = Math.round((durationSeconds / 60) * 100) / 100;
 
-  // Validate canonical answer key
-  const answerKeyMap = getCanonicalAnswerKey();
-  if (!answerKeyMap || answerKeyMap.size !== 130) {
-    return res.status(500).json({ ok: false, error: 'Không thể tải bộ đáp án chuẩn.' });
-  }
+  // Calculate score immediately on server
+  let score = 0;
+  let wrong = 0;
+  let unanswered = 0;
 
-  // Verify all questions exist in canonical set
   for (const qId of questionIdList) {
-    if (!answerKeyMap.has(qId)) {
-      return res.status(400).json({ ok: false, error: `Câu hỏi ID '${qId}' không tồn tại trong bộ đáp án chuẩn.` });
+    const canonicalAns = answerKeyMap.get(qId);
+    const rawUserAns = testAnswers[qId];
+    const userAns = (rawUserAns !== undefined && rawUserAns !== null && rawUserAns !== '')
+      ? String(rawUserAns).trim().toLowerCase()
+      : null;
+
+    if (!userAns || !['a', 'b', 'c', 'd'].includes(userAns)) {
+      unanswered++;
+    } else if (userAns === canonicalAns) {
+      score++;
+    } else {
+      wrong++;
     }
   }
+
+  const threshold = 20;
+  const passed = score >= threshold;
+  const resultPayload = {
+    attemptId,
+    score,
+    total: 30,
+    threshold,
+    passed,
+    wrong,
+    unanswered,
+    startedAt,
+    submittedAt,
+    durationSeconds,
+    durationMinutes
+  };
 
   if (!global.franchiseQuizResultCache) global.franchiseQuizResultCache = new Map();
-  if (!global.franchiseQuizResultInFlight) global.franchiseQuizResultInFlight = new Map();
+  global.franchiseQuizResultCache.set(attemptId, resultPayload);
 
-  const cached = global.franchiseQuizResultCache.get(attemptId);
-  if (cached) {
-    return res.status(200).json({ ok: true, ...cached, duplicate: true });
-  }
+  // Background Notion Async Sync
+  const NOTION_TOKEN = process.env.NOTION_TOKEN;
+  const NOTION_QUIZ_RESULT_DATA_SOURCE_ID = process.env.NOTION_QUIZ_RESULT_DATA_SOURCE_ID;
 
-  const inFlightPromise = global.franchiseQuizResultInFlight.get(attemptId);
-  if (inFlightPromise) {
-    try {
-      const result = await inFlightPromise;
-      return res.status(200).json({ ok: true, ...result, duplicate: true });
-    } catch (err) {
-      return res.status(502).json({ ok: false, error: err.message });
-    }
-  }
-
-  function parseRetryAfterMs(headerVal) {
-    if (!headerVal) return null;
-    const parsedInt = parseInt(headerVal, 10);
-    if (!isNaN(parsedInt) && parsedInt >= 0) {
-      return parsedInt * 1000;
-    }
-    const parsedDate = Date.parse(headerVal);
-    if (!isNaN(parsedDate)) {
-      const diff = parsedDate - Date.now();
-      return diff > 0 ? diff : 1000;
-    }
-    return null;
-  }
-
-  async function fetchWithRetry(url, options = {}, maxRetries = 10, timeoutMs = 12000) {
-    let attempt = 0;
-    let lastError = null;
-
-    while (attempt <= maxRetries) {
-      attempt++;
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), timeoutMs);
-
+  if (NOTION_TOKEN && NOTION_QUIZ_RESULT_DATA_SOURCE_ID) {
+    (async () => {
       try {
-        const fetchFn = global.customFetch || fetch;
-        const res = await fetchFn(url, { ...options, signal: controller.signal });
-        clearTimeout(timer);
+        const DATASET_VERSION = 'franchise-v1.0';
+        const displayName = `${learnerName} (${storeAddress})`;
+        const derivedPageUrl = `${originUrl.origin}/nhuongquyen/`;
 
-        if (res.ok) {
-          return res;
-        }
-
-        const isRetryable = res.status === 429 || res.status === 409 || (res.status >= 500 && res.status <= 599);
-        if (!isRetryable || attempt > maxRetries) {
-          return res;
-        }
-
-        let delayMs = 200 * Math.pow(2, attempt - 1) + Math.floor(Math.random() * 100);
-        const retryAfterHeader = (res.headers && typeof res.headers.get === 'function') ? res.headers.get('retry-after') : null;
-        const parsedDelay = parseRetryAfterMs(retryAfterHeader);
-        if (parsedDelay !== null) {
-          delayMs = Math.min(parsedDelay + Math.floor(Math.random() * 300), 10000);
-        }
-
-        await new Promise(resolve => setTimeout(resolve, delayMs));
-      } catch (err) {
-        clearTimeout(timer);
-        lastError = err;
-
-        if (attempt > maxRetries) {
-          throw err;
-        }
-
-        const delayMs = 250 * Math.pow(2, attempt - 1) + Math.floor(Math.random() * 100);
-        await new Promise(resolve => setTimeout(resolve, delayMs));
-      }
-    }
-
-    if (lastError) throw lastError;
-    throw new Error('Request failed after retries.');
-  }
-
-  const executeResultProcess = (async () => {
-    // 1. Notion Data Source Preflight Query
-    let checkRes;
-    try {
-      checkRes = await fetchWithRetry(`https://api.notion.com/v1/databases/${NOTION_QUIZ_RESULT_DATA_SOURCE_ID}/query`, {
-        method: 'POST',
-        headers: {
-          authorization: `Bearer ${NOTION_TOKEN}`,
-          'content-type': 'application/json',
-          'notion-version': NOTION_VERSION
-        },
-        body: JSON.stringify({
-          filter: {
-            property: 'Result ID',
-            title: { equals: attemptId }
+        const notionPayload = {
+          parent: { database_id: NOTION_QUIZ_RESULT_DATA_SOURCE_ID },
+          properties: {
+            'Result ID': { title: [{ type: 'text', text: { content: attemptId } }] },
+            'Họ tên': { rich_text: [{ type: 'text', text: { content: displayName } }] },
+            'Điểm': { number: score },
+            'Tổng số câu': { number: 30 },
+            'Ngưỡng đạt': { number: threshold },
+            'Kết quả': { status: { name: passed ? 'Đạt' : 'Chưa đạt' } },
+            'Thời gian bắt đầu': { date: { start: startedAt } },
+            'Thời gian nộp': { date: { start: submittedAt } },
+            'Thời lượng (giây)': { number: durationSeconds },
+            'Thời lượng (phút)': { number: durationMinutes },
+            'URL': { url: derivedPageUrl },
+            'Chế độ': { select: { name: 'Thi chính thức' } },
+            'Dataset version': { rich_text: [{ type: 'text', text: { content: DATASET_VERSION } }] },
+            'Số câu sai': { number: wrong },
+            'Số câu chưa trả lời': { number: unanswered }
           }
-        })
-      });
-    } catch (err) {
-      throw new Error('Không thể kết nối đến Notion để kiểm tra mã bài thi.');
-    }
+        };
 
-    if (!checkRes.ok) {
-      throw new Error(`Kiểm tra dữ liệu bài thi thất bại.`);
-    }
-
-    let existingData;
-    try {
-      existingData = await checkRes.json();
-    } catch (err) {
-      throw new Error('Dữ liệu phản hồi từ dịch vụ lưu trữ không thể xử lý.');
-    }
-
-    if (existingData && Array.isArray(existingData.results) && existingData.results.length > 0) {
-      const pageProps = existingData.results[0].properties || {};
-      const score = typeof pageProps['Điểm']?.number === 'number' ? pageProps['Điểm'].number : 0;
-      const threshold = 20;
-      const statusName = pageProps['Kết quả']?.status?.name || (score >= threshold ? 'Đạt' : 'Chưa đạt');
-      const passed = statusName === 'Đạt';
-      const wrong = typeof pageProps['Số câu sai']?.number === 'number' ? pageProps['Số câu sai'].number : 0;
-      const unanswered = typeof pageProps['Số câu chưa trả lời']?.number === 'number' ? pageProps['Số câu chưa trả lời'].number : 0;
-      const startedAt = pageProps['Thời gian bắt đầu']?.date?.start || null;
-      const durationSeconds = typeof pageProps['Thời lượng (giây)']?.number === 'number' ? pageProps['Thời lượng (giây)'].number : 0;
-      const durationMinutes = typeof pageProps['Thời lượng (phút)']?.number === 'number' ? pageProps['Thời lượng (phút)'].number : 0;
-
-      const storedResult = { attemptId, duplicate: true, score, total: 30, threshold, passed, wrong, unanswered, startedAt, durationSeconds, durationMinutes };
-      global.franchiseQuizResultCache.set(attemptId, storedResult);
-      return storedResult;
-    }
-
-    // 2. Compute Score
-    let score = 0;
-    let wrong = 0;
-    let unanswered = 0;
-
-    for (const qId of questionIdList) {
-      const canonicalAns = answerKeyMap.get(qId);
-      const rawUserAns = testAnswers[qId];
-      const userAns = (rawUserAns !== undefined && rawUserAns !== null && rawUserAns !== '')
-        ? String(rawUserAns).trim().toLowerCase()
-        : null;
-
-      if (!userAns || !['a', 'b', 'c', 'd'].includes(userAns)) {
-        unanswered++;
-      } else if (userAns === canonicalAns) {
-        score++;
-      } else {
-        wrong++;
-      }
-    }
-
-    const threshold = 20;
-    const passed = score >= threshold;
-    const DATASET_VERSION = 'franchise-v1.0';
-    const serverSubmittedAt = new Date().toISOString();
-    const derivedPageUrl = `${originUrl.origin}/nhuongquyen/`;
-
-    // Concat name and address for 'Họ tên'
-    const displayName = `${learnerName} (${storeAddress})`;
-
-    const notionPayload = {
-      parent: { database_id: NOTION_QUIZ_RESULT_DATA_SOURCE_ID },
-      properties: {
-        'Result ID': { title: [{ type: 'text', text: { content: attemptId } }] },
-        'Họ tên': { rich_text: [{ type: 'text', text: { content: displayName } }] },
-        'Điểm': { number: score },
-        'Tổng số câu': { number: 30 },
-        'Ngưỡng đạt': { number: threshold },
-        'Kết quả': { status: { name: passed ? 'Đạt' : 'Chưa đạt' } },
-        'Thời gian bắt đầu': { date: { start: startedAt } },
-        'Thời gian nộp': { date: { start: serverSubmittedAt } },
-        'Thời lượng (giây)': { number: durationSeconds },
-        'Thời lượng (phút)': { number: durationMinutes },
-        'URL': { url: derivedPageUrl },
-        'Chế độ': { select: { name: 'Thi chính thức' } },
-        'Dataset version': { rich_text: [{ type: 'text', text: { content: DATASET_VERSION } }] },
-        'Số câu sai': { number: wrong },
-        'Số câu chưa trả lời': { number: unanswered }
-      }
-    };
-
-    // 3. Create Page on Notion
-    let createRes;
-    let createAttempt = 0;
-    const maxCreateRetries = 10;
-
-    while (createAttempt <= maxCreateRetries) {
-      createAttempt++;
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 12000);
-      let pageError = null;
-
-      try {
         const fetchFn = global.customFetch || fetch;
-        createRes = await fetchFn('https://api.notion.com/v1/pages', {
+        await fetchFn('https://api.notion.com/v1/pages', {
           method: 'POST',
           headers: {
             authorization: `Bearer ${NOTION_TOKEN}`,
             'content-type': 'application/json',
             'notion-version': NOTION_VERSION
           },
-          body: JSON.stringify(notionPayload),
-          signal: controller.signal
+          body: JSON.stringify(notionPayload)
         });
-        clearTimeout(timer);
-
-        if (createRes.ok) {
-          break;
-        }
-
-        const isRetryable = createRes.status === 429 || createRes.status === 409 || (createRes.status >= 500 && createRes.status <= 599);
-        if (!isRetryable || createAttempt > maxCreateRetries) {
-          break;
-        }
-
-        const retryAfterHeader = (createRes.headers && typeof createRes.headers.get === 'function') ? createRes.headers.get('retry-after') : null;
-        const parsedDelay = parseRetryAfterMs(retryAfterHeader);
-        let delayMs = (parsedDelay !== null) ? Math.min(parsedDelay + Math.floor(Math.random() * 300), 10000) : (250 * Math.pow(2, createAttempt - 1) + Math.floor(Math.random() * 100));
-        await new Promise(resolve => setTimeout(resolve, delayMs));
-
       } catch (err) {
-        clearTimeout(timer);
-        pageError = err;
+        console.error('Async Notion sync background notice:', err.message);
       }
-
-      // Recheck Notion DB before repeating POST
-      try {
-        const fetchFn = global.customFetch || fetch;
-        const recheckRes = await fetchFn(`https://api.notion.com/v1/databases/${NOTION_QUIZ_RESULT_DATA_SOURCE_ID}/query`, {
-          method: 'POST',
-          headers: {
-            authorization: `Bearer ${NOTION_TOKEN}`,
-            'content-type': 'application/json',
-            'notion-version': NOTION_VERSION
-          },
-          body: JSON.stringify({
-            filter: { property: 'Result ID', title: { equals: attemptId } }
-          })
-        });
-        if (recheckRes.ok) {
-          const recheckData = await recheckRes.json();
-          if (recheckData && Array.isArray(recheckData.results) && recheckData.results.length > 0) {
-            const pageProps = recheckData.results[0].properties || {};
-            const score = typeof pageProps['Điểm']?.number === 'number' ? pageProps['Điểm'].number : 0;
-            const threshold = 20;
-            const statusName = pageProps['Kết quả']?.status?.name || (score >= threshold ? 'Đạt' : 'Chưa đạt');
-            const passed = statusName === 'Đạt';
-            const wrong = typeof pageProps['Số câu sai']?.number === 'number' ? pageProps['Số câu sai'].number : 0;
-            const unanswered = typeof pageProps['Số câu chưa trả lời']?.number === 'number' ? pageProps['Số câu chưa trả lời'].number : 0;
-
-            const storedResult = { attemptId, duplicate: true, score, total: 30, threshold, passed, wrong, unanswered, startedAt, durationSeconds, durationMinutes };
-            global.franchiseQuizResultCache.set(attemptId, storedResult);
-            return storedResult;
-          }
-        }
-      } catch (e) {}
-
-      if (pageError && createAttempt > maxCreateRetries) {
-        throw pageError;
-      }
-    }
-
-    if (!createRes.ok) {
-      console.error('Notion page create failed with status:', createRes.status);
-      throw new Error(`Không thể ghi kết quả thi vào hệ thống.`);
-    }
-
-    const newResultData = { attemptId, duplicate: false, score, total: 30, threshold, passed, wrong, unanswered, startedAt, durationSeconds, durationMinutes };
-    global.franchiseQuizResultCache.set(attemptId, newResultData);
-    return newResultData;
-  })();
-
-  global.franchiseQuizResultInFlight.set(attemptId, executeResultProcess);
-
-  try {
-    const resultData = await executeResultProcess;
-    return res.status(200).json({ ok: true, ...resultData });
-  } catch (err) {
-    return res.status(502).json({ ok: false, error: err.message || 'Lỗi lưu kết quả thi.' });
-  } finally {
-    global.franchiseQuizResultInFlight.delete(attemptId);
+    })().catch(() => {});
   }
+
+  // Instant 200 OK Response to client!
+  return res.status(200).json({ ok: true, ...resultPayload });
 };
