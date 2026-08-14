@@ -296,7 +296,7 @@
                                 <span class="text-slate-400 text-[11px] font-bold font-quicksand uppercase tracking-wider" x-text="'Phần ' + currentStudyQuestion?.sectionNo + ' · Câu ' + (studyIndex + 1) + '/' + sections[activeSectionIndex]?.total"></span>
                             </div>
                         </div>
-                        <h2 x-ref="practiceQuestionHeading" id="practice-question-heading" tabindex="-1" class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-3 sm:mb-5 leading-snug focus:outline-none" x-text="currentStudyQuestion?.question"></h2>
+                        <h2 x-ref="practiceQuestionHeading" id="practice-question-heading" tabindex="-1" :class="getDynamicQuestionTextClass(currentStudyQuestion?.question)" class="font-bold text-slate-800 mb-3 sm:mb-5 leading-snug focus:outline-none" x-text="currentStudyQuestion?.question"></h2>
                         
                         <!-- Question Image -->
                         <template x-if="currentStudyQuestion?.image">
@@ -310,7 +310,7 @@
                                 <button :class="getStudyOptionClass(opt)" :disabled="studyProgress[currentStudyQuestion.id] !== undefined" @click="selectStudyAnswer(opt.key)" class="group flex items-center justify-between min-h-[40px] py-2 px-3 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
                                     <div class="flex items-center flex-1 min-w-0">
                                         <span :class="getStudyLetterClass(opt)" class="w-[28px] h-[28px] sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold mr-2.5 sm:mr-3 transition-colors text-[13px] sm:text-base" x-text="opt.key"></span>
-                                        <span class="flex-1 min-w-0 text-[14px] sm:text-base leading-snug font-medium text-slate-700 text-left" x-text="opt.text"></span>
+                                        <span :class="getDynamicOptionTextClass(opt.text)" class="flex-1 min-w-0 leading-snug font-medium text-slate-700 text-left" x-text="opt.text"></span>
                                     </div>
                                     
                                     <template x-if="studyProgress[currentStudyQuestion.id] !== undefined">
@@ -426,7 +426,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <h2 x-ref="testQuestionHeading" id="test-question-heading" tabindex="-1" class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-3 sm:mb-5 leading-snug focus:outline-none" x-text="currentTestQuestion?.question"></h2>
+                            <h2 x-ref="testQuestionHeading" id="test-question-heading" tabindex="-1" :class="getDynamicQuestionTextClass(currentTestQuestion?.question)" class="font-bold text-slate-800 mb-3 sm:mb-5 leading-snug focus:outline-none" x-text="currentTestQuestion?.question"></h2>
                             
                             <!-- Question Image -->
                             <template x-if="currentTestQuestion?.image">
@@ -440,7 +440,7 @@
                                     <button :class="testAnswers[currentTestQuestion.id] === opt.key ? 'border-secondary bg-secondary/5 border-2 font-semibold' : 'border-slate-100 hover:border-slate-200 border-2'" @click="selectTestAnswer(opt.key)" class="flex items-center justify-between min-h-[40px] py-2 px-3 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full text-left focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
                                         <div class="flex items-center flex-1 min-w-0">
                                             <span :class="testAnswers[currentTestQuestion.id] === opt.key ? 'bg-secondary text-white' : 'bg-slate-50 text-slate-400'" class="w-[28px] h-[28px] sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold mr-2.5 sm:mr-3 text-[13px] sm:text-base" x-text="opt.key"></span>
-                                            <span class="text-slate-700 font-medium text-[14px] sm:text-base leading-snug" x-text="opt.text"></span>
+                                            <span :class="getDynamicOptionTextClass(opt.text)" class="text-slate-700 font-medium leading-snug" x-text="opt.text"></span>
                                         </div>
                                     </button>
                                 </template>
@@ -634,7 +634,7 @@
                         <template :key="w.question.id" x-for="w in resultWrongQuestions">
                             <div class="bento-card p-3.5 sm:p-6 border border-slate-100 bg-white shadow-sm">
                                 <div class="text-[10px] sm:text-[11px] font-bold text-slate-400 uppercase mb-1.5 sm:mb-2 font-quicksand" x-text="'Câu ' + (w.index + 1) + ' · ' + w.question.sectionName"></div>
-                                <h4 class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-3 sm:mb-5 leading-snug font-quicksand" x-text="w.question.question"></h4>
+                                <h4 :class="getDynamicQuestionTextClass(w.question.question)" class="font-bold text-slate-800 mb-3 sm:mb-5 leading-snug font-quicksand" x-text="w.question.question"></h4>
                                 
                                 <!-- Question Image -->
                                 <template x-if="w.question.image">
@@ -665,7 +665,7 @@
                                                     opt.key !== w.question.correctAnswer && opt.key !== w.selectedAnswer ? 'bg-slate-100 text-slate-400' : ''
                                                 ].join(' ')"
                                                 class="w-[28px] h-[28px] sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold mr-2.5 sm:mr-3 text-[13px] sm:text-base font-quicksand" x-text="opt.key"></span>
-                                                <span class="text-[14px] sm:text-base font-medium leading-snug text-left" x-text="opt.text"></span>
+                                                <span :class="getDynamicOptionTextClass(opt.text)" class="font-medium leading-snug text-left" x-text="opt.text"></span>
                                             </div>
                                             
                                             <div class="flex-shrink-0 ml-2.5 sm:ml-3">
@@ -681,7 +681,7 @@
                                         <span class="material-symbols-outlined text-base flex-shrink-0 w-4 h-4 flex items-center justify-center">lightbulb</span>
                                         <span class="font-bold text-[13px] sm:text-base uppercase tracking-wider">Giải thích</span>
                                     </div>
-                                    <p class="text-[14px] sm:text-base text-slate-700 leading-relaxed font-medium" x-text="w.question.explanation"></p>
+                                    <p :class="getDynamicExplanationTextClass(w.question.explanation)" class="text-slate-700 leading-relaxed font-medium" x-text="w.question.explanation"></p>
                                 </div>
                                 
                                 <div class="mt-3 sm:mt-4">
