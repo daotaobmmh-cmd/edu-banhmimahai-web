@@ -134,7 +134,7 @@
         });
     </script>
     <script src="/hoinhap/questions.js?v=a155b467c699" onerror="handleScriptError('questions.js')"></script>
-    <script src="/hoinhap/app.js?v=20260725_track_quiz_duration_v4" onerror="handleScriptError('app.js?v=20260725_track_quiz_duration_v4')"></script>
+    <script src="/hoinhap/app.js?v=20260814_scroll_fix" onerror="handleScriptError('app.js')"></script>
     <script defer src="/hoinhap/alpine.min.js?v=161a71fe11f1" onerror="handleScriptError('alpine.min.js')"></script>
     <link rel="stylesheet" href="/hoinhap/styles.css?v=161a71fe11f1" />
 </head>
@@ -277,30 +277,30 @@
                 </div>
             </aside>
             <!-- Content -->
-            <main class="w-full pt-4 md:ml-[300px] md:pt-20 min-h-screen">
-                <div class="max-w-[860px] mx-auto px-4 sm:px-8 py-6 sm:py-8">
+            <main class="w-full pt-2 sm:pt-4 md:ml-[300px] md:pt-20 min-h-screen">
+                <div class="max-w-[860px] mx-auto px-3 sm:px-8 py-3 sm:py-8">
                     <!-- Study Panel -->
-                    <div class="bento-card p-4 sm:p-8 mb-5 sm:mb-8 relative overflow-hidden" x-show="currentStudyQuestion">
-                        <div class="flex justify-between items-center mb-4 sm:mb-6">
+                    <div x-ref="practiceQuestionCard" id="practice-question-card" class="bento-card p-3.5 sm:p-8 mb-4 sm:mb-8 relative overflow-hidden" x-show="currentStudyQuestion">
+                        <div class="flex justify-between items-center mb-2.5 sm:mb-6">
                             <div class="flex items-center gap-2 sm:gap-3">
                                 <span class="text-slate-400 text-[11px] font-bold font-quicksand uppercase tracking-wider" x-text="'Phần ' + currentStudyQuestion?.sectionNo + ' · Câu ' + (studyIndex + 1) + '/' + sections[activeSectionIndex]?.total"></span>
                             </div>
                         </div>
-                        <h2 x-ref="practiceQuestionHeading" id="practice-question-heading" tabindex="-1" class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-5 leading-snug focus:outline-none" x-text="currentStudyQuestion?.question"></h2>
+                        <h2 x-ref="practiceQuestionHeading" id="practice-question-heading" tabindex="-1" class="text-base sm:text-lg md:text-xl font-bold text-slate-800 mb-3 sm:mb-5 leading-snug focus:outline-none" x-text="currentStudyQuestion?.question"></h2>
                         
-                        <div class="grid grid-cols-1 gap-3">
+                        <div class="grid grid-cols-1 gap-2.5 sm:gap-3">
                             <template :key="idx" x-for="(opt, idx) in currentStudyQuestion?.options">
-                                <button :class="getStudyOptionClass(opt)" :disabled="studyProgress[currentStudyQuestion.id] !== undefined" @click="selectStudyAnswer(opt.key)" class="group flex items-center justify-between min-h-[44px] py-2.5 px-3.5 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                                <button :class="getStudyOptionClass(opt)" :disabled="studyProgress[currentStudyQuestion.id] !== undefined" @click="selectStudyAnswer(opt.key)" class="group flex items-center justify-between min-h-[40px] py-2 px-3 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
                                     <div class="flex items-center flex-1 min-w-0">
-                                        <span :class="getStudyLetterClass(opt)" class="w-[30px] h-[30px] sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold mr-3 transition-colors text-[14px] sm:text-base" x-text="opt.key"></span>
-                                        <span class="flex-1 min-w-0 text-[15px] sm:text-base leading-snug font-medium text-slate-700 text-left" x-text="opt.text"></span>
+                                        <span :class="getStudyLetterClass(opt)" class="w-[28px] h-[28px] sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold mr-2.5 sm:mr-3 transition-colors text-[13px] sm:text-base" x-text="opt.key"></span>
+                                        <span class="flex-1 min-w-0 text-[14px] sm:text-base leading-snug font-medium text-slate-700 text-left" x-text="opt.text"></span>
                                     </div>
                                     
                                     <!-- Dynamic Check/Cancel Status Icon -->
                                     <template x-if="studyProgress[currentStudyQuestion.id] !== undefined">
-                                        <div class="flex-shrink-0 ml-3">
-                                            <span x-show="opt.key === currentStudyQuestion.correctAnswer" class="material-symbols-outlined text-emerald-500 font-bold text-xl flex-shrink-0 w-5 h-5 flex items-center justify-center">check</span>
-                                            <span x-show="opt.key === studyProgress[currentStudyQuestion.id] && opt.key !== currentStudyQuestion.correctAnswer" class="material-symbols-outlined text-error font-bold text-xl flex-shrink-0 w-5 h-5 flex items-center justify-center">close</span>
+                                        <div class="flex-shrink-0 ml-2.5 sm:ml-3">
+                                            <span x-show="opt.key === currentStudyQuestion.correctAnswer" class="material-symbols-outlined text-emerald-500 font-bold text-lg sm:text-xl flex-shrink-0 w-5 h-5 flex items-center justify-center">check</span>
+                                            <span x-show="opt.key === studyProgress[currentStudyQuestion.id] && opt.key !== currentStudyQuestion.correctAnswer" class="material-symbols-outlined text-error font-bold text-lg sm:text-xl flex-shrink-0 w-5 h-5 flex items-center justify-center">close</span>
                                         </div>
                                     </template>
                                 </button>
@@ -308,34 +308,34 @@
                         </div>
                         
                         <!-- Combined Feedback & Explanation Callout -->
-                        <div class="mt-5 sm:mt-8 animate-in fade-in slide-in-from-bottom-4 duration-500" x-show="studyProgress[currentStudyQuestion?.id] !== undefined">
-                            <div :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'bg-emerald-50/60 border border-emerald-100/80' : 'bg-red-50/60 border border-red-100/80'" class="p-4 sm:p-5 rounded-xl text-left">
-                                <div class="flex items-center gap-2 mb-2">
-                                    <span class="material-symbols-outlined text-lg flex-shrink-0 w-4 h-4 flex items-center justify-center" :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'text-emerald-500' : 'text-error'" x-text="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'check' : 'close'"></span>
-                                    <span class="font-bold text-[15px] sm:text-base" :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'text-emerald-700' : 'text-error'" x-text="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'Đúng rồi · Đáp án: ' + currentStudyQuestion?.correctAnswer : 'Chưa chính xác · Đáp án đúng: ' + currentStudyQuestion?.correctAnswer"></span>
+                        <div class="mt-4 sm:mt-8 animate-in fade-in slide-in-from-bottom-4 duration-500" x-show="studyProgress[currentStudyQuestion?.id] !== undefined">
+                            <div :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'bg-emerald-50/60 border border-emerald-100/80' : 'bg-red-50/60 border border-red-100/80'" class="p-3.5 sm:p-5 rounded-xl text-left">
+                                <div class="flex items-center gap-2 mb-1.5 sm:mb-2">
+                                    <span class="material-symbols-outlined text-base sm:text-lg flex-shrink-0 w-4 h-4 flex items-center justify-center" :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'text-emerald-500' : 'text-error'" x-text="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'check' : 'close'"></span>
+                                    <span class="font-bold text-[14px] sm:text-base" :class="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'text-emerald-700' : 'text-error'" x-text="studyProgress[currentStudyQuestion?.id] === currentStudyQuestion?.correctAnswer ? 'Đúng rồi · Đáp án: ' + currentStudyQuestion?.correctAnswer : 'Chưa chính xác · Đáp án đúng: ' + currentStudyQuestion?.correctAnswer"></span>
                                 </div>
-                                <p class="text-[15px] sm:text-base leading-relaxed text-slate-700 font-medium" x-text="currentStudyQuestion?.explanation"></p>
+                                <p class="text-[14px] sm:text-base leading-relaxed text-slate-700 font-medium" x-text="currentStudyQuestion?.explanation"></p>
                             </div>
                             
                             <!-- Feedback UI Practice Mode -->
-                            <div class="mt-4" x-show="currentStudyQuestion">
-                                <div class="flex items-center gap-2.5">
+                            <div class="mt-3 sm:mt-4" x-show="currentStudyQuestion">
+                                <div class="flex items-center gap-2">
                                     <textarea :data-feedback-qid="currentStudyQuestion?.id"
                                               x-model="feedbackTexts[currentStudyQuestion.id]"
                                               @input="feedbackStatuses[currentStudyQuestion.id] = 'idle'"
                                               placeholder="Góp ý của bạn" 
                                               rows="1" 
-                                              class="flex-1 min-w-0 resize-none px-4 py-2 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 font-medium text-slate-700 text-[15px] sm:text-base overflow-hidden h-[44px] min-h-[44px] max-h-[100px]"
-                                              style="min-height: 44px; height: 44px; max-height: 100px; overflow-y: hidden;"></textarea>
+                                              class="flex-1 min-w-0 resize-none px-3.5 py-2 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 font-medium text-slate-700 text-[14px] sm:text-base overflow-hidden h-[40px] min-h-[40px] sm:h-[44px] sm:min-h-[44px] max-h-[100px]"
+                                              style="min-height: 40px; height: 40px; max-height: 100px; overflow-y: hidden;"></textarea>
                                     <button @click="submitFeedback(currentStudyQuestion, 'practice')" 
                                             :disabled="!feedbackTexts[currentStudyQuestion.id] || !feedbackTexts[currentStudyQuestion.id].trim() || feedbackStatuses[currentStudyQuestion.id] === 'sending'" 
                                             aria-label="Góp ý câu này"
-                                            class="h-[44px] min-h-[44px] w-[120px] min-w-[120px] px-3.5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold text-[15px] sm:text-base flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed">
+                                            class="h-[40px] min-h-[40px] sm:h-[44px] sm:min-h-[44px] w-[100px] sm:w-[120px] min-w-[100px] sm:min-w-[120px] px-3 inline-flex items-center justify-center gap-1 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold text-[14px] sm:text-base flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed">
                                         <template x-if="feedbackStatuses[currentStudyQuestion.id] === 'sending'">
                                             <span aria-hidden="true" class="w-4 h-4 rounded-full border-2 border-amber-300 border-t-amber-800 animate-spin flex-shrink-0"></span>
                                         </template>
                                         <template x-if="feedbackStatuses[currentStudyQuestion.id] !== 'sending'">
-                                            <span class="material-symbols-outlined text-[18px] leading-none">rate_review</span>
+                                            <span class="material-symbols-outlined text-[16px] sm:text-[18px] leading-none">rate_review</span>
                                         </template>
                                         <span x-text="feedbackStatuses[currentStudyQuestion.id] === 'sending' ? 'Đang gửi...' : 'Góp ý'">Góp ý</span>
                                     </button>
@@ -347,14 +347,14 @@
                         </div>
 
                         <!-- Navigation Buttons -->
-                        <div class="flex justify-between items-center mt-6 sm:mt-8 pt-4 border-t border-slate-100">
-                            <button @click="prevStudyQuestion()" :disabled="studyIndex === 0" class="px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl border border-slate-200 text-slate-500 font-bold flex items-center gap-2 hover:bg-slate-50 transition-all disabled:opacity-50 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none text-[15px] sm:text-base">
-                                <span class="material-symbols-outlined text-lg">arrow_back</span>
+                        <div class="flex justify-between items-center mt-4 sm:mt-8 pt-3 sm:pt-4 border-t border-slate-100">
+                            <button @click="prevStudyQuestion()" :disabled="studyIndex === 0" class="px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl border border-slate-200 text-slate-500 font-bold flex items-center gap-1.5 sm:gap-2 hover:bg-slate-50 transition-all disabled:opacity-50 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none text-[14px] sm:text-base">
+                                <span class="material-symbols-outlined text-base sm:text-lg">arrow_back</span>
                                 Câu trước
                             </button>
-                            <button @click="nextStudyQuestion()" :disabled="studyIndex === (sections[activeSectionIndex]?.total - 1)" class="bg-primary hover:bg-opacity-90 text-white px-5 sm:px-8 py-2.5 sm:py-3 rounded-xl font-bold transition-all flex items-center gap-2 shadow-lg shadow-primary/20 disabled:opacity-50 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none text-[15px] sm:text-base">
+                            <button @click="nextStudyQuestion()" :disabled="studyIndex === (sections[activeSectionIndex]?.total - 1)" class="bg-primary hover:bg-opacity-90 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-xl font-bold transition-all flex items-center gap-1.5 sm:gap-2 shadow-lg shadow-primary/20 disabled:opacity-50 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none text-[14px] sm:text-base">
                                 Câu tiếp
-                                <span class="material-symbols-outlined">arrow_forward</span>
+                                <span class="material-symbols-outlined text-base sm:text-lg">arrow_forward</span>
                             </button>
                         </div>
                     </div>
@@ -395,13 +395,13 @@
 
     <!-- Test Mode -->
     <template x-if="currentView === 'test'">
-        <main class="pt-24 bg-slate-50 min-h-screen">
-            <div class="max-w-6xl mx-auto px-4 sm:px-8 py-6 sm:py-8 grid grid-cols-12 gap-8">
+        <main class="pt-18 sm:pt-24 bg-slate-50 min-h-screen">
+            <div class="max-w-6xl mx-auto px-3 sm:px-8 py-3 sm:py-8 grid grid-cols-12 gap-4 sm:gap-8">
                 <!-- Question Area -->
                 <div class="col-span-12 lg:col-span-8">
-                    <div class="bento-card p-4 sm:p-8 min-h-[450px] sm:min-h-[500px] flex flex-col justify-between">
+                    <div x-ref="testQuestionCard" id="test-question-card" class="bento-card p-3.5 sm:p-8 min-h-0 sm:min-h-[500px] flex flex-col justify-between">
                         <div>
-                            <div class="flex justify-between items-start mb-4 sm:mb-6">
+                            <div class="flex justify-between items-start mb-3 sm:mb-6">
                                 <div class="flex items-center gap-2">
                                     <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-[10px] font-bold font-quicksand uppercase tracking-wider" x-text="'Câu ' + (testCurrentIndex + 1) + '/30'"></span>
                                     <span class="bg-slate-100 text-slate-500 px-3 py-1 rounded-full text-[10px] font-bold font-quicksand uppercase tracking-wider flex items-center gap-1" :class="testTimer < 300 && 'timer-warning'">
@@ -410,27 +410,27 @@
                                     </span>
                                 </div>
                             </div>
-                            <h2 x-ref="testQuestionHeading" id="test-question-heading" tabindex="-1" class="text-base sm:text-lg md:text-xl font-bold font-quicksand text-slate-800 mb-5 leading-snug focus:outline-none" x-text="currentTestQuestion?.question"></h2>
+                            <h2 x-ref="testQuestionHeading" id="test-question-heading" tabindex="-1" class="text-base sm:text-lg md:text-xl font-bold font-quicksand text-slate-800 mb-3 sm:mb-5 leading-snug focus:outline-none" x-text="currentTestQuestion?.question"></h2>
                             
-                            <div class="grid grid-cols-1 gap-3">
+                            <div class="grid grid-cols-1 gap-2.5 sm:gap-3">
                                 <template :key="idx" x-for="(opt, idx) in currentTestQuestion?.options">
-                                    <button :class="testAnswers[currentTestQuestion.id] === opt.key ? 'border-secondary bg-secondary/5 border-2 font-semibold' : 'border-slate-100 hover:border-slate-200 border-2'" @click="selectTestAnswer(opt.key)" class="flex items-center justify-between min-h-[44px] py-2.5 px-3.5 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full text-left focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                                    <button :class="testAnswers[currentTestQuestion.id] === opt.key ? 'border-secondary bg-secondary/5 border-2 font-semibold' : 'border-slate-100 hover:border-slate-200 border-2'" @click="selectTestAnswer(opt.key)" class="flex items-center justify-between min-h-[40px] py-2 px-3 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full text-left focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
                                         <div class="flex items-center flex-1 min-w-0">
-                                            <span :class="testAnswers[currentTestQuestion.id] === opt.key ? 'bg-secondary text-white' : 'bg-slate-50 text-slate-400'" class="w-[30px] h-[30px] sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold font-quicksand mr-3 text-[14px] sm:text-base" x-text="opt.key"></span>
-                                            <span class="text-slate-700 font-medium text-[15px] sm:text-base leading-snug" x-text="opt.text"></span>
+                                            <span :class="testAnswers[currentTestQuestion.id] === opt.key ? 'bg-secondary text-white' : 'bg-slate-50 text-slate-400'" class="w-[28px] h-[28px] sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold font-quicksand mr-2.5 sm:mr-3 text-[13px] sm:text-base" x-text="opt.key"></span>
+                                            <span class="text-slate-700 font-medium text-[14px] sm:text-base leading-snug" x-text="opt.text"></span>
                                         </div>
                                     </button>
                                 </template>
                             </div>
                         </div>
 
-                        <div class="mt-8 sm:mt-12 flex justify-between items-center pt-5 sm:pt-6 border-t border-slate-100">
-                            <button @click="prevTestQuestion()" :disabled="testCurrentIndex === 0" class="px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl border border-slate-200 text-slate-500 font-bold font-quicksand flex items-center gap-2 hover:bg-slate-100 transition-all disabled:opacity-50 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none text-base">
-                                <span class="material-symbols-outlined text-lg">arrow_back</span> Quay lại
+                        <div class="mt-4 sm:mt-8 flex justify-between items-center pt-3 sm:pt-4 border-t border-slate-100">
+                            <button @click="prevTestQuestion()" :disabled="testCurrentIndex === 0" class="px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl border border-slate-200 text-slate-500 font-bold font-quicksand flex items-center gap-1.5 sm:gap-2 hover:bg-slate-100 transition-all disabled:opacity-50 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none text-[14px] sm:text-base">
+                                <span class="material-symbols-outlined text-base sm:text-lg">arrow_back</span> Quay lại
                             </button>
-                            <button @click="nextTestQuestion()" class="px-5 sm:px-8 py-2.5 sm:py-3 bg-secondary text-white rounded-xl font-bold transition-all flex items-center gap-2 font-quicksand shadow-lg shadow-secondary/20 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none text-base">
+                            <button @click="nextTestQuestion()" class="px-4 sm:px-8 py-2 sm:py-3 bg-secondary text-white rounded-xl font-bold transition-all flex items-center gap-1.5 sm:gap-2 font-quicksand shadow-lg shadow-secondary/20 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none text-[14px] sm:text-base">
                                 <span x-text="testCurrentIndex === 29 ? 'Nộp bài thi' : 'Câu kế tiếp'"></span> 
-                                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                                <span class="material-symbols-outlined text-base sm:text-lg">arrow_forward</span>
                             </button>
                         </div>
                     </div>

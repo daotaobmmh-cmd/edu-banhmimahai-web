@@ -310,14 +310,15 @@ function app() {
                 requestAnimationFrame(() => {
                     let targetEl = null;
                     if (this.currentView === 'study') {
-                        targetEl = this.$refs.practiceQuestionHeading || document.getElementById('practice-question-heading');
+                        targetEl = this.$refs.practiceQuestionCard || document.getElementById('practice-question-card') || this.$refs.practiceQuestionHeading || document.getElementById('practice-question-heading');
                     } else if (this.currentView === 'test') {
-                        targetEl = this.$refs.testQuestionHeading || document.getElementById('test-question-heading');
+                        targetEl = this.$refs.testQuestionCard || document.getElementById('test-question-card') || this.$refs.testQuestionHeading || document.getElementById('test-question-heading');
                     }
                     
                     if (targetEl && typeof targetEl.getBoundingClientRect === 'function') {
                         const rect = targetEl.getBoundingClientRect();
-                        const headerOffset = 90;
+                        const isMobile = window.innerWidth < 640;
+                        const headerOffset = isMobile ? 78 : 94;
                         const elementPosition = rect.top + window.pageYOffset;
                         const offsetPosition = Math.max(0, elementPosition - headerOffset);
                         window.scrollTo({
