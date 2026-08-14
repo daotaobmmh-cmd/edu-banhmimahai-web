@@ -312,30 +312,6 @@ function app() {
             });
         },
 
-        getDynamicQuestionTextClass(text) {
-            if (!text) return 'text-base sm:text-lg md:text-xl';
-            const len = text.length;
-            if (len > 120) return 'text-[13px] sm:text-base md:text-lg';
-            if (len > 70) return 'text-[14px] sm:text-lg md:text-xl';
-            return 'text-[15px] sm:text-xl md:text-2xl';
-        },
-
-        getDynamicOptionTextClass(text) {
-            if (!text) return 'text-[14px] sm:text-base';
-            const len = text.length;
-            if (len > 80) return 'text-[12px] sm:text-sm';
-            if (len > 45) return 'text-[13px] sm:text-[15px]';
-            return 'text-[14px] sm:text-base';
-        },
-
-        getDynamicExplanationTextClass(text) {
-            if (!text) return 'text-[14px] sm:text-base';
-            const len = text.length;
-            if (len > 140) return 'text-[12px] sm:text-sm';
-            if (len > 75) return 'text-[13px] sm:text-[15px]';
-            return 'text-[14px] sm:text-base';
-        },
-
         focusActiveQuestionTarget() {
             this.scrollToTopOrActiveQuestion();
         },
