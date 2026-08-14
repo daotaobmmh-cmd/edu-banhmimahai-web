@@ -283,13 +283,16 @@ function app() {
         scrollToTopOrActiveQuestion() {
             this.$nextTick(() => {
                 requestAnimationFrame(() => {
+                    if (this.currentView === 'result' || this.currentView === 'gate') {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        return;
+                    }
+
                     let targetEl = null;
                     if (this.currentView === 'study') {
                         targetEl = this.$refs.practiceQuestionCard || document.getElementById('practice-question-card') || this.$refs.practiceQuestionHeading || document.getElementById('practice-question-heading');
                     } else if (this.currentView === 'test') {
                         targetEl = this.$refs.testQuestionCard || document.getElementById('test-question-card') || this.$refs.testQuestionHeading || document.getElementById('test-question-heading');
-                    } else if (this.currentView === 'result') {
-                        targetEl = this.$refs.certificateWrapper || document.getElementById('certificate-scale-wrapper') || this.$refs.resultCard || document.getElementById('result-card');
                     }
                     
                     if (targetEl && typeof targetEl.getBoundingClientRect === 'function') {
