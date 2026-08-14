@@ -134,7 +134,7 @@
         });
     </script>
     <script src="/hoinhap/questions.js?v=a155b467c699" onerror="handleScriptError('questions.js')"></script>
-    <script src="/hoinhap/app.js?v=20260814_fix_pt20" onerror="handleScriptError('app.js')"></script>
+    <script src="/hoinhap/app.js?v=20260814_result_scroll_fix" onerror="handleScriptError('app.js')"></script>
     <script defer src="/hoinhap/alpine.min.js?v=161a71fe11f1" onerror="handleScriptError('alpine.min.js')"></script>
     <link rel="stylesheet" href="/hoinhap/styles.css?v=161a71fe11f1" />
 </head>
@@ -545,7 +545,7 @@
                     </div>
                 </div>
 
-                <div class="bento-card w-full max-w-xl mx-auto p-8 text-center animate-in zoom-in-95 duration-500 border border-slate-100 shadow-sm mb-10">
+                <div x-ref="resultCard" id="result-card" class="bento-card w-full max-w-xl mx-auto p-8 text-center animate-in zoom-in-95 duration-500 border border-slate-100 shadow-sm mb-10">
                     <div :class="resultPassed ? 'bg-primary/10 text-primary' : 'bg-error/10 text-error'" class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <span class="material-symbols-outlined text-5xl" x-text="resultPassed ? 'check_circle' : 'cancel'"></span>
                     </div>

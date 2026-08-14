@@ -161,7 +161,7 @@
         });
     </script>
     <script src="/nhuongquyen/questions.js" onerror="handleScriptError('questions.js')"></script>
-    <script src="/nhuongquyen/app.js?v=20260814_fix_pt20" onerror="handleScriptError('app.js')"></script>
+    <script src="/nhuongquyen/app.js?v=20260814_result_scroll_fix" onerror="handleScriptError('app.js')"></script>
     <script defer src="/nhuongquyen/alpine.min.js" onerror="handleScriptError('alpine.min.js')"></script>
     <link rel="stylesheet" href="/nhuongquyen/styles.css" />
 </head>
@@ -563,7 +563,7 @@
                 </div>
 
                 <!-- Score statistics container -->
-                <div class="bento-card w-full max-w-xl mx-auto p-8 text-center border border-slate-100 shadow-sm">
+                <div x-ref="resultCard" id="result-card" class="bento-card w-full max-w-xl mx-auto p-8 text-center border border-slate-100 shadow-sm">
                     <div :class="resultPassed ? 'bg-primary/10 text-primary' : 'bg-error/10 text-error'" class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <span class="material-symbols-outlined text-5xl" x-text="resultPassed ? 'check_circle' : 'cancel'"></span>
                     </div>
