@@ -606,76 +606,83 @@
                 </div>
 
                 <!-- Wrong Questions Review List -->
-                <div class="mt-12 text-left" x-show="resultWrongQuestions.length > 0">
-                    <h3 class="text-xl font-bold font-quicksand text-slate-800 mb-6 flex items-center gap-2">
-                        <span class="material-symbols-outlined text-error flex-shrink-0 w-6 h-6 flex items-center justify-center">report_problem</span>
+                <div class="wrong-questions-section mt-8 sm:mt-12 text-left" x-show="resultWrongQuestions.length > 0">
+                    <h3 class="text-base sm:text-xl font-bold font-quicksand text-slate-800 mb-4 sm:mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-error flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center">report_problem</span>
                         <span>Các câu trả lời chưa chính xác cần ôn lại</span>
                     </h3>
                     
-                    <div class="space-y-6">
+                    <div class="space-y-4 sm:space-y-6">
                         <template :key="w.question.id" x-for="w in resultWrongQuestions">
-                            <div class="bento-card p-6 border border-slate-100 bg-white shadow-sm">
-                                <div class="text-[11px] font-bold text-slate-400 uppercase mb-2" x-text="'Câu ' + (w.index + 1) + ' · Phần ' + w.question.sectionNo"></div>
-                                <h4 class="text-base sm:text-lg md:text-xl font-bold font-quicksand text-slate-800 mb-5 leading-snug" x-text="w.question.question"></h4>
+                            <div class="bento-card p-3.5 sm:p-6 border border-slate-100 bg-white shadow-sm">
+                                <div class="text-[10px] sm:text-[11px] font-bold text-slate-400 uppercase mb-1.5 sm:mb-2 font-quicksand" x-text="'Câu ' + (w.index + 1) + ' · Phần ' + w.question.sectionNo"></div>
+                                <h4 class="text-base sm:text-lg md:text-xl font-bold font-quicksand text-slate-800 mb-3 sm:mb-5 leading-snug" x-text="w.question.question"></h4>
+                                
+                                <!-- Question Image -->
+                                <template x-if="w.question.image">
+                                    <div class="mt-3 mb-4 sm:mt-4 sm:mb-5 flex justify-center">
+                                        <img :src="w.question.image" alt="Hình minh họa" class="max-h-[280px] sm:max-h-[320px] w-auto rounded-2xl cursor-pointer hover:opacity-90 transition-opacity border border-slate-100 shadow-sm" @click="openImageLightbox(w.question.image)" @error="handleImageError($event)" />
+                                    </div>
+                                </template>
                                 
                                 <!-- Unanswered Alert Indicator -->
                                 <template x-if="w.selectedAnswer === null || w.selectedAnswer === undefined">
-                                    <div class="mb-3 text-xs font-bold text-error bg-error/5 border border-error/15 px-4 py-2 rounded-xl inline-flex items-center gap-1.5 font-quicksand uppercase">
-                                        <span class="material-symbols-outlined text-sm flex-shrink-0 w-4 h-4 flex items-center justify-center">warning</span>
+                                    <div class="mb-3 text-[11px] sm:text-xs font-bold text-error bg-error/5 border border-error/15 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl inline-flex items-center gap-1.5 font-quicksand uppercase">
+                                        <span class="material-symbols-outlined text-xs sm:text-sm flex-shrink-0 w-4 h-4 flex items-center justify-center">warning</span>
                                         <span>Bạn chưa trả lời câu này</span>
                                     </div>
                                 </template>
                                 
                                 <!-- Render all 4 options -->
-                                <div class="space-y-2 mb-4">
+                                <div class="space-y-2 mb-3 sm:mb-4">
                                     <template :key="opt.key" x-for="opt in w.question.options">
                                         <div :class="[
                                             opt.key === w.question.correctAnswer ? 'bg-emerald-50 border-emerald-200 text-emerald-950 border-2' : '',
                                             opt.key === w.selectedAnswer && opt.key !== w.question.correctAnswer ? 'bg-error/10 border-error/20 text-error border-2' : '',
                                             opt.key !== w.question.correctAnswer && opt.key !== w.selectedAnswer ? 'bg-white border-slate-100 border-2 text-slate-500' : ''
                                         ].join(' ')"
-                                        class="flex items-center justify-between min-h-[44px] py-2.5 px-3.5 rounded-xl border-2">
+                                        class="flex items-center justify-between min-h-[40px] py-2 px-3 sm:min-h-[44px] sm:py-2.5 sm:px-3.5 rounded-xl border-2">
                                             <div class="flex items-center min-w-0 flex-1">
                                                 <span :class="[
                                                     opt.key === w.question.correctAnswer ? 'bg-emerald-600 text-white' : '',
                                                     opt.key === w.selectedAnswer && opt.key !== w.question.correctAnswer ? 'bg-error text-white' : '',
                                                     opt.key !== w.question.correctAnswer && opt.key !== w.selectedAnswer ? 'bg-slate-100 text-slate-400' : ''
                                                 ].join(' ')"
-                                                class="w-[30px] h-[30px] sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold font-quicksand mr-3 text-[14px] sm:text-base" x-text="opt.key"></span>
-                                                <span class="text-[15px] sm:text-base font-medium leading-snug text-left" x-text="opt.text"></span>
+                                                class="w-[28px] h-[28px] sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold font-quicksand mr-2.5 sm:mr-3 text-[13px] sm:text-base" x-text="opt.key"></span>
+                                                <span class="text-[14px] sm:text-base font-medium leading-snug text-left" x-text="opt.text"></span>
                                             </div>
                                             
-                                            <div class="flex-shrink-0 ml-3">
-                                                <span x-show="opt.key === w.question.correctAnswer" class="material-symbols-outlined text-emerald-500 font-bold text-xl flex-shrink-0 w-5 h-5 flex items-center justify-center">check</span>
-                                                <span x-show="opt.key === w.selectedAnswer && opt.key !== w.question.correctAnswer" class="material-symbols-outlined text-error font-bold text-xl flex-shrink-0 w-5 h-5 flex items-center justify-center">close</span>
+                                            <div class="flex-shrink-0 ml-2.5 sm:ml-3">
+                                                <span x-show="opt.key === w.question.correctAnswer" class="material-symbols-outlined text-emerald-500 font-bold text-lg sm:text-xl flex-shrink-0 w-5 h-5 flex items-center justify-center">check</span>
+                                                <span x-show="opt.key === w.selectedAnswer && opt.key !== w.question.correctAnswer" class="material-symbols-outlined text-error font-bold text-lg sm:text-xl flex-shrink-0 w-5 h-5 flex items-center justify-center">close</span>
                                             </div>
                                         </div>
                                     </template>
                                 </div>
                                 
                                 <!-- Explanation callout -->
-                                <div class="bg-primary/10 border border-primary/20 p-4 rounded-xl text-left">
-                                    <div class="flex items-center gap-1.5 mb-2 text-primary">
+                                <div class="bg-primary/10 border border-primary/20 p-3.5 sm:p-4 rounded-xl text-left">
+                                    <div class="flex items-center gap-1.5 mb-1.5 sm:mb-2 text-primary font-quicksand">
                                         <span class="material-symbols-outlined text-base flex-shrink-0 w-4 h-4 flex items-center justify-center">lightbulb</span>
-                                        <span class="font-bold text-base font-quicksand uppercase tracking-wider">Giải thích</span>
+                                        <span class="font-bold text-[13px] sm:text-base uppercase tracking-wider">Giải thích</span>
                                     </div>
-                                    <p class="text-[15px] sm:text-base text-slate-700 leading-relaxed font-medium" x-text="w.question.explanation"></p>
+                                    <p class="text-[14px] sm:text-base text-slate-700 leading-relaxed font-medium" x-text="w.question.explanation"></p>
                                 </div>
                                 
                                 <!-- Feedback UI Test Mode -->
-                                <div class="mt-4">
-                                    <div class="flex items-center gap-2.5">
+                                <div class="mt-3 sm:mt-4">
+                                    <div class="flex items-center gap-2">
                                         <textarea :data-feedback-qid="w.question.id"
                                                   x-model="feedbackTexts[w.question.id]"
                                                   @input="feedbackStatuses[w.question.id] = 'idle'"
                                                   placeholder="Góp ý của bạn về câu này" 
                                                   rows="1" 
-                                                  class="flex-1 min-w-0 resize-none px-4 py-2 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 font-medium text-slate-700 text-base overflow-hidden h-[44px] min-h-[44px] max-h-[100px]"
-                                                  style="min-height: 44px; height: 44px; max-height: 100px; overflow-y: hidden;"></textarea>
+                                                  class="flex-1 min-w-0 resize-none px-3.5 py-2 rounded-xl bg-amber-50 border border-amber-200 focus:bg-amber-50 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus-visible:outline-none transition-[background-color,border-color,box-shadow,color] duration-200 font-medium text-slate-700 text-[14px] sm:text-base overflow-hidden h-[40px] min-h-[40px] sm:h-[44px] sm:min-h-[44px] max-h-[100px]"
+                                                  style="min-height: 40px; height: 40px; max-height: 100px; overflow-y: hidden;"></textarea>
                                         <button @click="submitFeedback(w.question, 'test')" 
                                                 :disabled="!feedbackTexts[w.question.id] || !feedbackTexts[w.question.id].trim() || feedbackStatuses[w.question.id] === 'sending'" 
                                                 aria-label="Góp ý câu này"
-                                                class="h-[44px] min-h-[44px] w-[120px] min-w-[120px] px-3.5 inline-flex items-center justify-center gap-1.5 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold font-quicksand text-base flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed">
+                                                class="h-[40px] min-h-[40px] sm:h-[44px] sm:min-h-[44px] w-[100px] sm:w-[120px] min-w-[100px] sm:min-w-[120px] px-3 inline-flex items-center justify-center gap-1 rounded-xl border border-amber-300 bg-amber-50 text-amber-800 font-bold font-quicksand text-[14px] sm:text-base flex-shrink-0 transition-all duration-200 hover:bg-amber-100 hover:border-amber-400 active:bg-amber-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed">
                                             <template x-if="feedbackStatuses[w.question.id] === 'sending'">
                                                 <span aria-hidden="true" class="w-4 h-4 rounded-full border-2 border-amber-300 border-t-amber-800 animate-spin flex-shrink-0"></span>
                                             </template>
