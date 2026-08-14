@@ -280,14 +280,34 @@ function app() {
             }
         },
 
-        focusActiveQuestionTarget() {
+        scrollToTopOrActiveQuestion() {
             this.$nextTick(() => {
-                if (this.currentView === 'study' && this.$refs.practiceQuestionHeading) {
-                    this.$refs.practiceQuestionHeading.focus();
-                } else if (this.currentView === 'test' && this.$refs.testQuestionHeading) {
-                    this.$refs.testQuestionHeading.focus();
-                }
+                requestAnimationFrame(() => {
+                    let targetEl = null;
+                    if (this.currentView === 'study') {
+                        targetEl = this.$refs.practiceQuestionHeading || document.getElementById('practice-question-heading');
+                    } else if (this.currentView === 'test') {
+                        targetEl = this.$refs.testQuestionHeading || document.getElementById('test-question-heading');
+                    }
+                    
+                    if (targetEl && typeof targetEl.getBoundingClientRect === 'function') {
+                        const rect = targetEl.getBoundingClientRect();
+                        const headerOffset = 90;
+                        const elementPosition = rect.top + window.pageYOffset;
+                        const offsetPosition = Math.max(0, elementPosition - headerOffset);
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    } else {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                });
             });
+        },
+
+        focusActiveQuestionTarget() {
+            this.scrollToTopOrActiveQuestion();
         },
 
         // Study Mode: select section
@@ -295,6 +315,7 @@ function app() {
             this.guardNavigation(() => {
                 this.activeSectionIndex = index;
                 this.studyIndex = 0;
+                this.scrollToTopOrActiveQuestion();
             });
         },
 
@@ -322,6 +343,7 @@ function app() {
         prevStudyQuestion() {
             this.guardNavigation(() => {
                 this.studyIndex = Math.max(0, this.studyIndex - 1);
+                this.scrollToTopOrActiveQuestion();
             });
         },
         nextStudyQuestion() {
@@ -329,6 +351,7 @@ function app() {
                 const sec = this.sections[this.activeSectionIndex];
                 if (sec && this.studyIndex < sec.questions.length - 1) {
                     this.studyIndex++;
+                    this.scrollToTopOrActiveQuestion();
                 }
             });
         },
@@ -484,6 +507,7 @@ function app() {
             }, 1000);
             
             this.currentView = 'test';
+            this.scrollToTopOrActiveQuestion();
         },
 
         // Test Mode: get current question
@@ -502,12 +526,14 @@ function app() {
         prevTestQuestion() {
             this.guardNavigation(() => {
                 this.testCurrentIndex = Math.max(0, this.testCurrentIndex - 1);
+                this.scrollToTopOrActiveQuestion();
             });
         },
         nextTestQuestion() {
             this.guardNavigation(() => {
                 if (this.testCurrentIndex < 29) {
                     this.testCurrentIndex++;
+                    this.scrollToTopOrActiveQuestion();
                 } else {
                     this.showConfirmSubmit = true;
                 }
@@ -516,6 +542,7 @@ function app() {
         jumpToTestQuestion(index) {
             this.guardNavigation(() => {
                 this.testCurrentIndex = index;
+                this.scrollToTopOrActiveQuestion();
             });
         },
 
@@ -705,6 +732,7 @@ function app() {
             }
             
             this.currentView = 'study';
+            this.scrollToTopOrActiveQuestion();
         },
 
         async submitFeedback(q, mode, options = {}) {
