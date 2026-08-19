@@ -4,8 +4,8 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Bánh mì Chả cá Má Hải · Cổng Đào Tạo Nội Bộ</title>
-    <link rel="shortcut icon" href="/hoinhap/favicon.png?v=20260819_logo" type="image/png" />
-    <link rel="icon" href="/hoinhap/favicon.png?v=20260819_logo" type="image/png" />
+    <link rel="shortcut icon" href="/hoinhap/favicon.png?v=20260819_v2" type="image/png" />
+    <link rel="icon" href="/hoinhap/favicon.png?v=20260819_v2" type="image/png" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     
     <!-- Tailwind CSS CDN and Configuration -->
@@ -143,9 +143,9 @@
     
     <!-- Header -->
     <header class="flex justify-between items-center px-4 sm:px-8 h-16 sm:h-20 w-full fixed top-0 left-0 z-50 bg-white border-b border-slate-100 shadow-sm">
-        <div class="flex items-center gap-3">
-            <img src="/hoinhap/logo.png?v=20260819_logo" class="h-9 sm:h-11 w-auto object-contain rounded-lg shadow-xs" alt="Logo Bánh Mì Má Hải" />
-            <h1 @click="currentView = 'gate'" tabindex="0" class="hidden sm:block font-bold text-xl tracking-tight text-primary cursor-pointer font-quicksand focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none rounded-lg p-1">BÁNH MÌ MÁ HẢI</h1>
+        <div class="flex items-center gap-2.5 sm:gap-3">
+            <img src="/hoinhap/logo-icon.png?v=20260819_v2" class="h-9 sm:h-11 w-auto object-contain cursor-pointer transition-transform hover:scale-105" @click="currentView = 'gate'" alt="Logo Bánh Mì Má Hải" />
+            <h1 @click="currentView = 'gate'" tabindex="0" class="font-bold text-lg sm:text-xl tracking-tight text-primary cursor-pointer font-quicksand focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none rounded-lg p-1">BÁNH MÌ MÁ HẢI</h1>
         </div>
         <nav class="flex bg-slate-100/80 p-1 rounded-xl items-center absolute left-1/2 -translate-x-1/2">
             <button :class="currentView === 'study' ? 'bg-white text-primary shadow-sm font-bold' : 'text-slate-600 hover:text-slate-900 font-medium'" @click="startStudy()" class="px-2.5 py-1 sm:px-4 sm:py-1.5 rounded-lg transition-all text-[13px] sm:text-sm focus-visible:outline-none font-quicksand">
@@ -502,7 +502,7 @@
                              
                              <!-- CỤM HEADER -->
                              <div class="flex flex-col items-center justify-start select-none" style="height: 140px; padding-top: 10px;">
-                                 <img src="/hoinhap/logo.png?v=20260819_logo" class="h-16 w-auto object-contain rounded-xl shadow-xs" alt="Logo Bánh Mì Má Hải" />
+                                 <img src="/hoinhap/logo.png?v=20260819_v2" class="h-16 w-auto object-contain" alt="Logo Bánh Mì Má Hải" />
                                  <h3 class="text-[40px] leading-none font-bold text-primary uppercase tracking-[0.22em] mt-8 font-quicksand">CHỨNG NHẬN ĐÀO TẠO</h3>
                              </div>
      
