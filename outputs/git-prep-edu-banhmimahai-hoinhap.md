@@ -1,6 +1,6 @@
 # Git Repository Preparation Report
 
-This report summarizes the status of the local Git repository initialization for the Viet Street Food Internal Training Portal.
+This report summarizes the status of the local Git repository initialization for the Bánh Mì Má Hải Internal Training Portal.
 
 ## REPOSITORY STATUS
 - **Repo Initialized**: Yes (New Git repository initialized under `D:\TRILONG-tools\website-projects\edu-banhmimahai-web\.git/`)

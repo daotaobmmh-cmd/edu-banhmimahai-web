@@ -205,7 +205,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Nội thành TP.HCM (VSF giao hàng trực tiếp): đơn từ 1.200.000đ được miễn phí vận chuyển"
+        "text": "Nội thành TP.HCM (Bánh Mì Má Hải giao hàng trực tiếp): đơn từ 1.200.000đ được miễn phí vận chuyển"
       },
       {
         "key": "b",

@@ -214,7 +214,7 @@ module.exports = async function handler(req, res) {
       'Tên Prompt': { rich_text: [{ type: 'text', text: { content: promptTitle } }] },
       'Nhóm': { select: { name: category } },
       'Nội dung góp ý': { rich_text: [{ type: 'text', text: { content: feedback } }] },
-      'Người góp ý': { rich_text: [{ type: 'text', text: { content: 'Đồng nghiệp VSF' } }] },
+      'Người góp ý': { rich_text: [{ type: 'text', text: { content: 'Đồng nghiệp Nhà Má Hải' } }] },
       'Trạng thái': { status: { name: 'Mới' } },
       ...(validSourceUrl ? { 'Nguồn': { url: validSourceUrl } } : {})
     }

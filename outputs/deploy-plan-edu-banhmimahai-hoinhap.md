@@ -1,9 +1,9 @@
 # Deploy Plan - edu.banhmimahai.vn/hoinhap
 
-This document outlines the hosting architecture, DNS configuration, and verification steps for deploying the Viet Street Food Internal Training Portal.
+This document outlines the hosting architecture, DNS configuration, and verification steps for deploying the Bánh Mì Má Hải Internal Training Portal.
 
 ## PROJECT SUMMARY
-- **site**: Viet Street Food - Cổng Đào Tạo Nội Bộ
+- **site**: Bánh Mì Má Hải - Cổng Đào Tạo Nội Bộ
 - **route**: `https://edu.banhmimahai.vn/hoinhap/`
 - **workspace**: `D:\TRILONG-tools\website-projects\edu-banhmimahai-web`
 - **app type**: Pure Static Site (HTML5 / Vanilla CSS / Tailwind CDN / AlpineJS CDN)

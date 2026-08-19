@@ -1,5 +1,5 @@
 function app() {
-    const DATASET_VERSION = 'a155b467c6990e7b9f51060f9ddad6ffbb196443c61afc2a9b1f830e987cb3c4';
+    const DATASET_VERSION = '1f1864a2580138c0d22dd3677df5f38e3bf904234b1e5fcf7c31bb999203cc73';
     return {
         // App State
         currentView: 'gate', // 'gate', 'study', 'test', 'result'
@@ -19,7 +19,7 @@ function app() {
             "Phòng Hành chính - Nhân sự",
             "Phòng Tài chính - Kế toán",
             "Ban Quản lý Quy trình",
-            "VSF University"
+            "University"
         ],
         
         // Questions Data

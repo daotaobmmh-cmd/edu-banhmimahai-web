@@ -4,7 +4,7 @@ const QUESTIONS = [
     "stableId": "HN-1",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "VSF khởi nghiệp năm nào và với số vốn ban đầu bao nhiêu?",
+    "question": "Má Hải khởi nghiệp năm nào và với số vốn ban đầu bao nhiêu?",
     "options": [
       {
         "key": "a",
@@ -24,7 +24,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "VSF (tiền thân là Bánh Mì Má Hải) khởi nghiệp năm 2013 với 2 triệu đồng và một chiếc xe bánh mì. Năm 2017 là mốc thành lập công ty cổ phần, không phải mốc khởi nghiệp. Hai mốc này hay bị nhầm khi giới thiệu công ty.",
+    "explanation": "Bánh Mì Má Hải khởi nghiệp năm 2013 với 2 triệu đồng và một chiếc xe bánh mì. Năm 2017 là mốc thành lập Công ty Cổ phần Bánh Mì Má Hải, không phải mốc khởi nghiệp. Hai mốc này hay bị nhầm khi giới thiệu công ty.",
     "displayNumber": 1
   },
   {
@@ -32,11 +32,11 @@ const QUESTIONS = [
     "stableId": "HN-2",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "Hành trình phát triển của VSF gồm những cột mốc nào?",
+    "question": "Hành trình phát triển của Bánh Mì Má Hải ghi dấu những cột mốc bước ngoặt nào?",
     "options": [
       {
         "key": "a",
-        "text": "Năm 2013: khởi nghiệp từ xe bánh mì đầu tiên với số vốn 2 triệu đồng."
+        "text": "Năm 2013: Khởi nghiệp từ chiếc xe bánh mì đầu tiên tại ĐH Kinh tế TP.HCM với số vốn 2 triệu đồng."
       },
       {
         "key": "b",
@@ -44,15 +44,15 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Ngày 24/08/2025: đổi tên thành Công ty Cổ phần Viet Street Food (VSF)."
+        "text": "Tháng 03/2018: Ký hợp đồng nhượng quyền đầu tiên và bắt đầu nhân rộng mô hình xe bánh mì trên toàn quốc."
       },
       {
         "key": "d",
-        "text": "Năm 2017: thành lập Công ty Cổ phần Bánh Mì Má Hải."
+        "text": "Năm 2022: Gọi vốn thành công trên Shark Tank – Thương vụ bạc tỷ."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Hành trình VSF đi từ khởi nghiệp nhỏ năm 2013, thành lập công ty năm 2017, đến đổi tên thành Viet Street Food năm 2025. Nhớ đúng ba mốc này giúp VSFer hiểu nguồn gốc, tên pháp lý và giai đoạn phát triển hiện tại của công ty.",
+    "explanation": "Hành trình Bánh Mì Má Hải đi từ chiếc xe bánh mì khởi nghiệp sinh viên năm 2013, bước ngoặt mở rộng nhượng quyền toàn quốc năm 2018, đến cột mốc Shark Tank năm 2022 khẳng định thương hiệu. Nắm rõ các mốc này giúp Đồng nghiệp Nhà Má Hải hiểu sâu sắc lịch sử và nguồn cảm hứng phát triển của công ty.",
     "displayNumber": 2
   },
   {
@@ -60,11 +60,11 @@ const QUESTIONS = [
     "stableId": "HN-3",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "Trong nội bộ VSF, cách gọi thống nhất dành cho người làm việc tại công ty là gì?",
+    "question": "Trong nội bộ Nhà Má Hải, cách gọi thống nhất dành cho người làm việc tại công ty là gì?",
     "options": [
       {
         "key": "a",
-        "text": "VSFer."
+        "text": "Đồng nghiệp Nhà Má Hải (hoặc Đồng nghiệp)."
       },
       {
         "key": "b",
@@ -80,7 +80,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "VSFer là cách gọi thống nhất dành cho người làm việc tại VSF. Mahaier và anh em không phải cách gọi chính thức trong nội bộ công ty.",
+    "explanation": "Đồng nghiệp Nhà Má Hải là cách gọi thống nhất dành cho người làm việc tại Nhà Má Hải. Mahaier và anh em không phải cách gọi chính thức trong nội bộ công ty.",
     "displayNumber": 3
   },
   {
@@ -88,19 +88,19 @@ const QUESTIONS = [
     "stableId": "HN-4",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "Hành trình thành tích và truyền thông của VSF gồm những cột mốc nào?",
+    "question": "Hành trình thành tích và truyền thông của Bánh Mì Má Hải gồm những cột mốc nào?",
     "options": [
       {
         "key": "a",
-        "text": "Năm 2019, VSF được mời thuyết trình tại hội thảo Góc nhìn toàn cầu từ nhà đầu tư khởi nghiệp. Năm 2021, VSF đạt Á quân Startup Wheel."
+        "text": "Năm 2019, Bánh Mì Má Hải được mời thuyết trình tại hội thảo Góc nhìn toàn cầu từ nhà đầu tư khởi nghiệp. Năm 2021, Bánh Mì Má Hải đạt Á quân Startup Wheel."
       },
       {
         "key": "b",
-        "text": "Năm 2022, VSF gọi vốn thành công trên Shark Tank."
+        "text": "Năm 2022, Bánh Mì Má Hải gọi vốn thành công trên Shark Tank."
       },
       {
         "key": "c",
-        "text": "Năm 2023, VSF vào giáo trình Đại học Kinh tế TP.HCM, nhận giải thưởng sáng tạo của UBND TP.HCM và vào Top 10 I-Star."
+        "text": "Năm 2023, Bánh Mì Má Hải vào giáo trình Đại học Kinh tế TP.HCM, nhận giải thưởng sáng tạo của UBND TP.HCM và vào Top 10 I-Star."
       },
       {
         "key": "d",
@@ -108,7 +108,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Đây là các mốc thành tích và truyền thông quan trọng của VSF.",
+    "explanation": "Đây là các mốc thành tích và truyền thông quan trọng của Bánh Mì Má Hải.",
     "displayNumber": 4
   },
   {
@@ -116,15 +116,15 @@ const QUESTIONS = [
     "stableId": "HN-5",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "VSF có những hoạt động cộng đồng tiêu biểu nào?",
+    "question": "Bánh Mì Má Hải có những hoạt động cộng đồng tiêu biểu nào?",
     "options": [
       {
         "key": "a",
-        "text": "Năm 2021, VSF hợp tác cùng Chợ Tốt trong chiến dịch Mua bánh mì, tặng việc làm, tạo hơn 1.000.000 cơ hội việc làm."
+        "text": "Năm 2021, Bánh Mì Má Hải hợp tác cùng Chợ Tốt trong chiến dịch Mua bánh mì, tặng việc làm, tạo hơn 1.000.000 cơ hội việc làm."
       },
       {
         "key": "b",
-        "text": "Năm 2024, VSF hợp tác với Hoa hậu Xuân Hạnh để trao hơn 10 xe bánh mì cho người có hoàn cảnh khó khăn."
+        "text": "Năm 2024, Bánh Mì Má Hải hợp tác với Hoa hậu Xuân Hạnh để trao hơn 10 xe bánh mì cho người có hoàn cảnh khó khăn."
       },
       {
         "key": "c",
@@ -132,11 +132,11 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "VSF chưa có hoạt động cộng đồng chính thức."
+        "text": "Bánh Mì Má Hải chưa có hoạt động cộng đồng chính thức."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Hai hoạt động này cho thấy VSF không chỉ bán sản phẩm mà còn tạo cơ hội việc làm và hỗ trợ sinh kế. Khi hiểu điều này, VSFer thấy công việc của mình có ý nghĩa hơn và tự hào hơn vì đang góp phần làm điều tốt cho cộng đồng.",
+    "explanation": "Hai hoạt động này cho thấy Bánh Mì Má Hải không chỉ bán sản phẩm mà còn tạo cơ hội việc làm và hỗ trợ sinh kế. Khi hiểu điều này, Đồng nghiệp Nhà Má Hải thấy công việc của mình có ý nghĩa hơn và tự hào hơn vì đang góp phần làm điều tốt cho cộng đồng.",
     "displayNumber": 5
   },
   {
@@ -144,7 +144,7 @@ const QUESTIONS = [
     "stableId": "HN-6",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "Tầm nhìn của VSF là gì?",
+    "question": "Tầm nhìn của Bánh Mì Má Hải là gì?",
     "options": [
       {
         "key": "a",
@@ -152,7 +152,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Trở thành thương hiệu ẩm thực đường phố Việt Nam hàng đầu, đưa ẩm thực bình dân Việt ra thế giới bằng nhượng quyền và chuỗi cung ứng bền vững."
+        "text": "Trở thành thương hiệu bánh mì chả cá lớn nhất và được yêu thích nhất Việt Nam."
       },
       {
         "key": "c",
@@ -164,7 +164,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Tầm nhìn của VSF không chỉ là mở nhiều xe hay lớn mạnh ở một khu vực. VSF hướng đến một thương hiệu ẩm thực đường phố Việt có thể đi ra thế giới bằng mô hình bền vững.",
+    "explanation": "Tầm nhìn của Bánh Mì Má Hải là tới năm 2030 trở thành thương hiệu bánh mì chả cá lớn nhất và được yêu thích nhất Việt Nam, đưa ẩm thực bình dân Việt phát triển bền vững.",
     "displayNumber": 6
   },
   {
@@ -172,11 +172,11 @@ const QUESTIONS = [
     "stableId": "HN-7",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "Điều nào KHÔNG thuộc sứ mệnh của VSF?",
+    "question": "Điều nào KHÔNG thuộc sứ mệnh của Bánh Mì Má Hải?",
     "options": [
       {
         "key": "a",
-        "text": "Tạo cơ hội khởi nghiệp và việc làm bền vững cho người Việt."
+        "text": "Đồng hành cùng 3.000 chị em nội trợ, thanh niên, công nhân, hộ gia đình và người lao động để có công việc ổn định và phát triển bền vững."
       },
       {
         "key": "b",
@@ -192,7 +192,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Sứ mệnh của VSF tập trung vào con người, sản phẩm và giá trị ẩm thực Việt. Mục tiêu vốn hóa trên sàn chứng khoán không phải sứ mệnh được nêu trong tài liệu này.",
+    "explanation": "Sứ mệnh của Bánh Mì Má Hải tập trung vào con người, tạo sinh kế bền vững và nâng cao giá trị ẩm thực Việt. Mục tiêu vốn hóa trên sàn chứng khoán không phải sứ mệnh được nêu trong tài liệu này.",
     "displayNumber": 7
   },
   {
@@ -200,7 +200,7 @@ const QUESTIONS = [
     "stableId": "HN-8",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "Sản phẩm chủ lực của VSF hiện nay gồm những gì?",
+    "question": "Sản phẩm chủ lực của Bánh Mì Má Hải hiện nay gồm những gì?",
     "options": [
       {
         "key": "a",
@@ -220,7 +220,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "VSF có ba nhóm sản phẩm chính là xe đẩy nhượng quyền, chả cá sợi MHF và các món ẩm thực đường phố Việt. Hiểu đủ ba nhóm này giúp VSFer thấy rõ công ty đang phát triển theo nhiều hướng.",
+    "explanation": "Bánh Mì Má Hải có ba nhóm sản phẩm chính là xe đẩy nhượng quyền, chả cá sợi MHF và các món ẩm thực đường phố Việt. Hiểu đủ ba nhóm này giúp Đồng nghiệp Nhà Má Hải thấy rõ công ty đang phát triển theo nhiều hướng.",
     "displayNumber": 8
   },
   {
@@ -248,7 +248,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Nhà máy MHF là nơi sản xuất chả cá sợi cho hệ thống VSF. Nhớ đúng địa chỉ giúp nhân sự mới biết nơi liên hệ khi có công việc liên quan đến sản xuất.",
+    "explanation": "Nhà máy MHF là nơi sản xuất chả cá sợi cho hệ thống Bánh Mì Má Hải. Nhớ đúng địa chỉ giúp nhân sự mới biết nơi liên hệ khi có công việc liên quan đến sản xuất.",
     "displayNumber": 9
   },
   {
@@ -256,7 +256,7 @@ const QUESTIONS = [
     "stableId": "HN-10",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "VSF sẽ mở rộng theo những hướng nào?",
+    "question": "Bánh Mì Má Hải sẽ mở rộng theo những hướng nào?",
     "options": [
       {
         "key": "a",
@@ -276,7 +276,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "VSF mở rộng theo ba hướng là xe đẩy nhượng quyền, chả cá sợi MHF và ẩm thực đường phố Việt. Nắm được ba hướng này giúp VSFer hiểu bức tranh phát triển chung của công ty.",
+    "explanation": "Bánh Mì Má Hải mở rộng theo ba hướng là xe đẩy nhượng quyền, chả cá sợi MHF và ẩm thực đường phố Việt. Nắm được ba hướng này giúp Đồng nghiệp Nhà Má Hải hiểu bức tranh phát triển chung của công ty.",
     "displayNumber": 10
   },
   {
@@ -284,7 +284,7 @@ const QUESTIONS = [
     "stableId": "HN-11",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "VSF có những giá trị cốt lõi nào?",
+    "question": "Bánh Mì Má Hải có những giá trị cốt lõi nào?",
     "options": [
       {
         "key": "a",
@@ -304,7 +304,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "VSF có 5 giá trị cốt lõi là Giá trị, Kết quả, Trách nhiệm, Làm chủ và Học hỏi. Đây là cách VSFer nhìn việc, làm việc và phối hợp mỗi ngày. Nhớ đủ 5 giá trị giúp bạn hiểu công ty mong đợi điều gì ở từng người.",
+    "explanation": "Bánh Mì Má Hải có 5 giá trị cốt lõi là Giá trị, Kết quả, Trách nhiệm, Làm chủ và Học hỏi. Đây là cách Đồng nghiệp Nhà Má Hải nhìn việc, làm việc và phối hợp mỗi ngày. Nhớ đủ 5 giá trị giúp bạn hiểu công ty mong đợi điều gì ở từng người.",
     "displayNumber": 11
   },
   {
@@ -312,7 +312,7 @@ const QUESTIONS = [
     "stableId": "HN-12",
     "sectionNo": 1,
     "sectionName": "",
-    "question": "VSFer hiểu đúng về GIÁ TRỊ và KẾT QUẢ như thế nào?",
+    "question": "Đồng nghiệp Nhà Má Hải hiểu đúng về GIÁ TRỊ và KẾT QUẢ như thế nào?",
     "options": [
       {
         "key": "a",
@@ -332,7 +332,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "GIÁ TRỊ giúp VSFer biết việc mình làm có ích cho ai. KẾT QUẢ giúp điều có ích đó thành việc rõ ràng và dùng được. Khi làm đúng cả hai, VSF vừa có tâm với khách hàng, vừa làm việc chuyên nghiệp và đáng tin hơn.",
+    "explanation": "GIÁ TRỊ giúp Đồng nghiệp Nhà Má Hải biết việc mình làm có ích cho ai. KẾT QUẢ giúp điều có ích đó thành việc rõ ràng và dùng được. Khi làm đúng cả hai, Bánh Mì Má Hải vừa có tâm với khách hàng, vừa làm việc chuyên nghiệp và đáng tin hơn.",
     "displayNumber": 12
   },
   {
@@ -340,7 +340,7 @@ const QUESTIONS = [
     "stableId": "HN-13",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "VSFer hiểu đúng về TRÁCH NHIỆM như thế nào?",
+    "question": "Đồng nghiệp Nhà Má Hải hiểu đúng về TRÁCH NHIỆM như thế nào?",
     "options": [
       {
         "key": "a",
@@ -360,7 +360,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "TRÁCH NHIỆM là dám nhận, giữ lời và xử lý lỗi tới cùng. Khi VSFer làm đúng giá trị này, việc của mình chắc hơn, đồng nghiệp tin hơn và công ty cũng vận hành ổn định hơn.",
+    "explanation": "TRÁCH NHIỆM là dám nhận, giữ lời và xử lý lỗi tới cùng. Khi Đồng nghiệp làm đúng giá trị này, việc của mình chắc hơn, đồng nghiệp tin hơn và công ty cũng vận hành ổn định hơn.",
     "displayNumber": 13
   },
   {
@@ -368,7 +368,7 @@ const QUESTIONS = [
     "stableId": "HN-14",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "VSFer hiểu đúng về LÀM CHỦ như thế nào?",
+    "question": "Đồng nghiệp Nhà Má Hải hiểu đúng về LÀM CHỦ như thế nào?",
     "options": [
       {
         "key": "a",
@@ -388,7 +388,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "LÀM CHỦ là chủ động thực hiện, theo dõi và chịu trách nhiệm với công việc của mình. Làm tốt giúp VSFer ít phải chờ nhắc, phối hợp rõ ràng hơn và tiến bộ nhanh hơn.",
+    "explanation": "LÀM CHỦ là chủ động thực hiện, theo dõi và chịu trách nhiệm với công việc của mình. Làm tốt giúp Đồng nghiệp ít phải chờ nhắc, phối hợp rõ ràng hơn và tiến bộ nhanh hơn.",
     "displayNumber": 14
   },
   {
@@ -396,7 +396,7 @@ const QUESTIONS = [
     "stableId": "HN-15",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "VSFer hiểu đúng về HỌC HỎI như thế nào?",
+    "question": "Đồng nghiệp Nhà Má Hải hiểu đúng về HỌC HỎI như thế nào?",
     "options": [
       {
         "key": "a",
@@ -416,7 +416,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "HỌC HỎI là chịu lắng nghe, biết rút bài học và sẵn lòng chia sẻ lại. Khi VSFer luôn học hỏi, mình giỏi hơn mỗi ngày và công ty cũng mạnh lên vì cả đội cùng tiến bộ.",
+    "explanation": "HỌC HỎI là chịu lắng nghe, biết rút bài học và sẵn lòng chia sẻ lại. Khi Đồng nghiệp luôn học hỏi, mình giỏi hơn mỗi ngày và công ty cũng mạnh lên vì cả đội cùng tiến bộ.",
     "displayNumber": 15
   },
   {
@@ -424,7 +424,7 @@ const QUESTIONS = [
     "stableId": "HN-16",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "Khi mắc lỗi trong công việc, VSFer nên làm gì?",
+    "question": "Khi mắc lỗi trong công việc, Đồng nghiệp Nhà Má Hải nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -444,7 +444,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Khi có lỗi, VSFer cần báo sớm, cùng tìm cách sửa và rút kinh nghiệm. Đây là cách thể hiện TRÁCH NHIỆM, LÀM CHỦ và HỌC HỎI. Làm đúng giúp mình trưởng thành hơn, đồng nghiệp tránh lặp lỗi và công ty làm việc minh bạch hơn.",
+    "explanation": "Khi có lỗi, Đồng nghiệp cần báo sớm, cùng tìm cách sửa và rút kinh nghiệm. Đây là cách thể hiện TRÁCH NHIỆM, LÀM CHỦ và HỌC HỎI. Làm đúng giúp mình trưởng thành hơn, đồng nghiệp tránh lặp lỗi và công ty làm việc minh bạch hơn.",
     "displayNumber": 16
   },
   {
@@ -452,7 +452,7 @@ const QUESTIONS = [
     "stableId": "HN-17",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "Khi làm sản phẩm hoặc dịch vụ, VSFer cần nhớ gì về GIÁ TRỊ và KẾT QUẢ?",
+    "question": "Khi làm sản phẩm hoặc dịch vụ, Đồng nghiệp Nhà Má Hải cần nhớ gì về GIÁ TRỊ và KẾT QUẢ?",
     "options": [
       {
         "key": "a",
@@ -464,7 +464,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Khi có cả GIÁ TRỊ và KẾT QUẢ, sản phẩm hoặc dịch vụ của VSF sẽ đáng tin hơn."
+        "text": "Khi có cả GIÁ TRỊ và KẾT QUẢ, sản phẩm hoặc dịch vụ của Bánh Mì Má Hải sẽ đáng tin hơn."
       },
       {
         "key": "d",
@@ -472,7 +472,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "VSFer không chỉ làm cho xong việc mà cần tạo ra điều có ích và có kết quả rõ ràng. Khi làm đúng cả GIÁ TRỊ và KẾT QUẢ, mình làm việc chắc hơn, khách hàng yên tâm hơn và công ty chuyên nghiệp hơn mỗi ngày.",
+    "explanation": "Đồng nghiệp không chỉ làm cho xong việc mà cần tạo ra điều có ích và có kết quả rõ ràng. Khi làm đúng cả GIÁ TRỊ và KẾT QUẢ, mình làm việc chắc hơn, khách hàng yên tâm hơn và công ty chuyên nghiệp hơn mỗi ngày.",
     "displayNumber": 17
   },
   {
@@ -480,11 +480,11 @@ const QUESTIONS = [
     "stableId": "HN-18",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "Địa chỉ chính của VSF cần nhớ là gì?",
+    "question": "Địa chỉ chính của Nhà Má Hải cần nhớ là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Văn phòng tại 670 Đường 3 Tháng 2, TP.HCM (Quận 10 cũ)."
+        "text": "Văn phòng tại 670 – 672 Đường 3 Tháng 2, phường Diên Hồng, TP.HCM (Quận 10 cũ)."
       },
       {
         "key": "b",
@@ -500,7 +500,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "VSF có ba địa điểm chính: Văn phòng, Kho vận và Nhà máy MHF. Nhân sự mới cần nhớ đúng địa chỉ để đi đúng nơi và liên hệ đúng đơn vị khi có công việc.",
+    "explanation": "Nhà Má Hải có ba địa điểm chính: Văn phòng, Kho vận và Nhà máy MHF. Nhân sự mới cần nhớ đúng địa chỉ để đi đúng nơi và liên hệ đúng đơn vị khi có công việc.",
     "displayNumber": 18
   },
   {
@@ -508,11 +508,11 @@ const QUESTIONS = [
     "stableId": "HN-19",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "Mỗi địa điểm VSF phù hợp với việc gì?",
+    "question": "Mỗi địa điểm của Nhà Má Hải phù hợp với việc gì?",
     "options": [
       {
         "key": "a",
-        "text": "Văn phòng 670 Đường 3 Tháng 2, TP.HCM (Quận 10 cũ) là khu vực làm việc của đại đa số nhân sự nội bộ, đồng thời tiếp nhận khiếu nại và hỗ trợ khách hàng."
+        "text": "Văn phòng 670 – 672 Đường 3 Tháng 2, phường Diên Hồng, TP.HCM (Quận 10 cũ) là khu vực làm việc của đại đa số nhân sự nội bộ, đồng thời tiếp nhận khiếu nại và hỗ trợ khách hàng."
       },
       {
         "key": "b",
@@ -536,7 +536,7 @@ const QUESTIONS = [
     "stableId": "HN-20",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "VSF đang áp dụng những loại hợp đồng nào?",
+    "question": "Nhà Má Hải đang áp dụng những loại hợp đồng nào?",
     "options": [
       {
         "key": "a",
@@ -556,7 +556,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "VSF áp dụng hợp đồng lao động xác định thời hạn, hợp đồng lao động không xác định thời hạn và hợp đồng dịch vụ cho Tổ Shipper. VSFer cần xem đúng loại hợp đồng mình đã ký để hiểu quyền và nghĩa vụ liên quan.",
+    "explanation": "Nhà Má Hải áp dụng hợp đồng lao động xác định thời hạn, hợp đồng lao động không xác định thời hạn và hợp đồng dịch vụ cho Tổ Shipper. Đồng nghiệp Nhà Má Hải cần xem đúng loại hợp đồng mình đã ký để hiểu quyền và nghĩa vụ liên quan.",
     "displayNumber": 20
   },
   {
@@ -564,7 +564,7 @@ const QUESTIONS = [
     "stableId": "HN-21",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "HĐLĐ xác định thời hạn tại VSF được hiểu như thế nào?",
+    "question": "HĐLĐ xác định thời hạn tại Nhà Má Hải được hiểu như thế nào?",
     "options": [
       {
         "key": "a",
@@ -584,7 +584,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "HĐLĐ xác định thời hạn tại VSF gồm dưới 12 tháng hoặc từ 12 đến 36 tháng. Nhớ đúng hai nhóm này giúp VSFer hiểu tính chất loại hợp đồng của mình.",
+    "explanation": "HĐLĐ xác định thời hạn tại Nhà Má Hải gồm dưới 12 tháng hoặc từ 12 đến 36 tháng. Nhớ đúng hai nhóm này giúp Đồng nghiệp Nhà Má Hải hiểu tính chất loại hợp đồng của mình.",
     "displayNumber": 21
   },
   {
@@ -592,7 +592,7 @@ const QUESTIONS = [
     "stableId": "HN-22",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "Khi xin nghỉ, VSFer cần báo trước bao lâu theo từng loại HĐLĐ?",
+    "question": "Khi xin nghỉ, Đồng nghiệp Nhà Má Hải cần báo trước bao lâu theo từng loại HĐLĐ?",
     "options": [
       {
         "key": "a",
@@ -612,7 +612,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Mỗi loại HĐLĐ có thời hạn báo trước khác nhau. Nhớ đúng 45 ngày, 30 ngày và 03 ngày làm việc giúp VSFer nghỉ đúng luật, giữ quyền lợi và giúp công ty sắp xếp công việc không bị động.",
+    "explanation": "Mỗi loại HĐLĐ có thời hạn báo trước khác nhau. Nhớ đúng 45 ngày, 30 ngày và 03 ngày làm việc giúp Đồng nghiệp nghỉ đúng luật, giữ quyền lợi và giúp công ty sắp xếp công việc không bị động.",
     "displayNumber": 22
   },
   {
@@ -620,7 +620,7 @@ const QUESTIONS = [
     "stableId": "HN-23",
     "sectionNo": 2,
     "sectionName": "",
-    "question": "Trong giai đoạn thử việc tại VSF, VSFer cần nhớ gì?",
+    "question": "Trong giai đoạn thử việc tại Nhà Má Hải, Đồng nghiệp Nhà Má Hải cần nhớ gì?",
     "options": [
       {
         "key": "a",
@@ -704,7 +704,7 @@ const QUESTIONS = [
     "stableId": "HN-26",
     "sectionNo": 3,
     "sectionName": "",
-    "question": "Với hành vi thuộc 12 Trái cấm người VSF không được ăn, VSF xử lý theo nguyên tắc nào?",
+    "question": "Với hành vi thuộc 12 Trái cấm người Má Hải không được ăn, Nhà Má Hải xử lý theo nguyên tắc nào?",
     "options": [
       {
         "key": "a",
@@ -724,7 +724,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "12 Trái cấm người VSF không được ăn là nhóm hành vi vi phạm nghiêm trọng, nhưng không có nghĩa là tự động sa thải mà không xem xét. Mọi quyết định xử lý phải dựa trên căn cứ, mức độ vi phạm và đúng trình tự. Làm đúng quy trình giúp bảo vệ người lao động, người xử lý và công ty.",
+    "explanation": "12 Trái cấm người Má Hải không được ăn là nhóm hành vi vi phạm nghiêm trọng, nhưng không có nghĩa là tự động sa thải mà không xem xét. Mọi quyết định xử lý phải dựa trên căn cứ, mức độ vi phạm và đúng trình tự. Làm đúng quy trình giúp bảo vệ người lao động, người xử lý và công ty.",
     "displayNumber": 26
   },
   {
@@ -752,7 +752,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Khi không đồng ý với quyết định kỷ luật, VSFer cần phản hồi qua kênh chính thức: gửi khiếu nại bằng văn bản tới Phòng Nhân sự và báo cáo người quản lý thường trực để được xem xét lại.",
+    "explanation": "Khi không đồng ý với quyết định kỷ luật, Đồng nghiệp Nhà Má Hải cần phản hồi qua kênh chính thức: gửi khiếu nại bằng văn bản tới Phòng Nhân sự và báo cáo người quản lý thường trực để được xem xét lại.",
     "displayNumber": 27
   },
   {
@@ -760,7 +760,7 @@ const QUESTIONS = [
     "stableId": "HN-28",
     "sectionNo": 3,
     "sectionName": "",
-    "question": "Số ngày phép năm chuẩn của VSFer chính thức là bao nhiêu?",
+    "question": "Số ngày phép năm chuẩn của Đồng nghiệp Nhà Má Hải chính thức là bao nhiêu?",
     "options": [
       {
         "key": "a",
@@ -780,7 +780,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "VSFer làm đủ 12 tháng có 12 ngày phép năm trong điều kiện làm việc bình thường và được cộng thêm 1 ngày khi đủ mỗi 5 năm làm việc. Trường hợp chưa làm đủ 12 tháng, số ngày phép được tính theo thời gian làm việc và quy định đang áp dụng. VSFer nên theo dõi số phép trên hệ thống và liên hệ Phòng Nhân sự khi dữ liệu chưa chính xác.",
+    "explanation": "Đồng nghiệp Nhà Má Hải làm đủ 12 tháng có 12 ngày phép năm trong điều kiện làm việc bình thường và được cộng thêm 1 ngày khi đủ mỗi 5 năm làm việc. Trường hợp chưa làm đủ 12 tháng, số ngày phép được tính theo thời gian làm việc và quy định đang áp dụng. Đồng nghiệp Nhà Má Hải nên theo dõi số phép trên hệ thống và liên hệ Phòng Nhân sự khi dữ liệu chưa chính xác.",
     "displayNumber": 28
   },
   {
@@ -788,7 +788,7 @@ const QUESTIONS = [
     "stableId": "HN-29",
     "sectionNo": 3,
     "sectionName": "",
-    "question": "Số ngày nghỉ lễ chính thức hưởng nguyên lương tại VSF là bao nhiêu ngày/năm?",
+    "question": "Số ngày nghỉ lễ chính thức hưởng nguyên lương tại Nhà Má Hải là bao nhiêu ngày/năm?",
     "options": [
       {
         "key": "a",
@@ -808,7 +808,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "VSF áp dụng đủ 11 ngày nghỉ lễ theo Luật Lao động, nguyên lương. Thời gian nghỉ lễ được cập nhật vào lịch hệ thống hàng năm. VSFer không được tự cộng ít hơn hay nhiều hơn.",
+    "explanation": "Nhà Má Hải áp dụng đủ 11 ngày nghỉ lễ theo Luật Lao động, nguyên lương. Thời gian nghỉ lễ được cập nhật vào lịch hệ thống hàng năm. Đồng nghiệp Nhà Má Hải không được tự cộng ít hơn hay nhiều hơn.",
     "displayNumber": 29
   },
   {
@@ -816,7 +816,7 @@ const QUESTIONS = [
     "stableId": "HN-30",
     "sectionNo": 3,
     "sectionName": "",
-    "question": "Khi xin nghỉ phép, VSFer cần làm gì?",
+    "question": "Khi xin nghỉ phép, Đồng nghiệp Nhà Má Hải cần làm gì?",
     "options": [
       {
         "key": "a",
@@ -836,7 +836,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "VSFer cần lập đơn trên 1Office, thông báo cho quản lý trực tiếp và theo dõi đến khi có phản hồi. Nếu đơn chưa được xử lý, cần chủ động nhắc người duyệt và bàn giao công việc. Không tự nghỉ chỉ vì đã gửi đơn.",
+    "explanation": "Đồng nghiệp Nhà Má Hải cần lập đơn trên 1Office, thông báo cho quản lý trực tiếp và theo dõi đến khi có phản hồi. Nếu đơn chưa được xử lý, cần chủ động nhắc người duyệt và bàn giao công việc. Không tự nghỉ chỉ vì đã gửi đơn.",
     "displayNumber": 30
   },
   {
@@ -844,7 +844,7 @@ const QUESTIONS = [
     "stableId": "HN-31",
     "sectionNo": 3,
     "sectionName": "",
-    "question": "Khi nghỉ ốm, ốm dài ngày hoặc nghỉ không lương, VSFer cần làm gì?",
+    "question": "Khi nghỉ ốm, ốm dài ngày hoặc nghỉ không lương, Đồng nghiệp Nhà Má Hải cần làm gì?",
     "options": [
       {
         "key": "a",
@@ -864,7 +864,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Dù nghỉ theo trường hợp nào, VSFer vẫn cần báo đúng người, có hồ sơ phù hợp và lưu vết rõ ràng. Làm đúng giúp bảo vệ quyền lợi về lương, bảo hiểm và giúp đội sắp xếp công việc.",
+    "explanation": "Dù nghỉ theo trường hợp nào, Đồng nghiệp Nhà Má Hải vẫn cần báo đúng người, có hồ sơ phù hợp và lưu vết rõ ràng. Làm đúng giúp bảo vệ quyền lợi về lương, bảo hiểm và giúp đội sắp xếp công việc.",
     "displayNumber": 31
   },
   {
@@ -872,7 +872,7 @@ const QUESTIONS = [
     "stableId": "HN-32",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "Khi quản lý phép năm, VSFer cần nhớ gì?",
+    "question": "Khi quản lý phép năm, Đồng nghiệp Nhà Má Hải cần nhớ gì?",
     "options": [
       {
         "key": "a",
@@ -892,7 +892,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Số phép và cách tính ngày nghỉ có thể thay đổi theo thời gian làm việc và quy định đang áp dụng. VSFer cần theo dõi trên hệ thống, gửi đơn đúng quy trình và kiểm tra thông báo chính thức để quyền lợi được ghi nhận đúng.",
+    "explanation": "Số phép và cách tính ngày nghỉ có thể thay đổi theo thời gian làm việc và quy định đang áp dụng. Đồng nghiệp Nhà Má Hải cần theo dõi trên hệ thống, gửi đơn đúng quy trình và kiểm tra thông báo chính thức để quyền lợi được ghi nhận đúng.",
     "displayNumber": 32
   },
   {
@@ -900,7 +900,7 @@ const QUESTIONS = [
     "stableId": "HN-33",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "VSFer chính thức có thể được hưởng những nhóm quyền lợi nào?",
+    "question": "Đồng nghiệp Nhà Má Hải chính thức có thể được hưởng những nhóm quyền lợi nào?",
     "options": [
       {
         "key": "a",
@@ -920,7 +920,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Quyền lợi của VSFer gồm nhiều nhóm khác nhau và có thể được điều chỉnh theo từng giai đoạn. Khi cần kiểm tra mức hưởng hoặc điều kiện áp dụng, VSFer nên xem quy chế hiện hành hoặc liên hệ Phòng Nhân sự.",
+    "explanation": "Quyền lợi của Đồng nghiệp Nhà Má Hải gồm nhiều nhóm khác nhau và có thể được điều chỉnh theo từng giai đoạn. Khi cần kiểm tra mức hưởng hoặc điều kiện áp dụng, Đồng nghiệp Nhà Má Hải nên xem quy chế hiện hành hoặc liên hệ Phòng Nhân sự.",
     "displayNumber": 33
   },
   {
@@ -928,7 +928,7 @@ const QUESTIONS = [
     "stableId": "HN-34",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "Cách hiểu nào KHÔNG đúng về phúc lợi tại VSF?",
+    "question": "Cách hiểu nào KHÔNG đúng về phúc lợi tại Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -936,11 +936,11 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Mọi phúc lợi đều cố định và áp dụng giống nhau cho tất cả VSFer."
+        "text": "Mọi phúc lợi đều cố định và áp dụng giống nhau cho tất cả Đồng nghiệp Nhà Má Hải."
       },
       {
         "key": "c",
-        "text": "VSFer nên kiểm tra trên kênh chính thức khi chưa rõ quyền lợi."
+        "text": "Đồng nghiệp Nhà Má Hải nên kiểm tra trên kênh chính thức khi chưa rõ quyền lợi."
       },
       {
         "key": "d",
@@ -948,7 +948,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Phúc lợi có thể thay đổi theo từng chương trình, từng đối tượng và từng thời kỳ. VSFer cần xem quy chế hoặc thông báo chính thức, không tự suy đoán từ thông tin truyền miệng.",
+    "explanation": "Phúc lợi có thể thay đổi theo từng chương trình, từng đối tượng và từng thời kỳ. Đồng nghiệp Nhà Má Hải cần xem quy chế hoặc thông báo chính thức, không tự suy đoán từ thông tin truyền miệng.",
     "displayNumber": 34
   },
   {
@@ -956,7 +956,7 @@ const QUESTIONS = [
     "stableId": "HN-35",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "VSFer khi làm việc tại VSF cần mặc trang phục như thế nào?",
+    "question": "Đồng nghiệp Nhà Má Hải khi làm việc tại Nhà Má Hải cần mặc trang phục như thế nào?",
     "options": [
       {
         "key": "a",
@@ -964,7 +964,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Đúng đồng phục VSF, sạch sẽ và chỉnh tề."
+        "text": "Đúng đồng phục Má Hải, sạch sẽ và chỉnh tề."
       },
       {
         "key": "c",
@@ -976,7 +976,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Trang phục đúng giúp VSFer gọn gàng, chuyên nghiệp và giữ hình ảnh VSF trong mắt đồng nghiệp, khách hàng.",
+    "explanation": "Trang phục đúng giúp Đồng nghiệp Nhà Má Hải gọn gàng, chuyên nghiệp và giữ hình ảnh Nhà Má Hải trong mắt đồng nghiệp, khách hàng.",
     "displayNumber": 35
   },
   {
@@ -984,7 +984,7 @@ const QUESTIONS = [
     "stableId": "HN-36",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "VSFer cần lưu ý gì về ngoại hình khi làm việc tại VSF?",
+    "question": "Đồng nghiệp Nhà Má Hải cần lưu ý gì về ngoại hình khi làm việc tại Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -1004,7 +1004,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Ngoại hình gọn gàng giúp VSFer làm việc an toàn, sạch sẽ và tạo cảm giác tin cậy khi tiếp xúc với đồng nghiệp, khách hàng.",
+    "explanation": "Ngoại hình gọn gàng giúp Đồng nghiệp Nhà Má Hải làm việc an toàn, sạch sẽ và tạo cảm giác tin cậy khi tiếp xúc với đồng nghiệp, khách hàng.",
     "displayNumber": 36
   },
   {
@@ -1012,7 +1012,7 @@ const QUESTIONS = [
     "stableId": "HN-37",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "Khi giao tiếp với khách hàng, VSFer phải xưng hô như thế nào?",
+    "question": "Khi giao tiếp với khách hàng, Đồng nghiệp Nhà Má Hải phải xưng hô như thế nào?",
     "options": [
       {
         "key": "a",
@@ -1032,7 +1032,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Giao tiếp lịch sự giúp khách hàng thấy được tôn trọng. VSFer cần xưng hô đúng mực, nói rõ ràng và giữ hình ảnh chuyên nghiệp cho công ty.",
+    "explanation": "Giao tiếp lịch sự giúp khách hàng thấy được tôn trọng. Đồng nghiệp Nhà Má Hải cần xưng hô đúng mực, nói rõ ràng và giữ hình ảnh chuyên nghiệp cho công ty.",
     "displayNumber": 37
   },
   {
@@ -1040,7 +1040,7 @@ const QUESTIONS = [
     "stableId": "HN-38",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "Thái độ VSFer khi gặp khách hàng phải như thế nào?",
+    "question": "Thái độ Đồng nghiệp Nhà Má Hải khi gặp khách hàng phải như thế nào?",
     "options": [
       {
         "key": "a",
@@ -1060,7 +1060,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Khi gặp khách hàng, VSFer cần biết lắng nghe, giữ bình tĩnh và giải thích rõ ràng. Nếu vượt thẩm quyền, cần chuyển quản lý trực tiếp hoặc hotline công ty để xử lý đúng kênh.",
+    "explanation": "Khi gặp khách hàng, Đồng nghiệp Nhà Má Hải cần biết lắng nghe, giữ bình tĩnh và giải thích rõ ràng. Nếu vượt thẩm quyền, cần chuyển quản lý trực tiếp hoặc hotline công ty để xử lý đúng kênh.",
     "displayNumber": 38
   },
   {
@@ -1068,7 +1068,7 @@ const QUESTIONS = [
     "stableId": "HN-39",
     "sectionNo": 4,
     "sectionName": "",
-    "question": "VSFer nên sử dụng điện thoại cá nhân trong giờ làm như thế nào?",
+    "question": "Đồng nghiệp Nhà Má Hải nên sử dụng điện thoại cá nhân trong giờ làm như thế nào?",
     "options": [
       {
         "key": "a",
@@ -1088,7 +1088,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Điện thoại cá nhân chỉ nên được sử dụng khi cần và không làm gián đoạn công việc, ảnh hưởng khách hàng hoặc gây mất an toàn. Kiểm soát tốt việc riêng giúp VSFer giữ sự tập trung và hình ảnh chuyên nghiệp.",
+    "explanation": "Điện thoại cá nhân chỉ nên được sử dụng khi cần và không làm gián đoạn công việc, ảnh hưởng khách hàng hoặc gây mất an toàn. Kiểm soát tốt việc riêng giúp Đồng nghiệp Nhà Má Hải giữ sự tập trung và hình ảnh chuyên nghiệp.",
     "displayNumber": 39
   },
   {
@@ -1096,7 +1096,7 @@ const QUESTIONS = [
     "stableId": "HN-40",
     "sectionNo": 5,
     "sectionName": "",
-    "question": "Các cuộc họp nội bộ tại VSF cần bảo đảm những gì?",
+    "question": "Các cuộc họp nội bộ tại Nhà Má Hải cần bảo đảm những gì?",
     "options": [
       {
         "key": "a",
@@ -1124,7 +1124,7 @@ const QUESTIONS = [
     "stableId": "HN-41",
     "sectionNo": 5,
     "sectionName": "",
-    "question": "Trước giờ bắt đầu làm việc, VSFer nên chuẩn bị như thế nào?",
+    "question": "Trước giờ bắt đầu làm việc, Đồng nghiệp Nhà Má Hải nên chuẩn bị như thế nào?",
     "options": [
       {
         "key": "a",
@@ -1144,7 +1144,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Có mặt sớm khoảng 10–15 phút là khuyến nghị để VSFer kiểm tra công cụ, thiết bị, chuẩn bị tác phong chỉn chu và chấm công đúng giờ. Khoảng thời gian này không được hiểu là yêu cầu kéo dài giờ làm ngoài quy định.",
+    "explanation": "Có mặt sớm khoảng 10–15 phút là khuyến nghị để Đồng nghiệp Nhà Má Hải kiểm tra công cụ, thiết bị, chuẩn bị tác phong chỉn chu và chấm công đúng giờ. Khoảng thời gian này không được hiểu là yêu cầu kéo dài giờ làm ngoài quy định.",
     "displayNumber": 41
   },
   {
@@ -1152,7 +1152,7 @@ const QUESTIONS = [
     "stableId": "HN-42",
     "sectionNo": 5,
     "sectionName": "",
-    "question": "Việc đến sớm mang lại lợi ích gì cho VSFer?",
+    "question": "Việc đến sớm mang lại lợi ích gì cho Đồng nghiệp Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -1172,7 +1172,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Đến sớm giúp VSFer bắt đầu ngày làm chủ động hơn. Mình có thời gian chuẩn bị, kiểm tra lại mọi thứ và xử lý việc phát sinh trước khi vào làm.",
+    "explanation": "Đến sớm giúp Đồng nghiệp Nhà Má Hải bắt đầu ngày làm chủ động hơn. Mình có thời gian chuẩn bị, kiểm tra lại mọi thứ và xử lý việc phát sinh trước khi vào làm.",
     "displayNumber": 42
   },
   {
@@ -1180,7 +1180,7 @@ const QUESTIONS = [
     "stableId": "HN-43",
     "sectionNo": 5,
     "sectionName": "",
-    "question": "Khi làm việc trên mạng xã hội, VSFer nên cân nhắc những nội dung nào liên quan đến công ty?",
+    "question": "Khi làm việc trên mạng xã hội, Đồng nghiệp Nhà Má Hải nên cân nhắc những nội dung nào liên quan đến công ty?",
     "options": [
       {
         "key": "a",
@@ -1200,7 +1200,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "VSFer chỉ nên chia sẻ thông tin, hình ảnh hoặc video đã được công ty công bố hoặc cho phép chia sẻ. Không tự đăng thông tin nội bộ hoặc nội dung chưa kiểm chứng để tránh ảnh hưởng đến công ty.",
+    "explanation": "Đồng nghiệp Nhà Má Hải chỉ nên chia sẻ thông tin, hình ảnh hoặc video đã được công ty công bố hoặc cho phép chia sẻ. Không tự đăng thông tin nội bộ hoặc nội dung chưa kiểm chứng để tránh ảnh hưởng đến công ty.",
     "displayNumber": 43
   },
   {
@@ -1208,7 +1208,7 @@ const QUESTIONS = [
     "stableId": "HN-44",
     "sectionNo": 5,
     "sectionName": "",
-    "question": "Văn hóa xưng hô chính thức trong nội bộ VSF là gì?",
+    "question": "Văn hóa xưng hô chính thức trong nội bộ Nhà Má Hải là gì?",
     "options": [
       {
         "key": "a",
@@ -1220,7 +1220,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Luôn xưng hô \"Sếp\" đối với ban lãnh đạo hoặc người quản lý trực tiếp."
+        "text": "Luôn xưng hô “Sếp” đối với ban lãnh đạo hoặc Người Quản lý Thường trực."
       },
       {
         "key": "d",
@@ -1228,7 +1228,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Trong nội bộ, VSFer gọi nhân sự chung là “Đồng nghiệp” và gọi ban lãnh đạo hoặc quản lý trực tiếp là “Sếp”. Dù ở vị trí nào, mọi người vẫn cần xưng hô lịch sự và tôn trọng nhau.",
+    "explanation": "Trong nội bộ, Đồng nghiệp Nhà Má Hải gọi nhân sự chung là “Đồng nghiệp” và gọi ban lãnh đạo hoặc quản lý trực tiếp là “Sếp”. Dù ở vị trí nào, mọi người vẫn cần xưng hô lịch sự và tôn trọng nhau.",
     "displayNumber": 44
   },
   {
@@ -1236,7 +1236,7 @@ const QUESTIONS = [
     "stableId": "HN-45",
     "sectionNo": 5,
     "sectionName": "",
-    "question": "Trong giao tiếp với cấp trên, VSFer thể hiện sự tôn trọng như thế nào?",
+    "question": "Trong giao tiếp với cấp trên, Đồng nghiệp Nhà Má Hải thể hiện sự tôn trọng như thế nào?",
     "options": [
       {
         "key": "a",
@@ -1264,7 +1264,7 @@ const QUESTIONS = [
     "stableId": "HN-46",
     "sectionNo": 5,
     "sectionName": "",
-    "question": "Trong giao tiếp với cấp dưới, cấp quản lý VSF cần làm gì?",
+    "question": "Trong giao tiếp với cấp dưới, cấp quản lý Nhà Má Hải cần làm gì?",
     "options": [
       {
         "key": "a",
@@ -1292,7 +1292,7 @@ const QUESTIONS = [
     "stableId": "HN-47",
     "sectionNo": 5,
     "sectionName": "",
-    "question": "Đối với đồng nghiệp khác bộ phận, VSFer cần gì?",
+    "question": "Đối với đồng nghiệp khác bộ phận, Đồng nghiệp Nhà Má Hải cần gì?",
     "options": [
       {
         "key": "a",
@@ -1312,7 +1312,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Khi làm việc với đồng nghiệp khác bộ phận, VSFer cần hợp tác, tôn trọng và hỗ trợ đúng cách. Làm vậy giúp công việc chung không bị tắc và cả đội phối hợp tốt hơn.",
+    "explanation": "Khi làm việc với đồng nghiệp khác bộ phận, Đồng nghiệp Nhà Má Hải cần hợp tác, tôn trọng và hỗ trợ đúng cách. Làm vậy giúp công việc chung không bị tắc và cả đội phối hợp tốt hơn.",
     "displayNumber": 47
   },
   {
@@ -1348,7 +1348,7 @@ const QUESTIONS = [
     "stableId": "HN-49",
     "sectionNo": 6,
     "sectionName": "",
-    "question": "Khi có mâu thuẫn với đồng nghiệp, VSFer phải xử lý như thế nào?",
+    "question": "Khi có mâu thuẫn với đồng nghiệp, Đồng nghiệp Nhà Má Hải phải xử lý như thế nào?",
     "options": [
       {
         "key": "a",
@@ -1368,7 +1368,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Khi có mâu thuẫn, VSFer nên trao đổi riêng, bình tĩnh và cùng tìm cách xử lý. Nếu chưa giải quyết được, cần báo đúng kênh để bảo vệ mình, đồng nghiệp và môi trường làm việc chung.",
+    "explanation": "Khi có mâu thuẫn, Đồng nghiệp Nhà Má Hải nên trao đổi riêng, bình tĩnh và cùng tìm cách xử lý. Nếu chưa giải quyết được, cần báo đúng kênh để bảo vệ mình, đồng nghiệp và môi trường làm việc chung.",
     "displayNumber": 49
   },
   {
@@ -1376,7 +1376,7 @@ const QUESTIONS = [
     "stableId": "HN-50",
     "sectionNo": 6,
     "sectionName": "",
-    "question": "Khi thấy đồng nghiệp gặp khó khăn trong công việc, VSFer nên làm gì?",
+    "question": "Khi thấy đồng nghiệp gặp khó khăn trong công việc, Đồng nghiệp Nhà Má Hải nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -1404,7 +1404,7 @@ const QUESTIONS = [
     "stableId": "HN-51",
     "sectionNo": 6,
     "sectionName": "",
-    "question": "Khi VSFer thấy đồng nghiệp vi phạm quy định như không sơ vin hoặc mặc sai đồng phục, cách ứng xử đúng là gì?",
+    "question": "Khi Đồng nghiệp Nhà Má Hải thấy đồng nghiệp vi phạm quy định như không sơ vin hoặc mặc sai đồng phục, cách ứng xử đúng là gì?",
     "options": [
       {
         "key": "a",
@@ -1424,7 +1424,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Cách đúng là nhắc nhở tích cực trước, sau đó báo quản lý trực tiếp nếu tình trạng lặp lại. Làm vậy giúp đồng nghiệp sửa kịp thời, giữ hình ảnh VSF và không biến chuyện nhỏ thành căng thẳng.",
+    "explanation": "Cách đúng là nhắc nhở tích cực trước, sau đó báo quản lý trực tiếp nếu tình trạng lặp lại. Làm vậy giúp đồng nghiệp sửa kịp thời, giữ hình ảnh Nhà Má Hải và không biến chuyện nhỏ thành căng thẳng.",
     "displayNumber": 51
   },
   {
@@ -1432,7 +1432,7 @@ const QUESTIONS = [
     "stableId": "HN-52",
     "sectionNo": 6,
     "sectionName": "",
-    "question": "Kết quả làm việc của VSFer được đánh giá dựa trên những tiêu chí nào?",
+    "question": "Kết quả làm việc của Đồng nghiệp Nhà Má Hải được đánh giá dựa trên những tiêu chí nào?",
     "options": [
       {
         "key": "a",
@@ -1440,7 +1440,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tuân thủ quy định & văn hóa VSF."
+        "text": "Tuân thủ quy định & văn hóa Nhà Má Hải."
       },
       {
         "key": "c",
@@ -1452,7 +1452,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "VSF nhìn kết quả làm việc bằng cả đầu ra và cách mỗi người tạo ra đầu ra đó. Một VSFer làm tốt là người có kết quả rõ, làm đúng chuẩn và giúp tập thể tốt lên theo thời gian.",
+    "explanation": "Nhà Má Hải nhìn kết quả làm việc bằng cả đầu ra và cách mỗi người tạo ra đầu ra đó. Một Đồng nghiệp Nhà Má Hải làm tốt là người có kết quả rõ, làm đúng chuẩn và giúp tập thể tốt lên theo thời gian.",
     "displayNumber": 52
   },
   {
@@ -1460,7 +1460,7 @@ const QUESTIONS = [
     "stableId": "HN-53",
     "sectionNo": 6,
     "sectionName": "",
-    "question": "Trong đội nhóm, nếu một thành viên chưa hoàn thành nhiệm vụ, VSFer khác nên làm gì?",
+    "question": "Trong đội nhóm, nếu một thành viên chưa hoàn thành nhiệm vụ, Đồng nghiệp Nhà Má Hải khác nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -1480,7 +1480,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Hỗ trợ đồng đội không có nghĩa là làm thay toàn bộ công việc. VSFer cần hỗ trợ trong khả năng, báo quản lý khi cần điều phối và cùng giữ tiến độ chung của đội.",
+    "explanation": "Hỗ trợ đồng đội không có nghĩa là làm thay toàn bộ công việc. Đồng nghiệp Nhà Má Hải cần hỗ trợ trong khả năng, báo quản lý khi cần điều phối và cùng giữ tiến độ chung của đội.",
     "displayNumber": 53
   },
   {
@@ -1488,7 +1488,7 @@ const QUESTIONS = [
     "stableId": "HN-54",
     "sectionNo": 6,
     "sectionName": "",
-    "question": "Trong các kênh truyền thông (group nội bộ, bảng tin văn hóa), VSFer được khuyến khích đăng những nội dung nào?",
+    "question": "Trong các kênh truyền thông (group nội bộ, bảng tin văn hóa), Đồng nghiệp Nhà Má Hải được khuyến khích đăng những nội dung nào?",
     "options": [
       {
         "key": "a",
@@ -1536,7 +1536,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Khi gặp khách hàng, VSFer cần giữ tác phong gọn gàng, chào hỏi lịch sự, trả lời rõ ràng và giới thiệu đúng tên, vai trò. Làm đúng giúp khách hàng dễ hiểu thông tin và tin tưởng hơn.",
+    "explanation": "Khi gặp khách hàng, Đồng nghiệp Nhà Má Hải cần giữ tác phong gọn gàng, chào hỏi lịch sự, trả lời rõ ràng và giới thiệu đúng tên, vai trò. Làm đúng giúp khách hàng dễ hiểu thông tin và tin tưởng hơn.",
     "displayNumber": 55
   },
   {
@@ -1544,7 +1544,7 @@ const QUESTIONS = [
     "stableId": "HN-56",
     "sectionNo": 6,
     "sectionName": "",
-    "question": "Khi tiếp nhận khiếu nại của khách hàng, VSFer nên xử lý thế nào theo tinh thần GỌN, NHẸ, NHẪN, NHƯỜNG?",
+    "question": "Khi tiếp nhận khiếu nại của khách hàng, Đồng nghiệp Nhà Má Hải nên xử lý thế nào theo tinh thần GỌN, NHẸ, NHẪN, NHƯỜNG?",
     "options": [
       {
         "key": "a",
@@ -1564,7 +1564,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "VSFer nên giữ bình tĩnh khi gặp tình huống khó. Một lời phản hồi đúng mực không chỉ giải quyết vấn đề trước mắt, mà còn giữ niềm tin của khách hàng và bảo vệ hình ảnh chuyên nghiệp của VSF.",
+    "explanation": "Đồng nghiệp Nhà Má Hải nên giữ bình tĩnh khi gặp tình huống khó. Một lời phản hồi đúng mực không chỉ giải quyết vấn đề trước mắt, mà còn giữ niềm tin của khách hàng và bảo vệ hình ảnh chuyên nghiệp của Bánh Mì Má Hải.",
     "displayNumber": 56
   },
   {
@@ -1592,7 +1592,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "VSFer cần tôn trọng khách hàng, làm đúng điều đã hứa, ghi nhận phản hồi và nói lời cảm ơn. Những việc này giúp khách hàng cảm thấy được tôn trọng và yên tâm hơn.",
+    "explanation": "Đồng nghiệp Nhà Má Hải cần tôn trọng khách hàng, làm đúng điều đã hứa, ghi nhận phản hồi và nói lời cảm ơn. Những việc này giúp khách hàng cảm thấy được tôn trọng và yên tâm hơn.",
     "displayNumber": 57
   },
   {
@@ -1600,7 +1600,7 @@ const QUESTIONS = [
     "stableId": "HN-58",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Khi làm việc tại VSF, cách nào thể hiện đầy đủ cụm Chữ vàng DIỆN, DẠ, RÕ, DANH?",
+    "question": "Khi làm việc tại Nhà Má Hải, cách nào thể hiện đầy đủ cụm Chữ vàng DIỆN, DẠ, RÕ, DANH?",
     "options": [
       {
         "key": "a",
@@ -1620,7 +1620,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Diện mạo gọn gàng, lời chào tử tế, thông tin rõ ràng và cách giới thiệu đúng vai trò giúp đồng nghiệp dễ phối hợp và tạo hình ảnh chuyên nghiệp cho VSF.",
+    "explanation": "Diện mạo gọn gàng, lời chào tử tế, thông tin rõ ràng và cách giới thiệu đúng vai trò giúp đồng nghiệp dễ phối hợp và tạo hình ảnh chuyên nghiệp cho Bánh Mì Má Hải.",
     "displayNumber": 58
   },
   {
@@ -1656,7 +1656,7 @@ const QUESTIONS = [
     "stableId": "HN-60",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Người quen hỏi bạn công thức, nhà cung cấp hoặc giá vốn của VSF, nói \"chỉ tham khảo thôi\". Bạn KHÔNG nên làm gì?",
+    "question": "Người quen hỏi bạn công thức, nhà cung cấp hoặc giá vốn của Bánh Mì Má Hải, nói “chỉ tham khảo thôi”. Bạn KHÔNG nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -1672,11 +1672,11 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Chỉ họ xem các thông tin VSF đã công bố trên kênh chính thức."
+        "text": "Chỉ họ xem các thông tin Nhà Má Hải đã công bố trên kênh chính thức."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Công thức, nhà cung cấp và giá vốn là thông tin nội bộ quan trọng. Việc tiết lộ các thông tin này ra ngoài thuộc Trái cấm số 1 và có thể ảnh hưởng trực tiếp đến năng lực cạnh tranh của VSF.",
+    "explanation": "Công thức, nhà cung cấp và giá vốn là thông tin nội bộ quan trọng. Việc tiết lộ các thông tin này ra ngoài thuộc Trái cấm số 1 và có thể ảnh hưởng trực tiếp đến năng lực cạnh tranh của Bánh Mì Má Hải.",
     "displayNumber": 60
   },
   {
@@ -1712,7 +1712,7 @@ const QUESTIONS = [
     "stableId": "HN-62",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Nếu có người yêu cầu bạn ký thay, tự ý sửa hồ sơ, làm sai lệch phiếu giao nhận hoặc \"làm đẹp\" báo cáo cho kịp hạn, cách xử lý nào đúng để không vi phạm Trái cấm số 3?",
+    "question": "Nếu có người yêu cầu bạn ký thay, tự ý sửa hồ sơ, làm sai lệch phiếu giao nhận hoặc “làm đẹp” báo cáo cho kịp hạn, cách xử lý nào đúng để không vi phạm Trái cấm số 3?",
     "options": [
       {
         "key": "a",
@@ -1732,7 +1732,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Trái cấm số 3 nghiêm cấm làm giả hồ sơ, giấy tờ, chữ ký và gian lận trong báo cáo hoặc quy trình quản lý. Khi gặp yêu cầu không đúng thẩm quyền, VSFer cần từ chối và báo người phụ trách để xử lý minh bạch, đúng quy trình.",
+    "explanation": "Trái cấm số 3 nghiêm cấm làm giả hồ sơ, giấy tờ, chữ ký và gian lận trong báo cáo hoặc quy trình quản lý. Khi gặp yêu cầu không đúng thẩm quyền, Đồng nghiệp Nhà Má Hải cần từ chối và báo người phụ trách để xử lý minh bạch, đúng quy trình.",
     "displayNumber": 62
   },
   {
@@ -1760,7 +1760,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Ảnh hậu trường có thể làm lộ bí mật kinh doanh, thông tin nhân sự, tài khoản hoặc dữ liệu bảo mật. Trước khi đăng, VSFer cần kiểm tra khung hình, xin phép người xuất hiện, xác nhận nội dung được phép công khai và viết chú thích đúng ngữ cảnh.",
+    "explanation": "Ảnh hậu trường có thể làm lộ bí mật kinh doanh, thông tin nhân sự, tài khoản hoặc dữ liệu bảo mật. Trước khi đăng, Đồng nghiệp Nhà Má Hải cần kiểm tra khung hình, xin phép người xuất hiện, xác nhận nội dung được phép công khai và viết chú thích đúng ngữ cảnh.",
     "displayNumber": 63
   },
   {
@@ -1768,7 +1768,7 @@ const QUESTIONS = [
     "stableId": "HN-64",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Khi nghe tin đồn tiêu cực về công ty, khách hàng hoặc đồng nghiệp, VSFer nên làm gì?",
+    "question": "Khi nghe tin đồn tiêu cực về công ty, khách hàng hoặc đồng nghiệp, Đồng nghiệp Nhà Má Hải nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -1788,7 +1788,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Tin đồn chưa được kiểm chứng có thể làm tổn thương con người và ảnh hưởng uy tín tập thể. VSFer không nên lan truyền mà cần nói rõ thông tin chưa xác thực, đồng thời kiểm tra hoặc hướng người hỏi đến kênh chính thức.",
+    "explanation": "Tin đồn chưa được kiểm chứng có thể làm tổn thương con người và ảnh hưởng uy tín tập thể. Đồng nghiệp Nhà Má Hải không nên lan truyền mà cần nói rõ thông tin chưa xác thực, đồng thời kiểm tra hoặc hướng người hỏi đến kênh chính thức.",
     "displayNumber": 64
   },
   {
@@ -1816,7 +1816,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Khi bị xúc phạm hoặc đe dọa, VSFer cần ưu tiên an toàn, không đáp trả bằng bạo lực hoặc lời lẽ xúc phạm và báo đúng kênh để được hỗ trợ.",
+    "explanation": "Khi bị xúc phạm hoặc đe dọa, Đồng nghiệp Nhà Má Hải cần ưu tiên an toàn, không đáp trả bằng bạo lực hoặc lời lẽ xúc phạm và báo đúng kênh để được hỗ trợ.",
     "displayNumber": 65
   },
   {
@@ -1824,11 +1824,11 @@ const QUESTIONS = [
     "stableId": "HN-66",
     "sectionNo": 7,
     "sectionName": "",
-    "question": "Bạn được rủ làm thêm cho một mô hình cạnh tranh trực tiếp với VSF hoặc dùng thông tin nội bộ để tư vấn bên ngoài. Bạn nên làm gì?",
+    "question": "Bạn được rủ làm thêm cho một mô hình cạnh tranh trực tiếp với Nhà Má Hải hoặc dùng thông tin nội bộ để tư vấn bên ngoài. Bạn nên làm gì?",
     "options": [
       {
         "key": "a",
-        "text": "Không chia sẻ hoặc sử dụng thông tin nội bộ của VSF cho hoạt động bên ngoài."
+        "text": "Không chia sẻ hoặc sử dụng thông tin nội bộ của Bánh Mì Má Hải cho hoạt động bên ngoài."
       },
       {
         "key": "b",
@@ -1844,7 +1844,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Trái cấm số 11 không cho phép VSFer tham gia hoạt động cạnh tranh trực tiếp với công ty khi chưa được phép. Khi một công việc bên ngoài có nguy cơ xung đột lợi ích, VSFer cần dừng lại, không dùng thông tin nội bộ và xin ý kiến trước khi quyết định.",
+    "explanation": "Trái cấm số 11 không cho phép Đồng nghiệp Nhà Má Hải tham gia hoạt động cạnh tranh trực tiếp với công ty khi chưa được phép. Khi một công việc bên ngoài có nguy cơ xung đột lợi ích, Đồng nghiệp Nhà Má Hải cần dừng lại, không dùng thông tin nội bộ và xin ý kiến trước khi quyết định.",
     "displayNumber": 66
   },
   {
@@ -1872,7 +1872,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Trái cấm số 6 không cho phép tiết lộ trái phép thông tin nhân sự, tiền lương, hợp đồng lao động và chính sách nội bộ. Xác minh trước khi cung cấp thông tin là cách bảo vệ quyền lợi của người có dữ liệu và bảo vệ VSF.",
+    "explanation": "Trái cấm số 6 không cho phép tiết lộ trái phép thông tin nhân sự, tiền lương, hợp đồng lao động và chính sách nội bộ. Xác minh trước khi cung cấp thông tin là cách bảo vệ quyền lợi của người có dữ liệu và bảo vệ Nhà Má Hải.",
     "displayNumber": 67
   },
   {
@@ -1880,7 +1880,7 @@ const QUESTIONS = [
     "stableId": "HN-68",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Vì sao VSFer cần học đào tạo hội nhập nghiêm túc ngay từ đầu?",
+    "question": "Vì sao Đồng nghiệp Nhà Má Hải cần học đào tạo hội nhập nghiêm túc ngay từ đầu?",
     "options": [
       {
         "key": "a",
@@ -1892,15 +1892,15 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Để hòa nhập nhanh hơn với văn hóa VSF, làm đúng ngay từ đầu và bảo vệ uy tín cá nhân."
+        "text": "Để hòa nhập nhanh hơn với văn hóa Nhà Má Hải, làm đúng ngay từ đầu và bảo vệ uy tín cá nhân."
       },
       {
         "key": "d",
-        "text": "Để nắm được quy trình làm việc, cách lưu trữ và những điều cần tránh trong 12 Trái cấm người VSF không được ăn."
+        "text": "Để nắm được quy trình làm việc, cách lưu trữ và những điều cần tránh trong 12 Trái cấm người Má Hải không được ăn."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Đào tạo hội nhập không chỉ để hoàn thành bài trắc nghiệm, mà giúp VSFer hiểu đúng cách làm việc tại VSF, biết quyền lợi của mình, tuân thủ đúng quy trình và tránh những lỗi có thể ảnh hưởng đến cá nhân, đồng đội và công ty.",
+    "explanation": "Đào tạo hội nhập không chỉ để hoàn thành bài trắc nghiệm, mà giúp Đồng nghiệp Nhà Má Hải hiểu đúng cách làm việc tại Nhà Má Hải, biết quyền lợi của mình, tuân thủ đúng quy trình và tránh những lỗi có thể ảnh hưởng đến cá nhân, đồng đội và công ty.",
     "displayNumber": 68
   },
   {
@@ -1908,7 +1908,7 @@ const QUESTIONS = [
     "stableId": "HN-69",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Đâu là cách hiểu đầy đủ về 3 cụm của 12 Chữ vàng - Phục vụ khách hàng tại VSF?",
+    "question": "Đâu là cách hiểu đầy đủ về 3 cụm của 12 Chữ vàng - Phục vụ khách hàng tại Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -1928,7 +1928,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Tinh thần lõi: \"Phục vụ khách hàng như phục vụ cha mẹ, Phục vụ vượt trên cả sự kỳ vọng.\" Khi thực hiện đúng 3 cụm này, bạn giữ được uy tín cá nhân và giúp VSF phục vụ khách hàng rõ ràng, chuyên nghiệp hơn.",
+    "explanation": "Tinh thần lõi: “Phục vụ khách hàng như phục vụ cha mẹ, Phục vụ vượt trên cả sự kỳ vọng.” Khi thực hiện đúng 3 cụm này, bạn giữ được uy tín cá nhân và giúp Nhà Má Hải phục vụ khách hàng rõ ràng, chuyên nghiệp hơn.",
     "displayNumber": 69
   },
   {
@@ -1936,7 +1936,7 @@ const QUESTIONS = [
     "stableId": "HN-70",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Cách hiểu nào đúng nhất về 12 Trái cấm người VSF không được ăn khi làm việc tại VSF?",
+    "question": "Cách hiểu nào đúng nhất về 12 Trái cấm người Má Hải không được ăn khi làm việc tại Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -1944,7 +1944,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Quy định áp dụng với tất cả VSFer, không phân biệt chức vụ."
+        "text": "Quy định áp dụng với tất cả Đồng nghiệp Nhà Má Hải, không phân biệt chức vụ."
       },
       {
         "key": "c",
@@ -1956,7 +1956,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "12 Trái cấm người VSF không được ăn áp dụng với tất cả VSFer và không được xem nhẹ. Khi phát hiện vi phạm, công ty cần xác minh căn cứ, đánh giá mức độ và xử lý đúng trình tự. Trường hợp có dấu hiệu vi phạm pháp luật có thể được chuyển cho cơ quan chức năng.",
+    "explanation": "12 Trái cấm người Má Hải không được ăn áp dụng với tất cả Đồng nghiệp Nhà Má Hải và không được xem nhẹ. Khi phát hiện vi phạm, công ty cần xác minh căn cứ, đánh giá mức độ và xử lý đúng trình tự. Trường hợp có dấu hiệu vi phạm pháp luật có thể được chuyển cho cơ quan chức năng.",
     "displayNumber": 70
   },
   {
@@ -1964,7 +1964,7 @@ const QUESTIONS = [
     "stableId": "HN-71",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Vì sao 1Office được chọn là \"xương sống\" của hệ thống vận hành VSF?",
+    "question": "Vì sao 1Office được chọn là “xương sống” của hệ thống vận hành Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -1980,7 +1980,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Vì 1Office giúp quyền lợi, công sức và trách nhiệm của VSFer được ghi nhận minh bạch trên hệ thống."
+        "text": "Vì 1Office giúp quyền lợi, công sức và trách nhiệm của Đồng nghiệp Nhà Má Hải được ghi nhận minh bạch trên hệ thống."
       }
     ],
     "correctAnswer": "a",
@@ -1992,7 +1992,7 @@ const QUESTIONS = [
     "stableId": "HN-72",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Vì sao VSFer cần hiểu sơ đồ tổ chức tại VSF?",
+    "question": "Vì sao Đồng nghiệp Nhà Má Hải cần hiểu sơ đồ tổ chức tại Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -2008,11 +2008,11 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Để khi cần hỗ trợ, VSFer biết liên hệ đúng người, đúng cấp và đúng phạm vi trách nhiệm."
+        "text": "Để khi cần hỗ trợ, Đồng nghiệp Nhà Má Hải biết liên hệ đúng người, đúng cấp và đúng phạm vi trách nhiệm."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Sơ đồ tổ chức cho thấy tuyến phối hợp trong công việc. Hiểu đúng tuyến giúp VSFer biết mình cần trao đổi với ai trước, được hỗ trợ đúng người và tránh làm rối luồng thông tin chung.",
+    "explanation": "Sơ đồ tổ chức cho thấy tuyến phối hợp trong công việc. Hiểu đúng tuyến giúp Đồng nghiệp Nhà Má Hải biết mình cần trao đổi với ai trước, được hỗ trợ đúng người và tránh làm rối luồng thông tin chung.",
     "displayNumber": 72
   },
   {
@@ -2020,7 +2020,7 @@ const QUESTIONS = [
     "stableId": "HN-73",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Khi có vấn đề công việc hoặc cần xin ý kiến, VSFer nên trao đổi như thế nào cho đúng tuyến?",
+    "question": "Khi có vấn đề công việc hoặc cần xin ý kiến, Đồng nghiệp Nhà Má Hải nên trao đổi như thế nào cho đúng tuyến?",
     "options": [
       {
         "key": "a",
@@ -2040,7 +2040,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Đúng tuyến là nguyên tắc áp dụng trong công việc thông thường. Khi có nguy cơ khẩn cấp, mất an toàn, lộ dữ liệu, dấu hiệu vi phạm hoặc xung đột lợi ích, VSFer cần báo ngay qua kênh có thẩm quyền để hạn chế thiệt hại. Thông tin phải rõ ràng và được lưu vết để việc xử lý minh bạch.",
+    "explanation": "Đúng tuyến là nguyên tắc áp dụng trong công việc thông thường. Khi có nguy cơ khẩn cấp, mất an toàn, lộ dữ liệu, dấu hiệu vi phạm hoặc xung đột lợi ích, Đồng nghiệp Nhà Má Hải cần báo ngay qua kênh có thẩm quyền để hạn chế thiệt hại. Thông tin phải rõ ràng và được lưu vết để việc xử lý minh bạch.",
     "displayNumber": 73
   },
   {
@@ -2048,7 +2048,7 @@ const QUESTIONS = [
     "stableId": "HN-74",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Cách phối hợp nào giúp VSFer vừa chủ động, vừa đúng trách nhiệm?",
+    "question": "Cách phối hợp nào giúp Đồng nghiệp Nhà Má Hải vừa chủ động, vừa đúng trách nhiệm?",
     "options": [
       {
         "key": "a",
@@ -2068,7 +2068,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Phối hợp đúng tuyến không có nghĩa là phải chờ phê duyệt cho mọi trao đổi. VSFer có thể chủ động phối hợp trong phạm vi trách nhiệm, nhưng cần tôn trọng thẩm quyền và làm rõ cách theo dõi công việc chung.",
+    "explanation": "Phối hợp đúng tuyến không có nghĩa là phải chờ phê duyệt cho mọi trao đổi. Đồng nghiệp Nhà Má Hải có thể chủ động phối hợp trong phạm vi trách nhiệm, nhưng cần tôn trọng thẩm quyền và làm rõ cách theo dõi công việc chung.",
     "displayNumber": 74
   },
   {
@@ -2076,7 +2076,7 @@ const QUESTIONS = [
     "stableId": "HN-75",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Để ngày nghỉ phép được ghi nhận đầy đủ và lương không bị ảnh hưởng, VSFer KHÔNG nên làm gì?",
+    "question": "Để ngày nghỉ phép được ghi nhận đầy đủ và lương không bị ảnh hưởng, Đồng nghiệp Nhà Má Hải KHÔNG nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -2096,7 +2096,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Gửi đơn chưa có nghĩa là ngày nghỉ đã được duyệt. VSFer cần theo dõi phản hồi, chủ động nhắc người duyệt và bàn giao công việc để ngày nghỉ được ghi nhận đúng, đồng thời tránh ảnh hưởng đến lương, phép và tiến độ của đội.",
+    "explanation": "Gửi đơn chưa có nghĩa là ngày nghỉ đã được duyệt. Đồng nghiệp Nhà Má Hải cần theo dõi phản hồi, chủ động nhắc người duyệt và bàn giao công việc để ngày nghỉ được ghi nhận đúng, đồng thời tránh ảnh hưởng đến lương, phép và tiến độ của đội.",
     "displayNumber": 75
   },
   {
@@ -2104,7 +2104,7 @@ const QUESTIONS = [
     "stableId": "HN-76",
     "sectionNo": 8,
     "sectionName": "",
-    "question": "Mỗi VSFer nên sử dụng tài khoản 1Office của mình như thế nào?",
+    "question": "Mỗi Đồng nghiệp Nhà Má Hải nên sử dụng tài khoản 1Office của mình như thế nào?",
     "options": [
       {
         "key": "a",
@@ -2124,7 +2124,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Tài khoản giúp mọi công việc, báo cáo tiến độ và đóng góp của bạn được ghi nhận rõ ràng trên 1Office. Đồng thời, đây cũng là kênh để VSFer chấm công, theo dõi bảng lương và cập nhật thông tin nội bộ kịp thời, giúp bảo vệ quyền lợi cá nhân và minh bạch trách nhiệm.",
+    "explanation": "Tài khoản giúp mọi công việc, báo cáo tiến độ và đóng góp của bạn được ghi nhận rõ ràng trên 1Office. Đồng thời, đây cũng là kênh để Đồng nghiệp Nhà Má Hải chấm công, theo dõi bảng lương và cập nhật thông tin nội bộ kịp thời, giúp bảo vệ quyền lợi cá nhân và minh bạch trách nhiệm.",
     "displayNumber": 76
   },
   {
@@ -2132,7 +2132,7 @@ const QUESTIONS = [
     "stableId": "HN-77",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "VSF đang sử dụng những hệ thống và phần mềm nào trong công việc?",
+    "question": "Nhà Má Hải đang sử dụng những hệ thống và phần mềm nào trong công việc?",
     "options": [
       {
         "key": "a",
@@ -2152,7 +2152,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Mỗi hệ thống có một mục đích sử dụng và phạm vi truy cập riêng. VSFer cần lưu thông tin đúng nơi, dùng đúng tài khoản và tuân thủ quyền truy cập để công việc dễ phối hợp và dữ liệu được bảo vệ.",
+    "explanation": "Mỗi hệ thống có một mục đích sử dụng và phạm vi truy cập riêng. Đồng nghiệp Nhà Má Hải cần lưu thông tin đúng nơi, dùng đúng tài khoản và tuân thủ quyền truy cập để công việc dễ phối hợp và dữ liệu được bảo vệ.",
     "displayNumber": 77
   },
   {
@@ -2160,7 +2160,7 @@ const QUESTIONS = [
     "stableId": "HN-78",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "Mỗi VSFer nên có cách nhìn như thế nào để góp phần phòng cháy chữa cháy (PCCC) tại nơi làm việc?",
+    "question": "Mỗi Đồng nghiệp Nhà Má Hải nên có cách nhìn như thế nào để góp phần phòng cháy chữa cháy (PCCC) tại nơi làm việc?",
     "options": [
       {
         "key": "a",
@@ -2180,7 +2180,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Khi mỗi người biết quan sát, tuân thủ hướng dẫn và báo kịp thời các nguy cơ, chúng ta đang bảo vệ chính mình, đồng nghiệp, khách hàng và tài sản chung của VSF.",
+    "explanation": "Khi mỗi người biết quan sát, tuân thủ hướng dẫn và báo kịp thời các nguy cơ, chúng ta đang bảo vệ chính mình, đồng nghiệp, khách hàng và tài sản chung của Bánh Mì Má Hải.",
     "displayNumber": 78
   },
   {
@@ -2188,7 +2188,7 @@ const QUESTIONS = [
     "stableId": "HN-79",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "Cách hiểu nào đầy đủ nhất về \"văn hóa an toàn\" tại VSF?",
+    "question": "Cách hiểu nào đầy đủ nhất về “văn hóa an toàn” tại Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -2204,11 +2204,11 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Là trách nhiệm chung của mọi VSFer."
+        "text": "Là trách nhiệm chung của mọi Đồng nghiệp Nhà Má Hải."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Văn hóa an toàn được tạo nên từ việc mỗi VSFer biết quan sát, phản ánh và xử lý đúng phạm vi. Khi nguy cơ được báo sớm, bản thân, đồng nghiệp, khách hàng và tài sản chung đều được bảo vệ tốt hơn.",
+    "explanation": "Văn hóa an toàn được tạo nên từ việc mỗi Đồng nghiệp Nhà Má Hải biết quan sát, phản ánh và xử lý đúng phạm vi. Khi nguy cơ được báo sớm, bản thân, đồng nghiệp, khách hàng và tài sản chung đều được bảo vệ tốt hơn.",
     "displayNumber": 79
   },
   {
@@ -2216,7 +2216,7 @@ const QUESTIONS = [
     "stableId": "HN-80",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "CHỌN CÂU KHÔNG ĐÚNG về việc giữ gìn vệ sinh và môi trường làm việc tại VSF?",
+    "question": "CHỌN CÂU KHÔNG ĐÚNG về việc giữ gìn vệ sinh và môi trường làm việc tại Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -2228,15 +2228,15 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Không gian sạch đẹp giúp VSF chuyên nghiệp hơn trong mắt khách hàng và đồng nghiệp."
+        "text": "Không gian sạch đẹp giúp Nhà Má Hải chuyên nghiệp hơn trong mắt khách hàng và đồng nghiệp."
       },
       {
         "key": "d",
-        "text": "Bỏ rác đúng nơi, dọn gọn sau khi sử dụng và nhắc nhau giữ sạch là trách nhiệm chung của mỗi VSFer."
+        "text": "Bỏ rác đúng nơi, dọn gọn sau khi sử dụng và nhắc nhau giữ sạch là trách nhiệm chung của mỗi Đồng nghiệp Nhà Má Hải."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Đây là cách hiểu sai và rất nguy hiểm. Môi trường làm việc không sạch có thể ảnh hưởng trực tiếp đến sức khỏe, trải nghiệm khách hàng và hình ảnh VSF. Giữ vệ sinh không phải việc nhỏ bên lề, mà là ý thức văn hóa của mỗi VSFer.",
+    "explanation": "Đây là cách hiểu sai và rất nguy hiểm. Môi trường làm việc không sạch có thể ảnh hưởng trực tiếp đến sức khỏe, trải nghiệm khách hàng và hình ảnh Nhà Má Hải. Giữ vệ sinh không phải việc nhỏ bên lề, mà là ý thức văn hóa của mỗi Đồng nghiệp Nhà Má Hải.",
     "displayNumber": 80
   },
   {
@@ -2244,7 +2244,7 @@ const QUESTIONS = [
     "stableId": "HN-81",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "Mỗi VSFer nên làm gì để tiết kiệm điện, nước và tài nguyên tại nơi làm việc?",
+    "question": "Mỗi Đồng nghiệp Nhà Má Hải nên làm gì để tiết kiệm điện, nước và tài nguyên tại nơi làm việc?",
     "options": [
       {
         "key": "a",
@@ -2264,7 +2264,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Tiết kiệm không phải là cắt giảm bất tiện, mà là sử dụng tài nguyên có trách nhiệm. Mỗi hành động nhỏ như tắt thiết bị khi không dùng, dùng nước vừa đủ, hạn chế lãng phí giấy và vật tư đều góp phần giảm chi phí chung, bảo vệ môi trường và thể hiện tinh thần làm chủ của VSFer.",
+    "explanation": "Tiết kiệm không phải là cắt giảm bất tiện, mà là sử dụng tài nguyên có trách nhiệm. Mỗi hành động nhỏ như tắt thiết bị khi không dùng, dùng nước vừa đủ, hạn chế lãng phí giấy và vật tư đều góp phần giảm chi phí chung, bảo vệ môi trường và thể hiện tinh thần làm chủ của Đồng nghiệp Nhà Má Hải.",
     "displayNumber": 81
   },
   {
@@ -2272,7 +2272,7 @@ const QUESTIONS = [
     "stableId": "HN-82",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "Khi thấy rác thải, nước đổ, mùi lạ hoặc nguy cơ gây mất vệ sinh môi trường tại nơi làm việc, VSFer nên làm gì?",
+    "question": "Khi thấy rác thải, nước đổ, mùi lạ hoặc nguy cơ gây mất vệ sinh môi trường tại nơi làm việc, Đồng nghiệp Nhà Má Hải nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -2292,7 +2292,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Khi mỗi VSFer chủ động giữ gìn khu vực làm việc và báo kịp thời các vấn đề vượt khả năng xử lý, môi trường VSF sẽ an toàn hơn, sạch đẹp hơn và đáng tự hào hơn.",
+    "explanation": "Khi mỗi Đồng nghiệp Nhà Má Hải chủ động giữ gìn khu vực làm việc và báo kịp thời các vấn đề vượt khả năng xử lý, môi trường Nhà Má Hải sẽ an toàn hơn, sạch đẹp hơn và đáng tự hào hơn.",
     "displayNumber": 82
   },
   {
@@ -2300,7 +2300,7 @@ const QUESTIONS = [
     "stableId": "HN-83",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "Vì sao bí mật kinh doanh (công thức, nhà cung cấp, giá vốn) được xem là tài sản quan trọng hàng đầu của VSF?",
+    "question": "Vì sao bí mật kinh doanh (công thức, nhà cung cấp, giá vốn) được xem là tài sản quan trọng hàng đầu của Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -2308,7 +2308,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Vì bảo vệ bí mật này là bảo vệ thu nhập chung của mọi VSFer."
+        "text": "Vì bảo vệ bí mật này là bảo vệ thu nhập chung của mọi Đồng nghiệp Nhà Má Hải."
       },
       {
         "key": "c",
@@ -2316,11 +2316,11 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Vì đây là thông tin quan trọng, tạo lợi thế kinh doanh và nguồn doanh thu cho VSF."
+        "text": "Vì đây là thông tin quan trọng, tạo lợi thế kinh doanh và nguồn doanh thu cho Nhà Má Hải."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Công thức, nhà cung cấp và giá vốn giúp VSF duy trì lợi thế kinh doanh và tạo doanh thu. Không tiết lộ các thông tin này ra ngoài là cách bảo vệ công việc và thu nhập chung.",
+    "explanation": "Công thức, nhà cung cấp và giá vốn giúp Nhà Má Hải duy trì lợi thế kinh doanh và tạo doanh thu. Không tiết lộ các thông tin này ra ngoài là cách bảo vệ công việc và thu nhập chung.",
     "displayNumber": 83
   },
   {
@@ -2328,7 +2328,7 @@ const QUESTIONS = [
     "stableId": "HN-84",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "Khi được cấp quyền truy cập dữ liệu, tài liệu hoặc thông tin nội bộ của VSF, VSFer nên sử dụng như thế nào?",
+    "question": "Khi được cấp quyền truy cập dữ liệu, tài liệu hoặc thông tin nội bộ của Nhà Má Hải, Đồng nghiệp Nhà Má Hải nên sử dụng như thế nào?",
     "options": [
       {
         "key": "a",
@@ -2348,7 +2348,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Được cấp quyền truy cập không có nghĩa là được sử dụng tùy ý. Mỗi VSFer cần dùng dữ liệu đúng phạm vi, lưu trữ đúng nơi và chia sẻ đúng người để bảo vệ thông tin, tài sản và uy tín chung của VSF.",
+    "explanation": "Được cấp quyền truy cập không có nghĩa là được sử dụng tùy ý. Mỗi Đồng nghiệp Nhà Má Hải cần dùng dữ liệu đúng phạm vi, lưu trữ đúng nơi và chia sẻ đúng người để bảo vệ thông tin, tài sản và uy tín chung của Nhà Má Hải.",
     "displayNumber": 84
   },
   {
@@ -2356,7 +2356,7 @@ const QUESTIONS = [
     "stableId": "HN-85",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "Khi có người bên ngoài muốn phỏng vấn, chụp hình, viết bài hoặc xin thông tin đại diện cho VSF, VSFer nên làm gì?",
+    "question": "Khi có người bên ngoài muốn phỏng vấn, chụp hình, viết bài hoặc xin thông tin đại diện cho Nhà Má Hải, Đồng nghiệp Nhà Má Hải nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -2376,7 +2376,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Hình ảnh và tiếng nói của VSF cần được truyền tải thống nhất, đúng thẩm quyền và đúng ngữ cảnh. VSFer không tự ý đại diện công ty phát ngôn là cách bảo vệ bản thân, bảo vệ thương hiệu và tránh rủi ro thông tin bị hiểu sai.",
+    "explanation": "Hình ảnh và tiếng nói của Nhà Má Hải cần được truyền tải thống nhất, đúng thẩm quyền và đúng ngữ cảnh. Đồng nghiệp Nhà Má Hải không tự ý đại diện công ty phát ngôn là cách bảo vệ bản thân, bảo vệ thương hiệu và tránh rủi ro thông tin bị hiểu sai.",
     "displayNumber": 85
   },
   {
@@ -2384,7 +2384,7 @@ const QUESTIONS = [
     "stableId": "HN-86",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "Để bảo vệ thiết bị và tài sản của công ty, VSFer nên làm gì?",
+    "question": "Để bảo vệ thiết bị và tài sản của công ty, Đồng nghiệp Nhà Má Hải nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -2404,7 +2404,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Sử dụng đúng công năng, không tự ý sửa chữa và báo cáo kịp thời khi có hư hỏng giúp tài sản công ty bền lâu, giảm chi phí thay mới và bảo vệ VSFer khỏi rủi ro do thao tác sai.",
+    "explanation": "Sử dụng đúng công năng, không tự ý sửa chữa và báo cáo kịp thời khi có hư hỏng giúp tài sản công ty bền lâu, giảm chi phí thay mới và bảo vệ Đồng nghiệp Nhà Má Hải khỏi rủi ro do thao tác sai.",
     "displayNumber": 86
   },
   {
@@ -2440,7 +2440,7 @@ const QUESTIONS = [
     "stableId": "HN-88",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "Thói quen nào giúp mỗi VSFer bảo vệ thông tin và tài sản số trong công việc hằng ngày?",
+    "question": "Thói quen nào giúp mỗi Đồng nghiệp Nhà Má Hải bảo vệ thông tin và tài sản số trong công việc hằng ngày?",
     "options": [
       {
         "key": "a",
@@ -2460,7 +2460,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Bảo mật không chỉ là quy định lớn, mà bắt đầu từ những thói quen nhỏ mỗi ngày. Khóa màn hình, giữ mật khẩu an toàn, cẩn trọng với link lạ và bảo vệ tài liệu nhạy cảm giúp VSFer phòng tránh rủi ro cho chính mình và cho tập thể.",
+    "explanation": "Bảo mật không chỉ là quy định lớn, mà bắt đầu từ những thói quen nhỏ mỗi ngày. Khóa màn hình, giữ mật khẩu an toàn, cẩn trọng với link lạ và bảo vệ tài liệu nhạy cảm giúp Đồng nghiệp Nhà Má Hải phòng tránh rủi ro cho chính mình và cho tập thể.",
     "displayNumber": 88
   },
   {
@@ -2468,7 +2468,7 @@ const QUESTIONS = [
     "stableId": "HN-89",
     "sectionNo": 9,
     "sectionName": "",
-    "question": "Vì sao VSFer cần chấm công đầy đủ theo ca làm việc?",
+    "question": "Vì sao Đồng nghiệp Nhà Má Hải cần chấm công đầy đủ theo ca làm việc?",
     "options": [
       {
         "key": "a",
@@ -2476,7 +2476,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Để giờ làm của VSFer được ghi nhận chính xác."
+        "text": "Để giờ làm của Đồng nghiệp Nhà Má Hải được ghi nhận chính xác."
       },
       {
         "key": "c",
@@ -2488,7 +2488,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Dữ liệu chấm công là căn cứ để rà soát thời gian làm việc và các quyền lợi liên quan. VSFer cần chấm công theo quy định của ca làm việc và kiểm tra dữ liệu khi phát hiện sai sót.",
+    "explanation": "Dữ liệu chấm công là căn cứ để rà soát thời gian làm việc và các quyền lợi liên quan. Đồng nghiệp Nhà Má Hải cần chấm công theo quy định của ca làm việc và kiểm tra dữ liệu khi phát hiện sai sót.",
     "displayNumber": 89
   },
   {
@@ -2496,7 +2496,7 @@ const QUESTIONS = [
     "stableId": "HN-90",
     "sectionNo": 10,
     "sectionName": "",
-    "question": "Khi quên chấm công vào hoặc ra, VSFer cần làm gì để quyền lợi không bị ảnh hưởng?",
+    "question": "Khi quên chấm công vào hoặc ra, Đồng nghiệp Nhà Má Hải cần làm gì để quyền lợi không bị ảnh hưởng?",
     "options": [
       {
         "key": "a",
@@ -2516,7 +2516,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Khi quên chấm công, VSFer cần tạo đơn bổ sung trong thời hạn quy định, gửi quản lý trực tiếp xác nhận và kiểm tra lại dữ liệu. Xử lý sớm giúp giờ làm, lương, phụ cấp và phép được tính đúng.",
+    "explanation": "Khi quên chấm công, Đồng nghiệp Nhà Má Hải cần tạo đơn bổ sung trong thời hạn quy định, gửi quản lý trực tiếp xác nhận và kiểm tra lại dữ liệu. Xử lý sớm giúp giờ làm, lương, phụ cấp và phép được tính đúng.",
     "displayNumber": 90
   },
   {
@@ -2524,7 +2524,7 @@ const QUESTIONS = [
     "stableId": "HN-91",
     "sectionNo": 10,
     "sectionName": "",
-    "question": "Khi cần nghỉ ốm, VSFer phải làm gì để quyền lợi được ghi nhận đúng?",
+    "question": "Khi cần nghỉ ốm, Đồng nghiệp Nhà Má Hải phải làm gì để quyền lợi được ghi nhận đúng?",
     "options": [
       {
         "key": "a",
@@ -2544,7 +2544,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Khi nghỉ ốm, VSFer cần báo sớm, lập đơn và bổ sung hồ sơ theo hướng dẫn. Thực hiện đủ các bước giúp ngày nghỉ và quyền lợi liên quan được xem xét đúng.",
+    "explanation": "Khi nghỉ ốm, Đồng nghiệp Nhà Má Hải cần báo sớm, lập đơn và bổ sung hồ sơ theo hướng dẫn. Thực hiện đủ các bước giúp ngày nghỉ và quyền lợi liên quan được xem xét đúng.",
     "displayNumber": 91
   },
   {
@@ -2552,7 +2552,7 @@ const QUESTIONS = [
     "stableId": "HN-92",
     "sectionNo": 10,
     "sectionName": "",
-    "question": "Các đóng góp của bạn tại VSF sẽ được đo lường như thế nào?",
+    "question": "Các đóng góp của bạn tại Nhà Má Hải sẽ được đo lường như thế nào?",
     "options": [
       {
         "key": "a",
@@ -2580,7 +2580,7 @@ const QUESTIONS = [
     "stableId": "HN-93",
     "sectionNo": 10,
     "sectionName": "",
-    "question": "Khi có đề xuất giúp tăng doanh thu hoặc tiết kiệm chi phí, VSFer nên làm gì?",
+    "question": "Khi có đề xuất giúp tăng doanh thu hoặc tiết kiệm chi phí, Đồng nghiệp Nhà Má Hải nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -2608,27 +2608,27 @@ const QUESTIONS = [
     "stableId": "HN-94",
     "sectionNo": 10,
     "sectionName": "",
-    "question": "CHỌN CÂU KHÔNG ĐÚNG về vai trò của Hệ Giá Trị Cốt Lõi tại VSF?",
+    "question": "CHỌN CÂU KHÔNG ĐÚNG về vai trò của Hệ Giá Trị Cốt Lõi tại Nhà Má Hải?",
     "options": [
       {
         "key": "a",
-        "text": "Hệ Giá Trị Cốt Lõi là “ngọn hải đăng” giúp VSFer đi đúng hướng trong công việc và văn hóa."
+        "text": "Hệ Giá Trị Cốt Lõi là “ngọn hải đăng” giúp Đồng nghiệp Nhà Má Hải đi đúng hướng trong công việc và văn hóa."
       },
       {
         "key": "b",
-        "text": "Hệ Giá Trị Cốt Lõi nhắc VSFer sống đúng tinh thần Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi."
+        "text": "Hệ Giá Trị Cốt Lõi nhắc Đồng nghiệp Nhà Má Hải sống đúng tinh thần Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi."
       },
       {
         "key": "c",
-        "text": "Khi thực hành giá trị cốt lõi mỗi ngày, VSFer dễ phối hợp tốt hơn, tạo kết quả thật hơn và phát triển bền vững hơn."
+        "text": "Khi thực hành giá trị cốt lõi mỗi ngày, Đồng nghiệp Nhà Má Hải dễ phối hợp tốt hơn, tạo kết quả thật hơn và phát triển bền vững hơn."
       },
       {
         "key": "d",
-        "text": "Hệ Giá Trị Cốt Lõi không dành cho VSFer."
+        "text": "Hệ Giá Trị Cốt Lõi không dành cho Đồng nghiệp Nhà Má Hải."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Đây là cách hiểu không đúng. Hệ Giá Trị Cốt Lõi là định hướng chung cho mọi VSFer. Các giá trị này cần được thể hiện qua cách làm việc, tạo kết quả, chịu trách nhiệm, làm chủ và học hỏi mỗi ngày.",
+    "explanation": "Đây là cách hiểu không đúng. Hệ Giá Trị Cốt Lõi là định hướng chung cho mọi Đồng nghiệp Nhà Má Hải. Các giá trị này cần được thể hiện qua cách làm việc, tạo kết quả, chịu trách nhiệm, làm chủ và học hỏi mỗi ngày.",
     "displayNumber": 94
   },
   {
@@ -2636,7 +2636,7 @@ const QUESTIONS = [
     "stableId": "HN-95",
     "sectionNo": 11,
     "sectionName": "",
-    "question": "Ngoài lương cơ bản, VSFer nên hiểu quyền lợi của mình bao gồm những nhóm nào?",
+    "question": "Ngoài lương cơ bản, Đồng nghiệp Nhà Má Hải nên hiểu quyền lợi của mình bao gồm những nhóm nào?",
     "options": [
       {
         "key": "a",
@@ -2644,11 +2644,11 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Các phúc lợi nội bộ được công ty triển khai theo từng giai đoạn để chăm sóc đời sống VSFer."
+        "text": "Các phúc lợi nội bộ được công ty triển khai theo từng giai đoạn để chăm sóc đời sống Đồng nghiệp Nhà Má Hải."
       },
       {
         "key": "c",
-        "text": "Các thông tin, hướng dẫn và kênh hỗ trợ để VSFer biết cách sử dụng quyền lợi đúng quy trình."
+        "text": "Các thông tin, hướng dẫn và kênh hỗ trợ để Đồng nghiệp Nhà Má Hải biết cách sử dụng quyền lợi đúng quy trình."
       },
       {
         "key": "d",
@@ -2656,7 +2656,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Quyền lợi của VSFer gồm lương, các chế độ theo luật, phúc lợi nội bộ đang áp dụng và kênh hướng dẫn. VSFer cần kiểm tra thông tin chính thức để thực hiện đúng quy trình và bảo vệ quyền lợi của mình.",
+    "explanation": "Quyền lợi của Đồng nghiệp Nhà Má Hải gồm lương, các chế độ theo luật, phúc lợi nội bộ đang áp dụng và kênh hướng dẫn. Đồng nghiệp Nhà Má Hải cần kiểm tra thông tin chính thức để thực hiện đúng quy trình và bảo vệ quyền lợi của mình.",
     "displayNumber": 95
   },
   {
@@ -2664,11 +2664,11 @@ const QUESTIONS = [
     "stableId": "HN-96",
     "sectionNo": 11,
     "sectionName": "",
-    "question": "Về phúc lợi đào tạo và phát triển tại VSF, cách hiểu nào phù hợp?",
+    "question": "Về phúc lợi đào tạo và phát triển tại Bánh Mì Má Hải, cách hiểu nào phù hợp?",
     "options": [
       {
         "key": "a",
-        "text": "VSF quan tâm đến việc xây dựng văn hóa HỌC HỎI để VSFer có thêm nền tảng làm việc tốt hơn."
+        "text": "Bánh Mì Má Hải quan tâm đến việc xây dựng văn hóa HỌC HỎI để Đồng nghiệp Nhà Má Hải có thêm nền tảng làm việc tốt hơn."
       },
       {
         "key": "b",
@@ -2676,15 +2676,15 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "VSF tạo môi trường để mỗi người có cơ hội được hướng dẫn, ghi nhận nỗ lực và phát triển phù hợp với khả năng của mình."
+        "text": "Bánh Mì Má Hải tạo môi trường để mỗi người có cơ hội được hướng dẫn, ghi nhận nỗ lực và phát triển phù hợp với khả năng của mình."
       },
       {
         "key": "d",
-        "text": "VSF khuyến khích VSFer học hỏi kỹ năng, nâng cao năng lực và cải thiện bản thân trong quá trình làm việc."
+        "text": "Bánh Mì Má Hải khuyến khích Đồng nghiệp Nhà Má Hải học hỏi kỹ năng, nâng cao năng lực và cải thiện bản thân trong quá trình làm việc."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Đào tạo giúp VSFer hiểu việc, nâng cao kỹ năng và giảm sai sót. Chủ động học hỏi và làm theo hướng dẫn giúp mỗi người làm việc tốt hơn và phát triển năng lực.",
+    "explanation": "Đào tạo giúp Đồng nghiệp Nhà Má Hải hiểu việc, nâng cao kỹ năng và giảm sai sót. Chủ động học hỏi và làm theo hướng dẫn giúp mỗi người làm việc tốt hơn và phát triển năng lực.",
     "displayNumber": 96
   },
   {
@@ -2692,7 +2692,7 @@ const QUESTIONS = [
     "stableId": "HN-97",
     "sectionNo": 11,
     "sectionName": "",
-    "question": "5 giá trị cốt lõi của VSF là gì?",
+    "question": "5 giá trị cốt lõi của Bánh Mì Má Hải là gì?",
     "options": [
       {
         "key": "a",
@@ -2712,7 +2712,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "5 giá trị cốt lõi \"Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi\" là kim chỉ nam cho cách VSFer làm việc, phục vụ khách hàng và phối hợp với đồng nghiệp. Thực hiện đúng 5 giá trị giúp bạn làm việc rõ ràng và tiến bộ hơn.",
+    "explanation": "5 giá trị cốt lõi “Giá trị, Kết quả, Trách nhiệm, Làm chủ, Học hỏi” là kim chỉ nam cho cách Đồng nghiệp Nhà Má Hải làm việc, phục vụ khách hàng và phối hợp với đồng nghiệp. Thực hiện đúng 5 giá trị giúp bạn làm việc rõ ràng và tiến bộ hơn.",
     "displayNumber": 97
   },
   {
@@ -2720,7 +2720,7 @@ const QUESTIONS = [
     "stableId": "HN-98",
     "sectionNo": 11,
     "sectionName": "",
-    "question": "Khi quan tâm đến cơ hội phát triển hoặc thăng tiến tại VSF, VSFer nên làm gì?",
+    "question": "Khi quan tâm đến cơ hội phát triển hoặc thăng tiến tại Nhà Má Hải, Đồng nghiệp Nhà Má Hải nên làm gì?",
     "options": [
       {
         "key": "a",
@@ -2740,7 +2740,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "VSFer cần hiểu tiêu chí của vị trí và chủ động trao đổi qua đúng kênh. Việc xem xét cơ hội phát triển được thực hiện theo quy trình và chính sách đang áp dụng.",
+    "explanation": "Đồng nghiệp Nhà Má Hải cần hiểu tiêu chí của vị trí và chủ động trao đổi qua đúng kênh. Việc xem xét cơ hội phát triển được thực hiện theo quy trình và chính sách đang áp dụng.",
     "displayNumber": 98
   },
   {
@@ -2748,7 +2748,7 @@ const QUESTIONS = [
     "stableId": "HN-99",
     "sectionNo": 11,
     "sectionName": "",
-    "question": "Tại Nhà VSF, cách hiểu nào đúng nhất về tinh thần \"Làm Chủ\"?",
+    "question": "Tại Nhà Má Hải, cách hiểu nào đúng nhất về tinh thần “Làm Chủ”?",
     "options": [
       {
         "key": "a",
@@ -2760,7 +2760,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Khi gặp khó khăn, VSFer cần mang theo thông tin và phương án để cùng thảo luận."
+        "text": "Khi gặp khó khăn, Đồng nghiệp Nhà Má Hải cần mang theo thông tin và phương án để cùng thảo luận."
       },
       {
         "key": "d",
@@ -2768,7 +2768,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Làm Chủ = LÀM + CHỦ. Đây là tâm thế làm việc thực tế, chủ động và có trách nhiệm. VSFer không chỉ nêu vấn đề mà cần cùng tìm cách xử lý để tạo ra kết quả.",
+    "explanation": "Làm Chủ = LÀM + CHỦ. Đây là tâm thế làm việc thực tế, chủ động và có trách nhiệm. Đồng nghiệp Nhà Má Hải không chỉ nêu vấn đề mà cần cùng tìm cách xử lý để tạo ra kết quả.",
     "displayNumber": 99
   },
   {
@@ -2776,7 +2776,7 @@ const QUESTIONS = [
     "stableId": "HN-100",
     "sectionNo": 12,
     "sectionName": "",
-    "question": "Đâu là cách hiểu đúng về mối quan hệ giữa VSFer và VSF?",
+    "question": "Đâu là cách hiểu đúng về mối quan hệ giữa Đồng nghiệp và Bánh Mì Má Hải?",
     "options": [
       {
         "key": "a",
@@ -2788,15 +2788,15 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "VSF chỉ phục vụ VSFer một chiều và không cần sự đóng góp ngược lại."
+        "text": "Bánh Mì Má Hải chỉ phục vụ Đồng nghiệp một chiều và không cần sự đóng góp ngược lại."
       },
       {
         "key": "d",
-        "text": "VSFer đóng góp năng lực, còn VSF tạo môi trường và cơ hội để mỗi người phát triển."
+        "text": "Đồng nghiệp đóng góp năng lực, còn Bánh Mì Má Hải tạo môi trường và cơ hội để mỗi người phát triển."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Mối quan hệ giữa VSFer và VSF được xây dựng từ sự tôn trọng và đóng góp hai chiều. Khi mỗi bên thực hiện tốt vai trò của mình, cả con người và công ty đều có cơ hội phát triển.",
+    "explanation": "Mối quan hệ giữa Đồng nghiệp và Bánh Mì Má Hải được xây dựng từ sự tôn trọng và đóng góp hai chiều. Khi mỗi bên thực hiện tốt vai trò của mình, cả con người và công ty đều có cơ hội phát triển.",
     "displayNumber": 100
   },
   {
@@ -2804,7 +2804,7 @@ const QUESTIONS = [
     "stableId": "HN-101",
     "sectionNo": 12,
     "sectionName": "",
-    "question": "Sau khi hoàn thành hội nhập và bước vào công việc chính thức, tư duy nào giúp VSFer phát triển bền vững tại VSF?",
+    "question": "Sau khi hoàn thành hội nhập và bước vào công việc chính thức, tư duy nào giúp Đồng nghiệp phát triển bền vững tại Bánh Mì Má Hải?",
     "options": [
       {
         "key": "a",
@@ -2820,11 +2820,11 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Tôn trọng đồng nghiệp, phối hợp tích cực và đóng góp ý kiến xây dựng cho Nhà VSF."
+        "text": "Tôn trọng đồng nghiệp, phối hợp tích cực và đóng góp ý kiến xây dựng cho Nhà Má Hải."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Để phát triển tại VSF, bạn cần làm ra kết quả, chịu trách nhiệm, chủ động xử lý công việc và tiếp tục học hỏi. Phối hợp tốt với đồng nghiệp giúp công việc chung hiệu quả hơn.",
+    "explanation": "Để phát triển tại Bánh Mì Má Hải, bạn cần làm ra kết quả, chịu trách nhiệm, chủ động xử lý công việc và tiếp tục học hỏi. Phối hợp tốt với đồng nghiệp giúp công việc chung hiệu quả hơn.",
     "displayNumber": 101
   },
   {
@@ -2852,7 +2852,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Nguyên tắc chơi giúp VSFer làm việc có trách nhiệm, biết làm chủ phần việc của mình và giữ sự tập trung để tạo kết quả tốt hơn.",
+    "explanation": "Nguyên tắc chơi giúp Đồng nghiệp Nhà Má Hải làm việc có trách nhiệm, biết làm chủ phần việc của mình và giữ sự tập trung để tạo kết quả tốt hơn.",
     "displayNumber": 102
   },
   {
@@ -2868,7 +2868,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tập trung giúp VSFer làm việc sâu hơn, ít sai sót hơn và hoàn thành đúng mục tiêu."
+        "text": "Tập trung giúp Đồng nghiệp Nhà Má Hải làm việc sâu hơn, ít sai sót hơn và hoàn thành đúng mục tiêu."
       },
       {
         "key": "c",
@@ -2880,7 +2880,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Tập trung là kỹ năng nền tảng giúp VSFer đi vào trọng tâm, giữ chất lượng công việc và tạo kết quả rõ ràng hơn.",
+    "explanation": "Tập trung là kỹ năng nền tảng giúp Đồng nghiệp Nhà Má Hải đi vào trọng tâm, giữ chất lượng công việc và tạo kết quả rõ ràng hơn.",
     "displayNumber": 103
   },
   {
@@ -2916,7 +2916,7 @@ const QUESTIONS = [
     "stableId": "HN-105",
     "sectionNo": 15,
     "sectionName": "",
-    "question": "Triết lý “Tập trung làm kết quả ngày hôm nay tốt hơn ngày hôm qua” hướng VSFer đến điều gì?",
+    "question": "Triết lý “Tập trung làm kết quả ngày hôm nay tốt hơn ngày hôm qua” hướng Đồng nghiệp Nhà Má Hải đến điều gì?",
     "options": [
       {
         "key": "a",
@@ -2936,7 +2936,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Triết lý này khuyến khích VSFer cải tiến liên tục: không cần hoàn hảo ngay, nhưng cần tốt hơn qua từng ngày bằng sự học hỏi và hành động cụ thể.",
+    "explanation": "Triết lý này khuyến khích Đồng nghiệp Nhà Má Hải cải tiến liên tục: không cần hoàn hảo ngay, nhưng cần tốt hơn qua từng ngày bằng sự học hỏi và hành động cụ thể.",
     "displayNumber": 105
   },
   {
@@ -2944,7 +2944,7 @@ const QUESTIONS = [
     "stableId": "HN-106",
     "sectionNo": 15,
     "sectionName": "",
-    "question": "Theo Má Hải Ways, Văn hóa “Sống luôn luôn phải biết ơn, yêu mến người khác” nhắc VSFer điều gì?",
+    "question": "Theo Má Hải Ways, Văn hóa “Sống luôn luôn phải biết ơn, yêu mến người khác” nhắc Đồng nghiệp Nhà Má Hải điều gì?",
     "options": [
       {
         "key": "a",
@@ -2964,7 +2964,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Biết ơn và yêu mến người khác giúp VSFer tôn trọng, hỗ trợ đồng nghiệp và giữ quan hệ tốt với khách hàng, những người xung quanh.",
+    "explanation": "Biết ơn và yêu mến người khác giúp Đồng nghiệp Nhà Má Hải tôn trọng, hỗ trợ đồng nghiệp và giữ quan hệ tốt với khách hàng, những người xung quanh.",
     "displayNumber": 106
   },
   {
@@ -2972,7 +2972,7 @@ const QUESTIONS = [
     "stableId": "MHW-1",
     "sectionNo": 13,
     "sectionName": "Má Hải Ways",
-    "question": "Thông điệp \"có thử thách mới có thưởng thức\" nhắc người VSF điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Thông điệp “có thử thách mới có thưởng thức” nhắc Đồng nghiệp Nhà Má Hải điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3000,7 +3000,7 @@ const QUESTIONS = [
     "stableId": "MHW-2",
     "sectionNo": 13,
     "sectionName": "Má Hải Ways",
-    "question": "\"Mơ lớn hay mơ nhỏ không quan trọng bằng thực chiến, thực hành\" nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Mơ lớn hay mơ nhỏ không quan trọng bằng thực chiến, thực hành” nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3020,7 +3020,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "VSF không chờ đủ điều kiện mới bắt đầu mà bắt đầu ngay từ những điều nhỏ nhất.",
+    "explanation": "Bánh Mì Má Hải không chờ đủ điều kiện mới bắt đầu mà bắt đầu ngay từ những điều nhỏ nhất.",
     "displayNumber": 108
   },
   {
@@ -3028,11 +3028,11 @@ const QUESTIONS = [
     "stableId": "MHW-12",
     "sectionNo": 13,
     "sectionName": "Má Hải Ways",
-    "question": "\"Làm chủ: tâm ta ở đâu, sự nghiệp ta ở đó\" được hiểu thế nào? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Làm chủ: tâm ta ở đâu, sự nghiệp ta ở đó” được hiểu thế nào? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
-        "text": "Làm chủ là \"làm việc + chủ động\", sở hữu trách nhiệm, năng lực và kết quả"
+        "text": "Làm chủ là “làm việc + chủ động”, sở hữu trách nhiệm, năng lực và kết quả"
       },
       {
         "key": "b",
@@ -3048,7 +3048,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Khi tâm chỉ để \"làm cho xong\", kết quả sẽ mờ nhạt và không mở lối cho tương lai.",
+    "explanation": "Khi tâm chỉ để “làm cho xong”, kết quả sẽ mờ nhạt và không mở lối cho tương lai.",
     "displayNumber": 109
   },
   {
@@ -3056,7 +3056,7 @@ const QUESTIONS = [
     "stableId": "MHW-27",
     "sectionNo": 13,
     "sectionName": "Má Hải Ways",
-    "question": "\"Ở công ty không có ngôi sao, chỉ có người tạo ra giá trị liên tục\" nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Ở công ty không có ngôi sao, chỉ có người tạo ra giá trị liên tục” nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3076,7 +3076,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Không ai được tự xem mình là trung tâm, ở VSF chỉ có khách hàng là trung tâm.",
+    "explanation": "Không ai được tự xem mình là trung tâm, ở Nhà Má Hải chỉ có khách hàng là trung tâm.",
     "displayNumber": 110
   },
   {
@@ -3084,7 +3084,7 @@ const QUESTIONS = [
     "stableId": "MHW-28",
     "sectionNo": 13,
     "sectionName": "Má Hải Ways",
-    "question": "\"Tất cả đồng đội tập trung vào một tầm nhìn chung, không nói hai lời\" nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Tất cả đồng đội tập trung vào một tầm nhìn chung, không nói hai lời” nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3112,7 +3112,7 @@ const QUESTIONS = [
     "stableId": "MHW-29",
     "sectionNo": 13,
     "sectionName": "Má Hải Ways",
-    "question": "\"Ai cũng là lãnh đạo, đầu tiên là lãnh đạo chính mình\" được hiểu thế nào? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Ai cũng là lãnh đạo, đầu tiên là lãnh đạo chính mình” được hiểu thế nào? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3140,7 +3140,7 @@ const QUESTIONS = [
     "stableId": "MHW-37",
     "sectionNo": 13,
     "sectionName": "Má Hải Ways",
-    "question": "\"Việc hôm nay chớ để ngày mai, tập trung vào hôm nay\" nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Việc hôm nay chớ để ngày mai, tập trung vào hôm nay” nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3168,7 +3168,7 @@ const QUESTIONS = [
     "stableId": "MHW-43",
     "sectionNo": 13,
     "sectionName": "Má Hải Ways",
-    "question": "\"Tới công ty phải mang theo danh sách công việc (checklist) hôm nay sẽ làm gì\" nhắc điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Tới công ty phải mang theo danh sách công việc (checklist) hôm nay sẽ làm gì” nhắc điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3196,7 +3196,7 @@ const QUESTIONS = [
     "stableId": "MHW-46",
     "sectionNo": 13,
     "sectionName": "Má Hải Ways",
-    "question": "Vì sao \"làm sai quy trình là con đường nhanh nhất để rời khỏi công ty\"? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Vì sao “làm sai quy trình là con đường nhanh nhất để rời khỏi công ty”? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3224,7 +3224,7 @@ const QUESTIONS = [
     "stableId": "MHW-47",
     "sectionNo": 13,
     "sectionName": "Má Hải Ways",
-    "question": "Ở VSF, \"chống lãng phí\" gồm việc bài trừ những hình thức lãng phí nào?",
+    "question": "Ở Nhà Má Hải, “chống lãng phí” gồm việc bài trừ những hình thức lãng phí nào?",
     "options": [
       {
         "key": "a",
@@ -3244,7 +3244,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Lãng phí lớn nhất là \"làm lại\", làm đúng ngay từ đầu chính là cách tiết kiệm nhất.",
+    "explanation": "Lãng phí lớn nhất là “làm lại”, làm đúng ngay từ đầu chính là cách tiết kiệm nhất.\n## Phần 14: Tập trung, thời gian và nguồn lực",
     "displayNumber": 116
   },
   {
@@ -3252,11 +3252,11 @@ const QUESTIONS = [
     "stableId": "MHW-14",
     "sectionNo": 14,
     "sectionName": "Má Hải Ways",
-    "question": "\"Nhất nghệ tinh nhất thân vinh\" ở VSF nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Nhất nghệ tinh nhất thân vinh” ở Nhà Má Hải nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
-        "text": "VSF chọn một con đường: làm chủ ẩm thực đường phố, và làm tới cùng"
+        "text": "Nhà Má Hải chọn một con đường: làm chủ ẩm thực đường phố, và làm tới cùng"
       },
       {
         "key": "b",
@@ -3280,11 +3280,11 @@ const QUESTIONS = [
     "stableId": "MHW-17",
     "sectionNo": 14,
     "sectionName": "Má Hải Ways",
-    "question": "Khi VSF nói \"tập trung vào bức tranh tổng thể, bản đồ và hải đăng\", ba thứ đó là gì?",
+    "question": "Khi Nhà Má Hải nói “tập trung vào bức tranh tổng thể, bản đồ và hải đăng”, ba thứ đó là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Bức tranh tổng thể là tầm nhìn, nơi VSF muốn đến trong nhiều năm tới"
+        "text": "Bức tranh tổng thể là tầm nhìn, nơi Nhà Má Hải muốn đến trong nhiều năm tới"
       },
       {
         "key": "b",
@@ -3308,7 +3308,7 @@ const QUESTIONS = [
     "stableId": "MHW-18",
     "sectionNo": 14,
     "sectionName": "Má Hải Ways",
-    "question": "\"Việc gì không liên quan đến bức tranh tổng thể, bản đồ và ngọn hải đăng của VSF đều vô nghĩa\" nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Việc gì không liên quan đến bức tranh tổng thể, bản đồ và ngọn hải đăng của Bánh Mì Má Hải đều vô nghĩa” nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3336,7 +3336,7 @@ const QUESTIONS = [
     "stableId": "MHW-25",
     "sectionNo": 14,
     "sectionName": "Má Hải Ways",
-    "question": "Thông điệp \"tìm điều VSF có thể giỏi nhất Việt Nam và chỉ tập trung vào đó\" nhắc điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Thông điệp “tìm điều Bánh Mì Má Hải có thể giỏi nhất Việt Nam và chỉ tập trung vào đó” nhắc điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3356,7 +3356,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "VSF không cần làm nhiều để nổi bật, chỉ cần làm giỏi nhất trong lĩnh vực mình chọn.",
+    "explanation": "Nhà Má Hải không cần làm nhiều để nổi bật, chỉ cần làm giỏi nhất trong lĩnh vực mình chọn.",
     "displayNumber": 120
   },
   {
@@ -3364,7 +3364,7 @@ const QUESTIONS = [
     "stableId": "MHW-30",
     "sectionNo": 14,
     "sectionName": "Má Hải Ways",
-    "question": "Thói quen \"luôn mang theo sổ tay\" ở VSF giúp điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Thói quen “luôn mang theo sổ tay” ở Nhà Má Hải giúp điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3392,7 +3392,7 @@ const QUESTIONS = [
     "stableId": "MHW-35",
     "sectionNo": 14,
     "sectionName": "Má Hải Ways",
-    "question": "\"Việc cần gấp thì gọi điện thoại xử lý ngay\" nhắc điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Việc cần gấp thì gọi điện thoại xử lý ngay” nhắc điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3420,7 +3420,7 @@ const QUESTIONS = [
     "stableId": "MHW-36",
     "sectionNo": 14,
     "sectionName": "Má Hải Ways",
-    "question": "\"Luôn có mặt đúng giờ trong mọi cuộc hẹn online và offline\" nói lên điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Luôn có mặt đúng giờ trong mọi cuộc hẹn online và offline” nói lên điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3432,7 +3432,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Đúng giờ là nền tảng của kỷ luật, mà kỷ luật là sức mạnh để VSF phát triển bền vững"
+        "text": "Đúng giờ là nền tảng của kỷ luật, mà kỷ luật là sức mạnh để Nhà Má Hải phát triển bền vững"
       },
       {
         "key": "d",
@@ -3448,7 +3448,7 @@ const QUESTIONS = [
     "stableId": "MHW-38",
     "sectionNo": 14,
     "sectionName": "Má Hải Ways",
-    "question": "\"Hãy ghi chép tối đa\" ở VSF mang lại lợi ích gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Hãy ghi chép tối đa” ở Nhà Má Hải mang lại lợi ích gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3476,7 +3476,7 @@ const QUESTIONS = [
     "stableId": "MHW-39",
     "sectionNo": 14,
     "sectionName": "Má Hải Ways",
-    "question": "Để giữ tập trung cho công việc, người VSF cần làm chủ những không gian nào?",
+    "question": "Để giữ tập trung cho công việc, Đồng nghiệp Nhà Má Hải cần làm chủ những không gian nào?",
     "options": [
       {
         "key": "a",
@@ -3504,7 +3504,7 @@ const QUESTIONS = [
     "stableId": "MHW-42",
     "sectionNo": 14,
     "sectionName": "Má Hải Ways",
-    "question": "Chuỗi thói quen mỗi ngày giúp người VSF tiến bộ liên tục gồm những gì?",
+    "question": "Chuỗi thói quen mỗi ngày giúp Đồng nghiệp Nhà Má Hải tiến bộ liên tục gồm những gì?",
     "options": [
       {
         "key": "a",
@@ -3532,7 +3532,7 @@ const QUESTIONS = [
     "stableId": "MHW-121",
     "sectionNo": 14,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về tầm quan trọng của việc sử dụng thời gian hiệu quả?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về tầm quan trọng của việc sử dụng thời gian hiệu quả?",
     "options": [
       {
         "key": "a",
@@ -3552,7 +3552,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Tiền mất có thể kiếm lại, nhưng thời gian một khi đã trôi qua thì không bao giờ quay lại. Đây là điều Nhà VSF nhấn mạnh.",
+    "explanation": "Tiền mất có thể kiếm lại, nhưng thời gian một khi đã trôi qua thì không bao giờ quay lại. Đây là điều Nhà Má Hải nhấn mạnh.\n## Phần 15: Biết ơn và yêu mến",
     "displayNumber": 127
   },
   {
@@ -3560,7 +3560,7 @@ const QUESTIONS = [
     "stableId": "MHW-343",
     "sectionNo": 15,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, biết ơn phải được thể hiện mỗi ngày qua những hành động nào?",
+    "question": "Theo Nhà Má Hải, biết ơn phải được thể hiện mỗi ngày qua những hành động nào?",
     "options": [
       {
         "key": "a",
@@ -3580,7 +3580,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Nhà VSF nhấn mạnh biết ơn không chỉ là lời nói mà là hành động cụ thể, thể hiện qua cả 5 node và sự nỗ lực mỗi ngày.",
+    "explanation": "Nhà Má Hải nhấn mạnh biết ơn không chỉ là lời nói mà là hành động cụ thể, thể hiện qua cả 5 node và sự nỗ lực mỗi ngày.",
     "displayNumber": 128
   },
   {
@@ -3588,7 +3588,7 @@ const QUESTIONS = [
     "stableId": "MHW-208",
     "sectionNo": 15,
     "sectionName": "Má Hải Ways",
-    "question": "Theo 4 chữ vàng cuối (TRỌNG, TÍN, GHI, ƠN) trong bộ 12 chữ vàng của Nhà VSF, câu nào sau đây KHÔNG đúng?",
+    "question": "Theo 4 chữ vàng cuối (TRỌNG, TÍN, GHI, ƠN) trong bộ 12 chữ vàng của Nhà Má Hải, câu nào sau đây KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3608,7 +3608,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Nhà VSF xác định rõ: nghe gì ghi hết, không sót một lời. Ghi chép đầy đủ giúp làm đúng tuyệt đối ngay từ đầu và khiến khách hàng an tâm.",
+    "explanation": "Nhà Má Hải xác định rõ: nghe gì ghi hết, không sót một lời. Ghi chép đầy đủ giúp làm đúng tuyệt đối ngay từ đầu và khiến khách hàng an tâm.",
     "displayNumber": 129
   },
   {
@@ -3616,7 +3616,7 @@ const QUESTIONS = [
     "stableId": "MHW-341",
     "sectionNo": 15,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về chính sách đối với nhân sự và gia đình họ?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về chính sách đối với nhân sự và gia đình họ?",
     "options": [
       {
         "key": "a",
@@ -3636,7 +3636,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Nhà VSF xác định gia đình nhân sự cũng là một phần của gốc rễ công ty. Nhà Má đồng hành cùng nhân sự và người thân của họ.",
+    "explanation": "Nhà Má Hải xác định gia đình nhân sự cũng là một phần của gốc rễ công ty. Nhà Má đồng hành cùng nhân sự và người thân của họ.",
     "displayNumber": 130
   },
   {
@@ -3644,7 +3644,7 @@ const QUESTIONS = [
     "stableId": "MHW-205",
     "sectionNo": 15,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về vai trò của khách hàng trong hệ thống?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về vai trò của khách hàng trong hệ thống?",
     "options": [
       {
         "key": "a",
@@ -3664,7 +3664,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Nhà VSF nhấn mạnh phục vụ không chỉ đúng quy trình mà còn đúng cảm xúc, mang đến trải nghiệm tốt đẹp chứ không dừng lại ở việc giao sản phẩm.",
+    "explanation": "Nhà Má Hải nhấn mạnh phục vụ không chỉ đúng quy trình mà còn đúng cảm xúc, mang đến trải nghiệm tốt đẹp chứ không dừng lại ở việc giao sản phẩm.",
     "displayNumber": 131
   },
   {
@@ -3672,7 +3672,7 @@ const QUESTIONS = [
     "stableId": "MHW-305",
     "sectionNo": 15,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về tinh thần thấu cảm trong tổ chức?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về tinh thần thấu cảm trong tổ chức?",
     "options": [
       {
         "key": "a",
@@ -3692,7 +3692,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Nhà VSF xây dựng tổ chức bằng tình người. Mở rộng sự thấu cảm ra với mọi người xung quanh chính là nền tảng của văn hóa gắn kết bền vững.",
+    "explanation": "Nhà Má Hải xây dựng tổ chức bằng tình người. Mở rộng sự thấu cảm ra với mọi người xung quanh chính là nền tảng của văn hóa gắn kết bền vững.",
     "displayNumber": 132
   },
   {
@@ -3700,7 +3700,7 @@ const QUESTIONS = [
     "stableId": "MHW-124",
     "sectionNo": 15,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về tinh thần chia sẻ của người VSFers?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về tinh thần chia sẻ của Đồng nghiệp Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -3716,11 +3716,11 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Mỗi lần giới thiệu về Nhà VSF là một lần mở ra cơ hội cho người khác."
+        "text": "Mỗi lần giới thiệu về Nhà Má Hải là một lần mở ra cơ hội cho người khác."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Nhà VSF xác định rõ: chia sẻ không chỉ là hành động mà là bổn phận của người trong hệ thống.",
+    "explanation": "Nhà Má Hải xác định rõ: chia sẻ không chỉ là hành động mà là bổn phận của người trong hệ thống.",
     "displayNumber": 133
   },
   {
@@ -3728,7 +3728,7 @@ const QUESTIONS = [
     "stableId": "MHW-125",
     "sectionNo": 15,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về cách nhìn nhận động lực làm việc của nhân sự?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về cách nhìn nhận động lực làm việc của nhân sự?",
     "options": [
       {
         "key": "a",
@@ -3748,7 +3748,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Nhà VSF nhìn thẳng vào thực tế: thu nhập phải được đảm bảo trước, sau đó mới đến tình cảm và môi trường, không thể bỏ qua bước đầu tiên.",
+    "explanation": "Nhà Má Hải nhìn thẳng vào thực tế: thu nhập phải được đảm bảo trước, sau đó mới đến tình cảm và môi trường, không thể bỏ qua bước đầu tiên.",
     "displayNumber": 134
   },
   {
@@ -3756,7 +3756,7 @@ const QUESTIONS = [
     "stableId": "MHW-309",
     "sectionNo": 15,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về lòng trắc ẩn trong kinh doanh?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về lòng trắc ẩn trong kinh doanh?",
     "options": [
       {
         "key": "a",
@@ -3764,7 +3764,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Ở VSF, kinh doanh lợi nhuận là kết quả tất yếu từ việc phục vụ tốt 5 node, không phải mục tiêu duy nhất."
+        "text": "Ở Nhà Má Hải, kinh doanh lợi nhuận là kết quả tất yếu từ việc phục vụ tốt 5 node, không phải mục tiêu duy nhất."
       },
       {
         "key": "c",
@@ -3772,11 +3772,11 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Chỉ có lòng trắc ẩn mới tạo ra ý nghĩa, và chính ý nghĩa ấy sẽ đưa VSF đi thật xa và bền vững."
+        "text": "Chỉ có lòng trắc ẩn mới tạo ra ý nghĩa, và chính ý nghĩa ấy sẽ đưa Nhà Má Hải đi thật xa và bền vững."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Nhà VSF xác định: lợi nhuận là điều tất yếu đến sau khi phục vụ tốt 5 node, không phải thứ phải đặt trước lòng trắc ẩn.",
+    "explanation": "Nhà Má Hải xác định: lợi nhuận là điều tất yếu đến sau khi phục vụ tốt 5 node, không phải thứ phải đặt trước lòng trắc ẩn.",
     "displayNumber": 135
   },
   {
@@ -3784,7 +3784,7 @@ const QUESTIONS = [
     "stableId": "MHW-307",
     "sectionNo": 15,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về tinh thần đoàn kết?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về tinh thần đoàn kết?",
     "options": [
       {
         "key": "a",
@@ -3804,7 +3804,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Nhà VSF xác định rõ: chúng ta không đi nhanh một mình mà đi xa cùng nhau, đó mới là con đường đến đại thành công.",
+    "explanation": "Nhà Má Hải xác định rõ: chúng ta không đi nhanh một mình mà đi xa cùng nhau, đó mới là con đường đến đại thành công.",
     "displayNumber": 136
   },
   {
@@ -3812,7 +3812,7 @@ const QUESTIONS = [
     "stableId": "MHW-350",
     "sectionNo": 15,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về ý nghĩa của gia đình nhân sự với công ty?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về ý nghĩa của gia đình nhân sự với công ty?",
     "options": [
       {
         "key": "a",
@@ -3832,7 +3832,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Nhà VSF xác định gia đình nhân sự chính là hậu phương vững chắc. Muốn công ty đi xa, phải bắt đầu từ việc quan tâm đến người nhân sự và gia đình họ.",
+    "explanation": "Nhà Má Hải xác định gia đình nhân sự chính là hậu phương vững chắc. Muốn công ty đi xa, phải bắt đầu từ việc quan tâm đến người nhân sự và gia đình họ.\n## Phần 16: Làm vì người khác, 5 node và đại sứ thương hiệu",
     "displayNumber": 137
   },
   {
@@ -3840,7 +3840,7 @@ const QUESTIONS = [
     "stableId": "MHW-237",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về mô hình kim tự tháp 5 node?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về mô hình kim tự tháp 5 node?",
     "options": [
       {
         "key": "a",
@@ -3852,7 +3852,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Tư duy \"Cùng Thắng\" dựa trên nền tảng thẳng thắn và chân thành là nguyên tắc hợp tác của Node 3."
+        "text": "Tư duy “Cùng Thắng” dựa trên nền tảng thẳng thắn và chân thành là nguyên tắc hợp tác của Node 3."
       },
       {
         "key": "d",
@@ -3860,7 +3860,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Nhà VSF nhấn mạnh: một hệ thống cân bằng giữa tất cả 5 node mới là con đường dẫn đến phát triển bền vững thực sự.",
+    "explanation": "Nhà Má Hải nhấn mạnh: một hệ thống cân bằng giữa tất cả 5 node mới là con đường dẫn đến phát triển bền vững thực sự.",
     "displayNumber": 138
   },
   {
@@ -3868,7 +3868,7 @@ const QUESTIONS = [
     "stableId": "MHW-122",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về vai trò đại sứ thương hiệu của VSFers?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về vai trò đại sứ thương hiệu của Đồng nghiệp Nhà Má Hải?",
     "options": [
       {
         "key": "a",
@@ -3896,7 +3896,7 @@ const QUESTIONS = [
     "stableId": "MHW-195",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "Với người tiêu dùng (node 1A), VSF cam kết cung cấp sản phẩm như thế nào?",
+    "question": "Với người tiêu dùng (node 1A), Nhà Má Hải cam kết cung cấp sản phẩm như thế nào?",
     "options": [
       {
         "key": "a",
@@ -3916,7 +3916,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "VSF tồn tại là nhờ node 1A và lớn lên nhờ làm tốt node 1A mỗi ngày.",
+    "explanation": "Nhà Má Hải tồn tại là nhờ node 1A và lớn lên nhờ làm tốt node 1A mỗi ngày.",
     "displayNumber": 140
   },
   {
@@ -3924,7 +3924,7 @@ const QUESTIONS = [
     "stableId": "MHW-194",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "\"Ai cũng có chủ ý, nhưng chủ ý của khách hàng là lớn nhất\" nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Ai cũng có chủ ý, nhưng chủ ý của khách hàng là lớn nhất” nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -3952,11 +3952,11 @@ const QUESTIONS = [
     "stableId": "MHW-231",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về vai trò của Node 2A (nhân sự công ty)?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về vai trò của Node 2A (nhân sự công ty)?",
     "options": [
       {
         "key": "a",
-        "text": "Node 2A là \"động cơ trung tâm\" vận hành toàn hệ thống VSF."
+        "text": "Node 2A là “động cơ trung tâm” vận hành toàn hệ thống Nhà Má Hải."
       },
       {
         "key": "b",
@@ -3964,15 +3964,15 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Phát triển bền vững bắt đầu từ nội lực, phục vụ tốt Node 1A và 1B là con đường nhanh nhất để VSF lớn mạnh."
+        "text": "Phát triển bền vững bắt đầu từ nội lực, phục vụ tốt Node 1A và 1B là con đường nhanh nhất để Nhà Má Hải lớn mạnh."
       },
       {
         "key": "d",
-        "text": "VSF chỉ có thể mở rộng quy mô khi có đủ nguồn lực tài chính, dù chất lượng phục vụ của 2A còn yếu."
+        "text": "Nhà Má Hải chỉ có thể mở rộng quy mô khi có đủ nguồn lực tài chính, dù chất lượng phục vụ của 2A còn yếu."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Nhà VSF khẳng định: quy mô không bị giới hạn bởi nguồn lực tài chính mà được mở rộng bởi chất lượng con người và năng lực phục vụ.",
+    "explanation": "Nhà Má Hải khẳng định: quy mô không bị giới hạn bởi nguồn lực tài chính mà được mở rộng bởi chất lượng con người và năng lực phục vụ.",
     "displayNumber": 142
   },
   {
@@ -3980,7 +3980,7 @@ const QUESTIONS = [
     "stableId": "MHW-233",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về mối quan hệ với Node 3 (Nhà cung cấp & Đối tác)?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về mối quan hệ với Node 3 (Nhà cung cấp & Đối tác)?",
     "options": [
       {
         "key": "a",
@@ -3988,11 +3988,11 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Nhà cung cấp cam kết chất lượng và quy trình đồng bộ; Nhà VSF thanh toán đúng hạn và giữ chữ tín."
+        "text": "Nhà cung cấp cam kết chất lượng và quy trình đồng bộ; Nhà Má Hải thanh toán đúng hạn và giữ chữ tín."
       },
       {
         "key": "c",
-        "text": "Khi hệ thống VSF mở rộng, quy mô kinh doanh của nhà cung cấp cũng phát triển theo, theo nguyên tắc nước lên thì thuyền lên."
+        "text": "Khi hệ thống Nhà Má Hải mở rộng, quy mô kinh doanh của nhà cung cấp cũng phát triển theo, theo nguyên tắc nước lên thì thuyền lên."
       },
       {
         "key": "d",
@@ -4000,7 +4000,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Nhà VSF xác định đây không phải quan hệ mua đứt bán đoạn mà là sự cộng hưởng nguồn lực, cùng nhau phát triển bền vững.",
+    "explanation": "Nhà Má Hải xác định đây không phải quan hệ mua đứt bán đoạn mà là sự cộng hưởng nguồn lực, cùng nhau phát triển bền vững.",
     "displayNumber": 143
   },
   {
@@ -4008,11 +4008,11 @@ const QUESTIONS = [
     "stableId": "MHW-198",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "\"Còn điểm bán nhượng quyền thì công ty còn, chúng ta còn\" nhắc điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Còn điểm bán nhượng quyền thì công ty còn, chúng ta còn” nhắc điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
-        "text": "Điểm bán là \"trái tim\" của VSF, còn điểm bán thì còn doanh thu và thu nhập"
+        "text": "Điểm bán là “trái tim” của Nhà Má Hải, còn điểm bán thì còn doanh thu và thu nhập"
       },
       {
         "key": "b",
@@ -4036,7 +4036,7 @@ const QUESTIONS = [
     "stableId": "MHW-70",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "Thông điệp \"đừng cố thành người không thể thay thế, hãy là người luôn tạo giá trị\" nhắc ta điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Thông điệp “đừng cố thành người không thể thay thế, hãy là người luôn tạo giá trị” nhắc ta điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4056,7 +4056,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Cố \"làm ngôi sao để không thể thay thế\" là một căn bệnh, điều đáng quý là liên tục tạo giá trị và giúp đội ngũ tiến bộ.",
+    "explanation": "Cố “làm ngôi sao để không thể thay thế” là một căn bệnh, điều đáng quý là liên tục tạo giá trị và giúp đội ngũ tiến bộ.",
     "displayNumber": 145
   },
   {
@@ -4064,7 +4064,7 @@ const QUESTIONS = [
     "stableId": "MHW-200",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "\"Muốn làm quốc tế thì phải làm kinh tế với Tổ quốc\" nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Muốn làm quốc tế thì phải làm kinh tế với Tổ quốc” nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4092,7 +4092,7 @@ const QUESTIONS = [
     "stableId": "MHW-235",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "Tại Nhà VSF, biến công ty thành \"trường đại học tiếp theo\" có nghĩa là ai đến cũng được học những điều gì?",
+    "question": "Tại Nhà Má Hải, biến công ty thành “trường đại học tiếp theo” có nghĩa là ai đến cũng được học những điều gì?",
     "options": [
       {
         "key": "a",
@@ -4112,7 +4112,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Nhà VSF hướng tới môi trường học hỏi liên tục, từ chất lượng sản phẩm, vận hành, phục vụ khách hàng đến lãnh đạo và tạo giá trị cộng đồng.",
+    "explanation": "Nhà Má Hải hướng tới môi trường học hỏi liên tục, từ chất lượng sản phẩm, vận hành, phục vụ khách hàng đến lãnh đạo và tạo giá trị cộng đồng.",
     "displayNumber": 147
   },
   {
@@ -4120,7 +4120,7 @@ const QUESTIONS = [
     "stableId": "MHW-63",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "Với việc chung của công ty, tinh thần \"chung tay xử lý\" ở VSF gồm những gì?",
+    "question": "Với việc chung của công ty, tinh thần “chung tay xử lý” ở Nhà Má Hải gồm những gì?",
     "options": [
       {
         "key": "a",
@@ -4148,7 +4148,7 @@ const QUESTIONS = [
     "stableId": "MHW-238",
     "sectionNo": 16,
     "sectionName": "Má Hải Ways",
-    "question": "Theo Nhà VSF, câu nào sau đây KHÔNG đúng về vai trò của người quản lý thường trực?",
+    "question": "Theo Nhà Má Hải, câu nào sau đây KHÔNG đúng về vai trò của người quản lý thường trực?",
     "options": [
       {
         "key": "a",
@@ -4168,7 +4168,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Nhà VSF khẳng định: thành công của tổ chức không đến từ quyền lực của người quản lý mà từ cách họ phục vụ và hỗ trợ đội ngũ người thực hiện công việc.",
+    "explanation": "Nhà Má Hải khẳng định: thành công của tổ chức không đến từ quyền lực của người quản lý mà từ cách họ phục vụ và hỗ trợ đội ngũ người thực hiện công việc.\n## Phần 17: Học hỏi, cải tiến và tiến bộ mỗi ngày",
     "displayNumber": 149
   },
   {
@@ -4176,15 +4176,15 @@ const QUESTIONS = [
     "stableId": "MHW-102",
     "sectionNo": 17,
     "sectionName": "Má Hải Ways",
-    "question": "Hệ giá trị VSF nói \"Học hỏi = Học + Hỏi\". Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Hệ giá trị Nhà Má Hải nói “Học hỏi = Học + Hỏi”. Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
-        "text": "\"Học\" là liên tục tiếp nhận điều mới để không tụt hậu"
+        "text": "“Học” là liên tục tiếp nhận điều mới để không tụt hậu"
       },
       {
         "key": "b",
-        "text": "\"Hỏi\" là dũng cảm hỏi điều chưa biết, không giấu dốt, không đoán mò"
+        "text": "“Hỏi” là dũng cảm hỏi điều chưa biết, không giấu dốt, không đoán mò"
       },
       {
         "key": "c",
@@ -4204,7 +4204,7 @@ const QUESTIONS = [
     "stableId": "MHW-107",
     "sectionNo": 17,
     "sectionName": "Má Hải Ways",
-    "question": "\"Muốn biết phải hỏi, muốn giỏi phải học\" ở VSF được hiểu thế nào? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Muốn biết phải hỏi, muốn giỏi phải học” ở Nhà Má Hải được hiểu thế nào? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4232,7 +4232,7 @@ const QUESTIONS = [
     "stableId": "MHW-105",
     "sectionNo": 17,
     "sectionName": "Má Hải Ways",
-    "question": "Thông điệp \"mỗi ngày vuốt nhọn nghề qua 60% hồi tưởng\" nhắc ta điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Thông điệp “mỗi ngày vuốt nhọn nghề qua 60% hồi tưởng” nhắc ta điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4260,7 +4260,7 @@ const QUESTIONS = [
     "stableId": "MHW-151",
     "sectionNo": 17,
     "sectionName": "Má Hải Ways",
-    "question": "Thói quen \"hồi tưởng, quan sát, xâu chuỗi\" giúp người VSF điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Thói quen “hồi tưởng, quan sát, xâu chuỗi” giúp Đồng nghiệp Nhà Má Hải điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4280,7 +4280,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "VSF không chạy theo \"làm nhiều\" mà hướng tới làm tốt hơn mỗi ngày, muốn nâng cấp tổ chức thì từng người phải tự nâng cấp mình.",
+    "explanation": "Nhà Má Hải không chạy theo “làm nhiều” mà hướng tới làm tốt hơn mỗi ngày, muốn nâng cấp tổ chức thì từng người phải tự nâng cấp mình.",
     "displayNumber": 153
   },
   {
@@ -4288,7 +4288,7 @@ const QUESTIONS = [
     "stableId": "MHW-65",
     "sectionNo": 17,
     "sectionName": "Má Hải Ways",
-    "question": "Theo VSF, sự thay đổi của tổ chức đến từ những vai trò nào?",
+    "question": "Theo Nhà Má Hải, sự thay đổi của tổ chức đến từ những vai trò nào?",
     "options": [
       {
         "key": "a",
@@ -4316,7 +4316,7 @@ const QUESTIONS = [
     "stableId": "MHW-191",
     "sectionNo": 17,
     "sectionName": "Má Hải Ways",
-    "question": "\"Mỗi ngày một bước, liên tục mỗi ngày, ta sẽ đi xa\" nhắc người VSF điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Mỗi ngày một bước, liên tục mỗi ngày, ta sẽ đi xa” nhắc Đồng nghiệp Nhà Má Hải điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4336,7 +4336,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Triết lý \"muốn nhanh thì phải từ từ\", mỗi ngày một bước thì một năm đã đi được 365 bước.",
+    "explanation": "Triết lý “muốn nhanh thì phải từ từ”, mỗi ngày một bước thì một năm đã đi được 365 bước.",
     "displayNumber": 155
   },
   {
@@ -4372,7 +4372,7 @@ const QUESTIONS = [
     "stableId": "MHW-101",
     "sectionNo": 17,
     "sectionName": "Má Hải Ways",
-    "question": "Câu chuyện \"vận động viên đoạt huy chương vàng đều có huấn luyện viên\" nhắc người VSF điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Câu chuyện “vận động viên đoạt huy chương vàng đều có huấn luyện viên” nhắc Đồng nghiệp Nhà Má Hải điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4400,7 +4400,7 @@ const QUESTIONS = [
     "stableId": "MHW-108",
     "sectionNo": 17,
     "sectionName": "Má Hải Ways",
-    "question": "Thông điệp \"cây non dễ uốn nắn, tre già tốn nhiều công\" nói về đào tạo con người thế nào? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Thông điệp “cây non dễ uốn nắn, tre già tốn nhiều công” nói về đào tạo con người thế nào? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4428,7 +4428,7 @@ const QUESTIONS = [
     "stableId": "MHW-59",
     "sectionNo": 17,
     "sectionName": "Má Hải Ways",
-    "question": "\"Mọi việc đều phải có tính kế thừa\" ở Nhà VSF nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Mọi việc đều phải có tính kế thừa” ở Nhà Má Hải nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4456,7 +4456,7 @@ const QUESTIONS = [
     "stableId": "MHW-60",
     "sectionNo": 17,
     "sectionName": "Má Hải Ways",
-    "question": "Quy trình ở Nhà VSF được xây nên từ đâu? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Quy trình ở Nhà Má Hải được xây nên từ đâu? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4476,7 +4476,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Quy trình không bắt đầu từ con số 0 mà từ việc nhìn lại điều đã trải qua.",
+    "explanation": "Quy trình không bắt đầu từ con số 0 mà từ việc nhìn lại điều đã trải qua.\n## Phần 18: Làm chuẩn, làm thật và kỷ luật vận hành",
     "displayNumber": 160
   },
   {
@@ -4484,7 +4484,7 @@ const QUESTIONS = [
     "stableId": "MHW-53",
     "sectionNo": 18,
     "sectionName": "Má Hải Ways",
-    "question": "Vì sao nói \"Kỷ luật là sức mạnh của VSF\"?",
+    "question": "Vì sao nói “Kỷ luật là sức mạnh của Nhà Má Hải”?",
     "options": [
       {
         "key": "a",
@@ -4504,7 +4504,7 @@ const QUESTIONS = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Kỷ luật không gò bó, nó là bệ phóng giúp Nhà VSF phát triển bền vững và đi xa.",
+    "explanation": "Kỷ luật không gò bó, nó là bệ phóng giúp Nhà Má Hải phát triển bền vững và đi xa.",
     "displayNumber": 161
   },
   {
@@ -4512,7 +4512,7 @@ const QUESTIONS = [
     "stableId": "MHW-57",
     "sectionNo": 18,
     "sectionName": "Má Hải Ways",
-    "question": "Tinh thần tuân thủ ở Nhà VSF được hiểu thế nào? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Tinh thần tuân thủ ở Nhà Má Hải được hiểu thế nào? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4540,7 +4540,7 @@ const QUESTIONS = [
     "stableId": "MHW-52",
     "sectionNo": 18,
     "sectionName": "Má Hải Ways",
-    "question": "Phiếu KLO ở Nhà VSF dùng để làm gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "Phiếu KLO ở Nhà Má Hải dùng để làm gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4568,11 +4568,11 @@ const QUESTIONS = [
     "stableId": "MHW-51",
     "sectionNo": 18,
     "sectionName": "Má Hải Ways",
-    "question": "Trong \"12 trái cấm\", người VSF cần giữ gìn sự trung thực và uy tín thương hiệu. Đâu là việc KHÔNG được phép làm?",
+    "question": "Trong “12 trái cấm”, Đồng nghiệp Nhà Má Hải cần giữ gìn sự trung thực và uy tín thương hiệu. Đâu là việc KHÔNG được phép làm?",
     "options": [
       {
         "key": "a",
-        "text": "Làm việc dựa trên dữ liệu thật, số liệu thật, không \"xào nấu\" báo cáo"
+        "text": "Làm việc dựa trên dữ liệu thật, số liệu thật, không “xào nấu” báo cáo"
       },
       {
         "key": "b",
@@ -4596,7 +4596,7 @@ const QUESTIONS = [
     "stableId": "MHW-55",
     "sectionNo": 18,
     "sectionName": "Má Hải Ways",
-    "question": "\"12 trái cấm\" yêu cầu môi trường làm việc VSF phải an toàn và tôn trọng. Đâu là hành vi KHÔNG được phép?",
+    "question": "“12 trái cấm” yêu cầu môi trường làm việc Nhà Má Hải phải an toàn và tôn trọng. Đâu là hành vi KHÔNG được phép?",
     "options": [
       {
         "key": "a",
@@ -4624,7 +4624,7 @@ const QUESTIONS = [
     "stableId": "MHW-58",
     "sectionNo": 18,
     "sectionName": "Má Hải Ways",
-    "question": "\"12 trái cấm\" nhắc người VSF giữ cái đầu tỉnh táo và đôi tay trong sạch. Đâu là hành vi KHÔNG được phép?",
+    "question": "“12 trái cấm” nhắc Đồng nghiệp Nhà Má Hải giữ cái đầu tỉnh táo và đôi tay trong sạch. Đâu là hành vi KHÔNG được phép?",
     "options": [
       {
         "key": "a",
@@ -4652,7 +4652,7 @@ const QUESTIONS = [
     "stableId": "MHW-56",
     "sectionNo": 18,
     "sectionName": "Má Hải Ways",
-    "question": "\"Những gì bạn muốn là những gì bạn làm\" nhắc người VSF điều gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Những gì bạn muốn là những gì bạn làm” nhắc Đồng nghiệp Nhà Má Hải điều gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4680,7 +4680,7 @@ const QUESTIONS = [
     "stableId": "MHW-67",
     "sectionNo": 18,
     "sectionName": "Má Hải Ways",
-    "question": "Vì sao \"công ty càng lớn càng phải chi tiết, càng kỹ càng\"?",
+    "question": "Vì sao “công ty càng lớn càng phải chi tiết, càng kỹ càng”?",
     "options": [
       {
         "key": "a",
@@ -4708,7 +4708,7 @@ const QUESTIONS = [
     "stableId": "MHW-159",
     "sectionNo": 18,
     "sectionName": "Má Hải Ways",
-    "question": "\"Cuối cùng, dữ liệu luôn thắng\" ở VSF nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
+    "question": "“Cuối cùng, dữ liệu luôn thắng” ở Nhà Má Hải nghĩa là gì? Đâu là cách hiểu KHÔNG đúng?",
     "options": [
       {
         "key": "a",
@@ -4724,7 +4724,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "\"Nói có sách, mách có chứng\", có dữ liệu thì mới dám làm chủ quyết định"
+        "text": "“Nói có sách, mách có chứng”, có dữ liệu thì mới dám làm chủ quyết định"
       }
     ],
     "correctAnswer": "c",
@@ -4736,7 +4736,7 @@ const QUESTIONS = [
     "stableId": "MHW-154",
     "sectionNo": 18,
     "sectionName": "Má Hải Ways",
-    "question": "Để ra quyết định đúng ở Nhà VSF, cần kết hợp những gì?",
+    "question": "Để ra quyết định đúng ở Nhà Má Hải, cần kết hợp những gì?",
     "options": [
       {
         "key": "a",
@@ -4764,7 +4764,7 @@ const QUESTIONS = [
     "stableId": "MHW-160",
     "sectionNo": 18,
     "sectionName": "Má Hải Ways",
-    "question": "Khi gặp vấn đề khó từ đội ngũ hoặc khách hàng nhượng quyền, người quản lý VSF nên làm gì? Đâu là cách làm KHÔNG đúng?",
+    "question": "Khi gặp vấn đề khó từ đội ngũ hoặc khách hàng nhượng quyền, người quản lý Nhà Má Hải nên làm gì? Đâu là cách làm KHÔNG đúng?",
     "options": [
       {
         "key": "a",

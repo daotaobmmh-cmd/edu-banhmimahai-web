@@ -1,6 +1,6 @@
 # Local Commit Report
 
-This document records the details of the initial local Git commit for the Viet Street Food Internal Training Portal.
+This document records the details of the initial local Git commit for the Bánh Mì Má Hải Internal Training Portal.
 
 ## COMMIT DETAILS
 - **Commit Hash**: `a8ec500`

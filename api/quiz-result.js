@@ -12,7 +12,7 @@ const APPROVED_UNITS = [
   "Phòng Hành chính - Nhân sự",
   "Phòng Tài chính - Kế toán",
   "Ban Quản lý Quy trình",
-  "VSF University"
+  "University"
 ];
 
 let canonicalAnswerKey = null;

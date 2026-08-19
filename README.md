@@ -1,6 +1,10 @@
-# Viet Street Food · Cổng Đào Tạo Nội Bộ
+# Bánh Mì Má Hải · Cổng Đào Tạo Nội Bộ
 
-Hệ thống luyện tập và kiểm tra kiến thức hội nhập nội bộ dành riêng cho nhân sự Viet Street Food.
+> [!IMPORTANT]
+> **🤖 Antigravity Operational Directive**:
+> Antigravity Agent khi làm việc trong repository này **BẮT BUỘC** phải đọc và tuân thủ tuyệt đối [AGENTS.md](AGENTS.md), các bộ quy tắc trong `rules/` và quy trình trong `workflows/`. Bắt buộc chạy `python scripts/run_regression.py` trước khi hoàn tất nhiệm vụ.
+
+Hệ thống luyện tập và kiểm tra kiến thức hội nhập nội bộ dành riêng cho nhân sự Bánh Mì Má Hải.
 
 ## Hướng dẫn chạy thử nghiệm Local
 Để chạy thử nghiệm ứng dụng ở môi trường local, khởi chạy một web server tĩnh tại thư mục gốc:
