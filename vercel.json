@@ -1,3 +1,7 @@
 {
-  "trailingSlash": true
+  "trailingSlash": true,
+  "rewrites": [
+    { "source": "/kynansale", "destination": "/kynangsale/" },
+    { "source": "/kynansale/:match*", "destination": "/kynangsale/:match*" }
+  ]
 }
