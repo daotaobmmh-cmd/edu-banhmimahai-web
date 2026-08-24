@@ -147,7 +147,7 @@ const questions = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Chả cá sợi Má Hải đạt chuẩn cao cấp 17% đạm từ cá biển tươi, tinh bột dưới 6%, vượt trội hoàn toàn so với chả cá chợ độn bột (chỉ 5-8% đạm), giúp sợi chả chiên phồng vàng giòn xốp bên ngoài, dai ngọt mọng nước bên trong.",
+    "explanation": "Chả cá sợi Má Hải đạt chuẩn cao cấp 17% đạm từ cá biển tươi, tinh bột dưới 6%, vượt trội hoàn toàn so với chả cá chợ độn bột (chỉ 5-8% đạm), giúp sợi chả chiên phồng vàng vàng giòn, dai ngon, mọng nước bên ngoài, dai ngọt mọng nước bên trong.",
     "quote": "Chả cá sợi bên con đạt chuẩn cao cấp 17% đạm cá biển tươi, chiên lên phồng vàng thơm phức, ăn dai ngọt tự nhiên giữ chân khách quen rất tốt ạ!"
   },
   {
@@ -263,7 +263,7 @@ const questions = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Cự ly bảo vệ 500m tại Đô thị loại I & II giúp chủ xe an tâm khai thác trọn vẹn tệp khách quen trong khu vực.",
+    "explanation": "Cự ly bảo vệ 500m tại Đô thị loại I & II giúp chủ xe an tâm khai thác trọn vẹn lượng khách quen quen trong khu vực.",
     "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
@@ -591,7 +591,7 @@ const questions = [
     "displayNumber": 21,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Về quy cách đóng gói và sử dụng Nước sốt Tứ Vị tại quầy xe mỗi sáng, thao tác chuẩn là gì?",
+    "question": "Về quy cách đóng gói và sử dụng Nước sốt Tứ Vị tại xe bánh mì mỗi sáng, thao tác chuẩn là gì?",
     "options": [
       {
         "key": "a",
@@ -802,7 +802,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Hối thúc khách hàng giấu người nhà tự ý chuyển tiền cọc ngay."
+        "text": "Tư vấn vội vã giấu người nhà tự ý chuyển tiền cọc ngay."
       },
       {
         "key": "c",
@@ -972,7 +972,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Gọi điện liên tục vào giờ nghỉ trưa hoặc đêm muộn để hối thúc đặt cọc."
+        "text": "Gọi điện liên tục vào giờ nghỉ trưa hoặc đêm muộn để vội vã đặt cọc."
       },
       {
         "key": "b",
@@ -1482,7 +1482,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Hiên nhà thuận chiều lưu thông buổi sáng giúp khách đi xe máy dễ dàng tấp vào mua nhanh trong 1 phút.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-52",
@@ -1511,7 +1511,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Khảo sát đúng 6h30–7h30 sáng giúp đo lường chính xác lượng khách tiềm năng thực tế trước khi chốt thuê.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-53",
@@ -1523,7 +1523,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bảo đảm toàn bộ tệp khách quen trong bán kính phục vụ thuộc về điểm bán, không lo bị cạnh tranh nội bộ."
+        "text": "Bảo đảm toàn bộ lượng khách quen quen trong bán kính phục vụ thuộc về điểm bán, không lo bị cạnh tranh nội bộ."
       },
       {
         "key": "b",
@@ -1540,7 +1540,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Khoảng cách 300m là hàng rào bảo vệ vững chắc, giúp chủ xe độc quyền khai thác lượng khách trong khu vực.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-54",
@@ -1569,7 +1569,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Mái che, nguồn điện thắp sáng và lối lên xuống thoải mái là các điều kiện đủ để ca bán sáng diễn ra thuận lợi.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-55",
@@ -1598,7 +1598,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Thuê hiên 1-2,5 triệu/tháng chỉ tốn 30k-80k/ngày, bán 6-15 ổ bánh mì là đã đủ trả tiền mặt bằng.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-56",
@@ -1627,7 +1627,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Khách mua bánh mì tiện mua thêm ly cà phê hoặc chai nước, tạo mối quan hệ hợp tác win-win với chủ nhà.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-57",
@@ -1656,7 +1656,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Map Tracker tự động đo cự ly vệ tinh chính xác 100%, bảo đảm không trùng lặp và phản hồi ngay trong 5 phút.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-58",
@@ -1685,7 +1685,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Bảo vệ cự ly nghiêm ngặt là cam kết danh dự 13 năm của Má Hải, bảo đảm công bằng cho mọi đối tác.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-59",
@@ -1714,7 +1714,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Khung giờ vàng sáng sớm vừa tối ưu doanh thu, vừa giúp chủ xe có cuộc sống cân bằng, tự do thời gian.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-60",
@@ -1743,7 +1743,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Phục vụ nhanh trong 1 phút và sắp xếp xe gọn gàng giúp giữ an toàn giao thông và tạo thiện cảm với khu phố.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-61",
@@ -1772,7 +1772,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Học sinh tập trung ăn sáng lúc 6h15–7h00, cần chuẩn bị sẵn nguyên liệu để chiên chả liên tục phục vụ nhanh.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-62",
@@ -1801,7 +1801,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Khung giờ 6h45–7h45 phục vụ công nhân và nhân viên văn phòng, thao tác nhanh tay giúp bán 50-70 ổ trong 1 tiếng.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-63",
@@ -1830,7 +1830,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Chuyển địa điểm chỉ cần quét lại Map Tracker bảo đảm cự ly an toàn là được chuyển ngay, hoàn toàn miễn phí.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-64",
@@ -1859,7 +1859,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Mô hình tinh gọn nhẹ vốn, không gánh nặng chi phí cố định giúp chủ xe an tâm buôn bán không lo áp lực.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-65",
@@ -1888,7 +1888,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Lưu lượng xe cộ đông + Dễ tấp vào + Tầm nhìn sáng sủa + Chủ nhà thân thiện = Công thức điểm bán 100 ổ/sáng.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-66",
@@ -1904,7 +1904,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Chủ động tạm ngưng bán ngắn ngày và bảo quản nguyên liệu đúng cách; nếu nghỉ dài từ 30 ngày cần báo để giữ vị trí."
+        "text": "Chủ động tạm ngưng bán ngắn ngày và bảo quản nguyên liệu đúng cách, nếu nghỉ dài từ 30 ngày cần báo để giữ vị trí."
       },
       {
         "key": "c",
@@ -1917,7 +1917,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Má Hải tôn trọng quyền tự chủ của chủ xe, chỉ cần thông báo nếu nghỉ dài ngày để công ty giữ vị trí trên bản đồ.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-67",
@@ -1946,7 +1946,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Đặt xe lùi trong hiên thể hiện văn hóa kinh doanh văn minh đô thị, giúp điểm bán hoạt động an tâm lâu dài.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-68",
@@ -1975,7 +1975,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Bán đều đặn đúng giờ là bí quyết giữ khách quen số 1, khách đi làm qua là yên tâm luôn có bánh mì nóng.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-69",
@@ -2004,7 +2004,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Điểm dừng đèn đỏ là vị trí vàng về nhận diện, khách có 30-45 giây quan sát biển hiệu và ghé mua bánh.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-70",
@@ -2033,7 +2033,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Thỏa thuận rõ giờ giấc, giá thuê, điện nước và giữ vệ sinh giúp mối quan hệ với chủ nhà luôn êm đẹp, bền lâu.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-71",
@@ -2062,7 +2062,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Chính sách nhân văn bảo hiểm an toàn vốn: Hỗ trợ thu hồi hoàn tối đa 2,8 triệu tùy hiện trạng thực tế hoặc sang nhượng 0đ.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-72",
@@ -2091,7 +2091,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Cự ly 300m/500m bảo đảm vùng doanh thu độc quyền cho từng chủ xe, triệt tiêu hoàn toàn rủi ro cạnh tranh nội bộ.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-73",
@@ -2120,7 +2120,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Cổng chính và sảnh đón là nút thắt giao thông của chung cư, đón trọn vẹn dòng người đi làm mỗi sáng.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-74",
@@ -2136,7 +2136,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Xe vận hành độc lập hoàn toàn bằng bình gas và bếp chiên; nguồn điện chỉ là lựa chọn phụ nếu muốn cắm thêm đèn thắp sáng."
+        "text": "Xe vận hành độc lập hoàn toàn bằng bình gas và bếp chiên, nguồn điện chỉ là lựa chọn phụ nếu muốn cắm thêm đèn thắp sáng."
       },
       {
         "key": "c",
@@ -2149,7 +2149,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Xe chạy gas độc lập 100%, không lệ thuộc nguồn điện giúp đối tác linh hoạt đặt xe tại mọi vị trí hiên nhà.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-75",
@@ -2178,7 +2178,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Map Tracker là vũ khí công nghệ bảo vệ độc quyền vùng kinh doanh và tạo sự an tâm tuyệt đối cho chủ xe.",
-    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
+    "quote": "Vị trí hiên nhà đẹp thuận chiều dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-76",
@@ -2389,7 +2389,7 @@ const questions = [
     "displayNumber": 83,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Quy chuẩn vệ sinh an toàn thực phẩm đối với người trực tiếp đứng bán tại quầy xe gồm những gì?",
+    "question": "Quy chuẩn vệ sinh an toàn thực phẩm đối với người trực tiếp đứng bán tại xe bánh mì gồm những gì?",
     "options": [
       {
         "key": "a",
@@ -2405,7 +2405,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Vừa hút thuốc lá vừa chiên chả cá tại quầy xe."
+        "text": "Vừa hút thuốc lá vừa chiên chả cá tại xe bánh mì."
       }
     ],
     "correctAnswer": "c",
@@ -2629,7 +2629,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Chỉ để trang trí cho đẹp mắt trên quầy xe."
+        "text": "Chỉ để trang trí cho đẹp mắt trên xe bánh mì."
       },
       {
         "key": "c",
@@ -2865,7 +2865,7 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Công ty thu phí duy trì thương hiệu định kỳ hàng tháng trên mỗi điểm bán."
+        "text": "Công ty thu phí duy trì thương hiệu hàng tháng trên mỗi điểm bán."
       },
       {
         "key": "d",
@@ -3060,7 +3060,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Gọi điện liên tục nhiều cuộc trong ngày để hối thúc chuyển tiền."
+        "text": "Gọi điện liên tục nhiều cuộc trong ngày để vội vã chuyển tiền."
       },
       {
         "key": "b",
@@ -3213,7 +3213,7 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Được phép bán kèm các loại nước giải khát đóng chai để gia tăng thu nhập, miễn là bố trí gọn gàng và giữ vệ sinh quầy xe."
+        "text": "Được phép bán kèm các loại nước giải khát đóng chai để gia tăng thu nhập, miễn là bố trí gọn gàng và giữ vệ sinh xe bánh mì."
       },
       {
         "key": "d",
@@ -3246,11 +3246,11 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Dạ chủ xe làm chủ hoàn toàn điểm bán, tự chủ thời gian nghỉ ngơi; công ty chỉ khuyến khích bán đều đặn để giữ khách quen ạ."
+        "text": "Dạ chủ xe làm chủ hoàn toàn điểm bán, tự chủ thời gian nghỉ ngơi, công ty chỉ khuyến khích bán đều đặn để giữ khách quen ạ."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Chủ xe làm chủ hoàn toàn, tự do sắp xếp công việc; mở bán đều đặn là vì quyền lợi giữ khách quen của chính mình.",
+    "explanation": "Chủ xe làm chủ hoàn toàn, tự do sắp xếp công việc, mở bán đều đặn là vì quyền lợi giữ khách quen của chính mình.",
     "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
@@ -3296,7 +3296,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Gửi tin nhắn dồn dập vào lúc nửa đêm và hối thúc khách hàng phải chuyển khoản đặt cọc ngay."
+        "text": "Gửi tin nhắn dồn dập vào lúc nửa đêm và tư vấn vội vã phải chuyển khoản đặt cọc ngay."
       },
       {
         "key": "c",
@@ -3308,7 +3308,7 @@ const questions = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Gửi tin nhắn đêm muộn và hối thúc dồn dập vi phạm chuẩn mực văn minh tư vấn, gây phiền hà cho khách hàng.",
+    "explanation": "Gửi tin nhắn đêm muộn và vội vã dồn dập vi phạm chuẩn mực văn minh tư vấn, gây phiền hà cho khách hàng.",
     "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
@@ -3673,11 +3673,11 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Cả 2 người cùng đứng chiên chả và bỏ mặc khách đứng chờ."
+        "text": "Cả 2 người cùng đứng chiên chả và chưa đồng hành sát sao khách đứng chờ."
       },
       {
         "key": "c",
-        "text": "1 người chuyên chiên chả cá sợi và chan nước sốt; 1 người chuyên kẹp rau dưa, bọc túi giấy, thu tiền và cảm ơn khách."
+        "text": "1 người chuyên chiên chả cá sợi và chan nước sốt, 1 người chuyên kẹp rau dưa, bọc túi giấy, thu tiền và cảm ơn khách."
       },
       {
         "key": "d",
@@ -3706,7 +3706,7 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Bỏ quầy xe đi vào trong nhà trốn khách."
+        "text": "Bỏ xe bánh mì đi vào trong nhà trốn khách."
       },
       {
         "key": "d",
@@ -3739,7 +3739,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Bỏ mặc bếp gas và tiếp tục bán bánh mì nguội."
+        "text": "Chưa đồng hành sát sao bếp gas và tiếp tục bán bánh mì nguội."
       }
     ],
     "correctAnswer": "a",
@@ -3764,7 +3764,7 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Để làm cho quầy xe trông nặng nề và cồng kềnh hơn."
+        "text": "Để làm cho xe bánh mì trông nặng nề và cồng kềnh hơn."
       },
       {
         "key": "d",
@@ -4336,7 +4336,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Áp dụng mọi thủ thuật hối thúc khách hàng chuyển tiền cọc ngay mà không quan tâm đến tính khả thi của điểm bán."
+        "text": "Áp dụng mọi thủ thuật tư vấn vội vã chuyển tiền cọc ngay mà không quan tâm đến tính khả thi của điểm bán."
       },
       {
         "key": "b",
@@ -4348,7 +4348,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Xem khách hàng như đối tượng để thu lợi một lần rồi bỏ mặc."
+        "text": "Xem khách hàng như đối tượng để thu lợi một lần rồi chưa đồng hành sát sao."
       }
     ],
     "correctAnswer": "b",
@@ -4858,7 +4858,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 10 triệu ổ/tháng."
+        "text": "Khoảng 800.000 ổ/tháng."
       },
       {
         "key": "b",
@@ -4920,7 +4920,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Hối thúc khách hàng ký hợp đồng vội vã mà không giải thích cặn kẽ các điều khoản quyền lợi và nghĩa vụ."
+        "text": "Tư vấn vội vã ký hợp đồng vội vã mà không giải thích cặn kẽ các điều khoản quyền lợi và nghĩa vụ."
       },
       {
         "key": "c",
@@ -4932,7 +4932,7 @@ const questions = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Tư vấn hợp đồng phải minh bạch, giải thích từng điều khoản để khách hiểu rõ quyền lợi và an tâm ký kết, tuyệt đối không hối thúc.",
+    "explanation": "Tư vấn hợp đồng phải minh bạch, giải thích từng điều khoản để khách hiểu rõ quyền lợi và an tâm ký kết, tuyệt đối không vội vã.",
     "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
   },
   {
@@ -5318,7 +5318,7 @@ const questions = [
     "displayNumber": 184,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Kỹ thuật 'Tạo thiện cảm trong 30 giây đầu tiên' của người đứng bán tại quầy xe bánh mì gồm những yếu tố nào?",
+    "question": "Kỹ thuật 'Tạo thiện cảm trong 30 giây đầu tiên' của người đứng bán tại xe bánh mì bánh mì gồm những yếu tố nào?",
     "options": [
       {
         "key": "a",
@@ -5616,7 +5616,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Chỉ chú trọng vào việc chốt cọc lấy doanh số mà bỏ mặc đối tác tự xoay xở trong khâu chuẩn bị khai trương điểm bán."
+        "text": "Chỉ chú trọng vào việc chốt cọc lấy doanh số mà chưa đồng hành sát sao đối tác tự xoay xở trong khâu chuẩn bị khai trương điểm bán."
       },
       {
         "key": "c",
@@ -5628,7 +5628,7 @@ const questions = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Bỏ mặc đối tác sau khi nhận cọc là hành vi vô trách nhiệm, đi ngược lại hoàn toàn triết lý đồng minh kiếm cơm của Nhà Má Hải.",
+    "explanation": "Chưa đồng hành sát sao đối tác sau khi nhận cọc là hành vi vô trách nhiệm, đi ngược lại hoàn toàn triết lý đồng minh kiếm cơm của Nhà Má Hải.",
     "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
