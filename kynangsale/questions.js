@@ -218,19 +218,19 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "100 mét giữa hai điểm bán liền kề."
+        "text": "Không áp dụng chính sách bảo vệ cự ly (đối tác tự do mở sát cạnh nhau)."
       },
       {
         "key": "b",
-        "text": "1.500 mét giữa hai điểm bán liền kề."
+        "text": "50 mét (mở san sát nhau theo thói quen kinh doanh tự phát ngoài thị trường)."
       },
       {
         "key": "c",
-        "text": "750 mét giữa hai điểm bán liền kề."
+        "text": "100 mét (cự ly quá ngắn dễ dẫn đến việc chia nhỏ lượng khách quen của nhau)."
       },
       {
         "key": "d",
-        "text": "300 mét (bảo đảm không bị trùng lặp vùng phục vụ khách hàng giữa các xe)."
+        "text": "300 mét (bảo đảm độc quyền vùng phục vụ khách hàng, tránh hoàn toàn rủi ro cạnh tranh giữa các xe)."
       }
     ],
     "correctAnswer": "d",
@@ -247,23 +247,23 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "500 mét (phù hợp với mật độ giao thông và phân bố dân cư đô thị tỉnh)."
+        "text": "500 mét (phù hợp với mật độ giao thông và phân bố dân cư đô thị tỉnh để bảo đảm trọn vẹn khách quen)."
       },
       {
         "key": "b",
-        "text": "200 mét giữa các điểm bán."
+        "text": "100 mét (cự ly quá ngắn tương tự các hàng quán kinh doanh tự do ngoài chợ)."
       },
       {
         "key": "c",
-        "text": "100 mét giữa các điểm bán."
+        "text": "200 mét (chưa bảo đảm đủ dung lượng khách hàng ổn định cho một điểm bán)."
       },
       {
         "key": "d",
-        "text": "2.000 mét giữa các điểm bán."
+        "text": "Không quy định khoảng cách bảo vệ cự ly tại các khu vực tỉnh lẻ."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Cự ly bảo vệ 500m tại Đô thị loại I & II giúp chủ xe an tâm khai thác trọn vẹn lượng khách quen quen trong khu vực.",
+    "explanation": "Cự ly bảo vệ 500m tại Đô thị loại I & II giúp chủ xe an tâm khai thác trọn vẹn lượng khách quen trong khu vực.",
     "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {

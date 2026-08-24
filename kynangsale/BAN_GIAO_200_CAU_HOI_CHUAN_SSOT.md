@@ -113,10 +113,10 @@
 
 ### **Câu 008.** Khoảng cách bảo vệ độc quyền điểm bán trên Map Tracker tại khu vực Đô thị đặc biệt (TP.HCM, Hà Nội) là bao nhiêu?
 
-* **a)** 100 mét giữa hai điểm bán liền kề.
-* **b)** 1.500 mét giữa hai điểm bán liền kề.
-* **c)** 750 mét giữa hai điểm bán liền kề.
-* **d)** 300 mét (bảo đảm không bị trùng lặp vùng phục vụ khách hàng giữa các xe). ⭐ **[ĐÁP ÁN ĐÚNG]**
+* **a)** Không áp dụng chính sách bảo vệ cự ly (đối tác tự do mở sát cạnh nhau).
+* **b)** 50 mét (mở san sát nhau theo thói quen kinh doanh tự phát ngoài thị trường).
+* **c)** 100 mét (cự ly quá ngắn dễ dẫn đến việc chia nhỏ lượng khách quen của nhau).
+* **d)** 300 mét (bảo đảm độc quyền vùng phục vụ khách hàng, tránh hoàn toàn rủi ro cạnh tranh giữa các xe). ⭐ **[ĐÁP ÁN ĐÚNG]**
 
 > **Đáp án: d).** Map Tracker khóa bảo vệ độc quyền cự ly tối thiểu 300m tại đô thị đặc biệt để bảo đảm doanh số cho chủ xe.
 > 💬 *Câu thoại thực chiến:* "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
@@ -125,12 +125,12 @@
 
 ### **Câu 009.** Khoảng cách bảo vệ điểm bán tại các khu vực Đô thị loại I, loại II và các tỉnh lân cận được quy định là bao nhiêu?
 
-* **a)** 500 mét (phù hợp với mật độ giao thông và phân bố dân cư đô thị tỉnh). ⭐ **[ĐÁP ÁN ĐÚNG]**
-* **b)** 200 mét giữa các điểm bán.
-* **c)** 100 mét giữa các điểm bán.
-* **d)** 2.000 mét giữa các điểm bán.
+* **a)** 500 mét (phù hợp với mật độ giao thông và phân bố dân cư đô thị tỉnh để bảo đảm trọn vẹn khách quen). ⭐ **[ĐÁP ÁN ĐÚNG]**
+* **b)** 100 mét (cự ly quá ngắn tương tự các hàng quán kinh doanh tự do ngoài chợ).
+* **c)** 200 mét (chưa bảo đảm đủ dung lượng khách hàng ổn định cho một điểm bán).
+* **d)** Không quy định khoảng cách bảo vệ cự ly tại các khu vực tỉnh lẻ.
 
-> **Đáp án: a).** Cự ly bảo vệ 500m tại Đô thị loại I & II giúp chủ xe an tâm khai thác trọn vẹn lượng khách quen quen trong khu vực.
+> **Đáp án: a).** Cự ly bảo vệ 500m tại Đô thị loại I & II giúp chủ xe an tâm khai thác trọn vẹn lượng khách quen trong khu vực.
 > 💬 *Câu thoại thực chiến:* "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
 
 ---
