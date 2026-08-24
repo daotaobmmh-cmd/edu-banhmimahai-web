@@ -131,24 +131,24 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Hàm lượng đạm đạt 17% từ thịt cá biển tươi nguyên chất, tinh bột dưới 6%."
+        "text": "Hàm lượng đạm đạt chuẩn cao cấp 17% từ thịt cá biển tươi nguyên chất, tinh bột dưới 6%."
       },
       {
         "key": "b",
-        "text": "Hàm lượng đạm đạt 12% và độn nhiều tinh bột ngô."
+        "text": "Hàm lượng đạm chỉ đạt 8% từ nguồn cá tạp trôi nổi ngoài chợ."
       },
       {
         "key": "c",
-        "text": "Hàm lượng đạm đạt 8% từ nguồn cá tạp nước ngọt."
+        "text": "Hàm lượng đạm chỉ đạt 10% do pha trộn nhiều bột mì công nghiệp."
       },
       {
         "key": "d",
-        "text": "Hàm lượng đạm đạt 25% tương đương thực phẩm bổ sung chuyên dụng."
+        "text": "Hàm lượng đạm dưới 5% do độn phần lớn tinh bột và hương liệu phụ gia."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Chả cá sợi Má Hải đạt 17% đạm từ cá biển tươi, tinh bột < 6%, giúp sợi chả khi chiên phồng vàng giòn xốp bên ngoài, dai ngọt mọng nước bên trong.",
-    "quote": "Chả cá sợi bên con đạt chuẩn 17% đạm cá biển tươi, chiên lên phồng vàng thơm phức, ăn dai ngọt tự nhiên giữ chân khách quen rất tốt ạ!"
+    "explanation": "Chả cá sợi Má Hải đạt chuẩn cao cấp 17% đạm từ cá biển tươi, tinh bột dưới 6%, vượt trội hoàn toàn so với chả cá chợ độn bột (chỉ 5-8% đạm), giúp sợi chả chiên phồng vàng giòn xốp bên ngoài, dai ngọt mọng nước bên trong.",
+    "quote": "Chả cá sợi bên con đạt chuẩn cao cấp 17% đạm cá biển tươi, chiên lên phồng vàng thơm phức, ăn dai ngọt tự nhiên giữ chân khách quen rất tốt ạ!"
   },
   {
     "id": "sale-6",

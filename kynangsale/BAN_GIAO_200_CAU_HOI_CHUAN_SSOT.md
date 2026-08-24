@@ -77,13 +77,13 @@
 
 #### **Câu 005.** Hàm lượng đạm kiểm nghiệm trong sản phẩm Chả cá sợi Má Hải đạt tiêu chuẩn nào?
 
-* **A.** Hàm lượng đạm đạt 17% từ thịt cá biển tươi nguyên chất, tinh bột dưới 6%. ⭐ **[ĐÁP ÁN ĐÚNG]**
-* **B.** Hàm lượng đạm đạt 12% và độn nhiều tinh bột ngô.
-* **C.** Hàm lượng đạm đạt 8% từ nguồn cá tạp nước ngọt.
-* **D.** Hàm lượng đạm đạt 25% tương đương thực phẩm bổ sung chuyên dụng.
+* **A.** Hàm lượng đạm đạt chuẩn cao cấp 17% từ thịt cá biển tươi nguyên chất, tinh bột dưới 6%. ⭐ **[ĐÁP ÁN ĐÚNG]**
+* **B.** Hàm lượng đạm chỉ đạt 8% từ nguồn cá tạp trôi nổi ngoài chợ.
+* **C.** Hàm lượng đạm chỉ đạt 10% do pha trộn nhiều bột mì công nghiệp.
+* **D.** Hàm lượng đạm dưới 5% do độn phần lớn tinh bột và hương liệu phụ gia.
 
-> **Đáp án: A.** Chả cá sợi Má Hải đạt 17% đạm từ cá biển tươi, tinh bột < 6%, giúp sợi chả khi chiên phồng vàng giòn xốp bên ngoài, dai ngọt mọng nước bên trong.
-> 💬 *Câu thoại thực chiến:* "Chả cá sợi bên con đạt chuẩn 17% đạm cá biển tươi, chiên lên phồng vàng thơm phức, ăn dai ngọt tự nhiên giữ chân khách quen rất tốt ạ!"
+> **Đáp án: A.** Chả cá sợi Má Hải đạt chuẩn cao cấp 17% đạm từ cá biển tươi, tinh bột dưới 6%, vượt trội hoàn toàn so với chả cá chợ độn bột (chỉ 5-8% đạm), giúp sợi chả chiên phồng vàng giòn xốp bên ngoài, dai ngọt mọng nước bên trong.
+> 💬 *Câu thoại thực chiến:* "Chả cá sợi bên con đạt chuẩn cao cấp 17% đạm cá biển tươi, chiên lên phồng vàng thơm phức, ăn dai ngọt tự nhiên giữ chân khách quen rất tốt ạ!"
 
 ---
 
