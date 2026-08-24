@@ -8,13 +8,14 @@ const questions = [
   {
     "id": "sale-1",
     "stableId": "sale-1",
+    "displayNumber": 1,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
     "question": "Khi đối tác đã có sẵn xe bánh mì muốn gia nhập chuỗi Bánh Mì Má Hải, Gói 4,8 triệu mang lại những quyền lợi thiết thực nào?",
     "options": [
       {
         "key": "a",
-        "text": "Bàn giao trọn bộ decal nhận diện thương hiệu dán xe và áo nón đồng phục cam sạch sẽ."
+        "text": "Tất cả các quyền lợi trên đều được bàn giao đầy đủ để đối tác tự tin mở bán ngay."
       },
       {
         "key": "b",
@@ -26,1231 +27,1275 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Tất cả các quyền lợi trên đều được bàn giao đầy đủ để đối tác tự tin mở bán ngay."
+        "text": "Bàn giao trọn bộ decal nhận diện thương hiệu dán xe và áo nón đồng phục cam sạch sẽ."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Gói 4,8 triệu tối ưu cho người đã có xe: Nhận trọn bộ decal nhận diện, áo nón đồng phục, chứng nhận ATTP, Sổ tay bán hàng và hướng dẫn kỹ thuật chiên chả cá sợi để mở bán ngay với chi phí nhẹ nhất.",
+    "correctAnswer": "a",
+    "explanation": "Gói 4,8 triệu là giải pháp tiết kiệm tối ưu cho người đã có xe: Nhận đủ decal nhận diện, đồng phục, chứng nhận ATTP, Sổ tay bán hàng và hướng dẫn kỹ thuật chiên chả để mở bán ngay.",
     "quote": "Cô Chú có sẵn xe rồi thì chọn Gói 4,8 triệu là tiết kiệm nhất, nhận đủ decal, đồng phục, cẩm nang và hướng dẫn chiên chả để mở bán ngay ạ!"
   },
   {
     "id": "sale-2",
     "stableId": "sale-2",
+    "displayNumber": 2,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Khi tư vấn về quy trình thanh toán hợp đồng Bánh Mì Má Hải, nhận định nào sau đây là KHÔNG ĐÚNG?",
+    "question": "Mức giá sàn khuyến nghị cho một ổ Bánh Mì Má Hải tiêu chuẩn trên toàn quốc là bao nhiêu?",
     "options": [
       {
         "key": "a",
-        "text": "Đợt 1 đối tác đặt cọc 2 triệu đồng để khóa giữ điểm bán độc quyền và tiến hành chuẩn bị xe"
+        "text": "25.000đ/ổ (mức giá cao dành cho khu vực trung tâm thương mại cao cấp)."
       },
       {
         "key": "b",
-        "text": "Đợt 2 đối tác thanh toán phần chi phí còn lại ngay khi nhận bàn giao đầy đủ phương tiện"
+        "text": "15.000đ/ổ (mức giá bình dân dễ mua, bảo đảm lợi nhuận ròng hấp dẫn cho chủ xe)."
       },
       {
         "key": "c",
-        "text": "Khách hàng bắt buộc phải thanh toán trước 100% tiền gói ngay trong lần đầu gọi điện tư vấn."
+        "text": "10.000đ/ổ (mức giá bán hòa vốn không có lợi nhuận để cạnh tranh)."
       },
       {
         "key": "d",
-        "text": "Số tiền cọc 2 triệu đồng được cấn trừ 100% vào tổng giá trị gói hợp tác khi hoàn tất"
+        "text": "35.000đ/ổ (mức giá phân khúc nhà hàng ẩm thực cao cấp)."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Quy trình thanh toán của Má Hải chia làm 2 đợt rõ ràng: Đợt 1 đặt cọc 2 triệu để giữ điểm bán và chuẩn bị xe, đợt 2 thanh toán phần còn lại khi nhận bàn giao.",
-    "quote": "Dạ quy trình bên con chia làm 2 đợt rất minh bạch, Cô Chú cọc trước 2 triệu giữ điểm bán rồi khi nào nhận đủ xe và đồ nghề mới thanh toán phần còn lại ạ!"
+    "correctAnswer": "b",
+    "explanation": "Giá sàn khuyến nghị 15.000đ/ổ vừa túi tiền đại đa số người lao động, học sinh, sinh viên, giúp xe bánh mì bán nhanh 70–100 ổ mỗi sáng và đem lại lợi nhuận ròng ổn định.",
+    "quote": "Giá bán 15.000đ/ổ rất vừa túi tiền bà con ăn sáng, khách ghé mua đông và mang lại tiền lời ròng 5.000đ – 5.500đ mỗi ổ cho Cô Chú ạ!"
   },
   {
     "id": "sale-3",
     "stableId": "sale-3",
+    "displayNumber": 3,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Trong Gói 10,3 triệu đồng, bộ dụng cụ bếp chuyên dụng bàn giao cho đối tác bao gồm những trang thiết bị nào?",
+    "question": "Về chính sách '3 KHÔNG' trong hợp đồng hợp tác của Bánh Mì Má Hải, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
         "key": "a",
-        "text": "Máy ép bánh mì tam giác và lò nướng điện bánh mì đối lưu công nghiệp"
+        "text": "Công ty không thu bất kỳ khoản phí nhượng quyền thương hiệu hàng tháng nào."
       },
       {
         "key": "b",
-        "text": "Bếp gas khè, chảo chiên chuyên dụng, vợt chiên, xẻng lật, khay inox, kẹp gắp, dao rạch bánh và thùng giữ nóng bánh mì."
+        "text": "Công ty không thu phí quản lý hay phí đào tạo định kỳ trong suốt quá trình bán."
       },
       {
         "key": "c",
-        "text": "Xe đẩy hàng nặng 4 bánh và hệ thống camera giám sát từ xa"
+        "text": "Công ty trích thu 15% tổng doanh thu bán hàng mỗi ngày tại điểm bán."
       },
       {
         "key": "d",
-        "text": "Tủ đông bảo quản cỡ lớn 500 lít và máy xay thịt cá công suất cao"
+        "text": "Công ty cam kết hỗ trợ tái ký hợp đồng hợp tác hàng năm hoàn toàn miễn phí 0 đồng."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Gói 10,3 triệu trang bị đầy đủ trọn bộ từ bếp gas khè, chảo chiên đến dao, kẹp, khay và thùng giữ nóng, giúp chủ xe mở bán được ngay mà không phải sắm sửa lặt vặt.",
-    "quote": "Dạ Gói 10,3 triệu có đủ trọn bộ bếp khè, chảo chiên và đồ nghề chuyên dụng, Cô Chú không cần tốn công đi chợ tìm mua từng món đâu ạ!"
+    "correctAnswer": "c",
+    "explanation": "Chính sách 3 KHÔNG nhất quán 13 năm của Má Hải: 0đ phí hàng tháng, 0% chia sẻ doanh thu và 0đ phí gia hạn hàng năm. Phát biểu nói thu 15% doanh thu là sai sự thật.",
+    "quote": "Công ty cam kết 3 KHÔNG: không phí tháng, không chia doanh thu, không phí gia hạn, Cô Chú bán được bao nhiêu hưởng trọn bấy nhiêu!"
   },
   {
     "id": "sale-4",
     "stableId": "sale-4",
+    "displayNumber": 4,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Hàm lượng Đạm kiểm nghiệm trong chả cá sợi Má Hải đạt tỷ lệ bao nhiêu?",
+    "question": "Những ưu thế cốt lõi nào giúp mô hình xe Bánh Mì Má Hải hoàn vốn nhanh chỉ sau 1 đến 2 tháng?",
     "options": [
       {
         "key": "a",
-        "text": "Đạt 17% hàm lượng Đạm nguyên chất từ thịt cá biển tươi."
+        "text": "Vốn đầu tư ban đầu siêu nhẹ chỉ từ 4,8 triệu đến 10,3 triệu đồng, không chôn vốn lớn."
       },
       {
         "key": "b",
-        "text": "Đạt 12% hàm lượng Đạm pha trộn bột mì"
+        "text": "Tận dụng hiên nhà buổi sáng từ 5h30–9h00, chi phí thuê mặt bằng rất rẻ hoặc tận dụng nhà có sẵn."
       },
       {
         "key": "c",
-        "text": "Đạt 8% hàm lượng Đạm từ phụ gia tổng hợp"
+        "text": "Biên lợi nhuận ròng dày ~35% (lời 5.000đ – 5.500đ/ổ) giúp tích lũy tiền lời đều đặn mỗi ngày."
       },
       {
         "key": "d",
-        "text": "Đạt 5% hàm lượng Đạm từ chả cá tạp thông thường"
+        "text": "Tất cả các yếu tố trên đều là nền tảng giúp điểm bán hoàn vốn nhanh và an toàn."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Hàm lượng Đạm 17% từ thịt cá biển giúp sợi chả chiên phồng vàng, thơm ngọt tự nhiên và không bị bở như chả cá thông thường ngoài thị trường (chỉ đạt 5% – 10% đạm).",
-    "quote": "Chả cá sợi Má Hải có kết quả kiểm nghiệm đạt 17% đạm cá biển nguyên chất, khi chiên sợi phồng căng vàng ruộm và thơm ngọt tự nhiên không hề độn bột ạ!"
+    "correctAnswer": "d",
+    "explanation": "Vốn nhẹ + Mặt bằng hiên nhà rẻ + Lời ròng dày 35% là kiềng 3 chân giúp chủ xe thu hồi vốn nhanh sau 1–2 tháng mở bán.",
+    "quote": "Vốn ít, mặt bằng hiên nhà rẻ mà mỗi ổ lời hơn 5 ngàn, bán 60–80 ổ mỗi sáng là sau 1–2 tháng Cô Chú đã thu hồi trọn tiền vốn rồi!"
   },
   {
     "id": "sale-5",
     "stableId": "sale-5",
+    "displayNumber": 5,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Nước sốt Tứ Vị đóng can/chai sẵn của Bánh Mì Má Hải mang lại những lợi ích thiết thực nào cho chủ xe?",
+    "question": "Hàm lượng đạm kiểm nghiệm trong sản phẩm Chả cá sợi Má Hải đạt tiêu chuẩn nào?",
     "options": [
       {
         "key": "a",
-        "text": "Chủ xe phải tự mua nguyên liệu về đun nấu thủ công tại điểm bán mỗi ngày"
+        "text": "Hàm lượng đạm đạt 17% từ thịt cá biển tươi nguyên chất, tinh bột dưới 6%."
       },
       {
         "key": "b",
-        "text": "Hương vị chua cay mặn ngọt chuẩn hóa, đóng can đạt chuẩn ATTP, mỗi sáng chỉ cần rót ra chén là chan bánh nhanh gọn và đồng bộ vị ngon."
+        "text": "Hàm lượng đạm đạt 12% và độn nhiều tinh bột ngô."
       },
       {
         "key": "c",
-        "text": "Bắt buộc chủ xe phải pha loãng với nước lọc để tăng thể tích bán hàng"
+        "text": "Hàm lượng đạm đạt 8% từ nguồn cá tạp nước ngọt."
       },
       {
         "key": "d",
-        "text": "Chỉ dùng được trong 24 giờ sau khi mở nắp can và không được lưu kho"
+        "text": "Hàm lượng đạm đạt 25% tương đương thực phẩm bổ sung chuyên dụng."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Nước sốt Tứ Vị được nấu sẵn đóng can đạt chuẩn an toàn thực phẩm, mỗi sáng chủ xe chỉ cần rót lượng vừa dùng ra chén để chan bánh nhanh gọn, chuẩn vị và tiết kiệm công sức.",
-    "quote": "Nước sốt Tứ Vị đóng can sẵn chuẩn công thức độc quyền, Cô Chú không lo thức khuya dậy sớm nấu nướng mà ổ bánh nào chan ra cũng đậm đà đồng bộ!"
+    "correctAnswer": "a",
+    "explanation": "Chả cá sợi Má Hải đạt 17% đạm từ cá biển tươi, tinh bột < 6%, giúp sợi chả khi chiên phồng vàng giòn xốp bên ngoài, dai ngọt mọng nước bên trong.",
+    "quote": "Chả cá sợi bên con đạt chuẩn 17% đạm cá biển tươi, chiên lên phồng vàng thơm phức, ăn dai ngọt tự nhiên giữ chân khách quen rất tốt ạ!"
   },
   {
     "id": "sale-6",
     "stableId": "sale-6",
+    "displayNumber": 6,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Quy định khoảng cách bảo vệ giữa các điểm bán bánh mì Má Hải trên hệ thống Map Tracker tại khu vực nội thành là bao nhiêu?",
+    "question": "Khi khách hàng chọn Gói tiêu chuẩn 7,5 triệu, công ty bàn giao trọn bộ những hạng mục nào?",
     "options": [
       {
         "key": "a",
-        "text": "Khoảng cách tối thiểu 50 mét giữa hai điểm bán"
+        "text": "Bàn giao xe bánh mì inox mới tiêu chuẩn kèm bộ decal nhận diện thương hiệu dán sẵn."
       },
       {
         "key": "b",
-        "text": "Khoảng cách tối thiểu 100 mét giữa hai điểm bán"
+        "text": "Tất cả các quyền lợi trên đều được bàn giao đầy đủ cho khách hàng."
       },
       {
         "key": "c",
-        "text": "Khoảng cách tối thiểu 300 mét tại nội thành (hoặc 500 mét tại khu vực tỉnh)."
+        "text": "Chuyển giao video kỹ thuật chiên chả cá sợi và công thức nước sốt Tứ Vị độc quyền."
       },
       {
         "key": "d",
-        "text": "Không quy định khoảng cách, các xe được mở tự do san sát nhau"
+        "text": "Cung cấp đầy đủ đồng phục áo nón, Giấy chứng nhận ATTP và Sổ tay hướng dẫn bán hàng."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Khoảng cách 300m nội thành và 500m tỉnh là vùng an toàn được kiểm tra bằng định vị Map Tracker, bảo đảm mỗi chủ xe có một lượng khách quen riêng ổn định.",
-    "quote": "Công ty quét tọa độ Map Tracker bảo vệ cự ly 300m nội thành và 500m ở tỉnh để đảm bảo Cô Chú mở bán độc quyền một vùng khách quen ạ!"
+    "correctAnswer": "b",
+    "explanation": "Gói 7,5 triệu trang bị sẵn xe inox tiêu chuẩn mới và nhận diện thương hiệu hoàn chỉnh.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-7",
     "stableId": "sale-7",
+    "displayNumber": 7,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Khi mở bán tại các địa phương có thói quen ăn uống đặc thù, nhận định nào sau đây là KHÔNG ĐÚNG?",
+    "question": "Sự khác biệt vượt trội của Gói cao cấp đầy đủ 10,3 triệu so với Gói 7,5 triệu là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc phải giữ cố định lượng ớt cay và rau răm mà không được linh hoạt theo yêu cầu của khách."
+        "text": "Được cung cấp mặt bằng kinh doanh miễn phí trong 6 tháng đầu tiên."
       },
       {
         "key": "b",
-        "text": "Giữ nguyên cốt sốt Tứ Vị độc quyền của Má Hải để bảo đảm chất lượng và tính đồng bộ thương hiệu"
+        "text": "Được tặng kèm một xe máy tay ga mới để giao hàng tận nhà cho khách."
       },
       {
         "key": "c",
-        "text": "Được phép linh hoạt điều chỉnh nhẹ độ cay hoặc lượng rau dưa ăn kèm để chiều lòng bà con địa phương."
+        "text": "Trang bị thêm trọn bộ dụng cụ bếp chuyên dụng (bếp gas khè, chảo chiên, kẹp, khay, xẻng) để bán ngay."
       },
       {
         "key": "d",
-        "text": "Lắng nghe phản hồi của khách quen để phục vụ đúng khẩu vị vùng miền"
+        "text": "Được hỗ trợ chi trả toàn bộ tiền lương cho người đứng bán ca sáng."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Luôn giữ vững cốt sốt chuẩn của công ty nhưng khuyến khích chủ xe linh hoạt độ cay/rau dưa theo thói quen của bà con địa phương để phục vụ chu đáo nhất.",
-    "quote": "Cốt sốt thương hiệu mình giữ chuẩn, còn khách ăn nhiều hay ít cay, thêm rau hay bớt dưa thì Cô Chú cứ chiều theo ý bà con để giữ khách quen nhé!"
+    "correctAnswer": "c",
+    "explanation": "Gói 10,3 triệu có đủ trọn bộ dụng cụ bếp chuyên nghiệp, nhận xe là mở bán ngay không cần sắm thêm.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-8",
     "stableId": "sale-8",
+    "displayNumber": 8,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Chính sách nào sau đây giúp người mở xe Bánh Mì Má Hải giữ trọn vẹn tiền lời buôn bán mỗi ngày?",
+    "question": "Khoảng cách bảo vệ độc quyền điểm bán trên Map Tracker tại khu vực Đô thị đặc biệt (TP.HCM, Hà Nội) là bao nhiêu?",
     "options": [
       {
         "key": "a",
-        "text": "Thu phí quản lý thương hiệu định kỳ 10% trên tổng doanh thu mỗi tuần"
+        "text": "100 mét giữa hai điểm bán liền kề."
       },
       {
         "key": "b",
-        "text": "Bắt buộc chủ xe chia sẻ 20% lợi nhuận ròng hàng tháng cho công ty"
+        "text": "1.500 mét giữa hai điểm bán liền kề."
       },
       {
         "key": "c",
-        "text": "Thu phí duy trì phần mềm và quản lý điểm bán 1 triệu đồng/tháng"
+        "text": "750 mét giữa hai điểm bán liền kề."
       },
       {
         "key": "d",
-        "text": "Miễn phí 100% phí nhượng quyền hàng tháng, không thu phần trăm doanh số và cam kết bình ổn giá nguyên liệu minh bạch."
+        "text": "300 mét (bảo đảm không bị trùng lặp vùng phục vụ khách hàng giữa các xe)."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Chính sách 0đ phí hàng tháng, 0% chia doanh thu và bình ổn giá giúp chủ xe an tâm giữ trọn 100% tiền lời buôn bán.",
-    "quote": "Bánh Mì Má Hải áp dụng chính sách 3 KHÔNG: không phí hàng tháng, không chia doanh thu, không phí thương hiệu, bán được bao nhiêu Cô Chú giữ trọn bấy nhiêu!"
+    "explanation": "Map Tracker khóa bảo vệ độc quyền cự ly tối thiểu 300m tại đô thị đặc biệt để bảo đảm doanh số cho chủ xe.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-9",
     "stableId": "sale-9",
+    "displayNumber": 9,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Quy mô hệ thống điểm bán và sản lượng bánh mì tiêu thụ mỗi ngày của chuỗi Bánh Mì Má Hải trên toàn quốc đạt con số nào?",
+    "question": "Khoảng cách bảo vệ điểm bán tại các khu vực Đô thị loại I, loại II và các tỉnh lân cận được quy định là bao nhiêu?",
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 50 điểm bán phục vụ 500 ổ bánh mì mỗi ngày"
+        "text": "500 mét (phù hợp với mật độ giao thông và phân bố dân cư đô thị tỉnh)."
       },
       {
         "key": "b",
-        "text": "Khoảng 300 điểm bán phục vụ 5.000 ổ bánh mì mỗi ngày"
+        "text": "200 mét giữa các điểm bán."
       },
       {
         "key": "c",
-        "text": "Hơn 1.200 điểm bán trên toàn quốc phục vụ khoảng 50.000 ổ bánh mì mỗi ngày."
+        "text": "100 mét giữa các điểm bán."
       },
       {
         "key": "d",
-        "text": "Khoảng 5.000 điểm bán phục vụ 500.000 ổ bánh mì mỗi ngày"
+        "text": "2.000 mét giữa các điểm bán."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Hơn 1.200 điểm bán tiêu thụ 50.000 ổ bánh mì mỗi sáng là minh chứng thép cho sức sống mãnh liệt và uy tín hàng đầu của thương hiệu Bánh Mì Má Hải.",
-    "quote": "Hơn 1.200 điểm bán khắp cả nước đang tiêu thụ 50.000 ổ bánh mì mỗi sáng, thương hiệu quen thuộc nên khi Cô Chú mở ra là bà con tin tưởng mua ngay!"
+    "correctAnswer": "a",
+    "explanation": "Cự ly bảo vệ 500m tại Đô thị loại I & II giúp chủ xe an tâm khai thác trọn vẹn tệp khách quen trong khu vực.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-10",
     "stableId": "sale-10",
+    "displayNumber": 10,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Trong các nhận định sau đây về bề dày lịch sử và uy tín thương hiệu Bánh Mì Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
+    "question": "Tại các xã, thị trấn hoặc huyện nông thôn, khoảng cách bảo vệ điểm bán được quy định như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Khởi nghiệp từ năm 2013 và kiên trì phát triển mô hình suốt 13 năm qua"
+        "text": "300 mét giữa các xe."
       },
       {
         "key": "b",
-        "text": "Được vinh danh giải thưởng Sáng tạo TP.HCM và xuất hiện ấn tượng trên Shark Tank Việt Nam"
+        "text": "1.000 mét (1 km, bảo vệ trọn vẹn khu vực trung tâm xã hoặc chợ huyện)."
       },
       {
         "key": "c",
-        "text": "Xây dựng hệ thống nhà máy sản xuất chả cá và nước sốt đạt chuẩn quốc tế FSSC 22000"
+        "text": "500 mét giữa các xe."
       },
       {
         "key": "d",
-        "text": "Bánh Mì Má Hải mới chỉ thành lập được 6 tháng và chưa có nhà xưởng sản xuất nguyên liệu riêng."
+        "text": "Không áp dụng chính sách bảo vệ cự ly tại khu vực nông thôn."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Má Hải có bề dày 13 năm (từ 2013), đạt nhiều giải thưởng lớn và sở hữu nhà xưởng chuẩn FSSC 22000. Phát biểu nói mới mở 6 tháng là hoàn toàn sai.",
-    "quote": "Má Hải có hành trình 13 năm từ năm 2013, từng lên Shark Tank và đạt Giải thưởng Sáng tạo TP.HCM nên uy tín thương hiệu rất vững chắc ạ!"
+    "correctAnswer": "b",
+    "explanation": "Cự ly 1.000m tại nông thôn bảo đảm một điểm bán bao trọn khu dân cư trung tâm mà không lo bị cạnh tranh.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-11",
     "stableId": "sale-11",
+    "displayNumber": 11,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Khoảng cách bảo vệ điểm bán tối thiểu giữa hai xe cùng chiều tại khu vực Đô thị đặc biệt (TP.HCM và Hà Nội) là bao nhiêu?",
+    "question": "Chính sách bảo chứng an toàn vốn trong 60 ngày đầu hỗ trợ chủ xe như thế nào khi gặp sự cố bất khả kháng?",
     "options": [
       {
         "key": "a",
-        "text": "50 mét theo đường chim bay"
+        "text": "Hoàn trả 100% toàn bộ tiền nguyên liệu bánh mì và chả cá đã bán trong 2 tháng."
       },
       {
         "key": "b",
-        "text": "100 mét theo khoảng cách thực tế."
+        "text": "Công ty từ chối tiếp nhận và yêu cầu đối tác phải tự thanh lý phế liệu."
       },
       {
         "key": "c",
-        "text": "300 mét theo định vị tọa độ Map Tracker."
+        "text": "Hỗ trợ thu hồi xe và hoàn tiền tối đa lên đến 2.800.000đ tùy hiện trạng thực tế của xe tại thời điểm bàn giao."
       },
       {
         "key": "d",
-        "text": "Không giới hạn khoảng cách bảo vệ"
+        "text": "Bắt buộc đối tác phải chuyển nhượng cho người thân trong gia đình."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Tại Đô thị đặc biệt (TP.HCM và Hà Nội), cự ly bảo vệ 300 mét là khoảng cách vàng được kiểm tra trên Map Tracker để tránh giẫm chân thị trường.",
-    "quote": "Ở các thành phố lớn như TP.HCM và Hà Nội, cự ly chuẩn là 300 mét quét trên Map Tracker để giữ trọn vùng khách cho từng xe ạ!"
+    "explanation": "Chính sách nhân văn bảo chứng vốn 60 ngày: Hỗ trợ thu hồi xe hoàn tối đa 2,8 triệu tùy hiện trạng thực tế.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-12",
     "stableId": "sale-12",
+    "displayNumber": 12,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Quy định khoảng cách bảo vệ điểm bán của Nhà Má Hải đối với khu vực các tỉnh, thị xã và huyện ven là bao nhiêu?",
+    "question": "Thời gian chiên tiêu chuẩn cho một mẻ Chả cá sợi Má Hải trong chảo dầu nóng 160–170°C là bao lâu?",
     "options": [
       {
         "key": "a",
-        "text": "Đô thị loại I, II và các tỉnh lân cận áp dụng khoảng cách bảo vệ tối thiểu từ 500 mét trở lên."
+        "text": "30 giây nhúng qua dầu nóng rồi vớt ra ngay."
       },
       {
         "key": "b",
-        "text": "Khu vực tỉnh chỉ bảo vệ khoảng cách tối đa 50 mét"
+        "text": "5 đến 7 phút để chả cá chín kỹ bên trong."
       },
       {
         "key": "c",
-        "text": "Khu vực các tỉnh hoàn toàn không áp dụng chính sách bảo vệ khoảng cách điểm bán"
+        "text": "10 đến 15 phút trên ngọn lửa nhỏ."
       },
       {
         "key": "d",
-        "text": "Khu vực tỉnh chỉ được phép mở bán nếu khoảng cách xa hơn 50 km"
+        "text": "1 đến 2 phút (sợi chả phồng vàng đều, nóng giòn, dai ngọt và thơm lừng)."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Khu vực tỉnh có mật độ dân cư thưa hơn nên áp dụng cự ly bảo vệ 500m (hoặc 1.000m tại xã/huyện) để bảo đảm dung lượng khách hàng cho điểm bán.",
-    "quote": "Ở khu vực tỉnh, công ty bảo vệ khoảng cách tối thiểu 500m để mỗi xe có đủ mật độ dân cư và bán hàng đạt sản lượng cao nhất ạ!"
+    "correctAnswer": "d",
+    "explanation": "Chả cá sợi chiên cực nhanh chỉ 1-2 phút, giúp phục vụ bánh mì nóng giòn chỉ trong 1 phút mỗi lượt khách.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-13",
     "stableId": "sale-13",
+    "displayNumber": 13,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Trong các phát biểu sau đây về thời hạn hợp đồng và chính sách nhượng quyền của Nhà Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
+    "question": "Khung giờ vàng mở bán bánh mì sáng mang lại hiệu quả doanh thu cao nhất cho các điểm bán là khung giờ nào?",
     "options": [
       {
         "key": "a",
-        "text": "Hợp đồng nhượng quyền có thời hạn pháp lý tiêu chuẩn là 1 năm kể từ ngày ký kết"
+        "text": "5h30 đến 9h00 sáng (thời điểm người dân đi làm, học sinh đi học đông đúc nhất)."
       },
       {
         "key": "b",
-        "text": "Hết hạn hợp đồng, nếu đối tác tuân thủ đúng quy chế thì công ty hỗ trợ tái ký hoàn toàn miễn phí 0 đồng."
+        "text": "10h00 đến 14h00 trưa."
       },
       {
         "key": "c",
-        "text": "Khi muốn chuyển nhượng điểm bán, đối tác được công ty hỗ trợ kết nối sang nhượng hoàn toàn không mất phí."
+        "text": "15h00 đến 18h00 chiều."
       },
       {
         "key": "d",
-        "text": "Sau 1 năm công ty sẽ thu hồi toàn bộ xe và bắt buộc đối tác phải mua gói mới từ đầu."
+        "text": "21h00 đến 24h00 đêm."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Hợp đồng nhượng quyền kéo dài 1 năm, tái ký 0đ và hỗ trợ sang nhượng 0đ. Phát biểu thu hồi xe bắt mua lại từ đầu là hoàn toàn sai.",
-    "quote": "Hợp đồng ký 1 năm và khi hết hạn Cô Chú được tái ký 0 đồng, xe và đồ nghề là tài sản của Cô Chú trọn đời công ty không hề thu hồi ạ!"
+    "correctAnswer": "a",
+    "explanation": "Khung giờ 5h30–9h00 sáng tập trung 90% nhu cầu ăn sáng nhanh mang đi, tối ưu công sức người bán.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-14",
     "stableId": "sale-14",
+    "displayNumber": 14,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Khi đánh giá về hiệu quả kinh doanh của các điểm bán trong hệ thống Bánh Mì Má Hải, nhận định nào sau đây là KHÔNG ĐÚNG?",
+    "question": "Về nguồn gốc và tiêu chuẩn an toàn thực phẩm của Nước sốt Tứ Vị Má Hải, nhận định nào sau đây là ĐÚNG?",
     "options": [
       {
         "key": "a",
-        "text": "Một điểm bán trung bình bán từ 40 đến 50 ổ mỗi sáng mang lại tiền lời ròng từ 200.000đ đến 300.000đ mỗi ngày."
+        "text": "Do các chủ xe tự mua nguyên liệu về tự pha chế tại nhà."
       },
       {
         "key": "b",
-        "text": "Điểm bán bắt buộc phải bán từ 500 ổ mỗi sáng trở lên thì mới đạt ngưỡng hòa vốn."
+        "text": "Sản xuất tại nhà máy đạt chuẩn quốc tế FSSC 22000 & Intertek theo công thức độc quyền Má Hải."
       },
       {
         "key": "c",
-        "text": "Các điểm bán tại vị trí đẹp có thể đạt sản lượng từ 100 đến 150 ổ mỗi ca sáng"
+        "text": "Sản xuất thủ công tại các cơ sở không có giấy phép an toàn thực phẩm."
       },
       {
         "key": "d",
-        "text": "Người bán chăm chỉ mở đều đặn từ 5h30 đến 9h00 sáng sẽ tích lũy lượng khách quen rất ổn định"
+        "text": "Sử dụng nước sốt đóng chai thông thường mua tại các chợ đầu mối."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Điểm hòa vốn của xe chỉ từ 40-50 ổ/sáng. Con số bắt buộc 500 ổ mới hòa vốn là hoàn toàn sai thực tế.",
-    "quote": "Cô Chú chỉ cần bán đều đặn 40-50 ổ mỗi sáng là đã có lời 200k-300k bỏ túi rồi, không cần áp lực doanh số quá cao đâu ạ!"
+    "explanation": "Sốt Tứ Vị được gia công tại nhà máy đạt chuẩn quốc tế FSSC 22000 & Intertek, bảo đảm an toàn tuyệt đối.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-15",
     "stableId": "sale-15",
+    "displayNumber": 15,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Về cách giải quyết vướng mắc hợp đồng trong hệ thống Bánh Mì Má Hải, nhận định nào sau đây là KHÔNG ĐÚNG?",
+    "question": "Tại sao mô hình xe bánh mì hiên nhà Má Hải được xem là giải pháp sinh kế bền vững cho người lao động?",
     "options": [
       {
         "key": "a",
-        "text": "Hai bên tự ý hủy bỏ hợp đồng bằng thỏa thuận miệng mà không có văn bản thanh lý theo quy định."
+        "text": "Vốn khởi nghiệp ban đầu nhẹ nhàng, dễ tiếp cận."
       },
       {
         "key": "b",
-        "text": "Mọi vấn đề phát sinh được ưu tiên thương lượng, hòa giải trên tinh thần đồng hành hợp tác"
+        "text": "Thời gian làm việc gọn gàng chỉ 3,5 tiếng buổi sáng, chiều rảnh rỗi làm việc khác."
       },
       {
         "key": "c",
-        "text": "Nếu không hòa giải được sẽ đưa ra giải quyết tại cơ quan Trọng tài thương mại hoặc Tòa án có thẩm quyền."
+        "text": "Tất cả các yếu tố trên đều tạo nên giải pháp sinh kế bền vững và an tâm."
       },
       {
         "key": "d",
-        "text": "Các quyền lợi và nghĩa vụ đều căn cứ theo hợp đồng hợp tác đã được ký kết văn bản rõ ràng"
+        "text": "Được thương hiệu 13 năm uy tín đồng hành và cung ứng nguyên liệu chuẩn hóa tận nơi."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Má Hải luôn làm việc chuẩn mực pháp lý, giải quyết trên tinh thần tôn trọng hợp đồng và pháp luật.",
-    "quote": "Mọi điều khoản hợp đồng đều rõ ràng, minh bạch và có giá trị pháp lý bảo vệ quyền lợi chính đáng của cả hai bên ạ!"
+    "correctAnswer": "c",
+    "explanation": "Mô hình giúp người lao động làm chủ kinh tế, tự do thời gian và có thu nhập ổn định mỗi ngày.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-16",
     "stableId": "sale-16",
+    "displayNumber": 16,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Bộ phận Phát triển Nhượng quyền sử dụng công cụ nào để kiểm tra vị trí điểm bán cho khách hàng trong 5 phút?",
+    "question": "Bộ phận Phát triển Nhượng quyền sử dụng công cụ nào để quét định vị kiểm tra mặt bằng cho khách hàng?",
     "options": [
       {
         "key": "a",
-        "text": "Phần mềm định vị Map Tracker kiểm tra tọa độ và khoảng cách bảo vệ độc quyền trên bản đồ vệ tinh."
+        "text": "Yêu cầu khách hàng tự đến các cơ quan đo đạc trích lục tọa độ."
       },
       {
         "key": "b",
-        "text": "Đối chiếu theo danh mục địa chỉ hành chính viết tay lưu trữ thủ công tại văn phòng."
+        "text": "Tra cứu danh bạ điện thoại bàn của các hộ kinh doanh trong khu vực."
       },
       {
         "key": "c",
-        "text": "Khảo sát dựa trên ước lượng cảm tính của chuyên viên mà không có công cụ số hóa xác thực tọa độ."
+        "text": "Vẽ bản đồ ước lượng bằng tay trên giấy tại văn phòng."
       },
       {
         "key": "d",
-        "text": "Yêu cầu đối tác phải tự đến các cơ quan quản lý đô thị để xin trích lục bản đồ vị trí."
+        "text": "Phần mềm số hóa Map Tracker tích hợp bản đồ vệ tinh để đo cự ly chính xác trong 5 phút."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Phần mềm Map Tracker giúp kiểm tra định vị tọa độ điểm bán mới so với các điểm bán hiện hữu trong hệ thống, phản hồi cho khách hàng chỉ sau 5 phút.",
-    "quote": "Cô Chú gửi định vị qua Zalo là con tra cứu trên Map Tracker báo kết quả ngay sau 5 phút xem điểm bán có bị trùng khoảng cách không nhé!"
+    "correctAnswer": "d",
+    "explanation": "Map Tracker số hóa kiểm tra tọa độ vệ tinh chuẩn xác trong 5 phút, bảo đảm tính minh bạch và độc quyền.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-17",
     "stableId": "sale-17",
+    "displayNumber": 17,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Hành vi vi phạm nào sau đây sẽ khiến điểm bán bị xử lý theo chế tài hợp đồng để bảo vệ uy tín toàn chuỗi?",
+    "question": "Quy trình đặt cọc hợp tác nhượng quyền Bánh Mì Má Hải được thực hiện chuẩn mực như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Chủ động mở bán sớm trước 6h00 sáng để phục vụ học sinh"
+        "text": "Đặt cọc Đợt 1 là 2.000.000đ để khóa giữ tọa độ độc quyền trên Map Tracker và xưởng chuẩn bị xe."
       },
       {
         "key": "b",
-        "text": "Mặc đồng phục áo cam và đội nón Má Hải chỉnh tề khi phục vụ khách"
+        "text": "Đặt cọc 10.000.000đ trước khi được công ty tư vấn gói hợp tác."
       },
       {
         "key": "c",
-        "text": "Tươi cười chào hỏi và cảm ơn khách hàng sau khi trao bánh"
+        "text": "Khách hàng phải thanh toán 100% tiền gói trước khi kiểm tra vị trí mặt bằng."
       },
       {
         "key": "d",
-        "text": "Tự ý sử dụng nguyên vật liệu trôi nổi không rõ nguồn gốc ngoài chợ để kinh doanh dưới thương hiệu Má Hải."
+        "text": "Đặt cọc 500.000đ bằng thẻ cào điện thoại cho chuyên viên tư vấn."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Sử dụng nguyên liệu trôi nổi ngoài chợ vi phạm nghiêm trọng cam kết ATTP và uy tín thương hiệu của chuỗi 1.200 điểm bán.",
-    "quote": "Công ty nghiêm cấm độn hàng ngoài để đảm bảo ổ bánh mì Má Hải luôn thơm ngon, sạch sẽ và giữ vững niềm tin của khách hàng toàn quốc ạ!"
+    "correctAnswer": "a",
+    "explanation": "Cọc Đợt 1 đúng 2.000.000đ để khóa tọa độ Map Tracker, được cấn trừ 100% khi thanh toán nhận xe.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-18",
     "stableId": "sale-18",
+    "displayNumber": 18,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Khi đối tác mở xe ở tỉnh xa muốn tiết kiệm tối đa tiền cước vận chuyển hàng hóa, giải pháp nào được công ty hướng dẫn?",
+    "question": "Số tiền đặt cọc 2.000.000đ được xử lý như thế nào khi khách hàng nhận bàn giao xe và đồ nghề?",
     "options": [
       {
         "key": "a",
-        "text": "Tự in ấn bao bì giấy lẻ tại địa phương không có nhận diện chuẩn của thương hiệu."
+        "text": "Bị giữ lại làm quỹ bảo lãnh hợp đồng trong suốt 5 năm."
       },
       {
         "key": "b",
-        "text": "Đặt gộp sốt Tứ Vị, tương ớt và bao bì thương hiệu cùng chuyến gửi chả cá theo chành xe định kỳ."
+        "text": "Được cấn trừ 100% vào tổng giá trị gói hợp tác khi thanh toán Đợt 2."
       },
       {
         "key": "c",
-        "text": "Đặt hàng từng đợt nhỏ lẻ theo từng ngày khiến chi phí cước xe bị đội lên cao."
+        "text": "Chuyển thành chi phí đào tạo và không được trừ vào tiền xe."
       },
       {
         "key": "d",
-        "text": "Chuyển sang sử dụng các loại nước chấm đóng chai sẵn ngoài thị trường tự do."
+        "text": "Bị trừ phí quản lý hệ thống 50% trước khi bàn giao phương tiện."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Đặt hàng sốt, tương ớt và bao bì gộp theo chu kỳ cùng chuyến xe chuyển chả cá sợi giúp tiết kiệm tối đa tiền cước vận chuyển cho chủ xe ở các tỉnh xa.",
-    "quote": "Cô Chú ở tỉnh chỉ cần gom đơn đặt sốt và bao bì đi cùng chuyến gửi chả cá định kỳ là vừa tiết kiệm cước xe vừa không sợ thiếu hàng ạ!"
+    "explanation": "Tiền cọc 2 triệu được cấn trừ trọn vẹn 100% vào gói hợp tác, minh bạch và an toàn tài chính.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-19",
     "stableId": "sale-19",
+    "displayNumber": 19,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Về nghĩa vụ bảo mật thông tin trong hợp đồng nhượng quyền Bánh Mì Má Hải, nhận định nào sau đây là KHÔNG ĐÚNG?",
+    "question": "Sau thời hạn hợp đồng 1 năm (12 tháng), chính sách tái ký hợp tác của Nhà Má Hải được áp dụng như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Công thức cốt sốt Tứ Vị và định lượng gia vị là bí quyết kinh doanh phải giữ kín tuyệt đối"
+        "text": "Yêu cầu đối tác phải mua lại toàn bộ gói xe mới từ đầu."
       },
       {
         "key": "b",
-        "text": "Quy trình vận hành và tài liệu cẩm nang nội bộ không được chia sẻ cho bên thứ ba ngoài hệ thống"
+        "text": "Bắt buộc đối tác phải nộp phí gia hạn 5 triệu đồng mỗi năm."
       },
       {
         "key": "c",
-        "text": "Đối tác được quyền chia sẻ công thức nước sốt lên mạng xã hội sau khi thanh lý hợp đồng."
+        "text": "Tái ký hoàn toàn miễn phí 0 đồng nếu chủ xe tuân thủ đúng quy chuẩn chất lượng và an toàn thực phẩm."
       },
       {
         "key": "d",
-        "text": "Các tài liệu đào tạo được cấp chỉ nhằm phục vụ việc kinh doanh điểm bán hợp pháp"
+        "text": "Tăng thêm 20% tiền nguyên vật liệu cung ứng cho năm tiếp theo."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Bí quyết kinh doanh và công thức sốt là tài sản trí tuệ của thương hiệu, đối tác có nghĩa vụ bảo mật trọn đời.",
-    "quote": "Công thức nước sốt độc quyền là bí quyết của chuỗi, công ty bàn giao sốt thành phẩm đóng can để Cô Chú an tâm dùng nhanh và giữ bí mật nghề nghiệp ạ!"
+    "explanation": "Tái ký hợp đồng hàng năm miễn phí 0 đồng, gắn bó lâu dài cùng chủ xe trên tinh thần đồng minh kiếm cơm.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-20",
     "stableId": "sale-20",
+    "displayNumber": 20,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Về quy chế bảo vệ khoảng cách điểm bán cho đối tác Nhà Má Hải, nhận định nào sau đây là PHÁT BIỂU SAI SỰ THẬT?",
+    "question": "Những quyền lợi hỗ trợ truyền thông nào được bàn giao trong gói khai trương điểm bán?",
     "options": [
       {
         "key": "a",
-        "text": "Tại Đô thị đặc biệt như TP.HCM và Hà Nội, khoảng cách bảo vệ là 300 mét"
+        "text": "Băng rôn cờ phướn khai trương nổi bật thu hút người đi đường."
       },
       {
         "key": "b",
-        "text": "Tại khu vực Đô thị loại I, loại II và các tỉnh lân cận, khoảng cách bảo vệ từ 500 mét"
+        "text": "Bảng menu giá niêm yết chuẩn và standee hướng dẫn món ngon đậm đà."
       },
       {
         "key": "c",
-        "text": "Tại khu vực xã, thị trấn hoặc huyện ven, khoảng cách bảo vệ từ 750 mét đến 1.000 mét"
+        "text": "Áo thun đồng phục màu cam, nón và tạp dề Má Hải sạch sẽ, chuyên nghiệp."
       },
       {
         "key": "d",
-        "text": "Công ty cho phép các đối tác mới mở xe ngay sát cạnh xe hiện hữu mà không cần qua kiểm tra tọa độ."
+        "text": "Tất cả các vật phẩm truyền thông trên đều được bàn giao đầy đủ cho điểm bán."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Má Hải luôn bảo vệ quyền lợi độc quyền vùng khách cho từng xe, tuyệt đối không cho phép mở xe mới giẫm lên vùng bảo vệ của xe hiện hữu.",
-    "quote": "Bên con luôn ưu tiên quyền lợi cho chủ xe đi trước, đã quét định vị bảo vệ vùng bán là xe khác không bao giờ được phép chen vào đâu ạ!"
+    "explanation": "Trọn bộ ấn phẩm khai trương giúp điểm bán nổi bật trên tuyến phố ngay từ ngày mở bán đầu tiên.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-21",
     "stableId": "sale-21",
+    "displayNumber": 21,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Triết lý 'Bán cần câu, không bán con cá' của Bánh Mì Má Hải mang ý nghĩa thực tiễn nào?",
+    "question": "Về quy cách đóng gói và sử dụng Nước sốt Tứ Vị tại quầy xe mỗi sáng, thao tác chuẩn là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Cung cấp sản phẩm bán lẻ thành phẩm để đối tác chỉ việc phân phối lại mà không cần kỹ năng chế biến."
+        "text": "Nước sốt đóng chai lớn tiện lợi, mỗi sáng rót lượng vừa đủ ra chén nhỏ và dùng muỗng chan đều vào bánh."
       },
       {
         "key": "b",
-        "text": "Yêu cầu đối tác phải tự thiết kế xe và tự nghiên cứu công thức sốt từ đầu mà không có chuẩn mẫu."
+        "text": "Pha thêm nước lọc vào chai sốt để tăng thể tích sử dụng."
       },
       {
         "key": "c",
-        "text": "Chỉ cung cấp phương tiện tạm thời trong thời gian ngắn rồi thu hồi lại sau đợt cao điểm."
+        "text": "Tự ý trộn thêm các loại gia vị ngoài luồng vào sốt chính hãng."
       },
       {
         "key": "d",
-        "text": "Trao cho đối tác một nghề kinh doanh hoàn chỉnh gồm phương tiện, nguồn hàng chuẩn, bí quyết làm bánh và cẩm nang bán hàng để tự chủ thu nhập bền vững."
+        "text": "Để nguyên cả chai lớn dốc ngược trực tiếp vào ổ bánh mì."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Chiếc cần câu trọn gói giúp người lao động làm chủ một điểm bán độc lập, tự tạo ra nguồn thu nhập đều đặn mỗi sáng cho cả gia đình.",
-    "quote": "Má Hải trao cho Cô Chú một 'chiếc cần câu' hoàn chỉnh gồm xe, nguyên liệu chuẩn và tay nghề làm bánh để tự tin kiếm tiền lâu dài mỗi ngày ạ!"
+    "correctAnswer": "a",
+    "explanation": "Rót sốt ra chén nhỏ và chan muỗng là thao tác chuẩn giúp định lượng sốt vừa vặn và bánh giòn ngon.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-22",
     "stableId": "sale-22",
+    "displayNumber": 22,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Yếu tố nào sau đây là '3 KHÔNG' cốt lõi trong chính sách nhượng quyền của Bánh Mì Má Hải?",
+    "question": "Túi giấy đựng Bánh Mì Má Hải mang lại những công năng thiết thực nào cho người mua và chủ xe?",
     "options": [
       {
         "key": "a",
-        "text": "Không bảo vệ cự ly điểm bán, không cung cấp tài liệu đào tạo, không có chứng nhận ATTP."
+        "text": "Chất liệu giấy an toàn thực phẩm, giúp thấm hút bớt dầu thừa và giữ bánh mì giòn nóng lâu hơn."
       },
       {
         "key": "b",
-        "text": "Không thu phí nhượng quyền hàng tháng, không thu phí quản lý thương hiệu, không chia sẻ phần trăm doanh thu."
+        "text": "Tất cả các công năng trên đều là giá trị thiết thực của bao bì túi giấy chuyên dụng."
       },
       {
         "key": "c",
-        "text": "Không hỗ trợ giao hàng chành xe, không có bảng menu giá niêm yết, không hỗ trợ kỹ thuật chế biến."
+        "text": "Giúp khách hàng cầm ăn tiện lợi, lịch sự trên đường đi làm, đi học."
       },
       {
         "key": "d",
-        "text": "Không cam kết bình ổn giá gốc, không có hợp đồng pháp lý bằng văn bản, không hỗ trợ nhận diện thương hiệu."
+        "text": "In ấn nhận diện thương hiệu cam nổi bật, tạo cảm giác sạch sẽ và an tâm cho thực khách."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Chính sách 3 KHÔNG của Má Hải: 0đ phí nhượng quyền định kỳ, 0đ phí thương hiệu, 0% trích doanh số, giúp đối tác giữ trọn tiền lời.",
-    "quote": "Chính sách 3 KHÔNG của Má Hải là không phí hàng tháng, không phí thương hiệu và không chia doanh thu, tạo điều kiện thuận lợi nhất cho bà con khởi nghiệp!"
+    "explanation": "Túi giấy chuyên dụng vừa an toàn vệ sinh, vừa hút dầu giữ bánh giòn, vừa nâng cao hình ảnh chuyên nghiệp.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-23",
     "stableId": "sale-23",
+    "displayNumber": 23,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Trong văn hóa phục vụ của Nhà Má Hải, nhận định nào sau đây là KHÔNG ĐÚNG về tâm thế 'Đồng minh cùng kiếm cơm'?",
+    "question": "Khi mở điểm bán tại các tỉnh xa, quy trình đặt và nhận nguyên liệu được công ty hỗ trợ như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Luôn đặt mình vào hoàn cảnh của người lao động để tư vấn giải pháp mở xe an toàn, vừa túi tiền"
+        "text": "Công ty tự động gửi hàng định kỳ mỗi ngày mà không cần đối tác lên đơn."
       },
       {
         "key": "b",
-        "text": "Thay chữ 'Tư vấn' bằng chữ 'Giúp', lắng nghe để cùng tháo gỡ khó khăn về mặt bằng và vốn"
+        "text": "Bắt buộc đối tác phải tự đến tổng kho tại TP.HCM để chở hàng về."
       },
       {
         "key": "c",
-        "text": "Cố tình tư vấn gói chi phí cao nhất bằng mọi giá mà không quan tâm đến khả năng tài chính của khách hàng."
+        "text": "Đối tác chủ động đặt hàng trên Ứng dụng hoặc Hotline 24/7, công ty gửi chành xe uy tín giao tận nơi."
       },
       {
         "key": "d",
-        "text": "Luôn khắc ghi nguyên tắc: 'Đối tác buôn bán có lời thì công ty mới phát triển bền vững'"
+        "text": "Chỉ cung cấp hàng cho các điểm bán trong nội thành TP.HCM."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Tư vấn viên Má Hải là người đồng hành, luôn tư vấn đúng gói phù hợp với khả năng thực tế của khách hàng chứ không ép mua gói cao.",
-    "quote": "Bên con luôn tư vấn gói phù hợp nhất với điều kiện của Cô Chú, cốt sao Cô Chú mở bán suôn sẻ và có đồng lời bền vững mỗi ngày ạ!"
+    "explanation": "Hệ thống kho vận liên kết chành xe phủ khắp các tỉnh, giao hàng nhanh chóng, tươi mới và đúng hẹn.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-24",
     "stableId": "sale-24",
+    "displayNumber": 24,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Về nguyên tắc phân định 'Trách nhiệm 50/50' giữa công ty và đối tác mở xe, nhận định nào sau đây là KHÔNG ĐÚNG?",
+    "question": "Về việc giữ vững đạo đức nghề nghiệp và tâm thế phục vụ, tư vấn viên Má Hải luôn khắc ghi nguyên tắc nào?",
     "options": [
       {
         "key": "a",
-        "text": "Công ty cam kết bảo đảm doanh số 100% thay cho đối tác ngay cả khi chủ xe không chịu mở bán đều đặn."
+        "text": "Luôn trung thực về chi phí và số liệu lợi nhuận thực tế, không vẽ vời viễn cảnh phóng đại."
       },
       {
         "key": "b",
-        "text": "Công ty chịu trách nhiệm 50% ở khâu thương hiệu, nguồn nguyên liệu chả cá 17% đạm, sốt Tứ Vị và đào tạo tay nghề."
+        "text": "Lắng nghe hoàn cảnh, thấu hiểu khó khăn và tư vấn gói hợp tác vừa vặn nhất với túi tiền của khách."
       },
       {
         "key": "c",
-        "text": "Đối tác chịu trách nhiệm 50% ở sự siêng năng, mở bán đúng giờ và thái độ niềm nở giữ chân khách quen."
+        "text": "Đồng hành tháo gỡ rào cản về vốn và mặt bằng trên tinh thần người đồng minh cùng kiếm cơm."
       },
       {
         "key": "d",
-        "text": "Sự thành công của điểm bán là kết quả từ sự phối hợp nhịp nhàng giữa công ty và đối tác"
+        "text": "Tất cả các nguyên tắc trên đều là chuẩn mực đạo đức của người tư vấn Nhà Má Hải."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Công ty hỗ trợ nền tảng vững chắc (50%), sự nỗ lực mở bán chăm chỉ của chủ xe (50%) quyết định doanh số. Không có cam kết vô lý 'không làm vẫn có ăn'.",
-    "quote": "Công ty lo 50% về thương hiệu và hàng chuẩn, 50% còn lại là sự chịu khó mở bán đúng giờ của Cô Chú, hai bên cùng nỗ lực thì điểm bán sẽ rất đông khách!"
+    "correctAnswer": "d",
+    "explanation": "Tư vấn trung thực, chân thành, đặt quyền lợi của người lao động lên hàng đầu là kim chỉ nam 13 năm qua.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-25",
     "stableId": "sale-25",
+    "displayNumber": 25,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Ưu điểm vượt trội của mô hình xe Bánh Mì Má Hải so với việc mở quán ăn cố định có chi phí đầu tư lớn là gì?",
+    "question": "Ý nghĩa lớn nhất của việc phát triển mạng lưới hơn 1.200 điểm bán Bánh Mì Má Hải trên toàn quốc là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Phải đóng tiền thuê mặt bằng cố định từ 20 đến 50 triệu đồng mỗi tháng"
+        "text": "Tất cả các giá trị trên đều là sứ mệnh phụng sự xã hội của thương hiệu Bánh Mì Má Hải."
       },
       {
         "key": "b",
-        "text": "Chi phí đầu tư ban đầu cực thấp chỉ từ vài triệu đồng, tận dụng hiên nhà buổi sáng, thu hồi vốn nhanh từ 1 đến 2 tháng và không rủi ro chôn vốn."
+        "text": "Lan tỏa bữa ăn sáng nóng giòn, sạch sẽ, đủ dinh dưỡng với giá bình dân cho hàng triệu người dân."
       },
       {
         "key": "c",
-        "text": "Phải thuê mướn đội ngũ đầu bếp và nhân viên phục vụ phức tạp"
+        "text": "Xây dựng cộng đồng đối tác nhượng quyền văn minh, tương trợ lẫn nhau cùng phát triển."
       },
       {
         "key": "d",
-        "text": "Cần thời gian xây dựng sửa chữa quán kéo dài từ 3 đến 6 tháng mới bắt đầu kinh doanh được"
+        "text": "Tạo ra hàng ngàn công ăn việc làm và nguồn thu nhập ổn định cho người lao động bình dân."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Mô hình xe bánh mì vỉa hè/hiên nhà sáng có vốn đầu tư nhỏ (4,8tr - 10,3tr), tận dụng khung giờ 5h30-9h00, hoàn vốn nhanh 1-2 tháng và tính linh hoạt rất cao.",
-    "quote": "Mở xe bánh mì sáng vốn nhẹ chỉ từ vài triệu, bán trước hiên nhà không lo tiền cọc mặt bằng lớn, 1-2 tháng là lấy lại vốn rồi Cô Chú ơi!"
+    "correctAnswer": "a",
+    "explanation": "Má Hải phụng sự cộng đồng bằng bữa sáng chất lượng và trao sinh kế ấm no bền vững cho bà con.",
+    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
   },
   {
     "id": "sale-26",
     "stableId": "sale-26",
+    "displayNumber": 26,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Trong hệ thống quản lý dữ liệu khách hàng CRM, nhóm khách hàng N1 (Nóng) được nhận diện qua những đặc điểm nào?",
+    "question": "Khách hàng thuộc nhóm 'Tiềm năng cao' (muốn mở xe ngay) thường có những đặc điểm nhận diện nào?",
     "options": [
       {
         "key": "a",
-        "text": "Khách hàng chỉ bấm like dạo trên mạng xã hội và chưa có ý định kinh doanh"
+        "text": "Chỉ hỏi dò giá cho biết và không có ý định kinh doanh."
       },
       {
         "key": "b",
-        "text": "Khách hàng đã có sẵn mặt bằng hoặc nguồn vốn, muốn mở xe ngay trong vòng 3 đến 7 ngày và chủ động hỏi thủ tục đặt cọc."
+        "text": "Đã tìm hiểu kỹ về mô hình Má Hải, chuẩn bị sẵn vốn và mong muốn đặt cọc khóa vị trí sớm."
       },
       {
         "key": "c",
-        "text": "Khách hàng từ chối nghe điện thoại và yêu cầu không liên hệ lại"
+        "text": "Chưa có vốn và không có người đứng bán."
       },
       {
         "key": "d",
-        "text": "Khách hàng đang kinh doanh mô hình nhà hàng lớn và chỉ muốn khảo sát thị trường"
+        "text": "Muốn mở chuỗi nhà hàng ẩm thực cao cấp sang trọng."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Khách hàng N1 là nhóm nóng có nhu cầu cấp thiết, đã chuẩn bị sẵn nguồn lực (vốn/mặt bằng) và muốn triển khai mở xe ngay trong tuần.",
-    "quote": "Với khách nhóm N1 đã có sẵn mặt bằng và vốn, tư vấn viên cần hỗ trợ chốt vị trí trên Map Tracker và hướng dẫn thủ tục cọc 2 triệu ngay để giữ điểm bán!"
+    "explanation": "Khách tiềm năng cao đã sẵn sàng mọi nguồn lực, cần tư vấn nhanh gọn và chốt cọc giữ vị trí đẹp.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-27",
     "stableId": "sale-27",
+    "displayNumber": 27,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Nhóm khách hàng N2 (Ấm) có đặc điểm tâm lý và hành vi nổi bật nào khi tìm hiểu mở xe?",
+    "question": "Khi tiếp cận nhóm khách hàng đã sẵn vốn nhưng chưa tìm được mặt bằng, giải pháp tư vấn hiệu quả là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Có nhu cầu mở bán nhưng còn vướng mắc về 1 trong 4 nút thắt (vốn, mặt bằng, tay nghề hoặc sợ ế) và cần tư vấn tháo gỡ."
+        "text": "Khuyên khách hàng từ bỏ ý định kinh doanh vì không có mặt bằng."
       },
       {
         "key": "b",
-        "text": "Đã sẵn sàng chuyển khoản 100% tiền gói ngay khi vừa nhấc máy"
+        "text": "Yêu cầu khách hàng phải thuê mặt bằng nguyên căn đắt đỏ từ 20 triệu/tháng."
       },
       {
         "key": "c",
-        "text": "Hoàn toàn không có nhu cầu kiếm thêm thu nhập buổi sáng"
+        "text": "Hướng dẫn tiêu chuẩn chọn hiên nhà thuận chiều đi làm và hỗ trợ quét tọa độ nhanh trên Map Tracker."
       },
       {
         "key": "d",
-        "text": "Chỉ quan tâm đến việc mua công thức nước sốt để tự mở thương hiệu riêng"
+        "text": "Bắt buộc khách hàng phải đặt cọc ngay khi chưa có vị trí."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Khách hàng N2 có nhu cầu thực tế nhưng còn do dự vì một vài rào cản, cần chuyên viên tư vấn đồng cảm và tháo gỡ từng nút thắt.",
-    "quote": "Dạ Cô Chú đang lo lắng chỗ nào con cùng gỡ chỗ đó, từ tìm mặt bằng đến cách chiên chả cá sợi giòn ngon bên con đều có bài bản hướng dẫn hết ạ!"
+    "correctAnswer": "c",
+    "explanation": "Tư vấn cách tìm hiên nhà sáng sớm (5h30–9h00) giá rẻ 1–2 triệu/tháng giúp khách dễ dàng có mặt bằng.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-28",
     "stableId": "sale-28",
+    "displayNumber": 28,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Phương pháp tiếp cận chuẩn mực nhất đối với nhóm khách hàng N3 (Lạnh) là gì?",
+    "question": "Đối với nhóm khách hàng cần hỏi ý kiến gia đình (vợ/chồng), kỹ năng thực chiến chuẩn mực nhất là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Liên tục gọi điện thúc thúc giục dồn dập hàng phải đặt cọc ngay trong ngày"
+        "text": "Chỉ gửi một tin nhắn ngắn rồi để khách tự xoay xở."
       },
       {
         "key": "b",
-        "text": "Hủy toàn bộ thông tin liên hệ và không bao giờ chăm sóc lại"
+        "text": "Hối thúc khách hàng giấu người nhà tự ý chuyển tiền cọc ngay."
       },
       {
         "key": "c",
-        "text": "Gửi tài liệu tham khảo qua Zalo, giữ kết nối thân thiện, chia sẻ các câu chuyện điểm bán thành công và chăm sóc định kỳ."
+        "text": "Cắt đứt liên lạc vì cho rằng khách hàng không tự quyết định được."
       },
       {
         "key": "d",
-        "text": "Chuyển thông tin khách hàng cho các đơn vị nhượng quyền khác ngoài thị trường"
+        "text": "Chủ động đề xuất lập nhóm Zalo 3 bên để gửi bảng tính lợi nhuận và trực tiếp giải đáp băn khoăn cho người nhà."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Khách hàng N3 cần thời gian tích lũy niềm tin và chuẩn bị nguồn lực, việc gửi thông tin giá trị qua Zalo giúp duy trì mối quan hệ ấm dần lên.",
-    "quote": "Dạ con gửi bảng tính lời lỗ và hình ảnh xe thực tế qua Zalo cho Cô Chú xem trước, khi nào thu xếp được thời gian Cô Chú nhắn con hỗ trợ tiếp nhé!"
+    "correctAnswer": "d",
+    "explanation": "Tạo nhóm Zalo 3 bên giúp thông tin minh bạch, giải tỏa băn khoăn về uy tín thương hiệu và tạo sự đồng thuận trong gia đình.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-29",
     "stableId": "sale-29",
+    "displayNumber": 29,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Bốn 'Nút thắt tâm lý' lớn nhất khiến khách hàng do dự chưa dám mở xe bao gồm những yếu tố nào?",
+    "question": "Bốn nút thắt tâm lý phổ biến nhất của người mới khởi nghiệp mở xe bánh mì là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Thiết kế nhận diện mới, Mua máy tính tiền, Tuyển dụng quản lý và Thuê mặt bằng 24/24"
+        "text": "Nỗi lo về Vốn, Nỗi lo về Mặt bằng, Nỗi lo về Tay nghề làm bánh, và Nỗi lo về Rủi ro buôn bán."
       },
       {
         "key": "b",
-        "text": "Thủ tục xin cấp phép bay, Chi phí quảng cáo truyền hình, Thuê mướn bảo vệ và Mua xe tải"
+        "text": "Nỗi lo về thủ tục xuất nhập khẩu và thị trường chứng khoán."
       },
       {
         "key": "c",
-        "text": "Chi phí thiết kế logo riêng, Đăng ký bảo hộ nhãn hiệu quốc tế, Mua phần mềm nước ngoài và Thuê kế toán."
+        "text": "Nỗi lo về chi phí thuê chuyên gia nước ngoài và quảng cáo truyền hình."
       },
       {
         "key": "d",
-        "text": "Vốn ban đầu, Mặt bằng bán hàng, Tay nghề làm bánh và Nỗi sợ bán ế (Rủi ro buôn bán)."
+        "text": "Nỗi lo về việc quản lý hàng ngàn nhân viên tại điểm bán."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "4 nút thắt lớn của người lao động: Thiếu vốn, chưa có mặt bằng, sợ không biết chiên chả làm bánh, và sợ mở ra bán không được.",
-    "quote": "Người đi mở xe chỉ lo đúng 4 điều: thiếu tiền, chưa có chỗ bán, sợ vụng về không biết làm và sợ ế. Mình gỡ thông 4 nút này là khách an tâm mở ngay!"
+    "correctAnswer": "a",
+    "explanation": "4 nút thắt cốt lõi: Vốn - Mặt bằng - Tay nghề - Rủi ro. Giải tỏa được 4 điểm này khách sẽ tự tin mở xe.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-30",
     "stableId": "sale-30",
+    "displayNumber": 30,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Khi khách hàng than phiền 'Tôi chưa có đủ tiền mở gói lớn', tư vấn viên nên đưa ra giải pháp nào phù hợp nhất?",
+    "question": "Quy trình 4 bước làm việc mỗi ngày trên phần mềm CRM của tư vấn viên chuyên nghiệp gồm những bước nào?",
     "options": [
       {
         "key": "a",
-        "text": "Yêu cầu khách hàng đi vay lãi suất cao để mua gói cao nhất mà không cung cấp quy trình hướng dẫn cụ thể."
+        "text": "Gọi điện ngẫu nhiên theo danh bạ và tắt máy khi khách hỏi khó."
       },
       {
         "key": "b",
-        "text": "Khuyên khách hàng nên từ bỏ ý định kinh doanh bánh mì"
+        "text": "Bước 1 Chuẩn bị thông tin, Bước 2 Phân loại nhu cầu, Bước 3 Tương tác tư vấn giải pháp, Bước 4 Cập nhật kết quả lên CRM."
       },
       {
         "key": "c",
-        "text": "Tư vấn Gói tiết kiệm 4,8 triệu (tận dụng xe cũ sẵn có) hoặc Gói chuẩn 7,5 triệu, hướng dẫn đặt cọc 2 triệu trước để giữ điểm bán và thu xếp dần."
+        "text": "Dồn toàn bộ thời gian cho khách chưa có nhu cầu và bỏ qua khách đang cần gấp."
       },
       {
         "key": "d",
-        "text": "Bắt buộc khách hàng phải mua kèm tủ đông và máy nướng bánh mới cho mở bán"
+        "text": "Ghi chép vào sổ tay cá nhân và không đồng bộ dữ liệu lên hệ thống."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Má Hải có nhiều gói linh hoạt (4,8tr - 7,5tr - 10,3tr) giúp khách hàng bắt đầu với số vốn vừa túi tiền nhất, chỉ cần cọc trước 2 triệu để giữ quyền lợi.",
-    "quote": "Dạ nếu vốn đang hạn hẹp thì Cô Chú chọn Gói 4,8 triệu hoặc Gói 7,5 triệu cho nhẹ vốn, cọc trước 2 triệu để khóa vị trí độc quyền rồi mở bán tích lũy dần ạ!"
+    "correctAnswer": "b",
+    "explanation": "Quy trình 4 bước CRM chuẩn mực: Chuẩn bị -> Phân loại -> Tư vấn giải pháp -> Cập nhật dữ liệu.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-31",
     "stableId": "sale-31",
+    "displayNumber": 31,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Khi khách hàng lo lắng 'Tôi chưa tìm được mặt bằng', câu hỏi gợi mở nào giúp khách nhận ra cơ hội ngay trước mắt?",
+    "question": "Nguyên tắc 'Thay chữ Tư vấn bằng chữ Giúp' trong văn hóa Nhà Má Hải mang ý nghĩa thực tế nào?",
     "options": [
       {
         "key": "a",
-        "text": "'Cô Chú có người quen nào có hiên nhà, quán cà phê hoặc tiệm tạp hóa buổi sáng trên trục đường đi làm đông đúc không ạ?'"
+        "text": "Nói thật nhiều về lý thuyết mà không lắng nghe tâm tư của khách hàng."
       },
       {
         "key": "b",
-        "text": "'Cô Chú có sẵn 50 triệu để thuê mặt bằng nhà phố nguyên căn chưa ạ?'"
+        "text": "Cố gắng bán được gói đắt tiền nhất để tối đa hóa doanh số cá nhân."
       },
       {
         "key": "c",
-        "text": "'Cô Chú hãy đi ký hợp đồng thuê sạp chợ 10 năm ngay hôm nay đi ạ.'"
+        "text": "Đặt mình vào hoàn cảnh của người lao động để cùng tháo gỡ khó khăn và trao giải pháp sinh kế an toàn."
       },
       {
         "key": "d",
-        "text": "'Sao Cô Chú không mua hẳn một căn nhà mặt tiền để tiện buôn bán?'"
+        "text": "Tự quyết định thay cho khách hàng mà không cần khách đồng ý."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Xe bánh mì chỉ cần 1-2m² hiên nhà từ 5h30-9h00 sáng, việc gợi ý tận dụng hiên nhà người quen, quán nước, tạp hóa giúp khách tìm ra mặt bằng ngay.",
-    "quote": "Xe bánh mì Má Hải nhỏ gọn chỉ bán từ 5h30 đến 9h00 sáng, Cô Chú mượn tạm hiên nhà người quen hay gửi nhờ trước quán cà phê là bán vô tư rồi ạ!"
+    "correctAnswer": "c",
+    "explanation": "Tâm thế 'Giúp' là lắng nghe chân thành, tư vấn gói vừa túi tiền để bà con mở xe có lời bền vững.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-32",
     "stableId": "sale-32",
+    "displayNumber": 32,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Để giải tỏa nút thắt 'Tôi không biết nấu nướng, sợ không làm được bánh ngon', tư vấn viên cần nhấn mạnh điều gì?",
+    "question": "Khi khách hàng lo lắng 'Tôi chưa từng buôn bán bao giờ, liệu có làm được không?', câu trả lời thấu cảm là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Khách hàng phải tự đi học lớp đầu bếp chuyên nghiệp 6 tháng"
+        "text": "Khuyên khách hàng nên chuyển sang làm công việc khác."
       },
       {
         "key": "b",
-        "text": "Khách hàng phải thuê đầu bếp tay nghề cao về đứng xe bán hàng"
+        "text": "Nói với khách rằng không biết bán hàng thì chắc chắn sẽ thất bại."
       },
       {
         "key": "c",
-        "text": "Công ty chỉ giao cá nguyên con về cho đối tác tự xay và tự nêm nếm gia vị"
+        "text": "Yêu cầu khách phải đi học các khóa đào tạo kinh doanh đắt tiền bên ngoài."
       },
       {
         "key": "d",
-        "text": "Chả cá sợi được tẩm ướp sẵn 17% đạm, nước sốt Tứ Vị đóng can sẵn chuẩn vị, có sổ tay và video hướng dẫn chiên chả giòn chỉ sau 30 phút thực hành."
+        "text": "Trấn an khách rằng mô hình đã được chuẩn hóa, có video và Sổ tay cầm tay chỉ việc, chiên chả 1-2 phút rất dễ làm."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Quy trình làm bánh mì Má Hải đã được chuẩn hóa 100%: Chả cá sợi ép sẵn, sốt Tứ Vị đóng can sẵn, chỉ cần chiên nóng và chan sốt là chuẩn vị ngon đồng bộ.",
-    "quote": "Cô Chú yên tâm, chả cá sợi đã tẩm ướp sẵn và nước sốt nấu sẵn đóng can, bên con có video chỉ từng bước, thực hành 30 phút là tay nghề thuần thục ngay!"
+    "explanation": "Mô hình Má Hải thiết kế tinh gọn 'cầm tay chỉ việc', người chưa từng kinh doanh cũng thành thạo sau 1 ngày.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-33",
     "stableId": "sale-33",
+    "displayNumber": 33,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Chính sách an toàn vốn nào của Má Hải giúp giải tỏa triệt để nút thắt 'Sợ bán ế, sợ mất vốn' cho đối tác?",
+    "question": "Tại sao tư vấn viên không được hứa hẹn những điều xa rời thực tế như 'bảo đảm bán 200 ổ/sáng ngay ngày đầu'?",
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc khách hàng phải chịu hoàn toàn rủi ro và không được hỗ trợ khi ngưng bán"
+        "text": "Vì kinh doanh cần sự siêng năng thực tế và tích lũy khách quen, hứa hẹn quá lời sẽ làm mất uy tín thương hiệu."
       },
       {
         "key": "b",
-        "text": "Chính sách hỗ trợ thu hồi xe trong 60 ngày đầu (hoàn lại tối đa đến 2.800.000đ tùy hiện trạng xe) và hỗ trợ kết nối sang nhượng điểm bán miễn phí 0 đồng."
+        "text": "Vì công ty cấm đối tác bán nhiều hơn 50 ổ mỗi sáng."
       },
       {
         "key": "c",
-        "text": "Cam kết trả lương cứng 20 triệu đồng mỗi tháng cho người mở xe"
+        "text": "Vì bán nhiều bánh mì sẽ làm tăng chi phí sản xuất của công ty."
       },
       {
         "key": "d",
-        "text": "Tặng không xe bánh mì mà không cần ký kết bất kỳ hợp đồng nào"
+        "text": "Vì khách hàng không thích nghe những thông tin tích cực."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Chính sách thu hồi xe trong 60 ngày (hoàn tối đa 2,8 triệu) và hỗ trợ sang nhượng 0đ tạo chiếc lưới an toàn bảo vệ vốn cho người lao động.",
-    "quote": "Bên con có chính sách hỗ trợ thu hồi xe trong 60 ngày đầu và kết nối sang nhượng 0 đồng, Cô Chú hoàn toàn an tâm không lo bị mất trắng vốn đâu ạ!"
+    "correctAnswer": "a",
+    "explanation": "Kinh doanh trung thực 50/50: Nền tảng công ty tốt + sự chăm chỉ của chủ xe = thành công vững chắc.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-34",
     "stableId": "sale-34",
+    "displayNumber": 34,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Quy chuẩn 3 bước mở đầu một cuộc gọi tư vấn qua điện thoại chuyên nghiệp bao gồm những gì?",
+    "question": "Hành động nào sau đây của tư vấn viên thể hiện sự tôn trọng tuyệt đối đối với khách hàng?",
     "options": [
       {
         "key": "a",
-        "text": "Chào hỏi lịch sự kèm xưng danh Má Hải, Xác nhận nhu cầu tìm hiểu mở xe của khách và Tạo không khí trò chuyện đồng cảm, thân thiện."
+        "text": "Gọi điện liên tục vào giờ nghỉ trưa hoặc đêm muộn để hối thúc đặt cọc."
       },
       {
         "key": "b",
-        "text": "Yêu cầu khách hàng đọc số tài khoản ngân hàng để chuyển tiền cọc ngay lập tức"
+        "text": "Lắng nghe kiên nhẫn, giải thích cặn kẽ các điều khoản và gọi lại đúng khung giờ đã hẹn trước với khách."
       },
       {
         "key": "c",
-        "text": "Đọc toàn bộ điều khoản hợp đồng pháp lý trong 15 phút đầu tiên"
+        "text": "Tỏ thái độ thờ ơ khi biết khách hàng có số vốn ít."
       },
       {
         "key": "d",
-        "text": "Hỏi thông tin cá nhân riêng tư và số dư tài khoản của khách hàng"
+        "text": "Tự ý đăng thông tin số điện thoại của khách hàng lên các hội nhóm công cộng."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Mở đầu cuộc gọi chuẩn mực: Chào hỏi ấm áp, xưng danh rõ ràng từ Bánh Mì Má Hải và xác nhận nhu cầu để tạo sự tin cậy ngay từ giây đầu tiên.",
-    "quote": "Dạ em chào Anh/Chị, em là tư vấn viên bên Bánh Mì Má Hải, em thấy mình có để lại thông tin tìm hiểu mở xe bánh mì, em gọi hỗ trợ giải đáp cho mình ạ!"
+    "correctAnswer": "b",
+    "explanation": "Tôn trọng giờ giấc, kiên nhẫn lắng nghe và giữ đúng lời hẹn là phẩm chất của tư vấn viên chuyên nghiệp.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-35",
     "stableId": "sale-35",
+    "displayNumber": 35,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Kỹ năng 'Lắng nghe chủ động' trong tư vấn nhượng quyền thể hiện qua hành động nào?",
+    "question": "Khi khách hàng hỏi 'Tiền cọc 2 triệu có được trừ vào tiền xe không?', câu trả lời chuẩn xác là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Nói liên tục không ngắt nghỉ để khách hàng không kịp đặt câu hỏi"
+        "text": "Dạ tiền cọc này dùng để trả phí tư vấn qua điện thoại."
       },
       {
         "key": "b",
-        "text": "Tắt máy ngay khi khách hàng vừa nêu ra một khó khăn về tài chính"
+        "text": "Dạ tiền cọc này công ty giữ lại làm quỹ bảo lãnh không hoàn trả."
       },
       {
         "key": "c",
-        "text": "Để khách hàng nói hết băn khoăn, ghi chép lại các điểm cốt lõi (vốn, vị trí, người bán) và nhắc lại tóm tắt trước khi đưa ra giải pháp."
+        "text": "Dạ được cấn trừ 100% vào giá trị gói khi nhận xe, công ty thu cọc để khóa vị trí 300m và tiến hành chuẩn bị xe ạ."
       },
       {
         "key": "d",
-        "text": "Ngắt lời khách hàng liên tục để quảng cáo về các giải thưởng của công ty"
+        "text": "Dạ tiền cọc chỉ được trừ 10% giá trị gói hợp tác."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Lắng nghe chủ động giúp nắm bắt chính xác hoàn cảnh của khách hàng, từ đó đưa ra lời khuyên thực tế và chạm đúng mong muốn của họ.",
-    "quote": "Dạ con hiểu Cô đang lo lắng về việc chưa quen đứng bán một mình buổi sáng, để con chia sẻ cách sắp xếp đồ nghề cho thật gọn gàng nhé!"
+    "explanation": "Tiền cọc 2 triệu cấn trừ 100% vào tiền xe, bảo đảm minh bạch tài chính tuyệt đối.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-36",
     "stableId": "sale-36",
+    "displayNumber": 36,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Khi đối tác hỏi 'Tại sao tôi phải đặt cọc trước 2 triệu đồng?', câu trả lời chuẩn xác và thuyết phục nhất là gì?",
+    "question": "Để giúp khách hàng dễ dàng hình dung quy trình vận hành thực tế tại xe, tư vấn viên nên cung cấp tài liệu nào?",
     "options": [
       {
         "key": "a",
-        "text": "Tiền cọc này là chi phí công ty thu cố định để chi trả cho các buổi đào tạo trực tiếp tại văn phòng."
+        "text": "Yêu cầu khách hàng tự lên mạng tìm kiếm thông tin."
       },
       {
         "key": "b",
-        "text": "Tiền cọc này được giữ lại làm quỹ bảo lãnh hợp đồng và hoàn trả sau khi kết thúc 1 năm bán hàng."
+        "text": "Chỉ gửi bảng báo giá mà không có hình ảnh hay video minh họa."
       },
       {
         "key": "c",
-        "text": "Tiền cọc này là khoản đóng góp tự nguyện để hỗ trợ các chiến dịch truyền thông thương hiệu toàn quốc."
+        "text": "Gửi các tài liệu lý thuyết quản trị kinh doanh dày hàng trăm trang."
       },
       {
         "key": "d",
-        "text": "Tiền cọc 2 triệu là để khóa giữ tọa độ điểm bán độc quyền trên Map Tracker và xưởng tiến hành gia công xe, in decal nhận diện, số tiền này được cấn trừ 100% khi nhận xe ạ."
+        "text": "Gửi video thao tác chiên chả cá sợi phồng giòn, video chan sốt Tứ Vị và hình ảnh điểm bán thực tế ca sáng."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Khoản cọc 2 triệu có 2 mục đích chính đáng: Khóa độc quyền vị trí không cho người khác mở trùng, và xưởng bắt đầu sản xuất xe/in decal, cấn trừ 100% vào giá trị gói.",
-    "quote": "Dạ 2 triệu cọc này là để bên con khóa vị trí độc quyền trên bản đồ cho Cô Chú và xưởng bắt đầu dán decal, số tiền này cấn trừ thẳng vào gói xe khi giao hàng ạ!"
+    "explanation": "Video trực quan sinh động giúp khách hàng thấy rõ quy trình đơn giản, xóa tan nỗi lo sợ không làm được.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-37",
     "stableId": "sale-37",
+    "displayNumber": 37,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Nguyên tắc vàng khi xử lý dữ liệu khách hàng trên phần mềm CRM sau mỗi cuộc gọi là gì?",
+    "question": "Khi khách hàng băn khoăn về việc bảo quản chả cá sợi ở điểm bán, hướng dẫn chuẩn xác là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Cập nhật đầy đủ nội dung trao đổi, phân loại lại nhóm khách (N1/N2/N3), ghi chú rào cản còn lại và đặt lịch hẹn chăm sóc tiếp theo."
+        "text": "Chả cá bảo quản trong thùng giữ nhiệt chuyên dụng có đá gel, lấy ra chiên từng mẻ nhỏ nóng giòn theo lượng khách."
       },
       {
         "key": "b",
-        "text": "Xóa toàn bộ lịch sử cuộc gọi để làm trống bộ nhớ hệ thống"
+        "text": "Để chả cá trực tiếp ngoài nắng gió cả buổi sáng."
       },
       {
         "key": "c",
-        "text": "Chỉ lưu số điện thoại mà không cần ghi chép bất kỳ nội dung nào"
+        "text": "Chiên sẵn toàn bộ chả cá từ sáng sớm rồi để nguội bán dần."
       },
       {
         "key": "d",
-        "text": "Tự động phân loại đại trà toàn bộ danh sách thành nhóm đã chốt hợp đồng"
+        "text": "Ngâm chả cá vào nước lạnh trước khi chiên."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Ghi nhận dữ liệu chi tiết trên CRM giúp theo sát tiến trình ra quyết định của khách hàng và chăm sóc đúng thời điểm.",
-    "quote": "Mỗi cuộc gọi xong phải ghi chú rõ khách đang vướng gì (chờ mặt bằng hay gom vốn) để lần sau gọi lại chăm sóc đúng trọng tâm và chu đáo nhất!"
+    "explanation": "Bảo quản thùng giữ nhiệt và chiên từng mẻ nhỏ bảo đảm chả cá luôn giòn thơm, nóng hổi và chuẩn vệ sinh.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-38",
     "stableId": "sale-38",
+    "displayNumber": 38,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Khi đối tác có ý định mở thêm điểm bán thứ 2, thứ 3 sau khi điểm đầu tiên đã bán ổn định, chính sách hỗ trợ của Má Hải là gì?",
+    "question": "Về chính sách đồng hành giải quyết sự cố điểm bán, cam kết hỗ trợ của công ty là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Nghiêm cấm đối tác mở thêm điểm bán thứ hai"
+        "text": "Từ chối hỗ trợ sau khi đã bàn giao xe xong."
       },
       {
         "key": "b",
-        "text": "Tăng gấp đôi phí nhượng quyền đối với điểm bán thứ hai"
+        "text": "Đội ngũ chuyên viên hỗ trợ trực tuyến 100% qua Hotline và nhóm Zalo để hướng dẫn xử lý kỹ thuật kịp thời."
       },
       {
         "key": "c",
-        "text": "Khuyến khích và hỗ trợ kiểm tra thêm vị trí mới trên Map Tracker, áp dụng chính sách ưu đãi mở rộng chuỗi điểm bán cho đối tác thân thiết."
+        "text": "Yêu cầu đối tác phải tự trả tiền thuê thợ ngoài sửa chữa."
       },
       {
         "key": "d",
-        "text": "Bắt buộc đối tác phải chuyển giao điểm bán đầu tiên cho người khác mới được mở điểm mới"
+        "text": "Bắt buộc đối tác phải đóng thêm phí bảo hiểm sự cố hàng tháng."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Má Hải luôn khuyến khích đối tác phát triển chuỗi nhiều xe để gia tăng thu nhập, hỗ trợ quét vị trí mới và ưu đãi đồng hành.",
-    "quote": "Chúc mừng Cô Chú xe đầu bán chạy, bên con hỗ trợ quét thêm vị trí đắc địa thứ 2 để Cô Chú nhân đôi thu nhập mỗi sáng nhé!"
+    "correctAnswer": "b",
+    "explanation": "Hỗ trợ trực tuyến 24/7 qua Hotline và Zalo kỹ thuật giúp chủ xe yên tâm vận hành mỗi sáng.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-39",
     "stableId": "sale-39",
+    "displayNumber": 39,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Về mối quan hệ 'Cùng chiều lợi ích' giữa Bánh Mì Má Hải và đối tác nhượng quyền, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
+    "question": "Khi khách hàng đã đủ 4 điều kiện (vốn, mặt bằng, người bán, tự quyết), bước hành động tiếp theo của tư vấn viên là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Điểm bán buôn bán đắt hàng và có thu nhập ổn định thì công ty mới phát triển bền vững"
+        "text": "Chuyển hồ sơ của khách hàng cho đơn vị khác xử lý."
       },
       {
         "key": "b",
-        "text": "Công ty duy trì chính sách 0đ phí nhượng quyền hàng tháng và 0% trích doanh số bán bánh"
+        "text": "Bảo khách hàng về suy nghĩ thêm vài tháng nữa."
       },
       {
         "key": "c",
-        "text": "Công ty cam kết nỗ lực bình ổn giá nguyên vật liệu cung ứng cho các điểm bán"
+        "text": "Hướng dẫn thủ tục đặt cọc 2 triệu vào tài khoản pháp nhân công ty để khóa vị trí độc quyền và lên lịch giao xe."
       },
       {
         "key": "d",
-        "text": "Công ty thu lợi nhuận chủ yếu từ việc bán xe bánh mì giá đắt một lần rồi bỏ mặc đối tác tự xoay xở."
+        "text": "Yêu cầu khách hàng phải nộp thêm các giấy tờ công chứng phức tạp."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Má Hải không kiếm lời từ bán xe mà đồng hành cung cấp nguyên liệu chuẩn để đôi bên cùng phát triển lâu dài. Nói bán xe giá đắt rồi bỏ mặc là sai sự thật.",
-    "quote": "Công ty đồng hành cung cấp chả cá và sốt chuẩn mỗi ngày, Cô Chú bán càng đông khách thì công ty mới phát triển, đôi bên cùng có lợi bền vững ạ!"
+    "correctAnswer": "c",
+    "explanation": "Khách đã sẵn sàng thì chốt cọc khóa vị trí ngay để tránh người khác mở trước làm mất mặt bằng đẹp.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-40",
     "stableId": "sale-40",
+    "displayNumber": 40,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Theo thống kê từ hơn 1.200 điểm bán trên toàn quốc, tỷ lệ các mức thu nhập hàng tháng của chủ xe Bánh Mì Má Hải đạt con số nào?",
+    "question": "Tại sao việc ghi chú chi tiết lịch sử cuộc gọi lên phần mềm CRM là bắt buộc đối với mỗi tư vấn viên?",
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 70% điểm bán đạt thu nhập từ 7 triệu đồng/tháng trở lên (nhóm xuất sắc trên 20 triệu) và khoảng 30% đạt từ 3 – 7 triệu đồng/tháng."
+        "text": "Chỉ là thủ tục hình thức không có giá trị thực tế."
       },
       {
         "key": "b",
-        "text": "100% điểm bán đều đạt mức thu nhập 100 triệu đồng mỗi tháng ngay từ tuần đầu tiên"
+        "text": "Để công ty trừ lương nhân viên nếu ghi chép ít."
       },
       {
         "key": "c",
-        "text": "90% điểm bán đều bị thua lỗ và không có thu nhập"
+        "text": "Để chia sẻ thông tin cá nhân của khách cho các đơn vị quảng cáo ngoài."
       },
       {
         "key": "d",
-        "text": "Các điểm bán trên toàn quốc đều có mức thu nhập cố định đúng 2 triệu đồng/tháng"
+        "text": "Giúp nắm chắc nhu cầu và hoàn cảnh của khách để chăm sóc liền mạch, không hỏi trùng lặp gây phiền hà."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Thống kê thực tế: 70% điểm bán đạt từ 7 triệu/tháng trở lên (vị trí đẹp trên 20 triệu), 30% đạt 3-7 triệu/tháng, tạo nguồn sinh kế rất ổn định cho người lao động.",
-    "quote": "Thực tế hệ thống 1.200 xe có 70% chủ xe kiếm từ 7 đến trên 20 triệu mỗi tháng chỉ với 3,5 tiếng buổi sáng, thu nhập rất tốt và ổn định ạ!"
+    "correctAnswer": "d",
+    "explanation": "Cập nhật CRM đầy đủ giúp tư vấn viên theo sát tiến độ, chăm sóc chu đáo và thấu cảm từng khách hàng.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-41",
     "stableId": "sale-41",
+    "displayNumber": 41,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Thương hiệu Bánh Mì Má Hải sở hữu những bảo chứng uy tín nổi bật nào sau đây trên thị trường?",
+    "question": "Khi khách hàng ngần ngại 'Để tôi đi hỏi người quen xem bán bánh mì có lời không', cách ứng xử khéo léo là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Chỉ là một thương hiệu tự phát mới thành lập không có pháp nhân rõ ràng"
+        "text": "Đồng cảm và gợi ý khách có thể ghé trực tiếp các điểm bán Má Hải gần nhất vào khung giờ 6h30-7h30 sáng để mục sở thị."
       },
       {
         "key": "b",
-        "text": "Hành trình 13 năm phát triển bền vững từ 2013, từng lên sóng Shark Tank Việt Nam, đạt Giải thưởng Sáng tạo TP.HCM và hệ thống hơn 1.200 điểm bán toàn quốc."
+        "text": "Chê bai người quen của khách là không hiểu biết."
       },
       {
         "key": "c",
-        "text": "Chỉ có 1 xe bánh mì duy nhất tại quận trung tâm và chưa từng mở rộng"
+        "text": "Ép buộc khách không được đi hỏi ai."
       },
       {
         "key": "d",
-        "text": "Doanh nghiệp không có nhà xưởng và phải nhập khẩu bánh mì đông lạnh từ nước ngoài"
+        "text": "Tỏ thái độ khó chịu và dừng tư vấn."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "13 năm phát triển, Shark Tank, Giải thưởng Sáng tạo TP.HCM và quy mô 1.200 điểm bán phục vụ 50.000 ổ/ngày là những bằng chứng thép về uy tín thương hiệu.",
-    "quote": "Má Hải có lịch sử 13 năm từ 2013, được vinh danh Giải thưởng Sáng tạo TP.HCM và phủ sóng hơn 1.200 điểm bán nên khách mua hoàn toàn tin tưởng ạ!"
+    "correctAnswer": "a",
+    "explanation": "Khuyến khích khách ra xem thực tế các xe Má Hải bán đắt hàng ca sáng là bằng chứng thuyết phục nhất.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-42",
     "stableId": "sale-42",
+    "displayNumber": 42,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Chất lượng chả cá sợi và nước sốt của Má Hải mang lại ưu thế cạnh tranh vượt trội nào cho người bán?",
+    "question": "Lợi ích thiết thực của việc sử dụng Sổ tay hướng dẫn bán hàng đối với người mới mở xe là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Chả cá sợi sử dụng nhiều hàn the và phẩm màu để giữ được lâu"
+        "text": "Dùng để nộp cho cơ quan chức năng khi kiểm tra hành chính."
       },
       {
         "key": "b",
-        "text": "Chả cá sợi được pha trộn 80% bột mì để giảm giá thành tối đa"
+        "text": "Được đúc kết ngắn gọn, dễ hiểu từ kinh nghiệm thực chiến 13 năm, mở ra là áp dụng được ngay từng thao tác."
       },
       {
         "key": "c",
-        "text": "Hàm lượng Đạm kiểm nghiệm đạt 17% từ thịt cá biển tươi giúp chả chiên phồng vàng giòn ngọt đậm đà, kết hợp sốt Tứ Vị chuẩn ATTP tạo vị ngon độc quyền giữ chân khách quen."
+        "text": "Chỉ có các bài thơ vần điệu vui nhộn không có kỹ thuật bán hàng."
       },
       {
         "key": "d",
-        "text": "Nước sốt có vị cay nồng gắt và không có chứng nhận an toàn thực phẩm"
+        "text": "Bắt buộc phải học thuộc lòng từng câu từng chữ như học sinh."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Chả cá 17% đạm nguyên chất chiên phồng xốp vàng ruộm, nước sốt Tứ Vị độc quyền chua ngọt đậm đà tạo nên hương vị khác biệt hoàn toàn so với chả cá chợ.",
-    "quote": "Chả cá sợi Má Hải chiên vàng giòn thơm nức mũi, chan cùng sốt Tứ Vị độc quyền thì khách ăn một lần là nhớ mãi và quay lại mỗi sáng!"
+    "correctAnswer": "b",
+    "explanation": "Sổ tay bán hàng là cẩm nang cầm tay chỉ việc thực tế, giúp người mới nắm vững quy trình sau 1 ngày.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-43",
     "stableId": "sale-43",
+    "displayNumber": 43,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Về chính sách bảo toàn vốn cho đối tác mở xe của Nhà Má Hải, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
         "key": "a",
-        "text": "Hỗ trợ thu hồi xe trong 60 ngày đầu và hoàn lại tối đa lên đến 2.800.000đ tùy theo hiện trạng thực tế của xe."
+        "text": "Hỗ trợ thu hồi xe trong 60 ngày đầu và hoàn lại tối đa lên đến 2.800.000đ tùy hiện trạng thực tế."
       },
       {
         "key": "b",
-        "text": "Hỗ trợ kết nối chuyển nhượng điểm bán hoàn toàn miễn phí 0 đồng khi đối tác có nhu cầu sang nhượng"
+        "text": "Hỗ trợ kết nối chuyển nhượng điểm bán hoàn toàn miễn phí 0 đồng khi đối tác có nhu cầu sang nhượng."
       },
       {
         "key": "c",
-        "text": "Đồng hành tư vấn tháo gỡ các vướng mắc vận hành để giúp điểm bán sớm kinh doanh ổn định"
+        "text": "Công ty không có chính sách bảo chứng thu hồi xe và không hỗ trợ đối tác chuyển nhượng khi gặp hoàn cảnh phát sinh."
       },
       {
         "key": "d",
-        "text": "Công ty không có chính sách bảo chứng thu hồi xe và không hỗ trợ đối tác chuyển nhượng khi gặp hoàn cảnh phát sinh."
+        "text": "Đồng hành tư vấn tháo gỡ các vướng mắc vận hành để giúp điểm bán sớm kinh doanh ổn định."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Má Hải luôn nhân văn đồng hành: Có chính sách bảo chứng thu hồi xe trong 60 ngày (hoàn tối đa 2,8 triệu) và hỗ trợ kết nối thủ tục sang nhượng 0đ hoàn toàn miễn phí.",
-    "quote": "Má Hải có chính sách bảo chứng thu hồi xe trong 60 ngày hoàn lại lên đến 2,8 triệu và hỗ trợ sang nhượng 0đ để Cô Chú an tâm khởi sự!"
+    "correctAnswer": "c",
+    "explanation": "Má Hải luôn nhân văn: Có chính sách bảo chứng thu hồi xe 60 ngày (hoàn tối đa 2,8tr) và hỗ trợ sang nhượng 0đ.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-44",
     "stableId": "sale-44",
+    "displayNumber": 44,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Khi gia nhập chuỗi Bánh Mì Má Hải, đối tác được hỗ trợ đào tạo và đặt hàng qua những kênh nào?",
     "options": [
       {
         "key": "a",
-        "text": "Chỉ chuyển giao một lần bằng tài liệu giấy tổng quát trong ngày nhận bàn giao xe."
+        "text": "Chỉ được hướng dẫn bằng miệng một lần duy nhất qua điện thoại."
       },
       {
         "key": "b",
-        "text": "Bắt buộc học viên phải tham gia khóa học trực tiếp kéo dài nhiều tháng tại các trung tâm đào tạo nghề."
+        "text": "Bắt buộc phải đến trụ sở chính tại TP.HCM học việc tập trung trong 3 tháng."
       },
       {
         "key": "c",
-        "text": "Hệ thống video và cẩm nang bán hàng chi tiết từ kỹ thuật chiên chả đến thao tác chan bánh, cùng kênh đặt hàng giao nguyên liệu tận nơi theo lịch trình."
+        "text": "Không có tài liệu hướng dẫn và phải tự mò mẫm cách làm bánh."
       },
       {
         "key": "d",
-        "text": "Chỉ hướng dẫn thao tác cơ bản và để đối tác tự tìm nguồn đặt các loại nguyên liệu phụ trợ bên ngoài."
+        "text": "Hệ thống video và Sổ tay bán hàng chi tiết từ kỹ thuật chiên chả đến thao tác chan bánh, cùng App đặt hàng 24/7 giao tận nơi."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Quy trình đào tạo online trực quan qua video, cẩm nang cầm tay chỉ việc và hệ thống đặt hàng giao hàng chuyên nghiệp giúp chủ xe ở bất kỳ đâu cũng làm chủ tay nghề.",
-    "quote": "Hệ thống video hướng dẫn từng động tác rất dễ hiểu, Cô Chú mở điện thoại xem là làm được ngay, hàng hóa thì đặt qua Zalo giao tận nơi đúng hẹn ạ!"
+    "correctAnswer": "d",
+    "explanation": "Quy trình đào tạo online trực quan qua video, Sổ tay bán hàng và hệ thống App đặt hàng 24/7 tiện lợi.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-45",
     "stableId": "sale-45",
+    "displayNumber": 45,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "So với các mô hình nhượng quyền ẩm thực đường phố khác đòi hỏi từ 30 – 70 triệu đồng, mức vốn mở xe Bánh Mì Má Hải mang lại ưu thế gì?",
+    "question": "So với các mô hình nhượng quyền ẩm thực đường phố khác đòi hỏi từ 30 – 70 triệu đồng, mức vốn mở xe Má Hải mang lại ưu thế gì?",
     "options": [
       {
         "key": "a",
-        "text": "Mức vốn đầu tư cố định từ 30 – 50 triệu đồng tương tự như các chuỗi đồ uống, trà sữa nhượng quyền."
+        "text": "Mức vốn vào cửa siêu linh hoạt chỉ từ 4,8 triệu đến 10,3 triệu đồng, phù hợp túi tiền của người lao động bình dân, giúp tiết kiệm chi phí ban đầu tối đa."
       },
       {
         "key": "b",
-        "text": "Mức vốn vào cửa siêu linh hoạt chỉ từ 4,8 triệu đến 10,3 triệu đồng, phù hợp túi tiền của người lao động bình dân, giúp tiết kiệm chi phí ban đầu tối đa."
+        "text": "Mức vốn đầu tư cố định từ 30 – 50 triệu đồng tương tự như các chuỗi đồ uống, trà sữa nhượng quyền."
       },
       {
         "key": "c",
@@ -1261,69 +1306,72 @@ const questions = [
         "text": "Mức vốn đầu tư tương đương với việc thuê mướn và cải tạo một mặt bằng ki-ốt kinh doanh ăn uống cố định."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Vốn mở xe Má Hải chỉ từ 4,8tr - 10,3tr, rẻ hơn rất nhiều so với các thương hiệu khác (30-70tr), giúp người ít vốn khởi nghiệp an toàn.",
-    "quote": "Chỉ từ 4,8 triệu đến 10,3 triệu là Cô Chú đã làm chủ một điểm bán thương hiệu lớn, nhẹ vốn hơn rất nhiều so với các mô hình 30-70 triệu ngoài kia ạ!"
+    "correctAnswer": "a",
+    "explanation": "Vốn mở xe Má Hải chỉ từ 4,8tr - 10,3tr, rẻ hơn rất nhiều so với các thương hiệu khác (30-70tr), giúp hoàn vốn siêu tốc.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-46",
     "stableId": "sale-46",
+    "displayNumber": 46,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
-    "question": "Quy trình 4 bước làm việc mỗi ngày trên phần mềm CRM của một tư vấn viên chuyên nghiệp là gì?",
+    "question": "Mục đích của việc phân loại khách hàng theo mức độ sẵn sàng trên CRM là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Gọi điện ngẫu nhiên theo danh bạ mà không phân loại nhu cầu và không kiểm tra lịch sử trao đổi trước đó."
+        "text": "Để loại bỏ và không bao giờ liên hệ lại với những khách hàng chưa có vốn."
       },
       {
         "key": "b",
-        "text": "Dồn toàn bộ thời gian cho nhóm khách chưa có nhu cầu và bỏ quên nhóm khách hàng đang cần tư vấn gấp."
+        "text": "Phân bổ thời gian tư vấn hợp lý, ưu tiên hỗ trợ kịp thời cho người đang cần mở xe gấp và kiên nhẫn đồng hành cùng người đang chuẩn bị."
       },
       {
         "key": "c",
-        "text": "Ghi nhận thông tin vào sổ tay cá nhân và không đồng bộ dữ liệu trạng thái chăm sóc lên hệ thống chung."
+        "text": "Để báo cáo số lượng số điện thoại thu thập được cho các đơn vị quảng cáo."
       },
       {
         "key": "d",
-        "text": "Bước 1 Kiểm tra thông tin, Bước 2 Phân loại mức độ sẵn sàng, Bước 3 Tương tác tư vấn giải pháp tháo gỡ rào cản và Bước 4 Cập nhật kết quả lên CRM."
+        "text": "Chỉ nhằm mục đích thống kê số liệu hình thức cho ban giám đốc."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Quy trình 4 bước chuẩn mực: Chuẩn bị thông tin -> Phân loại nhu cầu -> Tư vấn giải pháp đồng cảm -> Cập nhật CRM và đặt lịch hẹn tiếp theo.",
-    "quote": "Làm đúng 4 bước chuẩn: Nắm rõ thông tin -> Phân loại N1/N2/N3 -> Tư vấn đúng nút thắt -> Cập nhật CRM để chăm sóc khách chu đáo nhất!"
+    "correctAnswer": "b",
+    "explanation": "Phân loại giúp tối ưu hiệu quả tư vấn, chăm sóc đúng người đúng thời điểm và nâng cao tỷ lệ mở xe thành công.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-47",
     "stableId": "sale-47",
+    "displayNumber": 47,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Sau khi kết thúc cuộc gọi tư vấn, hành động nào sau đây là KHÔNG ĐÚNG quy chuẩn làm việc?",
     "options": [
       {
         "key": "a",
-        "text": "Chỉ nhớ trong đầu mà không cần lưu lại bất kỳ thông tin hay ghi chú nào lên hệ thống CRM."
+        "text": "Phân loại lại mức độ sẵn sàng của khách hàng dựa trên thông tin thực tế vừa thu thập."
       },
       {
         "key": "b",
-        "text": "Ghi nhận đầy đủ và trung thực nội dung vừa trao đổi với khách hàng lên phần mềm"
+        "text": "Ghi nhận đầy đủ và trung thực nội dung vừa trao đổi với khách hàng lên phần mềm CRM."
       },
       {
         "key": "c",
-        "text": "Phân loại lại mức độ sẵn sàng của khách hàng dựa trên thông tin thực tế vừa thu thập."
+        "text": "Chỉ nhớ trong đầu mà không cần lưu lại bất kỳ thông tin hay ghi chú nào lên hệ thống CRM."
       },
       {
         "key": "d",
         "text": "Ghi chú chi tiết điều khách còn băn khoăn và đặt lịch hẹn chăm sóc cụ thể cho lần trao đổi tiếp theo."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Không cập nhật CRM sẽ dẫn đến quên thông tin, chăm sóc trùng lặp hoặc bỏ sót khách hàng. Đây là hành vi vi phạm quy chuẩn nghiệp vụ.",
-    "quote": "Sau mỗi cuộc gọi phải ghi chú ngay vào CRM: khách ở đâu, đang vướng mặt bằng hay gom tiền, hẹn ngày nào gọi lại để theo sát khách hàng!"
+    "correctAnswer": "c",
+    "explanation": "Không cập nhật CRM sẽ dẫn đến quên thông tin hoặc chăm sóc trùng lặp, là hành vi thiếu chuyên nghiệp.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-48",
     "stableId": "sale-48",
+    "displayNumber": 48,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Mô hình xe Bánh Mì Má Hải được thiết kế theo những quy chuẩn nào để giữ gìn trật tự và mỹ quan đô thị mỗi buổi sáng?",
@@ -1346,12 +1394,13 @@ const questions = [
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Xe Má Hải thiết kế tinh gọn bán mang đi (Take-away), đặt lùi trong hiên nhà, khung giờ 5h30-9h00, đảm bảo trật tự đô thị và văn minh đường phố.",
-    "quote": "Xe mình bán mang đi nhanh gọn trong 3 phút, nép gọn trong hiên nhà từ 5h30 đến 9h00 sáng, dọn dẹp sạch bóng nên chính quyền và bà con xung quanh rất quý!"
+    "explanation": "Xe Má Hải thiết kế tinh gọn bán mang đi, đặt lùi trong hiên nhà, bán 5h30-9h00, bảo đảm văn minh đô thị.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-49",
     "stableId": "sale-49",
+    "displayNumber": 49,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Cơ cấu giá vốn và mức tiền lời thực tế trên 1 ổ bánh mì Má Hải (bán giá sàn khuyến nghị 15.000đ/ổ) được tính toán như thế nào?",
@@ -1374,12 +1423,13 @@ const questions = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Giá vốn chuẩn 9.500đ - 10.000đ/ổ giúp chủ xe có lợi nhuận ròng 5.000đ - 5.500đ/ổ (tương đương 35% - 37% doanh thu), bán 50 ổ lời 250k - 275k/sáng.",
-    "quote": "Bán giá 15k thì tiền vốn nguyên liệu chuẩn chỉ tầm 9k5 đến 10k, Cô Chú bỏ túi lời ròng hơn 5.000đ mỗi ổ, bán 50 ổ là có hơn 250k bỏ túi mỗi sáng rồi ạ!"
+    "explanation": "Giá vốn chuẩn 9.500đ - 10.000đ/ổ giúp chủ xe có lợi nhuận ròng 5.000đ - 5.500đ/ổ (tương đương ~35% biên lợi nhuận).",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-50",
     "stableId": "sale-50",
+    "displayNumber": 50,
     "sectionNo": 2,
     "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Khi đối tác muốn mở điểm bán tại các huyện ngoại thành TP.HCM (Củ Chi, Hóc Môn, Bình Chánh, Nhà Bè, Cần Giờ), khoảng cách bảo vệ điểm bán được quy định như thế nào?",
@@ -1402,1199 +1452,1242 @@ const questions = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Trên hệ thống Map Tracker, toàn bộ địa bàn hành chính TP.HCM (gồm cả các huyện Củ Chi, Hóc Môn, Bình Chánh, Nhà Bè, Cần Giờ) đều áp dụng chuẩn Đô thị đặc biệt cự ly 300m.",
-    "quote": "Toàn bộ khu vực TP.HCM kể cả các huyện ngoại thành đều áp dụng cự ly chuẩn 300m trên Map Tracker để bảo vệ tối đa thị phần cho từng chủ xe ạ!"
+    "explanation": "Trên Map Tracker, toàn bộ địa bàn TP.HCM (gồm cả các huyện ngoại thành) đều khóa bảo vệ cự ly thống nhất 300m.",
+    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
   },
   {
     "id": "sale-51",
     "stableId": "sale-51",
+    "displayNumber": 51,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Tiêu chí 'vàng' khi lựa chọn vị trí đặt xe Bánh Mì Má Hải buổi sáng là gì?",
+    "question": "Tiêu chuẩn vàng khi lựa chọn vị trí hiên nhà để đặt xe Bánh Mì Má Hải buổi sáng là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Nằm trong hẻm sâu cụt, ít người qua lại và yên tĩnh"
+        "text": "Nằm trên các tuyến đường cao tốc cấm xe máy lưu thông."
       },
       {
         "key": "b",
-        "text": "Nằm trên trục đường chính hướng người dân đi làm/đi học buổi sáng, gần ngã tư đèn đỏ, trường học, bệnh viện, chợ hoặc khu dân cư đông đúc."
+        "text": "Nằm sâu trong các ngõ hẻm cụt không có người qua lại."
       },
       {
         "key": "c",
-        "text": "Nằm ở tầng thượng của các tòa nhà chung cư cao tầng"
+        "text": "Nằm ở phía thuận chiều đi làm/đi học của người dân, có tầm nhìn thoáng và vỉa hè rộng rãi."
       },
       {
         "key": "d",
-        "text": "Nằm trên đường cao tốc cấm các phương tiện xe máy dừng đỗ"
+        "text": "Nằm ở các khu vực chỉ đông đúc vào khung giờ nửa đêm."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Khách mua bánh mì sáng cần sự tiện lợi: Vị trí thuận chiều giao thông đi làm, gần trường học, bệnh viện, chợ hoặc ngã ba/ngã tư giúp khách ghé mua nhanh trong 1-2 phút.",
-    "quote": "Vị trí vàng là thuận chiều người đi làm buổi sáng, khách tấp xe vào lề là mua được ngay ổ bánh nóng hổi trong 1 phút, bán cực kỳ đắt hàng ạ!"
+    "correctAnswer": "c",
+    "explanation": "Hiên nhà thuận chiều lưu thông buổi sáng giúp khách đi xe máy dễ dàng tấp vào mua nhanh trong 1 phút.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-52",
     "stableId": "sale-52",
+    "displayNumber": 52,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Khung giờ vàng bán hàng buổi sáng mang lại 80% - 90% doanh số cho xe Bánh Mì Má Hải là khoảng thời gian nào?",
+    "question": "Thời điểm lý tưởng nhất trong ngày để đi khảo sát thực địa lưu lượng người qua lại tại mặt bằng là khi nào?",
     "options": [
       {
         "key": "a",
-        "text": "Từ 5h30 sáng đến 9h00 sáng mỗi ngày."
+        "text": "Khung giờ từ 2h00 đến 3h00 sáng."
       },
       {
         "key": "b",
-        "text": "Từ 11h00 trưa đến 14h00 chiều"
+        "text": "Khung giờ từ 12h00 đến 13h00 trưa."
       },
       {
         "key": "c",
-        "text": "Từ 17h00 chiều đến 22h00 đêm"
+        "text": "Khung giờ từ 22h00 đến 23h00 đêm."
       },
       {
         "key": "d",
-        "text": "Từ 0h00 đêm đến 4h00 sáng hôm sau"
+        "text": "Khung giờ từ 6h30 đến 7h30 sáng (khung giờ cao điểm người dân đổ ra đường đi làm, đi học)."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Khung giờ 5h30 - 9h00 sáng là lúc học sinh, sinh viên, công nhân và dân văn phòng đi làm, nhu cầu ăn sáng tiện lợi đạt đỉnh cao nhất trong ngày.",
-    "quote": "Bánh mì Má Hải chuyên bán ca sáng từ 5h30 đến 9h00, chỉ 3 tiếng rưỡi tập trung là xong ca, thời gian còn lại Cô Chú thoải mái lo việc gia đình!"
+    "correctAnswer": "d",
+    "explanation": "Khảo sát đúng 6h30–7h30 sáng giúp đo lường chính xác lượng khách tiềm năng thực tế trước khi chốt thuê.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-53",
     "stableId": "sale-53",
+    "displayNumber": 53,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Hình thức thuê mặt bằng nào được xem là tiết kiệm và tối ưu nhất cho mô hình xe Bánh Mì Má Hải?",
+    "question": "Khoảng cách bảo vệ độc quyền 300m trên Map Tracker tại các đô thị lớn mang lại giá trị gì cho chủ xe?",
     "options": [
       {
         "key": "a",
-        "text": "Thuê nguyên căn nhà phố 3 tầng với giá 40 triệu đồng/tháng"
+        "text": "Bảo đảm toàn bộ tệp khách quen trong bán kính phục vụ thuộc về điểm bán, không lo bị cạnh tranh nội bộ."
       },
       {
         "key": "b",
-        "text": "Đấu thầu gian hàng thương mại trong trung tâm thương mại lớn"
+        "text": "Bắt buộc khách hàng phải đi bộ ít nhất 300 mét mới được mua bánh mì."
       },
       {
         "key": "c",
-        "text": "Hợp tác thuê lại 1-2m² trước hiên nhà, trước quán cà phê hoặc tiệm tạp hóa buổi sáng với giá chỉ từ 1 đến 3 triệu đồng/tháng."
+        "text": "Giới hạn chủ xe chỉ được bán tối đa cho 300 khách hàng mỗi ngày."
       },
       {
         "key": "d",
-        "text": "Mua đứt mảnh đất mặt tiền đường lớn để đặt xe bán hàng"
+        "text": "Chỉ là con số tượng trưng không có ý nghĩa bảo vệ trên bản đồ."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Thuê hiên nhà buổi sáng chỉ tốn 1-3 triệu/tháng, tận dụng lượng khách sẵn có từ quán nước/tạp hóa và không phải đặt cọc nhà tiền lớn.",
-    "quote": "Cô Chú cứ gửi nhờ trước hiên nhà dân hoặc quán cà phê sáng, trả tiền mặt bằng 1-2 triệu mỗi tháng là cực kỳ nhẹ chi phí mà khách đông sẵn ạ!"
+    "correctAnswer": "a",
+    "explanation": "Khoảng cách 300m là hàng rào bảo vệ vững chắc, giúp chủ xe độc quyền khai thác lượng khách trong khu vực.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-54",
     "stableId": "sale-54",
+    "displayNumber": 54,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Khoảng cách bảo vệ độc quyền trên Map Tracker tại các khu công nghiệp, khu chế xuất hoặc huyện vùng ven là bao nhiêu?",
+    "question": "Khi khảo sát một hiên nhà, những yếu tố phụ trợ nào cần được ưu tiên kiểm tra?",
     "options": [
       {
         "key": "a",
-        "text": "50 mét theo đường nội bộ"
+        "text": "Mặt bằng phải có diện tích rộng từ 100m2 trở lên như một nhà hàng lớn."
       },
       {
         "key": "b",
-        "text": "100 mét giữa các cổng phân xưởng"
+        "text": "Mặt bằng có mái che che mưa nắng, có nguồn điện thắp sáng cơ bản và lối dắt xe lên xuống thuận tiện."
       },
       {
         "key": "c",
-        "text": "300 mét cố định cho mọi địa hình"
+        "text": "Mặt bằng bắt buộc phải có máy lạnh công suất lớn ngoài vỉa hè."
       },
       {
         "key": "d",
-        "text": "750 mét đến 1.000 mét để bảo đảm đủ dung lượng khách hàng cho từng điểm bán."
+        "text": "Mặt bằng phải nằm gần các khu vực kho bãi công nghiệp nặng hẻo lánh."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Khu công nghiệp và huyện xã vùng ven có mật độ phân tán nên áp dụng cự ly 750m - 1.000m để chủ xe đón trọn dòng công nhân tan ca/vào ca.",
-    "quote": "Ở khu công nghiệp hay huyện vùng ven, cự ly bảo vệ lên đến 1.000m trên bản đồ để Cô Chú gom trọn khách công nhân mà không lo bị cạnh tranh ạ!"
+    "correctAnswer": "b",
+    "explanation": "Mái che, nguồn điện thắp sáng và lối lên xuống thoải mái là các điều kiện đủ để ca bán sáng diễn ra thuận lợi.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-55",
     "stableId": "sale-55",
+    "displayNumber": 55,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Khi khảo sát thực tế một vị trí mặt bằng trước khi ký cọc, đối tác nên quan sát yếu tố nào vào lúc 6h30 đến 7h30 sáng?",
+    "question": "Mức giá thuê hiên nhà buổi sáng (5h30–9h00) phổ biến và hợp lý nhất tại các khu dân cư là bao nhiêu?",
     "options": [
       {
         "key": "a",
-        "text": "Lưu lượng xe cộ qua lại, thói quen dừng xe mua đồ ăn sáng và mức độ dễ dàng tấp xe vào lề đường."
+        "text": "Khoảng 50.000.000đ/tháng tại các trung tâm thương mại lớn."
       },
       {
         "key": "b",
-        "text": "Màu sơn của các tòa nhà chung cư xung quanh"
+        "text": "Khoảng 15.000.000đ đến 20.000.000đ/tháng như thuê nhà nguyên căn."
       },
       {
         "key": "c",
-        "text": "Tốc độ gió và hướng ánh sáng mặt trời lúc giữa trưa"
+        "text": "Khoảng 1.000.000đ đến 2.500.000đ/tháng (chi phí nhẹ nhàng, dễ dàng bù đắp sau vài ngày bán)."
       },
       {
         "key": "d",
-        "text": "Số lượng xe tải hạng nặng chạy qua vào ban đêm"
+        "text": "Không bao giờ thuê được hiên nhà dưới 10.000.000đ/tháng."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Đứng quan sát lúc 6h30 - 7h30 sáng giúp đánh giá chính xác mật độ người đi làm, hướng di chuyển và khách có thuận tiện dừng xe mua hay không.",
-    "quote": "Cô Chú cứ ra đứng quan sát thực tế từ 6h30 đến 7h30 sáng, thấy bà con chạy xe đi làm đông đúc và vỉa hè dễ tấp xe là vị trí đắc địa rồi ạ!"
+    "correctAnswer": "c",
+    "explanation": "Thuê hiên 1-2,5 triệu/tháng chỉ tốn 30k-80k/ngày, bán 6-15 ổ bánh mì là đã đủ trả tiền mặt bằng.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-56",
     "stableId": "sale-56",
+    "displayNumber": 56,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Khi tư vấn viên hỗ trợ khách kiểm tra mặt bằng, thông tin nào cần khách cung cấp để quét tọa độ trên Map Tracker?",
+    "question": "Tại sao mô hình xe bánh mì Má Hải ưu tiên liên kết với các cửa hàng tạp hóa, quán cà phê hoặc nhà dân?",
     "options": [
       {
         "key": "a",
-        "text": "Bản vẽ thiết kế kiến trúc chi tiết của ngôi nhà"
+        "text": "Vì công ty cấm đối tác thuê mặt bằng độc lập."
       },
       {
         "key": "b",
-        "text": "Địa chỉ chính xác kèm định vị GPS vị trí qua ứng dụng bản đồ hoặc Zalo."
+        "text": "Để ép buộc chủ nhà phải mua bánh mì ăn mỗi sáng."
       },
       {
         "key": "c",
-        "text": "Sổ đỏ hoặc giấy chứng nhận quyền sử dụng đất công chứng"
+        "text": "Để chuyển đổi toàn bộ quán tạp hóa thành cửa hàng bánh mì."
       },
       {
         "key": "d",
-        "text": "Bản sao kê tài khoản ngân hàng của chủ nhà cho thuê"
+        "text": "Tận dụng được lượng khách quen sẵn có của quán và đôi bên cùng có lợi (cộng hưởng doanh thu)."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Địa chỉ cụ thể hoặc ghim vị trí GPS qua Zalo là đủ để chuyên viên nhập vào hệ thống Map Tracker và xác định khoảng cách bảo vệ ngay.",
-    "quote": "Cô Chú chỉ cần bấm gửi vị trí hiện tại qua Zalo hoặc đọc số nhà, tên đường là con kiểm tra trên Map Tracker báo kết quả ngay sau 5 phút ạ!"
+    "correctAnswer": "d",
+    "explanation": "Khách mua bánh mì tiện mua thêm ly cà phê hoặc chai nước, tạo mối quan hệ hợp tác win-win với chủ nhà.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-57",
     "stableId": "sale-57",
+    "displayNumber": 57,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Nếu vị trí khách muốn mở cách điểm bán hiện hữu của Má Hải 200 mét tại TP.HCM (vi phạm cự ly chuẩn 300m), công ty sẽ xử lý như thế nào?",
+    "question": "Quy trình kiểm tra tọa độ điểm bán trên phần mềm Map Tracker gồm các bước nào?",
     "options": [
       {
         "key": "a",
-        "text": "Vẫn chấp nhận thu tiền cọc và cho mở bán bình thường"
+        "text": "Khách gửi định vị GPS -> Chuyên viên nhập tọa độ vào hệ thống -> Quét bán kính 300m -> Thông báo kết quả trong 5 phút."
       },
       {
         "key": "b",
-        "text": "Đơn phương hủy hợp đồng với điểm bán cũ để nhường chỗ cho điểm mới"
+        "text": "Khách hàng phải trực tiếp mang thước dây đến văn phòng công ty đo đạc."
       },
       {
         "key": "c",
-        "text": "Từ chối duyệt vị trí này để bảo vệ quyền lợi cho xe cũ, đồng thời hướng dẫn khách tìm vị trí mới cách xa tối thiểu 300m."
+        "text": "Chuyên viên đi bộ đến tận nơi kiểm tra thủ công trong 1 tuần."
       },
       {
         "key": "d",
-        "text": "Hạn chế quyền lợi điểm bán cũ vì không chịu tăng doanh số"
+        "text": "Hệ thống tự động phê duyệt ngẫu nhiên mà không cần kiểm tra vị trí."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Nguyên tắc bảo vệ độc quyền vùng bán luôn được đặt lên hàng đầu nhằm giữ uy tín cho các đối tác đã ký hợp đồng trước.",
-    "quote": "Vị trí này đang bị dính bán kính 300m của một xe đi trước, để bảo vệ quyền lợi độc quyền sau này cho Cô Chú, con hỗ trợ Cô Chú tìm điểm khác gần đó nhé!"
+    "correctAnswer": "a",
+    "explanation": "Map Tracker tự động đo cự ly vệ tinh chính xác 100%, bảo đảm không trùng lặp và phản hồi ngay trong 5 phút.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-58",
     "stableId": "sale-58",
+    "displayNumber": 58,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Thời điểm bắt đầu bật bếp gas khè và chuẩn bị đồ nghề tại điểm bán mỗi sáng được khuyến nghị là lúc mấy giờ?",
+    "question": "Nếu tọa độ khách gửi bị trùng khoảng cách bảo vệ (dưới 300m) với một xe Má Hải đang hoạt động, công ty xử lý thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Lúc 4h00 sáng để chiên sẵn toàn bộ chả cá cho cả ngày"
+        "text": "Vẫn cho mở sát cạnh để hai xe cạnh tranh giảm giá với nhau."
       },
       {
         "key": "b",
-        "text": "Lúc 5h30 sáng để làm nóng dầu, chuẩn bị rau dưa và chiên mẻ chả cá đầu tiên đón khách sớm lúc 6h00."
+        "text": "Từ chối mở tại vị trí đó để bảo vệ quyền lợi cho xe cũ, và hướng dẫn khách tìm vị trí khác cách đó từ 300m."
       },
       {
         "key": "c",
-        "text": "Lúc 7h30 sáng khi khách hàng đã đi làm gần hết"
+        "text": "Thu hồi quyền kinh doanh của xe cũ để giao cho người mới."
       },
       {
         "key": "d",
-        "text": "Lúc 9h00 sáng khi hết giờ cao điểm buổi sáng"
+        "text": "Yêu cầu người mới phải trả tiền đền bù cho chủ xe cũ."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Khởi động lúc 5h30 sáng giúp chủ xe có đủ 30 phút chuẩn bị dầu nóng, xếp khay rau dưa ngay ngắn và chiên chả cá sợi thơm nức sẵn sàng đón khách từ 6h00.",
-    "quote": "Cô Chú ra điểm bán lúc 5h30 sáng, bật bếp làm nóng dầu và chuẩn bị rau dưa, 6h00 khách đi làm ngang qua ngửi mùi chả cá chiên thơm là ghé mua ngay!"
+    "explanation": "Bảo vệ cự ly nghiêm ngặt là cam kết danh dự 13 năm của Má Hải, bảo đảm công bằng cho mọi đối tác.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-59",
     "stableId": "sale-59",
+    "displayNumber": 59,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Vì sao mô hình Bánh Mì Má Hải không khuyến khích bán hàng kéo dài suốt cả ngày từ sáng đến tối muộn?",
+    "question": "Tại sao khung giờ 5h30–9h00 sáng được xem là 'khung giờ vàng' của mô hình bánh mì mang đi?",
     "options": [
       {
         "key": "a",
-        "text": "Vì mô hình tập trung tối ưu hiệu suất trong khung giờ cao điểm ăn sáng (5h30-9h00), vừa đạt tiền lời tốt vừa giúp chủ xe không bị mệt mỏi thể xác."
+        "text": "Người dân có nhu cầu ăn sáng nhanh, tiện lợi, không mất thời gian chờ đợi trên đường đi làm."
       },
       {
         "key": "b",
-        "text": "Vì công ty không đủ năng lực cung cấp nguyên liệu vào buổi chiều"
+        "text": "Thời tiết buổi sáng mát mẻ, ít khói bụi và dễ dàng đứng bán."
       },
       {
         "key": "c",
-        "text": "Vì buổi chiều chính quyền nghiêm cấm các phương tiện bán thức ăn đường phố"
+        "text": "Tất cả các lý do trên đều tạo nên sức hút của khung giờ bán hàng sáng sớm."
       },
       {
         "key": "d",
-        "text": "Vì người dân Việt Nam không bao giờ ăn bánh mì vào buổi chiều"
+        "text": "Giúp chủ xe hoàn thành công việc sớm, có trọn vẹn thời gian buổi trưa và chiều cho gia đình."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Bán 3,5 tiếng ca sáng giúp tối ưu doanh thu/giờ cao nhất, chủ xe giữ gìn sức khỏe, vừa có thu nhập ổn định vừa có thời gian chăm lo gia đình.",
-    "quote": "Mình bán gọn 3 tiếng rưỡi buổi sáng lúc khách đông nhất, vừa khỏe người vừa giữ trọn tiền lời, chiều tối Cô Chú thảnh thơi nghỉ ngơi cùng con cháu ạ!"
+    "correctAnswer": "c",
+    "explanation": "Khung giờ vàng sáng sớm vừa tối ưu doanh thu, vừa giúp chủ xe có cuộc sống cân bằng, tự do thời gian.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-60",
     "stableId": "sale-60",
+    "displayNumber": 60,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Khi thuê mặt bằng hiên nhà bán bánh mì sáng, điều khoản nào nên được thỏa thuận rõ ràng với chủ nhà?",
+    "question": "Về việc giữ gìn trật tự và an toàn giao thông trước điểm bán, quy chuẩn thao tác là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Yêu cầu chủ nhà giao toàn bộ chìa khóa phòng ngủ cho người bán"
+        "text": "Kéo dài thời gian làm bánh từ 5 đến 10 phút mỗi ổ để tạo cảnh đông đúc."
       },
       {
         "key": "b",
-        "text": "Bắt buộc chủ nhà phải đứng ra chiên chả cá phụ người bán mỗi sáng"
+        "text": "Để khách hàng dừng đỗ xe tràn ra giữa lòng đường gây ách tắc giao thông."
       },
       {
         "key": "c",
-        "text": "Khung giờ sử dụng mặt bằng (5h30-9h00 sáng), nguồn điện/nước dùng cho xe và vị trí cất gửi xe gọn gàng sau ca bán."
+        "text": "Bày biện nhiều bảng hiệu quảng cáo chắn hết lối đi của người đi bộ."
       },
       {
         "key": "d",
-        "text": "Cam kết chia 50% doanh thu bán bánh mì cho chủ nhà"
+        "text": "Bố trí xe gọn gàng, hướng dẫn khách dựng xe sát mép đường và thao tác làm bánh nhanh để khách rời đi ngay."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Thỏa thuận rõ giờ giấc (5h30-9h00), tiền điện/nước và chỗ gửi xe giúp mối quan hệ với chủ nhà luôn hòa thuận, gắn bó lâu dài.",
-    "quote": "Cô Chú thỏa thuận rõ với chủ nhà: con bán từ 5h30 đến 9h00 sáng, dọn dẹp sạch bóng và gửi tiền điện nước rõ ràng là chủ nhà rất quý và ủng hộ lâu dài!"
+    "correctAnswer": "d",
+    "explanation": "Phục vụ nhanh trong 1 phút và sắp xếp xe gọn gàng giúp giữ an toàn giao thông và tạo thiện cảm với khu phố.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-61",
     "stableId": "sale-61",
+    "displayNumber": 61,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Những địa điểm nào sau đây KHÔNG PHÙ HỢP để đặt xe Bánh Mì Má Hải?",
+    "question": "Khi điểm bán gần trường học, khung giờ cao điểm tập trung đông học sinh mua bánh thường là lúc nào?",
     "options": [
       {
         "key": "a",
-        "text": "Đoạn đường một chiều có dải phân cách cứng cao, xe cộ di chuyển tốc độ cao và không có lề đường để dừng đỗ."
+        "text": "Từ 6h15 đến 7h00 sáng (trước giờ vào lớp của các khối tiểu học, THCS và THPT)."
       },
       {
         "key": "b",
-        "text": "Gần cổng trường học cấp 1, cấp 2 và trường đại học"
+        "text": "Từ 8h30 đến 9h30 sáng."
       },
       {
         "key": "c",
-        "text": "Trước cổng bệnh viện hoặc khu văn phòng công sở"
+        "text": "Từ 11h00 đến 12h00 trưa."
       },
       {
         "key": "d",
-        "text": "Gần các ngã tư đèn đỏ có lượng người dừng chờ xe đông đúc"
+        "text": "Từ 14h00 đến 15h00 chiều."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Đoạn đường tốc độ cao, không có lề dừng đỗ khiến khách không thể tấp vào mua hàng an toàn, ảnh hưởng trực tiếp đến doanh số.",
-    "quote": "Đoạn đường xe chạy quá nhanh hoặc không có chỗ tấp lề thì khách rất ngại dừng, mình nên chọn chỗ vỉa hè rộng rãi để khách ghé mua an toàn nhé!"
+    "explanation": "Học sinh tập trung ăn sáng lúc 6h15–7h00, cần chuẩn bị sẵn nguyên liệu để chiên chả liên tục phục vụ nhanh.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-62",
     "stableId": "sale-62",
+    "displayNumber": 62,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Lợi thế lớn nhất khi đặt xe Bánh Mì Má Hải trước một quán cà phê buổi sáng là gì?",
+    "question": "Khi điểm bán nằm gần khu công nghiệp hoặc văn phòng, lượng khách đổ dồn đông nhất vào thời gian nào?",
     "options": [
       {
         "key": "a",
-        "text": "Được sử dụng miễn phí máy pha cà phê của quán"
+        "text": "Từ 9h00 đến 10h00 sáng."
       },
       {
         "key": "b",
-        "text": "Khách ngồi uống cà phê có nhu cầu ăn sáng tại chỗ rất cao, tạo nên lượng khách quen tự nhiên phối hợp cùng chiều lợi ích với chủ quán nước."
+        "text": "Từ 6h45 đến 7h45 sáng (trước giờ điểm danh vào ca làm việc của công nhân và nhân viên)."
       },
       {
         "key": "c",
-        "text": "Chủ xe không cần phải chiên chả cá mà quán cà phê làm thay"
+        "text": "Từ 13h00 đến 14h00 chiều."
       },
       {
         "key": "d",
-        "text": "Chủ quán cà phê sẽ bao tiêu 100% số lượng bánh mì mỗi ngày"
+        "text": "Từ 17h00 đến 18h00 tối."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Cộng sinh 'Ăn bánh mì - Uống cà phê' là mô hình kinh điển: Khách vừa có bữa sáng trọn vẹn, quán nước bán thêm nước, chủ xe bán thêm bánh mì.",
-    "quote": "Bán trước quán cà phê sáng là lợi đôi đường, khách uống nước gọi thêm ổ bánh mì Má Hải nóng giòn, chủ quán vừa vui mà mình vừa bán đắt hàng!"
+    "explanation": "Khung giờ 6h45–7h45 phục vụ công nhân và nhân viên văn phòng, thao tác nhanh tay giúp bán 50-70 ổ trong 1 tiếng.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-63",
     "stableId": "sale-63",
+    "displayNumber": 63,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Khi đối tác hỏi 'Nếu tôi chuyển nhà thì có được chuyển xe bánh mì sang địa điểm mới không?', câu trả lời đúng quy chế là gì?",
+    "question": "Khi đối tác muốn chuyển xe bánh mì sang địa điểm mới do chuyển nhà, quy trình thực hiện như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Đối tác tự ý dời xe đến bất kỳ vị trí nào mà không cần kiểm tra lại khoảng cách bảo vệ với các xe xung quanh."
+        "text": "Bắt buộc phải mua lại một gói hợp tác mới từ đầu."
       },
       {
         "key": "b",
-        "text": "Đối tác phải đăng ký mua lại một gói hợp tác mới từ đầu để được cấp quyền bán tại địa chỉ mới."
+        "text": "Tự ý chuyển xe đến bất kỳ đâu mà không cần kiểm tra tọa độ."
       },
       {
         "key": "c",
-        "text": "Đối tác được chuyển sang vị trí mới sau khi gửi định vị để công ty quét Map Tracker xác nhận không bị trùng khoảng cách bảo vệ với xe khác."
+        "text": "Gửi định vị địa chỉ mới cho công ty quét Map Tracker xác nhận cự ly an toàn 300m trước khi dời xe."
       },
       {
         "key": "d",
-        "text": "Đối tác chỉ được phép chuyển xe vào các khung giờ buổi chiều tối ngoài khung giờ bán hàng chính 5h30–9h00."
+        "text": "Chỉ được phép chuyển xe vào các khung giờ ban đêm."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Công ty luôn hỗ trợ đối tác chuyển địa điểm linh hoạt, chỉ cần quét kiểm tra Map Tracker vị trí mới không vi phạm cự ly bảo vệ của xe hiện hữu.",
-    "quote": "Dạ Cô Chú chuyển chỗ ở thì gửi định vị điểm mới cho con kiểm tra trên Map Tracker, nếu vị trí trống là công ty hỗ trợ cập nhật điểm bán mới ngay ạ!"
+    "explanation": "Chuyển địa điểm chỉ cần quét lại Map Tracker bảo đảm cự ly an toàn là được chuyển ngay, hoàn toàn miễn phí.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-64",
     "stableId": "sale-64",
+    "displayNumber": 64,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Về tính tiện lợi và thời gian phục vụ của mô hình Bánh Mì Má Hải, nhận định nào sau đây là KHÔNG ĐÚNG?",
+    "question": "Mô hình xe bánh mì hiên nhà giúp chủ xe tiết kiệm những chi phí cố định nào so với mở quán ăn lớn?",
     "options": [
       {
         "key": "a",
-        "text": "Thao tác làm bánh nhanh gọn trong vòng 1 đến 2 phút cho mỗi khách hàng"
+        "text": "Phải đóng các khoản phí duy trì thương hiệu định kỳ hàng quý."
       },
       {
         "key": "b",
-        "text": "Khách hàng mua mang đi nhanh chóng không phải chờ đợi lâu trên đường đi làm"
+        "text": "Bắt buộc phải chi tiền mua máy tính tiền và hệ thống camera đắt đỏ."
       },
       {
         "key": "c",
-        "text": "Khách hàng bắt buộc phải ngồi chờ tại bàn ít nhất 30 phút mới nhận được bánh mì."
+        "text": "Phải trả chi phí nhượng quyền hàng tháng từ 10 đến 20 triệu đồng."
       },
       {
         "key": "d",
-        "text": "Chả cá sợi chiên sẵn theo mẻ nhỏ giúp thao tác kẹp bánh nóng giòn tức thì"
+        "text": "Tiết kiệm tiền cọc mặt bằng 3-6 tháng, không tốn tiền sửa chữa xây dựng quán, không tốn chi phí thuê nhân viên."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Bánh mì ăn sáng là sản phẩm Take-away siêu tốc, tốc độ phục vụ chuẩn là 1-2 phút/khách. Ngồi chờ 30 phút là hoàn toàn sai thực tế.",
-    "quote": "Khách sáng vội đi làm nên tốc độ làm bánh trong 1 phút là chìa khóa vàng, chiên chả từng mẻ sẵn kẹp vào là giao ngay bánh nóng giòn ạ!"
+    "correctAnswer": "d",
+    "explanation": "Mô hình tinh gọn nhẹ vốn, không gánh nặng chi phí cố định giúp chủ xe an tâm buôn bán không lo áp lực.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-65",
     "stableId": "sale-65",
+    "displayNumber": 65,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Khi khách hàng chia sẻ: 'Tôi chỉ có sẵn khoảng 5 triệu tiền vốn', gói hợp tác nào là giải pháp phù hợp và an toàn nhất?",
+    "question": "Những tiêu chí quan trọng nào để đánh giá một mặt bằng hiên nhà có tiềm năng bán trên 100 ổ/sáng?",
     "options": [
       {
         "key": "a",
-        "text": "Gói 4,8 triệu đồng (tận dụng xe sẵn có, công ty bàn giao trọn bộ nhận diện, chảo chiên, dụng cụ, đồng phục và cẩm nang bán hàng)."
+        "text": "Lưu lượng người qua lại đông đúc, tầm nhìn xe không bị cây cối che khuất, chủ nhà dễ tính và giá thuê hợp lý."
       },
       {
         "key": "b",
-        "text": "Gói 10,3 triệu đồng (Gói Xe Mới đầy đủ tiện ích)"
+        "text": "Mặt bằng nằm trong hẻm sâu nhưng có gắn biển quảng cáo lớn."
       },
       {
         "key": "c",
-        "text": "Gói 50 triệu đồng dành cho đại lý phân phối cấp tỉnh"
+        "text": "Mặt bằng có giá thuê cực đắt trên 30 triệu đồng/tháng."
       },
       {
         "key": "d",
-        "text": "Không có gói nào phù hợp với mức vốn dưới 10 triệu đồng"
+        "text": "Mặt bằng chỉ có người qua lại vào các ngày cuối tuần."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Gói 4,8 triệu đồng là giải pháp vừa vặn hoàn hảo cho người có sẵn xe hoặc tủ kính cá nhân, mở bán với số vốn khởi điểm chỉ dưới 5 triệu đồng.",
-    "quote": "Dạ với mức vốn 5 triệu thì Cô Chú chọn Gói 4,8 triệu là chuẩn nhất, có đủ decal nhận diện, chảo chiên và đồ nghề để mở bán ngay ạ!"
+    "explanation": "Lưu lượng xe cộ đông + Dễ tấp vào + Tầm nhìn sáng sủa + Chủ nhà thân thiện = Công thức điểm bán 100 ổ/sáng.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-66",
     "stableId": "sale-66",
+    "displayNumber": 66,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Trong các nhận định sau đây về sự hỗ trợ của công ty khi đối tác gặp sự cố trong quá trình bán hàng, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
+    "question": "Khi chủ xe có việc gia đình đột xuất cần tạm ngưng bán ngắn ngày, quy định của công ty được áp dụng ra sao?",
     "options": [
       {
         "key": "a",
-        "text": "Đội ngũ chuyên viên hỗ trợ trực tuyến qua điện thoại và Zalo luôn túc trực để hướng dẫn giải quyết sự cố từ xa."
+        "text": "Bị tước quyền kinh doanh ngay trong ngày đầu tiên nghỉ bán."
       },
       {
         "key": "b",
-        "text": "Kênh đặt hàng trực tuyến giúp chủ xe chủ động lên đơn nguyên vật liệu tươi mới giao tận nơi theo lịch trình."
+        "text": "Chủ động tạm ngưng bán ngắn ngày và bảo quản nguyên liệu đúng cách; nếu nghỉ dài từ 30 ngày cần báo để giữ vị trí."
       },
       {
         "key": "c",
-        "text": "Bộ phận chăm sóc khách hàng hỗ trợ giải đáp mọi thắc mắc về kỹ thuật chiên chả cá và thao tác tại điểm bán."
+        "text": "Bắt buộc phải thuê người ngoài đứng bán thay bằng mọi giá."
       },
       {
         "key": "d",
-        "text": "Công ty cắt đứt toàn bộ liên lạc và không hỗ trợ bất kỳ giải đáp nào sau khi đã bàn giao xe."
+        "text": "Bị hủy bỏ hợp đồng và thu hồi lại toàn bộ trang thiết bị."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Má Hải luôn đồng hành liên tục cùng đối tác trong suốt quá trình kinh doanh qua hotline, Zalo và nhóm hỗ trợ kỹ thuật.",
-    "quote": "Sau khi nhận xe Cô Chú luôn có đội ngũ chăm sóc khách hàng đồng hành mỗi ngày, bất cứ thắc mắc gì gọi qua Zalo là được hỗ trợ ngay ạ!"
+    "correctAnswer": "b",
+    "explanation": "Má Hải tôn trọng quyền tự chủ của chủ xe, chỉ cần thông báo nếu nghỉ dài ngày để công ty giữ vị trí trên bản đồ.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-67",
     "stableId": "sale-67",
+    "displayNumber": 67,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Khi chủ xe có việc gia đình đột xuất cần tạm ngưng bán vài ngày, quy định của công ty được áp dụng như thế nào?",
+    "question": "Tại sao việc đặt xe lùi hẳn vào trong hiên nhà là yêu cầu bắt buộc của quy chuẩn điểm bán Má Hải?",
     "options": [
       {
         "key": "a",
-        "text": "Đối tác phải làm thủ tục chấm dứt hợp đồng và bàn giao lại xe ngay khi phát sinh việc gia đình."
+        "text": "Để xe không bị dính bụi từ các phương tiện giao thông."
       },
       {
         "key": "b",
-        "text": "Đối tác phải chuyển nhượng lại toàn bộ nguyên vật liệu tồn cho một điểm bán khác trong cùng khu vực."
+        "text": "Để giấu xe bánh mì không cho người đi đường nhìn thấy."
       },
       {
         "key": "c",
-        "text": "Đối tác được chủ động tạm ngưng bán ngắn ngày và bảo quản nguyên liệu đúng cách; trường hợp tạm ngưng dài ngày từ 30 ngày trở lên cần thông báo để giữ vị trí điểm bán."
+        "text": "Bảo đảm lối đi thông thoáng cho người đi bộ, không lấn chiếm lòng lề đường và giữ an toàn cho người mua."
       },
       {
         "key": "d",
-        "text": "Đối tác bắt buộc phải mở bán liên tục không được phép nghỉ bất kỳ ngày nào kể cả dịp lễ tết."
+        "text": "Để chủ xe có thể ngồi nghỉ ngơi bên trong nhà suốt ca bán."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Công ty luôn thấu hiểu các công việc gia đình phát sinh, hỗ trợ đối tác nghỉ ngắn ngày linh hoạt và bảo lưu vị trí nếu có thông báo rõ ràng.",
-    "quote": "Cô Chú có việc bận vài ngày thì cứ an tâm nghỉ lo việc nhà, bảo quản chả cá trong tủ đông cẩn thận, khi nào thu xếp xong mở bán lại bình thường ạ!"
+    "explanation": "Đặt xe lùi trong hiên thể hiện văn hóa kinh doanh văn minh đô thị, giúp điểm bán hoạt động an tâm lâu dài.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-68",
     "stableId": "sale-68",
+    "displayNumber": 68,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Khi người nhà khách hàng còn băn khoăn muốn tìm hiểu thêm về tính xác thực của thương hiệu, những tài liệu thực tế nào giúp gia đình an tâm nhất?",
+    "question": "Lợi ích của việc mở bán đều đặn đúng giờ 5h30 sáng mỗi ngày đối với việc tích lũy khách quen là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Giấy viết tay cam kết lợi nhuận của một người môi giới tự do ngoài đường"
+        "text": "Để cạnh tranh với các quán nhậu mở thâu đêm."
       },
       {
         "key": "b",
-        "text": "Phóng sự Shark Tank Việt Nam, Giấy chứng nhận an toàn thực phẩm, hình ảnh mạng lưới hơn 1.200 xe đang hoạt động và hợp đồng nhượng quyền mẫu minh bạch."
+        "text": "Chỉ để phục vụ cho các nhân viên giao hàng đêm."
       },
       {
         "key": "c",
-        "text": "Các bài viết nặc danh không rõ nguồn gốc trên các diễn đàn mạng xã hội"
+        "text": "Không có tác dụng gì vì khách hàng mua giờ nào cũng như nhau."
       },
       {
         "key": "d",
-        "text": "Hình ảnh chụp các quán ăn sang trọng ở nước ngoài"
+        "text": "Tạo thói quen ăn sáng cố định cho người đi làm sớm, xây dựng uy tín và lượng khách quen trung thành vững chắc."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Hồ sơ pháp lý, phóng sự truyền hình Shark Tank, chứng nhận ATTP và hình ảnh 1.200 điểm bán thực tế là bảo chứng uy tín vững chắc nhất cho cả gia đình.",
-    "quote": "Con gửi trọn bộ phóng sự Shark Tank, chứng nhận ATTP và hợp đồng mẫu qua Zalo để Cô Chú cùng gia đình xem kỹ cho thật an tâm nhé!"
+    "correctAnswer": "d",
+    "explanation": "Bán đều đặn đúng giờ là bí quyết giữ khách quen số 1, khách đi làm qua là yên tâm luôn có bánh mì nóng.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-69",
     "stableId": "sale-69",
+    "displayNumber": 69,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Về quy định giá bán lẻ bánh mì tại các điểm bán trên toàn hệ thống, nhận định nào sau đây là KHÔNG ĐÚNG?",
+    "question": "Khi mặt bằng hiên nhà nằm ngay ngã ba hoặc ngã tư có đèn tín hiệu giao thông, ưu thế bán hàng là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Đối tác được phép bán phá giá dưới 10.000đ/ổ bằng cách độn bột và giảm bớt chả cá để cạnh tranh không lành mạnh."
+        "text": "Khách dừng đèn đỏ dễ dàng quan sát nhận diện xe bánh mì màu cam nổi bật và thuận tiện tấp vào mua nhanh."
       },
       {
         "key": "b",
-        "text": "Giá sàn tối thiểu khuyến nghị toàn hệ thống là 15.000đ/ổ để bảo đảm tiền lời bền vững từ 5.000đ – 5.500đ cho người bán."
+        "text": "Làm cản trở giao thông của các phương tiện rẽ phải."
       },
       {
         "key": "c",
-        "text": "Tùy theo sức mua tại từng địa phương, chủ xe có thể linh hoạt bán mức giá 18.000đ, 20.000đ hoặc 25.000đ/ổ."
+        "text": "Khách hàng không thể dừng lại mua vì đèn đỏ quá nhanh."
       },
       {
         "key": "d",
-        "text": "Chất lượng và định lượng chả cá sợi trong ổ bánh mì phải luôn được bảo đảm đồng đều"
+        "text": "Chỉ bán được cho người đi bộ qua đường."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Hệ thống nghiêm cấm bán phá giá dưới mức sàn kèm giảm chất lượng làm tổn hại uy tín thương hiệu chung của toàn chuỗi.",
-    "quote": "Giá bán khuyến nghị từ 15k đến 20k bảo đảm chất lượng chả cá sợi đầy đặn và mang lại đồng lời xứng đáng cho công sức của Cô Chú!"
+    "explanation": "Điểm dừng đèn đỏ là vị trí vàng về nhận diện, khách có 30-45 giây quan sát biển hiệu và ghé mua bánh.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-70",
     "stableId": "sale-70",
+    "displayNumber": 70,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Lý do cốt lõi vì sao Bánh Mì Má Hải áp dụng chính sách 0đ phí nhượng quyền hàng tháng và 0% trích doanh số bán bánh?",
+    "question": "Khi ký hợp đồng thuê hiên nhà với chủ nhà, những điều khoản nào cần được thỏa thuận rõ ràng?",
     "options": [
       {
         "key": "a",
-        "text": "Vì công ty không quan tâm đến sự phát triển của hệ thống điểm bán"
+        "text": "Yêu cầu chủ nhà phải phụ bán bánh mì mỗi sáng."
       },
       {
         "key": "b",
-        "text": "Vì công ty muốn thu hút người mua rồi sau đó sẽ bất ngờ tăng giá nguyên liệu gấp 10 lần"
+        "text": "Khung giờ sử dụng hiên (5h30–9h00), mức giá thuê cố định, vị trí cắm điện thắp sáng và chỗ để nước dọn dẹp."
       },
       {
         "key": "c",
-        "text": "Vì đây là chương trình thử nghiệm ngắn hạn trong 1 tuần rồi sẽ hủy bỏ"
+        "text": "Bắt buộc chủ nhà phải chuyển đi nơi khác trong khung giờ bán."
       },
       {
         "key": "d",
-        "text": "Xây dựng mối quan hệ cộng sinh cùng chiều lợi ích: Điểm bán buôn bán phát đạt và giữ trọn 100% tiền lời thì thương hiệu mới phát triển bền vững lâu dài."
+        "text": "Thỏa thuận chia 50% lợi nhuận bán bánh cho chủ nhà."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Triết lý cùng chiều lợi ích: Người bán có lời bỏ túi trọn vẹn, công ty phát triển nhờ sản lượng nguyên liệu cung ứng ổn định lâu dài.",
-    "quote": "Má Hải không thu bất kỳ đồng phí quản lý nào để Cô Chú giữ trọn tiền lời, Cô Chú bán càng đắt hàng thì công ty mới phát triển bền lâu ạ!"
+    "correctAnswer": "b",
+    "explanation": "Thỏa thuận rõ giờ giấc, giá thuê, điện nước và giữ vệ sinh giúp mối quan hệ với chủ nhà luôn êm đẹp, bền lâu.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-71",
     "stableId": "sale-71",
+    "displayNumber": 71,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Về chính sách hoàn trả tiền đặt cọc 2.000.000đ khi mở xe, nhận định nào sau đây là KHÔNG ĐÚNG?",
+    "question": "Chính sách hỗ trợ thu hồi xe trong 60 ngày đầu khi đối tác gặp sự cố bất khả kháng được quy định chi tiết như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Tiền cọc được hoàn trả nhanh chóng nếu công ty chưa tiến hành xuất kho xe hoặc chưa in ấn decal thương hiệu."
+        "text": "Yêu cầu đối tác phải tự liên hệ các điểm thu mua phế liệu trên thị trường tự do."
       },
       {
         "key": "b",
-        "text": "Đặt cọc 2 triệu giúp công ty khóa giữ vị trí độc quyền khoảng cách trên Map Tracker cho khách hàng"
+        "text": "Chỉ áp dụng bảo dưỡng khung xe mà không có chính sách hoàn tiền hỗ trợ tài chính cho đối tác."
       },
       {
         "key": "c",
-        "text": "Số tiền cọc 2 triệu được cấn trừ 100% vào giá trị gói khi hoàn tất giao nhận phương tiện"
+        "text": "Hỗ trợ thu hồi lại xe và hoàn trả số tiền tối đa lên đến 2.800.000đ tùy hiện trạng thực tế, hoặc hỗ trợ sang nhượng 0đ."
       },
       {
         "key": "d",
-        "text": "Đối tác được quyền yêu cầu hoàn trả cọc bất kỳ lúc nào sau 1 năm dù xe đã được sản xuất và bàn giao đưa vào sử dụng."
+        "text": "Hoàn lại toàn bộ chi phí nguyên vật liệu chả cá và tiền thuê hiên nhà đã chi trả."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Khi xe đã sản xuất và bàn giao đưa vào kinh doanh thì tiền cọc đã được cấn trừ vào giá trị gói, không còn khái niệm hoàn cọc sau khi đã nhận xe.",
-    "quote": "Tiền cọc 2 triệu được cấn trừ 100% vào gói xe khi giao hàng, thủ tục minh bạch và bảo đảm quyền lợi tối đa cho Cô Chú ạ!"
+    "correctAnswer": "c",
+    "explanation": "Chính sách nhân văn bảo hiểm an toàn vốn: Hỗ trợ thu hồi hoàn tối đa 2,8 triệu tùy hiện trạng thực tế hoặc sang nhượng 0đ.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-72",
     "stableId": "sale-72",
+    "displayNumber": 72,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Chính sách bảo chứng an toàn vốn trong 60 ngày đầu hỗ trợ thu hồi xe và bảo toàn vốn cho chủ xe như thế nào nếu gặp sự cố bất khả kháng?",
+    "question": "Về cự ly bảo vệ điểm bán, lý do tại sao không áp dụng cự ly quá ngắn như 50m – 100m giống thị trường tự do?",
     "options": [
       {
         "key": "a",
-        "text": "Hỗ trợ thu hồi lại xe và hoàn trả số tiền tối đa lên đến 2.800.000đ tùy theo hiện trạng thực tế của xe và thiết bị, hoặc hỗ trợ kết nối chuyển nhượng điểm bán 0 đồng."
+        "text": "Vì phần mềm Map Tracker không thể đo được cự ly dưới 100m."
       },
       {
         "key": "b",
-        "text": "Chỉ áp dụng bảo dưỡng khung xe mà không có chính sách thu hồi hỗ trợ hoàn tiền cho đối tác."
+        "text": "Vì khách hàng không thích nhìn thấy nhiều xe bánh mì cùng một màu."
       },
       {
         "key": "c",
-        "text": "Yêu cầu đối tác phải tự liên hệ các điểm thu mua đồ cũ trên thị trường tự do để tự thanh lý xe."
+        "text": "Vì công ty không đủ xe để cung ứng cho các cự ly ngắn."
       },
       {
         "key": "d",
-        "text": "Hoàn lại toàn bộ chi phí nguyên vật liệu chả cá và tiền thuê hiên nhà đã chi trả trong 2 tháng."
+        "text": "Cự ly quá ngắn sẽ dẫn đến việc các xe cùng chuỗi giẫm chân nhau, chia nhỏ lượng khách và làm giảm tiền lời của chủ xe."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Chính sách nhân văn: Hỗ trợ thu hồi xe trong 60 ngày hoàn tối đa 2,8 triệu tùy hiện trạng thực tế hoặc kết nối sang nhượng 0 đồng.",
-    "quote": "Chính sách nhân văn của Má Hải: Hỗ trợ thu hồi xe trong 60 ngày hoàn tối đa 2,8 triệu tùy hiện trạng thực tế hoặc kết nối sang nhượng 0 đồng."
+    "correctAnswer": "d",
+    "explanation": "Cự ly 300m/500m bảo đảm vùng doanh thu độc quyền cho từng chủ xe, triệt tiêu hoàn toàn rủi ro cạnh tranh nội bộ.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-73",
     "stableId": "sale-73",
+    "displayNumber": 73,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Tại điểm bán Bánh Mì Má Hải, độ giòn nóng và thơm ngon của ổ bánh mì được bảo đảm nhờ những yếu tố thực tế nào?",
+    "question": "Khi khảo sát mặt bằng tại các khu đô thị mới hoặc chung cư, yếu tố then chốt cần chú ý là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Bánh mì được bảo quản trong tủ cấp đông nhiều ngày rồi mang ra rã đông"
+        "text": "Vị trí đặt xe nằm ngay lối ra vào cổng chính hoặc sảnh đón xe buýt nơi cư dân tập trung đi làm buổi sáng."
       },
       {
         "key": "b",
-        "text": "Bánh mì lấy mới mỗi sáng sớm tại lò bánh mì gần điểm bán, xe có thùng giữ nóng/tủ kính chắn gió sạch sẽ và chả cá sợi được chiên nóng hổi kẹp ngay tại chỗ."
+        "text": "Đặt xe sâu trong tầng hầm để xe của chung cư."
       },
       {
         "key": "c",
-        "text": "Sử dụng các loại hóa chất tạo độ giòn nhân tạo vào vỏ bánh mì"
+        "text": "Đặt xe trên sân thượng của tòa nhà chung cư."
       },
       {
         "key": "d",
-        "text": "Bánh mì được nướng sẵn từ đêm hôm trước và để ngoài trời"
+        "text": "Chỉ mở bán vào các ngày cư dân tổ chức họp tổ dân phố."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Vỏ bánh mì mới lấy từ lò gần điểm bán mỗi sáng + chả cá chiên tại chỗ kẹp vào + sốt Tứ Vị tạo nên ổ bánh mì giòn rụm nóng hổi chuẩn thương hiệu.",
-    "quote": "Bánh mì sáng lấy mới từ lò bánh gần nhà, kẹp cùng chả cá vừa vớt từ chảo dầu nóng hổi ra thì ổ bánh giòn tan thơm lừng khách mê ngay!"
+    "correctAnswer": "a",
+    "explanation": "Cổng chính và sảnh đón là nút thắt giao thông của chung cư, đón trọn vẹn dòng người đi làm mỗi sáng.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-74",
     "stableId": "sale-74",
+    "displayNumber": 74,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Trong các nhận định sau đây về chất lượng nguyên liệu của Nhà Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
+    "question": "Về việc sử dụng nguồn điện tại điểm bán bánh mì, quy chuẩn vận hành thực tế là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Chả cá sợi Má Hải có hàm lượng đạm kiểm nghiệm đạt 17% từ thịt cá biển tươi"
+        "text": "Bắt buộc phải có nguồn điện 3 pha công suất lớn mới vận hành được xe."
       },
       {
         "key": "b",
-        "text": "Nước sốt Tứ Vị đóng can tiện lợi đạt các tiêu chuẩn kiểm nghiệm an toàn thực phẩm"
+        "text": "Xe vận hành độc lập hoàn toàn bằng bình gas và bếp chiên; nguồn điện chỉ là lựa chọn phụ nếu muốn cắm thêm đèn thắp sáng."
       },
       {
         "key": "c",
-        "text": "Nguồn nguyên liệu được kiểm soát đồng bộ từ khâu sản xuất đến vận chuyển nhằm giữ trọn vị ngon tươi mới."
+        "text": "Xe chỉ chạy bằng năng lượng mặt trời và không dùng gas."
       },
       {
         "key": "d",
-        "text": "Chả cá sợi Má Hải được làm từ chả cá ươn và độn 90% bột mì tạp chất."
+        "text": "Bắt buộc đối tác phải kéo dây điện dài hàng trăm mét từ nhà ra xe."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Chả cá Má Hải đạt 17% đạm cá biển tươi, không độn bột. Phát biểu làm từ cá ươn độn bột là hoàn toàn sai sự thật.",
-    "quote": "Chả cá sợi Má Hải chuẩn 17% đạm cá biển tươi, dai ngọt tự nhiên từ thịt cá, tuyệt đối không dùng hàng trôi nổi kém chất lượng ạ!"
+    "correctAnswer": "b",
+    "explanation": "Xe chạy gas độc lập 100%, không lệ thuộc nguồn điện giúp đối tác linh hoạt đặt xe tại mọi vị trí hiên nhà.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-75",
     "stableId": "sale-75",
+    "displayNumber": 75,
     "sectionNo": 3,
     "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-    "question": "Khi nhận thấy khách hàng đã rất thích mô hình nhưng còn ngần ngại chưa ra quyết định, hành vi nào sau đây là KHÔNG PHÙ HỢP quy chuẩn tư vấn?",
+    "question": "Những giá trị vượt trội nào của phần mềm Map Tracker giúp đối tác an tâm tuyệt đối khi đầu tư mở xe?",
     "options": [
       {
         "key": "a",
-        "text": "Chủ động đặt câu hỏi gợi mở để lắng nghe xem khách còn băn khoăn điều gì nhất nhằm hỗ trợ tháo gỡ"
+        "text": "Kiểm tra tọa độ nhanh chóng, minh bạch và chính xác bằng bản đồ vệ tinh."
       },
       {
         "key": "b",
-        "text": "Đưa ra 2 lựa chọn khung giờ thuận tiện để hỗ trợ gửi hợp đồng mẫu cho khách xem trước cùng gia đình."
+        "text": "Khóa cứng vị trí độc quyền 300m/500m/1.000m trên toàn hệ thống không ai được xâm phạm."
       },
       {
         "key": "c",
-        "text": "Tự ý chốt ngày khai trương và ép xuất kho bàn giao xe khi khách hàng chưa đồng ý ký kết hợp đồng."
+        "text": "Tất cả các tính năng trên đều bảo đảm quyền lợi độc quyền tối cao cho đối tác."
       },
       {
         "key": "d",
-        "text": "Cung cấp thêm hình ảnh các xe đang bán thực tế và phóng sự Shark Tank để củng cố niềm tin."
+        "text": "Lưu trữ hồ sơ điểm bán trọn đời và bảo vệ quyền lợi kinh doanh lâu dài cho chủ xe."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Tư vấn viên luôn tôn trọng quyền quyết định của khách hàng, tuyệt đối không được tự ý ép cọc hoặc tự ý xuất kho khi chưa có sự đồng thuận.",
-    "quote": "Bên con luôn tôn trọng quyết định của Cô Chú, con gửi hợp đồng mẫu qua Zalo để Cô Chú cùng gia đình xem kỹ lưỡng rồi mới tiến hành nhé!"
+    "explanation": "Map Tracker là vũ khí công nghệ bảo vệ độc quyền vùng kinh doanh và tạo sự an tâm tuyệt đối cho chủ xe.",
+    "quote": "Vị trí hiên nhà đẹp đón đầu dòng người đi làm sáng sớm là chìa khóa giúp Cô Chú bán 80–100 ổ nhẹ nhàng mỗi ngày ạ!"
   },
   {
     "id": "sale-76",
     "stableId": "sale-76",
+    "displayNumber": 76,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Nhiệt độ dầu lý tưởng để chiên chả cá sợi Má Hải đạt độ phồng căng, vàng ruộm và giòn xốp là bao nhiêu?",
+    "question": "Đặc tính cảm quan chuẩn mực của sợi Chả cá Má Hải sau khi chiên ngập dầu nóng 1–2 phút là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Từ 80°C đến 100°C (nước sôi lăn tăn)"
+        "text": "Sợi chả có màu trắng bệch và không có mùi thơm."
       },
       {
         "key": "b",
-        "text": "Từ 160°C đến 170°C (dầu nóng sôi tim, thả sợi chả vào là phồng nở ngay)."
+        "text": "Sợi chả bị cháy đen và có vị đắng ngắt."
       },
       {
         "key": "c",
-        "text": "Trên 250°C (dầu bốc khói đen đặc)"
+        "text": "Sợi chả bị mềm nhũn, ngấm nhiều dầu và bở rệp do độn bột."
       },
       {
         "key": "d",
-        "text": "Dùng dầu nguội không cần đun nóng"
+        "text": "Sợi chả phồng vàng ruộm, vỏ ngoài giòn dai, bên trong ngọt đậm đà, mọng nước và thơm nức mùi cá biển."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Nhiệt độ chuẩn 160°C - 170°C giúp chả cá sợi định hình nhanh, phồng căng vàng ruộm, không ngấm dầu và giữ được độ ngọt mọng nước bên trong.",
-    "quote": "Dầu sôi tim ở 160-170 độ là nhiệt độ vàng, thả mẻ chả cá sợi vào là phồng căng vàng ươm, vớt ra ráo dầu giòn tan thơm lừng ạ!"
+    "correctAnswer": "d",
+    "explanation": "Chả cá 17% đạm cá biển tươi chiên 1-2 phút phồng giòn vàng ruộm, dai ngọt mọng nước tạo nên vị ngon độc quyền.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-77",
     "stableId": "sale-77",
+    "displayNumber": 77,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Tỷ lệ vàng phối trộn nguyên liệu trong một ổ Bánh Mì Má Hải chuẩn vị thơm ngon là gì?",
+    "question": "Nhiệt độ dầu chiên tiêu chuẩn để chả cá sợi phồng giòn vàng đều và không bị ngậm dầu là bao nhiêu?",
     "options": [
       {
         "key": "a",
-        "text": "90% rau dưa và 10% chả cá sợi chiên"
+        "text": "Nhiệt độ từ 160°C đến 170°C (dầu sủi tăm nhẹ, thả sợi chả vào nổi lên và phồng ngay)."
       },
       {
         "key": "b",
-        "text": "50% ớt cay xé lưỡi và 50% bánh mì nguội"
+        "text": "Nhiệt độ từ 70°C đến 80°C (dầu còn nguội)."
       },
       {
         "key": "c",
-        "text": "Tỷ lệ 70/30 (70% trọng tâm là chả cá sợi chiên nóng giòn + 30% dưa leo, rau răm tươi, nước sốt Tứ Vị đậm đà và vỏ bánh mì giòn)."
+        "text": "Nhiệt độ trên 250°C (dầu bốc khói đen nguy hiểm)."
       },
       {
         "key": "d",
-        "text": "100% chỉ có chả cá và không cho bất kỳ loại rau sốt nào"
+        "text": "Không cần đun nóng dầu, thả chả vào dầu nguội."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Tỷ lệ 70/30 tạo sự cân bằng hoàn hảo: Chả cá sợi ngập tràn làm điểm nhấn chính, rau răm dưa leo chống ngấy và sốt Tứ Vị hòa quyện đậm đà.",
-    "quote": "Ổ bánh mì Má Hải chuẩn 70% chả cá sợi nóng giòn kết hợp 30% rau dưa và sốt Tứ Vị, ăn vào vừa giòn thơm vừa đậm đà khó cưỡng!"
+    "correctAnswer": "a",
+    "explanation": "Nhiệt độ chuẩn 160–170°C giúp sợi chả chín phồng tức thì, ráo dầu và giữ trọn độ ẩm ngọt bên trong.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-78",
     "stableId": "sale-78",
+    "displayNumber": 78,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Nhà máy sản xuất nước sốt và chế biến nguyên liệu của Bánh Mì Má Hải đạt chứng nhận tiêu chuẩn an toàn thực phẩm quốc tế nào?",
+    "question": "Tỷ lệ vàng phối trộn nguyên liệu trong 1 ổ Bánh Mì Má Hải tiêu chuẩn (giá sàn 15.000đ) là bao nhiêu?",
     "options": [
       {
         "key": "a",
-        "text": "Chứng nhận quốc tế FSSC 22000 về hệ thống quản lý an toàn thực phẩm nghiêm ngặt."
+        "text": "10g chả cá sợi và chan thật nhiều nước tương."
       },
       {
         "key": "b",
-        "text": "Chỉ có giấy viết tay cam kết miệng của cơ sở thủ công"
+        "text": "40g – 45g chả cá sợi chiên giòn, 1 muỗng sốt Tứ Vị đậm đà, rau răm, dưa leo tươi giòn và ớt xắt."
       },
       {
         "key": "c",
-        "text": "Chứng nhận tiêu chuẩn xây dựng nhà xưởng cấp 4"
+        "text": "100g chả cá sợi và không cho bất kỳ loại rau dưa nào."
       },
       {
         "key": "d",
-        "text": "Chứng chỉ kiểm định phương tiện giao thông đường bộ"
+        "text": "Chỉ có vỏ bánh mì không kèm nhân chả cá."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Chứng nhận quốc tế FSSC 22000 là tiêu chuẩn hàng đầu thế giới về an toàn thực phẩm, bảo chứng cho quy trình sản xuất hiện đại và sạch sẽ của Má Hải.",
-    "quote": "Nhà máy Má Hải đạt chứng nhận quốc tế FSSC 22000 khắt khe, nước sốt và chả cá sản xuất khép kín bảo đảm an toàn tuyệt đối cho người dùng!"
+    "correctAnswer": "b",
+    "explanation": "Định lượng 40-45g chả cá + 1 muỗng sốt Tứ Vị + rau dưa tạo nên tỷ lệ vàng thơm ngon, tròn vị và chuẩn giá vốn.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-79",
     "stableId": "sale-79",
+    "displayNumber": 79,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Kỹ thuật chiên chả cá sợi tại điểm bán được quy định như thế nào để sợi chả luôn giòn ngon và ráo dầu?",
+    "question": "Kỹ thuật chiên chả cá sợi từng mẻ nhỏ trong ca bán sáng mang lại những lợi ích thiết thực nào?",
     "options": [
       {
         "key": "a",
-        "text": "Chiên dồn toàn bộ 5kg chả cá vào chảo trong một lần duy nhất"
+        "text": "Làm tăng lượng gas tiêu thụ lên gấp 5 lần."
       },
       {
         "key": "b",
-        "text": "Chiên chả cá ngập trong nước sôi thay vì dùng dầu ăn"
+        "text": "Bắt buộc khách hàng phải đứng chờ đợi thật lâu."
       },
       {
         "key": "c",
-        "text": "Tắt bếp gas ngay khi vừa thả chả cá vào chảo"
+        "text": "Bảo đảm sợi chả luôn nóng giòn tươi mới, không bị nguội ỉu và hạn chế tối đa việc hao dầu thừa."
       },
       {
         "key": "d",
-        "text": "Chiên theo từng mẻ nhỏ vừa đủ bán, đảo nhẹ tay cho sợi chả tơi xốp, khi chả nổi phồng vàng thì vớt ra vợt inox gác ráo dầu trước khi kẹp bánh."
+        "text": "Để chủ xe không phải làm bánh liên tục."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Chiên từng mẻ nhỏ giúp nhiệt độ dầu luôn ổn định, chả cá chín đều, phồng xốp giòn rụm và không bị ngấy mỡ.",
-    "quote": "Bí quyết là chiên từng mẻ vừa bán, sợi chả nổi vàng phồng căng thì vớt lên vợt ráo dầu, kẹp vào bánh mì là nóng giòn thơm nức!"
+    "correctAnswer": "c",
+    "explanation": "Chiên từng mẻ nhỏ theo lượng khách giúp bánh luôn nóng giòn trao tay và tiết kiệm gas tối đa.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-80",
     "stableId": "sale-80",
+    "displayNumber": 80,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Quy định bảo quản chả cá sợi tươi tại điểm bán và trong tủ cấp đông gia đình là gì?",
+    "question": "Về quy trình rã đông và bảo quản Chả cá sợi Má Hải trước giờ bán, thao tác chuẩn là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Để chả cá ngoài trời nắng gắt trong suốt cả tuần"
+        "text": "Để chả cá ngoài trời nắng gắt cả ngày cho tự tan đá."
       },
       {
         "key": "b",
-        "text": "Ngâm chả cá trong xô nước lã để giữ độ ẩm"
+        "text": "Ngâm trực tiếp cả bọc chả cá vào nước sôi 100°C."
       },
       {
         "key": "c",
-        "text": "Bảo quản trong ngăn đông tủ lạnh ở nhiệt độ -18°C; khi lấy ra điểm bán buổi sáng bảo quản trong thùng xốp giữ nhiệt có đá gel hoặc túi đá lạnh."
+        "text": "Dùng máy sấy tóc thổi trực tiếp vào tảng chả cá đông đá."
       },
       {
         "key": "d",
-        "text": "Để chả cá cạnh bếp gas đang cháy nóng liên tục"
+        "text": "Chuyển chả từ ngăn đông xuống ngăn mát tủ lạnh trước 1 đêm, sáng ra chả mềm tơi tự nhiên sẵn sàng chiên."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Bảo quản âm sâu -18°C giữ trọn vẹn độ tươi ngọt của đạm cá biển. Tại điểm bán, thùng xốp đá gel giúp giữ lạnh ổn định suốt ca bán.",
-    "quote": "Chả cá trữ ngăn đông -18 độ, sáng mang ra điểm bán Cô Chú để trong thùng xốp đá lạnh, lấy mẻ nào chiên mẻ đó là chả tươi rói nguyên vị!"
+    "correctAnswer": "d",
+    "explanation": "Rã đông tự nhiên trong ngăn mát bảo toàn 100% cấu trúc đạm cá biển và giữ sợi chả dai ngọt, không bị nát.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-81",
     "stableId": "sale-81",
+    "displayNumber": 81,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Thao tác vệ sinh an toàn thực phẩm nào là BẮT BUỘC đối với người đứng quầy làm bánh mì Má Hải?",
+    "question": "Tại sao Nước sốt Tứ Vị Má Hải được xem là 'linh hồn' tạo nên sự khác biệt giữ chân khách quen 13 năm qua?",
     "options": [
       {
         "key": "a",
-        "text": "Đeo bao tay nilon thực phẩm sạch khi kẹp bánh/chan sốt, mặc áo đồng phục cam, đội nón và đeo tạp dề chỉnh tề."
+        "text": "Hương vị chua ngọt cay mặn hài hòa độc quyền, gia công chuẩn FSSC 22000, quyện đều vào chả cá tạo vị ngon khó cưỡng."
       },
       {
         "key": "b",
-        "text": "Dùng tay trần cầm trực tiếp rau dưa và chả cá sau khi vừa đếm tiền"
+        "text": "Vì sốt có màu sắc sặc sỡ để chụp ảnh đăng mạng."
       },
       {
         "key": "c",
-        "text": "Hút thuốc lá trong khi đang chiên chả cá tại quầy"
+        "text": "Vì nước sốt được nhập khẩu nguyên chai từ châu Âu."
       },
       {
         "key": "d",
-        "text": "Để khăn lau bàn dơ chung vào khay đựng rau răm ăn kèm"
+        "text": "Vì nước sốt có thể bảo quản ở nhiệt độ phòng trong 10 năm."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Đồng phục gọn gàng, nón, tạp dề và bao tay thực phẩm tạo nên hình ảnh chuyên nghiệp, sạch sẽ, chiếm trọn niềm tin của khách hàng.",
-    "quote": "Áo cam, nón và bao tay sạch sẽ là điểm cộng lớn, khách đi đường nhìn vào thấy quầy bánh mì tươm tất vệ sinh là ghé mua liền!"
+    "explanation": "Sốt Tứ Vị độc quyền gia công nhà máy FSSC 22000 là bí quyết giữ khách quen suốt 13 năm của chuỗi.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-82",
     "stableId": "sale-82",
+    "displayNumber": 82,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Thời hạn sử dụng tiêu chuẩn của Nước sốt Tứ Vị đóng can nguyên niêm phong khi bảo quản nơi khô ráo, thoáng mát là bao lâu?",
+    "question": "Thao tác chan Nước sốt Tứ Vị chuẩn mực vào ổ bánh mì được thực hiện như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Chỉ dùng được trong vòng 24 giờ sau khi sản xuất"
+        "text": "Dốc ngược cả chai sốt lớn đổ vào một góc của bánh mì."
       },
       {
         "key": "b",
-        "text": "6 tháng kể từ ngày sản xuất in trên bao bì (khi mở nắp sử dụng bảo quản ngăn mát tủ lạnh)."
+        "text": "Rót sốt ra chén nhỏ, dùng muỗng chan đều 1 dòng dọc theo chiều dài ổ bánh để sốt ngấm đều từng miếng chả."
       },
       {
         "key": "c",
-        "text": "10 năm không cần hạn sử dụng"
+        "text": "Dùng chổi quét sơn để phết sốt lên vỏ bánh ngoài."
       },
       {
         "key": "d",
-        "text": "Chỉ dùng được trong 3 ngày"
+        "text": "Không chan sốt vào bánh mà đưa cho khách tự chấm."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Nước sốt nấu tiệt trùng đạt chuẩn FSSC 22000 có hạn dùng 6 tháng khi chưa mở nắp, rất tiện lợi cho các điểm bán tỉnh xa lưu kho sử dụng.",
-    "quote": "Sốt Tứ Vị đóng can chuẩn tiệt trùng để được 6 tháng, Cô Chú ở tỉnh xa đặt nguyên đợt dùng dần thoải mái mà chất lượng luôn tươi ngon!"
+    "explanation": "Chan 1 dòng dọc thân bánh giúp sốt thấm đều vào từng sợi chả cá và rau dưa, cắn miếng nào cũng đậm đà.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-83",
     "stableId": "sale-83",
+    "displayNumber": 83,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Thứ tự các bước làm một ổ Bánh Mì Má Hải chuẩn bài bản theo sổ tay hướng dẫn là gì?",
+    "question": "Quy chuẩn vệ sinh an toàn thực phẩm đối với người trực tiếp đứng bán tại quầy xe gồm những gì?",
     "options": [
       {
         "key": "a",
-        "text": "Bước 1 Rọc bánh mì -> Bước 2 Cho dưa leo, rau răm tươi -> Bước 3 Gắp chả cá sợi vừa chiên nóng giòn -> Bước 4 Rưới đều sốt Tứ Vị và ớt -> Bước 5 Bỏ vào túi giấy trao khách."
+        "text": "Dùng tay trần bốc trực tiếp chả cá và rau dưa giao cho khách."
       },
       {
         "key": "b",
-        "text": "Rưới nước sốt vào túi giấy trước rồi mới nhét bánh mì vào sau cùng"
+        "text": "Mặc trang phục tự do ở nhà và không cần che chắn tóc."
       },
       {
         "key": "c",
-        "text": "Cho chả cá sống chưa chiên vào ruột bánh mì rồi mới nướng bánh"
+        "text": "Mang áo đồng phục cam sạch sẽ, đội nón, đeo tạp dề, dùng gắp hoặc đeo bao tay khi thao tác kẹp bánh."
       },
       {
         "key": "d",
-        "text": "Bỏ rau dưa ra ngoài túi giấy và chỉ đưa bánh mì không cho khách"
+        "text": "Vừa hút thuốc lá vừa chiên chả cá tại quầy xe."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Quy trình 5 bước chuẩn giúp ổ bánh mì thấm đều sốt, rau dưa giòn mát, chả cá nóng hổi và bánh giữ được độ giòn rụm khi đến tay khách.",
-    "quote": "Làm đúng 5 bước: Rọc bánh -> Cho rau dưa -> Gắp chả cá nóng giòn -> Rưới sốt Tứ Vị đậm đà -> Bỏ túi giấy giao khách trong 1 phút!"
+    "correctAnswer": "c",
+    "explanation": "Đồng phục chỉnh tề + Đeo bao tay/dùng kẹp thể hiện sự sạch sẽ, an toàn vệ sinh và tạo niềm tin tuyệt đối cho khách.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-84",
     "stableId": "sale-84",
+    "displayNumber": 84,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Cách xử lý cặn dầu chiên sau mỗi ca bán hàng để giữ chất lượng dầu chiên cho các mẻ sau là gì?",
+    "question": "Về việc bảo quản và sử dụng dầu chiên chả cá, nguyên tắc an toàn sức khỏe bắt buộc là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Để nguyên cặn cháy khét trong chảo đun đi đun lại suốt cả tháng"
+        "text": "Đổ dầu chiên thừa trực tiếp xuống cống rãnh công cộng."
       },
       {
         "key": "b",
-        "text": "Đổ dầu chiên nóng trực tiếp xuống cống thoát nước công cộng"
+        "text": "Sử dụng dầu chiên đi chiên lại nhiều tuần không thay."
       },
       {
         "key": "c",
-        "text": "Dùng vá vớt cặn vớt sạch vụn chả trong lúc chiên; kết thúc ca bán để dầu nguội, lọc qua rây sạch và đậy nắp kín, thay dầu mới định kỳ."
+        "text": "Mua các loại dầu can trôi nổi không nhãn mác ngoài chợ đen."
       },
       {
         "key": "d",
-        "text": "Đổ dầu chiên trộn lẫn vào can nước sốt Tứ Vị"
+        "text": "Sử dụng dầu ăn thực vật có thương hiệu rõ ràng, lọc sạch cặn vụn sau ca bán và thay dầu mới khi dầu đổi màu sẫm."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Vớt sạch cặn vụn và lọc dầu sau ca bán giúp dầu luôn trong, chả chiên thơm vàng và bảo đảm an toàn sức khỏe cho thực khách.",
-    "quote": "Vớt sạch cặn vụn và lọc dầu sạch sau mỗi ca bán giúp chả cá chiên mẻ nào cũng vàng ươm thơm phức, khách ăn rất yên tâm!"
+    "correctAnswer": "d",
+    "explanation": "Dầu ăn sạch có thương hiệu, lọc cặn và thay định kỳ bảo đảm sợi chả luôn vàng óng, thơm ngon và an toàn sức khỏe.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-85",
     "stableId": "sale-85",
+    "displayNumber": 85,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Đặc tính nổi bật của Chả cá sợi Má Hải so với chả cá miếng thông thường ngoài thị trường là gì?",
+    "question": "Tại sao rau ăn kèm bánh mì Má Hải bắt buộc phải là Rau răm tươi kết hợp cùng Dưa leo giòn mát?",
     "options": [
       {
         "key": "a",
-        "text": "Sợi chả được định hình sẵn thanh mảnh, chiên chín nhanh trong 1-2 phút, nở phồng xốp vàng rụm, khi cắn giòn tan bên ngoài và mọng nước ngọt thịt cá bên trong."
+        "text": "Vị thơm nồng ấm của rau răm và thanh mát của dưa leo giúp cân bằng hoàn hảo vị béo ngậy của chả cá chiên."
       },
       {
         "key": "b",
-        "text": "Chả cá sợi rất cứng và dai như cao su"
+        "text": "Vì rau răm là loại rau rẻ tiền nhất ngoài chợ."
       },
       {
         "key": "c",
-        "text": "Chả cá sợi ngấm nhiều dầu và bị xẹp lép đen xì sau khi chiên"
+        "text": "Vì công ty cấm sử dụng dưa leo trong bánh mì."
       },
       {
         "key": "d",
-        "text": "Chả cá sợi không thể chiên bằng dầu ăn mà phải hấp cách thủy 2 tiếng"
+        "text": "Chỉ là thói quen ngẫu nhiên không có ý nghĩa ẩm thực."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Thiết kế dạng sợi độc quyền giúp chả chiên chín siêu nhanh (1-2 phút), tạo độ giòn xốp bề mặt độc đáo và phân bổ đều khắp ổ bánh mì.",
-    "quote": "Chả cá dạng sợi độc quyền chiên phồng trong tích tắc, cắn vào giòn rụm bên ngoài mà ngọt mọng bên trong, ăn đứt chả cá miếng thông thường!"
+    "explanation": "Rau răm + Dưa leo + Chả cá sợi + Sốt Tứ Vị là bộ tứ hương vị kinh điển của Bánh Mì Má Hải suốt 13 năm.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-86",
     "stableId": "sale-86",
+    "displayNumber": 86,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Khi khách hàng yêu cầu 'Làm cho tôi ổ bánh mì ít cay và nhiều rau răm', thao tác phục vụ chuẩn là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Từ chối phục vụ và yêu cầu khách hàng sang quán khác mua"
+        "text": "Vẫn làm theo thói quen cho thật nhiều ớt cay xé lưỡi."
       },
       {
         "key": "b",
-        "text": "Vẫn cho thật nhiều ớt cay xé để thúc giục dồn dập phải ăn theo công thức cố định"
+        "text": "Lắng nghe kỹ, không cho ớt tươi xắt, chan sốt vừa vặn và cho thêm một nhúm rau răm tươi theo đúng sở thích của khách."
       },
       {
         "key": "c",
-        "text": "Vui vẻ gật đầu, gia giảm lượng sốt ớt cay và gắp thêm rau răm tươi theo đúng sở thích của khách để tạo thiện cảm."
+        "text": "Tỏ thái độ khó chịu và từ chối bán cho khách."
       },
       {
         "key": "d",
-        "text": "Thu thêm 10.000 đồng tiền phụ phí vì khách yêu cầu thêm rau"
+        "text": "Bắt khách hàng phải trả thêm gấp đôi tiền bánh."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Sự niềm nở, chiều chuộng khẩu vị cá nhân của khách quen là bí quyết giúp các điểm bán Má Hải giữ chân khách hàng trung thành suốt nhiều năm.",
-    "quote": "Dạ khách thích ăn nhiều rau, ít ớt hay thêm dưa Cô Chú cứ chiều theo ý bà con, nụ cười niềm nở là bí quyết giữ khách quen số một đấy ạ!"
+    "correctAnswer": "b",
+    "explanation": "Phục vụ đúng khẩu vị riêng của từng khách hàng với nụ cười niềm nở là bí quyết giữ chân khách quen dài lâu.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-87",
     "stableId": "sale-87",
+    "displayNumber": 87,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Bao bì đựng Bánh Mì Má Hải sử dụng chất liệu gì để bảo đảm an toàn thực phẩm và thân thiện với môi trường?",
+    "question": "Để giữ cho vỏ bánh mì luôn nóng giòn suốt ca bán sáng, trang thiết bị chuẩn trên xe hỗ trợ như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Túi nilon tái chế đen mùi hôi nồng"
+        "text": "Nhúng vỏ bánh mì vào nước lạnh trước khi kẹp chả."
       },
       {
         "key": "b",
-        "text": "Túi giấy thực phẩm in nhận diện thương hiệu Má Hải rõ ràng, có khả năng thấm hút dầu thừa và giữ bánh mì nóng giòn."
+        "text": "Để bánh mì trực tiếp ngoài sương sớm và gió lạnh."
       },
       {
         "key": "c",
-        "text": "Giấy báo cũ thu gom từ các bãi phế liệu"
+        "text": "Bánh mì được bảo quản trong tủ kính chắn gió sạch sẽ, gần nguồn nhiệt ấm của bếp chiên giúp bánh luôn giòn rụm."
       },
       {
         "key": "d",
-        "text": "Lá chuối tươi chưa qua rửa sạch"
+        "text": "Bọc bánh mì trong túi nilon kín mít để bánh bị ỉu mềm."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Túi giấy thực phẩm chuyên dụng vừa lịch sự, vừa thấm hút dầu, giữ ổ bánh mì nóng giòn và an toàn tuyệt đối cho sức khỏe người tiêu dùng.",
-    "quote": "Bao bì túi giấy Má Hải sạch sẽ, lịch sự, hút dầu tốt giúp ổ bánh luôn giòn tan, khách cầm trên tay đi làm cảm thấy rất văn minh và sang trọng!"
+    "correctAnswer": "c",
+    "explanation": "Tủ kính chắn gió chuyên dụng vừa giữ bánh sạch bụi đường, vừa tận dụng hơi ấm bếp chiên giữ bánh giòn tan.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-88",
     "stableId": "sale-88",
+    "displayNumber": 88,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Khi đối tác hoàn tất đặt cọc 2.000.000đ, những quyền lợi nào được kích hoạt ngay lập tức trên hệ thống?",
+    "question": "Quy trình vệ sinh xe inox và dụng cụ bếp sau khi kết thúc ca bán 9h00 sáng gồm những bước nào?",
     "options": [
       {
         "key": "a",
-        "text": "Bị công ty giữ làm phí dịch vụ tư vấn và không được trừ vào tiền gói"
+        "text": "Không cần dọn dẹp để sáng hôm sau dùng tiếp."
       },
       {
         "key": "b",
-        "text": "Chỉ được nhận một bức ảnh chụp xe bánh mì qua tin nhắn"
+        "text": "Để nguyên dầu nóng trên bếp và bỏ về nhà ngay."
       },
       {
         "key": "c",
-        "text": "Bắt buộc phải đóng thêm 20 triệu đồng tiền bảo lãnh hợp đồng mới được kích hoạt"
+        "text": "Đổ nước lạnh trực tiếp vào chảo dầu đang sôi sùng sục."
       },
       {
         "key": "d",
-        "text": "Được khóa giữ vị trí điểm bán độc quyền khoảng cách trên Map Tracker, xưởng kích hoạt lệnh sản xuất xe, in decal và số tiền cọc được cấn trừ 100% khi nhận xe."
+        "text": "Tắt bếp gas, để dầu nguội lọc cặn, rửa sạch khay kẹp chảo chiên, lau chùi mặt xe inox sáng bóng và phủ bạt che."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Cọc 2 triệu kích hoạt ngay: Khóa vị trí độc quyền bản đồ + Lệnh xưởng đóng xe in decal + Cấn trừ 100% vào giá trị gói khi giao nhận.",
-    "quote": "Cọc 2 triệu là khóa ngay vị trí độc quyền trên bản đồ, xưởng ráp xe dán decal và số tiền này trừ thẳng 100% vào giá trị gói khi bàn giao ạ!"
+    "explanation": "Vệ sinh tinh tươm sau ca bán giúp bảo quản đồ nghề bền bỉ 5–10 năm và sẵn sàng cho buổi sáng hôm sau.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-89",
     "stableId": "sale-89",
+    "displayNumber": 89,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Quy trình thanh toán chi phí gói nhượng quyền mở xe Bánh Mì Má Hải được thực hiện theo 2 đợt như thế nào?",
+    "question": "Hành vi nào sau đây vi phạm nghiêm trọng quy chuẩn an toàn thực phẩm và hình ảnh thương hiệu Má Hải?",
     "options": [
       {
         "key": "a",
-        "text": "Đợt 1 đặt cọc 2.000.000đ khi chốt vị trí để khóa bản đồ và chuẩn bị xe; Đợt 2 thanh toán số tiền còn lại của gói ngay khi nhận bàn giao xe và kiểm tra đầy đủ đồ nghề."
+        "text": "Tự ý mua chả cá trôi nổi độn bột ngoài chợ về bán lẫn dưới bảng hiệu Bánh Mì Má Hải."
       },
       {
         "key": "b",
-        "text": "Bắt buộc khách hàng phải thanh toán trước 100% toàn bộ chi phí ngay trước khi công ty xuất kho xe"
+        "text": "Chiên chả cá sợi phồng giòn vàng ruộm đúng nhiệt độ 160°C."
       },
       {
         "key": "c",
-        "text": "Thanh toán trả góp hàng ngày trong vòng 10 năm kèm lãi suất ngân hàng"
+        "text": "Mặc đồng phục áo cam và đội nón Má Hải chỉnh tề khi bán hàng."
       },
       {
         "key": "d",
-        "text": "Công ty cho nợ toàn bộ tiền gói không cần thanh toán"
+        "text": "Tươi cười cảm ơn khách hàng sau khi nhận tiền."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Quy trình thanh toán 2 đợt minh bạch: Đợt 1 cọc 2 triệu giữ chỗ & làm xe -> Đợt 2 thanh toán phần còn lại khi nhận đủ xe và đồ nghề.",
-    "quote": "Thanh toán chia làm 2 đợt rất yên tâm: Đợt 1 cọc 2 triệu làm xe, đợt 2 nhận xe kiểm tra đủ đồ nghề mới thanh toán phần còn lại ạ!"
+    "explanation": "Bán chả cá trôi nổi vi phạm nghiêm trọng hợp đồng, làm mất uy tín thương hiệu chung và gây hại cho người tiêu dùng.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-90",
     "stableId": "sale-90",
+    "displayNumber": 90,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Khi tư vấn viên đặt lịch hẹn gọi lại cho khách hàng vào ngày hôm sau, hành vi nào sau đây là KHÔNG PHÙ HỢP chuẩn mực?",
+    "question": "Khi dầu chiên bị cặn đen do chiên nhiều mẻ, thao tác xử lý đúng kỹ thuật là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Gọi điện thoại làm phiền khách hàng vào các khung giờ nghỉ ngơi buổi tối muộn sau 22h00 đêm."
+        "text": "Khuấy đều cặn đen lên để bám vào các mẻ chả cá tiếp theo."
       },
       {
         "key": "b",
-        "text": "Đưa ra 2 lựa chọn khung giờ thuận tiện (ví dụ: '9h sáng mai hay 14h chiều mai') để khách chủ động chọn."
+        "text": "Dùng rây lọc inox vớt sạch toàn bộ cặn vụn chả cá cháy ra khỏi chảo để dầu luôn trong và không bị khét."
       },
       {
         "key": "c",
-        "text": "Ghi chú rõ ràng nội dung trao đổi và lịch hẹn lên phần mềm CRM để theo dõi sát tiến độ"
+        "text": "Đổ thêm nước lã vào chảo dầu đang nóng."
       },
       {
         "key": "d",
-        "text": "Chủ động chuẩn bị sẵn thông tin giải đáp đúng băn khoăn mà khách đã chia sẻ ở cuộc gọi trước"
+        "text": "Tăng lửa thật to để đốt cháy hết cặn đen."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Tôn trọng thời gian nghỉ ngơi của khách hàng là nguyên tắc ứng xử văn minh, tuyệt đối không gọi sau 21h30-22h00 đêm.",
-    "quote": "Luôn hẹn giờ gọi lịch sự trong giờ hành chính hoặc khung giờ khách rảnh, tôn trọng thời gian riêng của khách hàng để giữ hình ảnh chuyên nghiệp!"
+    "correctAnswer": "b",
+    "explanation": "Lọc cặn thường xuyên giúp dầu luôn trong, sợi chả cá chiên lên vàng óng và không bị bám mùi khét.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-91",
     "stableId": "sale-91",
+    "displayNumber": 91,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Trong các nhận định sau đây về sự đồng hành của công ty sau khi khai trương điểm bán, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
+    "question": "Tại sao công ty yêu cầu các điểm bán sử dụng đúng Giấy chứng nhận ATTP được cấp?",
     "options": [
       {
         "key": "a",
-        "text": "Hướng dẫn chủ xe đặt hàng nguyên vật liệu qua ứng dụng để hàng giao đều đặn theo lịch trình"
+        "text": "Để bắt buộc chủ xe phải đóng thêm thuế thu nhập."
       },
       {
         "key": "b",
-        "text": "Đội ngũ chuyên viên hỗ trợ từ xa luôn sẵn sàng tư vấn khi điểm bán gặp trục trặc về thao tác hay thiết bị."
+        "text": "Chỉ để trang trí cho đẹp mắt trên quầy xe."
       },
       {
         "key": "c",
-        "text": "Cung cấp cẩm nang và tài liệu hướng dẫn giúp chủ xe duy trì chất lượng và thu hút thêm khách quen"
+        "text": "Bảo vệ pháp lý cho chủ xe khi cơ quan chức năng kiểm tra và tạo sự an tâm tuyệt đối cho khách hàng mua ăn."
       },
       {
         "key": "d",
-        "text": "Công ty cắt đứt toàn bộ liên lạc và chấm dứt mọi sự đồng hành ngay sau ngày khai trương điểm bán."
+        "text": "Để thay thế cho bảng menu giá bán."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Má Hải đồng hành dài lâu cùng đối tác suốt quá trình kinh doanh. Phát biểu cắt đứt liên lạc sau khai trương là hoàn toàn sai.",
-    "quote": "Khai trương xong Cô Chú luôn có chuyên viên đồng hành hỗ trợ mỗi ngày, từ đặt hàng đến kỹ thuật làm bánh luôn có người túc trực bên cạnh!"
+    "correctAnswer": "c",
+    "explanation": "Chứng nhận ATTP chính quy là lá chắn pháp lý bảo vệ chủ xe trước mọi đợt kiểm tra liên ngành của y tế đô thị.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-92",
     "stableId": "sale-92",
+    "displayNumber": 92,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Về việc giữ vững tâm thế và đạo đức nghề nghiệp khi tư vấn khách hàng, hành vi nào sau đây là KHÔNG PHÙ HỢP?",
+    "question": "Về việc chuẩn bị nguyên vật liệu trước giờ mở bán 5h30 sáng, những việc nào cần hoàn tất?",
     "options": [
       {
         "key": "a",
-        "text": "Luôn trung thực về các số liệu thu nhập và chi phí thực tế, không vẽ vời phóng đại."
+        "text": "Chỉ mang xe ra đường và không cần chuẩn bị nguyên liệu."
       },
       {
         "key": "b",
-        "text": "Tôn trọng quyền tự quyết của khách hàng, kiên nhẫn đồng hành tháo gỡ khó khăn"
+        "text": "Đến 7h00 sáng mới bắt đầu đi chợ mua rau dưa."
       },
       {
         "key": "c",
-        "text": "Bịa đặt thông tin tiêu cực, nói xấu các thương hiệu bánh mì khác trên thị trường để tâng bốc công ty mình."
+        "text": "Chiên sẵn toàn bộ bánh mì từ tối hôm trước."
       },
       {
         "key": "d",
-        "text": "Tư vấn gói hợp tác vừa vặn nhất với khả năng tài chính thực tế của người lao động."
+        "text": "Lấy bánh mì nóng từ lò, rã đông chả cá sợi tơi xốp, cắt sẵn dưa leo rau răm tươi sạch và chuẩn bị chén sốt Tứ Vị."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Đạo đức nghề nghiệp Má Hải: Tự tin bằng giá trị thực của mình (13 năm uy tín, chả cá 17% đạm, sốt chuẩn), tuyệt đối không nói xấu đối thủ.",
-    "quote": "Mình tư vấn bằng cái tâm và chất lượng thật của Má Hải, trung thực và tử tế, tuyệt đối không dìm hàng hay nói xấu ai ngoài thị trường!"
+    "correctAnswer": "d",
+    "explanation": "Chuẩn bị chu đáo trước 5h30 sáng giúp chủ xe đón trọn những vị khách đi làm sớm đầu tiên một cách suôn sẻ.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-93",
     "stableId": "sale-93",
+    "displayNumber": 93,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Sự khác biệt thực tế giữa Gói tiêu chuẩn 7,5 triệu và Gói đầy đủ 10,3 triệu là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Gói 7,5 triệu bao gồm xe inox tiêu chuẩn và bộ decal nhận diện (phù hợp nếu khách đã có sẵn đồ bếp), còn Gói 10,3 triệu trang bị thêm trọn bộ dụng cụ bếp chuyên dụng (bếp gas khè, chảo chiên, kẹp, khay, xẻng, thùng giữ nóng) để mở bán ngay."
+        "text": "Gói 7,5 triệu bao gồm xe inox tiêu chuẩn và bộ decal nhận diện, còn Gói 10,3 triệu trang bị thêm trọn bộ dụng cụ bếp chuyên dụng (bếp gas khè, chảo chiên, kẹp, khay, xẻng) để mở bán ngay."
       },
       {
         "key": "b",
-        "text": "Gói 7,5 triệu đã bao gồm toàn bộ thiết bị điện tử và phần mềm quản lý bán hàng tự động."
+        "text": "Gói 7,5 triệu đã bao gồm toàn bộ thiết bị điện tử và phần mềm tự động."
       },
       {
         "key": "c",
@@ -2606,23 +2699,24 @@ const questions = [
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Gói 7,5 triệu (xe inox + nhận diện) và Gói 10,3 triệu (xe inox + nhận diện + trọn bộ đồ bếp khè chuyên dụng) giúp khách lựa chọn đúng theo đồ nghề sẵn có.",
-    "quote": "Nếu Cô Chú đã có sẵn bếp chảo ở nhà thì lấy Gói 7,5 triệu cho nhẹ tiền, còn muốn có đủ đồ nghề chuyên dụng để mở bán ngay thì chọn Gói 10,3 triệu ạ!"
+    "explanation": "Gói 10,3 triệu có đủ trọn bộ dụng cụ bếp chuyên nghiệp, nhận xe là mở bán ngay không cần sắm thêm.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-94",
     "stableId": "sale-94",
+    "displayNumber": 94,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Thời hạn tiêu chuẩn của Hợp đồng hợp tác nhượng quyền Bánh Mì Má Hải là bao lâu?",
     "options": [
       {
         "key": "a",
-        "text": "Thời hạn 1 năm (12 tháng, sau đó được tái ký hoàn toàn miễn phí 0 đồng nếu thực hiện đúng quy chế hợp tác)."
+        "text": "Thời hạn 3 năm cố định và bắt buộc đóng phí gia hạn khi tái ký hợp đồng."
       },
       {
         "key": "b",
-        "text": "Thời hạn 3 năm cố định và bắt buộc đóng phí gia hạn khi tái ký hợp đồng."
+        "text": "Thời hạn 1 năm (12 tháng, sau đó được tái ký hoàn toàn miễn phí 0 đồng nếu thực hiện đúng quy chế hợp tác)."
       },
       {
         "key": "c",
@@ -2633,41 +2727,43 @@ const questions = [
         "text": "Thời hạn vô thời hạn và không có các điều khoản ràng buộc về chất lượng nguyên liệu."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Hợp đồng ký 1 năm rõ ràng pháp lý, hết hạn được tái ký 0đ hoàn toàn miễn phí.",
-    "quote": "Hợp đồng chuẩn ký 1 năm và khi hết hạn Cô Chú được gia hạn tái ký 0 đồng, công ty luôn tạo điều kiện làm ăn lâu dài nhất cho bà con!"
+    "correctAnswer": "b",
+    "explanation": "Hợp đồng 1 năm tái ký 0đ hàng năm giúp đối tác an tâm gắn bó lâu dài và bảo toàn quyền lợi kinh doanh.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-95",
     "stableId": "sale-95",
+    "displayNumber": 95,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Khi đối tác có việc bận gia đình cần sang nhượng lại điểm bán cho người khác, chính sách hỗ trợ của công ty là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Đối tác phải bán thanh lý xe cũ ra thị trường tự do và người mới phải mua lại một gói hợp tác mới hoàn toàn."
+        "text": "Công ty thu hồi lại toàn bộ trang thiết bị và yêu cầu người mới phải tự tìm một vị trí mặt bằng hoàn toàn khác."
       },
       {
         "key": "b",
-        "text": "Hỗ trợ kết nối và làm thủ tục chuyển giao quyền kinh doanh điểm bán hoàn toàn miễn phí 0 đồng, tạo điều kiện để người mới tiếp tục khai thác vị trí an toàn."
+        "text": "Đối tác phải bán thanh lý xe cũ ra thị trường tự do và người mới phải mua lại một gói hợp tác mới hoàn toàn."
       },
       {
         "key": "c",
-        "text": "Công ty thu hồi lại toàn bộ trang thiết bị và yêu cầu người mới phải tự tìm một vị trí mặt bằng hoàn toàn khác."
+        "text": "Hỗ trợ kết nối và làm thủ tục chuyển giao quyền kinh doanh điểm bán hoàn toàn miễn phí 0 đồng, tạo điều kiện để người mới tiếp tục khai thác vị trí an toàn."
       },
       {
         "key": "d",
         "text": "Người mới chỉ được bán các sản phẩm ăn sáng khác và không được tiếp tục kinh doanh thương hiệu Má Hải."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Má Hải hỗ trợ thủ tục sang nhượng 0 đồng để đối tác thu hồi vốn và người mới tiếp quản điểm bán kinh doanh thuận lợi.",
-    "quote": "Nếu bận việc nhà không bán tiếp được, công ty hỗ trợ kết nối sang nhượng lại 0 đồng cho người khác, Cô Chú thu hồi vốn nhanh chóng mà không mất phí gì ạ!"
+    "correctAnswer": "c",
+    "explanation": "Hỗ trợ sang nhượng 0 đồng là chính sách nhân văn giúp chủ xe bảo toàn trọn vẹn giá trị đầu tư ban đầu.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-96",
     "stableId": "sale-96",
+    "displayNumber": 96,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Về mối quan hệ hợp tác giữa Nhà Má Hải và các chủ xe bánh mì, nhận định nào sau đây là KHÔNG ĐÚNG?",
@@ -2682,48 +2778,50 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Công ty áp đặt chỉ tiêu doanh số bắt buộc hàng ngày và yêu cầu chủ xe phải nộp bù doanh thu nếu bán chưa đạt."
+        "text": "Chủ xe chủ động siêng năng mở bán đúng giờ, giữ gìn vệ sinh và bán hàng niềm nở mỗi sáng."
       },
       {
         "key": "d",
-        "text": "Chủ xe chủ động siêng năng mở bán đúng giờ, giữ gìn vệ sinh và bán hàng niềm nở mỗi sáng."
+        "text": "Công ty áp đặt chỉ tiêu doanh số bắt buộc hàng ngày và yêu cầu chủ xe phải nộp bù doanh thu nếu bán chưa đạt."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Má Hải không áp đặt chỉ tiêu doanh số. Chủ xe làm chủ hoàn toàn hoạt động kinh doanh và linh hoạt thời gian bán hàng của mình.",
-    "quote": "Bên con không áp doanh số, Cô Chú làm chủ xe tự quyết định, bán được bao nhiêu hưởng trọn bấy nhiêu rất thoải mái!"
+    "correctAnswer": "d",
+    "explanation": "Má Hải không áp đặt chỉ tiêu doanh số. Chủ xe làm chủ hoàn toàn hoạt động kinh doanh và linh hoạt thời gian.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-97",
     "stableId": "sale-97",
+    "displayNumber": 97,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-    "question": "Hệ thống Bánh Mì Má Hải tiêu thụ trung bình bao nhiêu ổ bánh mì mỗi ngày trên toàn quốc?",
+    "question": "Quy mô sản lượng tiêu thụ bánh mì hàng ngày của toàn hệ thống Bánh Mì Má Hải trên cả nước đạt con số nào?",
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 500 ổ/ngày"
+        "text": "Khoảng 50.000 ổ bánh mì nóng giòn mỗi ngày (phục vụ qua mạng lưới hơn 1.200 điểm bán trên toàn quốc)."
       },
       {
         "key": "b",
-        "text": "Khoảng 2.000 ổ/ngày"
+        "text": "Khoảng 500 ổ/ngày trên toàn quốc."
       },
       {
         "key": "c",
-        "text": "Khoảng 10.000 ổ/ngày"
+        "text": "Khoảng 2.000 ổ/ngày trên toàn quốc."
       },
       {
         "key": "d",
-        "text": "Khoảng 50.000 ổ/ngày (phục vụ qua mạng lưới hơn 1.200 điểm bán trên khắp cả nước)."
+        "text": "Khoảng 5.000 ổ/ngày trên toàn quốc."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "50.000 ổ bánh mì mỗi sáng trên 1.200 điểm bán chứng minh sức mua cực lớn của thương hiệu Bánh Mì Má Hải trên thị trường ẩm thực đường phố.",
-    "quote": "Mỗi sáng toàn hệ thống phục vụ 50.000 ổ bánh mì cho bà con đi làm, sức tiêu thụ khủng khiếp khẳng định chất lượng và vị thế số 1 của Má Hải!"
+    "correctAnswer": "a",
+    "explanation": "50.000 ổ/ngày trên 1.200 điểm bán là minh chứng hùng hồn cho sức sống bền bỉ của thương hiệu Má Hải 13 năm qua.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-98",
     "stableId": "sale-98",
+    "displayNumber": 98,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Những yếu tố then chốt nào tạo nên sức hút và sự phát triển bền vững của thương hiệu Bánh Mì Má Hải suốt 13 năm qua?",
@@ -2746,12 +2844,13 @@ const questions = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Sản phẩm cốt lõi thơm ngon (chả cá 17% đạm, sốt Tứ Vị) + Vốn mở xe nhẹ + Chính sách 3 KHÔNG nhân văn là kiềng 3 chân giúp Má Hải vững mạnh suốt 13 năm.",
-    "quote": "Bánh mì ngon đậm đà, vốn mở xe nhẹ nhàng và chính sách 3 KHÔNG đồng hành là lý do Má Hải đứng vững và dẫn đầu suốt 13 năm qua!"
+    "explanation": "Chất lượng sản phẩm đỉnh cao + Mô hình nhẹ vốn + Triết lý 3 KHÔNG là nền tảng phát triển vững chắc 13 năm qua.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-99",
     "stableId": "sale-99",
+    "displayNumber": 99,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Trong các nhận định sau đây về quyền lợi của chủ xe khi tham gia chuỗi Bánh Mì Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
@@ -2766,31 +2865,32 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Được bảo vệ khoảng cách điểm bán trên phần mềm Map Tracker để tránh cạnh tranh nội bộ"
+        "text": "Công ty thu phí duy trì thương hiệu định kỳ hàng tháng trên mỗi điểm bán."
       },
       {
         "key": "d",
-        "text": "Công ty thu phí duy trì thương hiệu định kỳ hàng tháng trên mỗi điểm bán."
+        "text": "Được bảo vệ khoảng cách điểm bán trên phần mềm Map Tracker để tránh cạnh tranh nội bộ."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Má Hải miễn phí 100% phí thương hiệu và phí hàng tháng. Nói thu phí thương hiệu 5 triệu/tuần là phát biểu sai sự thật.",
-    "quote": "Công ty miễn phí 100% phí thương hiệu hàng tháng, Cô Chú được dùng biển hiệu Má Hải uy tín trọn đời mà không tốn thêm đồng phí nào!"
+    "correctAnswer": "c",
+    "explanation": "Má Hải cam kết 3 KHÔNG: 0đ phí hàng tháng, 0% chia doanh thu và 0đ phí gia hạn. Phát biểu nói thu phí tháng là sai sự thật.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-100",
     "stableId": "sale-100",
+    "displayNumber": 100,
     "sectionNo": 4,
     "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Mục tiêu cao nhất của chương trình đào tạo kỹ năng mở xe và tư vấn nhượng quyền của Nhà Má Hải là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Tuyển dụng số lượng lớn lao động phổ thông để phục vụ cho các nhà máy gia công nguyên liệu."
+        "text": "Cung cấp chứng chỉ nghề bếp ngắn hạn để học viên tự đi xin việc tại các khách sạn, nhà hàng."
       },
       {
         "key": "b",
-        "text": "Trang bị kiến thức thực chiến chuẩn mực, rèn luyện tay nghề và trao giải pháp sinh kế bền vững giúp người lao động tự chủ thu nhập ổn định."
+        "text": "Tuyển dụng số lượng lớn lao động phổ thông để phục vụ cho các nhà máy gia công nguyên liệu."
       },
       {
         "key": "c",
@@ -2798,279 +2898,289 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Cung cấp chứng chỉ nghề bếp ngắn hạn để học viên tự đi xin việc tại các khách sạn, nhà hàng."
+        "text": "Trang bị kiến thức thực chiến chuẩn mực, rèn luyện tay nghề và trao giải pháp sinh kế bền vững giúp người lao động tự chủ thu nhập ổn định."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Mục tiêu tối thượng: Lan tỏa cơ hội khởi nghiệp an toàn, giúp bà con lao động làm chủ một chiếc cần câu cơm nuôi sống gia đình ấm no.",
-    "quote": "Cổng đào tạo giúp Cô Chú nắm vững từ kỹ thuật chiên chả đến cách bán hàng, tự tin mở xe làm chủ thu nhập nuôi gia đình ấm no bền vững!"
+    "correctAnswer": "d",
+    "explanation": "Sứ mệnh của Má Hải: Trao chiếc cần câu hoàn chỉnh giúp người lao động tự tin làm chủ và xây dựng cuộc sống ấm no.",
+    "quote": "Chả cá sợi 17% đạm chiên nóng 1-2 phút thơm phức chan sốt Tứ Vị đậm đà là bí quyết giữ khách quen 13 năm qua ạ!"
   },
   {
     "id": "sale-101",
     "stableId": "sale-101",
+    "displayNumber": 101,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Khi đối tác ở tỉnh xa lo lắng 'Nếu giao chả cá bị trễ giờ bán sáng thì sao?', câu trả lời chuẩn xác và thuyết phục là gì?",
+    "question": "Khi khách hàng lo lắng 'Tôi ở tỉnh xa, nếu đặt cọc thì công ty có giao xe đúng hẹn không?', cách giải tỏa nỗi lo chuẩn là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Khách hàng phải tự thuê xe tải lên kho tổng tại TP.HCM chở hàng về mỗi ngày"
+        "text": "Cung cấp số tài khoản pháp nhân công ty, phiếu thu cọc mộc đỏ, hợp đồng nguyên tắc và các video bàn giao xe thực tế tại tỉnh của khách."
       },
       {
         "key": "b",
-        "text": "Công ty liên kết với hệ thống chành xe uy tín khắp các tỉnh thành, hàng gửi xe đêm giao đến bến xe hoặc tận nhà trước 5h00 sáng, bảo đảm luôn có nguyên liệu tươi chuẩn bị ca bán."
+        "text": "Bảo khách tự lên mạng tìm hiểu mà không đưa ra chứng cứ."
       },
       {
         "key": "c",
-        "text": "Nếu trễ hàng đối tác tự ra chợ mua chả cá tạp về bán thay thế"
+        "text": "Yêu cầu khách phải đến tận trụ sở TP.HCM thì mới giao xe."
       },
       {
         "key": "d",
-        "text": "Công ty không chịu trách nhiệm về thời gian vận chuyển ở các tỉnh xa"
+        "text": "Hứa hẹn suông và không xuất phiếu thu chứng từ."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Hệ thống logistics của Má Hải chạy xe đêm tuyến tỉnh, hàng được giao tới chành/bến trước 5h sáng để chủ xe nhận hàng kịp ca 5h30.",
-    "quote": "Bên con gửi chành xe đêm chạy suốt, 4h30 - 5h00 sáng là hàng đã tới bến xe tỉnh, Cô Chú ra nhận về là kịp giờ bật bếp 5h30 bán sáng thoải mái ạ!"
+    "correctAnswer": "a",
+    "explanation": "Pháp nhân công ty minh bạch + Hợp đồng mộc đỏ + Video bàn giao xe tại tỉnh xóa tan băn khoăn khi đặt cọc từ xa của khách ở xa.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-102",
     "stableId": "sale-102",
+    "displayNumber": 102,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Khi khách hàng hỏi 'Tôi có được nợ tiền cọc 2 triệu để mở bán trước rồi trả sau không?', nguyên tắc xử lý của tư vấn viên là gì?",
+    "question": "Khi khách hàng nói 'Tôi thấy giá chả cá ngoài chợ rẻ hơn một chút', tư vấn viên phân tích sự khác biệt thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Đồng ý cho nợ toàn bộ tiền gói và tiền nguyên liệu trong 1 năm"
+        "text": "Khuyên khách cứ ra chợ mua chả cá về bán thử."
       },
       {
         "key": "b",
-        "text": "Khuyên khách hàng đi vay nặng lãi để trả tiền cọc ngay"
+        "text": "Phân tích chả cá Má Hải 17% đạm cá biển tươi, không độn bột hàn the, sốt Tứ Vị độc quyền giữ khách quen và có đầy đủ giấy tờ ATTP bảo vệ chủ xe."
       },
       {
         "key": "c",
-        "text": "Giải thích nhẹ nhàng nguyên tắc: Khoản cọc 2 triệu là quy định bắt buộc để hệ thống khóa định vị độc quyền và xưởng kích hoạt sản xuất xe, không giải quyết nợ cọc để bảo đảm tính nghiêm túc của hợp đồng."
+        "text": "Chê bai gay gắt người bán chả cá ngoài chợ."
       },
       {
         "key": "d",
-        "text": "Chửi bới và ngắt liên lạc ngay với khách hàng"
+        "text": "Giảm giá chả cá công ty xuống mức cực thấp để cạnh tranh."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Cọc 2 triệu là điều kiện tiên quyết để giữ vị trí độc quyền và tiến hành gia công xe, bảo đảm cam kết thực tế giữa hai bên.",
-    "quote": "Dạ khoản cọc 2 triệu là quy định bắt buộc để con khóa vị trí độc quyền trên bản đồ cho Cô Chú, số tiền này cấn trừ 100% khi nhận xe nên Cô Chú an tâm gom đủ rồi cọc nhé!"
+    "correctAnswer": "b",
+    "explanation": "Chất lượng 17% đạm + Chứng nhận ATTP + Vị sốt độc quyền là vũ khí giữ khách quen, giúp bán đắt hàng bền vững.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-103",
     "stableId": "sale-103",
+    "displayNumber": 103,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Khi khách hàng lo lắng 'Chả cá biển có bị tanh và khó ăn đối với người địa phương không?', tư vấn viên giải thích như thế nào?",
+    "question": "Khi khách hàng băn khoăn 'Tôi chưa có đủ tiền mua Gói 10,3 triệu, chỉ có khoảng 5 triệu', giải pháp tư vấn phù hợp là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Khách hàng tự mua hóa chất khử mùi tanh ngoài chợ về trộn vào chả cá từ các nguồn trôi nổi trên thị trường tự do"
+        "text": "Ép buộc khách phải đi vay nóng lãi cao bên ngoài để mua gói lớn."
       },
       {
         "key": "b",
-        "text": "Chả cá biển bắt buộc phải có mùi tanh nồng mới đúng chuẩn tự nhiên"
+        "text": "Từ chối tư vấn và yêu cầu khách khi nào đủ 10,3 triệu mới quay lại."
       },
       {
         "key": "c",
-        "text": "Bánh mì Má Hải không dùng cá biển mà làm từ thịt heo"
+        "text": "Tư vấn khách tận dụng xe đẩy sẵn có để chọn Gói 4,8 triệu, hoặc chọn Gói 7,5 triệu và tận dụng đồ bếp có sẵn ở nhà để tiết kiệm tối đa."
       },
       {
         "key": "d",
-        "text": "Chả cá sợi Má Hải làm từ thịt cá biển tươi lọc bỏ hoàn toàn ruột và xương đen, tẩm ướp gia vị độc quyền khử tanh tự nhiên, khi chiên dậy mùi thơm nức mũi và ngọt thịt cá."
+        "text": "Khuyên khách hàng nên bỏ ý định mở xe bán bánh mì."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Quy trình phi lê cá tươi làm sạch kỹ càng và công thức gia vị thảo mộc giúp chả cá chiên thơm lừng, ngọt thanh tự nhiên mà không hề có mùi tanh khó chịu.",
-    "quote": "Chả cá lọc sạch ruột xương và tẩm ướp gia vị độc quyền, khi thả vào chảo dầu sôi là thơm nức mũi cả góc phố, người già hay trẻ nhỏ đều mê tít ạ!"
+    "correctAnswer": "c",
+    "explanation": "Tâm thế 'Giúp' là tư vấn gói vừa túi tiền (4,8tr hoặc 7,5tr), giúp người lao động nhẹ vốn khởi sự an toàn.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-104",
     "stableId": "sale-104",
+    "displayNumber": 104,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Khi khách hàng so sánh 'Xe bánh mì tự đóng ngoài chợ chỉ có 3 triệu đồng, sao gói Má Hải lại từ 4,8 triệu đến 10,3 triệu?', điểm khác biệt cốt lõi là gì?",
+    "question": "Khi người nhà khách hàng can ngăn vì sợ rủi ro buôn bán vỉa hè, hành động hỗ trợ thực chiến của tư vấn viên là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Gói Má Hải có thương hiệu 13 năm uy tín, công thức sốt Tứ Vị độc quyền, nguồn chả cá 17% đạm, cẩm nang đào tạo tay nghề và bảo vệ độc quyền vùng bán Map Tracker."
+        "text": "Khuyên khách hàng giấu kín không cho gia đình biết."
       },
       {
         "key": "b",
-        "text": "Chỉ khác nhau ở màu sắc chiếc xe inox"
+        "text": "Xúi giục khách hàng cãi nhau với người nhà."
       },
       {
         "key": "c",
-        "text": "Xe tự đóng ngoài chợ bán đắt hàng hơn xe Má Hải"
+        "text": "Bỏ qua khách hàng và chuyển sang gọi người khác."
       },
       {
         "key": "d",
-        "text": "Công ty bán giá cao để lấy tiền chi trả cho người mẫu quảng cáo"
+        "text": "Đề xuất tạo nhóm Zalo 3 bên gửi phóng sự Shark Tank, bài toán kinh tế giá vốn/tiền lời thực tế và giải đáp trực tiếp cho người nhà an tâm."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Tự đóng xe chỉ có cái thùng rỗng (không thương hiệu, không sốt ngon, không nguồn hàng chuẩn). Má Hải trao trọn bộ một mô hình kinh doanh có sẵn khách và bí quyết thành công.",
-    "quote": "Tự đóng xe thì chỉ có cái khung sắt, còn vào Má Hải là Cô Chú có sẵn thương hiệu 13 năm uy tín, nguồn chả cá 17% đạm và sốt ngon độc quyền hút khách ngay ngày đầu!"
+    "correctAnswer": "d",
+    "explanation": "Nhóm Zalo 3 bên giúp người nhà hiểu rõ mô hình uy tín 13 năm, tạo sự đồng thuận 100% trong gia đình.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-105",
     "stableId": "sale-105",
+    "displayNumber": 105,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Khi khách hàng lo sợ 'Khu vực tôi ở đã có nhiều quán bán đồ ăn sáng, sợ mở ra bán không lại', tư vấn viên phân tích lợi thế nào?",
+    "question": "Khi khách hàng hỏi 'Nếu tôi bán ế thì công ty có hỗ trợ gì không?', chính sách bảo chứng an toàn vốn được giải thích ra sao?",
     "options": [
       {
         "key": "a",
-        "text": "Khuyên khách hàng tìm một hòn đảo hoang vắng không có người để mở bán"
+        "text": "Giải thích chính sách bảo hiểm vốn: Thu hồi xe trong 60 ngày hoàn tối đa 2,8 triệu tùy hiện trạng, hoặc hỗ trợ kết nối sang nhượng 0đ."
       },
       {
         "key": "b",
-        "text": "Bắt buộc khách hàng phải bán phá giá 5.000đ/ổ để tiêu diệt các quán xung quanh"
+        "text": "Nói rằng công ty sẽ trả lương hàng tháng thay cho doanh số."
       },
       {
         "key": "c",
-        "text": "Khu vực đông quán ăn sáng chứng tỏ nhu cầu ăn sáng tại đó rất lớn; bánh mì chả cá nóng giòn Má Hải là món ăn tiện lợi mua mang đi trong 1 phút với giá bình dân 15k-20k, bổ sung phân khúc riêng biệt không trùng lặp."
+        "text": "Tuyên bố bán bánh mì Má Hải là chắc chắn 100% không bao giờ ế."
       },
       {
         "key": "d",
-        "text": "Bánh mì chả cá không thể cạnh tranh được với các món bún phở"
+        "text": "Từ chối giải đáp và chuyển sang chủ đề khác."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Khu đông quán ăn sáng là nơi có 'ao nhiều cá'. Bánh mì chả cá phục vụ nhanh gọn cho người đi xe máy vội đi làm, có tệp khách hàng riêng rất đông đảo.",
-    "quote": "Chỗ nào càng nhiều quán ăn sáng thì chỗ đó khách càng đông, bánh mì mình bán mang đi nhanh gọn 1 phút giá 15k là đánh trúng nhu cầu bà con vội đi làm ạ!"
+    "correctAnswer": "a",
+    "explanation": "Chính sách thu hồi xe 60 ngày hoàn tối đa 2,8tr và hỗ trợ sang nhượng 0đ là điểm tựa bảo vệ an toàn vốn cho người mở xe.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-106",
     "stableId": "sale-106",
+    "displayNumber": 106,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
     "question": "Khi khách hàng ngập ngừng 'Để tôi bàn lại với người nhà rồi nhắn lại sau', hành động chăm sóc tiếp theo đúng mực là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Tỏ thái độ bực bội và trách móc khách hàng lãng phí thời gian"
+        "text": "Gọi điện liên tục nhiều cuộc trong ngày để hối thúc chuyển tiền."
       },
       {
         "key": "b",
-        "text": "Gọi điện liên tục 20 cuộc mỗi ngày để thúc giục dồn dập phải trả lời ngay"
+        "text": "Lịch sự gửi bảng tóm tắt quyền lợi gói hợp tác qua Zalo và hẹn khung giờ thuận tiện ngày hôm sau gọi lại chăm sóc."
       },
       {
         "key": "c",
-        "text": "Chặn số điện thoại của khách hàng"
+        "text": "Nhắn tin trách móc khách hàng vì làm mất thời gian tư vấn."
       },
       {
         "key": "d",
-        "text": "Đồng cảm chân thành, chủ động gửi bảng tính lời lỗ thực tế và phóng sự Shark Tank qua Zalo để gia đình cùng xem, hẹn giờ lịch sự gọi lại hỗ trợ giải đáp cho cả nhà."
+        "text": "Xóa hoàn toàn thông tin của khách khỏi hệ thống."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Đồng cảm và gửi tài liệu giá trị cho cả gia đình xem giúp tạo sự tin tưởng tuyệt đối, tôn trọng thời gian bàn bạc nội bộ của gia đình khách hàng.",
-    "quote": "Dạ mở xe là việc quan trọng của cả nhà, con gửi bảng tính doanh thu và video phóng sự qua Zalo để Cô Chú cùng gia đình xem kỹ, tối mai con gọi lại hỗ trợ nhé!"
+    "correctAnswer": "b",
+    "explanation": "Tôn trọng thời gian bàn bạc của gia đình, gửi tài liệu tóm tắt và hẹn lịch gọi lại chu đáo thể hiện sự chuyên nghiệp.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-107",
     "stableId": "sale-107",
+    "displayNumber": 107,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Kỹ thuật đặt câu hỏi 'Hai lựa chọn tích cực' trong giao tiếp tư vấn chốt lịch hẹn thể hiện qua câu nói nào?",
+    "question": "Khi khách hàng hỏi 'Tại sao công ty không cho tôi nợ tiền cọc 2 triệu?', lý do nghiệp vụ được giải thích là gì?",
     "options": [
       {
         "key": "a",
-        "text": "'Anh/chị có định mua xe bánh mì bên em không hay thôi ạ?'"
+        "text": "Vì công ty không tin tưởng bất kỳ khách hàng nào."
       },
       {
         "key": "b",
-        "text": "'Bên em gọi lại hỗ trợ mình vào 9h00 sáng mai hay 14h30 chiều mai thì thuận tiện cho mình hơn ạ?'"
+        "text": "Vì công ty đang thiếu tiền mặt để chi trả lương."
       },
       {
         "key": "c",
-        "text": "'Anh/chị phải nghe điện thoại đúng 12h trưa mai nhé.'"
+        "text": "Khoản cọc 2 triệu là cam kết 2 chiều: Khóa giữ độc quyền tọa độ 300m trên bản đồ và xưởng tiến hành xuất kho chuẩn bị xe chu đáo."
       },
       {
         "key": "d",
-        "text": "'Nếu không rảnh thì thôi em không gọi lại nữa đâu.'"
+        "text": "Chỉ là quy định ngẫu nhiên không có ý nghĩa gì."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Kỹ thuật 2 lựa chọn tích cực giúp khách hàng chủ động chọn khung giờ phù hợp mà không cảm thấy bị thúc ép, tạo sự thoải mái và chuyên nghiệp.",
-    "quote": "Dạ sáng mai 9h hay đầu giờ chiều 14h con gọi lại hỗ trợ kiểm tra vị trí mặt bằng cho Cô Chú tiện hơn ạ?"
+    "correctAnswer": "c",
+    "explanation": "Cọc 2 triệu khóa vị trí độc quyền vệ tinh và kích hoạt quy trình chuẩn bị xe, bảo đảm quyền lợi đôi bên.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-108",
     "stableId": "sale-108",
+    "displayNumber": 108,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Khi đối tác thắc mắc 'Sau khi hết hạn hợp đồng 1 năm, tôi có phải đóng thêm tiền để gia hạn không?', câu trả lời chuẩn xác là gì?",
+    "question": "Khi khách hàng sợ 'Khu vực tôi ở đã có nhiều quán ăn sáng khác, liệu mở xe bánh mì có cạnh tranh nổi không?', câu trả lời là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Phải đóng 10 triệu đồng tiền phí tái ký hợp đồng mới"
+        "text": "Khuyên khách hàng chuyển sang bán bún bò, phở."
       },
       {
         "key": "b",
-        "text": "Công ty bắt buộc phải thu hồi xe và không cho tái ký"
+        "text": "Bảo khách đi dẹp hết các quán ăn sáng xung quanh trước khi bán."
       },
       {
         "key": "c",
-        "text": "Phải mua lại toàn bộ trang thiết bị mới từ đầu"
+        "text": "Khuyên khách hàng hạ giá bánh mì xuống 5.000đ để cạnh tranh."
       },
       {
         "key": "d",
-        "text": "Hoàn toàn miễn phí 0 đồng nếu đối tác tuân thủ đúng quy chế hợp tác và bảo đảm chất lượng nguyên liệu của chuỗi."
+        "text": "Phân tích lợi thế bánh mì nóng giòn mang đi cực nhanh trong 1 phút, giá bình dân 15.000đ và chả cá 17% đạm khác biệt hẳn so với các quán ăn tại chỗ."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Chính sách tái ký 0 đồng trọn đời là cam kết đồng hành bền vững của Má Hải, bảo đảm đối tác an tâm gắn bó lâu dài mà không lo chi phí phát sinh.",
-    "quote": "Hết 1 năm Cô Chú được tái ký hoàn toàn miễn phí 0 đồng, xe cộ đồ nghề là tài sản của Cô Chú trọn đời, công ty không thu thêm đồng nào ạ!"
+    "explanation": "Bánh mì mang đi nhanh 1 phút + Vị ngon độc quyền + Giá 15k đánh trúng nhu cầu ăn sáng tiện lợi của dòng người vội vã.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-109",
     "stableId": "sale-109",
+    "displayNumber": 109,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Nếu khách hàng băn khoăn 'Tôi ở vùng nông thôn, bán giá 15.000đ/ổ có sợ người dân chê đắt không?', tư vấn viên phân tích như thế nào?",
+    "question": "Khi khách hàng lo lắng về việc gas và dầu ăn tăng giá ảnh hưởng tiền lời, bộ giải pháp của Má Hải là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Khuyên khách hàng nên chuyển lên thành phố lớn sinh sống"
+        "text": "Kỹ thuật chiên nhanh 1–2 phút tiết kiệm gas, chính sách bình ổn giá chả cá/sốt và biên lợi nhuận ròng dày 35% làm đệm đỡ an toàn."
       },
       {
         "key": "b",
-        "text": "Mức giá 15.000đ hiện nay tương đương với một gói xôi hay tô cháo bình dân, trong khi ổ bánh mì Má Hải có chả cá chiên nóng ngập tràn, nước sốt đậm đà và đóng túi giấy sạch sẽ, mang lại giá trị vượt trội so với giá tiền."
+        "text": "Khuyên khách tắt bếp gas và bán bánh mì nguội."
       },
       {
         "key": "c",
-        "text": "Bắt buộc khách hàng phải hạ giá xuống 5.000đ và cắt giảm 90% chả cá"
+        "text": "Bảo khách cắt giảm định lượng chả cá xuống còn 10g/ổ."
       },
       {
         "key": "d",
-        "text": "Bánh mì Má Hải chỉ dành cho người giàu và không bán được ở nông thôn"
+        "text": "Công ty bao cấp toàn bộ tiền gas cho các chủ xe."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Mức giá 15.000đ là mức chi tiêu ăn sáng phổ thông ở khắp mọi miền. Chất lượng chả cá thơm nóng và sốt đậm đà luôn khiến thực khách cảm thấy xứng đáng từng đồng.",
-    "quote": "Bây giờ ở quê ổ bánh mì ăn sáng 15k là rất phổ biến, chả cá nóng hổi đầy đặn sạch sẽ trong túi giấy thì bà con mua ăn thử là ưng ý liền ạ!"
+    "correctAnswer": "a",
+    "explanation": "Chiên nhanh 1-2 phút + Bình ổn giá gốc + Lời ròng dày 35% giúp bảo toàn thu nhập ổn định trước biến động giá nhiên liệu.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-110",
     "stableId": "sale-110",
+    "displayNumber": 110,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
     "question": "Tại sao việc duy trì nguồn hàng chả cá 17% đạm và sốt Tứ Vị chính hãng là quyền lợi sống còn của chủ xe?",
     "options": [
       {
         "key": "a",
-        "text": "Vì chỉ có hàng chính hãng mới giữ được hương vị thơm ngon độc quyền giữ chân khách quen và được công ty bảo vệ pháp lý ATTP khi cơ quan chức năng kiểm tra."
+        "text": "Vì nguyên liệu mua tự do ngoài chợ có giá thành thấp hơn nhưng không đảm bảo hàm lượng đạm và nguồn gốc xuất xứ."
       },
       {
         "key": "b",
-        "text": "Vì nguyên liệu mua tự do ngoài chợ có giá thành thấp hơn nhưng không đảm bảo hàm lượng đạm và nguồn gốc xuất xứ."
+        "text": "Giữ vững vị ngon độc quyền giữ chân khách quen mỗi ngày và được công ty bảo vệ pháp lý an toàn thực phẩm khi cơ quan chức năng kiểm tra."
       },
       {
         "key": "c",
@@ -3081,993 +3191,1029 @@ const questions = [
         "text": "Vì việc sử dụng nguyên liệu chính hãng giúp đối tác tích lũy điểm thưởng và nhận các chính sách ưu đãi định kỳ."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Chất lượng nguyên liệu chính hãng tạo nên vị ngon giữ khách quen và có đầy đủ giấy tờ chứng nhận ATTP bảo vệ chủ xe trước mọi đợt kiểm tra pháp lý.",
-    "quote": "Bán hàng chuẩn công ty vừa ngon chuẩn vị giữ khách quen, vừa có đầy đủ giấy tờ ATTP bảo vệ Cô Chú kinh doanh hợp chuẩn và vững tâm mỗi ngày!"
+    "correctAnswer": "b",
+    "explanation": "Chất lượng chính hãng tạo nên vị ngon giữ khách quen và có đầy đủ chứng nhận ATTP bảo vệ chủ xe trước mọi đợt kiểm tra.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-111",
     "stableId": "sale-111",
+    "displayNumber": 111,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Khi đối tác muốn mở bán thêm sữa đậu nành hoặc nước ngọt đóng chai tại xe bánh mì buổi sáng, quy định của công ty là gì?",
+    "question": "Khi khách hàng hỏi 'Tôi có thể bán thêm nước ngọt, sữa đậu nành tại xe bánh mì không?', câu trả lời đúng quy chế là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Tuyệt đối nghiêm cấm và hạn chế quyền lợi 20 triệu đồng"
+        "text": "Bắt buộc phải đóng thêm 5 triệu đồng mới được bán nước ngọt."
       },
       {
         "key": "b",
-        "text": "Chỉ được bán duy nhất bánh mì và không được để bất kỳ món gì khác lên xe"
+        "text": "Công ty nghiêm cấm tuyệt đối không được bán bất kỳ thứ gì ngoài bánh mì."
       },
       {
         "key": "c",
-        "text": "Công ty khuyến khích bán thêm các loại nước uống đóng chai hoặc sữa hạt sạch sẽ để gia tăng thêm thu nhập cho điểm bán, miễn là bảo đảm vệ sinh và sắp xếp gọn gàng."
+        "text": "Được phép bán kèm các loại nước giải khát đóng chai để gia tăng thu nhập, miễn là bố trí gọn gàng và giữ vệ sinh quầy xe."
       },
       {
         "key": "d",
-        "text": "Phải đóng thêm phí bản quyền đồ uống cho công ty"
+        "text": "Chỉ được bán nước ngọt do chính công ty sản xuất."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Má Hải luôn tạo điều kiện tối đa để chủ xe gia tăng thu nhập: Bán kèm sữa đậu nành, nước ngọt, cà phê đóng chai giúp tăng thêm 50k - 100k tiền lời mỗi sáng.",
-    "quote": "Cô Chú để thêm thùng sữa đậu nành hay nước ngọt đóng chai bán kèm rất tốt, vừa phục vụ tiện lợi cho khách vừa kiếm thêm tiền lời mỗi sáng ạ!"
+    "explanation": "Bán thêm cà phê, nước ngọt đóng chai giúp tăng thêm 200k–300k tiền lời mỗi sáng, công ty luôn tạo điều kiện thuận lợi.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-112",
     "stableId": "sale-112",
+    "displayNumber": 112,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Về chính sách hỗ trợ biển số điểm bán và nhận diện thương hiệu, Má Hải cam kết điều gì?",
+    "question": "Khi khách hàng hỏi 'Nếu tôi nghỉ bán 1 ngày trong tuần thì có bị tính phí gì không?', câu trả lời chuẩn xác là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Bàn giao biển số điểm bán độc quyền, decal trang trí xe đồng bộ, standee hướng dẫn và áo đồng phục nhận diện sắc cam nổi bật."
+        "text": "Dạ bắt buộc phải làm đơn xin phép trước 30 ngày mới được nghỉ."
       },
       {
         "key": "b",
-        "text": "Khách hàng phải tự vẽ logo bằng tay lên thân xe"
+        "text": "Dạ nghỉ bán 1 ngày sẽ bị công ty thu hồi xe ngay lập tức."
       },
       {
         "key": "c",
-        "text": "Không cung cấp biển số điểm bán để tránh bị quản lý"
+        "text": "Dạ nghỉ bán 1 ngày phải nộp phí duy trì điểm bán 1 triệu đồng."
       },
       {
         "key": "d",
-        "text": "Chỉ giao một miếng vải dán tạm thời"
+        "text": "Dạ chủ xe làm chủ hoàn toàn điểm bán, tự chủ thời gian nghỉ ngơi; công ty chỉ khuyến khích bán đều đặn để giữ khách quen ạ."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Bộ nhận diện thương hiệu cam - trắng đồng bộ giúp xe bánh mì nổi bật từ xa, tạo ấn tượng chuyên nghiệp và niềm tin cho người đi đường.",
-    "quote": "Màu áo cam và biển hiệu Má Hải sáng rực nổi bật trên đường, khách chạy xe từ xa nhìn thấy là nhận ra thương hiệu quen thuộc ghé vào mua ngay!"
+    "correctAnswer": "d",
+    "explanation": "Chủ xe làm chủ hoàn toàn, tự do sắp xếp công việc; mở bán đều đặn là vì quyền lợi giữ khách quen của chính mình.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-113",
     "stableId": "sale-113",
+    "displayNumber": 113,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Khi đối tác gặp khó khăn trong việc tìm kiếm lò bánh mì nóng giòn gần điểm bán, công ty hỗ trợ như thế nào?",
+    "question": "Khi khách hàng băn khoăn về phí vận chuyển chành xe tỉnh, giải pháp tối ưu chi phí là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc đối tác phải tự xây lò nướng bánh mì tại nhà"
+        "text": "Đặt gộp số lượng nguyên liệu đủ dùng cho 5–7 ngày (chả cá, nước sốt, bao bì) trên cùng một chuyến hàng để giảm tối đa cước xe."
       },
       {
         "key": "b",
-        "text": "Chuyên viên tư vấn hỗ trợ tra cứu mạng lưới lò bánh mì đối tác trong khu vực hoặc hướng dẫn cách tìm lò bánh mì gần nhất giao bánh nóng đúng 5h30 sáng."
+        "text": "Mỗi ngày đặt 1kg chả cá gửi riêng một chuyến chành xe."
       },
       {
         "key": "c",
-        "text": "Yêu cầu đối tác nhập bánh mì khô từ nước ngoài về"
+        "text": "Tự đi xe máy hàng trăm cây số lên tổng kho chở hàng về."
       },
       {
         "key": "d",
-        "text": "Không hỗ trợ và yêu cầu đối tác tự chịu trách nhiệm hoàn toàn"
+        "text": "Thuê máy bay vận chuyển hàng hóa hỏa tốc mỗi sáng."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Đội ngũ Má Hải với kinh nghiệm 1.200 điểm bán luôn hỗ trợ kết nối hoặc hướng dẫn đối tác liên hệ các lò bánh mì uy tín quanh khu vực.",
-    "quote": "Khu vực Cô Chú ở bên con có dữ liệu các lò bánh mì uy tín giao hàng sớm, con hỗ trợ kết nối số điện thoại để lò giao bánh nóng tận xe cho Cô Chú nhé!"
+    "correctAnswer": "a",
+    "explanation": "Lên đơn gộp 5-7 ngày giúp tối ưu cước vận chuyển chỉ còn vài chục ngàn, chia nhỏ trên từng ổ bánh mì là không đáng kể.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-114",
     "stableId": "sale-114",
+    "displayNumber": 114,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
     "question": "Khi gửi thông tin hỗ trợ cho khách hàng qua Zalo sau cuộc gọi, hành vi nào sau đây là KHÔNG PHÙ HỢP?",
     "options": [
       {
         "key": "a",
-        "text": "Gửi hình ảnh thực tế các điểm bán đang hoạt động đông khách và bảng tính chi phí - tiền lời rõ ràng."
+        "text": "Gửi bảng tổng hợp quyền lợi gói hợp tác ngắn gọn, dễ đọc kèm hình ảnh thực tế."
       },
       {
         "key": "b",
-        "text": "Gửi phóng sự Shark Tank và giấy tờ an toàn thực phẩm để củng cố niềm tin cho gia đình cùng xem"
+        "text": "Gửi tin nhắn dồn dập vào lúc nửa đêm và hối thúc khách hàng phải chuyển khoản đặt cọc ngay."
       },
       {
         "key": "c",
-        "text": "Nhắn tin spam liên tục hàng chục tin nhắn dồn dập vào lúc nửa đêm và thúc thúc giục dồn dập phải chuyển tiền ngay."
+        "text": "Gửi video quy trình chiên chả cá sợi và giấy chứng nhận an toàn thực phẩm."
       },
       {
         "key": "d",
-        "text": "Chào hỏi lịch sự và gửi lời chúc ngày mới tốt lành kèm lời nhắn sẵn sàng hỗ trợ khi khách cần"
+        "text": "Gửi đường link bài báo phóng sự về hành trình 13 năm phát triển của chuỗi Bánh Mì Má Hải."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Spam tin nhắn ban đêm và ép cọc là hành vi quấy rối, vi phạm nghiêm trọng chuẩn mực ứng xử chuyên nghiệp của nhân sự Má Hải.",
-    "quote": "Gửi thông tin giá trị một cách lịch sự, tinh tế và đúng lúc, luôn tôn trọng sự riêng tư của khách hàng để tạo thiện cảm lâu dài!"
+    "correctAnswer": "b",
+    "explanation": "Gửi tin nhắn đêm muộn và hối thúc dồn dập vi phạm chuẩn mực văn minh tư vấn, gây phiền hà cho khách hàng.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-115",
     "stableId": "sale-115",
+    "displayNumber": 115,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Trong các nhận định sau đây về việc chọn ngày khai trương điểm bán cho khách hàng, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
+    "question": "Khi khách hàng ở chung cư hỏi 'Tôi muốn bán bánh mì ở sảnh chung cư được không?', lời khuyên khảo sát là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Khai trương vào dịp đầu tháng hoặc ngày rằm thường mang lại tâm lý may mắn, phấn khởi cho gia chủ"
+        "text": "Đặt xe sâu trong góc tối tầng hầm để xe."
       },
       {
         "key": "b",
-        "text": "Khai trương vào dịp đầu năm học mới hoặc đầu tuần khi người đi làm qua lại tấp nập giúp điểm bán nhanh có khách quen."
+        "text": "Đặt xe trên sân thượng của tòa nhà chung cư."
       },
       {
         "key": "c",
-        "text": "Chọn ngày khai trương cụ thể tạo động lực rõ ràng để khách hàng chuẩn bị mặt bằng và đồ nghề kịp tiến độ."
+        "text": "Khảo sát vị trí sảnh đón hoặc lối ra vào cổng chính nơi cư dân đổ ra đường đi làm từ 6h00–8h00 sáng để đạt hiệu quả cao nhất."
       },
       {
         "key": "d",
-        "text": "Khai trương vào lúc 12h00 đêm giữa trời mưa bão là thời điểm đông khách nhất."
+        "text": "Bán lưu động trong thang máy của chung cư."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Khai trương bánh mì sáng cần chọn ngày thời tiết thuận lợi, đầu tuần hoặc ngày đẹp sáng sớm (6h00) để đón lượng khách đi làm đông đúc.",
-    "quote": "Chọn ngày khai trương đầu tuần hoặc ngày rằm sáng sớm, treo băng rôn cờ hoa nổi bật là khách ghé ủng hộ nườm nượp lấy hên đầu ca ạ!"
+    "correctAnswer": "c",
+    "explanation": "Sảnh đón và cổng chính là dòng chảy lưu thông tự nhiên của cư dân mỗi sáng, tấp vào mua bánh cực kỳ thuận tiện.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-116",
     "stableId": "sale-116",
+    "displayNumber": 116,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Khi khách hàng chia sẻ: 'Tôi cần hỏi lại ý kiến của chồng/vợ rồi mới quyết định', cách xử lý tình huống khéo léo nhất là gì?",
+    "question": "Khi khách hàng băn khoăn 'Tôi sợ bị trùng vị trí với xe khác sau này', cam kết bảo vệ của công ty là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Khuyên khách hàng nên tự quyết định giấu giếm gia đình"
+        "text": "Khách hàng phải tự thương lượng khoảng cách với các đối tác khác."
       },
       {
         "key": "b",
-        "text": "Đồng cảm chân thành vì mở xe là việc quan trọng của cả gia đình, chủ động xin phép gửi tài liệu bảng tính lời lỗ và phóng sự Shark Tank qua Zalo để hai vợ chồng cùng tham khảo."
+        "text": "Sau 3 tháng công ty sẽ mở thêm xe bên cạnh để tăng doanh số."
       },
       {
         "key": "c",
-        "text": "Trách móc khách hàng thiếu tính tự lập trong kinh doanh"
+        "text": "Chỉ bảo vệ khoảng cách trong 7 ngày đầu khai trương."
       },
       {
         "key": "d",
-        "text": "Tắt máy ngay lập tức và xóa liên hệ"
+        "text": "Hệ thống Map Tracker khóa cứng tọa độ vĩnh viễn, tuyệt đối không bao giờ duyệt mở xe thứ hai trong bán kính bảo vệ 300m."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Kinh doanh gia đình cần sự đồng thuận của vợ chồng. Việc cung cấp đầy đủ thông tin chuẩn xác giúp người bạn đời thấu hiểu và ủng hộ hoàn toàn.",
-    "quote": "Dạ mở xe là việc lớn của cả hai vợ chồng, con gửi bảng tính doanh thu và phóng sự qua Zalo để Chú cùng Cô xem kỹ, cả nhà cùng vui vẻ ủng hộ nhé!"
+    "correctAnswer": "d",
+    "explanation": "Map Tracker khóa cứng tọa độ trên vệ tinh, bảo đảm 100% không có xe thứ hai xuất hiện trong bán kính bảo vệ độc quyền.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-117",
     "stableId": "sale-117",
+    "displayNumber": 117,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Về kỹ thuật tư vấn tạo động lực và đồng hành cùng khách hàng, nhận định nào sau đây là KHÔNG ĐÚNG?",
+    "question": "Khi khách hàng hỏi 'Tôi có thể dùng xe bánh mì tự đóng ở nhà để tham gia không?', tư vấn viên hướng dẫn thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Thay vì hỏi 'Anh/chị có cọc không?' thì hỏi 'Anh/chị muốn nhận xe vào Thứ Hai hay Thứ Tư tuần tới để kịp ngày khai trương?'."
+        "text": "Dạ được ạ, Cô Chú chọn Gói 4,8 triệu sẽ được cấp trọn bộ decal nhận diện chuẩn dán vào xe và hướng dẫn kỹ thuật chiên chả để bán ngay."
       },
       {
         "key": "b",
-        "text": "Thay vì hỏi 'Anh/chị có rảnh không?' thì hỏi 'Em gọi lại hỗ trợ mình vào 9h sáng mai hay 14h chiều mai thuận tiện hơn ạ?'."
+        "text": "Công ty cấm tuyệt đối không cho dùng xe tự đóng ở nhà."
       },
       {
         "key": "c",
-        "text": "Kỹ thuật 2 lựa chọn tích cực giúp khách hàng cảm thấy thoải mái và chủ động đưa ra quyết định phù hợp với lịch trình."
+        "text": "Bắt buộc phải vứt bỏ xe cũ mới được hợp tác."
       },
       {
         "key": "d",
-        "text": "Dùng lời lẽ đe dọa, ép buộc khách hàng phải chuyển khoản ngay trong 5 phút nếu không sẽ bị đưa vào danh sách đen."
+        "text": "Xe tự đóng ở nhà phải đóng thêm phí kiểm định 10 triệu đồng."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Đe dọa và ép buộc là hành vi nghiêm cấm tuyệt đối. Tư vấn viên Má Hải luôn đồng hành bằng sự tận tâm, tôn trọng và lịch sự.",
-    "quote": "Luôn đồng hành chân thành, dùng câu hỏi gợi mở nhẹ nhàng để giúp khách tự tin ra quyết định khởi nghiệp vì tương lai của gia đình!"
+    "correctAnswer": "a",
+    "explanation": "Gói 4,8 triệu linh hoạt giúp khách tận dụng phương tiện có sẵn, dán decal thương hiệu là thành xe Má Hải chuẩn mực.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-118",
     "stableId": "sale-118",
+    "displayNumber": 118,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Theo số liệu thống kê thực tế từ hơn 1.200 điểm bán Má Hải, tỷ lệ chủ xe đạt mức thu nhập từ 7 triệu đồng/tháng trở lên sau ca bán sáng là bao nhiêu?",
+    "question": "Khi khách hàng hỏi 'Tại sao bánh mì Má Hải lại dùng chả cá sợi mà không dùng chả miếng?', ưu thế vượt trội là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Chỉ có 5% số điểm bán"
+        "text": "Vì chả cá sợi dễ bị gãy vụn hơn chả miếng."
       },
       {
         "key": "b",
-        "text": "Khoảng 20% số điểm bán"
+        "text": "Chả cá sợi chiên ngập dầu chín phồng cực nhanh trong 1–2 phút, vàng giòn ráo dầu và kẹp vừa vặn dọc thân bánh mì."
       },
       {
         "key": "c",
-        "text": "Khoảng 70% số điểm bán (trong đó nhóm bán tại vị trí đẹp đạt thu nhập trên 15 – 20 triệu đồng/tháng)."
+        "text": "Vì chả cá sợi rẻ tiền hơn các loại chả khác."
       },
       {
         "key": "d",
-        "text": "100% các điểm bán trong hệ thống đều kiếm trên 100 triệu đồng mỗi tháng"
+        "text": "Chỉ là ngẫu nhiên không có tính toán ẩm thực."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Con số thực tế trung thực: 70% điểm bán đạt từ 7 triệu/tháng trở lên (điểm đẹp trên 15-20 triệu), 30% đạt 3-7 triệu/tháng, số liệu minh bạch không thổi phồng.",
-    "quote": "Thực tế 70% chủ xe trong hệ thống kiếm từ 7 đến trên 15 triệu mỗi tháng chỉ với 3,5 tiếng buổi sáng, thu nhập rất tốt và hoàn toàn có thật ạ!"
+    "correctAnswer": "b",
+    "explanation": "Chả sợi chiên nhanh 1-2 phút, chín đều vàng giòn và xếp dọc thân bánh giúp cắn miếng nào cũng trọn vẹn vị chả và sốt.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-119",
     "stableId": "sale-119",
+    "displayNumber": 119,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Khi tư vấn cho khách hàng đã có sẵn xe bánh mì ở nhà nhưng chưa có đồ nghề bếp chiên, phương án nào là tối ưu và tiết kiệm nhất?",
+    "question": "Khi khách hàng hỏi 'Hợp đồng nhượng quyền có điều khoản nào thu thêm chi phí phát sinh vô lý đối với chủ xe không?', câu trả lời minh bạch là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc khách hàng phải vứt bỏ xe cũ và mua gói xe mới 10,3 triệu"
+        "text": "Dạ công ty có quyền thu thêm chi phí tùy ý bất cứ lúc nào."
       },
       {
         "key": "b",
-        "text": "Yêu cầu khách hàng tự chế tạo bếp gas bằng củi thô sơ mà không cung cấp quy trình hướng dẫn cụ thể"
+        "text": "Dạ có hàng trăm điều khoản phụ phí bí mật."
       },
       {
         "key": "c",
-        "text": "Từ chối tiếp nhận các đối tác đã có sẵn xe cũ"
+        "text": "Dạ hợp đồng hợp tác Má Hải xây dựng trên tinh thần đồng minh cùng kiếm cơm, 0đ phụ phí vô lý, chỉ cam kết cùng giữ chuẩn ATTP và chất lượng bánh."
       },
       {
         "key": "d",
-        "text": "Tư vấn chọn Gói 4,8 triệu (nhận trọn bộ decal nhận diện, đồng phục, cẩm nang, chứng nhận ATTP) và mua thêm bộ đồ nghề bếp chuyên dụng khoảng 1,5 triệu để có đủ đồ mở bán ngay."
+        "text": "Dạ mỗi lỗi nhỏ đều bị thu phí 10 triệu đồng."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Kết hợp Gói 4,8 triệu + bộ đồ nghề bếp 1,5 triệu giúp khách hàng tận dụng tối đa phương tiện sẵn có, chỉ tốn hơn 6 triệu là có trọn bộ mở bán.",
-    "quote": "Cô Chú tận dụng xe sẵn có chọn Gói 4,8 triệu cộng thêm bộ bếp khè 1,5 triệu là vừa tròn đầy đủ đồ nghề mà tiết kiệm được tiền xe rất nhiều ạ!"
+    "correctAnswer": "c",
+    "explanation": "Hợp đồng Má Hải nhân văn, minh bạch, không phụ phí vô lý, bảo vệ tối đa quyền lợi và sự an tâm của người bán.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-120",
     "stableId": "sale-120",
+    "displayNumber": 120,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Sau khi khách hàng đã chuyển tiền cọc 2.000.000đ để giữ vị trí và chuẩn bị xe, tư vấn viên cần thực hiện những công việc chăm sóc nào tiếp theo?",
+    "question": "Những giá trị thực tế nào giúp khách hàng hoàn toàn yên tâm khi quyết định đặt cọc mở xe Bánh Mì Má Hải?",
     "options": [
       {
         "key": "a",
-        "text": "Cắt đứt liên lạc và để khách hàng tự xoay xở"
+        "text": "Thương hiệu 13 năm uy tín phục vụ 1,5 triệu ổ/tháng, mạng lưới hơn 1.200 điểm bán thành công và chính sách 3 KHÔNG minh bạch."
       },
       {
         "key": "b",
-        "text": "Yêu cầu khách hàng chuyển thêm 10 triệu đồng tiền bồi dưỡng mà không cung cấp quy trình hướng dẫn cụ thể."
+        "text": "Nguồn nguyên liệu chả cá sợi 17% đạm và sốt Tứ Vị chuẩn ATTP quốc tế FSSC 22000 & Intertek."
       },
       {
         "key": "c",
-        "text": "Gửi phiếu thu xác nhận cọc, cập nhật tiến độ xưởng làm xe, hướng dẫn khách liên hệ lò bánh mì gần nhà và chuẩn bị mặt bằng sẵn sàng đón ngày khai trương."
+        "text": "Chính sách bảo hiểm vốn thu hồi xe 60 ngày hoàn tối đa 2,8 triệu và hỗ trợ sang nhượng 0 đồng."
       },
       {
         "key": "d",
-        "text": "Báo hủy điểm bán mà không có lý do"
+        "text": "Tất cả các yếu tố trên đều là nền tảng vững chắc tạo dựng niềm tin tuyệt đối cho đối tác."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Quy trình chăm sóc sau cọc: Gửi xác nhận -> Cập nhật tiến độ sản xuất -> Hướng dẫn chuẩn bị mặt bằng, lò bánh mì -> Bàn giao đúng hẹn.",
-    "quote": "Sau khi nhận cọc, con gửi phiếu thu xác nhận ngay và cập nhật tiến độ xe từng ngày, hướng dẫn Cô Chú liên hệ lò bánh mì để chuẩn bị khai trương suôn sẻ ạ!"
+    "correctAnswer": "d",
+    "explanation": "Uy tín 13 năm + Chất lượng chuẩn quốc tế + Bảo hiểm an toàn vốn là 3 trụ cột vững chắc giúp đối tác hoàn toàn an tâm.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-121",
     "stableId": "sale-121",
+    "displayNumber": 121,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Trong các quy định sau đây về việc bảo mật thông tin khách hàng trên hệ thống, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
+    "question": "Khi khách hàng hỏi 'Sau khi cọc 2 triệu thì bao lâu tôi nhận được xe để bán?', tiến độ kho vận là bao lâu?",
     "options": [
       {
         "key": "a",
-        "text": "Thông tin số điện thoại và địa chỉ của khách hàng chỉ được sử dụng cho mục đích hỗ trợ mở xe và giao hàng."
+        "text": "Khoảng 5 đến 7 ngày làm việc để xưởng kiểm tra chất lượng xe, in ấn decal nhận diện và bàn giao tận nơi."
       },
       {
         "key": "b",
-        "text": "Tuyệt đối không chia sẻ hoặc chuyển giao dữ liệu khách hàng cho bất kỳ bên thứ ba nào ngoài công ty."
+        "text": "Khách hàng phải chờ đợi từ 6 tháng đến 1 năm."
       },
       {
         "key": "c",
-        "text": "Dữ liệu trao đổi được lưu trữ an toàn trên phần mềm nội bộ để phục vụ quá trình bảo hành và hỗ trợ đối tác."
+        "text": "Giao xe ngay sau 5 phút qua đường bưu điện."
       },
       {
         "key": "d",
-        "text": "Nhân viên được phép bán số điện thoại khách hàng cho các bên dịch vụ cho vay tín dụng đen."
+        "text": "Công ty không có cam kết về thời gian giao xe."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Bảo mật thông tin khách hàng là cam kết pháp lý nghiêm ngặt của Má Hải. Hành vi bán dữ liệu là vi phạm pháp luật và bị sa thải lập tức.",
-    "quote": "Thông tin của Cô Chú được bảo mật tuyệt đối trên hệ thống công ty, chỉ dùng để hỗ trợ kỹ thuật và giao hàng, an toàn 100% ạ!"
+    "correctAnswer": "a",
+    "explanation": "Tiến độ chuẩn 5–7 ngày làm việc giúp xưởng chuẩn bị xe tinh tươm, in decal và gửi hàng chu đáo đến tận tay đối tác.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-122",
     "stableId": "sale-122",
+    "displayNumber": 122,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Khi tư vấn viên tiếp nhận một liên hệ khách hàng mới đăng ký trên website hoặc mạng xã hội, hành vi nào sau đây là KHÔNG PHÙ HỢP chuẩn mực?",
+    "question": "Khi khách hàng hỏi 'Tôi có cần thuê nhân viên đứng bán không?', lời khuyên tối ưu lợi nhuận ban đầu là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Để thông tin tồn đọng nhiều tuần không liên hệ khiến nhu cầu của khách hàng bị nguội lạnh."
+        "text": "Bắt buộc phải thuê ngay đội ngũ 5 nhân viên quản lý."
       },
       {
         "key": "b",
-        "text": "Kiểm tra nhanh thông tin đăng ký (khu vực tỉnh/thành, nhu cầu gói) trước khi bấm số gọi điện"
+        "text": "Giai đoạn đầu nên tự đứng bán hoặc cùng người nhà phụ bán để nắm chắc tay nghề, tiết kiệm chi phí và giữ trọn tiền lời."
       },
       {
         "key": "c",
-        "text": "Chủ động liên hệ sớm trong ngày để hỗ trợ tư vấn kịp thời khi khách hàng đang có mong muốn tìm hiểu cao nhất."
+        "text": "Giao toàn bộ điểm bán cho người ngoài tự quản lý."
       },
       {
         "key": "d",
-        "text": "Chuẩn bị tâm thế vui vẻ, giọng nói ấm áp và tự tin để giải đáp mọi thắc mắc của khách hàng"
+        "text": "Chỉ đứng nhìn và không trực tiếp tham gia bán bánh."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Tốc độ phản hồi là yếu tố then chốt: Liên hệ ngay trong ngày khi khách hàng vừa đăng ký giúp giải tỏa băn khoăn và chốt vị trí kịp thời.",
-    "quote": "Khách để lại thông tin phải gọi hỗ trợ ngay trong ngày khi khách đang hào hứng, chậm trễ là khách mất nhiệt hoặc tìm sang mô hình khác!"
+    "correctAnswer": "b",
+    "explanation": "Tự đứng bán hoặc người nhà phụ ca sáng 3,5 tiếng giúp bỏ túi trọn vẹn 100% tiền lời mà không tốn chi phí thuê mướn.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-123",
     "stableId": "sale-123",
+    "displayNumber": 123,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Những giá trị thực tế nào mà cẩm nang hướng dẫn bán hàng mang lại cho người mới mở xe?",
+    "question": "Khi khách hàng hỏi 'Nếu tôi muốn mở thêm xe thứ 2 thì có được ưu đãi gì không?', chính sách công ty là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc chủ xe phải tự mò mẫm công thức chế biến mà không có chỉ dẫn"
+        "text": "Bắt buộc phải thanh toán gấp 3 lần chi phí gói ban đầu."
       },
       {
         "key": "b",
-        "text": "Chỉ có vài trang giấy trắng không có nội dung"
+        "text": "Công ty cấm không cho mở thêm xe thứ 2."
       },
       {
         "key": "c",
-        "text": "Tài liệu dạy các kỹ năng đầu tư chứng khoán và bất động sản"
+        "text": "Được hỗ trợ quét Map Tracker ưu tiên, giảm chi phí gói hợp tác cho điểm bán thân thiết và hỗ trợ marketing ngày khai trương."
       },
       {
         "key": "d",
-        "text": "Cầm tay chỉ việc từng thao tác: Bảo quản chả cá tươi, kỹ thuật chiên phồng giòn rụm, định lượng sốt Tứ Vị chuẩn vị, cách sắp xếp quầy xe gọn gàng và nụ cười chào đón khách quen."
+        "text": "Phải hủy bỏ điểm bán thứ nhất mới được mở điểm bán thứ hai."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Cẩm nang bán hàng là đúc kết thực chiến 13 năm của 1.200 điểm bán, giúp người chưa từng buôn bán cũng trở thành người làm bánh chuyên nghiệp chỉ sau vài ngày.",
-    "quote": "Cẩm nang bán hàng hướng dẫn từng li từng tí từ cách chiên chả đến câu chào khách, Cô Chú đọc là làm theo được ngay rất dễ dàng!"
+    "correctAnswer": "c",
+    "explanation": "Má Hải luôn hoan nghênh và dành chính sách ưu đãi đặc biệt cho các chủ xe mở rộng chuỗi điểm bán của gia đình.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-124",
     "stableId": "sale-124",
+    "displayNumber": 124,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Thời gian hoàn vốn ước tính cho một điểm bán Bánh Mì Má Hải (với mức bán trung bình 40 – 50 ổ/sáng) thường đạt được trong bao lâu?",
+    "question": "Về việc đối soát và thanh toán tiền nguyên liệu hàng tuần, quy trình thực hiện như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Chỉ mất khoảng 1 đến 2 tháng bán hàng đều đặn mỗi sáng là có thể thu hồi trọn vẹn số vốn đầu tư ban đầu."
+        "text": "Không có biên lai và chứng từ đối soát."
       },
       {
         "key": "b",
-        "text": "Mất khoảng 12 đến 18 tháng"
+        "text": "Nhân viên công ty đến tận xe thu tiền mặt mỗi ngày."
       },
       {
         "key": "c",
-        "text": "Mất khoảng 5 đến 10 năm"
+        "text": "Công ty tự ý trừ tiền trong tài khoản ngân hàng của khách."
       },
       {
         "key": "d",
-        "text": "Không bao giờ có thể thu hồi được vốn"
+        "text": "Chủ xe theo dõi lịch sử đơn hàng minh bạch trên App hoặc qua phiếu xuất kho điện tử, thanh toán chuyển khoản tiện lợi."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Vốn mở xe 4,8tr - 10,3tr, mỗi ngày lời 200k - 250k (bán 40-50 ổ), chỉ cần 30-45 ngày (1-2 tháng) là thu hồi đủ 100% vốn đầu tư.",
-    "quote": "Vốn bỏ ra chỉ vài triệu, mỗi sáng lời 200k-300k thì chỉ 1 đến 2 tháng là Cô Chú thu hồi xong vốn, từ tháng thứ 3 trở đi là tiền lời ròng bỏ túi!"
+    "correctAnswer": "d",
+    "explanation": "Ứng dụng đặt hàng số hóa minh bạch giá cả, số lượng và lịch sử thanh toán, giúp chủ xe quản lý tài chính dễ dàng.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-125",
     "stableId": "sale-125",
+    "displayNumber": 125,
     "sectionNo": 5,
     "sectionName": "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
-    "question": "Tại sao việc duy trì liên lạc và đồng hành cùng chủ xe trong suốt thời gian hợp đồng là kim chỉ nam của Nhà Má Hải?",
+    "question": "Khi kết thúc buổi tư vấn, câu nói đọng lại niềm tin và sự ấm áp nhất đối với khách hàng là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Vì sự thành công, buôn bán đông khách và thu nhập ổn định của từng chủ xe chính là nền tảng sống còn và uy tín thương hiệu của toàn bộ hệ thống."
+        "text": "'Má Hải luôn xem Cô Chú là người bạn đồng minh cùng kiếm cơm, tụi con cam kết đồng hành tận tâm để điểm bán của mình buôn may bán đắt ạ!'"
       },
       {
         "key": "b",
-        "text": "Để tìm cớ hạn chế quyền lợi đối tác mỗi tuần"
+        "text": "'Cô Chú không cọc ngay hôm nay thì ngày mai giá sẽ tăng gấp đôi đấy.'"
       },
       {
         "key": "c",
-        "text": "Để gây áp lực lên đối tác phải mua thêm nhiều xe mới không cần thiết"
+        "text": "'Bên con bận lắm, Cô Chú tự quyết định đi.'"
       },
       {
         "key": "d",
-        "text": "Để thu thập bí quyết riêng của chủ xe đem bán cho người khác"
+        "text": "'Bán bánh mì không giàu được đâu.'"
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Má Hải phát triển dựa trên sự thành công của đối tác: Chủ xe bán được nhiều bánh, kiếm được nhiều tiền thì chuỗi mới bền vững và thịnh vượng.",
-    "quote": "Má Hải luôn đồng hành sát cánh, vì Cô Chú buôn may bán đắt có tiền lời ổn định thì thương hiệu Má Hải mới phát triển vững bền được ạ!"
+    "explanation": "Tâm thế chân thành, ấm áp, coi khách như người nhà là bản sắc văn hóa làm nên thương hiệu Bánh Mì Má Hải 13 năm qua.",
+    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ mọi băn khoăn để Cô Chú an tâm khởi sự vững vàng ạ!"
   },
   {
     "id": "sale-126",
     "stableId": "sale-126",
+    "displayNumber": 126,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Quy trình chuẩn bị đầu ca bán hàng lúc 5h30 sáng tại điểm bán Bánh Mì Má Hải bao gồm các công việc nào?",
+    "question": "Thời gian có mặt tại điểm bán chuẩn mực nhất để chuẩn bị ca bán sáng 5h30 là khi nào?",
     "options": [
       {
         "key": "a",
-        "text": "Bật bếp gas khè làm nóng dầu chiên ở 160-170°C, xếp dưa leo và rau răm sạch vào khay inox, rót nước sốt Tứ Vị ra chén và kiểm tra số lượng bánh mì tươi từ lò."
+        "text": "6h30 sáng mới bắt đầu có mặt."
       },
       {
         "key": "b",
-        "text": "Ngồi bấm điện thoại đợi khách hàng đầu tiên đến mới bắt đầu đi mua dầu ăn"
+        "text": "5h00 đến 5h15 sáng (để kiểm tra gas, đun nóng dầu, bày biện rau dưa và chuẩn bị bánh mì nóng giòn)."
       },
       {
         "key": "c",
-        "text": "Chiên sẵn toàn bộ 10kg chả cá từ lúc 3h00 sáng rồi để nguội ngắt trên bàn"
+        "text": "7h00 sáng khi khách đã tập trung đông."
       },
       {
         "key": "d",
-        "text": "Rót nước sốt Tứ Vị đổ tràn lan ra mặt bàn xe inox"
+        "text": "Đến giờ nào bán giờ đó không cần chuẩn bị trước."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "5h30 sáng là giờ vàng chuẩn bị: Làm nóng dầu, sơ chế rau dưa, rót sốt và nhận bánh mì nóng giòn từ lò để 6h00 bắt đầu phục vụ mẻ bánh đầu tiên.",
-    "quote": "5h30 sáng có mặt tại xe, bật bếp đun dầu sôi tim, xếp khay rau dưa ngay ngắn, nhận bánh mì giòn từ lò là 6h00 tự tin đón khách nườm nượp ạ!"
+    "correctAnswer": "b",
+    "explanation": "Có mặt trước 15-30 phút giúp chủ xe sẵn sàng đón những vị khách đầu tiên lúc 5h30 một cách chu đáo, không bị lập bập.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-127",
     "stableId": "sale-127",
+    "displayNumber": 127,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Kỹ thuật chiên chả cá sợi tại chỗ trong giờ cao điểm đông khách được hướng dẫn như thế nào?",
+    "question": "Sự phân công công việc nhịp nhàng giữa 2 người trong ca bán sáng cao điểm (6h30–7h30) là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Đổ ngập chảo chả cá đông đá khiến dầu bị hạ nhiệt và ngấm mỡ"
+        "text": "1 người đứng bán và 1 người ngồi bấm điện thoại."
       },
       {
         "key": "b",
-        "text": "Chiên từng mẻ nhỏ vừa đủ cho 5-7 ổ bánh mì, đảo nhẹ tay cho sợi chả phồng vàng đều, vớt ra gác trên vợt ráo dầu để sợi luôn giòn xốp và nóng hổi."
+        "text": "Cả 2 người cùng đứng chiên chả và bỏ mặc khách đứng chờ."
       },
       {
         "key": "c",
-        "text": "Chiên chả cá bằng lửa thật nhỏ để sợi chả bị mềm nhũn"
+        "text": "1 người chuyên chiên chả cá sợi và chan nước sốt; 1 người chuyên kẹp rau dưa, bọc túi giấy, thu tiền và cảm ơn khách."
       },
       {
         "key": "d",
-        "text": "Tắt bếp gas hoàn toàn và dùng tay bóp vụn chả cá sống cho vào bánh mì"
+        "text": "Cả 2 người cùng tranh nhau nhận tiền của khách."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Chiên mẻ nhỏ liên tục giúp sợi chả luôn phồng giòn vàng ruộm, không bị ngấy mỡ và giữ ổ bánh mì nóng sốt trao tận tay khách hàng.",
-    "quote": "Bí quyết bán nhanh giờ cao điểm là chiên cuốn chiếu từng mẻ nhỏ, sợi chả nổi vàng phồng xốp vớt ra gác ráo dầu kẹp bánh ngay trong 1 phút!"
+    "correctAnswer": "c",
+    "explanation": "Phân công 1 người đứng bếp + 1 người kẹp bánh thu tiền giúp đạt tốc độ phục vụ thần tốc 40–50 giây mỗi ổ bánh mì.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-128",
     "stableId": "sale-128",
+    "displayNumber": 128,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Mô hình phối hợp nhịp nhàng 2 người tại điểm bán trong giờ cao điểm 6h30 - 7h30 sáng được phân công như thế nào?",
+    "question": "Khi lượng khách bất ngờ đổ dồn đông cùng lúc vào lúc 7h00 sáng, kỹ thuật xử lý chuyên nghiệp là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Một người đứng nhìn và một người làm toàn bộ mọi việc từ chiên chả đến thối tiền"
+        "text": "Đóng cửa xe từ chối không bán nữa."
       },
       {
         "key": "b",
-        "text": "Hai người cùng tranh nhau chiên chả và bỏ mặc khách đứng chờ"
+        "text": "Tỏ thái độ bực bội, cáu gắt và quát mắng khách hàng."
       },
       {
         "key": "c",
-        "text": "Người thứ nhất chuyên phụ trách chiên chả cá sợi và rọc bánh mì; Người thứ hai chuyên gắp rau dưa, rưới sốt Tứ Vị, bỏ túi giấy trao khách và thu tiền."
+        "text": "Bỏ quầy xe đi vào trong nhà trốn khách."
       },
       {
         "key": "d",
-        "text": "Hai người thay nhau nghỉ ngơi và chỉ bán khi đường vắng xe"
+        "text": "Tươi cười chào hỏi, thông báo thời gian chờ ngắn ('Dạ bánh nóng 1 phút có ngay ạ'), chiên chả liên tục từng mẻ và thao tác nhanh tay."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Phân công 2 vị trí chuyên biệt (Chiên chả/rọc bánh & Chan sốt/thu tiền) giúp tốc độ ra bánh đạt 1 phút/ổ, phục vụ liên tục 60-80 khách/giờ.",
-    "quote": "Mô hình 2 người phối hợp ăn ý: một người chiên chả rọc bánh, một người chan sốt giao khách thu tiền, ra bánh vèo vèo không để khách phải đợi lâu!"
+    "correctAnswer": "d",
+    "explanation": "Nụ cười niềm nở + Lời trấn an nhanh + Thao tác nhịp nhàng giúp khách vui vẻ chờ đợi và điểm bán giữ trọn doanh số.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-129",
     "stableId": "sale-129",
+    "displayNumber": 129,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Quy trình đóng ca bán hàng lúc 9h00 sáng tại xe Bánh Mì Má Hải bao gồm các bước vệ sinh nào?",
+    "question": "Khi bếp gas mini hoặc bếp gas khè gặp sự cố tắt lửa giữa ca bán, thao tác xử lý an toàn là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Để nguyên chảo dầu sôi trên bếp gas đang cháy và đi về nhà"
+        "text": "Lập tức khóa van bình gas, kiểm tra đầu đốt và ống dẫn, thay bình gas dự phòng an toàn trước khi bật lại."
       },
       {
         "key": "b",
-        "text": "Đổ toàn bộ dầu chiên và rác thải ra lòng đường công cộng"
+        "text": "Dùng bật lửa châm trực tiếp vào bình gas đang rò rỉ."
       },
       {
         "key": "c",
-        "text": "Bỏ mặc xe bánh mì bám đầy dầu mỡ ngoài trời nắng gắt"
+        "text": "Đổ nước lạnh vào họng bếp gas."
       },
       {
         "key": "d",
-        "text": "Khóa van an toàn bình gas, để dầu nguội lọc sạch cặn vụn cất vào can kín, thu dọn rau dưa thừa cất tủ mát, lau chùi sạch bóng mặt kính và thân xe inox, quét dọn sạch sẽ vỉa hè trước khi đẩy xe vào vị trí cất giữ."
+        "text": "Bỏ mặc bếp gas và tiếp tục bán bánh mì nguội."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Khóa gas an toàn, lọc dầu, lau chùi xe sạch bóng và dọn sạch mặt bằng hiên nhà là quy chuẩn văn minh giúp chủ nhà và người dân xung quanh luôn quý mến.",
-    "quote": "9h00 đóng ca khóa gas an toàn, lọc dầu sạch sẽ, lau chùi xe bóng loáng và quét sạch hiên nhà, chủ nhà thấy sạch sẽ là ủng hộ mình bán lâu dài!"
+    "correctAnswer": "a",
+    "explanation": "Khóa van an toàn và thay bình gas dự phòng sẵn có giúp khắc phục sự cố trong 2 phút mà không làm gián đoạn ca bán.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-130",
     "stableId": "sale-130",
+    "displayNumber": 130,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Khi gặp sự cố bếp gas khè bị nghẹt lửa hoặc lửa đỏ trong lúc đang bán hàng, cách xử lý an toàn và nhanh nhất là gì?",
+    "question": "Tại sao mỗi điểm bán bắt buộc phải chuẩn bị sẵn 1 bình gas dự phòng và 1 bao túi giấy sơ cua tại xe?",
     "options": [
       {
         "key": "a",
-        "text": "Dùng búa đập mạnh vào bình gas để tăng áp suất"
+        "text": "Để bán thanh lý bình gas cho người đi đường."
       },
       {
         "key": "b",
-        "text": "Tắt van bình gas, kiểm tra van điều áp và dùng kim thông lỗ béc phun gas bị nghẹt bụi than, nếu không tự xử lý được thì gọi ngay hotline kỹ thuật để được hỗ trợ từ xa."
+        "text": "Chủ động ứng phó tức thì khi hết gas hoặc hết bao bì giữa giờ cao điểm, không làm gián đoạn việc bán hàng."
       },
       {
         "key": "c",
-        "text": "Tiếp tục dùng bật lửa mồi liên tục vào chảo dầu đang sôi"
+        "text": "Để làm cho quầy xe trông nặng nề và cồng kềnh hơn."
       },
       {
         "key": "d",
-        "text": "Đổ nước lạnh trực tiếp vào họng đốt của bếp gas đang cháy"
+        "text": "Chỉ là yêu cầu hình thức không cần thiết."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Khóa van an toàn, vệ sinh béc phun gas và liên hệ hotline hỗ trợ kỹ thuật giúp xử lý sự cố nhanh chóng, bảo đảm an toàn cháy nổ tuyệt đối.",
-    "quote": "Gặp trục trặc bếp gas Cô Chú bình tĩnh khóa van, vệ sinh đầu béc phun hoặc gọi ngay Zalo hỗ trợ kỹ thuật, bên con túc trực xử lý ngay trong 5 phút ạ!"
+    "explanation": "Đồ nghề dự phòng sẵn sàng giúp chủ xe tự tin đón tiếp lượng khách đông mà không lo bị đứt quãng ca bán.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-131",
     "stableId": "sale-131",
+    "displayNumber": 131,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Khi thời tiết sáng sớm có mưa nhỏ bất chợt, chủ xe Bánh Mì Má Hải cần xử lý linh hoạt như thế nào?",
+    "question": "Kỹ thuật gác ráo dầu sau khi vớt chả cá sợi ra khỏi chảo chiên mang lại lợi ích gì?",
     "options": [
       {
         "key": "a",
-        "text": "Lập tức đóng cửa nghỉ bán và vứt bỏ toàn bộ bánh mì"
+        "text": "Làm giảm trọng lượng của chả cá."
       },
       {
         "key": "b",
-        "text": "Kéo mái bạt che mưa của hiên nhà, đẩy xe lùi sâu vào trong mái hiên khô ráo, đậy kín nắp thùng giữ nóng bánh mì và tiếp tục chiên chả nóng hổi phục vụ khách."
+        "text": "Làm cho chả cá bị nguội ngắt và khô cứng."
       },
       {
         "key": "c",
-        "text": "Để mặc nước mưa rơi thẳng vào chảo dầu đang sôi"
+        "text": "Sợi chả ráo dầu giòn tan, ăn không bị ngấy, giữ được độ giòn lâu trong bánh và tiết kiệm dầu ăn."
       },
       {
         "key": "d",
-        "text": "Bắt khách hàng phải đứng đội mưa ngoài trời không có mái che"
+        "text": "Để kéo dài thời gian làm bánh của khách."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Trời mưa khách càng thèm bánh mì chả cá nóng giòn. Đẩy xe vào mái hiên, bảo quản bánh mì khô ráo trong thùng giữ nóng giúp điểm bán vẫn đắt khách.",
-    "quote": "Mưa sáng khách rất thích ăn bánh mì nóng, Cô Chú đẩy xe nép gọn vào mái hiên, chiên chả nóng thơm phức là khách ghé mua ủng hộ nhiệt tình!"
+    "correctAnswer": "c",
+    "explanation": "Gác ráo dầu trên vỉ inox 15-20 giây giúp sợi chả ráo sạch dầu thừa, ăn giòn rụm, thanh nhẹ và chuẩn dinh dưỡng.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-132",
     "stableId": "sale-132",
+    "displayNumber": 132,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Cách bảo quản chả cá sợi thừa chưa chiên sau khi kết thúc ca bán 9h00 sáng là gì?",
+    "question": "Khi có khách hàng yêu cầu đặt gấp 20 ổ bánh mì mang đi công ty, kỹ năng xử lý đơn hàng lớn tại xe là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Để nguyên trong thùng xốp ngoài trời nắng suốt cả ngày"
+        "text": "Tăng giá bánh lên gấp đôi đối với đơn hàng lớn."
       },
       {
         "key": "b",
-        "text": "Cho vào hộp kín hoặc túi zip sạch sẽ và cất ngay vào ngăn đông tủ lạnh (-18°C) để sử dụng tiếp cho ca sáng hôm sau."
+        "text": "Từ chối bán vì cho rằng đơn hàng quá nhiều."
       },
       {
         "key": "c",
-        "text": "Đổ lẫn vào chảo dầu chiên cũ để ngâm qua đêm"
+        "text": "Lấy bánh mì cũ của ngày hôm trước giao cho khách."
       },
       {
         "key": "d",
-        "text": "Vứt bỏ toàn bộ chả cá thừa vào thùng rác"
+        "text": "Nhận đơn niềm nở, hẹn giờ giao chuẩn xác sau 10–15 phút, chiên mẻ chả lớn và đóng gói cẩn thận vào túi xách lớn cho khách."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Bảo quản cấp đông -18°C ngay sau ca bán giúp chả cá sợi giữ trọn vẹn 17% đạm dinh dưỡng và độ tươi ngọt cho ca bán tiếp theo.",
-    "quote": "Chả cá sợi chưa chiên Cô Chú bỏ túi zip đóng kín cho vào ngăn đông tủ lạnh ngay, sáng mai lấy ra chiên là vẫn tươi ngon như mới giao!"
+    "correctAnswer": "d",
+    "explanation": "Đơn hàng lớn là cơ hội vàng tăng doanh thu, phục vụ chu đáo đúng hẹn giúp biến khách thành mối ruột của công ty.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-133",
     "stableId": "sale-133",
+    "displayNumber": 133,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Cách kiểm tra độ nóng đạt chuẩn của dầu chiên trước khi thả mẻ chả cá sợi đầu tiên vào chảo là gì?",
+    "question": "Về việc chuẩn bị tiền lẻ để thối cho khách mỗi sáng, định mức chuẩn bị hợp lý là bao nhiêu?",
     "options": [
       {
         "key": "a",
-        "text": "Dùng ngón tay nhúng trực tiếp vào dầu sôi để thử nhiệt độ"
+        "text": "Chuẩn bị sẵn khoảng 200.000đ – 300.000đ tiền lẻ các mệnh giá 2k, 5k, 10k, 20k để thối nhanh không làm khách phải chờ."
       },
       {
         "key": "b",
-        "text": "Thả thử 1 sợi chả cá nhỏ hoặc đầu đũa tre vào chảo dầu: nếu sợi chả sủi tăm mạnh và nổi phồng vàng ngay trong 2 giây là dầu đã đạt nhiệt độ chuẩn 160-170°C."
+        "text": "Không cần chuẩn bị tiền lẻ, bảo khách tự đi đổi tiền."
       },
       {
         "key": "c",
-        "text": "Đợi dầu bốc khói đen mù mịt rồi mới thả chả vào"
+        "text": "Chỉ nhận tiền chuyển khoản và từ chối tiền mặt."
       },
       {
         "key": "d",
-        "text": "Thả chả vào khi dầu còn nguội ngắt chưa bật bếp"
+        "text": "Bắt khách hàng phải mua thêm bánh mì để không phải thối tiền."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Thử đầu đũa tre hoặc 1 sợi chả mẫu là phương pháp dân gian an toàn, chính xác để xác định dầu đã sôi tim ở 160-170°C.",
-    "quote": "Thả thử 1 sợi chả thấy sủi tăm phồng vàng nổi lên ngay là dầu đã đạt chuẩn 160-170 độ, bắt đầu chiên từng mẻ là phồng giòn rụm ạ!"
+    "correctAnswer": "a",
+    "explanation": "Tiền lẻ sẵn sàng giúp thao tác thối tiền diễn ra trong 5 giây, khách đi đường không bị trễ giờ làm.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-134",
     "stableId": "sale-134",
+    "displayNumber": 134,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Thao tác ứng xử chuẩn mực khi khách hàng phản ánh 'Bánh mì hôm nay bị mềm, không giòn như mọi ngày' là gì?",
+    "question": "Khi gặp trời mưa lớn vào khung giờ bán sáng, giải pháp bảo vệ xe và bánh mì là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Tranh cãi gay gắt và đổ lỗi cho khách hàng ăn chậm"
+        "text": "Bỏ xe bánh mì ngoài trời mưa và chạy vào nhà ngủ."
       },
       {
         "key": "b",
-        "text": "Đuổi khách hàng đi và không cho mua lần sau"
+        "text": "Kéo xe lùi sâu vào trong mái hiên nhà, hạ bạt che chắn gió mưa và tiếp tục phục vụ khách có áo mưa tấp vào mua nhanh."
       },
       {
         "key": "c",
-        "text": "Cười tươi xin lỗi khách, đổi ngay ổ bánh mì nóng giòn mới từ thùng giữ nóng hoặc nướng lại nhanh cho khách, đồng thời kiểm tra lại lò bánh mì đối tác."
+        "text": "Đóng cửa nghỉ bán ngay lập tức."
       },
       {
         "key": "d",
-        "text": "Thu thêm tiền của khách vì đã đổi bánh mới"
+        "text": "Vứt bỏ toàn bộ bánh mì vào thùng rác."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Thái độ niềm nở, chân thành đổi ngay bánh giòn mới giúp giữ vững tình cảm và sự tin tưởng tuyệt đối của khách quen.",
-    "quote": "Khách phản ánh bánh chưa giòn Cô Chú cứ cười tươi đổi ngay ổ nóng giòn mới, khách thấy mình chu đáo là thương và ủng hộ dài dài!"
+    "correctAnswer": "b",
+    "explanation": "Hiên nhà có mái che giúp xe bánh mì an toàn tuyệt đối trong mùa mưa, khách mặc áo mưa vẫn tấp vào mua nhanh gọn.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-135",
     "stableId": "sale-135",
+    "displayNumber": 135,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Khi đối tác có kế hoạch mở thêm điểm bán thứ 2, việc phân bổ thời gian và nhân sự được khuyến nghị như thế nào?",
+    "question": "Thao tác giao bánh và nhận tiền của khách hàng thể hiện văn hóa phục vụ của Má Hải như thế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Một người chạy đi chạy lại giữa 2 xe cách nhau 10km trong cùng một buổi sáng"
+        "text": "Vừa đưa bánh vừa cằn nhằn về thời tiết."
       },
       {
         "key": "b",
-        "text": "Đóng cửa xe thứ nhất để tập trung mở xe thứ hai"
+        "text": "Ném bánh mì vào giỏ xe của khách mà không nói lời nào."
       },
       {
         "key": "c",
-        "text": "Bỏ mặc xe thứ hai tự hoạt động không cần người đứng bán"
+        "text": "Trao bánh bằng 2 tay kèm nụ cười tươi: 'Bánh mì nóng giòn của Cô/Chú đây ạ, con chúc Cô/Chú ngày mới tốt lành!'"
       },
       {
         "key": "d",
-        "text": "Chủ xe trực tiếp đứng bán vững vàng ở xe thứ nhất, hướng dẫn và bàn giao xe thứ hai cho người thân trong gia đình hoặc thuê người bán quen việc đứng bán theo đúng quy trình."
+        "text": "Quay lưng lại với khách sau khi nhận tiền."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Mở rộng chuỗi nhiều xe: Đào tạo người nhà hoặc nhân sự đứng quầy theo đúng 5 bước chuẩn, chủ xe quản lý nguyên liệu và giám sát chất lượng.",
-    "quote": "Mở xe thứ 2 Cô Chú chỉ cần hướng dẫn người nhà làm đúng 5 bước chuẩn của Má Hải, vừa tạo việc làm cho gia đình vừa nhân đôi thu nhập mỗi sáng!"
+    "correctAnswer": "c",
+    "explanation": "Trao bánh bằng 2 tay kèm lời chúc ngày mới ấm áp là nét văn hóa đặc trưng giúp Má Hải đi vào lòng triệu người dân Việt.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-136",
     "stableId": "sale-136",
+    "displayNumber": 136,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Quy tắc an toàn phòng cháy chữa cháy (PCCC) bắt buộc tại xe Bánh Mì Má Hải bao gồm những gì?",
+    "question": "Khi khách hàng phản hồi 'Hôm nay bánh mì hơi cay quá', cách xử lý khiếu nại khéo léo là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Đặt bình gas cạnh chảo dầu đang cháy mà không có tấm chắn nhiệt"
+        "text": "Tỏ thái độ phớt lờ và không quan tâm."
       },
       {
         "key": "b",
-        "text": "Dùng dây dẫn gas cũ bị rạn nứt nhiều năm không thay thế"
+        "text": "Tranh cãi tay đôi và đổ lỗi cho khách ăn cay kém."
       },
       {
         "key": "c",
-        "text": "Sử dụng dây dẫn gas chuyên dụng bọc inox, van ngắt gas tự động, đặt bình gas ở khoang riêng dưới gầm xe có vách ngăn cách nhiệt và trang bị bình chữa cháy mini."
+        "text": "Đuổi khách đi và cấm không cho quay lại mua."
       },
       {
         "key": "d",
-        "text": "Hút thuốc lá và đốt vàng mã ngay cạnh bếp gas đang chiên"
+        "text": "Chân thành xin lỗi, giải thích do lượng sốt đậm đà, đổi ngay ổ bánh mới vừa vị cho khách hoặc ghi nhớ giảm cay cho lần sau."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Xe inox Má Hải thiết kế vách ngăn cách nhiệt giữa khoang bình gas và chảo chiên, sử dụng van ngắt tự động bảo đảm an toàn PCCC tuyệt đối.",
-    "quote": "Xe inox Má Hải thiết kế khoang bình gas cách nhiệt riêng biệt có van an toàn tự động, Cô Chú hoàn toàn an tâm khi vận hành mỗi sáng!"
+    "correctAnswer": "d",
+    "explanation": "Lắng nghe chân thành và đổi bánh ngay lập tức biến một lời phàn nàn thành sự gắn kết trung thành của khách quen.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-137",
     "stableId": "sale-137",
+    "displayNumber": 137,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Vì sao nước sốt Tứ Vị không được đun sôi trực tiếp trên bếp lửa ở nhiệt độ cao trong thời gian dài?",
+    "question": "Về việc giữ gìn vệ sinh khu vực xung quanh hiên nhà sau ca bán, quy chuẩn bắt buộc là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Vì đun sôi lâu ở nhiệt độ cao sẽ làm bay hơi hương vị thảo mộc tự nhiên, làm biến đổi vị chua ngọt đậm đà và làm sốt bị sẫm màu."
+        "text": "Quét dọn sạch sẽ rác vụn, lau chùi mặt vỉa hè tinh tươm, dắt xe gọn gàng vào vị trí quy định để trả lại không gian cho chủ nhà."
       },
       {
         "key": "b",
-        "text": "Vì nước sốt sẽ biến thành dầu ăn nguyên chất"
+        "text": "Vứt rác bừa bãi trước cửa nhà dân rồi bỏ về."
       },
       {
         "key": "c",
-        "text": "Vì công ty cấm sử dụng lửa tại điểm bán"
+        "text": "Đổ dầu mỡ trực tiếp ra lối đi của khu phố."
       },
       {
         "key": "d",
-        "text": "Vì nước sốt sẽ tự bốc cháy tạo ra khói độc"
+        "text": "Để đồ đạc bừa bộn chắn lối ra vào của chủ nhà cả ngày."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Sốt Tứ Vị đã được nấu chín tiệt trùng tại nhà máy FSSC 22000, chỉ cần rót ra chén ở nhiệt độ phòng để chan bánh, không cần đun nấu lại.",
-    "quote": "Sốt Tứ Vị đóng can chuẩn tiệt trùng chỉ cần rót ra chén là dùng ngay, không cần đun sôi lại để giữ trọn vẹn vị chua cay mặn ngọt thanh tao ạ!"
+    "explanation": "Giữ hiên nhà sạch tinh tươm sau ca bán giúp chủ nhà yêu quý và tạo mối quan hệ hợp tác gắn bó lâu dài.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-138",
     "stableId": "sale-138",
+    "displayNumber": 138,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Hành động nào sau đây giúp tạo dựng thói quen mua hàng lặp lại của khách quen mỗi buổi sáng?",
+    "question": "Khi phát hiện ổ bánh mì có dấu hiệu bị mềm do lò giao bánh trễ, cách khắc phục nhanh tại quầy là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Thường xuyên mở bán muộn sau 8h00 sáng và nghỉ bán bất chợt không báo trước"
+        "text": "Vẫn giao bánh mềm ỉu cho khách ăn."
       },
       {
         "key": "b",
-        "text": "Gương mặt cáu gắt và càu nhàu khi khách hỏi xin thêm tương ớt"
+        "text": "Đặt bánh lên vỉ hơ nóng nhẹ trên hơi ấm của bếp chiên khoảng 30 giây để vỏ bánh giòn tan trở lại trước khi kẹp chả."
       },
       {
         "key": "c",
-        "text": "Mở bán đều đặn đúng 5h30 - 6h00 sáng mỗi ngày, nhớ khẩu vị riêng của khách và luôn tươi cười chào hỏi cảm ơn niềm nở."
+        "text": "Nhúng bánh vào chảo dầu đang sôi."
       },
       {
         "key": "d",
-        "text": "Tính tiền chênh lệch mỗi ngày một giá khác nhau"
+        "text": "Bỏ toàn bộ bánh vào túi nilon bịt kín."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Sự đều đặn (mở đúng giờ mỗi ngày) + Niềm nở nhớ mặt nhớ tên là chìa khóa xây dựng tệp 50-100 khách quen ruột cho điểm bán.",
-    "quote": "Mở bán đúng giờ mỗi sáng, nhớ khẩu vị khách ăn ít cay nhiều rau, nụ cười niềm nở là bí quyết vàng để khách ngày nào cũng ghé mua!"
+    "correctAnswer": "b",
+    "explanation": "Hơ nóng bánh trên hơi ấm bếp chiên là mẹo thực chiến giúp bánh luôn nóng hổi giòn rụm trong mọi hoàn cảnh.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-139",
     "stableId": "sale-139",
+    "displayNumber": 139,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Về việc giữ gìn trật tự và mỹ quan đô thị xung quanh điểm bán bánh mì, hành vi nào sau đây là KHÔNG PHÙ HỢP?",
+    "question": "Tại sao việc kiểm tra van gas và tắt bình gas an toàn sau mỗi ca bán là quy tắc bất di bất dịch?",
     "options": [
       {
         "key": "a",
-        "text": "Kê nhiều bàn ghế chiếm dụng trọn vỉa hè công cộng gây cản trở lối đi của người đi bộ."
+        "text": "Để làm cho bình gas không bị bám bụi."
       },
       {
         "key": "b",
-        "text": "Đặt xe gọn gàng phía trong mép hiên nhà, chừa lối đi thông thoáng cho người đi bộ trên vỉa hè"
+        "text": "Chỉ để tiết kiệm một lượng gas nhỏ."
       },
       {
         "key": "c",
-        "text": "Hướng dẫn khách mua bánh tấp xe máy sát lề đường gọn gàng, không để xe máy chắn ngang lòng đường"
+        "text": "Bảo đảm an toàn phòng cháy chữa cháy tuyệt đối cho điểm bán, ngôi nhà liên kết và khu dân cư xung quanh."
       },
       {
         "key": "d",
-        "text": "Quét dọn sạch sẽ rác thải và túi giấy xung quanh quầy xe sau khi kết thúc ca bán"
+        "text": "Chỉ là thủ tục không quan trọng."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Chiếm dụng vỉa hè gây cản trở giao thông vi phạm trật tự đô thị và ảnh hưởng xấu đến hình ảnh văn minh của chuỗi Bánh Mì Má Hải.",
-    "quote": "Bán mang đi nép gọn trong hiên nhà, nhắc khách tấp xe sát lề đường, giữ vỉa hè thông thoáng là quy chuẩn văn minh của người Nhà Má Hải!"
+    "correctAnswer": "c",
+    "explanation": "Khóa van gas an toàn là nguyên tắc số 1 bảo vệ tính mạng, tài sản và sự an tâm tuyệt đối cho điểm bán mỗi ngày.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-140",
     "stableId": "sale-140",
+    "displayNumber": 140,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Trong các nhận định sau đây về sự đồng hành của đội ngũ chăm sóc khách hàng trực tuyến Nhà Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
+    "question": "Những hành vi nào sau đây giúp xây dựng mối quan hệ thân tình với bà con lối xóm xung quanh điểm bán?",
     "options": [
       {
         "key": "a",
-        "text": "Tiếp nhận phản hồi về chất lượng nguyên vật liệu và hỗ trợ giải quyết nhanh chóng cho chủ xe"
+        "text": "Để rác thải tràn lan sang phần đất của nhà bên cạnh."
       },
       {
         "key": "b",
-        "text": "Hướng dẫn mẹo xử lý nhiệt độ dầu chiên và cách bảo quản chả cá sợi khi thời tiết thay đổi"
+        "text": "Bật nhạc loa kéo ồn ào từ sáng sớm làm phiền giấc ngủ của hàng xóm."
       },
       {
         "key": "c",
-        "text": "Cung cấp cẩm nang hướng dẫn và hình ảnh truyền thông để chủ xe giới thiệu điểm bán trên mạng xã hội."
+        "text": "Tranh cãi gay gắt với các hàng quán bên cạnh."
       },
       {
         "key": "d",
-        "text": "Công ty từ chối hỗ trợ và chặn liên lạc khi chủ xe hỏi về kỹ thuật chiên chả."
+        "text": "Chủ động chào hỏi niềm nở, giữ gìn vệ sinh chung, nhường lối đi thông thoáng và hỗ trợ nhau khi cần thiết."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Đội ngũ chuyên viên Má Hải luôn túc trực hỗ trợ giải đáp kỹ thuật, xử lý sự cố kịp thời cho mọi đối tác.",
-    "quote": "Bất cứ khi nào cần hỗ trợ kỹ thuật hay đặt hàng Cô Chú cứ nhắn Zalo, đội ngũ chăm sóc khách hàng luôn sẵn sàng đồng hành cùng Cô Chú!"
+    "explanation": "Tình làng nghĩa xóm thuận hòa giúp điểm bán có thêm nhiều khách quen và được bà con khu phố che chở, ủng hộ.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-141",
     "stableId": "sale-141",
+    "displayNumber": 141,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Mức phí gia hạn hợp đồng sau khi kết thúc thời hạn 1 năm đầu tiên tại Nhà Má Hải là bao nhiêu tiền?",
+    "question": "Khi điểm bán có lượng khách quen ổn định (trên 80 ổ/sáng), việc chuẩn bị bao bì và rau dưa từ tối hôm trước giúp ích gì?",
     "options": [
       {
         "key": "a",
-        "text": "0 đồng (miễn phí tái ký 100% nếu đối tác thực hiện đúng quy chế chất lượng và hợp đồng hợp tác)."
+        "text": "Tiết kiệm 30 phút buổi sáng, thao tác thảnh thơi và vào ca bán với tâm thế tự tin, sẵn sàng phục vụ nhanh."
       },
       {
         "key": "b",
-        "text": "Mức phí là 5.000.000 đồng mỗi năm"
+        "text": "Làm cho rau dưa bị héo úa và mất ngon."
       },
       {
         "key": "c",
-        "text": "Mức phí là 10.000.000 đồng"
+        "text": "Bắt buộc phải thức khuya đến 2h sáng."
       },
       {
         "key": "d",
-        "text": "Bắt buộc đóng 50% giá trị gói hợp tác ban đầu"
+        "text": "Không có tác dụng gì đối với việc bán hàng."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Tái ký 0 đồng trọn đời là chính sách cốt lõi của Má Hải, bảo đảm đối tác giữ trọn thành quả kinh doanh mà không lo phí duy trì.",
-    "quote": "Hết hạn hợp đồng Cô Chú được tái ký hoàn toàn 0 đồng, công ty cam kết không thu thêm bất kỳ khoản phí gia hạn nào ạ!"
+    "explanation": "Chuẩn bị sẵn bao bì, túi giấy từ tối hôm trước giúp ca sáng diễn ra nhẹ nhàng, thảnh thơi và phục vụ nhanh chóng.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-142",
     "stableId": "sale-142",
+    "displayNumber": 142,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Khi điểm bán nhận được lời góp ý từ khách hàng về việc chả cá hôm nay hơi nhạt hoặc rau thơm hơi ít, cách xử lý nào sau đây là KHÔNG PHÙ HỢP?",
+    "question": "Về việc bảo quản nước sốt Tứ Vị còn dư sau ca bán sáng, quy trình chuẩn mực là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Lắng nghe chân thành, cảm ơn khách hàng đã góp ý và kiểm tra lại định lượng gia vị chan sốt"
+        "text": "Để chén sốt hở ngoài trời nắng suốt cả ngày."
       },
       {
         "key": "b",
-        "text": "Chủ động xin lỗi khách và chan thêm chút nước sốt Tứ Vị hoặc thêm rau dưa tươi cho khách vừa miệng"
+        "text": "Đậy kín nắp chai sốt, bảo quản trong ngăn mát tủ lạnh hoặc nơi khô ráo thoáng mát, tránh ánh nắng trực tiếp."
       },
       {
         "key": "c",
-        "text": "Bỏ qua lời góp ý, tỏ thái độ khó chịu và giữ nguyên cách làm sai lệch dù khách đã nhắc nhở nhiều lần."
+        "text": "Đổ nước lã vào chén sốt để dùng tiếp cho ngày mai."
       },
       {
         "key": "d",
-        "text": "Ghi nhớ khẩu vị riêng của khách để các lần sau phục vụ chuẩn xác, chu đáo hơn"
+        "text": "Đổ sốt thừa vào chai dầu ăn."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Khách góp ý là khách còn muốn quay lại mua. Tỏ thái độ khó chịu sẽ làm mất khách quen vĩnh viễn.",
-    "quote": "Khách góp ý là món quà quý giá, mình lắng nghe điều chỉnh nhẹ tay là khách ưng ý và trở thành khách ruột thân thiết ngay!"
+    "correctAnswer": "b",
+    "explanation": "Bảo quản sốt trong chai đậy kín ở nơi mát mẻ giúp giữ trọn vẹn hương vị chua ngọt đậm đà cho ca bán hôm sau.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-143",
     "stableId": "sale-143",
+    "displayNumber": 143,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Việc mang tạp dề và đội nón đồng phục Má Hải khi đứng bán bánh mì mang lại những giá trị thực tế nào?",
+    "question": "Khi khách hàng thanh toán bằng hình thức chuyển khoản quét mã QR, thao tác kiểm tra chuẩn xác là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc chỉ nhằm mục đích kiểm tra nội bộ mà không mang lại giá trị thu hút khách hàng"
+        "text": "Yêu cầu khách phải chờ 30 phút tiền về tài khoản mới cho đi."
       },
       {
         "key": "b",
-        "text": "Chỉ để làm đẹp cho người bán mà không liên quan đến vệ sinh an toàn thực phẩm"
+        "text": "Chỉ nhìn thoáng qua mà không kiểm tra số tiền."
       },
       {
         "key": "c",
-        "text": "Gây vướng víu và cản trở thao tác làm bánh của người bán"
+        "text": "Quan sát màn hình điện thoại của khách hiển thị thông báo chuyển khoản thành công đúng số tiền trước khi trao bánh."
       },
       {
         "key": "d",
-        "text": "Tạo hình ảnh người bán hàng chuyên nghiệp, sạch sẽ, chỉn chu, bảo đảm tóc và bụi không rơi vào thực phẩm, đồng thời giúp khách từ xa nhận diện điểm bán chính hãng uy tín."
+        "text": "Tỏ thái độ khó chịu vì khách không trả tiền mặt."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Đồng phục, nón và tạp dề cam vừa giữ vệ sinh ATTP tuyệt đối vừa là biển quảng cáo di động tạo niềm tin mạnh mẽ cho khách đi đường.",
-    "quote": "Khoác áo cam, đội nón và đeo tạp dề sạch sẽ, quầy bánh mì trông sang và vệ sinh hẳn, khách đi làm ngang qua nhìn thấy là yên tâm tấp vào mua ngay!"
+    "correctAnswer": "c",
+    "explanation": "Bảng mã QR in rõ ràng trên xe giúp khách quét mã trong 3 giây, chủ xe nhìn thoáng màn hình là xác nhận xong nhanh chóng.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-144",
     "stableId": "sale-144",
+    "displayNumber": 144,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Về việc giữ gìn uy tín thương hiệu chung giữa hơn 1.200 điểm bán trên toàn quốc, nhận định nào sau đây là KHÔNG PHÙ HỢP?",
+    "question": "Tại sao không nên chiên chả cá sợi với ngọn lửa quá lớn (dầu bốc khói trên 200°C)?",
     "options": [
       {
         "key": "a",
-        "text": "Mỗi chủ xe chỉ cần chú trọng lợi ích cá nhân trước mắt bằng cách mua chả cá tạp trôi nổi ngoài chợ về độn vào bán kiếm lời thêm."
+        "text": "Vì ngọn lửa lớn làm chả cá chín quá chậm."
       },
       {
         "key": "b",
-        "text": "Mỗi ổ bánh mì ngon, sạch và thái độ bán hàng niềm nở của một chủ xe đều góp phần làm rạng danh thương hiệu chung."
+        "text": "Làm cho chả cá bị đông đá trở lại."
       },
       {
         "key": "c",
-        "text": "Một điểm bán làm ẩu hay dùng chả cá trôi nổi sẽ làm tổn hại đến niềm tin của khách hàng đối với toàn bộ các xe khác."
+        "text": "Làm cho chả cá biến thành màu trắng."
       },
       {
         "key": "d",
-        "text": "Các chủ xe trong hệ thống đều có trách nhiệm giữ gìn chất lượng chuẩn mực để cùng phát triển bền vững."
+        "text": "Sợi chả dễ bị cháy sém vỏ ngoài nhưng bên trong chưa kịp phồng giòn, dầu ăn mau bị đen và khét mùi."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Độn chả cá tạp ngoài chợ là hành vi ích kỷ làm tổn hại uy tín của 1.200 xe trong toàn chuỗi và bị chế tài xử lý nghiêm khắc.",
-    "quote": "1.200 xe cùng giữ một chuẩn chả cá thơm ngon 17% đạm và sốt Tứ Vị, thương hiệu càng mạnh thì từng chủ xe bán càng đông khách!"
+    "correctAnswer": "d",
+    "explanation": "Chiên lửa vừa chuẩn 160-170°C giúp sợi chả chín đều từ trong ra ngoài, vàng óng đẹp mắt và thơm ngon đúng chuẩn.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-145",
     "stableId": "sale-145",
+    "displayNumber": 145,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Lợi ích thực tế lớn nhất mà người lao động nhận được khi chọn khởi sự cùng chuỗi Bánh Mì Má Hải là gì?",
+    "question": "Khi đối tác cần hỗ trợ kỹ thuật gấp trong ca bán (ví dụ: cần tư vấn điều chỉnh lửa bếp gas), kênh liên hệ nhanh nhất là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Cam kết làm giàu nhanh chóng sau một đêm mà không cần bỏ công sức lao động"
+        "text": "Gọi trực tiếp Hotline chăm sóc khách hàng hoặc nhắn vào nhóm Zalo hỗ trợ kỹ thuật chuyên trách của công ty."
       },
       {
         "key": "b",
-        "text": "Được công ty cho vay tiền không cần hoàn trả"
+        "text": "Gửi thư tay qua đường bưu điện về trụ sở chính."
       },
       {
         "key": "c",
-        "text": "Được nhận xe miễn phí mà không cần mở bán hàng ngày"
+        "text": "Đăng bài than phiền lên các diễn đàn mạng xã hội."
       },
       {
         "key": "d",
-        "text": "Được làm chủ một mô hình khởi nghiệp an toàn, vốn nhẹ vừa sức (4,8tr – 10,3tr), sản phẩm chuẩn vị đã kiểm chứng 13 năm, có cẩm nang hướng dẫn bài bản và sự đồng hành dài lâu để tự chủ thu nhập bền vững."
+        "text": "Tự ý tháo rời toàn bộ bếp gas ra sửa chữa mà không có chuyên môn."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Khởi nghiệp an toàn, vốn nhẹ, sản phẩm chuẩn vị có sẵn khách, tự chủ thu nhập ổn định 7-20 triệu/tháng là giá trị nhân văn cốt lõi Má Hải trao cho người lao động.",
-    "quote": "Vốn nhẹ, hàng ngon có sẵn khách, cầm tay chỉ việc bài bản giúp Cô Chú làm chủ một điểm bán vững chắc nuôi cả gia đình ấm no!"
+    "correctAnswer": "a",
+    "explanation": "Hotline và Zalo kỹ thuật phản hồi tức thì trong vài phút, hướng dẫn chi tiết qua video call giúp xử lý sự cố ngay lập tức.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-146",
     "stableId": "sale-146",
+    "displayNumber": 146,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Về chính sách hỗ trợ chuyển nhượng điểm bán khi chủ xe có việc gia đình cần nghỉ bán, nhận định nào sau đây là KHÔNG ĐÚNG?",
@@ -4078,87 +4224,90 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Công ty hỗ trợ kết nối và làm thủ tục pháp lý chuyển nhượng hoàn toàn miễn phí 0 đồng cho cả hai bên."
+        "text": "Công ty yêu cầu người nhận chuyển nhượng phải mua lại gói hợp tác mới từ đầu và không công nhận điểm bán cũ."
       },
       {
         "key": "c",
-        "text": "Người nhận chuyển nhượng tiếp tục được kế thừa toàn bộ quyền lợi về bảo vệ cự ly và cung ứng nguyên vật liệu chính hãng."
+        "text": "Người nhận chuyển nhượng tiếp tục được kế thừa toàn bộ quyền lợi về bảo vệ cự ly và cung ứng nguyên liệu chính hãng."
       },
       {
         "key": "d",
-        "text": "Công ty yêu cầu người nhận chuyển nhượng phải mua lại gói hợp tác mới từ đầu và không công nhận điểm bán cũ."
+        "text": "Công ty hỗ trợ kết nối và làm thủ tục pháp lý chuyển nhượng hoàn toàn miễn phí 0 đồng cho cả hai bên."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Chính sách sang nhượng 0 đồng giúp người cũ thu hồi vốn trọn vẹn và người mới tiếp quản dễ dàng mà không bị thu thêm phí gói mới.",
-    "quote": "Công ty hỗ trợ sang nhượng 0 đồng, người mới kế thừa trọn vẹn quyền lợi điểm bán mà không phải tốn thêm chi phí mua gói mới ạ!"
+    "correctAnswer": "b",
+    "explanation": "Má Hải hỗ trợ thủ tục sang nhượng 0 đồng và bảo lưu trọn vẹn quyền lợi điểm bán cho chủ xe mới, rất nhân văn.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-147",
     "stableId": "sale-147",
+    "displayNumber": 147,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Mạng lưới điểm bán Bánh Mì Má Hải đang hoạt động và phục vụ người tiêu dùng trên toàn quốc hiện nay đạt quy mô nào?",
+    "question": "Ý nghĩa của việc mặc áo đồng phục màu cam sạch sẽ và đội nón Má Hải trong suốt ca bán là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 50 điểm bán nhỏ lẻ"
+        "text": "Để đối phó khi có người của công ty đi kiểm tra."
       },
       {
         "key": "b",
-        "text": "Khoảng 200 điểm bán tại một vài tỉnh thành"
+        "text": "Chỉ để làm đẹp cho người bán hàng."
       },
       {
         "key": "c",
-        "text": "Hơn 1.200 điểm bán trên toàn quốc (tạo công ăn việc làm và thu nhập ổn định cho hàng ngàn gia đình lao động)."
+        "text": "Tạo sự nhận diện thương hiệu nổi bật từ xa, khẳng định chất lượng uy tín và tạo cảm giác sạch sẽ, tin tưởng cho người mua."
       },
       {
         "key": "d",
-        "text": "Khoảng 10.000 điểm bán khắp thế giới"
+        "text": "Bắt buộc phải mặc để không bị trừ lương."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Hơn 1.200 điểm bán khắp toàn quốc là quy mô thực tế vững mạnh khẳng định sức hút và sự tin tưởng của đối tác đối với Bánh Mì Má Hải.",
-    "quote": "Hơn 1.200 điểm bán khắp mọi miền đất nước là bảo chứng uy tín vững chắc nhất cho chất lượng và sức sống mãnh liệt của Má Hải!"
+    "explanation": "Áo cam đồng phục rực rỡ là biểu tượng của bữa sáng sạch sẽ, năng lượng và uy tín thương hiệu 13 năm trên đường phố.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-148",
     "stableId": "sale-148",
+    "displayNumber": 148,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-    "question": "Ý nghĩa nhân văn của mô hình nhượng quyền xe Bánh Mì Má Hải đối với cộng đồng người lao động là gì?",
+    "question": "Khi kết thúc ca bán 9h00 sáng, việc đậy kín thùng chả cá và dọn dẹp sạch sẽ mang lại giá trị thực tế nào?",
     "options": [
       {
         "key": "a",
-        "text": "Tạo ra một kênh đầu cơ tài chính ngắn hạn với lãi suất ảo"
+        "text": "Không có giá trị thực tế nào đối với việc bán hàng."
       },
       {
         "key": "b",
-        "text": "Ép người lao động phải làm việc 24/24 giờ mỗi ngày không nghỉ"
+        "text": "Chỉ để hoàn thành nhiệm vụ cho xong việc."
       },
       {
         "key": "c",
-        "text": "Chỉ nhằm mục đích bán xe inox phế liệu cho người dân"
+        "text": "Để làm cho xe bánh mì trông cũ kỹ hơn."
       },
       {
         "key": "d",
-        "text": "Giúp người có vốn nhỏ tự mình làm chủ một điểm bán kiếm sống đàng hoàng, mang lại bữa sáng sạch sẽ đủ dinh dưỡng với chả cá 17% đạm giá bình dân và tạo dựng cộng đồng tương trợ cùng vươn lên."
+        "text": "Bảo quản nguyên liệu tươi ngon cho ca sau, bảo vệ phương tiện bền đẹp và để lại hình ảnh điểm bán tinh tươm trong mắt khu phố."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Sứ mệnh phụng sự: Trao cần câu cơm cho người lao động, cung cấp bữa sáng dinh dưỡng giá rẻ cho người dân và xây dựng cộng đồng làm ăn lương thiện.",
-    "quote": "Sứ mệnh của Má Hải là giúp bà con lao động có một sinh kế đàng hoàng, tự chủ kinh tế nuôi dạy con cái nên người ạ!"
+    "explanation": "Vệ sinh tinh tươm sau ca bán là thói quen của người kinh doanh chuyên nghiệp, giúp đồ nghề bền bỉ và buôn bán thịnh vượng.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-149",
     "stableId": "sale-149",
+    "displayNumber": 149,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Trong các phát biểu sau đây về nguyên tắc cùng chiều lợi ích của Nhà Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
         "key": "a",
-        "text": "Công ty chỉ thành công khi từng đối tác mở xe bán đắt hàng và có thu nhập ổn định mỗi ngày."
+        "text": "Công ty trích thu phí phần trăm doanh thu mỗi ngày 30% trên tổng số lượng ổ bánh mì bán ra tại điểm bán."
       },
       {
         "key": "b",
@@ -4170,51 +4319,53 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Công ty trích thu phí phần trăm doanh thu mỗi ngày 30% trên tổng số lượng ổ bánh mì bán ra tại điểm bán."
+        "text": "Công ty chỉ thành công khi từng đối tác mở xe bán đắt hàng và có thu nhập ổn định mỗi ngày."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Má Hải luôn thực thi chính sách '3 KHÔNG': 0 đồng phí hàng tháng, 0% chia doanh thu và 0 đồng phí gia hạn hàng năm.",
-    "quote": "Công ty 0đ phí hàng tháng, 0% chia doanh thu, chỉ mong Cô Chú buôn may bán đắt có tiền lời bỏ túi trọn vẹn mỗi ngày!"
+    "correctAnswer": "a",
+    "explanation": "Má Hải luôn thực thi chính sách '3 KHÔNG': 0đ phí hàng tháng, 0% chia doanh thu và 0đ phí gia hạn. Phát biểu thu 30% là sai.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-150",
     "stableId": "sale-150",
+    "displayNumber": 150,
     "sectionNo": 6,
     "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Tâm thế cốt lõi mà một tư vấn viên nhượng quyền Bánh Mì Má Hải luôn khắc ghi khi đồng hành cùng khách hàng là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Là người đồng minh chân thành, lắng nghe thấu hiểu hoàn cảnh, kiên nhẫn tháo gỡ khó khăn về mặt bằng, vốn và trao cho người lao động giải pháp mở xe an toàn, vừa vặn nhất."
+        "text": "Áp dụng mọi thủ thuật hối thúc khách hàng chuyển tiền cọc ngay mà không quan tâm đến tính khả thi của điểm bán."
       },
       {
         "key": "b",
-        "text": "Áp dụng mọi thủ thuật thúc giục dồn dập hàng chuyển tiền cọc ngay mà không quan tâm đến tính khả thi của điểm bán"
+        "text": "Là người đồng minh chân thành, lắng nghe thấu hiểu hoàn cảnh, kiên nhẫn tháo gỡ khó khăn về mặt bằng, vốn và trao giải pháp mở xe an toàn nhất."
       },
       {
         "key": "c",
-        "text": "Chỉ tư vấn qua loa và hứa hẹn những điều không có thật"
+        "text": "Chỉ tư vấn qua loa và hứa hẹn những điều không có thật."
       },
       {
         "key": "d",
-        "text": "Xem khách hàng như đối tượng để trục lợi một lần rồi bỏ mặc"
+        "text": "Xem khách hàng như đối tượng để thu lợi một lần rồi bỏ mặc."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Tâm thế tư vấn viên: Người đồng minh, người giúp đỡ, đồng cảm chân thành và đặt sự thành công của khách hàng lên hàng đầu.",
-    "quote": "Mình tư vấn bằng cả tấm lòng người Nhà Má Hải, chân thành và tử tế, giúp bà con chọn được giải pháp khởi nghiệp an toàn nhất!"
+    "correctAnswer": "b",
+    "explanation": "Tâm thế người đồng minh chân thành, kinh doanh tử tế, trao sinh kế ấm no là kim chỉ nam trường tồn của Nhà Má Hải.",
+    "quote": "Vận hành ca sáng nhịp nhàng, bánh mì nóng giòn và nụ cười niềm nở là bí quyết giúp xe đông khách mỗi ngày ạ!"
   },
   {
     "id": "sale-151",
     "stableId": "sale-151",
+    "displayNumber": 151,
     "sectionNo": 7,
     "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Tính pháp lý của Hợp đồng nhượng quyền Bánh Mì Má Hải bảo đảm những quyền lợi cốt lõi nào cho đối tác?",
     "options": [
       {
         "key": "a",
-        "text": "Quyền được sử dụng thương hiệu hợp pháp, bảo vệ độc quyền khoảng cách trên Map Tracker, cung ứng nguyên liệu chính hãng và quyền tái ký miễn phí 0 đồng sau 1 năm."
+        "text": "Quyền yêu cầu công ty phải chi trả toàn bộ chi phí tiền thuê nhân viên đứng bán mỗi sáng tại xe."
       },
       {
         "key": "b",
@@ -4222,507 +4373,61 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Quyền yêu cầu công ty phải chi trả toàn bộ chi phí tiền thuê nhân viên đứng bán mỗi sáng tại xe."
+        "text": "Quyền được sử dụng thương hiệu hợp pháp, bảo vệ độc quyền khoảng cách trên Map Tracker, cung ứng nguyên liệu chính hãng và quyền tái ký miễn phí 0 đồng sau 1 năm."
       },
       {
         "key": "d",
         "text": "Quyền tự ý thay đổi màu sắc nhận diện và logo thương hiệu theo ý thích cá nhân của chủ xe."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Hợp đồng nhượng quyền Má Hải có giá trị pháp lý rõ ràng, bảo vệ quyền độc quyền vùng bán và quyền tái ký 0 đồng trọn đời cho chủ xe.",
-    "quote": "Hợp đồng có mộc đỏ pháp nhân rõ ràng, bảo vệ quyền lợi độc quyền vùng bán và cam kết tái ký 0 đồng để Cô Chú an tâm làm ăn lâu dài!"
+    "correctAnswer": "c",
+    "explanation": "Hợp đồng pháp lý minh bạch bảo vệ toàn diện quyền sử dụng thương hiệu, độc quyền cự ly và quyền lợi tái ký 0đ.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
   },
   {
     "id": "sale-152",
     "stableId": "sale-152",
+    "displayNumber": 152,
     "sectionNo": 7,
     "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Chính sách hỗ trợ thu hồi xe trong 60 ngày đầu khi đối tác gặp sự cố bất khả kháng được quy định chi tiết như thế nào?",
+    "question": "Chính sách bảo chứng an toàn vốn trong 60 ngày đầu hỗ trợ thu hồi xe và bảo toàn vốn cho chủ xe như thế nào nếu gặp sự cố bất khả kháng?",
     "options": [
       {
         "key": "a",
-        "text": "Đối tác phải tự thanh lý xe cũ cho các điểm thu mua phế liệu ngoài thị trường tự do."
+        "text": "Hoàn lại toàn bộ chi phí nguyên vật liệu chả cá và tiền thuê hiên nhà đã chi trả trong 2 tháng."
       },
       {
         "key": "b",
-        "text": "Công ty hỗ trợ thu hồi lại xe và hoàn trả số tiền tối đa lên đến 2.800.000đ tùy theo hiện trạng thực tế của xe và thiết bị tại thời điểm bàn giao."
+        "text": "Chỉ áp dụng bảo dưỡng khung xe mà không có chính sách thu hồi hỗ trợ hoàn tiền cho đối tác."
       },
       {
         "key": "c",
-        "text": "Công ty bảo lưu giá trị xe và hỗ trợ đối tác chuyển đổi sang mô hình kinh doanh nhượng quyền tại điểm bán khác."
+        "text": "Yêu cầu đối tác phải tự liên hệ các điểm thu mua đồ cũ trên thị trường tự do để tự thanh lý xe."
       },
       {
         "key": "d",
-        "text": "Đối tác được công ty hỗ trợ hoàn lại 100% toàn bộ chi phí nguyên vật liệu chả cá và nước sốt đã nhập trong 2 tháng."
+        "text": "Hỗ trợ thu hồi lại xe và hoàn trả số tiền tối đa lên đến 2.800.000đ tùy theo hiện trạng thực tế của xe và thiết bị tại thời điểm bàn giao."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Chính sách thu hồi trong 60 ngày hoàn trả tối đa 2,8 triệu tùy hiện trạng thực tế xe là sự hỗ trợ tài chính nhân văn chưa từng có trên thị trường.",
-    "quote": "Chính sách thu hồi xe 60 ngày hoàn tối đa 2,8 triệu tùy hiện trạng thực tế xe là chiếc lưới an toàn bảo vệ vốn giúp Cô Chú hoàn toàn an tâm khởi nghiệp!"
+    "correctAnswer": "d",
+    "explanation": "Chính sách nhân văn: Hỗ trợ thu hồi xe 60 ngày hoàn tối đa 2,8 triệu tùy hiện trạng thực tế, bảo hiểm an toàn vốn tối đa.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
   },
   {
     "id": "sale-153",
     "stableId": "sale-153",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Khi cơ quan quản lý nhà nước kiểm tra vệ sinh an toàn thực phẩm tại điểm bán, đối tác xuất trình những giấy tờ pháp lý nào do công ty cung cấp?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Hợp đồng nhượng quyền, Giấy chứng nhận cơ sở đủ điều kiện ATTP của nhà máy sản xuất chả cá và Phiếu kiểm nghiệm hàm lượng đạm 17% nguyên chất."
-      },
-      {
-        "key": "b",
-        "text": "Giấy viết tay của chủ nhà cho thuê hiên"
-      },
-      {
-        "key": "c",
-        "text": "Vé số cào trúng thưởng"
-      },
-      {
-        "key": "d",
-        "text": "Biên lai thu tiền điện nước gia đình"
-      }
-    ],
-    "correctAnswer": "a",
-    "explanation": "Toàn bộ giấy chứng nhận ATTP của nhà máy FSSC 22000, phiếu kiểm nghiệm 17% đạm và hợp đồng nhượng quyền đều được bàn giao đầy đủ cho đối tác.",
-    "quote": "Bên con bàn giao trọn bộ giấy chứng nhận ATTP và kiểm nghiệm 17% đạm, khi cơ quan chức năng kiểm tra Cô Chú xuất trình là chuẩn chỉnh 100%!"
-  },
-  {
-    "id": "sale-154",
-    "stableId": "sale-154",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Văn hóa ứng xử với bà con lối xóm và các hộ kinh doanh xung quanh điểm bán được Má Hải định hướng như thế nào?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Xem các hàng quán xung quanh là đối thủ cần cạnh tranh gay gắt và tìm cách hạn chế lượng khách của họ."
-      },
-      {
-        "key": "b",
-        "text": "Giữ khoảng cách xa lánh, không giao tiếp và không cần chào hỏi bất kỳ ai trong khu phố xung quanh."
-      },
-      {
-        "key": "c",
-        "text": "Tự ý bày biện đồ đạc lấn sang phần hiên nhà của các hộ liền kề để tăng không gian bán hàng."
-      },
-      {
-        "key": "d",
-        "text": "Luôn giữ hòa khí, niềm nở chào hỏi, giữ gìn vệ sinh chung, tạo mối quan hệ láng giềng thân thiện và trở thành một phần quen thuộc, đáng mến của khu phố mỗi sớm mai."
-      }
-    ],
-    "correctAnswer": "d",
-    "explanation": "Bán hàng vỉa hè, tình làng nghĩa xóm là tài sản vô giá: Luôn niềm nở, giữ vệ sinh, nhường nhịn và hỗ trợ nhau để buôn có bạn, bán có phường cùng phát triển.",
-    "quote": "Mình bán hàng niềm nở, dọn dẹp sạch bóng, láng giềng xung quanh thấy thương là ủng hộ và giới thiệu bà con lại mua đông đúc!"
-  },
-  {
-    "id": "sale-155",
-    "stableId": "sale-155",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Về chính sách thông báo giá nguyên vật liệu cung ứng, cam kết minh bạch của Bánh Mì Má Hải là gì?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Tự ý tăng giá đột ngột ngay trong đêm mà không cần thông báo"
-      },
-      {
-        "key": "b",
-        "text": "Cam kết nỗ lực bình ổn giá và bắt buộc phải thông báo bằng văn bản trước ít nhất 7 ngày làm việc nếu có biến động giá nguyên liệu trên thị trường."
-      },
-      {
-        "key": "c",
-        "text": "Mỗi tuần thay đổi bảng giá nguyên liệu một lần"
-      },
-      {
-        "key": "d",
-        "text": "Chỉ thông báo giá sau khi đã giao hàng tới xe của đối tác"
-      }
-    ],
-    "correctAnswer": "b",
-    "explanation": "Quy chế thông báo trước 7 ngày giúp đối tác hoàn toàn chủ động kế hoạch tài chính và thể hiện tính minh bạch, chuyên nghiệp của chuỗi.",
-    "quote": "Công ty nỗ lực bình ổn giá, nếu thị trường có biến động lớn luôn có văn bản thông báo trước 7 ngày làm việc để Cô Chú hoàn toàn chủ động!"
-  },
-  {
-    "id": "sale-156",
-    "stableId": "sale-156",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Khi đối tác có mong muốn chuyển nhượng lại xe cho người khác vì lý do chuyển nơi sinh sống, mức phí công ty thu để hỗ trợ thủ tục sang nhượng là bao nhiêu?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Thu 5 triệu đồng phí hoa hồng môi giới"
-      },
-      {
-        "key": "b",
-        "text": "Hoàn toàn miễn phí 0 đồng để hỗ trợ đối tác bảo toàn nguồn vốn."
-      },
-      {
-        "key": "c",
-        "text": "Thu 50% giá trị hợp đồng ban đầu"
-      },
-      {
-        "key": "d",
-        "text": "Bắt buộc người mới phải nộp 10 triệu tiền đặt cọc mới"
-      }
-    ],
-    "correctAnswer": "b",
-    "explanation": "Má Hải hỗ trợ kết nối và làm thủ tục pháp lý sang nhượng hoàn toàn miễn phí (0 đồng), bảo đảm quyền lợi tối đa cho người lao động.",
-    "quote": "Thủ tục sang nhượng lại xe công ty hỗ trợ hoàn toàn 0 đồng, Cô Chú nhận trọn vẹn tiền sang nhượng từ người mới mà không mất đồng phí nào ạ!"
-  },
-  {
-    "id": "sale-157",
-    "stableId": "sale-157",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Hành vi nào sau đây của đối tác bị xem là vi phạm nghiêm trọng thỏa thuận hợp tác và sẽ bị đơn phương chấm dứt hợp đồng?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Chiên chả cá sợi phồng giòn vàng ruộm đúng chuẩn hướng dẫn"
-      },
-      {
-        "key": "b",
-        "text": "Tươi cười cảm ơn khách hàng sau khi nhận tiền"
-      },
-      {
-        "key": "c",
-        "text": "Tự ý sử dụng thương hiệu Má Hải tại địa điểm ngoài hợp đồng hoặc tuồn nguyên vật liệu chính hãng ra ngoài bán lẻ trái phép."
-      },
-      {
-        "key": "d",
-        "text": "Mặc áo đồng phục cam sạch sẽ khi phục vụ khách"
-      }
-    ],
-    "correctAnswer": "c",
-    "explanation": "Tuồn hàng ra ngoài hoặc kinh doanh sai địa điểm làm sai lệch định vị quản lý và ảnh hưởng đến quyền lợi của các đối tác lân cận.",
-    "quote": "Bán đúng điểm đã đăng ký trên hợp đồng và giữ chuẩn nguồn hàng chính hãng là trách nhiệm để bảo vệ thương hiệu chung của 1.200 xe ạ!"
-  },
-  {
-    "id": "sale-158",
-    "stableId": "sale-158",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Quy định về thời hạn hợp đồng nhượng quyền tiêu chuẩn tại Bánh Mì Má Hải là bao lâu?",
-    "options": [
-      {
-        "key": "a",
-        "text": "6 tháng kể từ ngày nhận xe"
-      },
-      {
-        "key": "b",
-        "text": "1 năm (12 tháng), hết hạn được tái ký miễn phí 0 đồng nếu tuân thủ đúng quy chế hợp tác."
-      },
-      {
-        "key": "c",
-        "text": "5 năm bắt buộc không được chấm dứt"
-      },
-      {
-        "key": "d",
-        "text": "Hợp đồng vô thời hạn không cần ký kết"
-      }
-    ],
-    "correctAnswer": "b",
-    "explanation": "Thời hạn 1 năm giúp định kỳ đánh giá hiệu quả và hỗ trợ đối tác tái ký 0 đồng tiếp tục phát triển kinh doanh bền vững.",
-    "quote": "Hợp đồng ký 1 năm rõ ràng và khi hết hạn được tái ký 0 đồng, công ty luôn tạo mọi điều kiện thuận lợi nhất cho Cô Chú làm ăn lâu dài!"
-  },
-  {
-    "id": "sale-159",
-    "stableId": "sale-159",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Chương trình 'Đồng nghiệp Nhà Má Hải' mang lại những giá trị gắn kết cộng đồng nào cho các chủ xe?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Cạnh tranh gay gắt và chèn ép nhau trên từng tuyến đường"
-      },
-      {
-        "key": "b",
-        "text": "Cộng đồng hơn 1.200 chủ xe cùng chia sẻ kinh nghiệm bán hàng, hỗ trợ nhau khi có sự cố, tham gia các buổi tập huấn kỹ năng và vinh danh điểm bán xuất sắc."
-      },
-      {
-        "key": "c",
-        "text": "Bắt buộc các chủ xe phải đóng quỹ góp họ hàng tháng"
-      },
-      {
-        "key": "d",
-        "text": "Không có bất kỳ hoạt động gắn kết nào"
-      }
-    ],
-    "correctAnswer": "b",
-    "explanation": "Cộng đồng chủ xe Má Hải là mái nhà chung gắn kết, cùng nhau chia sẻ bí quyết phục vụ khách nhanh, xử lý tình huống và hỗ trợ nhau lúc khó khăn.",
-    "quote": "Vào gia đình Má Hải Cô Chú có thêm cộng đồng hơn 1.200 anh chị em chủ xe khắp nơi cùng chia sẻ kinh nghiệm, giúp đỡ nhau buôn may bán đắt!"
-  },
-  {
-    "id": "sale-160",
-    "stableId": "sale-160",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Khi đối tác phát hiện một điểm bán khác mở xe tự phát giả mạo thương hiệu Bánh Mì Má Hải gần vị trí của mình, quy trình xử lý đúng là gì?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Tự ý tranh cãi gay gắt trực tiếp tại điểm bán gây mất trật tự và ảnh hưởng hình ảnh khu phố."
-      },
-      {
-        "key": "b",
-        "text": "Im lặng bỏ qua và tự hạ giá bán sản phẩm của mình xuống để cạnh tranh tự do."
-      },
-      {
-        "key": "c",
-        "text": "Chụp ảnh hiện trường, vị trí và gửi thông tin về Bộ phận Pháp chế & Phát triển nhượng quyền của công ty để có biện pháp xử lý bảo vệ quyền lợi hợp pháp."
-      },
-      {
-        "key": "d",
-        "text": "Tự ý mua thêm các sản phẩm trôi nổi ngoài thị trường về bán kèm để giữ khách."
-      }
-    ],
-    "correctAnswer": "c",
-    "explanation": "Công ty có bộ phận Pháp chế chuyên trách xử lý các trường hợp vi phạm bản quyền và xâm phạm khoảng cách bảo vệ để bảo vệ quyền lợi chính đáng cho đối tác.",
-    "quote": "Có xe giả mạo thương hiệu Cô Chú chỉ cần chụp ảnh gửi Zalo, bộ phận Pháp chế của công ty sẽ can thiệp pháp lý để bảo vệ quyền lợi cho Cô Chú ngay!"
-  },
-  {
-    "id": "sale-161",
-    "stableId": "sale-161",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Trách nhiệm xã hội và môi trường của mỗi điểm bán Bánh Mì Má Hải thể hiện qua hành động nào?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Sử dụng túi giấy thực phẩm tự phân hủy thân thiện môi trường, gom rác thải sau ca bán bỏ đúng nơi quy định và tuyệt đối không xả dầu mỡ thừa xuống cống rãnh."
-      },
-      {
-        "key": "b",
-        "text": "Vứt toàn bộ túi nilon và rác thải ra công viên cây xanh"
-      },
-      {
-        "key": "c",
-        "text": "Đốt rác nhựa công cộng ngay trước hiên nhà buổi sáng"
-      },
-      {
-        "key": "d",
-        "text": "Xả khói đen gây ô nhiễm môi trường khu dân cư"
-      }
-    ],
-    "correctAnswer": "a",
-    "explanation": "Túi giấy thực phẩm thân thiện môi trường và quy chuẩn thu gom rác sau ca bán là cam kết phát triển xanh, bền vững của thương hiệu Má Hải.",
-    "quote": "Bao bì túi giấy thân thiện môi trường và giữ sạch vỉa hè sau ca bán là nét đẹp văn minh giúp thương hiệu Má Hải luôn được cộng đồng yêu quý!"
-  },
-  {
-    "id": "sale-162",
-    "stableId": "sale-162",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Mục tiêu phát triển bền vững trong 5 năm tới của chuỗi Bánh Mì Má Hải là gì?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Đóng cửa toàn bộ các điểm bán đường phố để chuyển sang kinh doanh bất động sản"
-      },
-      {
-        "key": "b",
-        "text": "Mở rộng mạng lưới lên 3.000 điểm bán khắp cả nước, nâng cao thu nhập cho hơn 5.000 gia đình lao động và đưa bánh mì chả cá Má Hải vươn tầm quốc tế."
-      },
-      {
-        "key": "c",
-        "text": "Tăng giá bán bánh mì lên 200.000đ/ổ để chỉ phục vụ giới thượng lưu"
-      },
-      {
-        "key": "d",
-        "text": "Chuyển giao toàn bộ thương hiệu cho các tập đoàn nước ngoài thâu tóm"
-      }
-    ],
-    "correctAnswer": "b",
-    "explanation": "Tầm nhìn mở rộng 3.000 điểm bán nhằm kiến tạo thêm hàng ngàn sinh kế bền vững cho người dân và khẳng định vị thế ẩm thực đường phố Việt Nam.",
-    "quote": "Tầm nhìn phát triển 3.000 điểm bán khắp cả nước, mở ra cơ hội đổi đời và sinh kế vững chắc cho hàng ngàn gia đình lao động Việt Nam!"
-  },
-  {
-    "id": "sale-163",
-    "stableId": "sale-163",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Khi đối tác cần hỗ trợ về quản lý tài chính và sổ sách thu chi điểm bán, công ty cung cấp công cụ gì?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Bắt buộc chủ xe phải thuê riêng kế toán chuyên nghiệp để theo dõi chi phí hàng ngày"
-      },
-      {
-        "key": "b",
-        "text": "Công ty cử nhân viên đến thu giữ toàn bộ tiền bán hàng mỗi ngày"
-      },
-      {
-        "key": "c",
-        "text": "Bảng tính lời lỗ mẫu, sổ tay quản lý doanh thu chi phí đơn giản trên điện thoại giúp người không rành kế toán cũng kiểm soát được dòng tiền mỗi sáng."
-      },
-      {
-        "key": "d",
-        "text": "Yêu cầu chủ xe ghi nợ trên giấy báo cũ"
-      }
-    ],
-    "correctAnswer": "c",
-    "explanation": "Bảng tính dòng tiền đơn giản giúp chủ xe biết chính xác mỗi sáng bán được bao nhiêu ổ, tiền vốn bao nhiêu và tiền lời thực tế bỏ túi là bao nhiêu.",
-    "quote": "Bảng tính lời lỗ cực kỳ đơn giản, Cô Chú chỉ cần nhập số ổ bán mỗi sáng là biết ngay tiền lời bỏ túi hôm nay, quản lý tài chính rất nhẹ nhàng!"
-  },
-  {
-    "id": "sale-164",
-    "stableId": "sale-164",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Khi khách hàng hỏi: 'Công ty có cam kết bao tiêu lợi nhuận cố định 20 triệu/tháng cho tôi không?', câu trả lời trung thực và đúng nguyên tắc 50/50 là gì?",
-    "options": [
-      {
-        "key": "a",
-        "text": "'Công ty cam kết trả lương cứng cố định 20 triệu/tháng dù Cô Chú không mở bán ngày nào.'"
-      },
-      {
-        "key": "b",
-        "text": "'Mô hình này không bao giờ có thể kiếm được quá 1 triệu đồng mỗi tháng.'"
-      },
-      {
-        "key": "c",
-        "text": "'Công ty chỉ cam kết nếu Cô Chú đóng thêm 100 triệu tiền bảo hiểm lợi nhuận.'"
-      },
-      {
-        "key": "d",
-        "text": "'Má Hải cam kết hỗ trợ 50% nền tảng vững chắc (thương hiệu uy tín, chả cá 17% đạm, sốt chuẩn, đào tạo bài bản); 50% còn lại là sự chăm chỉ, mở bán đúng giờ và nụ cười niềm nở của Cô Chú sẽ quyết định mức thu nhập 10-20 triệu/tháng ạ.'"
-      }
-    ],
-    "correctAnswer": "d",
-    "explanation": "Nguyên tắc 50/50 trung thực: Nền tảng công ty (50%) + Sự siêng năng của người bán (50%) tạo nên thành quả thực tế, không hứa hẹn vô căn cứ.",
-    "quote": "Công ty lo 50% hàng chuẩn và thương hiệu, 50% còn lại là sự chịu khó mở bán đúng giờ của Cô Chú, hai bên cùng nỗ lực thì mức thu nhập 10-20 triệu hoàn toàn trong tầm tay!"
-  },
-  {
-    "id": "sale-165",
-    "stableId": "sale-165",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Trong các nhận định sau đây về sự khác biệt giữa Gói 7,5 triệu và Gói 10,3 triệu (Xe Mới), nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Gói 7,5 triệu bao gồm xe inox tiêu chuẩn và trọn bộ nhận diện thương hiệu Má Hải"
-      },
-      {
-        "key": "b",
-        "text": "Gói 10,3 triệu có thêm trọn bộ dụng cụ bếp chuyên dụng (bếp gas khè, chảo chiên, kẹp gắp, khay inox, xẻng lật, thùng giữ nóng)."
-      },
-      {
-        "key": "c",
-        "text": "Khoản chênh lệch giúp khách hàng có ngay trọn bộ đồ nghề bếp đồng bộ mà không cần đi chợ mua sắm lẻ."
-      },
-      {
-        "key": "d",
-        "text": "Gói 7,5 triệu và Gói 10,3 triệu hoàn toàn giống hệt nhau không có bất kỳ trang thiết bị nào khác biệt."
-      }
-    ],
-    "correctAnswer": "d",
-    "explanation": "Gói 7,5 triệu (chưa kèm bộ bếp khè chiên) và Gói 10,3 triệu (đầy đủ trọn bộ bếp chảo chuyên dụng) là 2 cấu hình rõ ràng giúp đối tác linh hoạt lựa chọn.",
-    "quote": "Hai gói có sự khác biệt rõ về bộ dụng cụ bếp khè, Cô Chú có sẵn đồ ở nhà thì lấy Gói 7,5 triệu, muốn trọn gói mở bán ngay thì chọn Gói 10,3 triệu ạ!"
-  },
-  {
-    "id": "sale-166",
-    "stableId": "sale-166",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Khi tư vấn viên nhận thấy khách hàng đang có tâm lý lo sợ vì từng kinh doanh thất bại trước đây, cách đồng hành đúng đắn là gì?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Khuyên khách hàng nên vay mượn số tiền thật lớn 500 triệu để mở nhà hàng lớn mới nhanh gỡ lại vốn"
-      },
-      {
-        "key": "b",
-        "text": "Chê bai năng lực kinh doanh của khách hàng"
-      },
-      {
-        "key": "c",
-        "text": "Đồng cảm chân thành với những vất vả trước đây, phân tích mô hình Má Hải có vốn khởi sự nhỏ (từ 4,8tr), thuê hiên rẻ không lo chôn vốn, kèm chính sách bảo chứng thu hồi xe 60 ngày hoàn tối đa 2,8 triệu tùy hiện trạng thực tế xe để khách tự tin làm lại."
-      },
-      {
-        "key": "d",
-        "text": "Khuyên khách hàng không nên đi làm kiếm tiền nữa"
-      }
-    ],
-    "correctAnswer": "c",
-    "explanation": "Đồng cảm, chia sẻ và chỉ ra các yếu tố an toàn vốn (vốn nhỏ, thuê hiên rẻ, thu hồi xe 60 ngày hoàn tối đa 2,8 triệu) giúp khách vượt qua rào cản tâm lý để khởi nghiệp lại.",
-    "quote": "Thất bại trước đây là bài học, mô hình Má Hải vốn nhẹ chỉ vài triệu, rủi ro thấp và có chính sách bảo chứng 60 ngày giúp Cô Chú hoàn toàn tự tin làm lại từ đầu!"
-  },
-  {
-    "id": "sale-167",
-    "stableId": "sale-167",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Về quy trình bàn giao xe bánh mì và nhận diện thương hiệu cho đối tác, nhận định nào sau đây là KHÔNG ĐÚNG?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Công ty tự ý cắt giảm các hạng mục dụng cụ đã cam kết trong gói mà không thông báo cho đối tác."
-      },
-      {
-        "key": "b",
-        "text": "Xe và trang thiết bị được kiểm tra kỹ lưỡng về chất lượng trước khi xuất kho bàn giao"
-      },
-      {
-        "key": "c",
-        "text": "Bàn giao xe inox mới và bộ decal nhận diện thương hiệu được đóng gói cẩn thận gửi kèm đồ nghề"
-      },
-      {
-        "key": "d",
-        "text": "Đối tác kiểm tra đầy đủ xe, biển số, decal nhận diện, đồng phục và dụng cụ bếp trước khi ký biên bản nhận hàng."
-      }
-    ],
-    "correctAnswer": "a",
-    "explanation": "Má Hải luôn giao đủ 100% hạng mục theo đúng hợp đồng, có biên bản kiểm đếm minh bạch từng món đồ trước khi ký nhận.",
-    "quote": "Khi nhận xe Cô Chú mở thùng kiểm tra từng món theo biên bản bàn giao, đầy đủ và nguyên vẹn 100% mới ký nhận thanh toán phần còn lại ạ!"
-  },
-  {
-    "id": "sale-168",
-    "stableId": "sale-168",
-    "sectionNo": 7,
-    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-    "question": "Quy mô sản lượng tiêu thụ bánh mì hàng tháng của toàn bộ hệ thống Bánh Mì Má Hải trên cả nước đạt con số ấn tượng nào?",
-    "options": [
-      {
-        "key": "a",
-        "text": "Khoảng 50.000 ổ/tháng"
-      },
-      {
-        "key": "b",
-        "text": "Khoảng 200.000 ổ/tháng"
-      },
-      {
-        "key": "c",
-        "text": "Khoảng 1,5 triệu ổ bánh mì mỗi tháng (tương đương khoảng 50.000 ổ bánh mì nóng giòn mỗi ngày trên hơn 1.200 điểm bán toàn quốc)."
-      },
-      {
-        "key": "d",
-        "text": "Khoảng 10 triệu ổ/tháng"
-      }
-    ],
-    "correctAnswer": "c",
-    "explanation": "1,5 triệu ổ bánh mì mỗi tháng là minh chứng cho quy mô khổng lồ và sức tiêu thụ bền bỉ của thương hiệu Bánh Mì Má Hải trên thị trường ẩm thực đường phố.",
-    "quote": "Mỗi tháng 1,5 triệu ổ bánh mì đến tay người tiêu dùng, khẳng định thương hiệu Má Hải ăn sâu vào thói quen ăn sáng của hàng triệu người dân!"
-  },
-  {
-    "id": "sale-169",
-    "stableId": "sale-169",
+    "displayNumber": 153,
     "sectionNo": 7,
     "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Tại sao công ty yêu cầu các điểm bán duy trì việc sử dụng chả cá sợi đạm 17% và nước sốt Tứ Vị chính hãng?",
     "options": [
       {
         "key": "a",
-        "text": "Để đối tác tự pha chế nước sốt tại nhà nhằm giảm thiểu chi phí vận chuyển hàng ngày."
+        "text": "Bảo đảm mọi ổ bánh mì bán ra trên toàn quốc đều đồng nhất vị ngon vàng giòn dai ngọt, chuẩn an toàn thực phẩm, bảo vệ uy tín thương hiệu chung 13 năm và giữ chân khách quen."
       },
       {
         "key": "b",
-        "text": "Bảo đảm mọi ổ bánh mì bán ra trên toàn quốc đều đồng nhất vị ngon vàng giòn dai ngọt, chuẩn an toàn thực phẩm, bảo vệ uy tín thương hiệu chung 13 năm và giữ chân khách quen."
+        "text": "Để đối tác tự pha chế nước sốt tại nhà nhằm giảm thiểu chi phí vận chuyển hàng ngày."
       },
       {
         "key": "c",
@@ -4733,84 +4438,551 @@ const questions = [
         "text": "Để hạn chế việc điểm bán mở rộng thêm thực đơn bánh mì sang các khung giờ buổi chiều tối."
       }
     ],
+    "correctAnswer": "a",
+    "explanation": "Đồng nhất chất lượng và vị sốt Tứ Vị chuẩn ATTP trên toàn quốc giúp khách ở đâu cũng yên tâm thưởng thức vị ngon quen thuộc.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-154",
+    "stableId": "sale-154",
+    "displayNumber": 154,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Văn hóa ứng xử với bà con lối xóm và các hộ kinh doanh xung quanh điểm bán được Má Hải định hướng như thế nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Xem các hàng quán xung quanh là đối thủ cần cạnh tranh gay gắt và tìm cách hạn chế lượng khách của họ."
+      },
+      {
+        "key": "b",
+        "text": "Luôn giữ hòa khí, niềm nở chào hỏi, giữ gìn vệ sinh chung, tạo mối quan hệ láng giềng thân thiện và trở thành một phần quen thuộc, đáng mến của khu phố mỗi sớm mai."
+      },
+      {
+        "key": "c",
+        "text": "Tự ý bày biện đồ đạc lấn sang phần hiên nhà của các hộ liền kề để tăng không gian bán hàng."
+      },
+      {
+        "key": "d",
+        "text": "Giữ khoảng cách xa lánh, không giao tiếp và không cần chào hỏi bất kỳ ai trong khu phố xung quanh."
+      }
+    ],
     "correctAnswer": "b",
-    "explanation": "Tính đồng nhất về chất lượng và hương vị sốt Tứ Vị trên toàn quốc giúp khách hàng ở bất kỳ đâu cũng nhận được trải nghiệm ngon miệng, sạch sẽ giống nhau.",
-    "quote": "Chuẩn vị đồng nhất giúp khách đi đường ghé bất kỳ xe Má Hải nào cũng an tâm về chất lượng, tạo nên sức mạnh giữ khách cho toàn chuỗi 1.200 xe!"
+    "explanation": "Tình làng nghĩa xóm thuận hòa: Niềm nở, giữ vệ sinh, nhường nhịn và hỗ trợ nhau để 'buôn có bạn, bán có phường' cùng phát triển.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-155",
+    "stableId": "sale-155",
+    "displayNumber": 155,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Về chính sách thông báo giá nguyên vật liệu cung ứng, cam kết minh bạch của Bánh Mì Má Hải là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mỗi tuần thay đổi bảng giá nguyên liệu một lần."
+      },
+      {
+        "key": "b",
+        "text": "Tự ý tăng giá đột ngột ngay trong đêm mà không cần thông báo."
+      },
+      {
+        "key": "c",
+        "text": "Cam kết nỗ lực bình ổn giá và bắt buộc phải thông báo bằng văn bản trước ít nhất 7 ngày làm việc nếu có biến động giá nguyên liệu trên thị trường."
+      },
+      {
+        "key": "d",
+        "text": "Chỉ thông báo giá sau khi đã giao hàng tới xe của đối tác."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Thông báo trước ít nhất 7 ngày làm việc bằng văn bản giúp chủ xe hoàn toàn chủ động kế hoạch tài chính và kinh doanh.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-156",
+    "stableId": "sale-156",
+    "displayNumber": 156,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Khi cơ quan quản lý an toàn thực phẩm kiểm tra định kỳ tại điểm bán, giấy tờ pháp lý bảo vệ chủ xe gồm những gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bắt buộc phải có bằng cử nhân chuyên ngành chế biến thực phẩm."
+      },
+      {
+        "key": "b",
+        "text": "Chỉ cần xuất trình sổ hộ khẩu gia đình."
+      },
+      {
+        "key": "c",
+        "text": "Không cần xuất trình bất kỳ giấy tờ nào."
+      },
+      {
+        "key": "d",
+        "text": "Giấy chứng nhận cơ sở đủ điều kiện ATTP của nhà máy sản xuất chả cá/nước sốt, hóa đơn chứng từ nguồn gốc xuất xứ và Giấy ủy quyền thương hiệu Má Hải."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Hồ sơ ATTP chuẩn quốc tế của Má Hải bảo vệ pháp lý vững chắc cho chủ xe trước mọi đợt kiểm tra liên ngành.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-157",
+    "stableId": "sale-157",
+    "displayNumber": 157,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Hành vi nào sau đây của đối tác bị xem là vi phạm nghiêm trọng thỏa thuận hợp tác và sẽ bị đơn phương chấm dứt hợp đồng?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tự ý sử dụng thương hiệu Má Hải tại địa điểm ngoài hợp đồng hoặc tuồn nguyên vật liệu chính hãng ra ngoài bán lẻ trái phép."
+      },
+      {
+        "key": "b",
+        "text": "Chiên chả cá sợi phồng giòn vàng ruộm đúng chuẩn hướng dẫn."
+      },
+      {
+        "key": "c",
+        "text": "Tươi cười cảm ơn khách hàng sau khi nhận tiền."
+      },
+      {
+        "key": "d",
+        "text": "Mặc áo đồng phục cam sạch sẽ khi phục vụ khách."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Bán thương hiệu ngoài hợp đồng hoặc tuồn nguyên liệu vi phạm nghiêm trọng thỏa thuận, bị chấm dứt hợp tác để bảo vệ hệ thống.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-158",
+    "stableId": "sale-158",
+    "displayNumber": 158,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Quy trình xử lý khi đối tác muốn sang nhượng lại xe và điểm bán cho người thân hoặc người mua lại gồm những bước nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tự ý giao xe cho người ngoài mà không cần thông báo cho công ty."
+      },
+      {
+        "key": "b",
+        "text": "Thông báo cho bộ phận Pháp chế công ty -> Kiểm tra đối soát hồ sơ -> Ký biên bản chuyển giao hợp đồng 3 bên hoàn toàn miễn phí 0 đồng."
+      },
+      {
+        "key": "c",
+        "text": "Công ty thu phí sang nhượng 10 triệu đồng đối với người mới."
+      },
+      {
+        "key": "d",
+        "text": "Người mới bắt buộc phải đổi toàn bộ màu sắc nhận diện xe."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Thủ tục sang nhượng 3 bên minh bạch và miễn phí 0 đồng giúp người mới kế thừa trọn vẹn quyền lợi điểm bán an toàn.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-159",
+    "stableId": "sale-159",
+    "displayNumber": 159,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Chương trình 'Đồng nghiệp Nhà Má Hải' mang lại những giá trị gắn kết cộng đồng nào cho các chủ xe?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bắt buộc các chủ xe phải đóng quỹ góp họ hàng tháng."
+      },
+      {
+        "key": "b",
+        "text": "Cạnh tranh gay gắt và chèn ép nhau trên từng tuyến đường."
+      },
+      {
+        "key": "c",
+        "text": "Cộng đồng hơn 1.200 chủ xe cùng chia sẻ kinh nghiệm bán hàng, hỗ trợ nhau khi có sự cố, tham gia các buổi tập huấn kỹ năng và vinh danh điểm bán xuất sắc."
+      },
+      {
+        "key": "d",
+        "text": "Không có bất kỳ hoạt động gắn kết nào."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Cộng đồng Đồng nghiệp Nhà Má Hải hơn 1.200 thành viên là mái nhà chung ấm áp, cùng tương trợ nhau buôn may bán đắt.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-160",
+    "stableId": "sale-160",
+    "displayNumber": 160,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Khi đối tác phát hiện một điểm bán khác mở xe tự phát giả mạo thương hiệu Bánh Mì Má Hải gần vị trí của mình, quy trình xử lý đúng là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Tự ý mua thêm các sản phẩm trôi nổi ngoài thị trường về bán kèm để giữ khách."
+      },
+      {
+        "key": "b",
+        "text": "Tự ý tranh cãi gay gắt trực tiếp tại điểm bán gây mất trật tự và ảnh hưởng hình ảnh khu phố."
+      },
+      {
+        "key": "c",
+        "text": "Im lặng bỏ qua và tự hạ giá bán sản phẩm của mình xuống để cạnh tranh tự do."
+      },
+      {
+        "key": "d",
+        "text": "Chụp ảnh hiện trường, vị trí và gửi thông tin về Bộ phận Pháp chế & Phát triển nhượng quyền của công ty để có biện pháp xử lý bảo vệ quyền lợi hợp pháp."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Pháp chế công ty sẽ can thiệp xử lý vi phạm thương hiệu chính quy, bảo vệ an toàn và quyền kinh doanh độc quyền cho chủ xe.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-161",
+    "stableId": "sale-161",
+    "displayNumber": 161,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Về việc giữ gìn uy tín thương hiệu chung của hơn 1.200 điểm bán, trách nhiệm của mỗi chủ xe là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bán đúng giá sàn niêm yết 15.000đ, sử dụng 100% nguyên liệu chính hãng, giữ gìn vệ sinh xe sạch sẽ và phục vụ niềm nở mỗi sáng."
+      },
+      {
+        "key": "b",
+        "text": "Tự ý tăng giá bánh mì lên 30.000đ vào các ngày lễ tết."
+      },
+      {
+        "key": "c",
+        "text": "Pha trộn chả cá trôi nổi vào bán chung để giảm chi phí."
+      },
+      {
+        "key": "d",
+        "text": "Để xe bánh mì bẩn thỉu và dính đầy dầu mỡ lâu ngày."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Mỗi chủ xe là một đại sứ thương hiệu, giữ chuẩn chất lượng và giá cả là giữ nồi cơm chung cho toàn thể cộng đồng.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-162",
+    "stableId": "sale-162",
+    "displayNumber": 162,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Khi đối tác có mong muốn nâng cấp từ Gói 4,8 triệu lên Gói 10,3 triệu đầy đủ dụng cụ bếp, chính sách hỗ trợ là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bắt buộc đối tác phải thanh toán toàn bộ 10,3 triệu từ đầu mà không được giảm trừ."
+      },
+      {
+        "key": "b",
+        "text": "Hỗ trợ cung cấp bổ sung trọn bộ đồ nghề bếp chuyên dụng theo giá gốc hỗ trợ nội bộ mà không cần mua lại gói mới."
+      },
+      {
+        "key": "c",
+        "text": "Từ chối không cho phép nâng cấp trang thiết bị."
+      },
+      {
+        "key": "d",
+        "text": "Yêu cầu đối tác phải tìm một mặt bằng mới mới được nâng cấp."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Hỗ trợ nâng cấp linh hoạt với giá gốc giúp chủ xe dễ dàng hoàn thiện trang thiết bị khi việc kinh doanh phát triển thuận lợi.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-163",
+    "stableId": "sale-163",
+    "displayNumber": 163,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Tại sao chính sách 'Miễn phí tái ký hợp đồng hàng năm (0 đồng)' là cam kết mang tính biểu tượng của Nhà Má Hải?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Vì sau 1 năm công ty sẽ thu hồi lại toàn bộ phương tiện."
+      },
+      {
+        "key": "b",
+        "text": "Vì công ty không quan tâm đến các điều khoản hợp đồng."
+      },
+      {
+        "key": "c",
+        "text": "Khẳng định triết lý đồng hành lâu dài cùng người lao động, không tận thu phí duy trì, xem sự thành công của chủ xe là thành công của công ty."
+      },
+      {
+        "key": "d",
+        "text": "Chỉ áp dụng miễn phí cho 10 điểm bán đầu tiên."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Tái ký 0 đồng suốt 13 năm là minh chứng cho tinh thần 'Đồng minh cùng kiếm cơm', gắn kết sắt son giữa công ty và đối tác.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-164",
+    "stableId": "sale-164",
+    "displayNumber": 164,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Khi chủ xe gặp khó khăn về nguồn vốn tái nhập hàng do hoàn cảnh gia đình đột xuất, chính sách hỗ trợ linh hoạt là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bắt buộc chủ xe phải đóng cửa nghỉ bán vĩnh viễn."
+      },
+      {
+        "key": "b",
+        "text": "Lập tức ngừng cung ứng hàng và hủy bỏ hợp đồng."
+      },
+      {
+        "key": "c",
+        "text": "Yêu cầu chủ xe phải thế chấp tài sản để nhập hàng."
+      },
+      {
+        "key": "d",
+        "text": "Tư vấn điều chỉnh lượng đặt hàng linh hoạt theo từng đợt ngắn ngày để vừa bảo đảm có hàng bán mỗi sáng vừa không bị đọng vốn."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Lên đơn linh hoạt theo ngày giúp chủ xe chủ động dòng tiền, duy trì buôn bán liên tục vượt qua giai đoạn khó khăn.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-165",
+    "stableId": "sale-165",
+    "displayNumber": 165,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Về việc tham gia các buổi tập huấn kỹ năng và chia sẻ kinh nghiệm định kỳ, quyền lợi của chủ xe là gì?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Được tham gia các buổi chia sẻ online miễn phí từ các chuyên gia và những chủ xe bán trên 150 ổ/sáng để học hỏi bí quyết tăng doanh thu."
+      },
+      {
+        "key": "b",
+        "text": "Bắt buộc phải đóng học phí 2 triệu đồng cho mỗi buổi tập huấn."
+      },
+      {
+        "key": "c",
+        "text": "Chỉ dành riêng cho nhân viên văn phòng công ty."
+      },
+      {
+        "key": "d",
+        "text": "Không có bất kỳ chương trình tập huấn nào cho đối tác."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Đào tạo kỹ năng liên tục giúp chủ xe nâng cao tay nghề, học mẹo giữ khách và gia tăng thu nhập bền vững.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-166",
+    "stableId": "sale-166",
+    "displayNumber": 166,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Văn hóa 'Người Quản lý Thường trực' và 'Đồng nghiệp Nhà Má Hải' thể hiện mối quan hệ hợp tác như thế nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Mối quan hệ chủ tớ áp đặt mệnh lệnh cứng nhắc."
+      },
+      {
+        "key": "b",
+        "text": "Mối quan hệ bình đẳng, tôn trọng lẫn nhau, cùng chung chí hướng xây dựng chuỗi bánh mì sạch sẽ, văn minh và sẻ chia lợi ích hài hòa."
+      },
+      {
+        "key": "c",
+        "text": "Mối quan hệ cạnh tranh đối đầu gay gắt."
+      },
+      {
+        "key": "d",
+        "text": "Mối quan hệ mua bán một lần không có sự gắn kết."
+      }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Văn hóa chuẩn mực tôn trọng đối tác, xem nhau như đồng nghiệp cùng kiến tạo cuộc sống ấm no và phụng sự xã hội.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-167",
+    "stableId": "sale-167",
+    "displayNumber": 167,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Khi bàn giao xe và trang thiết bị cho đối tác, quy trình nghiệm thu minh bạch gồm những bước nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Yêu cầu đối tác ký nhận trước khi cho xem phương tiện."
+      },
+      {
+        "key": "b",
+        "text": "Giao hàng qua loa và không có biên bản kiểm đếm."
+      },
+      {
+        "key": "c",
+        "text": "Đối tác cùng chuyên viên kiểm tra đầy đủ xe inox, biển số điểm bán, decal nhận diện, đồng phục và dụng cụ bếp theo đúng biên bản kiểm đếm trước khi ký nhận."
+      },
+      {
+        "key": "d",
+        "text": "Chỉ bàn giao xe và không bàn giao bất kỳ phụ kiện nào kèm theo."
+      }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Biên bản kiểm đếm chi tiết từng món đồ trước khi ký nhận bảo đảm quyền lợi đủ 100% hạng mục theo đúng hợp đồng.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-168",
+    "stableId": "sale-168",
+    "displayNumber": 168,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Quy mô sản lượng tiêu thụ bánh mì hàng tháng của toàn bộ hệ thống Bánh Mì Má Hải trên cả nước đạt con số ấn tượng nào?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Khoảng 10 triệu ổ/tháng."
+      },
+      {
+        "key": "b",
+        "text": "Khoảng 50.000 ổ/tháng."
+      },
+      {
+        "key": "c",
+        "text": "Khoảng 200.000 ổ/tháng."
+      },
+      {
+        "key": "d",
+        "text": "Khoảng 1,5 triệu ổ bánh mì mỗi tháng (tương đương khoảng 50.000 ổ bánh mì nóng giòn mỗi ngày trên hơn 1.200 điểm bán toàn quốc)."
+      }
+    ],
+    "correctAnswer": "d",
+    "explanation": "1,5 triệu ổ/tháng là minh chứng cho quy mô khổng lồ và sức tiêu thụ bền bỉ của thương hiệu Bánh Mì Má Hải.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
+  },
+  {
+    "id": "sale-169",
+    "stableId": "sale-169",
+    "displayNumber": 169,
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+    "question": "Tại sao công ty yêu cầu các điểm bán duy trì việc sử dụng chả cá sợi đạm 17% và nước sốt Tứ Vị chính hãng?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Bảo đảm mọi ổ bánh mì bán ra trên toàn quốc đều đồng nhất vị ngon vàng giòn dai ngọt, chuẩn an toàn thực phẩm, bảo vệ uy tín thương hiệu chung 13 năm và giữ chân khách quen."
+      },
+      {
+        "key": "b",
+        "text": "Để đối tác tự pha chế nước sốt tại nhà nhằm giảm thiểu chi phí vận chuyển hàng ngày."
+      },
+      {
+        "key": "c",
+        "text": "Nhằm tăng lượng tiêu thụ nước sốt lên gấp đôi trong mỗi ổ bánh mì bán ra."
+      },
+      {
+        "key": "d",
+        "text": "Để hạn chế việc điểm bán mở rộng thêm thực đơn bánh mì sang các khung giờ buổi chiều tối."
+      }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Tính đồng nhất chất lượng trên toàn quốc giúp khách hàng ở bất kỳ đâu cũng nhận được trải nghiệm ngon miệng, sạch sẽ giống nhau.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
   },
   {
     "id": "sale-170",
     "stableId": "sale-170",
+    "displayNumber": 170,
     "sectionNo": 7,
     "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi tư vấn viên hỗ trợ khách hàng tìm hiểu các điều khoản hợp đồng nhượng quyền, hành vi nào sau đây là KHÔNG PHÙ HỢP?",
     "options": [
       {
         "key": "a",
-        "text": "Hối thúc khách hàng ký hợp đồng vội vã mà không giải thích cặn kẽ các điều khoản quyền lợi và nghĩa vụ."
-      },
-      {
-        "key": "b",
         "text": "Giải thích rõ ràng các điều khoản về thời hạn hợp đồng, tái ký miễn phí 0 đồng và khoảng cách bảo vệ điểm bán."
       },
       {
+        "key": "b",
+        "text": "Hối thúc khách hàng ký hợp đồng vội vã mà không giải thích cặn kẽ các điều khoản quyền lợi và nghĩa vụ."
+      },
+      {
         "key": "c",
-        "text": "Hướng dẫn khách kiểm tra thông tin cá nhân và tọa độ điểm bán chính xác trước khi hoàn tất thủ tục"
+        "text": "Hướng dẫn khách kiểm tra thông tin cá nhân và tọa độ điểm bán chính xác trước khi hoàn tất thủ tục."
       },
       {
         "key": "d",
-        "text": "Gửi bản mềm hợp đồng qua Zalo để khách hàng đọc kỹ cùng gia đình trước khi đưa ra quyết định"
+        "text": "Gửi bản mềm hợp đồng qua Zalo để khách hàng đọc kỹ cùng gia đình trước khi đưa ra quyết định."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Tư vấn hợp đồng phải minh bạch, giải thích từng điều khoản để khách hiểu rõ quyền lợi và an tâm ký kết, tuyệt đối không giấu giếm hay thúc ép.",
-    "quote": "Hợp đồng minh bạch từng câu chữ, tư vấn viên giải thích cặn kẽ để Cô Chú hiểu rõ quyền lợi và hoàn toàn yên tâm khi đồng hành cùng công ty!"
+    "correctAnswer": "b",
+    "explanation": "Tư vấn hợp đồng phải minh bạch, giải thích từng điều khoản để khách hiểu rõ quyền lợi và an tâm ký kết, tuyệt đối không hối thúc.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
   },
   {
     "id": "sale-171",
     "stableId": "sale-171",
+    "displayNumber": 171,
     "sectionNo": 7,
     "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Trong các nhận định sau đây về sự tiện lợi khi sử dụng Ứng dụng đặt hàng của Nhà Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
         "key": "a",
-        "text": "Chủ xe có thể chủ động đặt hàng chả cá, nước sốt và bao bì mọi lúc 24/7 trên điện thoại theo nhu cầu thực tế."
+        "text": "Ứng dụng hiển thị rõ ràng giá cả, số lượng và theo dõi được tiến độ vận chuyển hàng tận nơi."
       },
       {
         "key": "b",
-        "text": "Ứng dụng hiển thị rõ ràng giá cả, số lượng và theo dõi được tiến độ vận chuyển hàng tận nơi"
+        "text": "Chủ xe có thể chủ động đặt hàng chả cá, nước sốt và bao bì mọi lúc 24/7 trên điện thoại theo nhu cầu thực tế."
       },
       {
         "key": "c",
-        "text": "Giúp chủ xe kiểm soát tốt lượng nguyên liệu và chủ động kế hoạch buôn bán hàng ngày"
+        "text": "Chủ xe bắt buộc phải trực tiếp đến kho tổng tại trụ sở chính để đặt đơn và nhận hàng thủ công."
       },
       {
         "key": "d",
-        "text": "Chủ xe phải trực tiếp đến kho tổng tại trụ sở chính để đặt đơn và nhận hàng thủ công."
+        "text": "Giúp chủ xe kiểm soát tốt lượng nguyên liệu và chủ động kế hoạch buôn bán hàng ngày."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Ứng dụng đặt hàng số hóa 24/7 tiện lợi trên smartphone giúp việc lên đơn diễn ra trong vài giây, không có chuyện gửi thư tay qua bưu điện.",
-    "quote": "Đặt hàng trên điện thoại cực kỳ tiện lợi, Cô Chú bấm vài nút là đơn hàng được xác nhận và giao tận nơi đúng hẹn, rất chủ động!"
+    "correctAnswer": "c",
+    "explanation": "Ứng dụng đặt hàng số hóa 24/7 tiện lợi trên smartphone giúp việc lên đơn diễn ra trong vài giây, giao hàng tận nơi qua chành xe.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
   },
   {
     "id": "sale-172",
     "stableId": "sale-172",
+    "displayNumber": 172,
     "sectionNo": 7,
     "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi tư vấn viên thực hiện cuộc gọi chăm sóc sau 1 tuần đối tác khai trương điểm bán, hành vi nào sau đây là KHÔNG PHÙ HỢP?",
     "options": [
       {
         "key": "a",
-        "text": "Hỏi thăm tình hình bán hàng mỗi sáng (số lượng ổ bán ra, phản hồi của bà con về chả cá và nước sốt)."
+        "text": "Động viên tinh thần và chia sẻ thêm kinh nghiệm giữ khách quen ca sáng cho chủ xe."
       },
       {
         "key": "b",
-        "text": "Lắng nghe xem đối tác có gặp khó khăn gì về kỹ thuật chiên chả cá hay bảo quản hàng hóa để kịp thời hỗ trợ tháo gỡ."
+        "text": "Hỏi thăm tình hình bán hàng mỗi sáng (số lượng ổ bán ra, phản hồi của bà con về chả cá và nước sốt)."
       },
       {
         "key": "c",
-        "text": "Động viên tinh thần và chia sẻ thêm kinh nghiệm giữ khách quen ca sáng cho chủ xe"
+        "text": "Lắng nghe xem đối tác có gặp khó khăn gì về kỹ thuật chiên chả cá hay bảo quản hàng hóa để kịp thời hỗ trợ tháo gỡ."
       },
       {
         "key": "d",
@@ -4819,22 +4991,23 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Chăm sóc sau khai trương là để hỗ trợ kỹ thuật và động viên tinh thần, tuyệt đối không có chuyện thu thêm bất kỳ khoản phí phát sinh nào.",
-    "quote": "Tuần đầu khai trương chuyên viên gọi thăm hỏi tình hình, hỗ trợ mẹo chiên chả và canh lửa để Cô Chú nhanh chóng bán quen tay và đông khách!"
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
   },
   {
     "id": "sale-173",
     "stableId": "sale-173",
+    "displayNumber": 173,
     "sectionNo": 7,
     "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Những yếu tố thực tế nào giúp một điểm bán bánh mì Má Hải nhanh chóng đạt mốc 100 ổ/sáng chỉ sau 1 – 2 tháng mở bán?",
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc phải mở bán liên tục cả ngày lẫn đêm 24/24 giờ"
+        "text": "Chọn vị trí đặt xe thuận chiều người đi làm buổi sáng, mở bán đều đặn đúng giờ 5h30 sáng mỗi ngày, bánh mì luôn nóng giòn và người bán luôn niềm nở, tươi cười với khách."
       },
       {
         "key": "b",
-        "text": "Chọn vị trí đặt xe thuận chiều người đi làm buổi sáng, mở bán đều đặn đúng giờ 5h30 sáng mỗi ngày, bánh mì luôn nóng giòn và người bán luôn niềm nở, tươi cười với khách."
+        "text": "Bắt buộc phải mở bán liên tục cả ngày lẫn đêm 24/24 giờ."
       },
       {
         "key": "c",
@@ -4845,188 +5018,195 @@ const questions = [
         "text": "Mở rộng bán thêm nhiều món ăn vặt phức tạp cùng lúc trong khung giờ sáng."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Vị trí đẹp + Mở bán đều đặn đúng giờ + Nụ cười niềm nở + Bánh nóng giòn là công thức 4 bước giúp điểm bán nhanh chóng bứt phá lên 100 ổ/sáng.",
-    "quote": "Vị trí thuận đường, mở đúng 5h30 sáng, chả cá nóng giòn và nụ cười niềm nở là bí quyết để đạt 100 ổ mỗi sáng sau tháng đầu tiên!"
+    "correctAnswer": "a",
+    "explanation": "Vị trí đẹp + Mở bán đều đặn đúng giờ + Nụ cười niềm nở + Bánh nóng giòn là công thức 4 bước giúp điểm bán bứt phá lên 100 ổ/sáng.",
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
   },
   {
     "id": "sale-174",
     "stableId": "sale-174",
+    "displayNumber": 174,
     "sectionNo": 7,
     "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Mức thu nhập ròng hàng tháng của nhóm chủ xe bán chạy (bán từ 120 – 150 ổ/sáng) trong hệ thống Má Hải đạt con số nào?",
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 2 triệu đồng/tháng"
+        "text": "Khoảng 2 triệu đồng/tháng."
       },
       {
         "key": "b",
-        "text": "Khoảng 5 triệu đồng/tháng"
-      },
-      {
-        "key": "c",
         "text": "Trên 20 triệu đồng/tháng (thu nhập ròng thực tế sau khi đã trừ toàn bộ chi phí bánh mì và nguyên vật liệu)."
       },
       {
+        "key": "c",
+        "text": "Khoảng 5 triệu đồng/tháng."
+      },
+      {
         "key": "d",
-        "text": "Không có điểm bán nào đạt được mức thu nhập này"
+        "text": "Không có điểm bán nào đạt được mức thu nhập này."
       }
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "b",
     "explanation": "Bán 120-150 ổ/sáng mang lại lợi nhuận ròng 600k - 800k/ngày, tương đương thu nhập 18 - 24 triệu đồng/tháng chỉ với 3,5 tiếng làm việc buổi sáng.",
-    "quote": "Bán từ 120-150 ổ mỗi sáng thì tiền lời ròng đạt trên 20 triệu mỗi tháng, thu nhập mơ ước của rất nhiều gia đình lao động ạ!"
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
   },
   {
     "id": "sale-175",
     "stableId": "sale-175",
+    "displayNumber": 175,
     "sectionNo": 7,
     "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Ý nghĩa lớn nhất của việc tư vấn viên hỗ trợ một người lao động mở điểm bán Bánh Mì Má Hải thành công là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Chỉ nhằm mục đích nhận tiền thưởng hoa hồng cá nhân"
+        "text": "Nhằm xây dựng mạng lưới quan hệ cá nhân để phục vụ cho các mục tiêu kinh doanh riêng ngoài hệ thống."
       },
       {
         "key": "b",
-        "text": "Trao cho người lao động một sinh kế vững chắc, giúp gia đình có thêm nguồn thu nhập ổn định lâu dài và góp phần lan tỏa bữa sáng sạch sẽ, dinh dưỡng cho cộng đồng."
+        "text": "Chỉ nhằm mục đích nhận tiền thưởng hoa hồng cá nhân."
       },
       {
         "key": "c",
-        "text": "Nhằm xây dựng mạng lưới quan hệ cá nhân để phục vụ cho các mục tiêu kinh doanh riêng ngoài hệ thống."
+        "text": "Trao cho người lao động một sinh kế vững chắc, giúp gia đình có thêm nguồn thu nhập ổn định lâu dài và góp phần lan tỏa bữa sáng sạch sẽ, dinh dưỡng cho cộng đồng."
       },
       {
         "key": "d",
         "text": "Để nhanh chóng hoàn thành chỉ tiêu doanh số cá nhân trong tháng mà không cần theo sát tiến độ điểm bán."
       }
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "Niềm hạnh phúc lớn nhất của người tư vấn Má Hải: Giúp thêm một gia đình có công ăn việc làm ổn định và một điểm bán ấm no phụng sự bà con.",
-    "quote": "Giúp một điểm bán mở ra thành công và có thu nhập ổn định là niềm vui lớn nhất, trao sinh kế đàng hoàng cho bà con phát triển kinh tế gia đình!"
+    "quote": "Má Hải luôn bảo đảm tính pháp lý minh bạch và chính sách đồng hành nhân văn nhất cho mọi đối tác ạ!"
   },
   {
     "id": "sale-176",
     "stableId": "sale-176",
+    "displayNumber": 176,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Quy trình Onboarding chuẩn 7 ngày từ lúc đặt cọc 2.000.000đ đến ngày khai trương bao gồm những giai đoạn nào?",
+    "question": "Khi khách hàng đã chọn được vị trí hiên nhà ưng ý và muốn mở bán trong tuần tới, bước chốt deal quyết định là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Ngày 1-2 Chốt vị trí & Ký cọc -> Ngày 3-4 Xưởng ráp xe, in decal & Gửi tài liệu học -> Ngày 5-6 Nhận xe kiểm đếm đồ nghề, kết nối lò bánh mì & Thực hành chiên chả -> Ngày 7 Khai trương rực rỡ."
+        "text": "Khuyên khách hàng nên tìm thêm 10 mặt bằng khác để so sánh."
       },
       {
         "key": "b",
-        "text": "Chỉ ngồi chờ đợi 7 ngày mà không cần chuẩn bị bất kỳ khâu nào thay vì chủ động tương tác và hỗ trợ kịp thời"
+        "text": "Bảo khách hàng cứ về nhà chờ thêm 1 tháng nữa."
       },
       {
         "key": "c",
-        "text": "Khai trương ngay trong 10 phút sau khi gọi điện mà không cần xe hay biển hiệu"
+        "text": "Yêu cầu khách hàng thanh toán trước 50 triệu đồng tiền thế chấp."
       },
       {
         "key": "d",
-        "text": "Học lý thuyết trong 6 tháng rồi mới tiến hành đặt cọc làm xe"
+        "text": "Hướng dẫn đặt cọc 2.000.000đ vào tài khoản công ty để khóa tọa độ độc quyền trên Map Tracker và lên lịch xuất kho xe."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Quy trình 7 ngày tinh gọn giúp đối tác chuẩn bị chu đáo mọi khâu từ xe cộ, đồ nghề, lò bánh mì đến kỹ thuật chiên chả để ngày khai trương bán đắt hàng ngay.",
-    "quote": "Quy trình 7 ngày chuẩn: Cọc làm xe -> Học tay nghề -> Nhận xe kiểm đồ -> Liên hệ lò bánh -> Khai trương rực rỡ đón khách ngay tuần đầu!"
+    "correctAnswer": "d",
+    "explanation": "Chốt cọc 2 triệu khóa vị trí Map Tracker là bước then chốt bảo vệ quyền kinh doanh độc quyền tại mặt bằng đẹp cho khách.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-177",
     "stableId": "sale-177",
+    "displayNumber": 177,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Điểm hòa vốn trung bình của một xe Bánh Mì Má Hải buổi sáng (đã tính tiền thuê hiên nhà 1,5 - 2 triệu/tháng và tiền gas, bao bì) là bao nhiêu ổ/ngày?",
+    "question": "Điểm hòa vốn bình quân mỗi sáng của một điểm bán xe Bánh Mì Má Hải tiêu chuẩn là bao nhiêu ổ bánh?",
     "options": [
       {
         "key": "a",
-        "text": "Chỉ từ 15 đến 20 ổ mỗi sáng"
+        "text": "Khoảng 40 đến 50 ổ bánh mì/sáng (đã đủ bù đắp toàn bộ tiền mặt bằng, tiền gas, tiền điện và nguyên vật liệu)."
       },
       {
         "key": "b",
-        "text": "Khoảng 35 đến 40 ổ mỗi sáng (từ ổ thứ 41 trở đi là tiền lời ròng bỏ túi trọn vẹn cho chủ xe)."
+        "text": "Khoảng 200 ổ bánh mì/sáng mới bắt đầu có lời."
       },
       {
         "key": "c",
-        "text": "Khoảng 200 ổ mỗi sáng mới bắt đầu hòa vốn"
+        "text": "Chỉ cần bán 5 ổ bánh mì/sáng."
       },
       {
         "key": "d",
-        "text": "Không thể xác định được điểm hòa vốn"
+        "text": "Khoảng 500 ổ bánh mì/sáng."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Với tiền lời 5.000đ - 5.500đ/ổ, chỉ cần bán 35-40 ổ/sáng là đủ chi trả tiền mặt bằng, gas, túi giấy. Bán 60-80 ổ là có tiền lời ròng 100k-200k/ngày.",
-    "quote": "Chỉ cần bán 35-40 ổ sáng là hòa trọn vẹn mọi chi phí mặt bằng điện gas, từ ổ 41 trở đi là tiền lời ròng đút túi, cực kỳ an toàn nhẹ gánh!"
+    "correctAnswer": "a",
+    "explanation": "Điểm hòa vốn chỉ 40-50 ổ/sáng (bán trong 1-1,5 tiếng), từ ổ thứ 51 trở đi toàn bộ tiền lời ròng thuộc về túi của chủ xe.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-178",
     "stableId": "sale-178",
+    "displayNumber": 178,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Khi chốt hợp đồng, tư vấn viên hướng dẫn khách hàng cách kiểm tra định vị độc quyền trên Map Tracker như thế nào?",
+    "question": "Bài toán lợi nhuận ròng hàng tháng khi điểm bán duy trì mức tiêu thụ ổn định 80 ổ/sáng được tính toán ra sao?",
     "options": [
       {
         "key": "a",
-        "text": "Khách hàng phải tự mua bản đồ giấy về vẽ compa thủ công từ các nguồn trôi nổi trên thị trường tự do"
+        "text": "Thu nhập chỉ đạt khoảng 1 triệu đồng/tháng."
       },
       {
         "key": "b",
-        "text": "Chuyên viên nhập tọa độ GPS hoặc số nhà chính xác vào phần mềm Map Tracker, quét bán kính bảo vệ (300m đô thị, 500m-1.000m huyện/KCN) và chụp màn hình gửi khách xác nhận vùng xanh an toàn."
+        "text": "80 ổ x 5.000đ lời ròng = 400.000đ/ngày -> Thu nhập ròng đạt 12.000.000đ/tháng chỉ với 3,5 tiếng làm việc buổi sáng."
       },
       {
         "key": "c",
-        "text": "Hệ thống tự động duyệt bất kỳ vị trí nào mà không cần kiểm tra khoảng cách"
+        "text": "Không có lợi nhuận sau khi trừ chi phí."
       },
       {
         "key": "d",
-        "text": "Bắt buộc khách hàng phải thuê vệ tinh đo đạc riêng"
+        "text": "Thu nhập đạt 100 triệu đồng/tháng ngay tháng đầu tiên."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Map Tracker hiển thị trực quan các điểm bán đang hoạt động dưới dạng vòng tròn bán kính, giúp khách hàng nhìn thấy rõ ràng vị trí của mình an toàn tuyệt đối.",
-    "quote": "Bên con quét Map Tracker chụp hình gửi qua Zalo, Cô Chú thấy vị trí của mình nằm trong vùng xanh độc quyền không bị dính xe nào là an tâm tuyệt đối!"
+    "explanation": "Bán 80 ổ/sáng mang lại thu nhập ròng 12 triệu/tháng, cao hơn lương công nhân mà thời gian làm việc tự do, thảnh thơi.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-179",
     "stableId": "sale-179",
+    "displayNumber": 179,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Để tối ưu hóa lợi nhuận ròng hàng tháng, chủ xe Bánh Mì Má Hải nên áp dụng các chiến lược bán hàng thực chiến nào?",
+    "question": "Kế hoạch 7 ngày chuẩn bị Onboarding từ lúc đặt cọc đến ngày khai trương điểm bán gồm những mốc chính nào?",
     "options": [
       {
         "key": "a",
-        "text": "Đóng ca thật sớm lúc 7h00 sáng khi người đi làm vẫn đang đông đúc"
+        "text": "Giao xe xong là mở bán ngay trong đêm không cần chuẩn bị."
       },
       {
         "key": "b",
-        "text": "Giảm lượng chả cá sợi trong ổ bánh xuống còn 10% để tiết kiệm nguyên liệu"
+        "text": "Khách hàng phải chờ đợi 1 năm không có mốc thời gian cụ thể."
       },
       {
         "key": "c",
-        "text": "Bán kèm nước giải khát/sữa đậu nành, duy trì mở bán đúng giờ 5h30-9h00, nhận đặt bánh số lượng lớn cho công ty/trường học và luôn tươi cười nhớ mặt khách quen."
+        "text": "Ngày 1 Cọc khóa vị trí -> Ngày 2-4 Xưởng đóng xe in decal -> Ngày 5 Bàn giao xe và học tay nghề -> Ngày 6 Chuẩn bị nguyên liệu -> Ngày 7 Khai trương rực rỡ."
       },
       {
         "key": "d",
-        "text": "Tăng giá bán bánh mì lên gấp đôi vào những ngày trời mưa"
+        "text": "Chỉ học lý thuyết trong 30 ngày mà không bàn giao phương tiện."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Bán kèm nước uống, nhận đơn sỉ cho văn phòng/trường học và giữ chân khách quen là 3 đòn bẩy giúp tăng thêm 3 - 5 triệu tiền lời mỗi tháng.",
-    "quote": "Nhận thêm đơn bánh mì cho công ty, trường học và bán thêm nước giải khát là mẹo thực chiến giúp Cô Chú bỏ túi thêm vài triệu tiền lời mỗi tháng!"
+    "explanation": "Lộ trình 7 ngày Onboarding rõ ràng, khoa học giúp chủ xe chuẩn bị chu đáo từng khâu và khai trương thắng lợi.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-180",
     "stableId": "sale-180",
+    "displayNumber": 180,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Khi đối tác chuẩn bị ngày khai trương, công ty bàn giao những vật phẩm truyền thông nhận diện nào để thu hút khách hàng?",
     "options": [
       {
         "key": "a",
-        "text": "Băng rôn cờ phướn khai trương nổi bật, bảng menu giá chuẩn, áo đồng phục cam, nón, tạp dề và standee hướng dẫn món ngon đậm đà."
+        "text": "Bàn giao các ấn phẩm decal nhận diện dùng chung không có thông tin và chương trình ưu đãi ngày khai trương."
       },
       {
         "key": "b",
@@ -5038,44 +5218,46 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Bàn giao các ấn phẩm decal nhận diện dùng chung không có thông tin và chương trình ưu đãi ngày khai trương."
+        "text": "Băng rôn cờ phướn khai trương nổi bật, bảng menu giá chuẩn, áo đồng phục cam, nón, tạp dề và standee hướng dẫn món ngon đậm đà."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Bộ vật phẩm khai trương rực rỡ sắc cam giúp điểm bán nổi bật cả góc phố, tạo hiệu ứng đông đúc tò mò thu hút người đi đường ghé mua ngay ngày đầu.",
-    "quote": "Băng rôn khai trương rực rỡ sắc cam treo lên quầy xe, khách đi làm từ xa nhìn thấy là tò mò ghé vào mua ủng hộ nườm nượp ngay ngày đầu ạ!"
+    "correctAnswer": "d",
+    "explanation": "Trọn bộ ấn phẩm khai trương cam rực rỡ giúp điểm bán nổi bật trên phố, thu hút hàng trăm lượt khách ghé mua ngày đầu.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-181",
     "stableId": "sale-181",
+    "displayNumber": 181,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Vì sao tỷ lệ trích doanh thu bán bánh mì hàng tháng tại Bánh Mì Má Hải luôn là 0%?",
+    "question": "Chương trình ưu đãi ngày khai trương kinh điển và hiệu quả nhất của xe Bánh Mì Má Hải là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Vì công ty không theo dõi được doanh số của đối tác"
+        "text": "'Mua 1 bánh mì tặng 1 ly sữa đậu nành/nước ngọt' hoặc 'Mua 2 tặng 1' trong 2 ngày đầu để tạo hiệu ứng đám đông và tích lũy khách quen."
       },
       {
         "key": "b",
-        "text": "Vì triết lý cộng sinh bền vững: Đối tác bỏ công sức lao động mỗi sáng xứng đáng giữ trọn vẹn 100% thành quả tiền lời, công ty phát triển nhờ việc cung ứng nguyên liệu chuẩn ổn định."
+        "text": "Tăng giá bánh mì lên gấp đôi trong ngày khai trương."
       },
       {
         "key": "c",
-        "text": "Vì đây là mô hình làm từ thiện phi lợi nhuận của nhà nước"
+        "text": "Bán bánh mì không kèm nước sốt để tiết kiệm chi phí."
       },
       {
         "key": "d",
-        "text": "Vì công ty sẽ thu tiền trích doanh thu bù vào cuối năm một lần"
+        "text": "Không có bất kỳ hoạt động khuyến mãi nào."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Chính sách 0% trích doanh thu là lời cam kết nhân văn giúp người lao động yên tâm làm việc, hưởng trọn từng đồng lời mồ hôi nước mắt của mình.",
-    "quote": "Má Hải cam kết 0% chia doanh thu, Cô Chú thức khuya dậy sớm bán được bao nhiêu là hưởng trọn 100% tiền lời bấy nhiêu, không mất một đồng phí nào!"
+    "correctAnswer": "a",
+    "explanation": "Chương trình tặng nước/mua 2 tặng 1 tạo cảnh xếp hàng đông đúc, kích thích người đi đường tò mò ghé mua ăn thử và thành khách ruột.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-182",
     "stableId": "sale-182",
+    "displayNumber": 182,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Hành động nào của tư vấn viên thể hiện sự chuyên nghiệp và uy tín cao nhất khi hỗ trợ khách hàng đặt cọc 2.000.000đ?",
@@ -5098,96 +5280,100 @@ const questions = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Tài khoản công ty minh bạch, cú pháp chuyển khoản rõ ràng và phiếu thu có mộc đỏ pháp nhân bảo đảm an toàn tuyệt đối cho dòng tiền của khách hàng.",
-    "quote": "Tiền cọc chuyển thẳng vào tài khoản pháp nhân công ty, có phiếu thu mộc đỏ gửi qua Zalo ngay sau 1 phút, minh bạch và an toàn 100% cho Cô Chú!"
+    "explanation": "Tài khoản pháp nhân + Phiếu thu mộc đỏ + Hợp đồng nguyên tắc bảo đảm tính minh bạch và an toàn tài chính tuyệt đối cho khách.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-183",
     "stableId": "sale-183",
+    "displayNumber": 183,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Khi điểm bán khai trương được 3 ngày đầu và lượng khách bắt đầu tăng nhanh, tư vấn viên nên hướng dẫn chủ xe lưu ý điều gì?",
+    "question": "Khi bàn giao xe tại nhà cho đối tác ở tỉnh xa, hướng dẫn kiểm tra thực tế gồm những hạng mục nào?",
     "options": [
       {
         "key": "a",
-        "text": "Tăng giá bánh mì lên gấp đôi ngay lập tức để tận dụng cơ hội"
+        "text": "Không cần mở bọc kiểm tra, ký nhận ngay."
       },
       {
         "key": "b",
-        "text": "Đóng cửa nghỉ ngơi vì đã có nhiều khách quen"
+        "text": "Chỉ kiểm tra màu sơn bên ngoài xe."
       },
       {
         "key": "c",
-        "text": "Chủ động tăng lượng bánh mì đặt từ lò và chả cá dự trữ trong tủ đông để không bị đứt hàng giữa giờ cao điểm 6h30-7h30 sáng, đồng thời duy trì thái độ phục vụ tươi cười chu đáo."
+        "text": "Kiểm tra khung xe inox sáng bóng, tủ kính chắn gió, bánh xe di chuyển nhẹ nhàng, bếp gas khè đánh lửa tốt và trọn bộ dụng cụ kèm theo."
       },
       {
         "key": "d",
-        "text": "Cắt bớt lượng sốt Tứ Vị để giảm chi phí"
+        "text": "Yêu cầu đơn vị vận chuyển tự mang xe về lại kho."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Đo lường lượng khách tăng và dự trù nguyên liệu kịp thời giúp điểm bán không bị cháy hàng sớm, phục vụ trọn vẹn lượng khách trong khung giờ vàng.",
-    "quote": "Thấy khách đông Cô Chú dặn lò tăng thêm bánh và trữ thêm chả trong ngăn đông, bán trọn vẹn ca sáng không bị hụt hàng là tiền lời tăng vọt ạ!"
+    "explanation": "Kiểm tra kỹ lưỡng từng chi tiết trước khi ký biên bản bàn giao giúp đối tác hoàn toàn an tâm về chất lượng phương tiện.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-184",
     "stableId": "sale-184",
+    "displayNumber": 184,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Chính sách bảo hành và hỗ trợ kỹ thuật đối với xe inox và trang thiết bị bếp chiên được quy định như thế nào?",
+    "question": "Kỹ thuật 'Tạo thiện cảm trong 30 giây đầu tiên' của người đứng bán tại quầy xe bánh mì gồm những yếu tố nào?",
     "options": [
       {
         "key": "a",
-        "text": "Không bảo hành và không hỗ trợ sửa chữa dưới mọi hình thức"
+        "text": "Cằn nhằn về lượng tiền thối lẻ."
       },
       {
         "key": "b",
-        "text": "Bắt buộc đối tác phải mua xe mới nếu xe bị hư hỏng nhẹ bánh xe"
+        "text": "Khuôn mặt lạnh lùng và không nói chuyện với khách."
       },
       {
         "key": "c",
-        "text": "Thu phí hỗ trợ kỹ thuật 1 triệu đồng cho mỗi cuộc gọi hướng dẫn"
+        "text": "Vừa bấm điện thoại vừa nhận order của khách."
       },
       {
         "key": "d",
-        "text": "Bảo hành kết cấu khung xe inox và hỗ trợ kỹ thuật bếp gas khè từ xa trong suốt quá trình hoạt động, có đội ngũ kỹ thuật hướng dẫn thay thế phụ tùng chuẩn xác."
+        "text": "Nụ cười tươi tắn chào đón, ánh mắt niềm nở, trang phục đồng phục cam sạch sẽ và câu chào: 'Dạ con chào Cô/Chú, hôm nay ăn bánh mì cay vừa đúng không ạ!'"
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Bảo hành kết cấu xe inox và hỗ trợ kỹ thuật tận tâm giúp đối tác hoàn toàn yên tâm vận hành phương tiện bền bỉ suốt nhiều năm.",
-    "quote": "Khung xe inox chắc chắn được bảo hành chu đáo, bếp gas có trục trặc gì gọi kỹ thuật là được hướng dẫn xử lý ngay, Cô Chú an tâm buôn bán lâu dài!"
+    "explanation": "Ghi nhớ sở thích ăn uống của khách quen và nụ cười niềm nở là nam châm hút khách mạnh nhất của các xe bán đắt hàng.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-185",
     "stableId": "sale-185",
+    "displayNumber": 185,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Giá trị cốt lõi nào tạo nên sức mạnh đoàn kết của đại gia đình hơn 1.200 điểm bán Bánh Mì Má Hải?",
+    "question": "Tại sao việc đặt mục tiêu bán 50 ổ/sáng trong tuần đầu tiên là cột mốc tâm lý quan trọng cho người mới?",
     "options": [
       {
         "key": "a",
-        "text": "Chỉ quan tâm đến việc bán xe lấy tiền một lần rồi thôi"
+        "text": "Giúp người bán làm quen nhịp độ thao tác, đạt ngay điểm hòa vốn và tự tin nâng dần lên mốc 80–100 ổ/sáng ở các tuần tiếp theo."
       },
       {
         "key": "b",
-        "text": "Sự cạnh tranh gay gắt triệt hạ lẫn nhau giữa các điểm bán"
+        "text": "Vì bán trên 50 ổ sẽ bị thu thêm phí doanh số."
       },
       {
         "key": "c",
-        "text": "Chỉ tập trung vào việc hạn chế quyền lợi các chủ xe vi phạm"
+        "text": "Vì lò bánh mì chỉ cung cấp tối đa 50 ổ mỗi ngày."
       },
       {
         "key": "d",
-        "text": "Tinh thần 'Đồng minh cùng kiếm cơm': Trung thực, sẻ chia, giữ chuẩn chất lượng thơm ngon sạch sẽ và cùng nhau kiến tạo cuộc sống ấm no, hạnh phúc."
+        "text": "Chỉ là con số ngẫu nhiên không có ý nghĩa."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Triết lý 'Đồng minh cùng kiếm cơm' là ngọn cờ tập hợp hàng ngàn con người lao động chân chính cùng nhau xây dựng cuộc sống gia đình sung túc.",
-    "quote": "Tinh thần Má Hải là 'Đồng minh cùng kiếm cơm', công ty và đối tác là người một nhà, cùng giữ chuẩn ổ bánh ngon sạch để cùng nhau ấm no bền vững!"
+    "correctAnswer": "a",
+    "explanation": "Đạt mốc 50 ổ/sáng giúp người mới vững tâm, hoàn vốn chi phí hàng ngày và có đà bứt phá mạnh mẽ ở giai đoạn sau.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-186",
     "stableId": "sale-186",
+    "displayNumber": 186,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Khi đối tác muốn mở thêm điểm bán thứ 2 tại địa bàn lân cận, quy trình đăng ký được thực hiện như thế nào?",
@@ -5198,39 +5384,40 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Bắt buộc đối tác phải thành lập doanh nghiệp riêng mới được phép đứng tên sở hữu từ 2 xe trở lên."
+        "text": "Gửi định vị vị trí mới cho chuyên viên quét Map Tracker xác nhận cự ly an toàn 300m, ký phụ lục hợp đồng điểm bán thứ 2 và nhận ưu đãi đồng hành cho đối tác thân thiết."
       },
       {
         "key": "c",
-        "text": "Phải thanh lý dứt điểm điểm bán thứ nhất và bàn giao xe cũ về công ty trước khi đăng ký điểm bán mới."
+        "text": "Bắt buộc đối tác phải thành lập doanh nghiệp riêng mới được phép đứng tên sở hữu từ 2 xe trở lên."
       },
       {
         "key": "d",
-        "text": "Gửi định vị vị trí mới cho chuyên viên quét Map Tracker xác nhận cự ly an toàn 300m, ký phụ lục hợp đồng điểm bán thứ 2 và nhận ưu đãi đồng hành cho đối tác thân thiết."
+        "text": "Phải thanh lý dứt điểm điểm bán thứ nhất và bàn giao xe cũ về công ty trước khi đăng ký điểm bán mới."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Quy trình nhân chuỗi xe: Quét Map Tracker vị trí mới -> Ký phụ lục hợp đồng -> Hưởng chính sách ưu đãi đối tác thân thiết mở rộng chuỗi.",
-    "quote": "Mở xe thứ 2 Cô Chú gửi định vị con kiểm tra Map Tracker, công ty hỗ trợ chính sách ưu đãi mở chuỗi để gia đình nhân đôi thu nhập mỗi sáng!"
+    "correctAnswer": "b",
+    "explanation": "Quét tọa độ Map Tracker điểm mới bảo đảm an toàn cự ly, ký phụ lục hợp đồng điểm thứ 2 nhanh gọn và nhận chính sách ưu đãi.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-187",
     "stableId": "sale-187",
+    "displayNumber": 187,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Về việc cung cấp tài liệu đào tạo và video hướng dẫn cho người mới mở xe, chính sách của Bánh Mì Má Hải là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Yêu cầu đối tác phải tham gia khóa học có thu phí tại trung tâm đào tạo ẩm thực bên ngoài."
-      },
-      {
-        "key": "b",
         "text": "Chỉ chuyển giao bằng hình thức truyền miệng trực tiếp trong ngày bàn giao xe mà không có tài liệu lưu giữ."
       },
       {
+        "key": "b",
+        "text": "Yêu cầu đối tác phải tham gia khóa học có thu phí tại trung tâm đào tạo ẩm thực bên ngoài."
+      },
+      {
         "key": "c",
-        "text": "Cung cấp trọn bộ cẩm nang bán hàng, video thao tác chiên chả cá, mẹo làm bánh nóng giòn và tài liệu tư vấn hoàn toàn miễn phí 0 đồng cho mọi đối tác tham gia chuỗi."
+        "text": "Cung cấp trọn bộ Sổ tay bán hàng, video thao tác chiên chả cá, mẹo làm bánh nóng giòn và tài liệu tư vấn hoàn toàn miễn phí 0 đồng cho mọi đối tác tham gia chuỗi."
       },
       {
         "key": "d",
@@ -5238,107 +5425,111 @@ const questions = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Kho học liệu thực chiến (cẩm nang, video, tài liệu hướng dẫn) được cung cấp miễn phí 100% giúp bất kỳ ai cũng có thể tự học và làm chủ tay nghề.",
-    "quote": "Toàn bộ video và cẩm nang bán hàng công ty cung cấp miễn phí 0 đồng, Cô Chú xem trên điện thoại là làm chủ tay nghề chiên chả bánh mì ngay!"
+    "explanation": "Tài liệu đào tạo và video số hóa miễn phí 0 đồng trọn đời giúp chủ xe và người nhà dễ dàng xem lại bất cứ khi nào cần.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-188",
     "stableId": "sale-188",
+    "displayNumber": 188,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Trong các nhận định sau đây về bề dày uy tín và năng lực hỗ trợ đối tác của thương hiệu Bánh Mì Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
+    "question": "Khi điểm bán đạt mức tiêu thụ 100 ổ/sáng, thu nhập ròng hàng tháng của chủ xe đạt con số bao nhiêu?",
     "options": [
       {
         "key": "a",
-        "text": "Bề dày 13 năm phát triển bền vững từ năm 2013, phục vụ hơn 1,5 triệu ổ bánh mì mỗi tháng trên toàn quốc."
+        "text": "Không có thu nhập vì chi phí quá cao."
       },
       {
         "key": "b",
-        "text": "Mạng lưới hơn 1.200 điểm bán toàn quốc giúp đối tác mở xe là thừa hưởng ngay niềm tin và lượng khách quen có sẵn."
+        "text": "Khoảng 3 triệu đồng/tháng."
       },
       {
         "key": "c",
-        "text": "Chả cá sợi đạt chuẩn 17% đạm và nước sốt Tứ Vị độc quyền, đầy đủ giấy tờ chứng nhận an toàn vệ sinh thực phẩm."
+        "text": "Khoảng 50 triệu đồng/tháng."
       },
       {
         "key": "d",
-        "text": "Bánh Mì Má Hải chỉ là thương hiệu ảo trên mạng và không có bất kỳ điểm bán nào hoạt động ngoài thực tế."
+        "text": "100 ổ x 5.000đ = 500.000đ/ngày -> Thu nhập ròng đạt 15.000.000đ/tháng chỉ với 3,5 tiếng làm việc buổi sáng."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "13 năm uy tín, 1.200 điểm bán thực tế, 1,5 triệu ổ/tháng là con số người thật việc thật. Nói thương hiệu ảo là hoàn toàn sai sự thật.",
-    "quote": "Má Hải có 13 năm lịch sử và hơn 1.200 xe đang bán thực tế mỗi sáng khắp cả nước, uy tín vững như bàn thạch cho Cô Chú nương tựa khởi nghiệp!"
+    "explanation": "Thu nhập ròng 15 triệu/tháng từ 100 ổ/sáng là mức thu nhập mơ ước của nhiều người lao động, giúp gia đình ấm no, sung túc.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-189",
     "stableId": "sale-189",
+    "displayNumber": 189,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Mức chi phí đầu tư trọn gói thấp nhất dành cho đối tác đã có sẵn xe bánh mì gia nhập chuỗi Bánh Mì Má Hải là bao nhiêu?",
+    "question": "Bí quyết quản lý tài chính hàng ngày cho người đứng bán xe bánh mì để không bị hao hụt tiền lời là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 2.000.000 đồng"
+        "text": "Tách riêng tiền vốn nhập hàng (khoảng 65%) và tiền lời ròng (khoảng 35%) sau mỗi ca bán, bỏ ống heo tiền lời mỗi ngày."
       },
       {
         "key": "b",
-        "text": "Đúng 4.800.000 đồng (nhận trọn bộ decal nhận diện Má Hải 2.0, biển số điểm bán, đồng phục, cẩm nang bán hàng và chứng nhận ATTP)."
+        "text": "Tiêu xài toàn bộ doanh thu thu được trong ngày."
       },
       {
         "key": "c",
-        "text": "Khoảng 15.000.000 đồng"
+        "text": "Cho khách hàng mua nợ không ghi chép."
       },
       {
         "key": "d",
-        "text": "Khoảng 30.000.000 đồng"
+        "text": "Không cần tính toán doanh thu và chi phí."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Gói 4,8 triệu là mức đầu tư tối thiểu nhẹ vốn nhất dành cho người đã có sẵn xe hoặc tủ kính, mở ra cơ hội khởi nghiệp siêu tiết kiệm.",
-    "quote": "Chỉ đúng 4,8 triệu là Cô Chú có sẵn xe đã khoác lên mình thương hiệu Má Hải uy tín, đầy đủ decal, đồng phục và giấy tờ chuẩn chỉnh mở bán ngay!"
+    "correctAnswer": "a",
+    "explanation": "Tách bạch tiền vốn và tiền lời ngay sau ca bán 9h00 sáng giúp chủ xe tích lũy đều đặn 400k-500k tiền lời bỏ túi mỗi ngày.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-190",
     "stableId": "sale-190",
+    "displayNumber": 190,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
-    "question": "Khi đối tác có mong muốn nhân rộng mở thêm điểm bán thứ 2 hoặc thứ 3 sau khi điểm bán đầu tiên đã vận hành ổn định, nhận định nào sau đây là KHÔNG ĐÚNG?",
+    "question": "Về chính sách hỗ trợ phát triển kinh doanh lâu dài, cam kết đồng hành của Nhà Má Hải là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Công ty nghiêm cấm đối tác không được mở thêm điểm bán thứ 2 dưới mọi hình thức."
+        "text": "Tự ý tăng giá nguyên liệu theo từng tuần."
       },
       {
         "key": "b",
-        "text": "Công ty rất hoan nghênh và tạo điều kiện hỗ trợ tối đa cho đối tác nhân rộng chuỗi điểm bán của gia đình."
+        "text": "Luôn lắng nghe phản hồi, nỗ lực bình ổn giá nguyên liệu, hỗ trợ kỹ thuật 24/7 và vinh danh, tặng thưởng các điểm bán xuất sắc."
       },
       {
         "key": "c",
-        "text": "Điểm bán mới tiếp tục được kiểm tra khoảng cách bảo vệ độc quyền 300m trên phần mềm Map Tracker trước khi đăng ký."
+        "text": "Thu hồi xe nếu chủ xe bán quá chạy."
       },
       {
         "key": "d",
-        "text": "Đối tác tiếp tục được hưởng trọn vẹn các chính sách hỗ trợ giao hàng và cung ứng nguyên vật liệu chính hãng."
+        "text": "Bắt buộc chủ xe phải đóng thêm phí bảo trì hàng tháng."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Má Hải luôn khuyến khích và hỗ trợ đối tác mở rộng chuỗi nhiều xe để nâng cao thu nhập gia đình, chỉ cần bảo đảm cự ly 300m trên Map Tracker.",
-    "quote": "Công ty rất khuyến khích Cô Chú mở chuỗi nhiều xe, vừa tạo công ăn việc làm cho người thân vừa nhân rộng dòng tiền thu nhập mỗi sáng!"
+    "correctAnswer": "b",
+    "explanation": "Bình ổn giá gốc + Hỗ trợ kỹ thuật trọn đời + Vinh danh khen thưởng là cam kết đồng hành sắt son của Má Hải cùng đối tác.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-191",
     "stableId": "sale-191",
+    "displayNumber": 191,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Những yếu tố cốt lõi nào giúp Bánh Mì Má Hải luôn giữ vững vị thế dẫn đầu trong phân khúc ẩm thực đường phố suốt hơn 13 năm qua?",
     "options": [
       {
         "key": "a",
-        "text": "Thường xuyên thay đổi công thức gia vị theo cảm tính cá nhân mỗi ngày."
+        "text": "Dồn nguồn lực vào các chiến dịch quảng cáo truyền thông ngắn hạn thay vì tập trung vào chất lượng cốt lõi."
       },
       {
         "key": "b",
-        "text": "Dồn nguồn lực vào các chiến dịch quảng cáo truyền thông ngắn hạn thay vì tập trung vào chất lượng cốt lõi."
+        "text": "Thường xuyên thay đổi công thức gia vị theo cảm tính cá nhân mỗi ngày."
       },
       {
         "key": "c",
@@ -5350,51 +5541,53 @@ const questions = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Sản phẩm ngon độc quyền (chả cá 17% đạm, sốt Tứ Vị) + Triết lý 3 KHÔNG nhân văn là nền tảng cốt lõi giúp Má Hải dẫn đầu suốt 13 năm qua.",
-    "quote": "Chả cá sợi ngon chuẩn 17% đạm, sốt Tứ Vị đậm đà và chính sách 3 KHÔNG đồng hành là bí quyết vàng giúp Má Hải luôn dẫn đầu thị trường!"
+    "explanation": "Chất lượng sản phẩm chuẩn mực + Triết lý phụng sự nhân văn là đôi cánh giúp thương hiệu Má Hải bay cao và vững bền 13 năm.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-192",
     "stableId": "sale-192",
+    "displayNumber": 192,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Về chuẩn mực xây dựng hình ảnh và tác phong phục vụ của điểm bán Bánh Mì Má Hải, hành vi nào sau đây là KHÔNG PHÙ HỢP?",
     "options": [
       {
         "key": "a",
-        "text": "Trang phục gọn gàng, sạch sẽ, luôn đeo tạp dề và đội nón đồng phục Má Hải trong suốt ca bán sáng"
+        "text": "Bảo đảm xe inox luôn được lau chùi sáng bóng và vỉa hè thông thoáng sạch sẽ."
       },
       {
         "key": "b",
-        "text": "Thái độ phục vụ niềm nở, tươi cười, chủ động cảm ơn và chúc khách hàng một ngày mới tốt lành"
+        "text": "Trang phục gọn gàng, sạch sẽ, luôn đeo tạp dề và đội nón đồng phục Má Hải trong suốt ca bán sáng."
       },
       {
         "key": "c",
-        "text": "Tự ý phục vụ với tác phong luộm thuộm, không mang đồng phục, vừa hút thuốc vừa bán hàng và có thái độ thờ ơ với khách mua bánh."
+        "text": "Thái độ phục vụ niềm nở, tươi cười, chủ động cảm ơn và chúc khách hàng một ngày mới tốt lành."
       },
       {
         "key": "d",
-        "text": "Bảo đảm xe inox luôn được lau chùi sáng bóng và vỉa hè thông thoáng sạch sẽ"
+        "text": "Tự ý phục vụ với tác phong luộm thuộm, không mang đồng phục, vừa hút thuốc vừa bán hàng và có thái độ thờ ơ với khách mua bánh."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Tác phong luộm thuộm, không đồng phục, hút thuốc khi bán hàng là hành vi vi phạm nghiêm trọng quy chuẩn văn hóa phục vụ của chuỗi.",
-    "quote": "Đồng phục áo cam tươm tất, nụ cười niềm nở và quầy xe sạch bóng là nét văn hóa đẹp giúp khách hàng luôn yêu mến và tin tưởng điểm bán Má Hải!"
+    "correctAnswer": "d",
+    "explanation": "Tác phong luộm thuộm, thiếu đồng phục và thái độ thờ ơ phá hỏng hình ảnh chuyên nghiệp của điểm bán, là hành vi cấm kỵ.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-193",
     "stableId": "sale-193",
+    "displayNumber": 193,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Những ưu điểm thực tế nào giúp ổ Bánh Mì Má Hải luôn tạo được niềm tin và sự yêu thích của hàng triệu thực khách mỗi sáng?",
     "options": [
       {
         "key": "a",
-        "text": "Sử dụng chả cá chiên sẵn từ hôm trước để nguội giao cho khách."
+        "text": "Ổ bánh mì luôn nóng hổi giòn rụm, chả cá sợi 17% đạm chiên nóng tại chỗ ráo dầu, sốt Tứ Vị đậm đà, bao bì túi giấy sạch sẽ và phục vụ nhanh trong 1 phút."
       },
       {
         "key": "b",
-        "text": "Ổ bánh mì luôn nóng hổi giòn rụm, chả cá sợi 17% đạm chiên nóng tại chỗ ráo dầu, sốt Tứ Vị đậm đà, bao bì túi giấy sạch sẽ và phục vụ nhanh trong 1 phút."
+        "text": "Sử dụng chả cá chiên sẵn từ hôm trước để nguội giao cho khách."
       },
       {
         "key": "c",
@@ -5405,52 +5598,54 @@ const questions = [
         "text": "Chế biến sẵn toàn bộ bánh từ đêm trước để tiết kiệm thời gian chuẩn bị ca sáng."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Bánh giòn rụm, chả cá chiên nóng tại chỗ, sốt Tứ Vị đậm đà, túi giấy lịch sự và tốc độ phục vụ siêu nhanh tạo nên sức hút khó cưỡng mỗi buổi sáng.",
-    "quote": "Bánh mì nóng giòn, chả cá chiên phồng xốp thơm phức trong túi giấy sạch sẽ trao tay trong 1 phút là lý do khách mê tít Bánh Mì Má Hải!"
+    "correctAnswer": "a",
+    "explanation": "Nóng giòn + Chả cá 17% đạm + Sốt Tứ Vị + Túi giấy sạch sẽ + Phục vụ nhanh 1 phút là 5 ưu điểm vàng giữ trọn niềm tin thực khách.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-194",
     "stableId": "sale-194",
+    "displayNumber": 194,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Về trách nhiệm của một tư vấn viên nhượng quyền Bánh Mì Má Hải đối với tương lai của người khởi nghiệp, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
         "key": "a",
-        "text": "Chỉ chú trọng vào việc chốt cọc lấy doanh số mà bỏ mặc đối tác tự xoay xở trong khâu chuẩn bị khai trương điểm bán."
-      },
-      {
-        "key": "b",
         "text": "Cung cấp đầy đủ, trung thực mọi thông tin về chi phí, giá vốn và quyền lợi để khách hàng tự tin ra quyết định."
       },
       {
+        "key": "b",
+        "text": "Chỉ chú trọng vào việc chốt cọc lấy doanh số mà bỏ mặc đối tác tự xoay xở trong khâu chuẩn bị khai trương điểm bán."
+      },
+      {
         "key": "c",
-        "text": "Đồng hành gỡ rối các rào cản về mặt bằng, kỹ thuật bán hàng và sự lo lắng của người mới kinh doanh"
+        "text": "Đồng hành gỡ rối các rào cản về mặt bằng, kỹ thuật bán hàng và sự lo lắng của người mới kinh doanh."
       },
       {
         "key": "d",
         "text": "Luôn giữ tâm thế người đồng minh chân thành, kinh doanh tử tế và hỗ trợ hết mình cho người lao động."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Tư vấn viên Má Hải không chỉ chốt cọc mà còn đồng hành suốt 7 ngày Onboarding và những tháng ngày kinh doanh tiếp theo của đối tác.",
-    "quote": "Tư vấn viên Má Hải luôn đồng hành từ lúc ký cọc đến khi điểm bán vận hành trơn tru đông khách, tận tâm như người thân trong gia đình!"
+    "correctAnswer": "b",
+    "explanation": "Bỏ mặc đối tác sau khi nhận cọc là hành vi vô trách nhiệm, đi ngược lại hoàn toàn triết lý đồng minh kiếm cơm của Nhà Má Hải.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-195",
     "stableId": "sale-195",
+    "displayNumber": 195,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Tỷ trọng doanh thu của Nhà Má Hải đến từ việc bán gói xe thiết bị ban đầu chiếm con số nào?",
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 80% tổng doanh thu của chuỗi"
+        "text": "Khoảng 50% tổng doanh thu của chuỗi."
       },
       {
         "key": "b",
-        "text": "Khoảng 50% tổng doanh thu của chuỗi"
+        "text": "Khoảng 80% tổng doanh thu của chuỗi."
       },
       {
         "key": "c",
@@ -5458,27 +5653,28 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Khoảng 90% tổng doanh thu của chuỗi"
+        "text": "Khoảng 90% tổng doanh thu của chuỗi."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Má Hải bán xe trợ giá (doanh thu dưới 10%), cốt lõi là cung cấp nguyên liệu chả cá 17% đạm và sốt Tứ Vị cho các điểm bán phát triển lâu dài.",
-    "quote": "Công ty không kiếm lời từ bán xe (chiếm dưới 10%), nguồn sống chính là đồng hành cung ứng chả cá và sốt chuẩn để điểm bán phát đạt bền lâu ạ!"
+    "explanation": "Má Hải không sống nhờ bán xe mà sống nhờ sự thành công lâu dài của từng điểm bán, cùng chia sẻ lợi ích từ nguồn nguyên liệu chuẩn.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-196",
     "stableId": "sale-196",
+    "displayNumber": 196,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Khi khoác lên mình chiếc áo đồng phục màu cam của Nhà Má Hải, mỗi tư vấn viên và chủ xe mang trong mình niềm tự hào nào?",
     "options": [
       {
         "key": "a",
-        "text": "Chỉ nhằm mục đích có đồng phục nổi bật hơn các hàng quán xung quanh."
+        "text": "Mẫu áo được thiết kế dùng chung cho nhiều chuỗi dịch vụ khác nhau ngoài ngành thực phẩm."
       },
       {
         "key": "b",
-        "text": "Tự hào đại diện cho thương hiệu 13 năm uy tín phục vụ 1,5 triệu ổ/tháng, và tự hào vì đang lan tỏa những bữa ăn sáng sạch sẽ, dinh dưỡng, cùng nhau xây dựng cuộc sống ấm no bằng chính sức lao động chân chính."
+        "text": "Chỉ nhằm mục đích có đồng phục nổi bật hơn các hàng quán xung quanh."
       },
       {
         "key": "c",
@@ -5486,55 +5682,57 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Mẫu áo được thiết kế dùng chung cho nhiều chuỗi dịch vụ khác nhau ngoài ngành thực phẩm."
+        "text": "Tự hào đại diện cho thương hiệu 13 năm uy tín phục vụ 1,5 triệu ổ/tháng, và tự hào vì đang lan tỏa những bữa ăn sáng sạch sẽ, dinh dưỡng, cùng nhau xây dựng cuộc sống ấm no bằng chính sức lao động chân chính."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Sắc cam Má Hải là biểu tượng của sự ấm no, cần cù và lương thiện, đại diện cho tinh thần lao động chân chính nuôi sống hàng ngàn gia đình.",
-    "quote": "Màu áo cam Má Hải là niềm tự hào của người lao động chân chính, mang bữa sáng ngon lành đến cho bà con và xây dựng kinh tế gia đình vững chắc!"
+    "correctAnswer": "d",
+    "explanation": "Chiếc áo cam là niềm tự hào của lao động chân chính, phụng sự bữa sáng dinh dưỡng và kiến tạo cuộc sống ấm no cho muôn nhà.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-197",
     "stableId": "sale-197",
+    "displayNumber": 197,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Trong các cam kết sau đây của Nhà Má Hải đối với các đối tác nhượng quyền mở xe, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
         "key": "a",
-        "text": "Cam kết không thu phí nhượng quyền hàng tháng và không trích phần trăm doanh thu bán hàng"
+        "text": "Công ty bắt buộc đối tác phải đổi xe mới định kỳ hàng năm và thanh toán chi phí đóng xe lại từ đầu."
       },
       {
         "key": "b",
-        "text": "Cam kết tái ký hợp đồng nhượng quyền hàng năm hoàn toàn miễn phí (0 đồng) và bảo vệ cự ly 300m trên Map Tracker."
+        "text": "Cam kết không thu phí nhượng quyền hàng tháng và không trích phần trăm doanh thu bán hàng."
       },
       {
         "key": "c",
-        "text": "Cam kết bảo hiểm an toàn vốn với chính sách hỗ trợ thu hồi xe 60 ngày hoàn tối đa 2,8 triệu khi đối tác gặp sự cố bất khả kháng."
+        "text": "Cam kết tái ký hợp đồng nhượng quyền hàng năm hoàn toàn miễn phí (0 đồng) và bảo vệ cự ly 300m trên Map Tracker."
       },
       {
         "key": "d",
-        "text": "Công ty bắt buộc đối tác phải đổi xe mới định kỳ hàng năm và thanh toán chi phí đóng xe lại từ đầu."
+        "text": "Cam kết bảo hiểm an toàn vốn với chính sách hỗ trợ thu hồi xe 60 ngày hoàn tối đa 2,8 triệu khi đối tác gặp sự cố bất khả kháng."
       }
     ],
-    "correctAnswer": "d",
-    "explanation": "Má Hải đồng hành trọn đời: 0đ phí tháng, tái ký 0đ, thu hồi xe 60 ngày hoàn tối đa 2,8 triệu tùy hiện trạng thực tế. Nói thu hồi xe ép mua lại giá gấp 5 là sai sự thật.",
-    "quote": "Các chính sách 3 KHÔNG, tái ký 0đ và bảo chứng 60 ngày là cam kết bằng văn bản có giá trị pháp lý bảo vệ tối đa cho Cô Chú an tâm làm ăn!"
+    "correctAnswer": "a",
+    "explanation": "Xe inox tiêu chuẩn có độ bền 5-10 năm, công ty tuyệt đối không ép đổi xe hay thu thêm phí đóng xe lại.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-198",
     "stableId": "sale-198",
+    "displayNumber": 198,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Công thức tính lợi nhuận ròng hàng tháng của một điểm bán Bánh Mì Má Hải chuẩn chỉnh nhất là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Doanh thu bán bánh - (Tiền vỏ bánh + Tiền chả cá sợi 17% đạm + Tiền sốt Tứ Vị + Tiền rau dưa bao bì + Tiền mặt bằng + Tiền gas điện) = Lợi nhuận ròng bỏ túi trọn vẹn."
+        "text": "Doanh thu bán hàng - (Chi phí nguyên liệu + Phí nhượng quyền hàng tháng + Phí quản lý thương hiệu định kỳ)."
       },
       {
         "key": "b",
-        "text": "Doanh thu bán hàng - (Chi phí nguyên liệu + Phí nhượng quyền hàng tháng + Phí quản lý thương hiệu định kỳ)."
+        "text": "Doanh thu bán bánh - (Tiền vỏ bánh + Tiền chả cá sợi 17% đạm + Tiền sốt Tứ Vị + Tiền rau dưa bao bì + Tiền mặt bằng + Tiền gas điện) = Lợi nhuận ròng bỏ túi trọn vẹn."
       },
       {
         "key": "c",
@@ -5545,65 +5743,67 @@ const questions = [
         "text": "Doanh thu bán lẻ ước tính dựa trên định mức khoán doanh số cố định của công ty mẹ."
       }
     ],
-    "correctAnswer": "a",
-    "explanation": "Công thức dòng tiền minh bạch: Doanh thu trừ giá vốn nguyên liệu và chi phí vận hành (mặt bằng, gas) bằng tiền lời ròng 100% đút túi chủ xe.",
-    "quote": "Công thức dòng tiền rõ ràng: Bán được bao nhiêu trừ tiền vốn bánh, chả cá, sốt, rau và mặt bằng là ra đúng số tiền lời Cô Chú đút túi mỗi tháng!"
+    "correctAnswer": "b",
+    "explanation": "Doanh thu trừ chi phí nguyên liệu và mặt bằng/gas điện là tiền lời ròng bỏ túi 100%, không bị trừ bất kỳ phí quản lý nào.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-199",
     "stableId": "sale-199",
+    "displayNumber": 199,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Điều kiện để một đối tác được hoàn trả 100% tiền đặt cọc 2.000.000đ trong vòng 72 giờ là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Khi đối tác đã nhận bàn giao trọn bộ xe và dụng cụ tại điểm bán."
+        "text": "Khi đối tác muốn chuyển đổi sang mua một gói hợp tác có giá trị cao hơn."
       },
       {
         "key": "b",
-        "text": "Khi công ty chưa tiến hành xuất kho sản xuất xe hoặc chưa in ấn bộ decal nhận diện thương hiệu cho điểm bán."
+        "text": "Khi đối tác đã nhận bàn giao trọn bộ xe và dụng cụ tại điểm bán."
       },
       {
         "key": "c",
-        "text": "Khi đối tác muốn chuyển đổi sang mua một gói hợp tác có giá trị cao hơn."
+        "text": "Khi công ty chưa tiến hành xuất kho sản xuất xe hoặc chưa in ấn bộ decal nhận diện thương hiệu cho điểm bán."
       },
       {
         "key": "d",
         "text": "Khi đối tác đã hoàn tất việc quét tọa độ và bắt đầu mở bán ca đầu tiên."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Chính sách hoàn cọc nhanh trong 72 giờ nếu xưởng chưa xuất kho ráp xe/in decal thể hiện sự sòng phẳng, minh bạch và tôn trọng khách hàng tuyệt đối.",
-    "quote": "Nếu có việc đột xuất và xưởng chưa in decal ráp xe, công ty hỗ trợ hoàn cọc nhanh chóng trong 72 giờ, minh bạch và đàng hoàng 100% ạ!"
+    "correctAnswer": "c",
+    "explanation": "Cam kết hoàn cọc 100% trong 72h nếu chưa xuất kho xe khẳng định sự minh bạch và bảo vệ tối đa quyền lợi khách hàng.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   },
   {
     "id": "sale-200",
     "stableId": "sale-200",
+    "displayNumber": 200,
     "sectionNo": 8,
     "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding",
     "question": "Đúc kết trọn vẹn tinh thần và sứ mệnh khởi nghiệp nhượng quyền của Bánh Mì Má Hải trong câu khẩu hiệu hành động nào?",
     "options": [
       {
         "key": "a",
-        "text": "Tập trung tối đa vào việc bán nhanh các gói xe mà không cần quan tâm đến tỷ lệ thành công của điểm bán."
+        "text": "Mở rộng điểm bán ồ ạt không cần tuân thủ khoảng cách bảo vệ độc quyền 300m giữa các chủ xe."
       },
       {
         "key": "b",
-        "text": "Cam kết sinh lời gấp nhiều lần trong tháng đầu tiên mà không cần đối tác phải trực tiếp đứng bán"
+        "text": "Tập trung tối đa vào việc bán nhanh các gói xe mà không cần quan tâm đến tỷ lệ thành công của điểm bán."
       },
       {
         "key": "c",
-        "text": "Khởi sự an toàn – Đồng minh cùng kiếm cơm – Bánh mì nóng giòn – Cuộc sống ấm no."
+        "text": "Cam kết sinh lời gấp nhiều lần trong tháng đầu tiên mà không cần đối tác phải trực tiếp đứng bán."
       },
       {
         "key": "d",
-        "text": "Mở rộng điểm bán ồ ạt không cần tuân thủ khoảng cách bảo vệ độc quyền 300m giữa các chủ xe"
+        "text": "Khởi sự an toàn – Đồng minh cùng kiếm cơm – Bánh mì nóng giòn – Cuộc sống ấm no."
       }
     ],
-    "correctAnswer": "c",
-    "explanation": "Sứ mệnh trọn vẹn: Khởi sự an toàn – Đồng minh cùng kiếm cơm – Bánh mì nóng giòn – Cuộc sống ấm no là tôn chỉ hành động xuyên suốt 13 năm của Bánh Mì Má Hải.",
-    "quote": "Khởi sự an toàn – Đồng minh cùng kiếm cơm – Bánh mì nóng giòn – Cuộc sống ấm no! Chúc Cô Chú luôn buôn may bán đắt và đồng hành dài lâu cùng Má Hải!"
+    "correctAnswer": "d",
+    "explanation": "Khởi sự an toàn - Đồng minh cùng kiếm cơm - Bánh mì nóng giòn - Cuộc sống ấm no là sứ mệnh thiêng liêng 13 năm của Bánh Mì Má Hải.",
+    "quote": "Chúc Cô Chú khai trương hồng phát, bán đắt hàng và cùng Má Hải xây dựng cuộc sống ấm no bền vững ạ!"
   }
 ];
 
