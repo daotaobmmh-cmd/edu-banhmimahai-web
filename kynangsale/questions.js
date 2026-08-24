@@ -12,15 +12,15 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Cung cấp thêm một xe inox tiêu chuẩn mới và thu hồi xe cũ của đối tác."
+        "text": "Bao gồm cả xe inox tiêu chuẩn mới và trọn bộ nhận diện thương hiệu."
       },
       {
         "key": "c",
-        "text": "Bắt buộc đối tác phải đặt cọc trước 10 triệu đồng tiền thương hiệu."
+        "text": "Bao gồm trọn bộ đồ nghề bếp chuyên dụng nhưng không kèm decal nhận diện."
       },
       {
         "key": "d",
-        "text": "Chỉ cấp giấy chứng nhận ATTP và không cấp decal nhận diện."
+        "text": "Chỉ bàn giao cẩm nang bán hàng mà không bao gồm bộ decal nhận diện thương hiệu."
       }
     ],
     "correctAnswer": "a",
@@ -176,7 +176,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc phải sử dụng 100% nguyên bản nước sốt gốc, không được thêm bất kỳ gia vị địa phương nào."
+        "text": "Sử dụng công thức nước sốt cố định mà không điều chỉnh nhẹ gia vị phụ theo khẩu vị từng vùng miền."
       },
       {
         "key": "b",
@@ -372,24 +372,25 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Tự ý ngưng bán hoặc ngưng đặt hàng từ 30 ngày trở lên mà không có văn bản chấp thuận từ công ty thuộc diện bị chấm dứt hợp đồng."
+        "text": "Đạt mức tiền lời ròng từ 600.000đ đến trên 800.000đ mỗi ca sáng và được tôn vinh là điểm bán tiêu biểu."
       },
       {
         "key": "b",
-        "text": "Điểm bán phục vụ vượt mốc 150 ổ bánh mì mỗi sáng và nướng bánh giòn nóng cho khách thuộc diện bị xử phạt và thu hồi xe."
+        "text": "Hệ thống hỗ trợ duy trì nguồn hàng ưu tiên để điểm bán luôn có đủ chả cá sợi tươi ngon phục vụ khách."
       },
       {
         "key": "c",
-        "text": "Tự ý sử dụng chả cá ngoài hoặc tự pha nước sốt trôi nổi trái quy chuẩn chuỗi là hành vi vi phạm nghiêm trọng dẫn đến chấm dứt hợp đồng."
+        "text": "Cả a và b đều là quyền lợi và kết quả xứng đáng của điểm bán hoạt động hiệu quả."
       },
       {
         "key": "d",
-        "text": "Tự ý chuyển nhượng hoặc cho bên thứ ba mượn thương hiệu khi chưa có văn bản đồng ý từ công ty sẽ bị thu hồi quyền kinh doanh."
+        "text": "Bị giới hạn sản lượng và không được nhận thêm nguyên liệu."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Bán chạy và phục vụ bánh mì giòn nóng cho khách là hành vi xuất sắc được tuyên dương, hoàn toàn không thuộc diện xử phạt.",
-    "displayNumber": 14
+    "correctAnswer": "c",
+    "explanation": "Bán trên 120 ổ/sáng mang lại thu nhập ròng rất cao và được hệ thống ưu tiên điều phối hàng hóa nhanh chóng.",
+    "displayNumber": 14,
+    "stem": "Khi một điểm bán đạt sản lượng bán trên 120 ổ bánh mì mỗi sáng và duy trì chất lượng phục vụ tốt, đối tác nhận được quyền lợi gì?"
   },
   {
     "id": "sale-15",
@@ -632,7 +633,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Bắt buộc phải ép khách hàng ký cọc ngay trong cuộc gọi đầu tiên bằng mọi thủ thuật bán hàng."
+        "text": "Đặt mục tiêu hoàn tất thủ tục cọc ngay trong cuộc gọi đầu tiên mà chưa kịp lắng nghe và giải đáp đầy đủ băn khoăn của khách."
       },
       {
         "key": "d",
@@ -1244,7 +1245,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Bắt buộc phải có sẵn 500 triệu đồng tiền mặt mới được mở một xe bánh mì."
+        "text": "Yêu cầu phải có số vốn đầu tư ban đầu từ 50 đến 100 triệu đồng."
       },
       {
         "key": "c",
@@ -1756,7 +1757,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Mua xe tự chế thì bị bắt buộc phải đóng thuế doanh nghiệp gấp 10 lần bình thường."
+        "text": "Xe tự chế có chi phí đầu tư ban đầu cao hơn nhiều so với xe tiêu chuẩn của công ty."
       }
     ],
     "correctAnswer": "b",
@@ -1800,7 +1801,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc phải vay thêm 50 triệu để đầu tư mô hình nhà hàng lớn."
+        "text": "Gợi ý khách hàng nên chuyển sang thuê mặt bằng lớn mở quán ăn cố định."
       },
       {
         "key": "b",
@@ -1864,7 +1865,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Công ty sẽ lập tức thu hồi xe và phạt tiền nếu chủ xe nghỉ bán dù chỉ 1 ngày duy nhất."
+        "text": "Công ty yêu cầu đối tác không được phép có ngày nghỉ trong suốt thời gian hợp đồng."
       },
       {
         "key": "d",
@@ -2812,7 +2813,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Yêu cầu khách hàng nộp thêm 10 triệu đồng tiền phạt nếu muốn mở xe gần."
+        "text": "Yêu cầu nộp thêm phí duy trì cự ly để được mở xe gần điểm bán hiện hữu."
       },
       {
         "key": "c",
@@ -4216,11 +4217,11 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Đặt loa đài phát nhạc thật to để át tiếng nói chuyện của xung quanh."
+        "text": "Chỉ tập trung vào công việc của mình mà không chào hỏi người xung quanh."
       },
       {
         "key": "d",
-        "text": "Đe dọa sẽ kiện hàng xóm nếu họ tiếp tục hỏi thăm về việc buôn bán."
+        "text": "Tránh mặt và không trao đổi khi hàng xóm qua hỏi thăm về việc buôn bán."
       }
     ],
     "correctAnswer": "a",
@@ -4244,7 +4245,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Kéo người nhà ra to tiếng cãi cọ và xô xát trực tiếp với điểm bán bên cạnh."
+        "text": "Tự ý sang trao đổi trực tiếp với thái độ gay gắt thay vì báo về hệ thống công ty."
       },
       {
         "key": "d",
@@ -4376,7 +4377,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Từ chối không nhận đơn hàng vì số lượng quá nhiều làm mệt người đứng bán."
+        "text": "Chỉ nhận phục vụ khách mua lẻ tại xe và không nhận đơn đặt trước cho công ty."
       },
       {
         "key": "b",
@@ -4744,7 +4745,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Giấu kín các điều khoản hợp đồng và bắt khách phải ký vào giấy trắng."
+        "text": "Yêu cầu khách hàng ký hợp đồng ngay mà không giải thích cặn kẽ các điều khoản quyền lợi."
       },
       {
         "key": "c",
@@ -4796,7 +4797,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Gọi điện để đòi thu thêm các khoản phụ phí vô lý ngoài hợp đồng."
+        "text": "Yêu cầu đối tác phải đăng ký thêm các dịch vụ phụ trợ ngoài hợp đồng."
       },
       {
         "key": "b",
@@ -4916,7 +4917,7 @@ const QUESTIONS = [
       },
       {
         "key": "c",
-        "text": "Được phép dùng chả cá đã bị mốc xanh hoặc bốc mùi chua để chiên bán cho khách."
+        "text": "Sử dụng chả cá đã rã đông để ngoài nhiệt độ phòng quá 24 giờ không qua bảo quản lạnh."
       },
       {
         "key": "d",
@@ -5088,7 +5089,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Cứ để nguyên dầu mỡ bám dính dày đặc trên xe suốt 1 năm không cần lau chùi."
+        "text": "Chỉ lau chùi bề mặt kính mỗi tuần một lần thay vì vệ sinh sau mỗi ca bán sáng."
       }
     ],
     "correctAnswer": "d",
@@ -5116,7 +5117,7 @@ const QUESTIONS = [
       },
       {
         "key": "d",
-        "text": "Vứt bánh mì lộn xộn vào bao tải rách giao cho khách."
+        "text": "Bọc chung toàn bộ các ổ bánh mì vào một túi nilon lớn mà không có túi giấy riêng cho từng ổ."
       }
     ],
     "correctAnswer": "b",
@@ -5136,7 +5137,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Gom toàn bộ rác vứt bừa bãi ra lòng đường rồi bỏ mặc đi về."
+        "text": "Để túi rác tại điểm bán qua đêm đến sáng hôm sau mới dọn."
       },
       {
         "key": "c",
@@ -5220,7 +5221,7 @@ const QUESTIONS = [
       },
       {
         "key": "b",
-        "text": "Tìm cách chèn ép, tranh giành khách hàng và nói xấu các điểm bán khác cùng chuỗi."
+        "text": "Chỉ tập trung vào điểm bán của mình mà không chia sẻ kinh nghiệm cùng anh chị em trong chuỗi."
       },
       {
         "key": "c",
@@ -5272,7 +5273,7 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Công ty bắt buộc đối tác phải đóng học phí hàng tháng 5 triệu đồng để được học cẩm nang."
+        "text": "Yêu cầu đối tác phải chi trả chi phí khi tham gia các buổi tập huấn nâng cao kỹ năng."
       },
       {
         "key": "b",
@@ -5440,11 +5441,11 @@ const QUESTIONS = [
     "options": [
       {
         "key": "a",
-        "text": "Vì ổ bánh mì được bọc trong giấy báo cũ thu gom từ phế liệu."
+        "text": "Bánh mì được làm sẵn từ tối hôm trước để sáng hôm sau giao ngay cho khách."
       },
       {
         "key": "b",
-        "text": "Vì chả cá được mua trôi nổi không rõ nguồn gốc ở chợ đầu mối."
+        "text": "Giá bánh mì rẻ hơn so với chất lượng nguyên liệu công bố."
       },
       {
         "key": "c",
