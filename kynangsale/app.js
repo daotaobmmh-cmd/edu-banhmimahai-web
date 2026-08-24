@@ -1,5 +1,5 @@
 function app() {
-    const DATASET_VERSION = 'kynangsale-v1.0';
+    const DATASET_VERSION = 'kynangsale-v2.0';
     return {
         // App State
         currentView: 'gate', // 'gate', 'study', 'test', 'result'
