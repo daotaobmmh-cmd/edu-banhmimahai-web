@@ -60,8 +60,8 @@ function app() {
         
         // Init
         init() {
-            // Load questions from window.KYNANGSALE_QUESTIONS or fallback window.HOINHAP_QUESTIONS
-            const rawQuestions = (typeof window !== 'undefined' ? (window.KYNANGSALE_QUESTIONS || window.HOINHAP_QUESTIONS) : (global.KYNANGSALE_QUESTIONS || global.HOINHAP_QUESTIONS)) || [];
+            // Load questions from window.KYNANGSALE_QUESTIONS, window.HOINHAP_QUESTIONS, or window.questionsData
+            const rawQuestions = (typeof window !== 'undefined' ? (window.KYNANGSALE_QUESTIONS || window.HOINHAP_QUESTIONS || window.questionsData) : (global.KYNANGSALE_QUESTIONS || global.HOINHAP_QUESTIONS || global.questionsData)) || [];
             
             // Map questions to 8 standardized sections (25 questions each)
             this.allQuestions = rawQuestions.map((q, index) => {
@@ -176,14 +176,14 @@ function app() {
         // Update Sections list progress
         updateSections() {
             const canonicalTitles = [
-                "Phần 1: Nhập môn Nhượng quyền & Lợi thế Mô hình",
-                "Phần 2: Phân loại Khách hàng & Kỹ năng Tư vấn",
-                "Phần 3: Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
-                "Phần 4: Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
-                "Phần 5: Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
-                "Phần 6: Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
-                "Phần 7: Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
-                "Phần 8: Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự"
+                "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+                "Phân loại Khách hàng & Kỹ năng Tư vấn",
+                "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
+                "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
+                "Xử lý Từ chối & Tháo gỡ Rào cản Đối tác",
+                "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
+                "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+                "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Onboarding"
             ];
             
             const map = new Map();
