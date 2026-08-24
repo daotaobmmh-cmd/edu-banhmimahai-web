@@ -8,12 +8,6 @@ scratch/
 temp/
 tmp/
 .vscode/
-_export_for_tilog/
 *.zip
-hoinhap_backup_bad_ui/
-
 .vercel
-outputs/
-.wrangler/
-.env*
-danh_sach_cau_hoi_hoinhap.md
+.wrangler
