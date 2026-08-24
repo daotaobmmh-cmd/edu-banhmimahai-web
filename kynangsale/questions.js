@@ -1,7 +1,7 @@
 /**
  * Ngân hàng câu hỏi Kỹ năng Tư vấn & Mở xe Nhượng quyền Má Hải (200 câu)
- * Chuẩn mực 8 Phần x 25 Câu | Cân bằng 50A - 50B - 50C - 50D | 0% Phương án gộp/lười
- * Phiên bản: kynangsale-v2.0 (Master Release)
+ * Chuẩn mực 8 Phần x 25 Câu | Cân bằng 50A - 50B - 50C - 50D | 100% Chuẩn 44 Rule Khóa Cứng
+ * Phiên bản: kynangsale-v3.0 (Supreme Master Release)
  */
 
 const questions = [
@@ -10,28 +10,28 @@ const questions = [
     "stableId": "sale-1",
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Khi đối tác đã có sẵn xe bánh mì muốn gia nhập chuỗi Bánh Mì Má Hải, Gói 4,8 triệu mang lại trọn bộ quyền lợi nào?",
+    "question": "Khi đối tác đã có sẵn xe bánh mì muốn gia nhập chuỗi Bánh Mì Má Hải, Gói 4,8 triệu mang lại những quyền lợi thiết thực nào?",
     "options": [
       {
         "key": "a",
-        "text": "Bàn giao một xe bánh mì inox mới tiêu chuẩn kèm trọn bộ nhận diện thương hiệu Má Hải."
+        "text": "Bàn giao trọn bộ decal nhận diện thương hiệu dán xe và áo nón đồng phục cam sạch sẽ."
       },
       {
         "key": "b",
-        "text": "Bàn giao trọn bộ decal nhận diện thương hiệu, đồng phục, cẩm nang bán hàng, Giấy chứng nhận ATTP."
+        "text": "Cung cấp đầy đủ Giấy chứng nhận ATTP và Sổ tay hướng dẫn bán hàng cầm tay chỉ việc."
       },
       {
         "key": "c",
-        "text": "Cung cấp xe inox cao cấp đầy đủ hệ thống bếp gas đôi cùng trọn bộ máy móc dụng cụ chế biến chuyên sâu."
+        "text": "Chuyển giao video quy trình chiên chả cá sợi 17% đạm giòn nóng và công thức sốt Tứ Vị chuẩn vị."
       },
       {
         "key": "d",
-        "text": "Bàn giao trọn gói điểm bán hiên nhà đã có sẵn mặt bằng và hỗ trợ chi trả tiền thuê tháng đầu tiên."
+        "text": "Tất cả các quyền lợi trên đều được bàn giao đầy đủ để đối tác tự tin mở bán ngay."
       }
     ],
-    "correctAnswer": "b",
-    "explanation": "Gói 4,8 triệu đồng giảm trừ 4 triệu tiền xe cho đối tác đã có sẵn phương tiện, bàn giao trọn bộ nhận diện, chứng nhận ATTP và cẩm nang bán hàng để đối tác tự tin mở bán ngay.",
-    "quote": "Dạ nếu Cô Chú đã có sẵn tủ kính hay xe sắt thì chọn Gói 4,8 triệu là tiết kiệm nhất, công ty dán decal mới và bàn giao đủ nhận diện để mở bán ngay ạ!"
+    "correctAnswer": "d",
+    "explanation": "Gói 4,8 triệu tối ưu cho người đã có xe: Nhận trọn bộ decal nhận diện, áo nón đồng phục, chứng nhận ATTP, Sổ tay bán hàng và hướng dẫn kỹ thuật chiên chả cá sợi để mở bán ngay với chi phí nhẹ nhất.",
+    "quote": "Cô Chú có sẵn xe rồi thì chọn Gói 4,8 triệu là tiết kiệm nhất, nhận đủ decal, đồng phục, cẩm nang và hướng dẫn chiên chả để mở bán ngay ạ!"
   },
   {
     "id": "sale-2",
@@ -74,7 +74,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Tủ đông bảo quản cỡ lớn 500 lít và máy xay thịt cá công suất cao"
+        "text": "Bếp gas khè, chảo chiên chuyên dụng, vợt chiên, xẻng lật, khay inox, kẹp gắp, dao rạch bánh và thùng giữ nóng bánh mì."
       },
       {
         "key": "c",
@@ -82,10 +82,10 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Bếp gas khè, chảo chiên chuyên dụng, vợt chiên, xẻng lật, khay inox, kẹp gắp, dao rạch bánh và thùng giữ nóng bánh mì."
+        "text": "Tủ đông bảo quản cỡ lớn 500 lít và máy xay thịt cá công suất cao"
       }
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "b",
     "explanation": "Gói 10,3 triệu trang bị đầy đủ trọn bộ từ bếp gas khè, chảo chiên đến dao, kẹp, khay và thùng giữ nóng, giúp chủ xe mở bán được ngay mà không phải sắm sửa lặt vặt.",
     "quote": "Dạ Gói 10,3 triệu có đủ trọn bộ bếp khè, chảo chiên và đồ nghề chuyên dụng, Cô Chú không cần tốn công đi chợ tìm mua từng món đâu ạ!"
   },
