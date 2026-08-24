@@ -702,8 +702,8 @@ const QUESTIONS = [
   {
     "id": "sale-26",
     "stableId": "sale-26",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Khi gặp nhóm khách hàng tiềm năng cao (đã tìm hiểu rất kỹ và muốn chốt cọc ngay), đặc điểm nhận biết và tỷ lệ chốt thành công đạt mức nào?",
     "options": [
       {
@@ -730,8 +730,8 @@ const QUESTIONS = [
   {
     "id": "sale-27",
     "stableId": "sale-27",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Bốn yếu tố thực tế được thu thập trong bước 'Lắng nghe' để đánh giá mức độ sẵn sàng của khách hàng bao gồm những yếu tố nào?",
     "options": [
       {
@@ -758,8 +758,8 @@ const QUESTIONS = [
   {
     "id": "sale-28",
     "stableId": "sale-28",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Khi gặp khách hàng đã hội tụ đầy đủ cả 4 yếu tố (đã có người bán, có mặt bằng, sẵn vốn và tự quyết định), tư vấn viên cần thực hiện hành động nào?",
     "options": [
       {
@@ -786,8 +786,8 @@ const QUESTIONS = [
   {
     "id": "sale-29",
     "stableId": "sale-29",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Đối với nhóm khách hàng mới hỏi dò giá và chưa có sẵn nguồn lực khởi sự, nhận định nào sau đây là SAI trong quy trình chăm sóc?",
     "options": [
       {
@@ -814,8 +814,8 @@ const QUESTIONS = [
   {
     "id": "sale-30",
     "stableId": "sale-30",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Khi khách hàng đã có tiền vốn và tự quyết định được, nhưng chưa có mặt bằng và chưa có người đứng bán (có 2/4 yếu tố), tư vấn viên xử lý ra sao?",
     "options": [
       {
@@ -842,8 +842,8 @@ const QUESTIONS = [
   {
     "id": "sale-31",
     "stableId": "sale-31",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Trong Bước 2 (Xử lý khi khách còn do dự), bộ 2 câu hỏi 'nóng giòn' dùng để tìm ra nguyên nhân gốc rễ bao gồm những câu hỏi nào?",
     "options": [
       {
@@ -870,8 +870,8 @@ const QUESTIONS = [
   {
     "id": "sale-32",
     "stableId": "sale-32",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Khi khách hàng từ chối: 'Giá gói cao quá', kịch bản xử lý chuẩn 3 bước của tư vấn viên là gì?",
     "options": [
       {
@@ -898,8 +898,8 @@ const QUESTIONS = [
   {
     "id": "sale-33",
     "stableId": "sale-33",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Khi khách hàng băn khoăn: 'Tôi chưa gom đủ tiền vốn đầu tư ban đầu', hành động nào sau đây là SAI và BỊ CẤM trong quy chuẩn phục vụ?",
     "options": [
       {
@@ -926,8 +926,8 @@ const QUESTIONS = [
   {
     "id": "sale-34",
     "stableId": "sale-34",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Khi khách hàng ngần ngại: 'Tôi chưa có người đứng bán buổi sáng', nhận định nào sau đây là KHÔNG ĐÚNG về giải pháp hỗ trợ?",
     "options": [
       {
@@ -954,8 +954,8 @@ const QUESTIONS = [
   {
     "id": "sale-35",
     "stableId": "sale-35",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Khi khách hàng băn khoăn: 'Vợ chồng hoặc người nhà chưa đồng ý cho làm', hành vi nào sau đây là SAI quy chuẩn đạo đức tư vấn?",
     "options": [
       {
@@ -982,8 +982,8 @@ const QUESTIONS = [
   {
     "id": "sale-36",
     "stableId": "sale-36",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Trong Bước 3 (Chốt sale), 5 mẫu câu chốt thực chiến của tư vấn viên dựa trên những yếu tố thực tế nào?",
     "options": [
       {
@@ -1010,8 +1010,8 @@ const QUESTIONS = [
   {
     "id": "sale-37",
     "stableId": "sale-37",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Mẫu câu chốt thực chiến với lý do 'Giữ độc quyền khu vực 300m' mang lại lợi ích gì cho khách hàng?",
     "options": [
       {
@@ -1038,8 +1038,8 @@ const QUESTIONS = [
   {
     "id": "sale-38",
     "stableId": "sale-38",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Kỹ thuật chốt sale đưa ra 2 lựa chọn tích cực ('sáng nay hay đầu giờ chiều') mang lại hiệu quả tương tác ra sao?",
     "options": [
       {
@@ -1066,8 +1066,8 @@ const QUESTIONS = [
   {
     "id": "sale-39",
     "stableId": "sale-39",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Về mối quan hệ cùng chiều lợi ích với đối tác nhượng quyền, nhận định nào sau đây là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -1094,8 +1094,8 @@ const QUESTIONS = [
   {
     "id": "sale-40",
     "stableId": "sale-40",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Theo thống kê thực tế từ hơn 1.200 điểm bán trên toàn quốc, mức thu nhập thực tế của các chủ xe Bánh Mì Má Hải đạt mức nào?",
     "options": [
       {
@@ -1122,8 +1122,8 @@ const QUESTIONS = [
   {
     "id": "sale-41",
     "stableId": "sale-41",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Để tạo dựng niềm tin cho người khởi nghiệp ngay từ ngày đầu mở bán, thương hiệu Bánh Mì Má Hải có những bảo chứng lịch sử và quy mô nào?",
     "options": [
       {
@@ -1150,8 +1150,8 @@ const QUESTIONS = [
   {
     "id": "sale-42",
     "stableId": "sale-42",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Chất lượng chả cá sợi tươi Má Hải được kiểm nghiệm khoa học đạt những chỉ số vượt trội nào?",
     "options": [
       {
@@ -1178,8 +1178,8 @@ const QUESTIONS = [
   {
     "id": "sale-43",
     "stableId": "sale-43",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Về chính sách bảo chứng an toàn vốn cho người khởi nghiệp của Nhà Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -1206,8 +1206,8 @@ const QUESTIONS = [
   {
     "id": "sale-44",
     "stableId": "sale-44",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Khi gia nhập chuỗi Bánh Mì Má Hải, nhận định nào sau đây là KHÔNG ĐÚNG về các kênh hỗ trợ trực tuyến của công ty?",
     "options": [
       {
@@ -1234,8 +1234,8 @@ const QUESTIONS = [
   {
     "id": "sale-45",
     "stableId": "sale-45",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "So với các mô hình nhượng quyền khác trên thị trường (từ 30 – 70 triệu), mức vốn khởi sự của xe Bánh Mì Má Hải mang lại ưu thế gì?",
     "options": [
       {
@@ -1262,8 +1262,8 @@ const QUESTIONS = [
   {
     "id": "sale-46",
     "stableId": "sale-46",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Về quy trình 4 bước làm việc mỗi ngày trên phần mềm quản lý của tư vấn viên, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -1290,8 +1290,8 @@ const QUESTIONS = [
   {
     "id": "sale-47",
     "stableId": "sale-47",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Sau khi kết thúc cuộc gọi tư vấn, nhận định nào sau đây là SAI về quy chuẩn cập nhật dữ liệu lên hệ thống quản lý?",
     "options": [
       {
@@ -1318,8 +1318,8 @@ const QUESTIONS = [
   {
     "id": "sale-48",
     "stableId": "sale-48",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Để bảo đảm điểm bán buôn bán ổn định lâu dài và giữ gìn trật tự lối đi chung mỗi buổi sáng, mô hình xe Bánh Mì Má Hải được thiết kế theo những quy chuẩn văn minh nào?",
     "options": [
       {
@@ -1346,8 +1346,8 @@ const QUESTIONS = [
   {
     "id": "sale-49",
     "stableId": "sale-49",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Về cơ cấu giá vốn chi tiết cho 1 ổ bánh mì Má Hải (gồm chả cá đạm 17%, sốt Tứ Vị, tương ớt, bao bì, bánh mì, rau dưa, gas), giá vốn chuẩn và mức tiền lời đạt được là bao nhiêu?",
     "options": [
       {
@@ -1374,8 +1374,8 @@ const QUESTIONS = [
   {
     "id": "sale-50",
     "stableId": "sale-50",
-    "sectionNo": 1,
-    "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
+    "sectionNo": 2,
+    "sectionName": "Phân loại Khách hàng & Kỹ năng Tư vấn",
     "question": "Khi khách hàng muốn mở điểm bán tại các huyện ngoại thành TP.HCM (Củ Chi, Hóc Môn, Bình Chánh, Nhà Bè, Cần Giờ), khoảng cách bảo vệ điểm bán được tính thế nào?",
     "options": [
       {
@@ -1402,8 +1402,8 @@ const QUESTIONS = [
   {
     "id": "sale-51",
     "stableId": "sale-51",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi tìm kiếm mặt bằng bán bánh mì ca sáng, những vị trí nào được đánh giá là 'vị trí vàng' giúp điểm bán đông khách ngay từ ngày đầu?",
     "options": [
       {
@@ -1430,8 +1430,8 @@ const QUESTIONS = [
   {
     "id": "sale-52",
     "stableId": "sale-52",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Về đặc điểm khung giờ vàng mở bán bánh mì chả cá Má Hải mỗi ngày, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -1458,8 +1458,8 @@ const QUESTIONS = [
   {
     "id": "sale-53",
     "stableId": "sale-53",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi thương lượng thuê hiên nhà làm điểm bán bánh mì ca sáng, những kinh nghiệm thực tế nào giúp chủ xe đạt thỏa thuận tốt nhất?",
     "options": [
       {
@@ -1486,8 +1486,8 @@ const QUESTIONS = [
   {
     "id": "sale-54",
     "stableId": "sale-54",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi đối tác gửi tọa độ vị trí dự kiến qua Zalo, phần mềm Map Tracker phản hồi kết quả kiểm tra khoảng cách bảo vệ độc quyền trong bao lâu?",
     "options": [
       {
@@ -1514,8 +1514,8 @@ const QUESTIONS = [
   {
     "id": "sale-55",
     "stableId": "sale-55",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi xảy ra tình huống có hai khách hàng cùng muốn mở điểm bán tại một vị trí đẹp, nguyên tắc xử lý của công ty là gì?",
     "options": [
       {
@@ -1542,8 +1542,8 @@ const QUESTIONS = [
   {
     "id": "sale-56",
     "stableId": "sale-56",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Trong các nhận định sau đây về việc chọn mặt bằng bán bánh mì ca sáng, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -1570,8 +1570,8 @@ const QUESTIONS = [
   {
     "id": "sale-57",
     "stableId": "sale-57",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Tại khu vực Đô thị loại I và Loại II (như các thành phố Hải Phòng, Đà Nẵng, Cần Thơ, Nha Trang, Huế), cự ly bảo vệ điểm bán quy định ra sao?",
     "options": [
       {
@@ -1598,8 +1598,8 @@ const QUESTIONS = [
   {
     "id": "sale-58",
     "stableId": "sale-58",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Về việc giữ gìn vệ sinh và mỹ quan hè phố tại điểm bán bánh mì, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -1626,8 +1626,8 @@ const QUESTIONS = [
   {
     "id": "sale-59",
     "stableId": "sale-59",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Tại các khu vực Thị trấn và Xã nông thôn, khoảng cách bảo vệ điểm bán tối thiểu giữa hai xe được quy định là bao nhiêu?",
     "options": [
       {
@@ -1654,8 +1654,8 @@ const QUESTIONS = [
   {
     "id": "sale-60",
     "stableId": "sale-60",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi khảo sát lưu lượng người đi qua điểm bán buổi sáng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -1682,8 +1682,8 @@ const QUESTIONS = [
   {
     "id": "sale-61",
     "stableId": "sale-61",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi khách hàng lo lắng: 'Tôi chưa từng buôn bán gì, sợ không biết làm bánh mì ngon', tư vấn viên giải tỏa nỗi lo cho khách như thế nào?",
     "options": [
       {
@@ -1710,8 +1710,8 @@ const QUESTIONS = [
   {
     "id": "sale-62",
     "stableId": "sale-62",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi khách hàng e ngại: 'Sợ mở ra rồi bán ế, không có ai mua', nhận định nào sau đây là SAI trong cách tư vấn?",
     "options": [
       {
@@ -1738,8 +1738,8 @@ const QUESTIONS = [
   {
     "id": "sale-63",
     "stableId": "sale-63",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi khách hàng so sánh: 'Tôi muốn tự mua xe cũ ngoài chợ về tự bán cho rẻ', những rủi ro thực tế nào được phân tích cho khách hiểu?",
     "options": [
       {
@@ -1766,8 +1766,8 @@ const QUESTIONS = [
   {
     "id": "sale-64",
     "stableId": "sale-64",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi khách hàng lo sợ: 'Thức khuya dậy sớm cực quá, người nhà sợ vất vả', giải pháp giải tỏa tâm lý đúng đắn là gì?",
     "options": [
       {
@@ -1794,8 +1794,8 @@ const QUESTIONS = [
   {
     "id": "sale-65",
     "stableId": "sale-65",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi khách hàng nói: 'Tôi chỉ có sẵn đúng 5 triệu tiền tiết kiệm', gói hợp tác nào là lựa chọn phù hợp và an toàn nhất?",
     "options": [
       {
@@ -1822,8 +1822,8 @@ const QUESTIONS = [
   {
     "id": "sale-66",
     "stableId": "sale-66",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Trong các nhận định sau đây về sự hỗ trợ của công ty khi đối tác gặp sự cố trong quá trình bán hàng, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -1850,8 +1850,8 @@ const QUESTIONS = [
   {
     "id": "sale-67",
     "stableId": "sale-67",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi khách hàng thắc mắc: 'Nếu tôi bận việc đột xuất không bán được vài ngày thì sao?', quy định của công ty là gì?",
     "options": [
       {
@@ -1878,8 +1878,8 @@ const QUESTIONS = [
   {
     "id": "sale-68",
     "stableId": "sale-68",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi người nhà khách hàng còn băn khoăn lo ngại bị lừa đảo, những tài liệu thực tế nào giúp củng cố niềm tin nhanh nhất?",
     "options": [
       {
@@ -1906,8 +1906,8 @@ const QUESTIONS = [
   {
     "id": "sale-69",
     "stableId": "sale-69",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi khách hàng băn khoăn về việc điều chỉnh giá bán bánh mì tại địa phương, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -1934,8 +1934,8 @@ const QUESTIONS = [
   {
     "id": "sale-70",
     "stableId": "sale-70",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi khách hàng hỏi: 'Tại sao công ty không thu phí nhượng quyền hàng tháng như các thương hiệu khác?', câu trả lời đúng bản chất là gì?",
     "options": [
       {
@@ -1962,8 +1962,8 @@ const QUESTIONS = [
   {
     "id": "sale-71",
     "stableId": "sale-71",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Về chính sách hoàn trả tiền đặt cọc 2.000.000đ, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -1990,8 +1990,8 @@ const QUESTIONS = [
   {
     "id": "sale-72",
     "stableId": "sale-72",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Chính sách bảo chứng an toàn vốn trong 60 ngày đầu hỗ trợ thu hồi xe và hoàn lại bao nhiêu tiền cho đối tác nếu gặp sự cố bất khả kháng?",
     "options": [
       {
@@ -2018,8 +2018,8 @@ const QUESTIONS = [
   {
     "id": "sale-73",
     "stableId": "sale-73",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi khách hàng hỏi: 'Bánh mì giao đến điểm bán có bảo đảm nóng giòn không?', câu trả lời chuẩn xác là gì?",
     "options": [
       {
@@ -2046,8 +2046,8 @@ const QUESTIONS = [
   {
     "id": "sale-74",
     "stableId": "sale-74",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Trong các phát biểu sau đây về chất lượng nguyên liệu chả cá Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -2074,8 +2074,8 @@ const QUESTIONS = [
   {
     "id": "sale-75",
     "stableId": "sale-75",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 3,
+    "sectionName": "Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
     "question": "Khi tư vấn viên nhận thấy khách hàng đã rất thích mô hình nhưng còn ngần ngại chưa ra quyết định, hành động nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2102,8 +2102,8 @@ const QUESTIONS = [
   {
     "id": "sale-76",
     "stableId": "sale-76",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Quy trình bảo quản chả cá sợi tươi Má Hải tại điểm bán và tại nhà được thực hiện như thế nào để giữ trọn độ tươi ngon?",
     "options": [
       {
@@ -2130,8 +2130,8 @@ const QUESTIONS = [
   {
     "id": "sale-77",
     "stableId": "sale-77",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Về kỹ thuật chiên chả cá sợi Má Hải trên xe bánh mì, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2158,8 +2158,8 @@ const QUESTIONS = [
   {
     "id": "sale-78",
     "stableId": "sale-78",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Thời gian chiên tiêu chuẩn cho một mẻ chả cá sợi Má Hải trên chảo dầu nóng là khoảng bao lâu?",
     "options": [
       {
@@ -2186,8 +2186,8 @@ const QUESTIONS = [
   {
     "id": "sale-79",
     "stableId": "sale-79",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Cách bảo quản và sử dụng chai Nước sốt Tứ Vị trên xe bánh mì trong suốt ca bán được thực hiện ra sao?",
     "options": [
       {
@@ -2214,8 +2214,8 @@ const QUESTIONS = [
   {
     "id": "sale-80",
     "stableId": "sale-80",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Về việc chuẩn bị rau dưa tươi ăn kèm bánh mì mỗi sáng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2242,8 +2242,8 @@ const QUESTIONS = [
   {
     "id": "sale-81",
     "stableId": "sale-81",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Trong các quy định sau đây về an toàn vệ sinh thực phẩm khi đứng bán bánh mì, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -2270,8 +2270,8 @@ const QUESTIONS = [
   {
     "id": "sale-82",
     "stableId": "sale-82",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Về việc sử dụng bao bì túi giấy mang thương hiệu Bánh Mì Má Hải, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2298,8 +2298,8 @@ const QUESTIONS = [
   {
     "id": "sale-83",
     "stableId": "sale-83",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Khi kết thúc ca bán lúc 9h00 sáng mỗi ngày, những công việc vệ sinh bắt buộc nào cần được hoàn tất?",
     "options": [
       {
@@ -2326,8 +2326,8 @@ const QUESTIONS = [
   {
     "id": "sale-84",
     "stableId": "sale-84",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Hàm lượng tinh bột trong chả cá sợi tươi Má Hải được kiểm soát ở mức nào để sợi chả không bị bở và giữ trọn độ dẻo tự nhiên?",
     "options": [
       {
@@ -2354,8 +2354,8 @@ const QUESTIONS = [
   {
     "id": "sale-85",
     "stableId": "sale-85",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Về việc kết hợp nước sốt Tứ Vị và tương ớt Má Hải khi làm bánh mì cho khách, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2382,8 +2382,8 @@ const QUESTIONS = [
   {
     "id": "sale-86",
     "stableId": "sale-86",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Khi bắt đầu cuộc gọi tư vấn, câu chào và cách tiếp cận nào thể hiện đúng tâm thế 'Đồng minh cùng kiếm cơm' của Nhà Má Hải?",
     "options": [
       {
@@ -2410,8 +2410,8 @@ const QUESTIONS = [
   {
     "id": "sale-87",
     "stableId": "sale-87",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Trong bước lắng nghe để hiểu rõ hoàn cảnh khách hàng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2438,8 +2438,8 @@ const QUESTIONS = [
   {
     "id": "sale-88",
     "stableId": "sale-88",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Số tiền đặt cọc tiêu chuẩn khi ký hợp đồng giữ vị trí điểm bán và lên lệnh chuẩn bị xe là bao nhiêu?",
     "options": [
       {
@@ -2466,8 +2466,8 @@ const QUESTIONS = [
   {
     "id": "sale-89",
     "stableId": "sale-89",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Khi hướng dẫn khách hàng thanh toán phần tiền còn lại của gói nhượng quyền, quy trình được thực hiện ra sao?",
     "options": [
       {
@@ -2494,8 +2494,8 @@ const QUESTIONS = [
   {
     "id": "sale-90",
     "stableId": "sale-90",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Khi tư vấn viên đặt lịch hẹn gọi lại cho khách hàng vào ngày hôm sau, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2522,8 +2522,8 @@ const QUESTIONS = [
   {
     "id": "sale-91",
     "stableId": "sale-91",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Trong các nhận định sau đây về sự đồng hành của công ty sau khi khách hàng khai trương điểm bán, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -2550,8 +2550,8 @@ const QUESTIONS = [
   {
     "id": "sale-92",
     "stableId": "sale-92",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Về việc giữ vững tâm lý và đạo đức nghề nghiệp khi tư vấn khách hàng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2578,8 +2578,8 @@ const QUESTIONS = [
   {
     "id": "sale-93",
     "stableId": "sale-93",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Khi khách hàng đã sẵn sàng mở xe nhưng phân vân giữa Gói 8,8 triệu và Gói 10,3 triệu, tư vấn viên phân tích thế nào?",
     "options": [
       {
@@ -2606,8 +2606,8 @@ const QUESTIONS = [
   {
     "id": "sale-94",
     "stableId": "sale-94",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Thời hạn tiêu chuẩn của Hợp đồng hợp tác nhượng quyền Bánh Mì Má Hải là bao lâu?",
     "options": [
       {
@@ -2634,8 +2634,8 @@ const QUESTIONS = [
   {
     "id": "sale-95",
     "stableId": "sale-95",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Khi đối tác có việc gia đình chuyển nơi ở và muốn sang nhượng lại điểm bán cho người khác, chính sách của công ty là gì?",
     "options": [
       {
@@ -2662,8 +2662,8 @@ const QUESTIONS = [
   {
     "id": "sale-96",
     "stableId": "sale-96",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Về mối quan hệ hợp tác lâu dài giữa Nhà Má Hải và chủ xe bánh mì, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2690,8 +2690,8 @@ const QUESTIONS = [
   {
     "id": "sale-97",
     "stableId": "sale-97",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Hệ thống Bánh Mì Má Hải tiêu thụ trung bình bao nhiêu ổ bánh mì mỗi ngày trên toàn quốc?",
     "options": [
       {
@@ -2718,8 +2718,8 @@ const QUESTIONS = [
   {
     "id": "sale-98",
     "stableId": "sale-98",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Những yếu tố then chốt nào tạo nên sức hút bền vững của thương hiệu Bánh Mì Má Hải trong suốt 13 năm qua?",
     "options": [
       {
@@ -2746,8 +2746,8 @@ const QUESTIONS = [
   {
     "id": "sale-99",
     "stableId": "sale-99",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Trong các nhận định sau đây về quyền lợi của chủ xe khi tham gia chuỗi Bánh Mì Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -2774,8 +2774,8 @@ const QUESTIONS = [
   {
     "id": "sale-100",
     "stableId": "sale-100",
-    "sectionNo": 2,
-    "sectionName": "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
+    "sectionNo": 4,
+    "sectionName": "Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
     "question": "Mục tiêu cao nhất của chương trình đào tạo kỹ năng mở xe và tư vấn nhượng quyền của Nhà Má Hải là gì?",
     "options": [
       {
@@ -2802,8 +2802,8 @@ const QUESTIONS = [
   {
     "id": "sale-101",
     "stableId": "sale-101",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi khách hàng muốn mở điểm bán cách một xe Má Hải hiện hữu chỉ 150 mét, tư vấn viên giải thích nguyên tắc giữ khoảng cách 300 mét như thế nào?",
     "options": [
       {
@@ -2830,8 +2830,8 @@ const QUESTIONS = [
   {
     "id": "sale-102",
     "stableId": "sale-102",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi khách hàng phản bác: 'Ngoài chợ có người bán bánh mì chả cá chỉ 10.000đ – 12.000đ/ổ', nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2858,8 +2858,8 @@ const QUESTIONS = [
   {
     "id": "sale-103",
     "stableId": "sale-103",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi khách hàng lo lắng: 'Vào mùa mưa ở miền Nam hoặc mùa đông ở miền Bắc thì bán bánh mì vỉa hè có bị ế không?', giải pháp thực tế là gì?",
     "options": [
       {
@@ -2886,8 +2886,8 @@ const QUESTIONS = [
   {
     "id": "sale-104",
     "stableId": "sale-104",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi khách hàng chia sẻ: 'Tôi đang làm công nhân ca chiều, buổi sáng muốn mở xe bán thêm có kịp giờ không?', nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2914,8 +2914,8 @@ const QUESTIONS = [
   {
     "id": "sale-105",
     "stableId": "sale-105",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi khách hàng hỏi về tốc độ làm một ổ bánh mì Má Hải vào giờ cao điểm sáng, thời gian hoàn tất tiêu chuẩn là bao lâu?",
     "options": [
       {
@@ -2942,8 +2942,8 @@ const QUESTIONS = [
   {
     "id": "sale-106",
     "stableId": "sale-106",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Trong các nhận định sau đây về tính minh bạch khi ký hợp đồng nhượng quyền Bánh Mì Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -2970,8 +2970,8 @@ const QUESTIONS = [
   {
     "id": "sale-107",
     "stableId": "sale-107",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi khách hàng hỏi: 'Nếu sau này đường mở rộng hoặc chủ nhà lấy lại hiên thì có được đổi điểm bán không?', nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -2998,8 +2998,8 @@ const QUESTIONS = [
   {
     "id": "sale-108",
     "stableId": "sale-108",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi khách hàng hỏi về cách thức nhận hàng chả cá và nước sốt tại các tỉnh xa, quy trình kho vận diễn ra như thế nào?",
     "options": [
       {
@@ -3026,8 +3026,8 @@ const QUESTIONS = [
   {
     "id": "sale-109",
     "stableId": "sale-109",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi gặp khách hàng lớn tuổi chưa rành sử dụng điện thoại thông minh để đặt hàng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -3054,8 +3054,8 @@ const QUESTIONS = [
   {
     "id": "sale-110",
     "stableId": "sale-110",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Yếu tố nào giúp xe Bánh Mì Má Hải luôn tạo được sự nổi bật và thu hút ánh nhìn của người đi đường vào sáng sớm?",
     "options": [
       {
@@ -3082,8 +3082,8 @@ const QUESTIONS = [
   {
     "id": "sale-111",
     "stableId": "sale-111",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Về việc phân loại mức độ sẵn sàng của khách hàng sau cuộc gọi đầu tiên, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -3110,8 +3110,8 @@ const QUESTIONS = [
   {
     "id": "sale-112",
     "stableId": "sale-112",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Tỷ lệ thời gian làm việc hàng ngày mà tư vấn viên nên dành cho nhóm khách hàng đã sẵn sàng nguồn lực (có đủ 4 yếu tố hoặc muốn cọc ngay) là bao nhiêu?",
     "options": [
       {
@@ -3138,8 +3138,8 @@ const QUESTIONS = [
   {
     "id": "sale-113",
     "stableId": "sale-113",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Những thông tin cốt lõi nào bắt buộc phải ghi chú lại trên phần mềm quản lý sau mỗi lần gọi điện cho khách hàng?",
     "options": [
       {
@@ -3166,8 +3166,8 @@ const QUESTIONS = [
   {
     "id": "sale-114",
     "stableId": "sale-114",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi gửi thông tin hỗ trợ cho khách hàng qua Zalo sau cuộc gọi, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -3194,8 +3194,8 @@ const QUESTIONS = [
   {
     "id": "sale-115",
     "stableId": "sale-115",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Trong các nhận định sau đây về việc chọn thời điểm vàng để chốt ngày khai trương cho khách hàng, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -3222,8 +3222,8 @@ const QUESTIONS = [
   {
     "id": "sale-116",
     "stableId": "sale-116",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi khách hàng nói: 'Tôi cần hỏi lại ý kiến của chồng/vợ rồi mới quyết định', tư vấn viên nên phản hồi ra sao để hỗ trợ gia đình tốt nhất?",
     "options": [
       {
@@ -3250,8 +3250,8 @@ const QUESTIONS = [
   {
     "id": "sale-117",
     "stableId": "sale-117",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Về kỹ thuật đưa ra 2 lựa chọn tích cực trong giao tiếp tư vấn, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -3278,8 +3278,8 @@ const QUESTIONS = [
   {
     "id": "sale-118",
     "stableId": "sale-118",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Bao nhiêu phần trăm điểm bán trong hệ thống Bánh Mì Má Hải đạt mức thu nhập từ 7 triệu đồng/tháng trở lên sau ca bán sáng?",
     "options": [
       {
@@ -3306,8 +3306,8 @@ const QUESTIONS = [
   {
     "id": "sale-119",
     "stableId": "sale-119",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi tư vấn gói hợp tác cho một khách hàng đã có sẵn xe inox ở nhà nhưng chưa có đồ nghề bếp, tư vấn viên giải thích quyền lợi ra sao?",
     "options": [
       {
@@ -3334,8 +3334,8 @@ const QUESTIONS = [
   {
     "id": "sale-120",
     "stableId": "sale-120",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi khách hàng đã chuyển cọc 2 triệu và chờ ngày nhận bàn giao xe, tư vấn viên cần làm gì tiếp theo?",
     "options": [
       {
@@ -3362,8 +3362,8 @@ const QUESTIONS = [
   {
     "id": "sale-121",
     "stableId": "sale-121",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Trong các quy định sau đây về việc bảo mật thông tin khách hàng trên hệ thống, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -3390,8 +3390,8 @@ const QUESTIONS = [
   {
     "id": "sale-122",
     "stableId": "sale-122",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Khi tư vấn viên tiếp nhận một khách hàng mới đăng ký tìm hiểu trên Fanpage hoặc Website, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -3418,8 +3418,8 @@ const QUESTIONS = [
   {
     "id": "sale-123",
     "stableId": "sale-123",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Những lợi ích thiết thực nào mà cẩm nang hướng dẫn bán hàng chuẩn hóa mang lại cho người mới mở xe?",
     "options": [
       {
@@ -3446,8 +3446,8 @@ const QUESTIONS = [
   {
     "id": "sale-124",
     "stableId": "sale-124",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Số tiền hoàn vốn ước tính cho một điểm bán bánh mì Má Hải (bán trung bình 40–50 ổ/sáng, tiền lời 250k/ngày) thường đạt được trong bao lâu?",
     "options": [
       {
@@ -3474,8 +3474,8 @@ const QUESTIONS = [
   {
     "id": "sale-125",
     "stableId": "sale-125",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 5,
+    "sectionName": "Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
     "question": "Tại sao việc duy trì liên lạc và đồng hành cùng đối tác trong suốt 2 năm hợp đồng là kim chỉ nam trong hoạt động của Nhà Má Hải?",
     "options": [
       {
@@ -3502,8 +3502,8 @@ const QUESTIONS = [
   {
     "id": "sale-126",
     "stableId": "sale-126",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Khi gặp tình huống chảo dầu chiên chả cá bị quá nhiệt bốc khói nhiều, cách xử lý an toàn nào sau đây là SAI?",
     "options": [
       {
@@ -3530,8 +3530,8 @@ const QUESTIONS = [
   {
     "id": "sale-127",
     "stableId": "sale-127",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Khi vào khung giờ cao điểm (6h30 – 7h30 sáng) khách tập trung đông cùng lúc, cách phối hợp nhịp nhàng giữa 2 người đứng bán là gì?",
     "options": [
       {
@@ -3558,8 +3558,8 @@ const QUESTIONS = [
   {
     "id": "sale-128",
     "stableId": "sale-128",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Về việc bảo quản chai Nước sốt Tứ Vị trên xe bánh mì để sốt không bị hỏng trong mùa nắng nóng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -3586,8 +3586,8 @@ const QUESTIONS = [
   {
     "id": "sale-129",
     "stableId": "sale-129",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Mức tiền lời bình quân khi bán một ổ bánh mì chả cá Má Hải với giá sàn 15.000đ/ổ (giá vốn ~9.500đ – 10.000đ/ổ) là bao nhiêu?",
     "options": [
       {
@@ -3614,8 +3614,8 @@ const QUESTIONS = [
   {
     "id": "sale-130",
     "stableId": "sale-130",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Trong các nhận định sau đây về việc kiểm tra nguyên vật liệu trước khi mở bán mỗi sáng, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -3642,8 +3642,8 @@ const QUESTIONS = [
   {
     "id": "sale-131",
     "stableId": "sale-131",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Bí quyết giúp sợi chả cá Má Hải khi chiên trên chảo luôn phồng to, vàng giòn và không bị ngấm nhiều dầu là gì?",
     "options": [
       {
@@ -3670,8 +3670,8 @@ const QUESTIONS = [
   {
     "id": "sale-132",
     "stableId": "sale-132",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Về việc giữ ấm và giòn cho bánh mì trong suốt ca bán sáng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -3698,8 +3698,8 @@ const QUESTIONS = [
   {
     "id": "sale-133",
     "stableId": "sale-133",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Khi điểm bán gặp sự cố bếp gas khè bị nghẹt lửa hoặc chai xịt sốt bị tắc vòi, cách xử lý nhanh tại chỗ là gì?",
     "options": [
       {
@@ -3726,8 +3726,8 @@ const QUESTIONS = [
   {
     "id": "sale-134",
     "stableId": "sale-134",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Về việc chuẩn bị tiền lẻ trả lại cho khách mua bánh mì ca sáng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -3754,8 +3754,8 @@ const QUESTIONS = [
   {
     "id": "sale-135",
     "stableId": "sale-135",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Trong một ca bán sáng từ 5h30 đến 9h00, một điểm bán hoạt động tốt phục vụ trung bình bao nhiêu ổ bánh mì cho người đi đường?",
     "options": [
       {
@@ -3782,8 +3782,8 @@ const QUESTIONS = [
   {
     "id": "sale-136",
     "stableId": "sale-136",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Yếu tố ứng xử nào của người đứng bán giúp giữ chân khách quen quay lại mua bánh mì Má Hải mỗi ngày?",
     "options": [
       {
@@ -3810,8 +3810,8 @@ const QUESTIONS = [
   {
     "id": "sale-137",
     "stableId": "sale-137",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Khi khách hàng có yêu cầu đặc biệt về khẩu vị bánh mì, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -3838,8 +3838,8 @@ const QUESTIONS = [
   {
     "id": "sale-138",
     "stableId": "sale-138",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Mối quan hệ tốt đẹp với chủ nhà cho thuê hiên mặt bằng mang lại những lợi ích gì cho chủ xe bánh mì?",
     "options": [
       {
@@ -3866,8 +3866,8 @@ const QUESTIONS = [
   {
     "id": "sale-139",
     "stableId": "sale-139",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Về việc giữ gìn trật tự và không gian cho người đi bộ xung quanh xe bánh mì, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -3894,8 +3894,8 @@ const QUESTIONS = [
   {
     "id": "sale-140",
     "stableId": "sale-140",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Trong các nhận định sau đây về sự hỗ trợ đồng hành của đội ngũ chăm sóc khách hàng trực tuyến, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -3922,8 +3922,8 @@ const QUESTIONS = [
   {
     "id": "sale-141",
     "stableId": "sale-141",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Mức phí gia hạn hợp đồng sau khi kết thúc thời hạn 2 năm đầu tiên tại Nhà Má Hải là bao nhiêu tiền?",
     "options": [
       {
@@ -3950,8 +3950,8 @@ const QUESTIONS = [
   {
     "id": "sale-142",
     "stableId": "sale-142",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Khi điểm bán nhận được lời góp ý từ khách hàng về việc chả cá hôm nay hơi nhạt hoặc rau răm hơi ít, cách xử lý nào sau đây là SAI?",
     "options": [
       {
@@ -3978,8 +3978,8 @@ const QUESTIONS = [
   {
     "id": "sale-143",
     "stableId": "sale-143",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Tại sao việc đeo tạp dề và đội nón đồng phục Má Hải khi bán bánh mì lại tạo ấn tượng rất tốt với người tiêu dùng?",
     "options": [
       {
@@ -4006,8 +4006,8 @@ const QUESTIONS = [
   {
     "id": "sale-144",
     "stableId": "sale-144",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Về việc giữ gìn uy tín thương hiệu chung giữa hơn 1.200 điểm bán trên toàn quốc, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -4034,8 +4034,8 @@ const QUESTIONS = [
   {
     "id": "sale-145",
     "stableId": "sale-145",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Giá trị cốt lõi lớn nhất mà người khởi nghiệp nhận được khi đồng hành cùng chuỗi Bánh Mì Má Hải là gì?",
     "options": [
       {
@@ -4062,8 +4062,8 @@ const QUESTIONS = [
   {
     "id": "sale-146",
     "stableId": "sale-146",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Về quyền lợi được hỗ trợ chuyển nhượng điểm bán khi chủ xe bận việc gia đình, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -4090,8 +4090,8 @@ const QUESTIONS = [
   {
     "id": "sale-147",
     "stableId": "sale-147",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Tổng số điểm bán bánh mì chả cá Má Hải đang hoạt động và phục vụ bà con trên khắp các tỉnh thành cả nước hiện nay đạt quy mô nào?",
     "options": [
       {
@@ -4118,8 +4118,8 @@ const QUESTIONS = [
   {
     "id": "sale-148",
     "stableId": "sale-148",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Ý nghĩa nhân văn của mô hình nhượng quyền xe Bánh Mì Má Hải đối với cộng đồng người lao động là gì?",
     "options": [
       {
@@ -4146,8 +4146,8 @@ const QUESTIONS = [
   {
     "id": "sale-149",
     "stableId": "sale-149",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Trong các phát biểu sau đây về nguyên tắc cùng chiều lợi ích của Nhà Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -4174,8 +4174,8 @@ const QUESTIONS = [
   {
     "id": "sale-150",
     "stableId": "sale-150",
-    "sectionNo": 3,
-    "sectionName": "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
+    "sectionNo": 6,
+    "sectionName": "Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
     "question": "Thông điệp lớn nhất mà một tư vấn viên nhượng quyền Bánh Mì Má Hải luôn khắc ghi khi trò chuyện với khách hàng là gì?",
     "options": [
       {
@@ -4202,8 +4202,8 @@ const QUESTIONS = [
   {
     "id": "sale-151",
     "stableId": "sale-151",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi mới mở điểm bán và hàng xóm xung quanh thắc mắc về hoạt động chiên chả cá buổi sáng, cách ứng xử văn minh và khéo léo nhất là gì?",
     "options": [
       {
@@ -4230,8 +4230,8 @@ const QUESTIONS = [
   {
     "id": "sale-152",
     "stableId": "sale-152",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi phát hiện có một xe bánh mì khác tự ý mở bán quá gần điểm bán của mình (vi phạm khoảng cách 300 mét), nhận định nào sau đây là KHÔNG ĐÚNG về cách xử lý?",
     "options": [
       {
@@ -4258,8 +4258,8 @@ const QUESTIONS = [
   {
     "id": "sale-153",
     "stableId": "sale-153",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi giá bình gas hoặc dầu ăn tại địa phương có biến động nhẹ, bài toán chi phí vận hành được tính toán ra sao để chủ xe an tâm buôn bán?",
     "options": [
       {
@@ -4286,8 +4286,8 @@ const QUESTIONS = [
   {
     "id": "sale-154",
     "stableId": "sale-154",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Vào ngày khai trương đầu tiên lượng khách mua đông ngoài dự kiến, những sự chuẩn bị nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -4314,8 +4314,8 @@ const QUESTIONS = [
   {
     "id": "sale-155",
     "stableId": "sale-155",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi khách hàng hỏi về tỷ lệ nguyên liệu thịt cá nguyên chất trong chả cá sợi Má Hải, hàm lượng Đạm kiểm nghiệm đạt con số nào?",
     "options": [
       {
@@ -4342,8 +4342,8 @@ const QUESTIONS = [
   {
     "id": "sale-156",
     "stableId": "sale-156",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Trong các nhận định sau đây về tính tiện lợi của xe bánh mì inox tiêu chuẩn Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -4370,8 +4370,8 @@ const QUESTIONS = [
   {
     "id": "sale-157",
     "stableId": "sale-157",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi gặp tình huống khách hàng mua bánh mì yêu cầu xuất hóa đơn hoặc mua số lượng lớn cho công ty (30–50 ổ), nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -4398,8 +4398,8 @@ const QUESTIONS = [
   {
     "id": "sale-158",
     "stableId": "sale-158",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi thời tiết có sương mù hoặc mưa phùn nhẹ vào sáng sớm, thao tác bán hàng nào giúp giữ ổ bánh mì luôn ấm nóng?",
     "options": [
       {
@@ -4426,8 +4426,8 @@ const QUESTIONS = [
   {
     "id": "sale-159",
     "stableId": "sale-159",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Về việc sử dụng nước sốt Tứ Vị độc quyền khi làm bánh mì cho trẻ em ăn sáng đi học, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -4454,8 +4454,8 @@ const QUESTIONS = [
   {
     "id": "sale-160",
     "stableId": "sale-160",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Lợi thế lớn nhất của mô hình xe bánh mì chả cá lưu động kết hợp hiên nhà so với việc thuê mặt bằng mở quán ăn cố định là gì?",
     "options": [
       {
@@ -4482,8 +4482,8 @@ const QUESTIONS = [
   {
     "id": "sale-161",
     "stableId": "sale-161",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi khách hàng nói: 'Để tôi suy nghĩ thêm vài ngày nữa', nhận định nào sau đây là SAI trong kỹ năng tư vấn?",
     "options": [
       {
@@ -4510,8 +4510,8 @@ const QUESTIONS = [
   {
     "id": "sale-162",
     "stableId": "sale-162",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Hệ thống Bánh Mì Má Hải đã có bề dày bao nhiêu năm phát triển và khẳng định uy tín thương hiệu trên thị trường F&B Việt Nam?",
     "options": [
       {
@@ -4538,8 +4538,8 @@ const QUESTIONS = [
   {
     "id": "sale-163",
     "stableId": "sale-163",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi khách hàng lo lắng: 'Tôi không biết tính toán sổ sách, sợ không biết quản lý tiền bạc', cách hướng dẫn đơn giản nhất là gì?",
     "options": [
       {
@@ -4566,8 +4566,8 @@ const QUESTIONS = [
   {
     "id": "sale-164",
     "stableId": "sale-164",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi khách hàng hỏi: 'Công ty có cam kết bao tiêu lợi nhuận cố định 20 triệu/tháng cho tôi không?', nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -4594,8 +4594,8 @@ const QUESTIONS = [
   {
     "id": "sale-165",
     "stableId": "sale-165",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Trong các nhận định sau đây về sự khác biệt giữa Gói 8,8 triệu và Gói 10,3 triệu, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -4622,8 +4622,8 @@ const QUESTIONS = [
   {
     "id": "sale-166",
     "stableId": "sale-166",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi tư vấn viên nhận thấy khách hàng đang có tâm lý lo sợ thất bại vì từng kinh doanh thua lỗ trước đây, câu động viên đúng đắn là gì?",
     "options": [
       {
@@ -4650,8 +4650,8 @@ const QUESTIONS = [
   {
     "id": "sale-167",
     "stableId": "sale-167",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Về quy trình bàn giao xe và nhận diện thương hiệu cho đối tác, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -4678,8 +4678,8 @@ const QUESTIONS = [
   {
     "id": "sale-168",
     "stableId": "sale-168",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Quy mô sản lượng tiêu thụ bánh mì hàng tháng của toàn bộ hệ thống Bánh Mì Má Hải trên cả nước đạt con số nào?",
     "options": [
       {
@@ -4706,8 +4706,8 @@ const QUESTIONS = [
   {
     "id": "sale-169",
     "stableId": "sale-169",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi khách hàng hỏi: 'Tại sao công ty lại kiểm soát chặt chẽ việc chỉ dùng chả cá sợi và sốt Tứ Vị chính hãng?', câu trả lời đúng bản chất là gì?",
     "options": [
       {
@@ -4734,8 +4734,8 @@ const QUESTIONS = [
   {
     "id": "sale-170",
     "stableId": "sale-170",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi tư vấn viên hỗ trợ khách hàng hoàn tất thủ tục hợp đồng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -4762,8 +4762,8 @@ const QUESTIONS = [
   {
     "id": "sale-171",
     "stableId": "sale-171",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Trong các nhận định sau đây về sự tiện lợi khi sử dụng Ứng dụng đặt hàng của Nhà Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -4790,8 +4790,8 @@ const QUESTIONS = [
   {
     "id": "sale-172",
     "stableId": "sale-172",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Khi tư vấn viên thực hiện cuộc gọi chăm sóc sau 1 tuần đối tác khai trương điểm bán, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -4818,8 +4818,8 @@ const QUESTIONS = [
   {
     "id": "sale-173",
     "stableId": "sale-173",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Những yếu tố nào giúp một điểm bán bánh mì Má Hải nhanh chóng đạt mốc 100 ổ/sáng chỉ sau 1–2 tháng mở bán?",
     "options": [
       {
@@ -4846,8 +4846,8 @@ const QUESTIONS = [
   {
     "id": "sale-174",
     "stableId": "sale-174",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Mức thu nhập hàng tháng của nhóm chủ xe Top Kim Cương (bán từ 120 – 150 ổ/sáng) trong hệ thống Má Hải đạt con số nào?",
     "options": [
       {
@@ -4874,8 +4874,8 @@ const QUESTIONS = [
   {
     "id": "sale-175",
     "stableId": "sale-175",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 7,
+    "sectionName": "Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
     "question": "Ý nghĩa lớn nhất của việc tư vấn viên giúp một người lao động mở một xe Bánh Mì Má Hải thành công là gì?",
     "options": [
       {
@@ -4902,8 +4902,8 @@ const QUESTIONS = [
   {
     "id": "sale-176",
     "stableId": "sale-176",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Về việc kiểm soát chất lượng chả cá sợi tươi trước khi chiên mỗi sáng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -4930,8 +4930,8 @@ const QUESTIONS = [
   {
     "id": "sale-177",
     "stableId": "sale-177",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Tại sao việc sử dụng chảo chiên inox sâu lòng và vợt chiên inox chuyên dụng lại giúp ca bán diễn ra an toàn và hiệu quả?",
     "options": [
       {
@@ -4958,8 +4958,8 @@ const QUESTIONS = [
   {
     "id": "sale-178",
     "stableId": "sale-178",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Về việc quản lý và xử lý dầu ăn chiên chả cá sau mỗi ca bán sáng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -4986,8 +4986,8 @@ const QUESTIONS = [
   {
     "id": "sale-179",
     "stableId": "sale-179",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Chứng nhận an toàn thực phẩm quốc tế nào được cấp cho quy trình sản xuất nước sốt và nguyên liệu của Nhà Má Hải?",
     "options": [
       {
@@ -5014,8 +5014,8 @@ const QUESTIONS = [
   {
     "id": "sale-180",
     "stableId": "sale-180",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Trong các quy chuẩn bảo quản rau dưa tươi ăn kèm bánh mì Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -5042,8 +5042,8 @@ const QUESTIONS = [
   {
     "id": "sale-181",
     "stableId": "sale-181",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Quy định về việc bảo quản và vận chuyển bình gas trên xe bánh mì Má Hải được thực hiện ra sao để bảo đảm an toàn cháy nổ 100%?",
     "options": [
       {
@@ -5070,8 +5070,8 @@ const QUESTIONS = [
   {
     "id": "sale-182",
     "stableId": "sale-182",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Về việc vệ sinh mặt kính và thân xe inox Má Hải sau mỗi ca bán, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -5098,8 +5098,8 @@ const QUESTIONS = [
   {
     "id": "sale-183",
     "stableId": "sale-183",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Khi khách mua bánh mì mang về cho cả văn phòng ăn sáng, quy cách đóng gói chuẩn mực của Má Hải bao gồm những gì?",
     "options": [
       {
@@ -5126,8 +5126,8 @@ const QUESTIONS = [
   {
     "id": "sale-184",
     "stableId": "sale-184",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Về việc thu gom và xử lý rác thải tại điểm bán bánh mì mỗi sáng, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -5154,8 +5154,8 @@ const QUESTIONS = [
   {
     "id": "sale-185",
     "stableId": "sale-185",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Thời hạn sử dụng tiêu chuẩn của Nước sốt Tứ Vị đóng can nguyên niêm phong khi bảo quản nơi khô ráo, thoáng mát là bao lâu?",
     "options": [
       {
@@ -5182,8 +5182,8 @@ const QUESTIONS = [
   {
     "id": "sale-186",
     "stableId": "sale-186",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Tên gọi 'Bánh Mì Má Hải' mang ý nghĩa nhân văn sâu sắc nào gắn liền với văn hóa phục vụ của doanh nghiệp?",
     "options": [
       {
@@ -5210,8 +5210,8 @@ const QUESTIONS = [
   {
     "id": "sale-187",
     "stableId": "sale-187",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Về tinh thần 'Đồng nghiệp Nhà Má Hải' trong toàn hệ thống, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -5238,8 +5238,8 @@ const QUESTIONS = [
   {
     "id": "sale-188",
     "stableId": "sale-188",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Những đối tượng nào trong xã hội đã khởi nghiệp thành công và đổi thay cuộc sống nhờ mô hình xe Bánh Mì Má Hải?",
     "options": [
       {
@@ -5266,8 +5266,8 @@ const QUESTIONS = [
   {
     "id": "sale-189",
     "stableId": "sale-189",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Về việc tham gia các hoạt động đào tạo và cập nhật kỹ năng bán hàng của Nhà Má Hải, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -5294,8 +5294,8 @@ const QUESTIONS = [
   {
     "id": "sale-190",
     "stableId": "sale-190",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Trong các nhận định sau đây về sự phát triển bền vững của thương hiệu Bánh Mì Má Hải, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -5322,8 +5322,8 @@ const QUESTIONS = [
   {
     "id": "sale-191",
     "stableId": "sale-191",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Mức giá trọn gói thấp nhất để một người đã có sẵn xe hoặc tủ kính có thể gia nhập chuỗi Bánh Mì Má Hải là bao nhiêu?",
     "options": [
       {
@@ -5350,8 +5350,8 @@ const QUESTIONS = [
   {
     "id": "sale-192",
     "stableId": "sale-192",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Khi đối tác có mong muốn mở thêm điểm bán thứ 2 hoặc thứ 3 sau khi điểm bán đầu tiên đã vận hành ổn định, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -5378,8 +5378,8 @@ const QUESTIONS = [
   {
     "id": "sale-193",
     "stableId": "sale-193",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Yếu tố cốt lõi nào giúp Bánh Mì Má Hải luôn giữ vững vị thế dẫn đầu trong phân khúc ẩm thực đường phố suốt hơn một thập kỷ?",
     "options": [
       {
@@ -5406,8 +5406,8 @@ const QUESTIONS = [
   {
     "id": "sale-194",
     "stableId": "sale-194",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Về việc xây dựng tác phong của người bán bánh mì Má Hải trên đường phố, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -5434,8 +5434,8 @@ const QUESTIONS = [
   {
     "id": "sale-195",
     "stableId": "sale-195",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Điều gì tạo nên sự an tâm tuyệt đối cho khách hàng khi thưởng thức một ổ Bánh Mì Má Hải trên đường đi làm?",
     "options": [
       {
@@ -5462,8 +5462,8 @@ const QUESTIONS = [
   {
     "id": "sale-196",
     "stableId": "sale-196",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Về trách nhiệm của một tư vấn viên nhượng quyền Bánh Mì Má Hải đối với tương lai của người khởi nghiệp, nhận định nào sau đây là KHÔNG ĐÚNG?",
     "options": [
       {
@@ -5490,8 +5490,8 @@ const QUESTIONS = [
   {
     "id": "sale-197",
     "stableId": "sale-197",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Bao nhiêu phần trăm doanh thu của Nhà Má Hải đến từ việc bán xe bánh mì inox ban đầu?",
     "options": [
       {
@@ -5518,8 +5518,8 @@ const QUESTIONS = [
   {
     "id": "sale-198",
     "stableId": "sale-198",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Khi khoác lên mình chiếc áo đồng phục màu cam của Nhà Má Hải, mỗi tư vấn viên và chủ xe mang trong mình niềm tự hào nào?",
     "options": [
       {
@@ -5546,8 +5546,8 @@ const QUESTIONS = [
   {
     "id": "sale-199",
     "stableId": "sale-199",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Trong các cam kết sau đây của Nhà Má Hải đối với các đối tác nhượng quyền mở xe, nhận định nào là PHÁT BIỂU SAI SỰ THẬT?",
     "options": [
       {
@@ -5574,8 +5574,8 @@ const QUESTIONS = [
   {
     "id": "sale-200",
     "stableId": "sale-200",
-    "sectionNo": 4,
-    "sectionName": "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự",
+    "sectionNo": 8,
+    "sectionName": "Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự",
     "question": "Đúc kết trọn vẹn tinh thần khởi nghiệp nhượng quyền Bánh Mì Má Hải trong một câu khẩu hiệu hành động là gì?",
     "options": [
       {

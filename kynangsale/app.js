@@ -21,7 +21,7 @@ function app() {
         studyProgress: {}, // maps question ID to selected answer key
         
         // Test Mode State
-        testQuestions: [], // 60 selected questions (15 from each of the 4 sections)
+        testQuestions: [], // 60 selected questions from 8 sections
         testAnswers: {}, // maps question ID to selected answer key
         testCurrentIndex: 0,
         testTimer: 2700, // 45 minutes in seconds
@@ -61,27 +61,16 @@ function app() {
         // Init
         init() {
             // Load questions from window.KYNANGSALE_QUESTIONS or fallback window.HOINHAP_QUESTIONS
-            const rawQuestions = window.KYNANGSALE_QUESTIONS || window.HOINHAP_QUESTIONS || [];
+            const rawQuestions = (typeof window !== 'undefined' ? (window.KYNANGSALE_QUESTIONS || window.HOINHAP_QUESTIONS) : (global.KYNANGSALE_QUESTIONS || global.HOINHAP_QUESTIONS)) || [];
             
-            // Map questions to 4 standardized sections (50 questions each)
+            // Map questions to 8 standardized sections (25 questions each)
             this.allQuestions = rawQuestions.map((q, index) => {
                 let sectionNo = q.sectionNo;
                 let sectionName = q.sectionName || "";
                 
                 if (!sectionNo) {
-                    if (index < 50) {
-                        sectionNo = 1;
-                        sectionName = "Nhập môn Nhượng quyền & Lợi thế Mô hình";
-                    } else if (index < 100) {
-                        sectionNo = 2;
-                        sectionName = "Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản";
-                    } else if (index < 150) {
-                        sectionNo = 3;
-                        sectionName = "Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh";
-                    } else {
-                        sectionNo = 4;
-                        sectionName = "Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự";
-                    }
+                    const calculatedNo = Math.floor(index / 25) + 1;
+                    sectionNo = calculatedNo <= 8 ? calculatedNo : 8;
                 }
                 
                 return {
@@ -92,33 +81,37 @@ function app() {
             });
 
             // Preload question images in the background for instant rendering
-            this.allQuestions.forEach(q => {
-                if (q.image) {
-                    const img = new Image();
-                    img.src = q.image;
-                }
-            });
+            if (typeof Image !== 'undefined') {
+                this.allQuestions.forEach(q => {
+                    if (q.image) {
+                        const img = new Image();
+                        img.src = q.image;
+                    }
+                });
+            }
             
             // Load learner info from localStorage
-            this.learnerName = localStorage.getItem('kynangsale:learnerName') || '';
-            this.phoneNumber = localStorage.getItem('kynangsale:phoneNumber') || '';
-            
-            // Check dataset version in localStorage
-            const savedVersion = localStorage.getItem('kynangsale:datasetVersion');
-            if (savedVersion !== DATASET_VERSION) {
-                localStorage.removeItem('kynangsale:studyProgress');
-                localStorage.removeItem('kynangsale:lastResult');
-                localStorage.setItem('kynangsale:datasetVersion', DATASET_VERSION);
-                this.studyProgress = {};
-            } else {
-                // Load study progress from localStorage
-                try {
-                    const savedProgress = localStorage.getItem('kynangsale:studyProgress');
-                    if (savedProgress) {
-                        this.studyProgress = JSON.parse(savedProgress);
+            if (typeof localStorage !== 'undefined') {
+                this.learnerName = localStorage.getItem('kynangsale:learnerName') || '';
+                this.phoneNumber = localStorage.getItem('kynangsale:phoneNumber') || '';
+                
+                // Check dataset version in localStorage
+                const savedVersion = localStorage.getItem('kynangsale:datasetVersion');
+                if (savedVersion !== DATASET_VERSION) {
+                    localStorage.removeItem('kynangsale:studyProgress');
+                    localStorage.removeItem('kynangsale:lastResult');
+                    localStorage.setItem('kynangsale:datasetVersion', DATASET_VERSION);
+                    this.studyProgress = {};
+                } else {
+                    // Load study progress from localStorage
+                    try {
+                        const savedProgress = localStorage.getItem('kynangsale:studyProgress');
+                        if (savedProgress) {
+                            this.studyProgress = JSON.parse(savedProgress);
+                        }
+                    } catch (e) {
+                        console.error('Failed to parse study progress', e);
                     }
-                } catch (e) {
-                    console.error('Failed to parse study progress', e);
                 }
             }
             
@@ -131,39 +124,47 @@ function app() {
             }
 
             // Auto-resend pending quiz result if browser closed/refreshed after error
-            try {
-                const rawPending = localStorage.getItem('kynangsale:pendingQuizResult');
-                if (rawPending) {
-                    const pendingPayload = JSON.parse(rawPending);
-                    if (pendingPayload && pendingPayload.attemptId) {
-                        this.postQuizResult(pendingPayload).catch(() => {});
+            if (typeof localStorage !== 'undefined') {
+                try {
+                    const rawPending = localStorage.getItem('kynangsale:pendingQuizResult');
+                    if (rawPending) {
+                        const pendingPayload = JSON.parse(rawPending);
+                        if (pendingPayload && pendingPayload.attemptId) {
+                            this.postQuizResult(pendingPayload).catch(() => {});
+                        }
                     }
-                }
-            } catch (e) {}
+                } catch (e) {}
+            }
             
             // Watch changes to adjust certificate text sizes
-            this.$watch('learnerName', () => this.adjustCertLayout());
-            this.$watch('phoneNumber', () => this.adjustCertLayout());
-            this.$watch('currentView', (view) => {
-                if (view === 'result') {
-                    const delays = [50, 150, 300, 600, 1000, 2000];
-                    delays.forEach(delay => {
-                        setTimeout(() => this.adjustCertLayout(), delay);
-                    });
-                    if (document.fonts) {
-                        document.fonts.ready.then(() => {
-                            this.adjustCertLayout();
+            if (typeof this.$watch === 'function') {
+                this.$watch('learnerName', () => this.adjustCertLayout());
+                this.$watch('phoneNumber', () => this.adjustCertLayout());
+                this.$watch('currentView', (view) => {
+                    if (view === 'result') {
+                        const delays = [50, 150, 300, 600, 1000, 2000];
+                        delays.forEach(delay => {
+                            setTimeout(() => this.adjustCertLayout(), delay);
                         });
+                        if (typeof document !== 'undefined' && document.fonts) {
+                            document.fonts.ready.then(() => {
+                                this.adjustCertLayout();
+                            });
+                        }
                     }
-                }
-            });
+                });
+            }
 
             // Set initialization flag and hide fallback UI
-            window.alpineInitialized = true;
-            document.documentElement.classList.add('alpine-ready');
-            const fallbackEl = document.getElementById('app-fallback');
-            if (fallbackEl) {
-                fallbackEl.style.display = 'none';
+            if (typeof window !== 'undefined') {
+                window.alpineInitialized = true;
+            }
+            if (typeof document !== 'undefined') {
+                document.documentElement.classList.add('alpine-ready');
+                const fallbackEl = document.getElementById('app-fallback');
+                if (fallbackEl) {
+                    fallbackEl.style.display = 'none';
+                }
             }
         },
 
@@ -176,9 +177,13 @@ function app() {
         updateSections() {
             const canonicalTitles = [
                 "Phần 1: Nhập môn Nhượng quyền & Lợi thế Mô hình",
-                "Phần 2: Kỹ năng Tư vấn Gói hợp tác & Xử lý Rào cản",
-                "Phần 3: Kỹ thuật Vận hành Điểm bán & An toàn Vệ sinh",
-                "Phần 4: Chốt Deal Thực chiến, Pháp lý & Văn hóa Phụng sự"
+                "Phần 2: Phân loại Khách hàng & Kỹ năng Tư vấn",
+                "Phần 3: Khảo sát Vị trí, Mặt bằng & Khung giờ Bán hàng",
+                "Phần 4: Kỹ thuật Chiên chả, Làm bánh & An toàn Vệ sinh",
+                "Phần 5: Xử lý Từ chối & Giải tỏa Rào cản Đối tác",
+                "Phần 6: Kỹ năng Vận hành Ca sáng & Xử lý Sự cố Điểm bán",
+                "Phần 7: Pháp lý, Quan hệ Cộng đồng & Phát triển Bền vững",
+                "Phần 8: Chốt Deal Thực chiến, Tối ưu Lợi nhuận & Văn hóa Phụng sự"
             ];
             
             const map = new Map();
@@ -479,14 +484,18 @@ function app() {
             return base;
         },
 
-        // Test Mode: Pick 60 random questions (15 from each of the 4 sections)
+        // Test Mode: Pick 60 random questions (8 from sec 1,3,5,7 and 7 from sec 2,4,6,8)
         pickTest() {
-            const sec1 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 1)).slice(0, 15);
-            const sec2 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 2)).slice(0, 15);
-            const sec3 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 3)).slice(0, 15);
-            const sec4 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 4)).slice(0, 15);
+            const sec1 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 1)).slice(0, 8);
+            const sec2 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 2)).slice(0, 7);
+            const sec3 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 3)).slice(0, 8);
+            const sec4 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 4)).slice(0, 7);
+            const sec5 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 5)).slice(0, 8);
+            const sec6 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 6)).slice(0, 7);
+            const sec7 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 7)).slice(0, 8);
+            const sec8 = this.shuffle(this.allQuestions.filter(q => q.sectionNo === 8)).slice(0, 7);
             
-            const finalSet = [...sec1, ...sec2, ...sec3, ...sec4];
+            const finalSet = [...sec1, ...sec2, ...sec3, ...sec4, ...sec5, ...sec6, ...sec7, ...sec8];
             return this.shuffle(finalSet);
         },
 
