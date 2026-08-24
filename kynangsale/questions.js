@@ -1751,27 +1751,27 @@ const questions = [
     "displayNumber": 61,
     "sectionNo": 3,
     "sectionName": "Tiêu chuẩn Mặt bằng & Độc quyền Map Tracker",
-    "question": "Khi khách hàng gửi định vị vệ tinh một mặt bằng rất đẹp nhưng Map Tracker báo chỉ cách xe cũ 150 mét, cam kết xử lý là gì?",
+    "question": "Khi khách hàng gửi định vị vệ tinh mặt bằng cách điểm bán cũ 150 mét, quy trình đồng hành xử lý gồm những bước nào?",
     "options": [
       {
         "key": "a",
-        "text": "Kiên quyết từ chối duyệt vị trí 150m để bảo vệ trọn vẹn quyền lợi độc quyền cho chủ xe cũ, đồng thời hỗ trợ tìm vị trí mới."
+        "text": "Tất cả các bước xử lý trên đều bảo đảm tính minh bạch, công bằng và tôn trọng quyền lợi của đối tác."
       },
       {
         "key": "b",
-        "text": "Phê duyệt cho mở bình thường vì vị trí này rất đẹp và đông khách."
+        "text": "Khích lệ và đồng hành hướng dẫn khách khảo sát vị trí mới cách đó từ 300m trở lên trên cùng tuyến đường."
       },
       {
         "key": "c",
-        "text": "Cho phép mở nhưng yêu cầu chủ xe mới phải chia 50% lợi nhuận cho chủ xe cũ."
+        "text": "Hỗ trợ quét định vị tọa độ vệ tinh miễn phí và nhanh chóng cho đến khi tìm được điểm bán đạt chuẩn."
       },
       {
         "key": "d",
-        "text": "Yêu cầu hai chủ xe tự thương lượng và giải quyết với nhau."
+        "text": "Giải thích cặn kẽ quy định bảo vệ cự ly độc quyền 300m trên Map Tracker để bảo vệ doanh số cho chủ xe cũ."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Chính sách bảo vệ cự ly 300m được thực thi nghiêm ngặt, tuyệt đối không vì lợi ích ngắn hạn mà phá vỡ nguyên tắc.",
+    "explanation": "Chính sách bảo vệ cự ly 300m được thực thi nghiêm ngặt, minh bạch và bảo vệ tối đa quyền lợi cho mọi chủ xe.",
     "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
   },
   {
@@ -1867,23 +1867,23 @@ const questions = [
     "displayNumber": 65,
     "sectionNo": 3,
     "sectionName": "Tiêu chuẩn Mặt bằng & Độc quyền Map Tracker",
-    "question": "Khi khảo sát mặt bằng tại khu vực ngã tư đường có đèn tín hiệu giao thông, vị trí đặt xe tối ưu nhất là ở đâu?",
+    "question": "Khi khảo sát vị trí đặt xe bánh mì gần ngã tư có đèn tín hiệu giao thông, những tiêu chuẩn vị trí nào mang lại hiệu quả cao nhất?",
     "options": [
       {
         "key": "a",
-        "text": "Đặt xe cách ngã tư khoảng 20–30 mét về phía thuận chiều lưu thông sau khi vừa qua giao lộ."
+        "text": "Tất cả các tiêu chuẩn trên đều giúp điểm bán gần ngã tư đón trọn dòng người đi làm và bán hàng an toàn."
       },
       {
         "key": "b",
-        "text": "Đặt xe ngay chính giữa tâm ngã tư để ai cũng nhìn thấy."
+        "text": "Vị trí vỉa hè rộng rãi, tầm nhìn thoáng đãng giúp người đi xe máy vừa qua đèn đỏ dễ dàng quan sát và tấp vào lề."
       },
       {
         "key": "c",
-        "text": "Đặt xe sát vạch dừng đèn đỏ gây cản trở các phương tiện rẽ phải."
+        "text": "Có lối dừng đỗ xe an toàn trong 1 phút mà không gây cản trở các phương tiện lưu thông trên đường."
       },
       {
         "key": "d",
-        "text": "Đặt xe lùi sâu trong ngõ hẻm cách ngã tư 200 mét."
+        "text": "Đặt xe cách ngã tư khoảng 20–30 mét về phía thuận chiều lưu thông sau khi vừa qua giao lộ."
       }
     ],
     "correctAnswer": "a",
@@ -2824,27 +2824,27 @@ const questions = [
     "displayNumber": 98,
     "sectionNo": 4,
     "sectionName": "Quy chuẩn Sản phẩm & An toàn Vệ sinh Thực phẩm",
-    "question": "Khi dầu chiên chả cá có dấu hiệu bị sẫm màu sau nhiều ngày sử dụng, hành động bắt buộc là gì?",
+    "question": "Quy chuẩn quản lý và sử dụng dầu chiên an toàn thực phẩm tại điểm bán gồm những nguyên tắc nào?",
     "options": [
       {
         "key": "a",
-        "text": "Pha thêm một ít dầu mới vào dầu cũ để tiết kiệm chi phí."
+        "text": "Trút bỏ dầu cũ và thay hoàn toàn 100% dầu mới sạch sẽ định kỳ để bảo đảm an toàn sức khỏe cho người tiêu dùng."
       },
       {
         "key": "b",
-        "text": "Trút bỏ dầu cũ và thay hoàn toàn 100% dầu mới sạch sẽ để bảo đảm sức khỏe cho người tiêu dùng."
+        "text": "Tất cả các quy chuẩn trên đều bảo đảm chả cá chiên luôn thơm ngon, vàng giòn và đạt chuẩn vệ sinh tuyệt đối."
       },
       {
         "key": "c",
-        "text": "Tiếp tục chiên cho đến khi dầu cháy khét mới thay."
+        "text": "Điều chỉnh nhiệt độ dầu ở mức tiêu chuẩn 160–170°C, không đun dầu quá nóng làm suy giảm chất lượng dầu."
       },
       {
         "key": "d",
-        "text": "Không thay dầu mà chỉ lọc qua một lớp giấy mỏng."
+        "text": "Lọc sạch cặn vụn chả cá sau mỗi ca bán để giữ dầu chiên luôn trong và không bị khét."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Tuyệt đối không dùng dầu cháy khét; thay dầu mới định kỳ để bảo đảm an toàn thực phẩm và chất lượng chả cá.",
+    "explanation": "Thay dầu mới định kỳ và lọc sạch cặn dầu sau ca bán bảo đảm an toàn thực phẩm và chất lượng chả cá thơm ngon.",
     "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
   },
   {
@@ -3665,23 +3665,23 @@ const questions = [
     "displayNumber": 127,
     "sectionNo": 6,
     "sectionName": "Vận hành Điểm bán & Kỹ thuật Chiên chả Chuẩn vị",
-    "question": "Thao tác kiểm tra nhiệt độ dầu chiên đạt chuẩn 160–170°C khi không có nhiệt kế được thực hiện như thế nào?",
+    "question": "Những dấu hiệu trực quan nào giúp người đứng bếp nhận biết chảo dầu đã đạt nhiệt độ chuẩn 160–170°C để thả chả cá?",
     "options": [
       {
         "key": "a",
-        "text": "Nhúng trực tiếp đầu ngón tay vào chảo dầu để thử độ nóng."
+        "text": "Mặt dầu trong chảo bắt đầu sủi tăm lăn tăn nhẹ và tỏa hơi ấm đều đặn."
       },
       {
         "key": "b",
-        "text": "Nhìn thấy khói đen bốc lên nghi ngút từ mặt chảo dầu."
+        "text": "Thả thử 1 sợi chả cá nhỏ vào chảo: Sợi chả nổi ngay lên mặt dầu và bắt đầu phồng vàng trong vài giây."
       },
       {
         "key": "c",
-        "text": "Thả thử 1 sợi chả cá nhỏ vào chảo: Nếu sợi chả sủi bọt tăm lăn tăn, nổi ngay lên mặt dầu và phồng vàng trong vài giây là dầu đã đạt chuẩn."
+        "text": "Tất cả các dấu hiệu trên đều báo hiệu dầu đã đạt độ nóng lý tưởng để chiên chả cá phồng giòn chín tới."
       },
       {
         "key": "d",
-        "text": "Thả cả tảng chả cá đông đá vào chảo dầu khi dầu chưa kịp ấm."
+        "text": "Lửa bếp gas khè được duy trì ở mức vừa phải, ngọn lửa xanh đều không bốc khói."
       }
     ],
     "correctAnswer": "c",
@@ -5115,23 +5115,23 @@ const questions = [
     "displayNumber": 177,
     "sectionNo": 8,
     "sectionName": "Bài toán Kinh tế & Chiến lược Điểm bán Đột phá",
-    "question": "Bài toán thu nhập thực tế khi một điểm bán đạt sản lượng tiêu thụ trung bình 80 ổ bánh mì mỗi sáng là bao nhiêu?",
+    "question": "Khi điểm bán đạt sản lượng bán trung bình 80 ổ bánh mì mỗi sáng, bài toán kinh tế mang lại những thành quả tài chính nào?",
     "options": [
       {
         "key": "a",
-        "text": "Tiền lời ròng đạt khoảng 400.000đ – 440.000đ mỗi sáng, tương đương thu nhập từ 12 đến 13 triệu đồng mỗi tháng."
+        "text": "Tất cả các thành quả tài chính trên đều là minh chứng thực tế cho hiệu quả của mô hình Bánh Mì Má Hải."
       },
       {
         "key": "b",
-        "text": "Tiền lời ròng chỉ đạt khoảng 50.000đ mỗi sáng."
+        "text": "Thu nhập ròng tích lũy từ 12 đến 13 triệu đồng mỗi tháng chỉ sau 3,5 tiếng làm việc buổi sáng."
       },
       {
         "key": "c",
-        "text": "Thu nhập tương đương 50 triệu đồng mỗi tháng."
+        "text": "Thu nhập ổn định giúp người lao động làm chủ kinh tế gia đình và có thời gian rảnh buổi chiều."
       },
       {
         "key": "d",
-        "text": "Bán 80 ổ mỗi sáng chỉ đủ bù đắp chi phí nguyên liệu mà không có tiền lời."
+        "text": "Tiền lời ròng đạt từ 400.000đ – 440.000đ mỗi sáng (với mức lời 5.000đ – 5.500đ/ổ)."
       }
     ],
     "correctAnswer": "a",
@@ -5144,23 +5144,23 @@ const questions = [
     "displayNumber": 178,
     "sectionNo": 8,
     "sectionName": "Bài toán Kinh tế & Chiến lược Điểm bán Đột phá",
-    "question": "Khi điểm bán đạt sản lượng ấn tượng 120 ổ bánh mì mỗi sáng, mức thu nhập hàng tháng của chủ xe là bao nhiêu?",
+    "question": "Khi điểm bán bứt phá đạt sản lượng 120 ổ bánh mì mỗi sáng, nguồn thu nhập mang lại cho chủ xe có những ưu thế gì?",
     "options": [
       {
         "key": "a",
-        "text": "Tiền lời ròng chỉ đạt khoảng 100.000đ mỗi sáng."
+        "text": "Tiền lời ròng đạt từ 600.000đ – 660.000đ mỗi sáng, tương đương thu nhập từ 18 đến 20 triệu đồng mỗi tháng."
       },
       {
         "key": "b",
-        "text": "Tiền lời ròng đạt khoảng 600.000đ – 660.000đ mỗi sáng, tương đương thu nhập từ 18 đến 20 triệu đồng mỗi tháng."
+        "text": "Tất cả các giá trị tài chính trên đều khẳng định tiềm năng sinh lời vượt trội của điểm bán có vị trí đẹp và phục vụ chu đáo."
       },
       {
         "key": "c",
-        "text": "Thu nhập tương đương 5 triệu đồng mỗi tháng."
+        "text": "Tạo nguồn tích lũy tài chính mạnh mẽ để gia đình mở rộng thêm điểm bán thứ 2, thứ 3."
       },
       {
         "key": "d",
-        "text": "Bán 120 ổ mỗi sáng không có lợi nhuận do chi phí nguyên liệu tăng cao."
+        "text": "Mức thu nhập cao tương đương hoặc vượt trội so với nhiều công việc văn phòng hay công nhân tăng ca 10-12 tiếng."
       }
     ],
     "correctAnswer": "b",
@@ -5434,23 +5434,23 @@ const questions = [
     "displayNumber": 188,
     "sectionNo": 8,
     "sectionName": "Bài toán Kinh tế & Chiến lược Điểm bán Đột phá",
-    "question": "Chi phí khấu hao trang thiết bị xe bánh mì Má Hải mỗi ngày được tính toán như thế nào?",
+    "question": "Về độ bền và chi phí sử dụng của xe bánh mì inox Bánh Mì Má Hải, những giá trị kinh tế nào được khẳng định?",
     "options": [
       {
         "key": "a",
-        "text": "Xe bánh mì chỉ sử dụng được 3 tháng là phải thay mới toàn bộ."
+        "text": "Khung xe gia công bằng chất liệu inox cao cấp tiêu chuẩn, độ bền sử dụng thực tế trên 5 năm."
       },
       {
         "key": "b",
-        "text": "Khấu hao 100.000đ mỗi ngày."
+        "text": "Chi phí khấu hao trang thiết bị mỗi ngày chỉ tương đương khoảng 3.000đ – 5.000đ, gần như bằng 0."
       },
       {
         "key": "c",
-        "text": "Khấu hao 50% giá trị xe sau mỗi tháng bán hàng."
+        "text": "Xe được thiết kế bánh đẩy chịu lực chắc chắn, dễ dàng di chuyển và bảo quản gọn gàng trong hiên nhà."
       },
       {
         "key": "d",
-        "text": "Với độ bền khung xe inox trên 5 năm, chi phí khấu hao thực tế chỉ khoảng 3.000đ – 5.000đ mỗi ngày, gần như bằng 0."
+        "text": "Tất cả các yếu tố trên đều giúp chủ xe tối ưu chi phí đầu tư ban đầu và khai thác kinh doanh bền bỉ lâu dài."
       }
     ],
     "correctAnswer": "d",
@@ -5521,23 +5521,23 @@ const questions = [
     "displayNumber": 191,
     "sectionNo": 8,
     "sectionName": "Bài toán Kinh tế & Chiến lược Điểm bán Đột phá",
-    "question": "Khi khách hàng hỏi 'Bán bánh mì lời có nhiều không?', câu trả lời đầy đủ và thuyết phục nhất là gì?",
+    "question": "Khi khách hàng hỏi 'Bán bánh mì Má Hải có lời nhiều không?', những số liệu kinh tế thực tế nào chứng minh hiệu quả mô hình?",
     "options": [
       {
         "key": "a",
-        "text": "Bán bánh mì lời 90% doanh thu như bán nước giải khát."
+        "text": "Tiền lời ròng trên mỗi ổ bánh mì đạt từ 5.000đ – 5.500đ (tương đương biên lợi nhuận ròng ~35%)."
       },
       {
         "key": "b",
-        "text": "Bán bánh mì không có lời bao nhiêu, chỉ đủ tiền chợ qua ngày."
+        "text": "Bán trung bình 70–80 ổ mỗi sáng mang lại nguồn thu nhập từ 10 đến 13 triệu đồng mỗi tháng."
       },
       {
         "key": "c",
-        "text": "Mỗi ổ bánh mì lời ròng từ 5.000đ – 5.500đ (~35% biên lợi nhuận), bán 80 ổ lời hơn 400 ngàn mỗi sáng, tháng kiếm 12–13 triệu gọn gàng."
+        "text": "Tất cả các phân tích kinh tế trên đều chứng minh đây là mô hình kinh doanh an toàn, sinh lời thật và bền vững."
       },
       {
         "key": "d",
-        "text": "Bán bánh mì phụ thuộc vào may rủi, không tính toán được lợi nhuận."
+        "text": "Thu tiền mặt tươi mỗi ngày, không lo công nợ hay chôn vốn gối đầu."
       }
     ],
     "correctAnswer": "c",
@@ -5550,23 +5550,23 @@ const questions = [
     "displayNumber": 192,
     "sectionNo": 8,
     "sectionName": "Bài toán Kinh tế & Chiến lược Điểm bán Đột phá",
-    "question": "So sánh hiệu quả sử dụng thời gian của mô hình xe bánh mì Má Hải với các công việc lao động khác:",
+    "question": "So với nhiều công việc lao động khác, mô hình xe Bánh Mì Má Hải mang lại những ưu thế vượt trội nào về thời gian và thu nhập?",
     "options": [
       {
         "key": "a",
-        "text": "Mất nhiều thời gian di chuyển hàng chục cây số đi làm mỗi ngày."
+        "text": "Chỉ làm việc 3,5 tiếng buổi sáng (5h30–9h00), thời gian còn lại trong ngày hoàn toàn tự do chăm sóc gia đình hoặc làm thêm việc khác."
       },
       {
         "key": "b",
-        "text": "Làm việc cả ngày 12 tiếng không có thời gian nghỉ ngơi."
+        "text": "Nguồn thu nhập 12–18 triệu/tháng tương đương hoặc cao hơn làm việc ca kíp 8–10 tiếng tại nhà máy, xí nghiệp."
       },
       {
         "key": "c",
-        "text": "Thu nhập bấp bênh và phụ thuộc vào tiền thưởng cuối năm của công ty."
+        "text": "Tự làm chủ công việc kinh doanh của chính mình, không chịu áp lực quản lý hay gò bó thời gian."
       },
       {
         "key": "d",
-        "text": "Chỉ làm việc 3,5 tiếng buổi sáng (5h30–9h00) nhưng thu nhập 12–18 triệu/tháng tương đương hoặc cao hơn làm việc 8–10 tiếng ở xí nghiệp."
+        "text": "Tất cả các ưu thế trên đều biến xe bánh mì Má Hải thành giải pháp sinh kế tự do và nâng cao chất lượng cuộc sống."
       }
     ],
     "correctAnswer": "d",
@@ -5695,23 +5695,23 @@ const questions = [
     "displayNumber": 197,
     "sectionNo": 8,
     "sectionName": "Bài toán Kinh tế & Chiến lược Điểm bán Đột phá",
-    "question": "Lời chúc ý nghĩa nhất mà tư vấn viên Má Hải luôn gửi gắm đến mọi đối tác khi bắt đầu hành trình kinh doanh là gì?",
+    "question": "Những thông điệp chúc mừng và động viên chân thành nào luôn được Người Nhà Má Hải gửi trao đến đối tác mới mở xe?",
     "options": [
       {
         "key": "a",
-        "text": "Chúc Cô/Chú buôn may bán đắt, mỗi sáng tấp nập khách quen và có nguồn thu nhập ấm no bền vững!"
+        "text": "Tất cả các lời chúc và thông điệp trên đều thể hiện tình cảm gắn bó ruột thịt và sự phụng sự tận tâm của Nhà Má Hải."
       },
       {
         "key": "b",
-        "text": "Chúc Cô/Chú trở thành tỷ phú đô la sau 1 tuần bán bánh mì."
+        "text": "Chúc Cô/Chú luôn dồi dào sức khỏe, làm chủ kinh tế gia đình và có nguồn thu nhập ấm no bền vững!"
       },
       {
         "key": "c",
-        "text": "Chúc Cô/Chú không cần làm việc mà vẫn có tiền."
+        "text": "Khẳng định công ty luôn là người bạn đồng minh tận tâm, đồng hành sát cánh cùng Cô/Chú trên mọi chặng đường!"
       },
       {
         "key": "d",
-        "text": "Chúc Cô/Chú cạnh tranh chiến thắng mọi hàng quán xung quanh."
+        "text": "Chúc Cô/Chú buôn may bán đắt, mỗi sáng tấp nập khách quen và ngày nào cũng hết bánh sớm!"
       }
     ],
     "correctAnswer": "a",
@@ -5782,23 +5782,23 @@ const questions = [
     "displayNumber": 200,
     "sectionNo": 8,
     "sectionName": "Bài toán Kinh tế & Chiến lược Điểm bán Đột phá",
-    "question": "Chào mừng bạn đã gia nhập đội ngũ Chuyên viên Tư vấn Nhượng quyền Nhà Má Hải! Tinh thần làm việc của chúng ta là gì?",
+    "question": "Chào mừng bạn gia nhập đội ngũ Chuyên viên Tư vấn Nhượng quyền Nhà Má Hải! Những giá trị cốt lõi nào định hình phong cách làm việc của chúng ta?",
     "options": [
       {
         "key": "a",
-        "text": "Không cần học hỏi thêm kinh nghiệm thực tế sau khi đã nhận việc."
+        "text": "Tận tâm lắng nghe, thấu cảm sâu sắc hoàn cảnh và nỗi lo của từng người lao động khi khởi sự kinh doanh."
       },
       {
         "key": "b",
-        "text": "Làm việc thụ động và chỉ chờ đợi khách hàng tự tìm đến."
+        "text": "Chân thành đồng hành, tư vấn giải pháp vừa vặn nhất với túi tiền và luôn giữ trọn chữ Tín trong từng cam kết."
       },
       {
         "key": "c",
-        "text": "Chỉ tập trung vào doanh số cá nhân mà không quan tâm đến quyền lợi của khách hàng."
+        "text": "Tự hào cùng nhau kiến tạo sinh kế ấm no cho hàng ngàn gia đình và lan tỏa bữa sáng dinh dưỡng cho cộng đồng."
       },
       {
         "key": "d",
-        "text": "Tận tâm lắng nghe — Chân thành đồng hành — Cùng nhau kiến tạo sinh kế ấm no bền vững!"
+        "text": "Tất cả các giá trị trên đều hợp thành tinh thần bất diệt: 'Cùng Nhau Kiếm Cơm — Cùng Nhau Ấm No' của Người Nhà Má Hải!"
       }
     ],
     "correctAnswer": "d",
