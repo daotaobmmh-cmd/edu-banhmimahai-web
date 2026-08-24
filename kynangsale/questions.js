@@ -14,19 +14,19 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Cung cấp thêm một xe inox tiêu chuẩn mới và thu hồi lại xe cũ của đối tác do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bàn giao một xe bánh mì inox mới tiêu chuẩn kèm trọn bộ nhận diện thương hiệu Má Hải."
       },
       {
         "key": "b",
-        "text": "Bàn giao trọn bộ decal nhận diện thương hiệu, đồng phục, cẩm nang bán hàng, Giấy chứng nhận ATTP và hướng dẫn kỹ thuật chiên chả cá sợi nóng giòn."
+        "text": "Bàn giao trọn bộ decal nhận diện thương hiệu, đồng phục, cẩm nang bán hàng, Giấy chứng nhận ATTP."
       },
       {
         "key": "c",
-        "text": "Bắt buộc đối tác phải ký quỹ bảo lãnh thương hiệu định kỳ 10 triệu đồng mỗi năm do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Cung cấp xe inox cao cấp đầy đủ hệ thống bếp gas đôi cùng trọn bộ máy móc dụng cụ chế biến chuyên sâu."
       },
       {
         "key": "d",
-        "text": "Chỉ cấp biển số điểm bán và không cung cấp tài liệu hướng dẫn kỹ thuật chiên chả do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bàn giao trọn gói điểm bán hiên nhà đã có sẵn mặt bằng và hỗ trợ chi trả tiền thuê tháng đầu tiên."
       }
     ],
     "correctAnswer": "b",
@@ -42,11 +42,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Đợt 1 đối tác đặt cọc 2 triệu đồng để khóa giữ điểm bán độc quyền và tiến hành chuẩn bị xe trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đợt 1 đối tác đặt cọc 2 triệu đồng để khóa giữ điểm bán độc quyền và tiến hành chuẩn bị xe"
       },
       {
         "key": "b",
-        "text": "Đợt 2 đối tác thanh toán phần chi phí còn lại ngay khi nhận bàn giao đầy đủ phương tiện trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đợt 2 đối tác thanh toán phần chi phí còn lại ngay khi nhận bàn giao đầy đủ phương tiện"
       },
       {
         "key": "c",
@@ -54,7 +54,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Số tiền cọc 2 triệu đồng được cấn trừ 100% vào tổng giá trị gói hợp tác khi hoàn tất trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Số tiền cọc 2 triệu đồng được cấn trừ 100% vào tổng giá trị gói hợp tác khi hoàn tất"
       }
     ],
     "correctAnswer": "c",
@@ -70,15 +70,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Máy ép bánh mì tam giác và lò nướng điện bánh mì đối lưu công nghiệp do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Máy ép bánh mì tam giác và lò nướng điện bánh mì đối lưu công nghiệp"
       },
       {
         "key": "b",
-        "text": "Tủ đông bảo quản cỡ lớn 500 lít và máy xay thịt cá công suất cao do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tủ đông bảo quản cỡ lớn 500 lít và máy xay thịt cá công suất cao"
       },
       {
         "key": "c",
-        "text": "Xe đẩy hàng nặng 4 bánh và hệ thống camera giám sát từ xa do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Xe đẩy hàng nặng 4 bánh và hệ thống camera giám sát từ xa"
       },
       {
         "key": "d",
@@ -102,15 +102,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Đạt 12% hàm lượng Đạm pha trộn bột mì do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đạt 12% hàm lượng Đạm pha trộn bột mì"
       },
       {
         "key": "c",
-        "text": "Đạt 8% hàm lượng Đạm từ phụ gia tổng hợp trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đạt 8% hàm lượng Đạm từ phụ gia tổng hợp"
       },
       {
         "key": "d",
-        "text": "Đạt 5% hàm lượng Đạm từ chả cá tạp thông thường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đạt 5% hàm lượng Đạm từ chả cá tạp thông thường"
       }
     ],
     "correctAnswer": "a",
@@ -126,7 +126,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chủ xe phải tự mua nguyên liệu về đun nấu thủ công tại điểm bán mỗi ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chủ xe phải tự mua nguyên liệu về đun nấu thủ công tại điểm bán mỗi ngày"
       },
       {
         "key": "b",
@@ -134,11 +134,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Bắt buộc chủ xe phải pha loãng với nước lọc để tăng thể tích bán hàng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc chủ xe phải pha loãng với nước lọc để tăng thể tích bán hàng"
       },
       {
         "key": "d",
-        "text": "Chỉ dùng được trong 24 giờ sau khi mở nắp can và không được lưu kho do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ dùng được trong 24 giờ sau khi mở nắp can và không được lưu kho"
       }
     ],
     "correctAnswer": "b",
@@ -154,11 +154,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khoảng cách tối thiểu 50 mét giữa hai điểm bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng cách tối thiểu 50 mét giữa hai điểm bán"
       },
       {
         "key": "b",
-        "text": "Khoảng cách tối thiểu 100 mét giữa hai điểm bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng cách tối thiểu 100 mét giữa hai điểm bán"
       },
       {
         "key": "c",
@@ -166,7 +166,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Không quy định khoảng cách, các xe được mở tự do san sát nhau trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Không quy định khoảng cách, các xe được mở tự do san sát nhau"
       }
     ],
     "correctAnswer": "c",
@@ -186,7 +186,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Giữ nguyên cốt sốt Tứ Vị độc quyền của Má Hải để bảo đảm chất lượng và tính đồng bộ thương hiệu trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Giữ nguyên cốt sốt Tứ Vị độc quyền của Má Hải để bảo đảm chất lượng và tính đồng bộ thương hiệu"
       },
       {
         "key": "c",
@@ -194,7 +194,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Lắng nghe phản hồi của khách quen để phục vụ đúng khẩu vị vùng miền trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Lắng nghe phản hồi của khách quen để phục vụ đúng khẩu vị vùng miền"
       }
     ],
     "correctAnswer": "a",
@@ -210,15 +210,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Thu phí quản lý thương hiệu định kỳ 10% trên tổng doanh thu mỗi tuần do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Thu phí quản lý thương hiệu định kỳ 10% trên tổng doanh thu mỗi tuần"
       },
       {
         "key": "b",
-        "text": "Bắt buộc chủ xe chia sẻ 20% lợi nhuận ròng hàng tháng cho công ty do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc chủ xe chia sẻ 20% lợi nhuận ròng hàng tháng cho công ty"
       },
       {
         "key": "c",
-        "text": "Thu phí duy trì phần mềm và quản lý điểm bán 1 triệu đồng/tháng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Thu phí duy trì phần mềm và quản lý điểm bán 1 triệu đồng/tháng"
       },
       {
         "key": "d",
@@ -238,11 +238,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 50 điểm bán phục vụ 500 ổ bánh mì mỗi ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 50 điểm bán phục vụ 500 ổ bánh mì mỗi ngày"
       },
       {
         "key": "b",
-        "text": "Khoảng 300 điểm bán phục vụ 5.000 ổ bánh mì mỗi ngày trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 300 điểm bán phục vụ 5.000 ổ bánh mì mỗi ngày"
       },
       {
         "key": "c",
@@ -250,7 +250,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Khoảng 5.000 điểm bán phục vụ 500.000 ổ bánh mì mỗi ngày trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 5.000 điểm bán phục vụ 500.000 ổ bánh mì mỗi ngày"
       }
     ],
     "correctAnswer": "c",
@@ -266,15 +266,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khởi nghiệp từ năm 2013 và kiên trì phát triển mô hình suốt 13 năm qua trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khởi nghiệp từ năm 2013 và kiên trì phát triển mô hình suốt 13 năm qua"
       },
       {
         "key": "b",
-        "text": "Được vinh danh giải thưởng Sáng tạo TP.HCM và xuất hiện ấn tượng trên Shark Tank Việt Nam trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Được vinh danh giải thưởng Sáng tạo TP.HCM và xuất hiện ấn tượng trên Shark Tank Việt Nam"
       },
       {
         "key": "c",
-        "text": "Xây dựng hệ thống nhà máy sản xuất chả cá và nước sốt đạt chuẩn quốc tế FSSC 22000 trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Xây dựng hệ thống nhà máy sản xuất chả cá và nước sốt đạt chuẩn quốc tế FSSC 22000"
       },
       {
         "key": "d",
@@ -294,7 +294,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "50 mét theo đường chim bay do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "50 mét theo đường chim bay"
       },
       {
         "key": "b",
@@ -306,7 +306,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Không giới hạn khoảng cách bảo vệ trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Không giới hạn khoảng cách bảo vệ"
       }
     ],
     "correctAnswer": "c",
@@ -326,15 +326,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Khu vực tỉnh chỉ bảo vệ khoảng cách tối đa 50 mét do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khu vực tỉnh chỉ bảo vệ khoảng cách tối đa 50 mét"
       },
       {
         "key": "c",
-        "text": "Khu vực các tỉnh hoàn toàn không áp dụng chính sách bảo vệ khoảng cách điểm bán trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khu vực các tỉnh hoàn toàn không áp dụng chính sách bảo vệ khoảng cách điểm bán"
       },
       {
         "key": "d",
-        "text": "Khu vực tỉnh chỉ được phép mở bán nếu khoảng cách xa hơn 50 km do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khu vực tỉnh chỉ được phép mở bán nếu khoảng cách xa hơn 50 km"
       }
     ],
     "correctAnswer": "a",
@@ -350,7 +350,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Hợp đồng nhượng quyền có thời hạn pháp lý tiêu chuẩn là 1 năm kể từ ngày ký kết trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Hợp đồng nhượng quyền có thời hạn pháp lý tiêu chuẩn là 1 năm kể từ ngày ký kết"
       },
       {
         "key": "b",
@@ -386,11 +386,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Các điểm bán tại vị trí đẹp có thể đạt sản lượng từ 100 đến 150 ổ mỗi ca sáng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Các điểm bán tại vị trí đẹp có thể đạt sản lượng từ 100 đến 150 ổ mỗi ca sáng"
       },
       {
         "key": "d",
-        "text": "Người bán chăm chỉ mở đều đặn từ 5h30 đến 9h00 sáng sẽ tích lũy lượng khách quen rất ổn định trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Người bán chăm chỉ mở đều đặn từ 5h30 đến 9h00 sáng sẽ tích lũy lượng khách quen rất ổn định"
       }
     ],
     "correctAnswer": "b",
@@ -406,11 +406,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Hai bên đơn phương phá vỡ cam kết và giải quyết bằng tranh chấp bạo lực ngoài xã hội."
+        "text": "Hai bên tự ý hủy bỏ hợp đồng bằng thỏa thuận miệng mà không có văn bản thanh lý theo quy định."
       },
       {
         "key": "b",
-        "text": "Mọi vấn đề phát sinh được ưu tiên thương lượng, hòa giải trên tinh thần đồng hành hợp tác trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Mọi vấn đề phát sinh được ưu tiên thương lượng, hòa giải trên tinh thần đồng hành hợp tác"
       },
       {
         "key": "c",
@@ -418,7 +418,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Các quyền lợi và nghĩa vụ đều căn cứ theo hợp đồng hợp tác đã được ký kết văn bản rõ ràng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Các quyền lợi và nghĩa vụ đều căn cứ theo hợp đồng hợp tác đã được ký kết văn bản rõ ràng"
       }
     ],
     "correctAnswer": "a",
@@ -438,15 +438,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Hỏi thăm ngẫu nhiên người dân đi đường qua điện thoại bàn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đối chiếu theo danh mục địa chỉ hành chính viết tay lưu trữ thủ công tại văn phòng."
       },
       {
         "key": "c",
-        "text": "Tra cứu các bản đồ giấy vẽ tay từ nhiều năm trước do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khảo sát dựa trên ước lượng cảm tính của chuyên viên mà không có công cụ số hóa xác thực tọa độ."
       },
       {
         "key": "d",
-        "text": "Bắt buộc khách hàng phải chờ nhân viên đến tận nơi đo đạc thủ công trong 7 ngày trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Yêu cầu đối tác phải tự đến các cơ quan quản lý đô thị để xin trích lục bản đồ vị trí."
       }
     ],
     "correctAnswer": "a",
@@ -462,19 +462,19 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chủ động mở bán sớm trước 6h00 sáng để phục vụ học sinh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chủ động mở bán sớm trước 6h00 sáng để phục vụ học sinh"
       },
       {
         "key": "b",
-        "text": "Mặc đồng phục áo cam và đội nón Má Hải chỉnh tề khi phục vụ khách do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Mặc đồng phục áo cam và đội nón Má Hải chỉnh tề khi phục vụ khách"
       },
       {
         "key": "c",
-        "text": "Tươi cười chào hỏi và cảm ơn khách hàng sau khi trao bánh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tươi cười chào hỏi và cảm ơn khách hàng sau khi trao bánh"
       },
       {
         "key": "d",
-        "text": "Tự ý sử dụng chả cá trôi nổi không rõ nguồn gốc ngoài chợ để độn vào xe bán mang thương hiệu Má Hải."
+        "text": "Tự ý sử dụng nguyên vật liệu trôi nổi không rõ nguồn gốc ngoài chợ để kinh doanh dưới thương hiệu Má Hải."
       }
     ],
     "correctAnswer": "d",
@@ -490,7 +490,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tự ý mua các loại bao bì giấy báo cũ ngoài chợ về gói bánh mì cho khách trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tự in ấn bao bì giấy lẻ tại địa phương không có nhận diện chuẩn của thương hiệu."
       },
       {
         "key": "b",
@@ -498,11 +498,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Chỉ lấy chả cá một lần duy nhất rồi tự sản xuất chả cá tại nhà do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đặt hàng từng đợt nhỏ lẻ theo từng ngày khiến chi phí cước xe bị đội lên cao."
       },
       {
         "key": "d",
-        "text": "Không dùng nước sốt mà thay thế bằng nước mắm ớt tự nấu do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chuyển sang sử dụng các loại nước chấm đóng chai sẵn ngoài thị trường tự do."
       }
     ],
     "correctAnswer": "b",
@@ -518,11 +518,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Công thức cốt sốt Tứ Vị và định lượng gia vị là bí quyết kinh doanh phải giữ kín tuyệt đối trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Công thức cốt sốt Tứ Vị và định lượng gia vị là bí quyết kinh doanh phải giữ kín tuyệt đối"
       },
       {
         "key": "b",
-        "text": "Quy trình vận hành và tài liệu cẩm nang nội bộ không được chia sẻ cho bên thứ ba ngoài hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Quy trình vận hành và tài liệu cẩm nang nội bộ không được chia sẻ cho bên thứ ba ngoài hệ thống"
       },
       {
         "key": "c",
@@ -530,7 +530,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Các tài liệu đào tạo được cấp chỉ nhằm phục vụ việc kinh doanh điểm bán hợp pháp trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Các tài liệu đào tạo được cấp chỉ nhằm phục vụ việc kinh doanh điểm bán hợp pháp"
       }
     ],
     "correctAnswer": "c",
@@ -546,15 +546,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tại Đô thị đặc biệt như TP.HCM và Hà Nội, khoảng cách bảo vệ là 300 mét trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tại Đô thị đặc biệt như TP.HCM và Hà Nội, khoảng cách bảo vệ là 300 mét"
       },
       {
         "key": "b",
-        "text": "Tại khu vực Đô thị loại I, loại II và các tỉnh lân cận, khoảng cách bảo vệ từ 500 mét trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tại khu vực Đô thị loại I, loại II và các tỉnh lân cận, khoảng cách bảo vệ từ 500 mét"
       },
       {
         "key": "c",
-        "text": "Tại khu vực xã, thị trấn hoặc huyện ven, khoảng cách bảo vệ từ 750 mét đến 1.000 mét trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tại khu vực xã, thị trấn hoặc huyện ven, khoảng cách bảo vệ từ 750 mét đến 1.000 mét"
       },
       {
         "key": "d",
@@ -574,15 +574,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chỉ bán cho khách hàng những con cá đã chiên sẵn để ăn qua ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Cung cấp sản phẩm bán lẻ thành phẩm để đối tác chỉ việc phân phối lại mà không cần kỹ năng chế biến."
       },
       {
         "key": "b",
-        "text": "Bắt buộc khách hàng phải tự đóng xe và tự tìm kiếm nguồn nguyên liệu từ đầu do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Yêu cầu đối tác phải tự thiết kế xe và tự nghiên cứu công thức sốt từ đầu mà không có chuẩn mẫu."
       },
       {
         "key": "c",
-        "text": "Chỉ cho thuê xe trong thời gian ngắn rồi thu hồi lại phương tiện do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ cung cấp phương tiện tạm thời trong thời gian ngắn rồi thu hồi lại sau đợt cao điểm."
       },
       {
         "key": "d",
@@ -602,7 +602,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Không cung cấp đồng phục, không bảo vệ khoảng cách, không cấp giấy ATTP do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Không bảo vệ cự ly điểm bán, không cung cấp tài liệu đào tạo, không có chứng nhận ATTP."
       },
       {
         "key": "b",
@@ -610,11 +610,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Không giao hàng tận nơi, không hướng dẫn chiên chả, không hỗ trợ khai trương trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Không hỗ trợ giao hàng chành xe, không có bảng menu giá niêm yết, không hỗ trợ kỹ thuật chế biến."
       },
       {
         "key": "d",
-        "text": "Không cam kết bình ổn giá, không có hợp đồng pháp lý, không cho đổi trả hàng hỏng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Không cam kết bình ổn giá gốc, không có hợp đồng pháp lý bằng văn bản, không hỗ trợ nhận diện thương hiệu."
       }
     ],
     "correctAnswer": "b",
@@ -630,11 +630,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Luôn đặt mình vào hoàn cảnh của người lao động để tư vấn giải pháp mở xe an toàn, vừa túi tiền trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Luôn đặt mình vào hoàn cảnh của người lao động để tư vấn giải pháp mở xe an toàn, vừa túi tiền"
       },
       {
         "key": "b",
-        "text": "Thay chữ 'Tư vấn' bằng chữ 'Giúp', lắng nghe để cùng tháo gỡ khó khăn về mặt bằng và vốn trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thay chữ 'Tư vấn' bằng chữ 'Giúp', lắng nghe để cùng tháo gỡ khó khăn về mặt bằng và vốn"
       },
       {
         "key": "c",
@@ -642,7 +642,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Luôn khắc ghi nguyên tắc: 'Đối tác buôn bán có lời thì công ty mới phát triển bền vững' trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Luôn khắc ghi nguyên tắc: 'Đối tác buôn bán có lời thì công ty mới phát triển bền vững'"
       }
     ],
     "correctAnswer": "c",
@@ -670,7 +670,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Sự thành công của điểm bán là kết quả từ sự phối hợp nhịp nhàng giữa công ty và đối tác trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Sự thành công của điểm bán là kết quả từ sự phối hợp nhịp nhàng giữa công ty và đối tác"
       }
     ],
     "correctAnswer": "a",
@@ -686,7 +686,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Phải đóng tiền thuê mặt bằng cố định từ 20 đến 50 triệu đồng mỗi tháng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Phải đóng tiền thuê mặt bằng cố định từ 20 đến 50 triệu đồng mỗi tháng"
       },
       {
         "key": "b",
@@ -694,11 +694,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Phải thuê mướn đội ngũ đầu bếp và nhân viên phục vụ phức tạp do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Phải thuê mướn đội ngũ đầu bếp và nhân viên phục vụ phức tạp"
       },
       {
         "key": "d",
-        "text": "Cần thời gian xây dựng sửa chữa quán kéo dài từ 3 đến 6 tháng mới bắt đầu kinh doanh được do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Cần thời gian xây dựng sửa chữa quán kéo dài từ 3 đến 6 tháng mới bắt đầu kinh doanh được"
       }
     ],
     "correctAnswer": "b",
@@ -714,7 +714,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khách hàng chỉ bấm like dạo trên mạng xã hội và chưa có ý định kinh doanh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khách hàng chỉ bấm like dạo trên mạng xã hội và chưa có ý định kinh doanh"
       },
       {
         "key": "b",
@@ -722,11 +722,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Khách hàng từ chối nghe điện thoại và yêu cầu không liên hệ lại do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khách hàng từ chối nghe điện thoại và yêu cầu không liên hệ lại"
       },
       {
         "key": "d",
-        "text": "Khách hàng đang kinh doanh mô hình nhà hàng lớn và chỉ muốn khảo sát thị trường do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khách hàng đang kinh doanh mô hình nhà hàng lớn và chỉ muốn khảo sát thị trường"
       }
     ],
     "correctAnswer": "b",
@@ -746,15 +746,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Đã sẵn sàng chuyển khoản 100% tiền gói ngay khi vừa nhấc máy do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đã sẵn sàng chuyển khoản 100% tiền gói ngay khi vừa nhấc máy"
       },
       {
         "key": "c",
-        "text": "Hoàn toàn không có nhu cầu kiếm thêm thu nhập buổi sáng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Hoàn toàn không có nhu cầu kiếm thêm thu nhập buổi sáng"
       },
       {
         "key": "d",
-        "text": "Chỉ quan tâm đến việc mua công thức nước sốt để tự mở thương hiệu riêng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ quan tâm đến việc mua công thức nước sốt để tự mở thương hiệu riêng"
       }
     ],
     "correctAnswer": "a",
@@ -770,11 +770,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Liên tục gọi điện thúc thúc giục dồn dập hàng phải đặt cọc ngay trong ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Liên tục gọi điện thúc thúc giục dồn dập hàng phải đặt cọc ngay trong ngày"
       },
       {
         "key": "b",
-        "text": "Hủy toàn bộ thông tin liên hệ và không bao giờ chăm sóc lại do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Hủy toàn bộ thông tin liên hệ và không bao giờ chăm sóc lại"
       },
       {
         "key": "c",
@@ -782,7 +782,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Chuyển thông tin khách hàng cho các đơn vị nhượng quyền khác ngoài thị trường do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chuyển thông tin khách hàng cho các đơn vị nhượng quyền khác ngoài thị trường"
       }
     ],
     "correctAnswer": "c",
@@ -798,11 +798,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Thiết kế nhận diện mới, Mua máy tính tiền, Tuyển dụng quản lý và Thuê mặt bằng 24/24 trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thiết kế nhận diện mới, Mua máy tính tiền, Tuyển dụng quản lý và Thuê mặt bằng 24/24"
       },
       {
         "key": "b",
-        "text": "Thủ tục xin cấp phép bay, Chi phí quảng cáo truyền hình, Thuê mướn bảo vệ và Mua xe tải trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thủ tục xin cấp phép bay, Chi phí quảng cáo truyền hình, Thuê mướn bảo vệ và Mua xe tải"
       },
       {
         "key": "c",
@@ -830,7 +830,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Khuyên khách hàng nên từ bỏ ý định kinh doanh bánh mì do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khuyên khách hàng nên từ bỏ ý định kinh doanh bánh mì"
       },
       {
         "key": "c",
@@ -838,7 +838,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Bắt buộc khách hàng phải mua kèm tủ đông và máy nướng bánh mới cho mở bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc khách hàng phải mua kèm tủ đông và máy nướng bánh mới cho mở bán"
       }
     ],
     "correctAnswer": "c",
@@ -858,15 +858,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "'Cô Chú có sẵn 50 triệu để thuê mặt bằng nhà phố nguyên căn chưa ạ?' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "'Cô Chú có sẵn 50 triệu để thuê mặt bằng nhà phố nguyên căn chưa ạ?'"
       },
       {
         "key": "c",
-        "text": "'Cô Chú hãy đi ký hợp đồng thuê sạp chợ 10 năm ngay hôm nay đi ạ.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "'Cô Chú hãy đi ký hợp đồng thuê sạp chợ 10 năm ngay hôm nay đi ạ.'"
       },
       {
         "key": "d",
-        "text": "'Sao Cô Chú không mua hẳn một căn nhà mặt tiền để tiện buôn bán?' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "'Sao Cô Chú không mua hẳn một căn nhà mặt tiền để tiện buôn bán?'"
       }
     ],
     "correctAnswer": "a",
@@ -882,15 +882,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khách hàng phải tự đi học lớp đầu bếp chuyên nghiệp 6 tháng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khách hàng phải tự đi học lớp đầu bếp chuyên nghiệp 6 tháng"
       },
       {
         "key": "b",
-        "text": "Khách hàng phải thuê đầu bếp tay nghề cao về đứng xe bán hàng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khách hàng phải thuê đầu bếp tay nghề cao về đứng xe bán hàng"
       },
       {
         "key": "c",
-        "text": "Công ty chỉ giao cá nguyên con về cho đối tác tự xay và tự nêm nếm gia vị do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Công ty chỉ giao cá nguyên con về cho đối tác tự xay và tự nêm nếm gia vị"
       },
       {
         "key": "d",
@@ -910,7 +910,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc khách hàng phải chịu hoàn toàn rủi ro và không được hỗ trợ khi ngưng bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc khách hàng phải chịu hoàn toàn rủi ro và không được hỗ trợ khi ngưng bán"
       },
       {
         "key": "b",
@@ -918,11 +918,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Cam kết trả lương cứng 20 triệu đồng mỗi tháng cho người mở xe do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Cam kết trả lương cứng 20 triệu đồng mỗi tháng cho người mở xe"
       },
       {
         "key": "d",
-        "text": "Tặng không xe bánh mì mà không cần ký kết bất kỳ hợp đồng nào do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tặng không xe bánh mì mà không cần ký kết bất kỳ hợp đồng nào"
       }
     ],
     "correctAnswer": "b",
@@ -942,15 +942,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Yêu cầu khách hàng đọc số tài khoản ngân hàng để chuyển tiền cọc ngay lập tức do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Yêu cầu khách hàng đọc số tài khoản ngân hàng để chuyển tiền cọc ngay lập tức"
       },
       {
         "key": "c",
-        "text": "Đọc toàn bộ điều khoản hợp đồng pháp lý trong 15 phút đầu tiên do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đọc toàn bộ điều khoản hợp đồng pháp lý trong 15 phút đầu tiên"
       },
       {
         "key": "d",
-        "text": "Hỏi thông tin cá nhân riêng tư và số dư tài khoản của khách hàng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Hỏi thông tin cá nhân riêng tư và số dư tài khoản của khách hàng"
       }
     ],
     "correctAnswer": "a",
@@ -966,11 +966,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Nói liên tục không ngắt nghỉ để khách hàng không kịp đặt câu hỏi do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Nói liên tục không ngắt nghỉ để khách hàng không kịp đặt câu hỏi"
       },
       {
         "key": "b",
-        "text": "Tắt máy ngay khi khách hàng vừa nêu ra một khó khăn về tài chính do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tắt máy ngay khi khách hàng vừa nêu ra một khó khăn về tài chính"
       },
       {
         "key": "c",
@@ -978,7 +978,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Ngắt lời khách hàng liên tục để quảng cáo về các giải thưởng của công ty do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Ngắt lời khách hàng liên tục để quảng cáo về các giải thưởng của công ty"
       }
     ],
     "correctAnswer": "c",
@@ -994,19 +994,19 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "'Tiền cọc này là công ty thu phí dịch vụ tư vấn qua điện thoại ạ.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tiền cọc này là chi phí công ty thu cố định để chi trả cho các buổi đào tạo trực tiếp tại văn phòng."
       },
       {
         "key": "b",
-        "text": "'Công ty bắt buộc thu cọc để phạt nếu Cô Chú không chịu mở bán.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tiền cọc này được giữ lại làm quỹ bảo lãnh hợp đồng và hoàn trả sau khi kết thúc 1 năm bán hàng."
       },
       {
         "key": "c",
-        "text": "'Đây là tiền đóng quỹ từ thiện của chuỗi bánh mì toàn quốc ạ.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tiền cọc này là khoản đóng góp tự nguyện để hỗ trợ các chiến dịch truyền thông thương hiệu toàn quốc."
       },
       {
         "key": "d",
-        "text": "'Tiền cọc 2 triệu là để khóa giữ tọa độ điểm bán độc quyền trên Map Tracker và xưởng tiến hành gia công xe, in decal nhận diện, số tiền này được cấn trừ 100% khi nhận xe ạ.'"
+        "text": "Tiền cọc 2 triệu là để khóa giữ tọa độ điểm bán độc quyền trên Map Tracker và xưởng tiến hành gia công xe, in decal nhận diện, số tiền này được cấn trừ 100% khi nhận xe ạ."
       }
     ],
     "correctAnswer": "d",
@@ -1026,15 +1026,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Xóa toàn bộ lịch sử cuộc gọi để làm trống bộ nhớ hệ thống do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Xóa toàn bộ lịch sử cuộc gọi để làm trống bộ nhớ hệ thống"
       },
       {
         "key": "c",
-        "text": "Chỉ lưu số điện thoại mà không cần ghi chép bất kỳ nội dung nào do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ lưu số điện thoại mà không cần ghi chép bất kỳ nội dung nào"
       },
       {
         "key": "d",
-        "text": "Tự động phân loại đại trà toàn bộ danh sách thành nhóm đã chốt hợp đồng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tự động phân loại đại trà toàn bộ danh sách thành nhóm đã chốt hợp đồng"
       }
     ],
     "correctAnswer": "a",
@@ -1050,11 +1050,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Nghiêm cấm đối tác mở thêm điểm bán thứ hai theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Nghiêm cấm đối tác mở thêm điểm bán thứ hai"
       },
       {
         "key": "b",
-        "text": "Tăng gấp đôi phí nhượng quyền đối với điểm bán thứ hai do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tăng gấp đôi phí nhượng quyền đối với điểm bán thứ hai"
       },
       {
         "key": "c",
@@ -1062,7 +1062,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Bắt buộc đối tác phải chuyển giao điểm bán đầu tiên cho người khác mới được mở điểm mới do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc đối tác phải chuyển giao điểm bán đầu tiên cho người khác mới được mở điểm mới"
       }
     ],
     "correctAnswer": "c",
@@ -1078,15 +1078,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Điểm bán buôn bán đắt hàng và có thu nhập ổn định thì công ty mới phát triển bền vững trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Điểm bán buôn bán đắt hàng và có thu nhập ổn định thì công ty mới phát triển bền vững"
       },
       {
         "key": "b",
-        "text": "Công ty duy trì chính sách 0đ phí nhượng quyền hàng tháng và 0% trích doanh số bán bánh trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Công ty duy trì chính sách 0đ phí nhượng quyền hàng tháng và 0% trích doanh số bán bánh"
       },
       {
         "key": "c",
-        "text": "Công ty cam kết nỗ lực bình ổn giá nguyên vật liệu cung ứng cho các điểm bán trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Công ty cam kết nỗ lực bình ổn giá nguyên vật liệu cung ứng cho các điểm bán"
       },
       {
         "key": "d",
@@ -1110,15 +1110,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "100% điểm bán đều đạt mức thu nhập 100 triệu đồng mỗi tháng ngay từ tuần đầu tiên do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "100% điểm bán đều đạt mức thu nhập 100 triệu đồng mỗi tháng ngay từ tuần đầu tiên"
       },
       {
         "key": "c",
-        "text": "90% điểm bán đều bị thua lỗ và không có thu nhập theo thói quen kinh doanh tự phát ngoài thị trường."
+        "text": "90% điểm bán đều bị thua lỗ và không có thu nhập"
       },
       {
         "key": "d",
-        "text": "Các điểm bán trên toàn quốc đều có mức thu nhập cố định đúng 2 triệu đồng/tháng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Các điểm bán trên toàn quốc đều có mức thu nhập cố định đúng 2 triệu đồng/tháng"
       }
     ],
     "correctAnswer": "a",
@@ -1134,7 +1134,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chỉ là một thương hiệu tự phát mới thành lập không có pháp nhân rõ ràng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chỉ là một thương hiệu tự phát mới thành lập không có pháp nhân rõ ràng"
       },
       {
         "key": "b",
@@ -1142,11 +1142,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Chỉ có 1 xe bánh mì duy nhất tại quận trung tâm và chưa từng mở rộng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ có 1 xe bánh mì duy nhất tại quận trung tâm và chưa từng mở rộng"
       },
       {
         "key": "d",
-        "text": "Doanh nghiệp không có nhà xưởng và phải nhập khẩu bánh mì đông lạnh từ nước ngoài do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Doanh nghiệp không có nhà xưởng và phải nhập khẩu bánh mì đông lạnh từ nước ngoài"
       }
     ],
     "correctAnswer": "b",
@@ -1162,11 +1162,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chả cá sợi sử dụng nhiều hàn the và phẩm màu để giữ được lâu do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chả cá sợi sử dụng nhiều hàn the và phẩm màu để giữ được lâu"
       },
       {
         "key": "b",
-        "text": "Chả cá sợi được pha trộn 80% bột mì để giảm giá thành tối đa do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chả cá sợi được pha trộn 80% bột mì để giảm giá thành tối đa"
       },
       {
         "key": "c",
@@ -1174,7 +1174,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Nước sốt có vị cay nồng gắt và không có chứng nhận an toàn thực phẩm do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Nước sốt có vị cay nồng gắt và không có chứng nhận an toàn thực phẩm"
       }
     ],
     "correctAnswer": "c",
@@ -1194,20 +1194,20 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Hỗ trợ kết nối chuyển nhượng điểm bán hoàn toàn miễn phí 0 đồng khi đối tác có nhu cầu sang nhượng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Hỗ trợ kết nối chuyển nhượng điểm bán hoàn toàn miễn phí 0 đồng khi đối tác có nhu cầu sang nhượng"
       },
       {
         "key": "c",
-        "text": "Đồng hành tư vấn tháo gỡ các vướng mắc vận hành để giúp điểm bán sớm kinh doanh ổn định trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đồng hành tư vấn tháo gỡ các vướng mắc vận hành để giúp điểm bán sớm kinh doanh ổn định"
       },
       {
         "key": "d",
-        "text": "Công ty tịch thu toàn bộ số tiền mua gói và cấm đối tác chuyển nhượng điểm bán khi gặp khó khăn cá nhân."
+        "text": "Công ty không có chính sách bảo chứng thu hồi xe và không hỗ trợ đối tác chuyển nhượng khi gặp hoàn cảnh phát sinh."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Má Hải luôn nhân văn đồng hành: Có chính sách thu hồi xe 60 ngày (hoàn tối đa 2,8 triệu) và hỗ trợ sang nhượng 0đ chứ không bao giờ tịch thu tiền của khách.",
-    "quote": "Bên con hỗ trợ thu hồi xe trong 60 ngày hoặc giúp sang nhượng lại 0 đồng, công ty luôn tạo đường lùi an toàn nhất cho Cô Chú an tâm khởi nghiệp!"
+    "explanation": "Má Hải luôn nhân văn đồng hành: Có chính sách bảo chứng thu hồi xe trong 60 ngày (hoàn tối đa 2,8 triệu) và hỗ trợ kết nối thủ tục sang nhượng 0đ hoàn toàn miễn phí.",
+    "quote": "Má Hải có chính sách bảo chứng thu hồi xe trong 60 ngày hoàn lại lên đến 2,8 triệu và hỗ trợ sang nhượng 0đ để Cô Chú an tâm khởi sự!"
   },
   {
     "id": "sale-44",
@@ -1218,11 +1218,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chỉ được hướng dẫn bằng miệng một lần duy nhất qua điện thoại do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ chuyển giao một lần bằng tài liệu giấy tổng quát trong ngày nhận bàn giao xe."
       },
       {
         "key": "b",
-        "text": "Bắt buộc phải đến trụ sở chính tại TP.HCM học việc tập trung trong 3 tháng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc học viên phải tham gia khóa học trực tiếp kéo dài nhiều tháng tại các trung tâm đào tạo nghề."
       },
       {
         "key": "c",
@@ -1230,7 +1230,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Không có tài liệu hướng dẫn và phải tự mò mẫm cách làm bánh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ hướng dẫn thao tác cơ bản và để đối tác tự tìm nguồn đặt các loại nguyên liệu phụ trợ bên ngoài."
       }
     ],
     "correctAnswer": "c",
@@ -1246,7 +1246,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc đối tác phải đóng thêm 50 triệu đồng tiền ký quỹ thương hiệu mới được bàn giao xe do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Mức vốn đầu tư cố định từ 30 – 50 triệu đồng tương tự như các chuỗi đồ uống, trà sữa nhượng quyền."
       },
       {
         "key": "b",
@@ -1254,11 +1254,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Chỉ dành riêng cho các nhà đầu tư lớn có nguồn vốn nhàn rỗi hàng tỷ đồng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Yêu cầu đối tác phải chứng minh năng lực tài chính với số dư tài khoản ngân hàng lớn trước khi hợp tác."
       },
       {
         "key": "d",
-        "text": "Chi phí mua gói bằng với việc mở một nhà hàng ăn uống cao cấp do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Mức vốn đầu tư tương đương với việc thuê mướn và cải tạo một mặt bằng ki-ốt kinh doanh ăn uống cố định."
       }
     ],
     "correctAnswer": "b",
@@ -1274,15 +1274,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Gọi điện ngẫu nhiên, Thúc giục dồn dập cọc tiền, Tắt máy khi khách hỏi khó và Xóa thông tin khách hàng."
+        "text": "Gọi điện ngẫu nhiên theo danh bạ mà không phân loại nhu cầu và không kiểm tra lịch sử trao đổi trước đó."
       },
       {
         "key": "b",
-        "text": "Đăng bài quảng cáo, Chờ khách tự chuyển khoản, Giao hàng không kiểm tra và Khóa liên lạc do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Dồn toàn bộ thời gian cho nhóm khách chưa có nhu cầu và bỏ quên nhóm khách hàng đang cần tư vấn gấp."
       },
       {
         "key": "c",
-        "text": "Chỉ gọi điện cho người thân quen và bỏ qua các liên hệ đăng ký trên website do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Ghi nhận thông tin vào sổ tay cá nhân và không đồng bộ dữ liệu trạng thái chăm sóc lên hệ thống chung."
       },
       {
         "key": "d",
@@ -1306,7 +1306,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Ghi nhận đầy đủ và trung thực nội dung vừa trao đổi với khách hàng lên phần mềm trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Ghi nhận đầy đủ và trung thực nội dung vừa trao đổi với khách hàng lên phần mềm"
       },
       {
         "key": "c",
@@ -1330,15 +1330,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bày nhiều bàn ghế nhựa lấn chiếm toàn bộ vỉa hè để khách ngồi ăn tại chỗ suốt cả ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bố trí không gian cho khách ngồi ăn tại chỗ kéo dài sang các khung giờ buổi trưa và chiều tối."
       },
       {
         "key": "b",
-        "text": "Lắp đặt loa công suất lớn phát nhạc ồn ào để thu hút sự chú ý của người đi đường do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Sử dụng xe kích thước cồng kềnh chiếm trọn bề ngang vỉa hè để tăng diện tích trưng bày hàng hóa."
       },
       {
         "key": "c",
-        "text": "Xả dầu chiên và rác thải trực tiếp ra lòng đường sau khi kết thúc ca bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Mở bán xuyên suốt cả ngày từ sáng sớm đến đêm muộn ngoài khung giờ bán hàng sáng tối ưu."
       },
       {
         "key": "d",
@@ -1362,15 +1362,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Giá vốn khoảng 14.500đ/ổ và chỉ lời được 500 đồng mỗi ổ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Giá vốn chiếm trên 90% giá bán lẻ khiến tiền lời ròng chỉ đạt khoảng 500 đồng đến 1.000 đồng mỗi ổ."
       },
       {
         "key": "c",
-        "text": "Giá vốn khoảng 3.000đ/ổ và tiền lời lên đến 12.000đ mỗi ổ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Giá vốn chiếm dưới 30% giá bán lẻ tương tự như các mặt hàng giải khát có biên lợi nhuận đột biến."
       },
       {
         "key": "d",
-        "text": "Mô hình bánh mì không có tiền lời và chủ yếu bán hòa vốn để quảng cáo thương hiệu do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Giá vốn biến động thất thường theo từng ngày do không có chính sách bình ổn giá nguyên liệu đầu vào."
       }
     ],
     "correctAnswer": "a",
@@ -1386,7 +1386,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Không áp dụng chính sách bảo vệ khoảng cách tại các huyện ngoại thành do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Không áp dụng chính sách bảo vệ cự ly tại các huyện ngoại thành do mật độ dân cư thưa thớt."
       },
       {
         "key": "b",
@@ -1394,11 +1394,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Chỉ bảo vệ khoảng cách 50 mét giữa hai điểm bán gần nhau do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ bảo vệ khoảng cách 100 mét giữa các xe do địa bàn ngoại thành có nhiều tuyến đường giao thông liên xã."
       },
       {
         "key": "d",
-        "text": "Bắt buộc khoảng cách giữa hai xe phải cách nhau tối thiểu 20 km mới được mở bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khoảng cách bảo vệ phụ thuộc hoàn toàn vào thỏa thuận tự phát giữa các chủ xe mà không qua hệ thống bản đồ số."
       }
     ],
     "correctAnswer": "b",
@@ -1414,7 +1414,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Nằm trong hẻm sâu cụt, ít người qua lại và yên tĩnh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Nằm trong hẻm sâu cụt, ít người qua lại và yên tĩnh"
       },
       {
         "key": "b",
@@ -1422,11 +1422,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Nằm ở tầng thượng của các tòa nhà chung cư cao tầng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Nằm ở tầng thượng của các tòa nhà chung cư cao tầng"
       },
       {
         "key": "d",
-        "text": "Nằm trên đường cao tốc cấm các phương tiện xe máy dừng đỗ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Nằm trên đường cao tốc cấm các phương tiện xe máy dừng đỗ"
       }
     ],
     "correctAnswer": "b",
@@ -1446,15 +1446,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Từ 11h00 trưa đến 14h00 chiều trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Từ 11h00 trưa đến 14h00 chiều"
       },
       {
         "key": "c",
-        "text": "Từ 17h00 chiều đến 22h00 đêm trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Từ 17h00 chiều đến 22h00 đêm"
       },
       {
         "key": "d",
-        "text": "Từ 0h00 đêm đến 4h00 sáng hôm sau trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Từ 0h00 đêm đến 4h00 sáng hôm sau"
       }
     ],
     "correctAnswer": "a",
@@ -1470,11 +1470,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Thuê nguyên căn nhà phố 3 tầng với giá 40 triệu đồng/tháng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Thuê nguyên căn nhà phố 3 tầng với giá 40 triệu đồng/tháng"
       },
       {
         "key": "b",
-        "text": "Đấu thầu gian hàng thương mại trong trung tâm thương mại lớn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đấu thầu gian hàng thương mại trong trung tâm thương mại lớn"
       },
       {
         "key": "c",
@@ -1482,7 +1482,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Mua đứt mảnh đất mặt tiền đường lớn để đặt xe bán hàng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Mua đứt mảnh đất mặt tiền đường lớn để đặt xe bán hàng"
       }
     ],
     "correctAnswer": "c",
@@ -1498,15 +1498,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "50 mét theo đường nội bộ theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "50 mét theo đường nội bộ"
       },
       {
         "key": "b",
-        "text": "100 mét giữa các cổng phân xưởng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "100 mét giữa các cổng phân xưởng"
       },
       {
         "key": "c",
-        "text": "300 mét cố định cho mọi địa hình theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "300 mét cố định cho mọi địa hình"
       },
       {
         "key": "d",
@@ -1530,15 +1530,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Màu sơn của các tòa nhà chung cư xung quanh do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Màu sơn của các tòa nhà chung cư xung quanh"
       },
       {
         "key": "c",
-        "text": "Tốc độ gió và hướng ánh sáng mặt trời lúc giữa trưa do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tốc độ gió và hướng ánh sáng mặt trời lúc giữa trưa"
       },
       {
         "key": "d",
-        "text": "Số lượng xe tải hạng nặng chạy qua vào ban đêm do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Số lượng xe tải hạng nặng chạy qua vào ban đêm"
       }
     ],
     "correctAnswer": "a",
@@ -1554,7 +1554,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bản vẽ thiết kế kiến trúc chi tiết của ngôi nhà do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Bản vẽ thiết kế kiến trúc chi tiết của ngôi nhà"
       },
       {
         "key": "b",
@@ -1562,11 +1562,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Sổ đỏ hoặc giấy chứng nhận quyền sử dụng đất công chứng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Sổ đỏ hoặc giấy chứng nhận quyền sử dụng đất công chứng"
       },
       {
         "key": "d",
-        "text": "Bản sao kê tài khoản ngân hàng của chủ nhà cho thuê trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Bản sao kê tài khoản ngân hàng của chủ nhà cho thuê"
       }
     ],
     "correctAnswer": "b",
@@ -1582,11 +1582,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Vẫn chấp nhận thu tiền cọc và cho mở bán bình thường do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vẫn chấp nhận thu tiền cọc và cho mở bán bình thường"
       },
       {
         "key": "b",
-        "text": "Đơn phương hủy hợp đồng với điểm bán cũ để nhường chỗ cho điểm mới do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đơn phương hủy hợp đồng với điểm bán cũ để nhường chỗ cho điểm mới"
       },
       {
         "key": "c",
@@ -1594,7 +1594,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Phạt tiền điểm bán cũ vì không chịu tăng doanh số do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Hạn chế quyền lợi điểm bán cũ vì không chịu tăng doanh số"
       }
     ],
     "correctAnswer": "c",
@@ -1610,7 +1610,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Lúc 4h00 sáng để chiên sẵn toàn bộ chả cá cho cả ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Lúc 4h00 sáng để chiên sẵn toàn bộ chả cá cho cả ngày"
       },
       {
         "key": "b",
@@ -1618,11 +1618,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Lúc 7h30 sáng khi khách hàng đã đi làm gần hết do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Lúc 7h30 sáng khi khách hàng đã đi làm gần hết"
       },
       {
         "key": "d",
-        "text": "Lúc 9h00 sáng khi hết giờ cao điểm buổi sáng do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Lúc 9h00 sáng khi hết giờ cao điểm buổi sáng"
       }
     ],
     "correctAnswer": "b",
@@ -1642,15 +1642,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Vì công ty không đủ năng lực cung cấp nguyên liệu vào buổi chiều do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vì công ty không đủ năng lực cung cấp nguyên liệu vào buổi chiều"
       },
       {
         "key": "c",
-        "text": "Vì buổi chiều chính quyền nghiêm cấm các phương tiện bán thức ăn đường phố do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vì buổi chiều chính quyền nghiêm cấm các phương tiện bán thức ăn đường phố"
       },
       {
         "key": "d",
-        "text": "Vì người dân Việt Nam không bao giờ ăn bánh mì vào buổi chiều do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vì người dân Việt Nam không bao giờ ăn bánh mì vào buổi chiều"
       }
     ],
     "correctAnswer": "a",
@@ -1666,11 +1666,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Yêu cầu chủ nhà giao toàn bộ chìa khóa phòng ngủ cho người bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Yêu cầu chủ nhà giao toàn bộ chìa khóa phòng ngủ cho người bán"
       },
       {
         "key": "b",
-        "text": "Bắt buộc chủ nhà phải đứng ra chiên chả cá phụ người bán mỗi sáng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc chủ nhà phải đứng ra chiên chả cá phụ người bán mỗi sáng"
       },
       {
         "key": "c",
@@ -1678,7 +1678,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Cam kết chia 50% doanh thu bán bánh mì cho chủ nhà do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Cam kết chia 50% doanh thu bán bánh mì cho chủ nhà"
       }
     ],
     "correctAnswer": "c",
@@ -1698,15 +1698,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Gần cổng trường học cấp 1, cấp 2 và trường đại học do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Gần cổng trường học cấp 1, cấp 2 và trường đại học"
       },
       {
         "key": "c",
-        "text": "Trước cổng bệnh viện hoặc khu văn phòng công sở theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Trước cổng bệnh viện hoặc khu văn phòng công sở"
       },
       {
         "key": "d",
-        "text": "Gần các ngã tư đèn đỏ có lượng người dừng chờ xe đông đúc do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Gần các ngã tư đèn đỏ có lượng người dừng chờ xe đông đúc"
       }
     ],
     "correctAnswer": "a",
@@ -1722,7 +1722,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Được sử dụng miễn phí máy pha cà phê của quán theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Được sử dụng miễn phí máy pha cà phê của quán"
       },
       {
         "key": "b",
@@ -1730,11 +1730,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Chủ xe không cần phải chiên chả cá mà quán cà phê làm thay do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chủ xe không cần phải chiên chả cá mà quán cà phê làm thay"
       },
       {
         "key": "d",
-        "text": "Chủ quán cà phê sẽ bao tiêu 100% số lượng bánh mì mỗi ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chủ quán cà phê sẽ bao tiêu 100% số lượng bánh mì mỗi ngày"
       }
     ],
     "correctAnswer": "b",
@@ -1750,19 +1750,19 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "'Không được phép chuyển điểm bán trong mọi trường hợp.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đối tác tự ý dời xe đến bất kỳ vị trí nào mà không cần kiểm tra lại khoảng cách bảo vệ với các xe xung quanh."
       },
       {
         "key": "b",
-        "text": "'Đối tác phải đóng phạt 10 triệu đồng mới được chuyển địa điểm.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đối tác phải đăng ký mua lại một gói hợp tác mới từ đầu để được cấp quyền bán tại địa chỉ mới."
       },
       {
         "key": "c",
-        "text": "'Đối tác được chuyển sang vị trí mới sau khi gửi định vị để công ty quét Map Tracker xác nhận không bị trùng khoảng cách bảo vệ với xe khác.'"
+        "text": "Đối tác được chuyển sang vị trí mới sau khi gửi định vị để công ty quét Map Tracker xác nhận không bị trùng khoảng cách bảo vệ với xe khác."
       },
       {
         "key": "d",
-        "text": "'Đối tác phải mua lại một gói hợp tác mới từ đầu.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đối tác chỉ được phép chuyển xe vào các khung giờ buổi chiều tối ngoài khung giờ bán hàng chính 5h30–9h00."
       }
     ],
     "correctAnswer": "c",
@@ -1778,11 +1778,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Thao tác làm bánh nhanh gọn trong vòng 1 đến 2 phút cho mỗi khách hàng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thao tác làm bánh nhanh gọn trong vòng 1 đến 2 phút cho mỗi khách hàng"
       },
       {
         "key": "b",
-        "text": "Khách hàng mua mang đi nhanh chóng không phải chờ đợi lâu trên đường đi làm trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khách hàng mua mang đi nhanh chóng không phải chờ đợi lâu trên đường đi làm"
       },
       {
         "key": "c",
@@ -1790,7 +1790,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Chả cá sợi chiên sẵn theo mẻ nhỏ giúp thao tác kẹp bánh nóng giòn tức thì trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chả cá sợi chiên sẵn theo mẻ nhỏ giúp thao tác kẹp bánh nóng giòn tức thì"
       }
     ],
     "correctAnswer": "c",
@@ -1810,15 +1810,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Gói 10,3 triệu đồng (Gói Xe Mới đầy đủ tiện ích) theo thói quen kinh doanh tự phát ngoài thị trường."
+        "text": "Gói 10,3 triệu đồng (Gói Xe Mới đầy đủ tiện ích)"
       },
       {
         "key": "c",
-        "text": "Gói 50 triệu đồng dành cho đại lý phân phối cấp tỉnh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Gói 50 triệu đồng dành cho đại lý phân phối cấp tỉnh"
       },
       {
         "key": "d",
-        "text": "Không có gói nào phù hợp với mức vốn dưới 10 triệu đồng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Không có gói nào phù hợp với mức vốn dưới 10 triệu đồng"
       }
     ],
     "correctAnswer": "a",
@@ -1862,11 +1862,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chủ xe bị phạt 5 triệu đồng cho mỗi ngày nghỉ bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đối tác phải làm thủ tục chấm dứt hợp đồng và bàn giao lại xe ngay khi phát sinh việc gia đình."
       },
       {
         "key": "b",
-        "text": "Công ty lập tức thu hồi xe và chuyển giao điểm bán cho người khác do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đối tác phải chuyển nhượng lại toàn bộ nguyên vật liệu tồn cho một điểm bán khác trong cùng khu vực."
       },
       {
         "key": "c",
@@ -1874,7 +1874,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Bắt buộc đối tác phải thuê người ngoài đứng bán thay bằng mọi giá do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đối tác bắt buộc phải mở bán liên tục không được phép nghỉ bất kỳ ngày nào kể cả dịp lễ tết."
       }
     ],
     "correctAnswer": "c",
@@ -1890,7 +1890,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Giấy viết tay cam kết lợi nhuận của một người môi giới tự do ngoài đường do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Giấy viết tay cam kết lợi nhuận của một người môi giới tự do ngoài đường"
       },
       {
         "key": "b",
@@ -1898,11 +1898,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Các bài viết nặc danh không rõ nguồn gốc trên các diễn đàn mạng xã hội do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Các bài viết nặc danh không rõ nguồn gốc trên các diễn đàn mạng xã hội"
       },
       {
         "key": "d",
-        "text": "Hình ảnh chụp các quán ăn sang trọng ở nước ngoài do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Hình ảnh chụp các quán ăn sang trọng ở nước ngoài"
       }
     ],
     "correctAnswer": "b",
@@ -1930,7 +1930,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Chất lượng và định lượng chả cá sợi trong ổ bánh mì phải luôn được bảo đảm đồng đều trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chất lượng và định lượng chả cá sợi trong ổ bánh mì phải luôn được bảo đảm đồng đều"
       }
     ],
     "correctAnswer": "a",
@@ -1946,15 +1946,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Vì công ty không quan tâm đến sự phát triển của hệ thống điểm bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vì công ty không quan tâm đến sự phát triển của hệ thống điểm bán"
       },
       {
         "key": "b",
-        "text": "Vì công ty muốn thu hút người mua rồi sau đó sẽ bất ngờ tăng giá nguyên liệu gấp 10 lần do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vì công ty muốn thu hút người mua rồi sau đó sẽ bất ngờ tăng giá nguyên liệu gấp 10 lần"
       },
       {
         "key": "c",
-        "text": "Vì đây là chương trình thử nghiệm ngắn hạn trong 1 tuần rồi sẽ hủy bỏ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vì đây là chương trình thử nghiệm ngắn hạn trong 1 tuần rồi sẽ hủy bỏ"
       },
       {
         "key": "d",
@@ -1978,11 +1978,11 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Đặt cọc 2 triệu giúp công ty khóa giữ vị trí độc quyền khoảng cách trên Map Tracker cho khách hàng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đặt cọc 2 triệu giúp công ty khóa giữ vị trí độc quyền khoảng cách trên Map Tracker cho khách hàng"
       },
       {
         "key": "c",
-        "text": "Số tiền cọc 2 triệu được cấn trừ 100% vào giá trị gói khi hoàn tất giao nhận phương tiện trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Số tiền cọc 2 triệu được cấn trừ 100% vào giá trị gói khi hoàn tất giao nhận phương tiện"
       },
       {
         "key": "d",
@@ -2006,20 +2006,20 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Tịch thu toàn bộ phương tiện và yêu cầu đóng thêm tiền bồi thường hợp đồng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ áp dụng bảo dưỡng khung xe mà không có chính sách thu hồi hỗ trợ hoàn tiền cho đối tác."
       },
       {
         "key": "c",
-        "text": "Từ chối tiếp nhận thông tin và bắt buộc đối tác phải tiếp tục mở bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Yêu cầu đối tác phải tự liên hệ các điểm thu mua đồ cũ trên thị trường tự do để tự thanh lý xe."
       },
       {
         "key": "d",
-        "text": "Hoàn trả 100% toàn bộ tiền nguyên liệu đã sử dụng trong suốt 2 tháng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Hoàn lại toàn bộ chi phí nguyên vật liệu chả cá và tiền thuê hiên nhà đã chi trả trong 2 tháng."
       }
     ],
     "correctAnswer": "a",
     "explanation": "Chính sách nhân văn: Hỗ trợ thu hồi xe trong 60 ngày hoàn tối đa 2,8 triệu tùy hiện trạng thực tế hoặc kết nối sang nhượng 0 đồng.",
-    "quote": "Bên con có chính sách thu hồi xe trong 60 ngày hoàn tối đa 2,8 triệu tùy hiện trạng thực tế, luôn đồng hành tạo sự an tâm cao nhất cho Cô Chú!"
+    "quote": "Chính sách nhân văn của Má Hải: Hỗ trợ thu hồi xe trong 60 ngày hoàn tối đa 2,8 triệu tùy hiện trạng thực tế hoặc kết nối sang nhượng 0 đồng."
   },
   {
     "id": "sale-73",
@@ -2030,7 +2030,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bánh mì được bảo quản trong tủ cấp đông nhiều ngày rồi mang ra rã đông do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bánh mì được bảo quản trong tủ cấp đông nhiều ngày rồi mang ra rã đông"
       },
       {
         "key": "b",
@@ -2038,11 +2038,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Sử dụng các loại hóa chất tạo độ giòn nhân tạo vào vỏ bánh mì do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Sử dụng các loại hóa chất tạo độ giòn nhân tạo vào vỏ bánh mì"
       },
       {
         "key": "d",
-        "text": "Bánh mì được nướng sẵn từ đêm hôm trước và để ngoài trời do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bánh mì được nướng sẵn từ đêm hôm trước và để ngoài trời"
       }
     ],
     "correctAnswer": "b",
@@ -2058,11 +2058,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chả cá sợi Má Hải có hàm lượng đạm kiểm nghiệm đạt 17% từ thịt cá biển tươi trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chả cá sợi Má Hải có hàm lượng đạm kiểm nghiệm đạt 17% từ thịt cá biển tươi"
       },
       {
         "key": "b",
-        "text": "Nước sốt Tứ Vị đóng can tiện lợi đạt các tiêu chuẩn kiểm nghiệm an toàn thực phẩm trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Nước sốt Tứ Vị đóng can tiện lợi đạt các tiêu chuẩn kiểm nghiệm an toàn thực phẩm"
       },
       {
         "key": "c",
@@ -2086,7 +2086,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chủ động đặt câu hỏi gợi mở để lắng nghe xem khách còn băn khoăn điều gì nhất nhằm hỗ trợ tháo gỡ trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chủ động đặt câu hỏi gợi mở để lắng nghe xem khách còn băn khoăn điều gì nhất nhằm hỗ trợ tháo gỡ"
       },
       {
         "key": "b",
@@ -2114,7 +2114,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Từ 80°C đến 100°C (nước sôi lăn tăn) do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Từ 80°C đến 100°C (nước sôi lăn tăn)"
       },
       {
         "key": "b",
@@ -2122,11 +2122,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Trên 250°C (dầu bốc khói đen đặc) do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Trên 250°C (dầu bốc khói đen đặc)"
       },
       {
         "key": "d",
-        "text": "Dùng dầu nguội không cần đun nóng do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Dùng dầu nguội không cần đun nóng"
       }
     ],
     "correctAnswer": "b",
@@ -2142,11 +2142,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "90% rau dưa và 10% chả cá sợi chiên theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "90% rau dưa và 10% chả cá sợi chiên"
       },
       {
         "key": "b",
-        "text": "50% ớt cay xé lưỡi và 50% bánh mì nguội theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "50% ớt cay xé lưỡi và 50% bánh mì nguội"
       },
       {
         "key": "c",
@@ -2154,7 +2154,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "100% chỉ có chả cá và không cho bất kỳ loại rau sốt nào do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "100% chỉ có chả cá và không cho bất kỳ loại rau sốt nào"
       }
     ],
     "correctAnswer": "c",
@@ -2174,15 +2174,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Chỉ có giấy viết tay cam kết miệng của cơ sở thủ công do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ có giấy viết tay cam kết miệng của cơ sở thủ công"
       },
       {
         "key": "c",
-        "text": "Chứng nhận tiêu chuẩn xây dựng nhà xưởng cấp 4 do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chứng nhận tiêu chuẩn xây dựng nhà xưởng cấp 4"
       },
       {
         "key": "d",
-        "text": "Chứng chỉ kiểm định phương tiện giao thông đường bộ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chứng chỉ kiểm định phương tiện giao thông đường bộ"
       }
     ],
     "correctAnswer": "a",
@@ -2198,15 +2198,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chiên dồn toàn bộ 5kg chả cá vào chảo trong một lần duy nhất do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chiên dồn toàn bộ 5kg chả cá vào chảo trong một lần duy nhất"
       },
       {
         "key": "b",
-        "text": "Chiên chả cá ngập trong nước sôi thay vì dùng dầu ăn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chiên chả cá ngập trong nước sôi thay vì dùng dầu ăn"
       },
       {
         "key": "c",
-        "text": "Tắt bếp gas ngay khi vừa thả chả cá vào chảo theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tắt bếp gas ngay khi vừa thả chả cá vào chảo"
       },
       {
         "key": "d",
@@ -2226,11 +2226,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Để chả cá ngoài trời nắng gắt trong suốt cả tuần theo thói quen kinh doanh tự phát ngoài thị trường."
+        "text": "Để chả cá ngoài trời nắng gắt trong suốt cả tuần"
       },
       {
         "key": "b",
-        "text": "Ngâm chả cá trong xô nước lã để giữ độ ẩm theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Ngâm chả cá trong xô nước lã để giữ độ ẩm"
       },
       {
         "key": "c",
@@ -2238,7 +2238,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Để chả cá cạnh bếp gas đang cháy nóng liên tục theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Để chả cá cạnh bếp gas đang cháy nóng liên tục"
       }
     ],
     "correctAnswer": "c",
@@ -2258,15 +2258,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Dùng tay trần cầm trực tiếp rau dưa và chả cá sau khi vừa đếm tiền do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Dùng tay trần cầm trực tiếp rau dưa và chả cá sau khi vừa đếm tiền"
       },
       {
         "key": "c",
-        "text": "Hút thuốc lá trong khi đang chiên chả cá tại quầy do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Hút thuốc lá trong khi đang chiên chả cá tại quầy"
       },
       {
         "key": "d",
-        "text": "Để khăn lau bàn dơ chung vào khay đựng rau răm ăn kèm do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Để khăn lau bàn dơ chung vào khay đựng rau răm ăn kèm"
       }
     ],
     "correctAnswer": "a",
@@ -2282,7 +2282,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chỉ dùng được trong vòng 24 giờ sau khi sản xuất do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chỉ dùng được trong vòng 24 giờ sau khi sản xuất"
       },
       {
         "key": "b",
@@ -2290,11 +2290,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "10 năm không cần hạn sử dụng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "10 năm không cần hạn sử dụng"
       },
       {
         "key": "d",
-        "text": "Chỉ dùng được trong 3 ngày theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chỉ dùng được trong 3 ngày"
       }
     ],
     "correctAnswer": "b",
@@ -2314,15 +2314,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Rưới nước sốt vào túi giấy trước rồi mới nhét bánh mì vào sau cùng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Rưới nước sốt vào túi giấy trước rồi mới nhét bánh mì vào sau cùng"
       },
       {
         "key": "c",
-        "text": "Cho chả cá sống chưa chiên vào ruột bánh mì rồi mới nướng bánh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Cho chả cá sống chưa chiên vào ruột bánh mì rồi mới nướng bánh"
       },
       {
         "key": "d",
-        "text": "Bỏ rau dưa ra ngoài túi giấy và chỉ đưa bánh mì không cho khách do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bỏ rau dưa ra ngoài túi giấy và chỉ đưa bánh mì không cho khách"
       }
     ],
     "correctAnswer": "a",
@@ -2338,11 +2338,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Để nguyên cặn cháy khét trong chảo đun đi đun lại suốt cả tháng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Để nguyên cặn cháy khét trong chảo đun đi đun lại suốt cả tháng"
       },
       {
         "key": "b",
-        "text": "Đổ dầu chiên nóng trực tiếp xuống cống thoát nước công cộng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đổ dầu chiên nóng trực tiếp xuống cống thoát nước công cộng"
       },
       {
         "key": "c",
@@ -2350,7 +2350,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Đổ dầu chiên trộn lẫn vào can nước sốt Tứ Vị theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đổ dầu chiên trộn lẫn vào can nước sốt Tứ Vị"
       }
     ],
     "correctAnswer": "c",
@@ -2370,15 +2370,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Chả cá sợi rất cứng và dai như cao su theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chả cá sợi rất cứng và dai như cao su"
       },
       {
         "key": "c",
-        "text": "Chả cá sợi ngấm nhiều dầu và bị xẹp lép đen xì sau khi chiên do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chả cá sợi ngấm nhiều dầu và bị xẹp lép đen xì sau khi chiên"
       },
       {
         "key": "d",
-        "text": "Chả cá sợi không thể chiên bằng dầu ăn mà phải hấp cách thủy 2 tiếng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chả cá sợi không thể chiên bằng dầu ăn mà phải hấp cách thủy 2 tiếng"
       }
     ],
     "correctAnswer": "a",
@@ -2394,11 +2394,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Từ chối phục vụ và yêu cầu khách hàng sang quán khác mua do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Từ chối phục vụ và yêu cầu khách hàng sang quán khác mua"
       },
       {
         "key": "b",
-        "text": "Vẫn cho thật nhiều ớt cay xé để thúc giục dồn dập phải ăn theo công thức cố định trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Vẫn cho thật nhiều ớt cay xé để thúc giục dồn dập phải ăn theo công thức cố định"
       },
       {
         "key": "c",
@@ -2406,7 +2406,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Thu thêm 10.000 đồng tiền phụ phí vì khách yêu cầu thêm rau do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Thu thêm 10.000 đồng tiền phụ phí vì khách yêu cầu thêm rau"
       }
     ],
     "correctAnswer": "c",
@@ -2422,7 +2422,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Túi nilon tái chế đen mùi hôi nồng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Túi nilon tái chế đen mùi hôi nồng"
       },
       {
         "key": "b",
@@ -2430,11 +2430,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Giấy báo cũ thu gom từ các bãi phế liệu theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Giấy báo cũ thu gom từ các bãi phế liệu"
       },
       {
         "key": "d",
-        "text": "Lá chuối tươi chưa qua rửa sạch theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Lá chuối tươi chưa qua rửa sạch"
       }
     ],
     "correctAnswer": "b",
@@ -2450,15 +2450,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bị công ty giữ làm phí dịch vụ tư vấn và không được trừ vào tiền gói do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bị công ty giữ làm phí dịch vụ tư vấn và không được trừ vào tiền gói"
       },
       {
         "key": "b",
-        "text": "Chỉ được nhận một bức ảnh chụp xe bánh mì qua tin nhắn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ được nhận một bức ảnh chụp xe bánh mì qua tin nhắn"
       },
       {
         "key": "c",
-        "text": "Bắt buộc phải đóng thêm 20 triệu đồng tiền bảo lãnh hợp đồng mới được kích hoạt do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc phải đóng thêm 20 triệu đồng tiền bảo lãnh hợp đồng mới được kích hoạt"
       },
       {
         "key": "d",
@@ -2482,15 +2482,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Bắt buộc khách hàng phải thanh toán trước 100% toàn bộ chi phí ngay trước khi công ty xuất kho xe do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc khách hàng phải thanh toán trước 100% toàn bộ chi phí ngay trước khi công ty xuất kho xe"
       },
       {
         "key": "c",
-        "text": "Thanh toán trả góp hàng ngày trong vòng 10 năm kèm lãi suất ngân hàng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Thanh toán trả góp hàng ngày trong vòng 10 năm kèm lãi suất ngân hàng"
       },
       {
         "key": "d",
-        "text": "Công ty cho nợ toàn bộ tiền gói không cần thanh toán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Công ty cho nợ toàn bộ tiền gói không cần thanh toán"
       }
     ],
     "correctAnswer": "a",
@@ -2514,11 +2514,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Ghi chú rõ ràng nội dung trao đổi và lịch hẹn lên phần mềm CRM để theo dõi sát tiến độ trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Ghi chú rõ ràng nội dung trao đổi và lịch hẹn lên phần mềm CRM để theo dõi sát tiến độ"
       },
       {
         "key": "d",
-        "text": "Chủ động chuẩn bị sẵn thông tin giải đáp đúng băn khoăn mà khách đã chia sẻ ở cuộc gọi trước trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chủ động chuẩn bị sẵn thông tin giải đáp đúng băn khoăn mà khách đã chia sẻ ở cuộc gọi trước"
       }
     ],
     "correctAnswer": "a",
@@ -2534,7 +2534,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Hướng dẫn chủ xe đặt hàng nguyên vật liệu qua ứng dụng để hàng giao đều đặn theo lịch trình trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Hướng dẫn chủ xe đặt hàng nguyên vật liệu qua ứng dụng để hàng giao đều đặn theo lịch trình"
       },
       {
         "key": "b",
@@ -2542,7 +2542,7 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Cung cấp cẩm nang và tài liệu hướng dẫn giúp chủ xe duy trì chất lượng và thu hút thêm khách quen trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Cung cấp cẩm nang và tài liệu hướng dẫn giúp chủ xe duy trì chất lượng và thu hút thêm khách quen"
       },
       {
         "key": "d",
@@ -2566,7 +2566,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Tôn trọng quyền tự quyết của khách hàng, kiên nhẫn đồng hành tháo gỡ khó khăn trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tôn trọng quyền tự quyết của khách hàng, kiên nhẫn đồng hành tháo gỡ khó khăn"
       },
       {
         "key": "c",
@@ -2594,15 +2594,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Gói 10,3 triệu được tặng thêm một chiếc xe máy tay ga mới do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Gói 7,5 triệu đã bao gồm toàn bộ thiết bị điện tử và phần mềm quản lý bán hàng tự động."
       },
       {
         "key": "c",
-        "text": "Gói 7,5 triệu chỉ là mô hình bán hàng trên mạng và không có xe do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Gói 10,3 triệu chỉ khác biệt ở chất liệu tem decal nhận diện và không có dụng cụ bếp kèm theo."
       },
       {
         "key": "d",
-        "text": "Gói 10,3 triệu được miễn phí tiền chả cá ăn thử trong 5 năm do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Gói 7,5 triệu yêu cầu đối tác phải tự mua bổ sung xe inox bên ngoài với chi phí riêng."
       }
     ],
     "correctAnswer": "a",
@@ -2622,15 +2622,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Thời hạn là 1 tháng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thời hạn 3 năm cố định và bắt buộc đóng phí gia hạn khi tái ký hợp đồng."
       },
       {
         "key": "c",
-        "text": "Thời hạn là 20 năm không được thanh lý theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thời hạn 6 tháng và phải đánh giá lại doanh số bán hàng để gia hạn từng đợt."
       },
       {
         "key": "d",
-        "text": "Chỉ có thời hạn 7 ngày thử việc theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thời hạn vô thời hạn và không có các điều khoản ràng buộc về chất lượng nguyên liệu."
       }
     ],
     "correctAnswer": "a",
@@ -2646,7 +2646,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc chủ xe phải nộp phạt 50% tiền xe mới cho sang nhượng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đối tác phải bán thanh lý xe cũ ra thị trường tự do và người mới phải mua lại một gói hợp tác mới hoàn toàn."
       },
       {
         "key": "b",
@@ -2654,11 +2654,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Tịch thu xe và hủy hoại toàn bộ trang thiết bị của điểm bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Công ty thu hồi lại toàn bộ trang thiết bị và yêu cầu người mới phải tự tìm một vị trí mặt bằng hoàn toàn khác."
       },
       {
         "key": "d",
-        "text": "Cấm người mới không được sử dụng thương hiệu Má Hải do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Người mới chỉ được bán các sản phẩm ăn sáng khác và không được tiếp tục kinh doanh thương hiệu Má Hải."
       }
     ],
     "correctAnswer": "b",
@@ -2678,20 +2678,20 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Công ty nỗ lực bình ổn giá và cung ứng nguồn chả cá sợi 17% đạm nguyên chất cùng nước sốt chuẩn vị trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Công ty nỗ lực bình ổn giá và cung ứng nguồn chả cá sợi 17% đạm nguyên chất cùng nước sốt chuẩn vị."
       },
       {
         "key": "c",
-        "text": "Công ty áp đặt chỉ tiêu doanh số bắt buộc hàng ngày và phạt tiền nếu chủ xe bán không đủ số lượng."
+        "text": "Công ty áp đặt chỉ tiêu doanh số bắt buộc hàng ngày và yêu cầu chủ xe phải nộp bù doanh thu nếu bán chưa đạt."
       },
       {
         "key": "d",
-        "text": "Chủ xe chủ động siêng năng mở bán đúng giờ, giữ gìn vệ sinh và bán hàng niềm nở mỗi sáng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chủ xe chủ động siêng năng mở bán đúng giờ, giữ gìn vệ sinh và bán hàng niềm nở mỗi sáng."
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Má Hải không bao giờ áp đặt chỉ tiêu doanh số hay phạt tiền doanh số. Chủ xe làm chủ hoàn toàn hoạt động kinh doanh của mình.",
-    "quote": "Bên con không áp doanh số, không phạt tiền, Cô Chú làm chủ xe tự quyết định, bán được bao nhiêu hưởng trọn bấy nhiêu rất thoải mái!"
+    "explanation": "Má Hải không áp đặt chỉ tiêu doanh số. Chủ xe làm chủ hoàn toàn hoạt động kinh doanh và linh hoạt thời gian bán hàng của mình.",
+    "quote": "Bên con không áp doanh số, Cô Chú làm chủ xe tự quyết định, bán được bao nhiêu hưởng trọn bấy nhiêu rất thoải mái!"
   },
   {
     "id": "sale-97",
@@ -2702,15 +2702,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 500 ổ/ngày theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 500 ổ/ngày"
       },
       {
         "key": "b",
-        "text": "Khoảng 2.000 ổ/ngày theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 2.000 ổ/ngày"
       },
       {
         "key": "c",
-        "text": "Khoảng 10.000 ổ/ngày theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 10.000 ổ/ngày"
       },
       {
         "key": "d",
@@ -2730,7 +2730,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chỉ dựa vào các chiêu trò quảng cáo giật gân trên mạng xã hội do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tập trung vào chiến lược chạy quảng cáo giảm giá sâu để cạnh tranh ngắn hạn trên thị trường."
       },
       {
         "key": "b",
@@ -2738,11 +2738,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Bán giá bánh mì thật đắt 100.000đ/ổ để thu lợi nhuận ngắn hạn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Thay đổi liên tục công thức nước sốt và chủng loại nguyên liệu theo từng tuần."
       },
       {
         "key": "d",
-        "text": "Ép buộc đối tác phải vay nợ ngân hàng để mở rộng điểm bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Mở rộng điểm bán ồ ạt không kiểm soát khoảng cách bảo vệ giữa các chủ xe."
       }
     ],
     "correctAnswer": "b",
@@ -2766,11 +2766,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Được bảo vệ khoảng cách điểm bán trên phần mềm Map Tracker để tránh cạnh tranh nội bộ trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Được bảo vệ khoảng cách điểm bán trên phần mềm Map Tracker để tránh cạnh tranh nội bộ"
       },
       {
         "key": "d",
-        "text": "Công ty thu phí sử dụng hình ảnh thương hiệu 5 triệu đồng mỗi tuần."
+        "text": "Công ty thu phí duy trì thương hiệu định kỳ hàng tháng trên mỗi điểm bán."
       }
     ],
     "correctAnswer": "d",
@@ -2786,7 +2786,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Thu thật nhiều tiền học phí từ học viên đăng ký theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tuyển dụng số lượng lớn lao động phổ thông để phục vụ cho các nhà máy gia công nguyên liệu."
       },
       {
         "key": "b",
@@ -2794,11 +2794,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Bắt buộc học viên phải mua cổ phần của công ty theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thu hút nguồn vốn nhàn rỗi từ các nhà đầu tư tài chính để mở rộng chuỗi nhà hàng ăn uống lớn."
       },
       {
         "key": "d",
-        "text": "Chỉ dạy lý thuyết suông và không có thực hành thực tế do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Cung cấp chứng chỉ nghề bếp ngắn hạn để học viên tự đi xin việc tại các khách sạn, nhà hàng."
       }
     ],
     "correctAnswer": "b",
@@ -2814,7 +2814,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khách hàng phải tự thuê xe tải lên kho tổng tại TP.HCM chở hàng về mỗi ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khách hàng phải tự thuê xe tải lên kho tổng tại TP.HCM chở hàng về mỗi ngày"
       },
       {
         "key": "b",
@@ -2822,11 +2822,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Nếu trễ hàng đối tác tự ra chợ mua chả cá tạp về bán thay thế do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Nếu trễ hàng đối tác tự ra chợ mua chả cá tạp về bán thay thế"
       },
       {
         "key": "d",
-        "text": "Công ty không chịu trách nhiệm về thời gian vận chuyển ở các tỉnh xa do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Công ty không chịu trách nhiệm về thời gian vận chuyển ở các tỉnh xa"
       }
     ],
     "correctAnswer": "b",
@@ -2842,11 +2842,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Đồng ý cho nợ toàn bộ tiền gói và tiền nguyên liệu trong 1 năm do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đồng ý cho nợ toàn bộ tiền gói và tiền nguyên liệu trong 1 năm"
       },
       {
         "key": "b",
-        "text": "Khuyên khách hàng đi vay nặng lãi để trả tiền cọc ngay do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khuyên khách hàng đi vay nặng lãi để trả tiền cọc ngay"
       },
       {
         "key": "c",
@@ -2854,7 +2854,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Chửi bới và ngắt liên lạc ngay với khách hàng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chửi bới và ngắt liên lạc ngay với khách hàng"
       }
     ],
     "correctAnswer": "c",
@@ -2870,15 +2870,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khách hàng tự mua hóa chất khử mùi tanh ngoài chợ về trộn vào chả cá từ các nguồn trôi nổi trên thị trường tự do do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khách hàng tự mua hóa chất khử mùi tanh ngoài chợ về trộn vào chả cá từ các nguồn trôi nổi trên thị trường tự do"
       },
       {
         "key": "b",
-        "text": "Chả cá biển bắt buộc phải có mùi tanh nồng mới đúng chuẩn tự nhiên do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chả cá biển bắt buộc phải có mùi tanh nồng mới đúng chuẩn tự nhiên"
       },
       {
         "key": "c",
-        "text": "Bánh mì Má Hải không dùng cá biển mà làm từ thịt heo do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bánh mì Má Hải không dùng cá biển mà làm từ thịt heo"
       },
       {
         "key": "d",
@@ -2902,15 +2902,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Chỉ khác nhau ở màu sắc chiếc xe inox theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chỉ khác nhau ở màu sắc chiếc xe inox"
       },
       {
         "key": "c",
-        "text": "Xe tự đóng ngoài chợ bán đắt hàng hơn xe Má Hải theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Xe tự đóng ngoài chợ bán đắt hàng hơn xe Má Hải"
       },
       {
         "key": "d",
-        "text": "Công ty bán giá cao để lấy tiền chi trả cho người mẫu quảng cáo do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Công ty bán giá cao để lấy tiền chi trả cho người mẫu quảng cáo"
       }
     ],
     "correctAnswer": "a",
@@ -2926,11 +2926,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khuyên khách hàng tìm một hòn đảo hoang vắng không có người để mở bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khuyên khách hàng tìm một hòn đảo hoang vắng không có người để mở bán"
       },
       {
         "key": "b",
-        "text": "Bắt buộc khách hàng phải bán phá giá 5.000đ/ổ để tiêu diệt các quán xung quanh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc khách hàng phải bán phá giá 5.000đ/ổ để tiêu diệt các quán xung quanh"
       },
       {
         "key": "c",
@@ -2938,7 +2938,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Bánh mì chả cá không thể cạnh tranh được với các món bún phở do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bánh mì chả cá không thể cạnh tranh được với các món bún phở"
       }
     ],
     "correctAnswer": "c",
@@ -2954,15 +2954,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tỏ thái độ bực bội và trách móc khách hàng lãng phí thời gian do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tỏ thái độ bực bội và trách móc khách hàng lãng phí thời gian"
       },
       {
         "key": "b",
-        "text": "Gọi điện liên tục 20 cuộc mỗi ngày để thúc giục dồn dập phải trả lời ngay do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Gọi điện liên tục 20 cuộc mỗi ngày để thúc giục dồn dập phải trả lời ngay"
       },
       {
         "key": "c",
-        "text": "Chặn số điện thoại của khách hàng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chặn số điện thoại của khách hàng"
       },
       {
         "key": "d",
@@ -2982,7 +2982,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "'Anh/chị có định mua xe bánh mì bên em không hay thôi ạ?' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "'Anh/chị có định mua xe bánh mì bên em không hay thôi ạ?'"
       },
       {
         "key": "b",
@@ -2990,11 +2990,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "'Anh/chị phải nghe điện thoại đúng 12h trưa mai nhé.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "'Anh/chị phải nghe điện thoại đúng 12h trưa mai nhé.'"
       },
       {
         "key": "d",
-        "text": "'Nếu không rảnh thì thôi em không gọi lại nữa đâu.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "'Nếu không rảnh thì thôi em không gọi lại nữa đâu.'"
       }
     ],
     "correctAnswer": "b",
@@ -3010,15 +3010,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Phải đóng 10 triệu đồng tiền phí tái ký hợp đồng mới do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Phải đóng 10 triệu đồng tiền phí tái ký hợp đồng mới"
       },
       {
         "key": "b",
-        "text": "Công ty bắt buộc phải thu hồi xe và không cho tái ký do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Công ty bắt buộc phải thu hồi xe và không cho tái ký"
       },
       {
         "key": "c",
-        "text": "Phải mua lại toàn bộ trang thiết bị mới từ đầu theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Phải mua lại toàn bộ trang thiết bị mới từ đầu"
       },
       {
         "key": "d",
@@ -3038,7 +3038,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khuyên khách hàng nên chuyển lên thành phố lớn sinh sống do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khuyên khách hàng nên chuyển lên thành phố lớn sinh sống"
       },
       {
         "key": "b",
@@ -3046,11 +3046,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Bắt buộc khách hàng phải hạ giá xuống 5.000đ và cắt giảm 90% chả cá do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc khách hàng phải hạ giá xuống 5.000đ và cắt giảm 90% chả cá"
       },
       {
         "key": "d",
-        "text": "Bánh mì Má Hải chỉ dành cho người giàu và không bán được ở nông thôn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bánh mì Má Hải chỉ dành cho người giàu và không bán được ở nông thôn"
       }
     ],
     "correctAnswer": "b",
@@ -3070,20 +3070,20 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Vì hàng ngoài chợ ngon hơn nhưng công ty cấm mua theo thói quen kinh doanh tự phát ngoài thị trường."
+        "text": "Vì nguyên liệu mua tự do ngoài chợ có giá thành thấp hơn nhưng không đảm bảo hàm lượng đạm và nguồn gốc xuất xứ."
       },
       {
         "key": "c",
-        "text": "Vì công ty muốn kiểm soát toàn bộ thời gian của chủ xe do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vì công ty hỗ trợ giao hàng tận nơi qua hệ thống chành xe tỉnh theo lịch định kỳ ổn định."
       },
       {
         "key": "d",
-        "text": "Vì chả cá chợ đắt tiền hơn chả cá công ty theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Vì việc sử dụng nguyên liệu chính hãng giúp đối tác tích lũy điểm thưởng và nhận các chính sách ưu đãi định kỳ."
       }
     ],
     "correctAnswer": "a",
     "explanation": "Chất lượng nguyên liệu chính hãng tạo nên vị ngon giữ khách quen và có đầy đủ giấy tờ chứng nhận ATTP bảo vệ chủ xe trước mọi đợt kiểm tra pháp lý.",
-    "quote": "Bán hàng chuẩn công ty vừa ngon chuẩn vị giữ khách quen, vừa có đầy đủ giấy tờ ATTP bảo vệ Cô Chú an tâm kinh doanh không lo bị phạt ạ!"
+    "quote": "Bán hàng chuẩn công ty vừa ngon chuẩn vị giữ khách quen, vừa có đầy đủ giấy tờ ATTP bảo vệ Cô Chú kinh doanh hợp chuẩn và vững tâm mỗi ngày!"
   },
   {
     "id": "sale-111",
@@ -3094,11 +3094,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tuyệt đối nghiêm cấm và phạt tiền 20 triệu đồng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tuyệt đối nghiêm cấm và hạn chế quyền lợi 20 triệu đồng"
       },
       {
         "key": "b",
-        "text": "Chỉ được bán duy nhất bánh mì và không được để bất kỳ món gì khác lên xe do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ được bán duy nhất bánh mì và không được để bất kỳ món gì khác lên xe"
       },
       {
         "key": "c",
@@ -3106,7 +3106,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Phải đóng thêm phí bản quyền đồ uống cho công ty theo thói quen kinh doanh tự phát ngoài thị trường."
+        "text": "Phải đóng thêm phí bản quyền đồ uống cho công ty"
       }
     ],
     "correctAnswer": "c",
@@ -3126,15 +3126,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Khách hàng phải tự vẽ logo bằng tay lên thân xe theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khách hàng phải tự vẽ logo bằng tay lên thân xe"
       },
       {
         "key": "c",
-        "text": "Không cung cấp biển số điểm bán để tránh bị quản lý do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Không cung cấp biển số điểm bán để tránh bị quản lý"
       },
       {
         "key": "d",
-        "text": "Chỉ giao một miếng vải dán tạm thời theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chỉ giao một miếng vải dán tạm thời"
       }
     ],
     "correctAnswer": "a",
@@ -3150,7 +3150,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc đối tác phải tự xây lò nướng bánh mì tại nhà do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc đối tác phải tự xây lò nướng bánh mì tại nhà"
       },
       {
         "key": "b",
@@ -3158,11 +3158,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Yêu cầu đối tác nhập bánh mì khô từ nước ngoài về do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Yêu cầu đối tác nhập bánh mì khô từ nước ngoài về"
       },
       {
         "key": "d",
-        "text": "Không hỗ trợ và yêu cầu đối tác tự chịu trách nhiệm hoàn toàn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Không hỗ trợ và yêu cầu đối tác tự chịu trách nhiệm hoàn toàn"
       }
     ],
     "correctAnswer": "b",
@@ -3182,7 +3182,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Gửi phóng sự Shark Tank và giấy tờ an toàn thực phẩm để củng cố niềm tin cho gia đình cùng xem trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Gửi phóng sự Shark Tank và giấy tờ an toàn thực phẩm để củng cố niềm tin cho gia đình cùng xem"
       },
       {
         "key": "c",
@@ -3190,7 +3190,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Chào hỏi lịch sự và gửi lời chúc ngày mới tốt lành kèm lời nhắn sẵn sàng hỗ trợ khi khách cần trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chào hỏi lịch sự và gửi lời chúc ngày mới tốt lành kèm lời nhắn sẵn sàng hỗ trợ khi khách cần"
       }
     ],
     "correctAnswer": "c",
@@ -3206,7 +3206,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khai trương vào dịp đầu tháng hoặc ngày rằm thường mang lại tâm lý may mắn, phấn khởi cho gia chủ trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khai trương vào dịp đầu tháng hoặc ngày rằm thường mang lại tâm lý may mắn, phấn khởi cho gia chủ"
       },
       {
         "key": "b",
@@ -3234,7 +3234,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khuyên khách hàng nên tự quyết định giấu giếm gia đình do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khuyên khách hàng nên tự quyết định giấu giếm gia đình"
       },
       {
         "key": "b",
@@ -3242,11 +3242,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Trách móc khách hàng thiếu tính tự lập trong kinh doanh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Trách móc khách hàng thiếu tính tự lập trong kinh doanh"
       },
       {
         "key": "d",
-        "text": "Tắt máy ngay lập tức và xóa liên hệ theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tắt máy ngay lập tức và xóa liên hệ"
       }
     ],
     "correctAnswer": "b",
@@ -3290,11 +3290,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chỉ có 5% số điểm bán theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chỉ có 5% số điểm bán"
       },
       {
         "key": "b",
-        "text": "Khoảng 20% số điểm bán theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 20% số điểm bán"
       },
       {
         "key": "c",
@@ -3302,7 +3302,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "100% các điểm bán trong hệ thống đều kiếm trên 100 triệu đồng mỗi tháng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "100% các điểm bán trong hệ thống đều kiếm trên 100 triệu đồng mỗi tháng"
       }
     ],
     "correctAnswer": "c",
@@ -3318,15 +3318,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc khách hàng phải vứt bỏ xe cũ và mua gói xe mới 10,3 triệu do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc khách hàng phải vứt bỏ xe cũ và mua gói xe mới 10,3 triệu"
       },
       {
         "key": "b",
-        "text": "Yêu cầu khách hàng tự chế tạo bếp gas bằng củi thô sơ mà không cung cấp quy trình hướng dẫn cụ thể trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Yêu cầu khách hàng tự chế tạo bếp gas bằng củi thô sơ mà không cung cấp quy trình hướng dẫn cụ thể"
       },
       {
         "key": "c",
-        "text": "Từ chối tiếp nhận các đối tác đã có sẵn xe cũ theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Từ chối tiếp nhận các đối tác đã có sẵn xe cũ"
       },
       {
         "key": "d",
@@ -3346,7 +3346,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Cắt đứt liên lạc và để khách hàng tự xoay xở theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Cắt đứt liên lạc và để khách hàng tự xoay xở"
       },
       {
         "key": "b",
@@ -3358,7 +3358,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Báo hủy điểm bán mà không có lý do theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Báo hủy điểm bán mà không có lý do"
       }
     ],
     "correctAnswer": "c",
@@ -3406,7 +3406,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Kiểm tra nhanh thông tin đăng ký (khu vực tỉnh/thành, nhu cầu gói) trước khi bấm số gọi điện trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Kiểm tra nhanh thông tin đăng ký (khu vực tỉnh/thành, nhu cầu gói) trước khi bấm số gọi điện"
       },
       {
         "key": "c",
@@ -3414,7 +3414,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Chuẩn bị tâm thế vui vẻ, giọng nói ấm áp và tự tin để giải đáp mọi thắc mắc của khách hàng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chuẩn bị tâm thế vui vẻ, giọng nói ấm áp và tự tin để giải đáp mọi thắc mắc của khách hàng"
       }
     ],
     "correctAnswer": "a",
@@ -3430,15 +3430,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc chủ xe phải tự mò mẫm công thức chế biến mà không có chỉ dẫn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc chủ xe phải tự mò mẫm công thức chế biến mà không có chỉ dẫn"
       },
       {
         "key": "b",
-        "text": "Chỉ có vài trang giấy trắng không có nội dung theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chỉ có vài trang giấy trắng không có nội dung"
       },
       {
         "key": "c",
-        "text": "Tài liệu dạy các kỹ năng đầu tư chứng khoán và bất động sản do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tài liệu dạy các kỹ năng đầu tư chứng khoán và bất động sản"
       },
       {
         "key": "d",
@@ -3462,15 +3462,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Mất khoảng 12 đến 18 tháng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Mất khoảng 12 đến 18 tháng"
       },
       {
         "key": "c",
-        "text": "Mất khoảng 5 đến 10 năm theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Mất khoảng 5 đến 10 năm"
       },
       {
         "key": "d",
-        "text": "Không bao giờ có thể thu hồi được vốn theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Không bao giờ có thể thu hồi được vốn"
       }
     ],
     "correctAnswer": "a",
@@ -3490,15 +3490,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Để tìm cớ phạt tiền đối tác mỗi tuần theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Để tìm cớ hạn chế quyền lợi đối tác mỗi tuần"
       },
       {
         "key": "c",
-        "text": "Để gây áp lực lên đối tác phải mua thêm nhiều xe mới không cần thiết do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Để gây áp lực lên đối tác phải mua thêm nhiều xe mới không cần thiết"
       },
       {
         "key": "d",
-        "text": "Để thu thập bí quyết riêng của chủ xe đem bán cho người khác do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Để thu thập bí quyết riêng của chủ xe đem bán cho người khác"
       }
     ],
     "correctAnswer": "a",
@@ -3518,15 +3518,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Ngồi bấm điện thoại đợi khách hàng đầu tiên đến mới bắt đầu đi mua dầu ăn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Ngồi bấm điện thoại đợi khách hàng đầu tiên đến mới bắt đầu đi mua dầu ăn"
       },
       {
         "key": "c",
-        "text": "Chiên sẵn toàn bộ 10kg chả cá từ lúc 3h00 sáng rồi để nguội ngắt trên bàn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chiên sẵn toàn bộ 10kg chả cá từ lúc 3h00 sáng rồi để nguội ngắt trên bàn"
       },
       {
         "key": "d",
-        "text": "Rót nước sốt Tứ Vị đổ tràn lan ra mặt bàn xe inox do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Rót nước sốt Tứ Vị đổ tràn lan ra mặt bàn xe inox"
       }
     ],
     "correctAnswer": "a",
@@ -3542,7 +3542,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Đổ ngập chảo chả cá đông đá khiến dầu bị hạ nhiệt và ngấm mỡ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đổ ngập chảo chả cá đông đá khiến dầu bị hạ nhiệt và ngấm mỡ"
       },
       {
         "key": "b",
@@ -3550,11 +3550,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Chiên chả cá bằng lửa thật nhỏ để sợi chả bị mềm nhũn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chiên chả cá bằng lửa thật nhỏ để sợi chả bị mềm nhũn"
       },
       {
         "key": "d",
-        "text": "Tắt bếp gas hoàn toàn và dùng tay bóp vụn chả cá sống cho vào bánh mì do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tắt bếp gas hoàn toàn và dùng tay bóp vụn chả cá sống cho vào bánh mì"
       }
     ],
     "correctAnswer": "b",
@@ -3570,11 +3570,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Một người đứng nhìn và một người làm toàn bộ mọi việc từ chiên chả đến thối tiền do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Một người đứng nhìn và một người làm toàn bộ mọi việc từ chiên chả đến thối tiền"
       },
       {
         "key": "b",
-        "text": "Hai người cùng tranh nhau chiên chả và bỏ mặc khách đứng chờ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Hai người cùng tranh nhau chiên chả và bỏ mặc khách đứng chờ"
       },
       {
         "key": "c",
@@ -3582,7 +3582,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Hai người thay nhau nghỉ ngơi và chỉ bán khi đường vắng xe do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Hai người thay nhau nghỉ ngơi và chỉ bán khi đường vắng xe"
       }
     ],
     "correctAnswer": "c",
@@ -3598,15 +3598,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Để nguyên chảo dầu sôi trên bếp gas đang cháy và đi về nhà do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Để nguyên chảo dầu sôi trên bếp gas đang cháy và đi về nhà"
       },
       {
         "key": "b",
-        "text": "Đổ toàn bộ dầu chiên và rác thải ra lòng đường công cộng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đổ toàn bộ dầu chiên và rác thải ra lòng đường công cộng"
       },
       {
         "key": "c",
-        "text": "Bỏ mặc xe bánh mì bám đầy dầu mỡ ngoài trời nắng gắt do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bỏ mặc xe bánh mì bám đầy dầu mỡ ngoài trời nắng gắt"
       },
       {
         "key": "d",
@@ -3626,7 +3626,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Dùng búa đập mạnh vào bình gas để tăng áp suất theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Dùng búa đập mạnh vào bình gas để tăng áp suất"
       },
       {
         "key": "b",
@@ -3634,11 +3634,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Tiếp tục dùng bật lửa mồi liên tục vào chảo dầu đang sôi do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tiếp tục dùng bật lửa mồi liên tục vào chảo dầu đang sôi"
       },
       {
         "key": "d",
-        "text": "Đổ nước lạnh trực tiếp vào họng đốt của bếp gas đang cháy do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đổ nước lạnh trực tiếp vào họng đốt của bếp gas đang cháy"
       }
     ],
     "correctAnswer": "b",
@@ -3654,7 +3654,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Lập tức đóng cửa nghỉ bán và vứt bỏ toàn bộ bánh mì do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Lập tức đóng cửa nghỉ bán và vứt bỏ toàn bộ bánh mì"
       },
       {
         "key": "b",
@@ -3662,11 +3662,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Để mặc nước mưa rơi thẳng vào chảo dầu đang sôi theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Để mặc nước mưa rơi thẳng vào chảo dầu đang sôi"
       },
       {
         "key": "d",
-        "text": "Bắt khách hàng phải đứng đội mưa ngoài trời không có mái che do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt khách hàng phải đứng đội mưa ngoài trời không có mái che"
       }
     ],
     "correctAnswer": "b",
@@ -3682,7 +3682,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Để nguyên trong thùng xốp ngoài trời nắng suốt cả ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Để nguyên trong thùng xốp ngoài trời nắng suốt cả ngày"
       },
       {
         "key": "b",
@@ -3690,11 +3690,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Đổ lẫn vào chảo dầu chiên cũ để ngâm qua đêm theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đổ lẫn vào chảo dầu chiên cũ để ngâm qua đêm"
       },
       {
         "key": "d",
-        "text": "Vứt bỏ toàn bộ chả cá thừa vào thùng rác theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Vứt bỏ toàn bộ chả cá thừa vào thùng rác"
       }
     ],
     "correctAnswer": "b",
@@ -3710,7 +3710,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Dùng ngón tay nhúng trực tiếp vào dầu sôi để thử nhiệt độ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Dùng ngón tay nhúng trực tiếp vào dầu sôi để thử nhiệt độ"
       },
       {
         "key": "b",
@@ -3718,11 +3718,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Đợi dầu bốc khói đen mù mịt rồi mới thả chả vào theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đợi dầu bốc khói đen mù mịt rồi mới thả chả vào"
       },
       {
         "key": "d",
-        "text": "Thả chả vào khi dầu còn nguội ngắt chưa bật bếp theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thả chả vào khi dầu còn nguội ngắt chưa bật bếp"
       }
     ],
     "correctAnswer": "b",
@@ -3738,11 +3738,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tranh cãi gay gắt và đổ lỗi cho khách hàng ăn chậm do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tranh cãi gay gắt và đổ lỗi cho khách hàng ăn chậm"
       },
       {
         "key": "b",
-        "text": "Đuổi khách hàng đi và không cho mua lần sau theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đuổi khách hàng đi và không cho mua lần sau"
       },
       {
         "key": "c",
@@ -3750,7 +3750,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Thu thêm tiền của khách vì đã đổi bánh mới theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thu thêm tiền của khách vì đã đổi bánh mới"
       }
     ],
     "correctAnswer": "c",
@@ -3766,15 +3766,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Một người chạy đi chạy lại giữa 2 xe cách nhau 10km trong cùng một buổi sáng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Một người chạy đi chạy lại giữa 2 xe cách nhau 10km trong cùng một buổi sáng"
       },
       {
         "key": "b",
-        "text": "Đóng cửa xe thứ nhất để tập trung mở xe thứ hai theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đóng cửa xe thứ nhất để tập trung mở xe thứ hai"
       },
       {
         "key": "c",
-        "text": "Bỏ mặc xe thứ hai tự hoạt động không cần người đứng bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bỏ mặc xe thứ hai tự hoạt động không cần người đứng bán"
       },
       {
         "key": "d",
@@ -3794,11 +3794,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Đặt bình gas cạnh chảo dầu đang cháy mà không có tấm chắn nhiệt do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đặt bình gas cạnh chảo dầu đang cháy mà không có tấm chắn nhiệt"
       },
       {
         "key": "b",
-        "text": "Dùng dây dẫn gas cũ bị rạn nứt nhiều năm không thay thế do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Dùng dây dẫn gas cũ bị rạn nứt nhiều năm không thay thế"
       },
       {
         "key": "c",
@@ -3806,7 +3806,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Hút thuốc lá và đốt vàng mã ngay cạnh bếp gas đang chiên do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Hút thuốc lá và đốt vàng mã ngay cạnh bếp gas đang chiên"
       }
     ],
     "correctAnswer": "c",
@@ -3826,15 +3826,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Vì nước sốt sẽ biến thành dầu ăn nguyên chất theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Vì nước sốt sẽ biến thành dầu ăn nguyên chất"
       },
       {
         "key": "c",
-        "text": "Vì công ty cấm sử dụng lửa tại điểm bán theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Vì công ty cấm sử dụng lửa tại điểm bán"
       },
       {
         "key": "d",
-        "text": "Vì nước sốt sẽ tự bốc cháy tạo ra khói độc theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Vì nước sốt sẽ tự bốc cháy tạo ra khói độc"
       }
     ],
     "correctAnswer": "a",
@@ -3850,11 +3850,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Thường xuyên mở bán muộn sau 8h00 sáng và nghỉ bán bất chợt không báo trước do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Thường xuyên mở bán muộn sau 8h00 sáng và nghỉ bán bất chợt không báo trước"
       },
       {
         "key": "b",
-        "text": "Gương mặt cáu gắt và càu nhàu khi khách hỏi xin thêm tương ớt do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Gương mặt cáu gắt và càu nhàu khi khách hỏi xin thêm tương ớt"
       },
       {
         "key": "c",
@@ -3862,7 +3862,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Tính tiền chênh lệch mỗi ngày một giá khác nhau theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tính tiền chênh lệch mỗi ngày một giá khác nhau"
       }
     ],
     "correctAnswer": "c",
@@ -3882,15 +3882,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Đặt xe gọn gàng phía trong mép hiên nhà, chừa lối đi thông thoáng cho người đi bộ trên vỉa hè trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đặt xe gọn gàng phía trong mép hiên nhà, chừa lối đi thông thoáng cho người đi bộ trên vỉa hè"
       },
       {
         "key": "c",
-        "text": "Hướng dẫn khách mua bánh tấp xe máy sát lề đường gọn gàng, không để xe máy chắn ngang lòng đường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Hướng dẫn khách mua bánh tấp xe máy sát lề đường gọn gàng, không để xe máy chắn ngang lòng đường"
       },
       {
         "key": "d",
-        "text": "Quét dọn sạch sẽ rác thải và túi giấy xung quanh quầy xe sau khi kết thúc ca bán trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Quét dọn sạch sẽ rác thải và túi giấy xung quanh quầy xe sau khi kết thúc ca bán"
       }
     ],
     "correctAnswer": "a",
@@ -3906,11 +3906,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tiếp nhận phản hồi về chất lượng nguyên vật liệu và hỗ trợ giải quyết nhanh chóng cho chủ xe trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tiếp nhận phản hồi về chất lượng nguyên vật liệu và hỗ trợ giải quyết nhanh chóng cho chủ xe"
       },
       {
         "key": "b",
-        "text": "Hướng dẫn mẹo xử lý nhiệt độ dầu chiên và cách bảo quản chả cá sợi khi thời tiết thay đổi trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Hướng dẫn mẹo xử lý nhiệt độ dầu chiên và cách bảo quản chả cá sợi khi thời tiết thay đổi"
       },
       {
         "key": "c",
@@ -3938,15 +3938,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Mức phí là 5.000.000 đồng mỗi năm theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Mức phí là 5.000.000 đồng mỗi năm"
       },
       {
         "key": "c",
-        "text": "Mức phí là 10.000.000 đồng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Mức phí là 10.000.000 đồng"
       },
       {
         "key": "d",
-        "text": "Bắt buộc đóng 50% giá trị gói hợp tác ban đầu do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Bắt buộc đóng 50% giá trị gói hợp tác ban đầu"
       }
     ],
     "correctAnswer": "a",
@@ -3962,11 +3962,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Lắng nghe chân thành, cảm ơn khách hàng đã góp ý và kiểm tra lại định lượng gia vị chan sốt trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Lắng nghe chân thành, cảm ơn khách hàng đã góp ý và kiểm tra lại định lượng gia vị chan sốt"
       },
       {
         "key": "b",
-        "text": "Chủ động xin lỗi khách và chan thêm chút nước sốt Tứ Vị hoặc thêm rau dưa tươi cho khách vừa miệng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chủ động xin lỗi khách và chan thêm chút nước sốt Tứ Vị hoặc thêm rau dưa tươi cho khách vừa miệng"
       },
       {
         "key": "c",
@@ -3974,7 +3974,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Ghi nhớ khẩu vị riêng của khách để các lần sau phục vụ chuẩn xác, chu đáo hơn trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Ghi nhớ khẩu vị riêng của khách để các lần sau phục vụ chuẩn xác, chu đáo hơn"
       }
     ],
     "correctAnswer": "c",
@@ -3990,15 +3990,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc chỉ nhằm mục đích kiểm tra nội bộ mà không mang lại giá trị thu hút khách hàng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc chỉ nhằm mục đích kiểm tra nội bộ mà không mang lại giá trị thu hút khách hàng"
       },
       {
         "key": "b",
-        "text": "Chỉ để làm đẹp cho người bán mà không liên quan đến vệ sinh an toàn thực phẩm do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ để làm đẹp cho người bán mà không liên quan đến vệ sinh an toàn thực phẩm"
       },
       {
         "key": "c",
-        "text": "Gây vướng víu và cản trở thao tác làm bánh của người bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Gây vướng víu và cản trở thao tác làm bánh của người bán"
       },
       {
         "key": "d",
@@ -4046,15 +4046,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Cam kết làm giàu nhanh chóng sau một đêm mà không cần bỏ công sức lao động do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Cam kết làm giàu nhanh chóng sau một đêm mà không cần bỏ công sức lao động"
       },
       {
         "key": "b",
-        "text": "Được công ty cho vay tiền không cần hoàn trả theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Được công ty cho vay tiền không cần hoàn trả"
       },
       {
         "key": "c",
-        "text": "Được nhận xe miễn phí mà không cần mở bán hàng ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Được nhận xe miễn phí mà không cần mở bán hàng ngày"
       },
       {
         "key": "d",
@@ -4074,11 +4074,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Đối tác được quyền sang nhượng lại xe và quyền kinh doanh điểm bán cho người khác khi có nhu cầu trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đối tác được quyền sang nhượng lại xe và quyền kinh doanh điểm bán cho người khác khi có nhu cầu chính đáng."
       },
       {
         "key": "b",
-        "text": "Công ty hỗ trợ kết nối và làm thủ tục pháp lý chuyển nhượng hoàn toàn miễn phí 0 đồng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Công ty hỗ trợ kết nối và làm thủ tục pháp lý chuyển nhượng hoàn toàn miễn phí 0 đồng cho cả hai bên."
       },
       {
         "key": "c",
@@ -4086,7 +4086,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Công ty yêu cầu người nhận chuyển nhượng phải đóng phí phạt thanh lý và nộp lại toàn bộ chi phí mua gói mới từ đầu."
+        "text": "Công ty yêu cầu người nhận chuyển nhượng phải mua lại gói hợp tác mới từ đầu và không công nhận điểm bán cũ."
       }
     ],
     "correctAnswer": "d",
@@ -4102,11 +4102,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 50 điểm bán nhỏ lẻ theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 50 điểm bán nhỏ lẻ"
       },
       {
         "key": "b",
-        "text": "Khoảng 200 điểm bán tại một vài tỉnh thành theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 200 điểm bán tại một vài tỉnh thành"
       },
       {
         "key": "c",
@@ -4114,7 +4114,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Khoảng 10.000 điểm bán khắp thế giới theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 10.000 điểm bán khắp thế giới"
       }
     ],
     "correctAnswer": "c",
@@ -4130,15 +4130,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tạo ra một kênh đầu cơ tài chính ngắn hạn với lãi suất ảo do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tạo ra một kênh đầu cơ tài chính ngắn hạn với lãi suất ảo"
       },
       {
         "key": "b",
-        "text": "Ép người lao động phải làm việc 24/24 giờ mỗi ngày không nghỉ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Ép người lao động phải làm việc 24/24 giờ mỗi ngày không nghỉ"
       },
       {
         "key": "c",
-        "text": "Chỉ nhằm mục đích bán xe inox phế liệu cho người dân do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ nhằm mục đích bán xe inox phế liệu cho người dân"
       },
       {
         "key": "d",
@@ -4158,7 +4158,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Công ty chỉ thành công khi từng đối tác mở xe bán đắt hàng và có thu nhập ổn định mỗi ngày trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Công ty chỉ thành công khi từng đối tác mở xe bán đắt hàng và có thu nhập ổn định mỗi ngày."
       },
       {
         "key": "b",
@@ -4170,12 +4170,12 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Công ty thu phí phần trăm doanh thu mỗi ngày 30% và phạt tiền nếu chủ xe bán ế."
+        "text": "Công ty trích thu phí phần trăm doanh thu mỗi ngày 30% trên tổng số lượng ổ bánh mì bán ra tại điểm bán."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Má Hải không bao giờ thu phần trăm doanh thu hay phạt tiền bán ế. Phát biểu nói thu 30% và phạt tiền là sai sự thật.",
-    "quote": "Công ty 0đ phí doanh số, không áp lực phạt vạ, chỉ mong Cô Chú buôn may bán đắt có tiền lời bỏ túi trọn vẹn mỗi ngày!"
+    "explanation": "Má Hải luôn thực thi chính sách '3 KHÔNG': 0 đồng phí hàng tháng, 0% chia doanh thu và 0 đồng phí gia hạn hàng năm.",
+    "quote": "Công ty 0đ phí hàng tháng, 0% chia doanh thu, chỉ mong Cô Chú buôn may bán đắt có tiền lời bỏ túi trọn vẹn mỗi ngày!"
   },
   {
     "id": "sale-150",
@@ -4190,15 +4190,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Áp dụng mọi thủ thuật thúc giục dồn dập hàng chuyển tiền cọc ngay mà không quan tâm đến tính khả thi của điểm bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Áp dụng mọi thủ thuật thúc giục dồn dập hàng chuyển tiền cọc ngay mà không quan tâm đến tính khả thi của điểm bán"
       },
       {
         "key": "c",
-        "text": "Chỉ tư vấn qua loa và hứa hẹn những điều không có thật do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ tư vấn qua loa và hứa hẹn những điều không có thật"
       },
       {
         "key": "d",
-        "text": "Xem khách hàng như đối tượng để trục lợi một lần rồi bỏ mặc do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Xem khách hàng như đối tượng để trục lợi một lần rồi bỏ mặc"
       }
     ],
     "correctAnswer": "a",
@@ -4218,15 +4218,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Quyền được tự ý sao chép và bán công thức sốt cho người ngoài do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Quyền tự ý cấp lại quyền sử dụng thương hiệu cho bên thứ ba tại khu vực của mình mà không cần qua công ty."
       },
       {
         "key": "c",
-        "text": "Quyền sở hữu toàn bộ cổ phần của công ty mẹ theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Quyền yêu cầu công ty phải chi trả toàn bộ chi phí tiền thuê nhân viên đứng bán mỗi sáng tại xe."
       },
       {
         "key": "d",
-        "text": "Quyền được miễn trừ mọi trách nhiệm về vệ sinh an toàn thực phẩm do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Quyền tự ý thay đổi màu sắc nhận diện và logo thương hiệu theo ý thích cá nhân của chủ xe."
       }
     ],
     "correctAnswer": "a",
@@ -4242,7 +4242,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tịch thu toàn bộ xe và phạt tiền chấm dứt hợp đồng do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đối tác phải tự thanh lý xe cũ cho các điểm thu mua phế liệu ngoài thị trường tự do."
       },
       {
         "key": "b",
@@ -4250,11 +4250,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Hoàn trả 100% toàn bộ tiền bánh mì và chả cá đã bán ra trong 2 tháng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Công ty bảo lưu giá trị xe và hỗ trợ đối tác chuyển đổi sang mô hình kinh doanh nhượng quyền tại điểm bán khác."
       },
       {
         "key": "d",
-        "text": "Bắt buộc đối tác phải tiếp tục mở bán thêm 10 năm nữa do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đối tác được công ty hỗ trợ hoàn lại 100% toàn bộ chi phí nguyên vật liệu chả cá và nước sốt đã nhập trong 2 tháng."
       }
     ],
     "correctAnswer": "b",
@@ -4274,15 +4274,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Giấy viết tay của chủ nhà cho thuê hiên theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Giấy viết tay của chủ nhà cho thuê hiên"
       },
       {
         "key": "c",
-        "text": "Vé số cào trúng thưởng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Vé số cào trúng thưởng"
       },
       {
         "key": "d",
-        "text": "Biên lai thu tiền điện nước gia đình theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Biên lai thu tiền điện nước gia đình"
       }
     ],
     "correctAnswer": "a",
@@ -4298,23 +4298,23 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Thường xuyên gây gổ, cãi vã để tranh giành khách mua hàng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Xem các hàng quán xung quanh là đối thủ cần cạnh tranh gay gắt và tìm cách hạn chế lượng khách của họ."
       },
       {
         "key": "b",
-        "text": "Đổ nước thải và rác sinh hoạt sang cửa nhà hàng xóm do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Giữ khoảng cách xa lánh, không giao tiếp và không cần chào hỏi bất kỳ ai trong khu phố xung quanh."
       },
       {
         "key": "c",
-        "text": "Bật nhạc công suất lớn cả ngày để át tiếng nói của các quán khác do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tự ý bày biện đồ đạc lấn sang phần hiên nhà của các hộ liền kề để tăng không gian bán hàng."
       },
       {
         "key": "d",
-        "text": "Luôn niềm nở chào hỏi, giữ gìn vệ sinh chung, nhường nhịn lối đi và xây dựng mối quan hệ tương thân tương ái 'Bán anh em xa, mua láng giềng gần'."
+        "text": "Luôn giữ hòa khí, niềm nở chào hỏi, giữ gìn vệ sinh chung, tạo mối quan hệ láng giềng thân thiện và trở thành một phần quen thuộc, đáng mến của khu phố mỗi sớm mai."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Ứng xử hòa nhã, sạch sẽ và tôn trọng láng giềng giúp điểm bán nhận được sự yêu mến, ủng hộ và bảo vệ từ cộng đồng dân cư xung quanh.",
+    "explanation": "Bán hàng vỉa hè, tình làng nghĩa xóm là tài sản vô giá: Luôn niềm nở, giữ vệ sinh, nhường nhịn và hỗ trợ nhau để buôn có bạn, bán có phường cùng phát triển.",
     "quote": "Mình bán hàng niềm nở, dọn dẹp sạch bóng, láng giềng xung quanh thấy thương là ủng hộ và giới thiệu bà con lại mua đông đúc!"
   },
   {
@@ -4326,7 +4326,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tự ý tăng giá đột ngột ngay trong đêm mà không cần thông báo do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tự ý tăng giá đột ngột ngay trong đêm mà không cần thông báo"
       },
       {
         "key": "b",
@@ -4334,11 +4334,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Mỗi tuần thay đổi bảng giá nguyên liệu một lần theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Mỗi tuần thay đổi bảng giá nguyên liệu một lần"
       },
       {
         "key": "d",
-        "text": "Chỉ thông báo giá sau khi đã giao hàng tới xe của đối tác do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ thông báo giá sau khi đã giao hàng tới xe của đối tác"
       }
     ],
     "correctAnswer": "b",
@@ -4354,7 +4354,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Thu 5 triệu đồng phí hoa hồng môi giới do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thu 5 triệu đồng phí hoa hồng môi giới"
       },
       {
         "key": "b",
@@ -4362,11 +4362,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Thu 50% giá trị hợp đồng ban đầu do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thu 50% giá trị hợp đồng ban đầu"
       },
       {
         "key": "d",
-        "text": "Bắt buộc người mới phải nộp 10 triệu tiền đặt cọc mới trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Bắt buộc người mới phải nộp 10 triệu tiền đặt cọc mới"
       }
     ],
     "correctAnswer": "b",
@@ -4382,11 +4382,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chiên chả cá sợi phồng giòn vàng ruộm đúng chuẩn hướng dẫn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chiên chả cá sợi phồng giòn vàng ruộm đúng chuẩn hướng dẫn"
       },
       {
         "key": "b",
-        "text": "Tươi cười cảm ơn khách hàng sau khi nhận tiền theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tươi cười cảm ơn khách hàng sau khi nhận tiền"
       },
       {
         "key": "c",
@@ -4394,7 +4394,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Mặc áo đồng phục cam sạch sẽ khi phục vụ khách theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Mặc áo đồng phục cam sạch sẽ khi phục vụ khách"
       }
     ],
     "correctAnswer": "c",
@@ -4410,7 +4410,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "6 tháng kể từ ngày nhận xe theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "6 tháng kể từ ngày nhận xe"
       },
       {
         "key": "b",
@@ -4418,11 +4418,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "5 năm bắt buộc không được chấm dứt theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "5 năm bắt buộc không được chấm dứt"
       },
       {
         "key": "d",
-        "text": "Hợp đồng vô thời hạn không cần ký kết theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Hợp đồng vô thời hạn không cần ký kết"
       }
     ],
     "correctAnswer": "b",
@@ -4438,7 +4438,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Cạnh tranh gay gắt và chèn ép nhau trên từng tuyến đường do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Cạnh tranh gay gắt và chèn ép nhau trên từng tuyến đường"
       },
       {
         "key": "b",
@@ -4446,11 +4446,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Bắt buộc các chủ xe phải đóng quỹ góp họ hàng tháng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc các chủ xe phải đóng quỹ góp họ hàng tháng"
       },
       {
         "key": "d",
-        "text": "Không có bất kỳ hoạt động gắn kết nào theo thói quen kinh doanh tự phát ngoài thị trường."
+        "text": "Không có bất kỳ hoạt động gắn kết nào"
       }
     ],
     "correctAnswer": "b",
@@ -4466,11 +4466,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tự ý mang hung khí sang giải quyết tranh chấp với điểm bán giả mạo do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tự ý tranh cãi gay gắt trực tiếp tại điểm bán gây mất trật tự và ảnh hưởng hình ảnh khu phố."
       },
       {
         "key": "b",
-        "text": "Bỏ bán và chuyển đi nơi khác theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Im lặng bỏ qua và tự hạ giá bán sản phẩm của mình xuống để cạnh tranh tự do."
       },
       {
         "key": "c",
@@ -4478,7 +4478,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Sang mua lại hàng giả về bán chung theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Tự ý mua thêm các sản phẩm trôi nổi ngoài thị trường về bán kèm để giữ khách."
       }
     ],
     "correctAnswer": "c",
@@ -4498,15 +4498,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Vứt toàn bộ túi nilon và rác thải ra công viên cây xanh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vứt toàn bộ túi nilon và rác thải ra công viên cây xanh"
       },
       {
         "key": "c",
-        "text": "Đốt rác nhựa công cộng ngay trước hiên nhà buổi sáng do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đốt rác nhựa công cộng ngay trước hiên nhà buổi sáng"
       },
       {
         "key": "d",
-        "text": "Xả khói đen gây ô nhiễm môi trường khu dân cư theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Xả khói đen gây ô nhiễm môi trường khu dân cư"
       }
     ],
     "correctAnswer": "a",
@@ -4522,7 +4522,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Đóng cửa toàn bộ các điểm bán đường phố để chuyển sang kinh doanh bất động sản do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đóng cửa toàn bộ các điểm bán đường phố để chuyển sang kinh doanh bất động sản"
       },
       {
         "key": "b",
@@ -4530,11 +4530,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Tăng giá bán bánh mì lên 200.000đ/ổ để chỉ phục vụ giới thượng lưu do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tăng giá bán bánh mì lên 200.000đ/ổ để chỉ phục vụ giới thượng lưu"
       },
       {
         "key": "d",
-        "text": "Chuyển giao toàn bộ thương hiệu cho các tập đoàn nước ngoài thâu tóm do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chuyển giao toàn bộ thương hiệu cho các tập đoàn nước ngoài thâu tóm"
       }
     ],
     "correctAnswer": "b",
@@ -4550,11 +4550,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc chủ xe phải thuê riêng kế toán chuyên nghiệp để theo dõi chi phí hàng ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc chủ xe phải thuê riêng kế toán chuyên nghiệp để theo dõi chi phí hàng ngày"
       },
       {
         "key": "b",
-        "text": "Công ty cử nhân viên đến thu giữ toàn bộ tiền bán hàng mỗi ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Công ty cử nhân viên đến thu giữ toàn bộ tiền bán hàng mỗi ngày"
       },
       {
         "key": "c",
@@ -4562,7 +4562,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Yêu cầu chủ xe ghi nợ trên giấy báo cũ theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Yêu cầu chủ xe ghi nợ trên giấy báo cũ"
       }
     ],
     "correctAnswer": "c",
@@ -4578,15 +4578,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "'Công ty cam kết trả lương cứng cố định 20 triệu/tháng dù Cô Chú không mở bán ngày nào.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "'Công ty cam kết trả lương cứng cố định 20 triệu/tháng dù Cô Chú không mở bán ngày nào.'"
       },
       {
         "key": "b",
-        "text": "'Mô hình này không bao giờ có thể kiếm được quá 1 triệu đồng mỗi tháng.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "'Mô hình này không bao giờ có thể kiếm được quá 1 triệu đồng mỗi tháng.'"
       },
       {
         "key": "c",
-        "text": "'Công ty chỉ cam kết nếu Cô Chú đóng thêm 100 triệu tiền bảo hiểm lợi nhuận.' do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "'Công ty chỉ cam kết nếu Cô Chú đóng thêm 100 triệu tiền bảo hiểm lợi nhuận.'"
       },
       {
         "key": "d",
@@ -4606,7 +4606,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Gói 7,5 triệu bao gồm xe inox tiêu chuẩn và trọn bộ nhận diện thương hiệu Má Hải trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Gói 7,5 triệu bao gồm xe inox tiêu chuẩn và trọn bộ nhận diện thương hiệu Má Hải"
       },
       {
         "key": "b",
@@ -4634,11 +4634,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khuyên khách hàng nên vay mượn số tiền thật lớn 500 triệu để mở nhà hàng lớn mới nhanh gỡ lại vốn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khuyên khách hàng nên vay mượn số tiền thật lớn 500 triệu để mở nhà hàng lớn mới nhanh gỡ lại vốn"
       },
       {
         "key": "b",
-        "text": "Chê bai năng lực kinh doanh của khách hàng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chê bai năng lực kinh doanh của khách hàng"
       },
       {
         "key": "c",
@@ -4646,7 +4646,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Khuyên khách hàng không nên đi làm kiếm tiền nữa theo thói quen kinh doanh tự phát ngoài thị trường."
+        "text": "Khuyên khách hàng không nên đi làm kiếm tiền nữa"
       }
     ],
     "correctAnswer": "c",
@@ -4666,11 +4666,11 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Xe và trang thiết bị được kiểm tra kỹ lưỡng về chất lượng trước khi xuất kho bàn giao trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Xe và trang thiết bị được kiểm tra kỹ lưỡng về chất lượng trước khi xuất kho bàn giao"
       },
       {
         "key": "c",
-        "text": "Bàn giao xe inox mới và bộ decal nhận diện thương hiệu được đóng gói cẩn thận gửi kèm đồ nghề trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Bàn giao xe inox mới và bộ decal nhận diện thương hiệu được đóng gói cẩn thận gửi kèm đồ nghề"
       },
       {
         "key": "d",
@@ -4690,11 +4690,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 50.000 ổ/tháng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 50.000 ổ/tháng"
       },
       {
         "key": "b",
-        "text": "Khoảng 200.000 ổ/tháng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 200.000 ổ/tháng"
       },
       {
         "key": "c",
@@ -4702,7 +4702,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Khoảng 10 triệu ổ/tháng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 10 triệu ổ/tháng"
       }
     ],
     "correctAnswer": "c",
@@ -4718,7 +4718,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc chủ xe phải tự chế biến nước sốt theo công thức cá nhân mà không cần dùng sốt công ty do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Để đối tác tự pha chế nước sốt tại nhà nhằm giảm thiểu chi phí vận chuyển hàng ngày."
       },
       {
         "key": "b",
@@ -4726,11 +4726,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Để ép buộc đối tác phải chi tiêu nhiều tiền hơn theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Nhằm tăng lượng tiêu thụ nước sốt lên gấp đôi trong mỗi ổ bánh mì bán ra."
       },
       {
         "key": "d",
-        "text": "Vì công ty muốn chiếm đoạt bí quyết riêng của đối tác do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Để hạn chế việc điểm bán mở rộng thêm thực đơn bánh mì sang các khung giờ buổi chiều tối."
       }
     ],
     "correctAnswer": "b",
@@ -4746,7 +4746,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Thúc thúc giục dồn dập hàng ký hợp đồng ngay mà không giải thích cặn kẽ các điều khoản quyền lợi và nghĩa vụ."
+        "text": "Hối thúc khách hàng ký hợp đồng vội vã mà không giải thích cặn kẽ các điều khoản quyền lợi và nghĩa vụ."
       },
       {
         "key": "b",
@@ -4754,11 +4754,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Hướng dẫn khách kiểm tra thông tin cá nhân và tọa độ điểm bán chính xác trước khi hoàn tất thủ tục trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Hướng dẫn khách kiểm tra thông tin cá nhân và tọa độ điểm bán chính xác trước khi hoàn tất thủ tục"
       },
       {
         "key": "d",
-        "text": "Gửi bản mềm hợp đồng qua Zalo để khách hàng đọc kỹ cùng gia đình trước khi đưa ra quyết định trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Gửi bản mềm hợp đồng qua Zalo để khách hàng đọc kỹ cùng gia đình trước khi đưa ra quyết định"
       }
     ],
     "correctAnswer": "a",
@@ -4778,15 +4778,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Ứng dụng hiển thị rõ ràng giá cả, số lượng và theo dõi được tiến độ vận chuyển hàng tận nơi trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Ứng dụng hiển thị rõ ràng giá cả, số lượng và theo dõi được tiến độ vận chuyển hàng tận nơi"
       },
       {
         "key": "c",
-        "text": "Giúp chủ xe kiểm soát tốt lượng nguyên liệu và chủ động kế hoạch buôn bán hàng ngày trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Giúp chủ xe kiểm soát tốt lượng nguyên liệu và chủ động kế hoạch buôn bán hàng ngày"
       },
       {
         "key": "d",
-        "text": "Chủ xe bắt buộc phải gửi thư tay qua bưu điện mỗi khi muốn đặt thêm 1kg chả cá."
+        "text": "Chủ xe phải trực tiếp đến kho tổng tại trụ sở chính để đặt đơn và nhận hàng thủ công."
       }
     ],
     "correctAnswer": "d",
@@ -4810,7 +4810,7 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Động viên tinh thần và chia sẻ thêm kinh nghiệm giữ khách quen ca sáng cho chủ xe trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Động viên tinh thần và chia sẻ thêm kinh nghiệm giữ khách quen ca sáng cho chủ xe"
       },
       {
         "key": "d",
@@ -4830,7 +4830,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc phải mở bán liên tục cả ngày lẫn đêm 24/24 giờ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc phải mở bán liên tục cả ngày lẫn đêm 24/24 giờ"
       },
       {
         "key": "b",
@@ -4838,11 +4838,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Thuê người mẫu nổi tiếng về đứng bán bánh mì theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đầu tư chi phí lớn vào các chiến dịch chạy quảng cáo trên mạng xã hội tại khu vực xung quanh điểm bán."
       },
       {
         "key": "d",
-        "text": "Tăng giá bánh mì lên gấp 5 lần so với giá khuyến nghị do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Mở rộng bán thêm nhiều món ăn vặt phức tạp cùng lúc trong khung giờ sáng."
       }
     ],
     "correctAnswer": "b",
@@ -4858,11 +4858,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 2 triệu đồng/tháng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 2 triệu đồng/tháng"
       },
       {
         "key": "b",
-        "text": "Khoảng 5 triệu đồng/tháng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 5 triệu đồng/tháng"
       },
       {
         "key": "c",
@@ -4870,7 +4870,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Không có điểm bán nào đạt được mức thu nhập này theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Không có điểm bán nào đạt được mức thu nhập này"
       }
     ],
     "correctAnswer": "c",
@@ -4886,7 +4886,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chỉ nhằm mục đích nhận tiền thưởng hoa hồng cá nhân do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ nhằm mục đích nhận tiền thưởng hoa hồng cá nhân"
       },
       {
         "key": "b",
@@ -4894,11 +4894,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Để tăng thêm lượng người theo dõi trên mạng xã hội cá nhân do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Nhằm xây dựng mạng lưới quan hệ cá nhân để phục vụ cho các mục tiêu kinh doanh riêng ngoài hệ thống."
       },
       {
         "key": "d",
-        "text": "Bắt buộc khách hàng phải mang ơn mình suốt đời theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Để nhanh chóng hoàn thành chỉ tiêu doanh số cá nhân trong tháng mà không cần theo sát tiến độ điểm bán."
       }
     ],
     "correctAnswer": "b",
@@ -4918,15 +4918,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Chỉ ngồi chờ đợi 7 ngày mà không cần chuẩn bị bất kỳ khâu nào thay vì chủ động tương tác và hỗ trợ kịp thời do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ ngồi chờ đợi 7 ngày mà không cần chuẩn bị bất kỳ khâu nào thay vì chủ động tương tác và hỗ trợ kịp thời"
       },
       {
         "key": "c",
-        "text": "Khai trương ngay trong 10 phút sau khi gọi điện mà không cần xe hay biển hiệu do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khai trương ngay trong 10 phút sau khi gọi điện mà không cần xe hay biển hiệu"
       },
       {
         "key": "d",
-        "text": "Học lý thuyết trong 6 tháng rồi mới tiến hành đặt cọc làm xe do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Học lý thuyết trong 6 tháng rồi mới tiến hành đặt cọc làm xe"
       }
     ],
     "correctAnswer": "a",
@@ -4942,7 +4942,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chỉ từ 15 đến 20 ổ mỗi sáng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chỉ từ 15 đến 20 ổ mỗi sáng"
       },
       {
         "key": "b",
@@ -4950,11 +4950,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Khoảng 200 ổ mỗi sáng mới bắt đầu hòa vốn do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 200 ổ mỗi sáng mới bắt đầu hòa vốn"
       },
       {
         "key": "d",
-        "text": "Không thể xác định được điểm hòa vốn theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Không thể xác định được điểm hòa vốn"
       }
     ],
     "correctAnswer": "b",
@@ -4970,7 +4970,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khách hàng phải tự mua bản đồ giấy về vẽ compa thủ công từ các nguồn trôi nổi trên thị trường tự do do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khách hàng phải tự mua bản đồ giấy về vẽ compa thủ công từ các nguồn trôi nổi trên thị trường tự do"
       },
       {
         "key": "b",
@@ -4978,11 +4978,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Hệ thống tự động duyệt bất kỳ vị trí nào mà không cần kiểm tra khoảng cách do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Hệ thống tự động duyệt bất kỳ vị trí nào mà không cần kiểm tra khoảng cách"
       },
       {
         "key": "d",
-        "text": "Bắt buộc khách hàng phải thuê vệ tinh đo đạc riêng do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Bắt buộc khách hàng phải thuê vệ tinh đo đạc riêng"
       }
     ],
     "correctAnswer": "b",
@@ -4998,11 +4998,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Đóng ca thật sớm lúc 7h00 sáng khi người đi làm vẫn đang đông đúc do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Đóng ca thật sớm lúc 7h00 sáng khi người đi làm vẫn đang đông đúc"
       },
       {
         "key": "b",
-        "text": "Giảm lượng chả cá sợi trong ổ bánh xuống còn 10% để tiết kiệm nguyên liệu do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Giảm lượng chả cá sợi trong ổ bánh xuống còn 10% để tiết kiệm nguyên liệu"
       },
       {
         "key": "c",
@@ -5010,7 +5010,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Tăng giá bán bánh mì lên gấp đôi vào những ngày trời mưa do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tăng giá bán bánh mì lên gấp đôi vào những ngày trời mưa"
       }
     ],
     "correctAnswer": "c",
@@ -5030,15 +5030,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Chỉ giao một tờ giấy photocopy đen trắng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chỉ cung cấp file mềm thiết kế qua mạng để đối tác tự tìm nhà in gia công bên ngoài."
       },
       {
         "key": "c",
-        "text": "Bắt buộc đối tác phải tự bỏ tiền túi thuê dàn nhạc kèn tây về biểu diễn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Yêu cầu đối tác phải mua thêm gói truyền thông quảng cáo riêng biệt với chi phí đắt đỏ."
       },
       {
         "key": "d",
-        "text": "Không cung cấp bất kỳ vật phẩm truyền thông nào theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Bàn giao các ấn phẩm decal nhận diện dùng chung không có thông tin và chương trình ưu đãi ngày khai trương."
       }
     ],
     "correctAnswer": "a",
@@ -5054,7 +5054,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Vì công ty không theo dõi được doanh số của đối tác do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vì công ty không theo dõi được doanh số của đối tác"
       },
       {
         "key": "b",
@@ -5062,11 +5062,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Vì đây là mô hình làm từ thiện phi lợi nhuận của nhà nước do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vì đây là mô hình làm từ thiện phi lợi nhuận của nhà nước"
       },
       {
         "key": "d",
-        "text": "Vì công ty sẽ thu tiền trích doanh thu bù vào cuối năm một lần do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Vì công ty sẽ thu tiền trích doanh thu bù vào cuối năm một lần"
       }
     ],
     "correctAnswer": "b",
@@ -5082,7 +5082,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Yêu cầu khách chuyển tiền vào số tài khoản cá nhân không rõ nguồn gốc mà không cung cấp quy trình hướng dẫn cụ thể."
+        "text": "Yêu cầu khách đặt cọc trước bằng thẻ cào điện thoại hoặc chuyển khoản qua ví trung gian cá nhân."
       },
       {
         "key": "b",
@@ -5090,11 +5090,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Không viết biên lai và dặn khách không được nói cho ai biết do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Nhận tiền mặt trực tiếp mà không lập phiếu thu có dấu mộc xác nhận và không có mã hợp đồng theo dõi."
       },
       {
         "key": "d",
-        "text": "Hẹn gặp khách tại quán nước ngoài đường để nhận tiền mặt không giấy tờ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Hướng dẫn khách thanh toán trực tiếp cho đơn vị vận chuyển khi xe được giao tới mà không qua tài khoản công ty."
       }
     ],
     "correctAnswer": "b",
@@ -5110,11 +5110,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tăng giá bánh mì lên gấp đôi ngay lập tức để tận dụng cơ hội do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tăng giá bánh mì lên gấp đôi ngay lập tức để tận dụng cơ hội"
       },
       {
         "key": "b",
-        "text": "Đóng cửa nghỉ ngơi vì đã có nhiều khách quen theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đóng cửa nghỉ ngơi vì đã có nhiều khách quen"
       },
       {
         "key": "c",
@@ -5122,7 +5122,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Cắt bớt lượng sốt Tứ Vị để giảm chi phí theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Cắt bớt lượng sốt Tứ Vị để giảm chi phí"
       }
     ],
     "correctAnswer": "c",
@@ -5138,15 +5138,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Không bảo hành và không hỗ trợ sửa chữa dưới mọi hình thức do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Không bảo hành và không hỗ trợ sửa chữa dưới mọi hình thức"
       },
       {
         "key": "b",
-        "text": "Bắt buộc đối tác phải mua xe mới nếu xe bị hư hỏng nhẹ bánh xe do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc đối tác phải mua xe mới nếu xe bị hư hỏng nhẹ bánh xe"
       },
       {
         "key": "c",
-        "text": "Thu phí hỗ trợ kỹ thuật 1 triệu đồng cho mỗi cuộc gọi hướng dẫn do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Thu phí hỗ trợ kỹ thuật 1 triệu đồng cho mỗi cuộc gọi hướng dẫn"
       },
       {
         "key": "d",
@@ -5166,15 +5166,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chỉ quan tâm đến việc bán xe lấy tiền một lần rồi thôi do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ quan tâm đến việc bán xe lấy tiền một lần rồi thôi"
       },
       {
         "key": "b",
-        "text": "Sự cạnh tranh gay gắt triệt hạ lẫn nhau giữa các điểm bán do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Sự cạnh tranh gay gắt triệt hạ lẫn nhau giữa các điểm bán"
       },
       {
         "key": "c",
-        "text": "Chỉ tập trung vào việc phạt tiền các chủ xe vi phạm do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ tập trung vào việc hạn chế quyền lợi các chủ xe vi phạm"
       },
       {
         "key": "d",
@@ -5194,15 +5194,15 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Tự ý đẩy xe sang vị trí mới mà không cần thông báo cho công ty do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tự ý cơi nới hoặc ghép 2 xe tại cùng một vị trí mặt bằng cũ để tăng diện tích bán hàng."
       },
       {
         "key": "b",
-        "text": "Bắt buộc phải thanh toán gấp 3 lần chi phí gói ban đầu do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bắt buộc đối tác phải thành lập doanh nghiệp riêng mới được phép đứng tên sở hữu từ 2 xe trở lên."
       },
       {
         "key": "c",
-        "text": "Phải từ bỏ điểm bán thứ nhất mới được mở điểm bán thứ hai do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Phải thanh lý dứt điểm điểm bán thứ nhất và bàn giao xe cũ về công ty trước khi đăng ký điểm bán mới."
       },
       {
         "key": "d",
@@ -5222,11 +5222,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Bắt buộc học viên phải đóng 10 triệu đồng tiền mua tài liệu do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Yêu cầu đối tác phải tham gia khóa học có thu phí tại trung tâm đào tạo ẩm thực bên ngoài."
       },
       {
         "key": "b",
-        "text": "Chỉ cho xem tài liệu một lần rồi thu hồi lại theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chỉ chuyển giao bằng hình thức truyền miệng trực tiếp trong ngày bàn giao xe mà không có tài liệu lưu giữ."
       },
       {
         "key": "c",
@@ -5234,7 +5234,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Không cung cấp bất kỳ tài liệu hướng dẫn nào theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chỉ cung cấp tài liệu kỹ thuật chiên chả và không hướng dẫn kỹ năng giao tiếp bán hàng với người mua."
       }
     ],
     "correctAnswer": "c",
@@ -5278,7 +5278,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 2.000.000 đồng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 2.000.000 đồng"
       },
       {
         "key": "b",
@@ -5286,11 +5286,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Khoảng 15.000.000 đồng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 15.000.000 đồng"
       },
       {
         "key": "d",
-        "text": "Khoảng 30.000.000 đồng theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 30.000.000 đồng"
       }
     ],
     "correctAnswer": "b",
@@ -5334,11 +5334,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Thường xuyên thay đổi công thức gia vị theo cảm tính mỗi ngày do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Thường xuyên thay đổi công thức gia vị theo cảm tính cá nhân mỗi ngày."
       },
       {
         "key": "b",
-        "text": "Áp đặt các mức phí cao để gây áp lực lên đối tác phải làm việc quá sức do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Dồn nguồn lực vào các chiến dịch quảng cáo truyền thông ngắn hạn thay vì tập trung vào chất lượng cốt lõi."
       },
       {
         "key": "c",
@@ -5346,7 +5346,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Bán phá giá với sản phẩm kém chất lượng trôi nổi theo thói quen kinh doanh tự phát ngoài thị trường."
+        "text": "Chạy theo xu hướng mở rộng quy mô đa ngành ngoài lĩnh vực ẩm thực ăn sáng đường phố."
       }
     ],
     "correctAnswer": "c",
@@ -5362,11 +5362,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Trang phục gọn gàng, sạch sẽ, luôn đeo tạp dề và đội nón đồng phục Má Hải trong suốt ca bán sáng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Trang phục gọn gàng, sạch sẽ, luôn đeo tạp dề và đội nón đồng phục Má Hải trong suốt ca bán sáng"
       },
       {
         "key": "b",
-        "text": "Thái độ phục vụ niềm nở, tươi cười, chủ động cảm ơn và chúc khách hàng một ngày mới tốt lành trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Thái độ phục vụ niềm nở, tươi cười, chủ động cảm ơn và chúc khách hàng một ngày mới tốt lành"
       },
       {
         "key": "c",
@@ -5374,7 +5374,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Bảo đảm xe inox luôn được lau chùi sáng bóng và vỉa hè thông thoáng sạch sẽ do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Bảo đảm xe inox luôn được lau chùi sáng bóng và vỉa hè thông thoáng sạch sẽ"
       }
     ],
     "correctAnswer": "c",
@@ -5390,7 +5390,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Sử dụng chả cá chiên sẵn từ hôm trước để nguội giao cho khách do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Sử dụng chả cá chiên sẵn từ hôm trước để nguội giao cho khách."
       },
       {
         "key": "b",
@@ -5398,11 +5398,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Độn 80% bột mì vào chả cá để giảm giá thành theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Sử dụng các loại chả cá viên công nghiệp có tỷ lệ bột cao và bảo quản lạnh dài ngày."
       },
       {
         "key": "d",
-        "text": "Không cho rau dưa để khách ăn nhanh hơn theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Chế biến sẵn toàn bộ bánh từ đêm trước để tiết kiệm thời gian chuẩn bị ca sáng."
       }
     ],
     "correctAnswer": "b",
@@ -5426,7 +5426,7 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Đồng hành gỡ rối các rào cản về mặt bằng, kỹ thuật bán hàng và sự lo lắng của người mới kinh doanh trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Đồng hành gỡ rối các rào cản về mặt bằng, kỹ thuật bán hàng và sự lo lắng của người mới kinh doanh"
       },
       {
         "key": "d",
@@ -5446,11 +5446,11 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Khoảng 80% tổng doanh thu của chuỗi theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 80% tổng doanh thu của chuỗi"
       },
       {
         "key": "b",
-        "text": "Khoảng 50% tổng doanh thu của chuỗi theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 50% tổng doanh thu của chuỗi"
       },
       {
         "key": "c",
@@ -5458,7 +5458,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Khoảng 90% tổng doanh thu của chuỗi theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khoảng 90% tổng doanh thu của chuỗi"
       }
     ],
     "correctAnswer": "c",
@@ -5474,7 +5474,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Chỉ nhằm mục đích có đồng phục nổi bật hơn các hàng quán xung quanh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Chỉ nhằm mục đích có đồng phục nổi bật hơn các hàng quán xung quanh."
       },
       {
         "key": "b",
@@ -5482,11 +5482,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Bắt buộc phải mặc để không bị công ty trừ lương theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Trang phục mang tính chất thời trang cá nhân để tạo sự khác biệt riêng lẻ."
       },
       {
         "key": "d",
-        "text": "Mặc áo để che đi trang phục cá nhân bên trong theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Mẫu áo được thiết kế dùng chung cho nhiều chuỗi dịch vụ khác nhau ngoài ngành thực phẩm."
       }
     ],
     "correctAnswer": "b",
@@ -5502,7 +5502,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Cam kết không thu phí nhượng quyền hàng tháng và không trích phần trăm doanh thu bán hàng trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Cam kết không thu phí nhượng quyền hàng tháng và không trích phần trăm doanh thu bán hàng"
       },
       {
         "key": "b",
@@ -5514,7 +5514,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Công ty bắt buộc thu hồi xe sau 3 tháng và gây áp lực lên đối tác phải mua lại xe mới với giá gấp 5 lần."
+        "text": "Công ty bắt buộc đối tác phải đổi xe mới định kỳ hàng năm và thanh toán chi phí đóng xe lại từ đầu."
       }
     ],
     "correctAnswer": "d",
@@ -5534,15 +5534,15 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Lấy tổng doanh thu trừ đi 90% tiền phí quản lý công ty do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Doanh thu bán hàng - (Chi phí nguyên liệu + Phí nhượng quyền hàng tháng + Phí quản lý thương hiệu định kỳ)."
       },
       {
         "key": "c",
-        "text": "Chia đều toàn bộ doanh thu cho các hàng quán xung quanh do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Tổng doanh thu trừ đi các khoản chi phí khấu hao mặt bằng cố định theo giá thuê nguyên căn dài hạn."
       },
       {
         "key": "d",
-        "text": "Bằng 0 vì không có tiền lời sau khi trừ chi phí theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Doanh thu bán lẻ ước tính dựa trên định mức khoán doanh số cố định của công ty mẹ."
       }
     ],
     "correctAnswer": "a",
@@ -5558,7 +5558,7 @@ const questions = [
     "options": [
       {
         "key": "a",
-        "text": "Đối tác yêu cầu hủy sau 6 tháng kinh doanh theo thói quen kinh doanh tự phát ngoài thị trường trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khi đối tác đã nhận bàn giao trọn bộ xe và dụng cụ tại điểm bán."
       },
       {
         "key": "b",
@@ -5566,11 +5566,11 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Không bao giờ được hoàn cọc trong bất kỳ trường hợp nào do chưa nắm rõ quy trình chuẩn hóa của hệ thống."
+        "text": "Khi đối tác muốn chuyển đổi sang mua một gói hợp tác có giá trị cao hơn."
       },
       {
         "key": "d",
-        "text": "Khi đối tác chuyển nhượng điểm bán cho người khác do chưa nắm rõ quy trình chuẩn hóa của hệ thống trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Khi đối tác đã hoàn tất việc quét tọa độ và bắt đầu mở bán ca đầu tiên."
       }
     ],
     "correctAnswer": "b",
@@ -5590,7 +5590,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Cam kết sinh lời gấp nhiều lần trong tháng đầu tiên mà không cần đối tác phải trực tiếp đứng bán trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Cam kết sinh lời gấp nhiều lần trong tháng đầu tiên mà không cần đối tác phải trực tiếp đứng bán"
       },
       {
         "key": "c",
@@ -5598,7 +5598,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Mở rộng điểm bán ồ ạt không cần tuân thủ khoảng cách bảo vệ độc quyền 300m giữa các chủ xe trong hoạt động kinh doanh thực tế hàng ngày."
+        "text": "Mở rộng điểm bán ồ ạt không cần tuân thủ khoảng cách bảo vệ độc quyền 300m giữa các chủ xe"
       }
     ],
     "correctAnswer": "c",
