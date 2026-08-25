@@ -31,7 +31,7 @@
 
 * **a)** Tư vấn Gói 4,8 triệu để tận dụng khung xe cũ, công ty dán lại bộ decal cam nhận diện mới, cấp đồng phục và hướng dẫn tay nghề. ⭐ **[ĐÁP ÁN ĐÚNG]**
 * **b)** Khuyên khách hàng nên bỏ xe cũ đi để mua Gói 10,3 triệu đầy đủ trang thiết bị mới.
-* **c)** Tư vấn Gói 7,5 triệu để lấy thêm một xe bánh mì mới làm dự phòng.
+* **c)** Tư vấn Gói 8,8 triệu để lấy thêm một xe bánh mì mới làm dự phòng.
 * **d)** Đề xuất khách chỉ mua nguyên liệu chả cá mà không cần tham gia chuỗi nhượng quyền.
 
 > **Đáp án: a).** Gói 4,8 triệu giúp khách có sẵn xe tiết kiệm tối đa vốn đầu tư ban đầu, chỉ cần thay mới bộ decal nhận diện chính hãng.
@@ -63,14 +63,14 @@
 
 ---
 
-### **Câu 004.** Điểm khác biệt cốt lõi giữa Gói hợp tác 4,8 triệu và Gói hợp tác 7,5 triệu là gì?
+### **Câu 004.** Điểm khác biệt cốt lõi giữa Gói hợp tác 4,8 triệu và Gói hợp tác 8,8 triệu là gì?
 
-* **a)** Gói 4,8 triệu chỉ bán buổi sáng, còn Gói 7,5 triệu được mở bán cả ngày lẫn đêm.
-* **b)** Gói 4,8 triệu có thêm bếp gas chảo chiên, còn Gói 7,5 triệu chỉ có xe không kèm đồ bếp.
-* **c)** Gói 4,8 triệu được miễn phí tái ký, còn Gói 7,5 triệu phải đóng phí duy trì hàng tháng.
-* **d)** Gói 4,8 triệu dành cho khách đã có sẵn xe (tận dụng khung xe cũ), còn Gói 7,5 triệu bàn giao nguyên chiếc xe inox mới tinh. ⭐ **[ĐÁP ÁN ĐÚNG]**
+* **a)** Gói 4,8 triệu chỉ bán buổi sáng, còn Gói 8,8 triệu được mở bán cả ngày lẫn đêm.
+* **b)** Gói 4,8 triệu có thêm bếp gas chảo chiên, còn Gói 8,8 triệu chỉ có xe không kèm đồ bếp.
+* **c)** Gói 4,8 triệu được miễn phí tái ký, còn Gói 8,8 triệu phải đóng phí duy trì hàng tháng.
+* **d)** Gói 4,8 triệu dành cho khách đã có sẵn xe (tận dụng khung xe cũ), còn Gói 8,8 triệu bàn giao nguyên chiếc xe inox mới tinh. ⭐ **[ĐÁP ÁN ĐÚNG]**
 
-> **Đáp án: d).** Gói 4,8tr dành cho đối tác có sẵn xe, Gói 7,5tr bàn giao xe inox mới tinh có sẵn tủ kính chắn gió.
+> **Đáp án: d).** Gói 4,8tr dành cho đối tác có sẵn xe, Gói 8,8tr bàn giao xe inox mới tinh có sẵn tủ kính chắn gió.
 > 💬 *Câu thoại thực chiến:* "Dạ vốn mình bỏ ra có mấy triệu nhẹ tênh à Cô ơi, mặt bằng hiên nhà sáng thuê có 1-2 triệu, mỗi ổ mình lời ròng hơn 5 ngàn. Cô bán chăm chỉ chừng 1 tới 2 tháng đầu là lấy lại trọn vẹn tiền vốn ban đầu rồi, từ tháng sau là tiền lời ròng tích lũy cho nhà mình luôn ạ!"
 
 ---
@@ -90,16 +90,16 @@
 ### **Câu 006.** Khách hàng chưa có xe và muốn nhận bàn giao xe mới hoàn chỉnh nhưng đã có sẵn bếp chiên ở nhà, gói nào phù hợp nhất?
 
 * **a)** Gói 4,8 triệu và tự dán decal tại nhà.
-* **b)** Gói 7,5 triệu (bàn giao nguyên chiếc xe inox mới tinh kèm bộ decal cam và hướng dẫn tay nghề). ⭐ **[ĐÁP ÁN ĐÚNG]**
+* **b)** Gói 8,8 triệu (bàn giao nguyên chiếc xe inox mới tinh kèm bộ decal cam và hướng dẫn tay nghề). ⭐ **[ĐÁP ÁN ĐÚNG]**
 * **c)** Gói 10,3 triệu để mua thêm một bộ bếp mới dự phòng.
 * **d)** Khuyên khách tự thuê thợ cơ khí đóng xe riêng ngoài thị trường.
 
-> **Đáp án: b).** Gói 7,5 triệu cung cấp xe inox hoàn chỉnh kèm nhận diện thương hiệu, giúp khách tận dụng đồ bếp có sẵn.
-> 💬 *Câu thoại thực chiến:* "Dạ Gói 7,5 triệu bên em bàn giao nguyên chiếc xe inox mới tinh có sẵn tủ kính chắn gió với bộ decal cam nổi bật. Em gửi thêm áo nón, Giấy chứng nhận ATTP với video chỉ dẫn chiên chả tận tay, Cô Chú chỉ việc nhận xe là mở bán ngon lành ạ!"
+> **Đáp án: b).** Gói 8,8 triệu cung cấp xe inox hoàn chỉnh kèm nhận diện thương hiệu, giúp khách tận dụng đồ bếp có sẵn.
+> 💬 *Câu thoại thực chiến:* "Dạ Gói 8,8 triệu bên em bàn giao nguyên chiếc xe inox mới tinh có sẵn tủ kính chắn gió với bộ decal cam nổi bật. Em gửi thêm áo nón, Giấy chứng nhận ATTP với video chỉ dẫn chiên chả tận tay, Cô Chú chỉ việc nhận xe là mở bán ngon lành ạ!"
 
 ---
 
-### **Câu 007.** So với Gói 7,5 triệu, Gói hợp tác trọn gói 10,3 triệu được trang bị thêm những hạng mục quan trọng nào?
+### **Câu 007.** So với Gói 8,8 triệu, Gói hợp tác trọn gói 10,3 triệu được trang bị thêm những hạng mục quan trọng nào?
 
 * **a)** Bổ sung gói bảo hiểm kinh doanh độc quyền trong thời hạn 3 năm.
 * **b)** Bổ sung thêm một chiếc xe bánh mì thứ 2 để mở rộng chuỗi điểm bán.
@@ -1266,12 +1266,12 @@
 ### **Câu 103.** Khi khách hàng chỉ có sẵn nguồn vốn khoảng 5 triệu đồng, các giải pháp hợp tác phù hợp gồm những gì?
 
 * **a)** Lựa chọn Gói 4,8 triệu nếu gia đình đã có sẵn xe bánh mì cũ để tối ưu chi phí đầu tư.
-* **b)** Chọn Gói 7,5 triệu và tận dụng bộ đồ bếp chiên có sẵn ở nhà để giảm thiểu chi phí phát sinh.
+* **b)** Chọn Gói 8,8 triệu và tận dụng bộ đồ bếp chiên có sẵn ở nhà để giảm thiểu chi phí phát sinh.
 * **c)** Tất cả các giải pháp trên đều giúp người ít vốn khởi nghiệp an toàn và hiệu quả. ⭐ **[ĐÁP ÁN ĐÚNG]**
 * **d)** Khai thác tối đa nguồn vốn nhàn rỗi, bán chăm chỉ 1–2 tháng là hoàn vốn an toàn.
 
-> **Đáp án: c).** Giải pháp linh hoạt (Gói 4,8tr có sẵn xe hoặc Gói 7,5tr tận dụng bếp nhà) giúp người vốn ít dễ dàng khởi sự.
-> 💬 *Câu thoại thực chiến:* "Dạ vốn mình có tầm 5 triệu thì Chị tận dụng xe có sẵn ở nhà để chọn Gói 4,8 triệu, hoặc chọn Gói 7,5 triệu và dùng đồ bếp ở nhà Chị nè. Khởi sự nhẹ vốn, bán 1-2 tháng là hoàn vốn rồi, an toàn tuyệt đối luôn Chị nha!"
+> **Đáp án: c).** Giải pháp linh hoạt (Gói 4,8tr có sẵn xe hoặc Gói 8,8tr tận dụng bếp nhà) giúp người vốn ít dễ dàng khởi sự.
+> 💬 *Câu thoại thực chiến:* "Dạ vốn mình có tầm 5 triệu thì Chị tận dụng xe có sẵn ở nhà để chọn Gói 4,8 triệu, hoặc chọn Gói 8,8 triệu và dùng đồ bếp ở nhà Chị nè. Khởi sự nhẹ vốn, bán 1-2 tháng là hoàn vốn rồi, an toàn tuyệt đối luôn Chị nha!"
 
 ---
 

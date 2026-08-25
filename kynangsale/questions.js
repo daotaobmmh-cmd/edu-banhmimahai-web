@@ -20,7 +20,7 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Tư vấn Gói 7,5 triệu để lấy thêm một xe bánh mì mới làm dự phòng."
+        "text": "Tư vấn Gói 8,8 triệu để lấy thêm một xe bánh mì mới làm dự phòng."
       },
       {
         "key": "d",
@@ -86,27 +86,27 @@ const questions = [
   {
     "sectionNo": 1,
     "displayNumber": 4,
-    "question": "Điểm khác biệt cốt lõi giữa Gói hợp tác 4,8 triệu và Gói hợp tác 7,5 triệu là gì?",
+    "question": "Điểm khác biệt cốt lõi giữa Gói hợp tác 4,8 triệu và Gói hợp tác 8,8 triệu là gì?",
     "options": [
       {
         "key": "a",
-        "text": "Gói 4,8 triệu chỉ bán buổi sáng, còn Gói 7,5 triệu được mở bán cả ngày lẫn đêm."
+        "text": "Gói 4,8 triệu chỉ bán buổi sáng, còn Gói 8,8 triệu được mở bán cả ngày lẫn đêm."
       },
       {
         "key": "b",
-        "text": "Gói 4,8 triệu có thêm bếp gas chảo chiên, còn Gói 7,5 triệu chỉ có xe không kèm đồ bếp."
+        "text": "Gói 4,8 triệu có thêm bếp gas chảo chiên, còn Gói 8,8 triệu chỉ có xe không kèm đồ bếp."
       },
       {
         "key": "c",
-        "text": "Gói 4,8 triệu được miễn phí tái ký, còn Gói 7,5 triệu phải đóng phí duy trì hàng tháng."
+        "text": "Gói 4,8 triệu được miễn phí tái ký, còn Gói 8,8 triệu phải đóng phí duy trì hàng tháng."
       },
       {
         "key": "d",
-        "text": "Gói 4,8 triệu dành cho khách đã có sẵn xe (tận dụng khung xe cũ), còn Gói 7,5 triệu bàn giao nguyên chiếc xe inox mới tinh."
+        "text": "Gói 4,8 triệu dành cho khách đã có sẵn xe (tận dụng khung xe cũ), còn Gói 8,8 triệu bàn giao nguyên chiếc xe inox mới tinh."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Gói 4,8tr dành cho đối tác có sẵn xe, Gói 7,5tr bàn giao xe inox mới tinh có sẵn tủ kính chắn gió.",
+    "explanation": "Gói 4,8tr dành cho đối tác có sẵn xe, Gói 8,8tr bàn giao xe inox mới tinh có sẵn tủ kính chắn gió.",
     "quote": "Dạ vốn mình bỏ ra có mấy triệu nhẹ tênh à Cô ơi, mặt bằng hiên nhà sáng thuê có 1-2 triệu, mỗi ổ mình lời ròng hơn 5 ngàn. Cô bán chăm chỉ chừng 1 tới 2 tháng đầu là lấy lại trọn vẹn tiền vốn ban đầu rồi, từ tháng sau là tiền lời ròng tích lũy cho nhà mình luôn ạ!"
   },
   {
@@ -146,7 +146,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Gói 7,5 triệu (bàn giao nguyên chiếc xe inox mới tinh kèm bộ decal cam và hướng dẫn tay nghề)."
+        "text": "Gói 8,8 triệu (bàn giao nguyên chiếc xe inox mới tinh kèm bộ decal cam và hướng dẫn tay nghề)."
       },
       {
         "key": "c",
@@ -158,13 +158,13 @@ const questions = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Gói 7,5 triệu cung cấp xe inox hoàn chỉnh kèm nhận diện thương hiệu, giúp khách tận dụng đồ bếp có sẵn.",
-    "quote": "Dạ Gói 7,5 triệu bên em bàn giao nguyên chiếc xe inox mới tinh có sẵn tủ kính chắn gió với bộ decal cam nổi bật. Em gửi thêm áo nón, Giấy chứng nhận ATTP với video chỉ dẫn chiên chả tận tay, Cô Chú chỉ việc nhận xe là mở bán ngon lành ạ!"
+    "explanation": "Gói 8,8 triệu cung cấp xe inox hoàn chỉnh kèm nhận diện thương hiệu, giúp khách tận dụng đồ bếp có sẵn.",
+    "quote": "Dạ Gói 8,8 triệu bên em bàn giao nguyên chiếc xe inox mới tinh có sẵn tủ kính chắn gió với bộ decal cam nổi bật. Em gửi thêm áo nón, Giấy chứng nhận ATTP với video chỉ dẫn chiên chả tận tay, Cô Chú chỉ việc nhận xe là mở bán ngon lành ạ!"
   },
   {
     "sectionNo": 1,
     "displayNumber": 7,
-    "question": "So với Gói 7,5 triệu, Gói hợp tác trọn gói 10,3 triệu được trang bị thêm những hạng mục quan trọng nào?",
+    "question": "So với Gói 8,8 triệu, Gói hợp tác trọn gói 10,3 triệu được trang bị thêm những hạng mục quan trọng nào?",
     "options": [
       {
         "key": "a",
@@ -2668,7 +2668,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Chọn Gói 7,5 triệu và tận dụng bộ đồ bếp chiên có sẵn ở nhà để giảm thiểu chi phí phát sinh."
+        "text": "Chọn Gói 8,8 triệu và tận dụng bộ đồ bếp chiên có sẵn ở nhà để giảm thiểu chi phí phát sinh."
       },
       {
         "key": "c",
@@ -2680,8 +2680,8 @@ const questions = [
       }
     ],
     "correctAnswer": "c",
-    "explanation": "Giải pháp linh hoạt (Gói 4,8tr có sẵn xe hoặc Gói 7,5tr tận dụng bếp nhà) giúp người vốn ít dễ dàng khởi sự.",
-    "quote": "Dạ vốn mình có tầm 5 triệu thì Chị tận dụng xe có sẵn ở nhà để chọn Gói 4,8 triệu, hoặc chọn Gói 7,5 triệu và dùng đồ bếp ở nhà Chị nè. Khởi sự nhẹ vốn, bán 1-2 tháng là hoàn vốn rồi, an toàn tuyệt đối luôn Chị nha!"
+    "explanation": "Giải pháp linh hoạt (Gói 4,8tr có sẵn xe hoặc Gói 8,8tr tận dụng bếp nhà) giúp người vốn ít dễ dàng khởi sự.",
+    "quote": "Dạ vốn mình có tầm 5 triệu thì Chị tận dụng xe có sẵn ở nhà để chọn Gói 4,8 triệu, hoặc chọn Gói 8,8 triệu và dùng đồ bếp ở nhà Chị nè. Khởi sự nhẹ vốn, bán 1-2 tháng là hoàn vốn rồi, an toàn tuyệt đối luôn Chị nha!"
   },
   {
     "sectionNo": 5,
