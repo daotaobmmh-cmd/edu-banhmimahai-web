@@ -446,27 +446,27 @@ const questions = [
     "displayNumber": 16,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Phần mềm số hóa Map Tracker mang lại những tiện ích vượt trội nào khi kiểm tra mặt bằng cho đối tác?",
+    "question": "Hệ thống bản đồ số hóa Map Tracker được Bộ phận Phát triển Nhượng quyền Má Hải sử dụng nội bộ nhằm mục đích gì?",
     "options": [
       {
         "key": "a",
-        "text": "Ứng dụng bản đồ vệ tinh quét nhanh tọa độ định vị GPS chính xác 100% chỉ trong vòng 5 phút."
+        "text": "Hỗ trợ chuyên viên quét nhanh tọa độ định vị GPS chính xác 100% trong vòng 5 phút khi khách hàng gửi vị trí."
       },
       {
         "key": "b",
-        "text": "Tự động đo khoảng cách bảo vệ độc quyền 300m/500m/1000m để bảo đảm không bị trùng lặp vị trí."
+        "text": "Tự động đo khoảng cách cự ly 300m/500m/1000m để bảo đảm không trùng lặp và bảo vệ quyền lợi cho đối tác."
       },
       {
         "key": "c",
-        "text": "Lưu trữ hồ sơ điểm bán trọn đời và bảo vệ quyền khai thác kinh doanh lâu dài cho chủ xe."
+        "text": "Lưu trữ hồ sơ điểm bán trọn đời trên hệ thống công ty nhằm bảo vệ quyền khai thác độc quyền lâu dài cho chủ xe."
       },
       {
         "key": "d",
-        "text": "Tất cả các tiện ích trên đều bảo đảm tính minh bạch và quyền lợi độc quyền tối cao cho đối tác."
+        "text": "Tất cả các mục đích trên đều bảo đảm tính minh bạch và quyền lợi độc quyền tối cao cho đối tác."
       }
     ],
     "correctAnswer": "d",
-    "explanation": "Map Tracker số hóa kiểm tra tọa độ vệ tinh chuẩn xác trong 5 phút, bảo đảm tính minh bạch và độc quyền.",
+    "explanation": "Map Tracker là công cụ nội bộ của Bộ phận Phát triển Nhượng quyền giúp quét tọa độ chuẩn xác trong 5 phút.",
     "quote": "Dạ Chú chỉ cần đứng tại vị trí hiên nhà bấm gửi định vị Zalo qua cho con, trong vòng 5 phút là hệ thống Map Tracker vệ tinh quét ra kết quả liền. Con chụp gửi Chú xem rõ ranh giới cự ly 300m chung quanh, minh bạch và yên tâm tuyệt đối ạ!"
   },
   {
