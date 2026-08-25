@@ -454,7 +454,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Tự động đo khoảng cách cự ly 300m/500m/1000m để bảo đảm không trùng lặp và bảo vệ quyền lợi cho đối tác."
+        "text": "Đo khoảng cách cự ly 300m/500m/1000m để bảo đảm không trùng lặp và bảo vệ quyền lợi cho đối tác."
       },
       {
         "key": "c",
@@ -475,28 +475,28 @@ const questions = [
     "displayNumber": 17,
     "sectionNo": 1,
     "sectionName": "Nhập môn Nhượng quyền & Lợi thế Mô hình",
-    "question": "Quy trình đặt cọc hợp tác nhượng quyền Bánh Mì Má Hải được thực hiện chuẩn mực như thế nào?",
+    "question": "Quy trình đặt cọc hợp tác nhượng quyền Bánh Mì Má Hải được thực hiện chuẩn mực và an toàn ra sao?",
     "options": [
       {
         "key": "a",
-        "text": "Đặt cọc Đợt 1 là 2.000.000đ để khóa giữ tọa độ độc quyền trên Map Tracker và xưởng chuẩn bị xe."
+        "text": "Tất cả các quy định trên đều bảo đảm tính minh bạch, an toàn tài chính và quyền lợi tối cao cho đối tác."
       },
       {
         "key": "b",
-        "text": "Đặt cọc 10.000.000đ trước khi được công ty tư vấn gói hợp tác."
+        "text": "Khoản cọc 2.000.000đ được cấn trừ trọn vẹn 100% vào tiền xe khi đối tác nghiệm thu và nhận bàn giao xe Đợt 2."
       },
       {
         "key": "c",
-        "text": "Khách hàng phải thanh toán 100% tiền gói trước khi kiểm tra vị trí mặt bằng."
+        "text": "Tiền cọc được chuyển khoản trực tiếp vào số tài khoản pháp nhân của Công ty CP Bánh Mì Má Hải kèm phiếu thu minh bạch."
       },
       {
         "key": "d",
-        "text": "Đặt cọc 500.000đ bằng thẻ cào điện thoại cho chuyên viên tư vấn."
+        "text": "Đặt cọc Đợt 1 là 2.000.000đ để khóa giữ tọa độ độc quyền trên Map Tracker và công ty chuẩn bị xe."
       }
     ],
     "correctAnswer": "a",
-    "explanation": "Cọc Đợt 1 đúng 2.000.000đ để khóa tọa độ Map Tracker, được cấn trừ 100% khi thanh toán nhận xe.",
-    "quote": "Dạ thủ tục cọc bên con rõ ràng lắm Chị ơi: Mình cọc Đợt 1 đúng 2 triệu vào tài khoản công ty để khóa tọa độ Map Tracker và xưởng lên khung làm xe cho Chị. Khoản cọc này được trừ 100% vào tiền xe khi Chị nhận bàn giao đợt 2 nha Chị!"
+    "explanation": "Cọc Đợt 1 đúng 2.000.000đ vào tài khoản công ty để khóa tọa độ Map Tracker, được cấn trừ 100% khi thanh toán nhận xe.",
+    "quote": "Dạ thủ tục cọc bên con rõ ràng lắm Chị ơi: Mình cọc Đợt 1 đúng 2 triệu vào tài khoản công ty để khóa tọa độ Map Tracker và công ty chuẩn bị xe cho Chị. Khoản cọc này được trừ 100% vào tiền xe khi Chị nhận bàn giao đợt 2 nha Chị!"
   },
   {
     "id": "sale-18",
@@ -520,12 +520,12 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Đóng vai trò là cam kết 2 chiều để xưởng tiến hành in ấn decal và chuẩn bị xe chu đáo."
+        "text": "Đóng vai trò là cam kết 2 chiều để công ty tiến hành in ấn decal và chuẩn bị xe chu đáo."
       }
     ],
     "correctAnswer": "b",
     "explanation": "Tiền cọc 2 triệu được cấn trừ 100% vào tiền xe và kích hoạt bảo vệ tọa độ độc quyền trên Map Tracker.",
-    "quote": "Dạ tiền cọc 2 triệu là để bên em giữ chỗ độc quyền trên bản đồ vệ tinh cho Chú, đồng thời xưởng bắt đầu in decal theo kích thước xe. Chú nhận xe nghiệm thu hài lòng mới thanh toán phần tiền còn lại, an toàn 100% luôn Chú nha!"
+    "quote": "Dạ tiền cọc 2 triệu là để bên em giữ chỗ độc quyền trên bản đồ vệ tinh cho Chú, đồng thời công ty bắt đầu in decal theo kích thước xe. Chú nhận xe nghiệm thu hài lòng mới thanh toán phần tiền còn lại, an toàn 100% luôn Chú nha!"
   },
   {
     "id": "sale-19",
@@ -1129,12 +1129,12 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Chuyển thông tin cho xưởng tiến hành in ấn bộ decal nhận diện và chuẩn bị xe theo tiến độ 5–7 ngày."
+        "text": "Chuyển thông tin cho tiến hành in ấn bộ decal nhận diện và chuẩn bị xe theo tiến độ 5–7 ngày."
       }
     ],
     "correctAnswer": "c",
     "explanation": "Khách đã sẵn sàng thì chốt cọc khóa vị trí ngay để tránh người khác mở trước làm mất mặt bằng đẹp.",
-    "quote": "Dạ mọi thứ Chú đã chuẩn bị sẵn sàng hết rồi thì hôm nay mình làm thủ tục cọc 2 triệu khóa vị trí Map Tracker Chú nha. Xưởng bên con nhận thông tin là bắt đầu làm xe liền, 5-7 ngày sau là xe về tới tận nhà Chú mở bán khai trương ạ!"
+    "quote": "Dạ mọi thứ Chú đã chuẩn bị sẵn sàng hết rồi thì hôm nay mình làm thủ tục cọc 2 triệu khóa vị trí Map Tracker Chú nha. Công ty nhận thông tin là chuẩn bị xe liền, 5-7 ngày sau là xe về tới tận nhà Chú mở bán khai trương ạ!"
   },
   {
     "id": "sale-40",
@@ -1643,7 +1643,7 @@ const questions = [
       },
       {
         "key": "b",
-        "text": "Tự động quét chính xác bán kính bảo vệ độc quyền 300m/500m/1000m để bảo đảm không bị trùng lặp vị trí."
+        "text": "Đo khoảng cách cự ly và bán kính bảo vệ độc quyền 300m/500m/1000m để bảo đảm không bị trùng lặp vị trí."
       },
       {
         "key": "c",
@@ -1656,7 +1656,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Map Tracker xử lý dữ liệu vệ tinh trong 5 phút, minh bạch và bảo đảm độc quyền tuyệt đối cự ly bảo vệ.",
-    "quote": "Dạ hệ thống Map Tracker bên em dùng bản đồ số hóa vệ tinh chuẩn xác 100% Chú ơi. Nhập tọa độ vào là máy tự động đo bán kính 300m, minh bạch rõ ràng từng mét, bảo đảm quyền lợi độc quyền cho Chú tuyệt đối ạ!"
+    "quote": "Dạ hệ thống Map Tracker bên em dùng bản đồ số hóa vệ tinh chuẩn xác 100% Chú ơi. Nhập tọa độ vào là đo được chính xác bán kính cự ly 300m, minh bạch rõ ràng từng mét, bảo đảm quyền lợi độc quyền cho Chú tuyệt đối ạ!"
   },
   {
     "id": "sale-58",
@@ -2086,7 +2086,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Tất cả các lý do trên đều khẳng định giá trị cốt lõi của chính sách bảo vệ cự ly độc quyền Map Tracker."
+        "text": "Tất cả các lý do trên đều khẳng định ưu điểm thực tế của chính sách bảo vệ cự ly độc quyền Map Tracker."
       }
     ],
     "correctAnswer": "d",
@@ -2169,7 +2169,7 @@ const questions = [
       },
       {
         "key": "c",
-        "text": "Hệ thống Map Tracker tự động xác thực tọa độ vệ tinh đạt chuẩn và phê duyệt ngay cho khách hàng."
+        "text": "Chuyên viên sử dụng hệ thống Map Tracker đo đạc, xác thực tọa độ đạt chuẩn và phê duyệt ngay cho khách hàng."
       },
       {
         "key": "d",
@@ -2418,7 +2418,7 @@ const questions = [
     "displayNumber": 84,
     "sectionNo": 4,
     "sectionName": "Quy chuẩn Sản phẩm & An toàn Vệ sinh Thực phẩm",
-    "question": "Quy chuẩn bảo quản bánh mì vỏ giòn tại quầy xe trong suốt ca bán sáng gồm những thao tác nào?",
+    "question": "Quy chuẩn bảo quản bánh mì vỏ giòn tại xe bánh mì trong suốt ca bán sáng gồm những thao tác nào?",
     "options": [
       {
         "key": "a",
@@ -2613,7 +2613,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Bảo quản ngăn đông -18°C và xuất nhập theo hạn dùng giúp chả cá luôn tươi ngon như vừa mới sản xuất.",
-    "quote": "Dạ túi chả cá đông lạnh nguyên bao bì Chú cứ bảo quản ngăn đông -18 độ C thoải mái nha. Khi nào bán tới đâu mình lấy ra rã đông tới đó, chất lượng chả cá bảo đảm tươi ngon như mới xuất xưởng ạ!"
+    "quote": "Dạ túi chả cá đông lạnh nguyên bao bì Chú cứ bảo quản ngăn đông -18 độ C thoải mái nha. Khi nào bán tới đâu mình lấy ra rã đông tới đó, chất lượng chả cá bảo đảm tươi ngon như mới sản xuất ạ!"
   },
   {
     "id": "sale-91",
@@ -2960,8 +2960,8 @@ const questions = [
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Sản phẩm khác biệt + Giá bình dân 15k + Phục vụ 1 phút giúp xe Má Hải luôn có tệp khách quen riêng biệt.",
-    "quote": "Dạ khu vực có nhiều hàng quán ăn sáng chứng tỏ nhu cầu ăn sáng của bà con ở đó rất lớn Chị ơi! Bánh Mì Má Hải mang hương vị chả cá 17% đạm giòn nóng độc quyền với giá 15k bình dân, Chị an tâm là mình luôn có tệp khách ruột riêng ạ!"
+    "explanation": "Sản phẩm khác biệt + Giá bình dân 15k + Phục vụ 1 phút giúp xe Má Hải luôn có lượng khách quen quen riêng biệt.",
+    "quote": "Dạ khu vực có nhiều hàng quán ăn sáng chứng tỏ nhu cầu ăn sáng của bà con ở đó rất lớn Chị ơi! Bánh Mì Má Hải mang hương vị chả cá 17% đạm giòn nóng độc quyền với giá 15k bình dân, Chị an tâm là mình luôn có lượng khách quen ruột riêng ạ!"
   },
   {
     "id": "sale-103",
@@ -3507,7 +3507,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Quy trình thanh toán 2 đợt rõ ràng: Đợt 1 đặt cọc 2.000.000đ để khóa tọa độ Map Tracker và xưởng chuẩn bị xe."
+        "text": "Quy trình thanh toán 2 đợt rõ ràng: Đợt 1 đặt cọc 2.000.000đ để khóa tọa độ Map Tracker và công ty chuẩn bị xe và trang thiết bị."
       }
     ],
     "correctAnswer": "a",
@@ -3839,7 +3839,7 @@ const questions = [
     "displayNumber": 133,
     "sectionNo": 6,
     "sectionName": "Vận hành Điểm bán & Kỹ thuật Chiên chả Chuẩn vị",
-    "question": "Tại sao không nên sử dụng lò nướng điện công suất lớn tại quầy xe bánh mì hiên nhà?",
+    "question": "Tại sao không nên sử dụng lò nướng điện công suất lớn tại xe bánh mì bánh mì hiên nhà?",
     "options": [
       {
         "key": "a",
@@ -4000,11 +4000,11 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Đón đầu trọn vẹn khung giờ giao thông bắt đầu đông đúc từ 6h00 sáng trên tuyến đường."
+        "text": "Đón trọn trọn vẹn khung giờ giao thông bắt đầu đông đúc từ 6h00 sáng trên tuyến đường."
       }
     ],
     "correctAnswer": "b",
-    "explanation": "Mở bán đúng 5h30 sáng giúp giữ trọn vẹn tệp khách quen đi làm sớm và không để khách bị lỡ bữa sáng.",
+    "explanation": "Mở bán đúng 5h30 sáng giúp giữ trọn vẹn lượng khách quen quen đi làm sớm và không để khách bị lỡ bữa sáng.",
     "quote": "Dạ mở bán đúng 5h30 sáng mỗi ngày là chìa khóa gom trọn khách quen đi làm sớm Chú ơi. Khách thấy mình bán đều đặn đúng giờ là họ tạo thói quen ghé mua mỗi sáng, không bao giờ lo mất khách ạ!"
   },
   {
@@ -4042,7 +4042,7 @@ const questions = [
     "displayNumber": 140,
     "sectionNo": 6,
     "sectionName": "Vận hành Điểm bán & Kỹ thuật Chiên chả Chuẩn vị",
-    "question": "Quy chuẩn bảo quản và sử dụng nước sốt Tứ Vị trong chai tại quầy xe mỗi sáng gồm những lưu ý nào?",
+    "question": "Quy chuẩn bảo quản và sử dụng nước sốt Tứ Vị trong chai tại xe bánh mì mỗi sáng gồm những lưu ý nào?",
     "options": [
       {
         "key": "a",
@@ -4274,7 +4274,7 @@ const questions = [
     "displayNumber": 148,
     "sectionNo": 6,
     "sectionName": "Vận hành Điểm bán & Kỹ thuật Chiên chả Chuẩn vị",
-    "question": "Quy chuẩn kiểm tra gas định kỳ hàng tuần tại điểm bán gồm những thao tác an toàn nào?",
+    "question": "Quy chuẩn kiểm tra gas thường xuyên mỗi tuần tại điểm bán gồm những thao tác an toàn nào?",
     "options": [
       {
         "key": "a",
@@ -4295,7 +4295,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Kiểm tra bọt xà phòng và vệ sinh đầu đốt bếp định kỳ giúp bảo đảm an toàn tuyệt đối và tiết kiệm gas.",
-    "quote": "Dạ định kỳ hàng tuần Chú lấy nước bọt xà phòng quét quanh van gas và dây dẫn để kiểm tra rò rỉ nha. Thao tác đơn giản vài phút mà giúp điểm bán của Chú luôn an toàn tuyệt đối 100% ạ!"
+    "quote": "Dạ mỗi tuần Chú dành vài phút Chú lấy nước bọt xà phòng quét quanh van gas và dây dẫn để kiểm tra rò rỉ nha. Thao tác đơn giản vài phút mà giúp điểm bán của Chú luôn an toàn tuyệt đối 100% ạ!"
   },
   {
     "id": "sale-149",
@@ -4435,7 +4435,7 @@ const questions = [
       },
       {
         "key": "d",
-        "text": "Ngày 1–2: Tiếp nhận thông tin, hoàn tất hồ sơ và xưởng tiến hành in ấn decal theo kích thước chuẩn."
+        "text": "Ngày 1–2: Tiếp nhận thông tin, hoàn tất hồ sơ và công ty tiến hành in ấn decal theo kích thước chuẩn."
       }
     ],
     "correctAnswer": "a",
@@ -4904,7 +4904,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Hỗ trợ sang nhượng 0đ là chính sách nhân văn giúp chủ xe bảo toàn vốn khi gặp việc bất khả kháng.",
-    "quote": "Dạ lỡ có việc bất khả kháng cần dừng bán, công ty hỗ trợ kết nối sang nhượng điểm bán hoàn toàn miễn phí 0 đồng để Chú thu hồi vốn an toàn, không lo bị bỏ mặc hay mất vốn Chú nha!"
+    "quote": "Dạ lỡ có việc bất khả kháng cần dừng bán, công ty hỗ trợ kết nối sang nhượng điểm bán hoàn toàn miễn phí 0 đồng để Chú thu hồi vốn an toàn, không lo bị mất vốn Chú nha!"
   },
   {
     "id": "sale-170",
@@ -5782,11 +5782,11 @@ const questions = [
     "displayNumber": 200,
     "sectionNo": 8,
     "sectionName": "Bài toán Kinh tế & Chiến lược Điểm bán Đột phá",
-    "question": "Chào mừng bạn gia nhập đội ngũ Chuyên viên Tư vấn Nhượng quyền Nhà Má Hải! Những giá trị cốt lõi nào định hình phong cách làm việc của chúng ta?",
+    "question": "Chào mừng bạn gia nhập đội ngũ Chuyên viên Tư vấn Nhượng quyền Nhà Má Hải! Những ưu điểm thực tế nào định hình phong cách làm việc của chúng ta?",
     "options": [
       {
         "key": "a",
-        "text": "Tận tâm lắng nghe, thấu cảm sâu sắc hoàn cảnh và nỗi lo của từng người lao động khi khởi sự kinh doanh."
+        "text": "Tận tâm lắng nghe, thấu cảm sâu sắc hoàn cảnh và nỗi lo của từng người lao động khi chuẩn bị mở xe."
       },
       {
         "key": "b",

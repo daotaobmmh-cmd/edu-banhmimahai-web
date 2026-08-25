@@ -210,7 +210,7 @@
 ### **Câu 016.** Hệ thống bản đồ số hóa Map Tracker được Bộ phận Phát triển Nhượng quyền Má Hải sử dụng nội bộ nhằm mục đích gì?
 
 * **a)** Hỗ trợ chuyên viên quét nhanh tọa độ định vị GPS chính xác 100% trong vòng 5 phút khi khách hàng gửi vị trí.
-* **b)** Tự động đo khoảng cách cự ly 300m/500m/1000m để bảo đảm không trùng lặp và bảo vệ quyền lợi cho đối tác.
+* **b)** Đo khoảng cách cự ly 300m/500m/1000m để bảo đảm không trùng lặp và bảo vệ quyền lợi cho đối tác.
 * **c)** Lưu trữ hồ sơ điểm bán trọn đời trên hệ thống công ty nhằm bảo vệ quyền khai thác độc quyền lâu dài cho chủ xe.
 * **d)** Tất cả các mục đích trên đều bảo đảm tính minh bạch và quyền lợi độc quyền tối cao cho đối tác. ⭐ **[ĐÁP ÁN ĐÚNG]**
 
@@ -219,15 +219,15 @@
 
 ---
 
-### **Câu 017.** Quy trình đặt cọc hợp tác nhượng quyền Bánh Mì Má Hải được thực hiện chuẩn mực như thế nào?
+### **Câu 017.** Quy trình đặt cọc hợp tác nhượng quyền Bánh Mì Má Hải được thực hiện chuẩn mực và an toàn ra sao?
 
-* **a)** Đặt cọc Đợt 1 là 2.000.000đ để khóa giữ tọa độ độc quyền trên Map Tracker và xưởng chuẩn bị xe. ⭐ **[ĐÁP ÁN ĐÚNG]**
-* **b)** Đặt cọc 10.000.000đ trước khi được công ty tư vấn gói hợp tác.
-* **c)** Khách hàng phải thanh toán 100% tiền gói trước khi kiểm tra vị trí mặt bằng.
-* **d)** Đặt cọc 500.000đ bằng thẻ cào điện thoại cho chuyên viên tư vấn.
+* **a)** Tất cả các quy định trên đều bảo đảm tính minh bạch, an toàn tài chính và quyền lợi tối cao cho đối tác. ⭐ **[ĐÁP ÁN ĐÚNG]**
+* **b)** Khoản cọc 2.000.000đ được cấn trừ trọn vẹn 100% vào tiền xe khi đối tác nghiệm thu và nhận bàn giao xe Đợt 2.
+* **c)** Tiền cọc được chuyển khoản trực tiếp vào số tài khoản pháp nhân của Công ty CP Bánh Mì Má Hải kèm phiếu thu minh bạch.
+* **d)** Đặt cọc Đợt 1 là 2.000.000đ để khóa giữ tọa độ độc quyền trên Map Tracker và công ty chuẩn bị xe.
 
-> **Đáp án: a).** Cọc Đợt 1 đúng 2.000.000đ để khóa tọa độ Map Tracker, được cấn trừ 100% khi thanh toán nhận xe.
-> 💬 *Câu thoại thực chiến:* "Dạ thủ tục cọc bên con rõ ràng lắm Chị ơi: Mình cọc Đợt 1 đúng 2 triệu vào tài khoản công ty để khóa tọa độ Map Tracker và xưởng lên khung làm xe cho Chị. Khoản cọc này được trừ 100% vào tiền xe khi Chị nhận bàn giao đợt 2 nha Chị!"
+> **Đáp án: a).** Cọc Đợt 1 đúng 2.000.000đ vào tài khoản công ty để khóa tọa độ Map Tracker, được cấn trừ 100% khi thanh toán nhận xe.
+> 💬 *Câu thoại thực chiến:* "Dạ thủ tục cọc bên con rõ ràng lắm Chị ơi: Mình cọc Đợt 1 đúng 2 triệu vào tài khoản công ty để khóa tọa độ Map Tracker và công ty chuẩn bị xe cho Chị. Khoản cọc này được trừ 100% vào tiền xe khi Chị nhận bàn giao đợt 2 nha Chị!"
 
 ---
 
@@ -236,10 +236,10 @@
 * **a)** Được cấn trừ trọn vẹn 100% vào tổng giá trị gói hợp tác khi thanh toán Đợt 2 nhận xe.
 * **b)** Tất cả các quyền lợi trên đều được bảo đảm minh bạch và an toàn tài chính tuyệt đối cho đối tác. ⭐ **[ĐÁP ÁN ĐÚNG]**
 * **c)** Khóa cứng và bảo vệ vị trí độc quyền 300m trên bản đồ vệ tinh ngay từ ngày đầu đặt cọc.
-* **d)** Đóng vai trò là cam kết 2 chiều để xưởng tiến hành in ấn decal và chuẩn bị xe chu đáo.
+* **d)** Đóng vai trò là cam kết 2 chiều để công ty tiến hành in ấn decal và chuẩn bị xe chu đáo.
 
 > **Đáp án: b).** Tiền cọc 2 triệu được cấn trừ 100% vào tiền xe và kích hoạt bảo vệ tọa độ độc quyền trên Map Tracker.
-> 💬 *Câu thoại thực chiến:* "Dạ tiền cọc 2 triệu là để bên em giữ chỗ độc quyền trên bản đồ vệ tinh cho Chú, đồng thời xưởng bắt đầu in decal theo kích thước xe. Chú nhận xe nghiệm thu hài lòng mới thanh toán phần tiền còn lại, an toàn 100% luôn Chú nha!"
+> 💬 *Câu thoại thực chiến:* "Dạ tiền cọc 2 triệu là để bên em giữ chỗ độc quyền trên bản đồ vệ tinh cho Chú, đồng thời công ty bắt đầu in decal theo kích thước xe. Chú nhận xe nghiệm thu hài lòng mới thanh toán phần tiền còn lại, an toàn 100% luôn Chú nha!"
 
 ---
 
@@ -491,10 +491,10 @@
 * **a)** Hướng dẫn đặt cọc 2.000.000đ vào tài khoản pháp nhân công ty để khóa giữ độc quyền vị trí trên Map Tracker.
 * **b)** Gửi phiếu thu cọc mộc đỏ và hợp đồng nguyên tắc xác nhận quyền lợi qua Zalo cho khách hàng.
 * **c)** Tất cả các bước trên đều bảo đảm quy trình Onboarding diễn ra nhanh chóng, chuẩn xác và đúng tiến độ. ⭐ **[ĐÁP ÁN ĐÚNG]**
-* **d)** Chuyển thông tin cho xưởng tiến hành in ấn bộ decal nhận diện và chuẩn bị xe theo tiến độ 5–7 ngày.
+* **d)** Chuyển thông tin cho tiến hành in ấn bộ decal nhận diện và chuẩn bị xe theo tiến độ 5–7 ngày.
 
 > **Đáp án: c).** Khách đã sẵn sàng thì chốt cọc khóa vị trí ngay để tránh người khác mở trước làm mất mặt bằng đẹp.
-> 💬 *Câu thoại thực chiến:* "Dạ mọi thứ Chú đã chuẩn bị sẵn sàng hết rồi thì hôm nay mình làm thủ tục cọc 2 triệu khóa vị trí Map Tracker Chú nha. Xưởng bên con nhận thông tin là bắt đầu làm xe liền, 5-7 ngày sau là xe về tới tận nhà Chú mở bán khai trương ạ!"
+> 💬 *Câu thoại thực chiến:* "Dạ mọi thứ Chú đã chuẩn bị sẵn sàng hết rồi thì hôm nay mình làm thủ tục cọc 2 triệu khóa vị trí Map Tracker Chú nha. Công ty nhận thông tin là chuẩn bị xe liền, 5-7 ngày sau là xe về tới tận nhà Chú mở bán khai trương ạ!"
 
 ---
 
@@ -708,12 +708,12 @@
 ### **Câu 057.** Quy trình số hóa kiểm tra tọa độ điểm bán trên phần mềm Map Tracker mang lại những ưu thế vượt trội nào?
 
 * **a)** Tất cả các ưu thế trên đều bảo đảm tính minh bạch, chính xác và bảo vệ tối đa quyền lợi cho chủ xe. ⭐ **[ĐÁP ÁN ĐÚNG]**
-* **b)** Tự động quét chính xác bán kính bảo vệ độc quyền 300m/500m/1000m để bảo đảm không bị trùng lặp vị trí.
+* **b)** Đo khoảng cách cự ly và bán kính bảo vệ độc quyền 300m/500m/1000m để bảo đảm không bị trùng lặp vị trí.
 * **c)** Phản hồi kết quả kiểm tra nhanh chóng trong vòng 5 phút giúp đối tác kịp thời chốt thuê mặt bằng đẹp.
 * **d)** Tiếp nhận định vị GPS trực tiếp từ điện thoại của đối tác và xử lý tức thì trên nền tảng bản đồ vệ tinh.
 
 > **Đáp án: a).** Map Tracker xử lý dữ liệu vệ tinh trong 5 phút, minh bạch và bảo đảm độc quyền tuyệt đối cự ly bảo vệ.
-> 💬 *Câu thoại thực chiến:* "Dạ hệ thống Map Tracker bên em dùng bản đồ số hóa vệ tinh chuẩn xác 100% Chú ơi. Nhập tọa độ vào là máy tự động đo bán kính 300m, minh bạch rõ ràng từng mét, bảo đảm quyền lợi độc quyền cho Chú tuyệt đối ạ!"
+> 💬 *Câu thoại thực chiến:* "Dạ hệ thống Map Tracker bên em dùng bản đồ số hóa vệ tinh chuẩn xác 100% Chú ơi. Nhập tọa độ vào là đo được chính xác bán kính cự ly 300m, minh bạch rõ ràng từng mét, bảo đảm quyền lợi độc quyền cho Chú tuyệt đối ạ!"
 
 ---
 
@@ -890,7 +890,7 @@
 * **a)** Bảo đảm mỗi điểm bán có đủ dung lượng thị trường và lượng khách quen để kinh doanh có lời ổn định.
 * **b)** Tránh triệt để hiện tượng 'gà nhà đá nhau', cạnh tranh không lành mạnh giữa các đối tác trong chuỗi.
 * **c)** Xây dựng niềm tin vững chắc về sự đồng hành và bảo vệ quyền lợi tối đa của công ty đối với chủ xe.
-* **d)** Tất cả các lý do trên đều khẳng định giá trị cốt lõi của chính sách bảo vệ cự ly độc quyền Map Tracker. ⭐ **[ĐÁP ÁN ĐÚNG]**
+* **d)** Tất cả các lý do trên đều khẳng định ưu điểm thực tế của chính sách bảo vệ cự ly độc quyền Map Tracker. ⭐ **[ĐÁP ÁN ĐÚNG]**
 
 > **Đáp án: d).** Khóa cự ly 300m giúp bảo vệ doanh số cho từng chủ xe, tạo nên một cộng đồng đoàn kết và phát triển bền vững.
 > 💬 *Câu thoại thực chiến:* "Dạ chính sách khóa cự ly 300 mét là kim chỉ nam 13 năm qua của Má Hải đó Chú. Nhờ giữ đúng khoảng cách này mà hơn 1.200 chủ xe trong hệ thống ai cũng có vùng khách riêng, buôn bán ổn định không ai giẫm chân ai ạ!"
@@ -925,7 +925,7 @@
 
 * **a)** Hủy bỏ cả hai điểm bán để bảo đảm an toàn tuyệt đối.
 * **b)** Bắt buộc khách hàng phải lùi thêm 500 mét nữa mới được phê duyệt.
-* **c)** Hệ thống Map Tracker tự động xác thực tọa độ vệ tinh đạt chuẩn và phê duyệt ngay cho khách hàng. ⭐ **[ĐÁP ÁN ĐÚNG]**
+* **c)** Chuyên viên sử dụng hệ thống Map Tracker đo đạc, xác thực tọa độ đạt chuẩn và phê duyệt ngay cho khách hàng. ⭐ **[ĐÁP ÁN ĐÚNG]**
 * **d)** Thu thêm phí phê duyệt vị trí sát ranh giới của khách hàng.
 
 > **Đáp án: c).** Hệ thống Map Tracker hoạt động minh bạch, chuẩn xác theo thuật toán: Đạt chuẩn 300m là phê duyệt ngay.
@@ -1032,7 +1032,7 @@
 
 ---
 
-### **Câu 084.** Quy chuẩn bảo quản bánh mì vỏ giòn tại quầy xe trong suốt ca bán sáng gồm những thao tác nào?
+### **Câu 084.** Quy chuẩn bảo quản bánh mì vỏ giòn tại xe bánh mì trong suốt ca bán sáng gồm những thao tác nào?
 
 * **a)** Bánh mì được đặt ngay ngắn bên trong tủ kính chắn gió sạch sẽ, tránh bụi đường và gió làm ỉu bánh.
 * **b)** Đậy kín cửa tủ kính sau mỗi lần lấy bánh để giữ độ giòn nóng và ngăn côn trùng.
@@ -1112,7 +1112,7 @@
 * **d)** Giữ nguyên bao bì kín, xếp ngay ngắn và tránh đè các vật nặng làm biến dạng sợi chả.
 
 > **Đáp án: b).** Bảo quản ngăn đông -18°C và xuất nhập theo hạn dùng giúp chả cá luôn tươi ngon như vừa mới sản xuất.
-> 💬 *Câu thoại thực chiến:* "Dạ túi chả cá đông lạnh nguyên bao bì Chú cứ bảo quản ngăn đông -18 độ C thoải mái nha. Khi nào bán tới đâu mình lấy ra rã đông tới đó, chất lượng chả cá bảo đảm tươi ngon như mới xuất xưởng ạ!"
+> 💬 *Câu thoại thực chiến:* "Dạ túi chả cá đông lạnh nguyên bao bì Chú cứ bảo quản ngăn đông -18 độ C thoải mái nha. Khi nào bán tới đâu mình lấy ra rã đông tới đó, chất lượng chả cá bảo đảm tươi ngon như mới sản xuất ạ!"
 
 ---
 
@@ -1258,8 +1258,8 @@
 * **c)** Khu vực đông hàng quán chứng tỏ dung lượng thị trường ăn sáng rất lớn, chất lượng ngon sạch sẽ có khách quen.
 * **d)** Mức giá 15.000đ/ổ rất bình dân, phục vụ nhanh 1 phút đáp ứng đúng nhu cầu mang đi của người vội vã.
 
-> **Đáp án: b).** Sản phẩm khác biệt + Giá bình dân 15k + Phục vụ 1 phút giúp xe Má Hải luôn có tệp khách quen riêng biệt.
-> 💬 *Câu thoại thực chiến:* "Dạ khu vực có nhiều hàng quán ăn sáng chứng tỏ nhu cầu ăn sáng của bà con ở đó rất lớn Chị ơi! Bánh Mì Má Hải mang hương vị chả cá 17% đạm giòn nóng độc quyền với giá 15k bình dân, Chị an tâm là mình luôn có tệp khách ruột riêng ạ!"
+> **Đáp án: b).** Sản phẩm khác biệt + Giá bình dân 15k + Phục vụ 1 phút giúp xe Má Hải luôn có lượng khách quen quen riêng biệt.
+> 💬 *Câu thoại thực chiến:* "Dạ khu vực có nhiều hàng quán ăn sáng chứng tỏ nhu cầu ăn sáng của bà con ở đó rất lớn Chị ơi! Bánh Mì Má Hải mang hương vị chả cá 17% đạm giòn nóng độc quyền với giá 15k bình dân, Chị an tâm là mình luôn có lượng khách quen ruột riêng ạ!"
 
 ---
 
@@ -1484,7 +1484,7 @@
 * **a)** Tất cả các quy định trên đều bảo đảm tính rõ ràng, minh bạch và an toàn tài chính tuyệt đối cho cả hai bên. ⭐ **[ĐÁP ÁN ĐÚNG]**
 * **b)** Đợt 2 thanh toán số tiền còn lại của gói hợp tác khi nghiệm thu và nhận bàn giao xe hoàn chỉnh.
 * **c)** Mọi khoản thanh toán đều có phiếu thu hoặc ủy nhiệm chi ngân hàng minh bạch vào tài khoản pháp nhân công ty.
-* **d)** Quy trình thanh toán 2 đợt rõ ràng: Đợt 1 đặt cọc 2.000.000đ để khóa tọa độ Map Tracker và xưởng chuẩn bị xe.
+* **d)** Quy trình thanh toán 2 đợt rõ ràng: Đợt 1 đặt cọc 2.000.000đ để khóa tọa độ Map Tracker và công ty chuẩn bị xe và trang thiết bị.
 
 > **Đáp án: a).** Thanh toán 2 đợt chuẩn mực: Cọc 2tr Đợt 1 -> Thanh toán phần còn lại khi nhận bàn giao xe Đợt 2.
 > 💬 *Câu thoại thực chiến:* "Dạ quy trình thanh toán rõ ràng 2 đợt Chú nha: Đợt 1 cọc 2 triệu khóa vị trí Map Tracker và làm xe. Đợt 2 xe về tận nhà Chú kiểm tra nghiệm thu hài lòng mới thanh toán nốt phần tiền còn lại, minh bạch tuyệt đối ạ!"
@@ -1626,7 +1626,7 @@
 
 ---
 
-### **Câu 133.** Tại sao không nên sử dụng lò nướng điện công suất lớn tại quầy xe bánh mì hiên nhà?
+### **Câu 133.** Tại sao không nên sử dụng lò nướng điện công suất lớn tại xe bánh mì bánh mì hiên nhà?
 
 * **a)** Tất cả các lý do trên đều khẳng định tính tinh gọn, độc lập và tiết kiệm chi phí của xe bánh mì Má Hải. ⭐ **[ĐÁP ÁN ĐÚNG]**
 * **b)** Bánh mì nhập mới nóng giòn từ lò gần điểm bán mỗi sáng từ 5h00, bảo quản tủ kính chắn gió là đủ giòn rụm.
@@ -1691,9 +1691,9 @@
 * **a)** Tạo thói quen mua ăn sáng cố định cho những người đi làm ca sớm và học sinh đi học sớm.
 * **b)** Tất cả các lý do trên đều giúp điểm bán xây dựng lượng khách quen ổn định và tăng trưởng doanh số. ⭐ **[ĐÁP ÁN ĐÚNG]**
 * **c)** Khẳng định sự chuyên nghiệp, uy tín và tinh thần kỷ luật bền bỉ của người kinh doanh.
-* **d)** Đón đầu trọn vẹn khung giờ giao thông bắt đầu đông đúc từ 6h00 sáng trên tuyến đường.
+* **d)** Đón trọn trọn vẹn khung giờ giao thông bắt đầu đông đúc từ 6h00 sáng trên tuyến đường.
 
-> **Đáp án: b).** Mở bán đúng 5h30 sáng giúp giữ trọn vẹn tệp khách quen đi làm sớm và không để khách bị lỡ bữa sáng.
+> **Đáp án: b).** Mở bán đúng 5h30 sáng giúp giữ trọn vẹn lượng khách quen quen đi làm sớm và không để khách bị lỡ bữa sáng.
 > 💬 *Câu thoại thực chiến:* "Dạ mở bán đúng 5h30 sáng mỗi ngày là chìa khóa gom trọn khách quen đi làm sớm Chú ơi. Khách thấy mình bán đều đặn đúng giờ là họ tạo thói quen ghé mua mỗi sáng, không bao giờ lo mất khách ạ!"
 
 ---
@@ -1710,7 +1710,7 @@
 
 ---
 
-### **Câu 140.** Quy chuẩn bảo quản và sử dụng nước sốt Tứ Vị trong chai tại quầy xe mỗi sáng gồm những lưu ý nào?
+### **Câu 140.** Quy chuẩn bảo quản và sử dụng nước sốt Tứ Vị trong chai tại xe bánh mì mỗi sáng gồm những lưu ý nào?
 
 * **a)** Lắc đều chai sốt trước khi rót ra chén nhỏ để các thành phần gia vị hòa quyện đồng nhất.
 * **b)** Rót một lượng vừa đủ dùng cho ca bán, không rót tràn trề làm dư thừa phơi ngoài không khí.
@@ -1806,7 +1806,7 @@
 
 ---
 
-### **Câu 148.** Quy chuẩn kiểm tra gas định kỳ hàng tuần tại điểm bán gồm những thao tác an toàn nào?
+### **Câu 148.** Quy chuẩn kiểm tra gas thường xuyên mỗi tuần tại điểm bán gồm những thao tác an toàn nào?
 
 * **a)** Dùng nước bọt xà phòng quét nhẹ quanh van bình gas và các khớp nối dây dẫn để kiểm tra rò rỉ gas.
 * **b)** Kiểm tra độ đàn hồi của ống dẫn gas cao su, bảo đảm không bị gập gãy, nứt nẻ hoặc chuột cắn.
@@ -1814,7 +1814,7 @@
 * **d)** Tất cả các thao tác trên đều bảo đảm an toàn cháy nổ tuyệt đối và giúp tiết kiệm chi phí nhiên liệu. ⭐ **[ĐÁP ÁN ĐÚNG]**
 
 > **Đáp án: d).** Kiểm tra bọt xà phòng và vệ sinh đầu đốt bếp định kỳ giúp bảo đảm an toàn tuyệt đối và tiết kiệm gas.
-> 💬 *Câu thoại thực chiến:* "Dạ định kỳ hàng tuần Chú lấy nước bọt xà phòng quét quanh van gas và dây dẫn để kiểm tra rò rỉ nha. Thao tác đơn giản vài phút mà giúp điểm bán của Chú luôn an toàn tuyệt đối 100% ạ!"
+> 💬 *Câu thoại thực chiến:* "Dạ mỗi tuần Chú dành vài phút Chú lấy nước bọt xà phòng quét quanh van gas và dây dẫn để kiểm tra rò rỉ nha. Thao tác đơn giản vài phút mà giúp điểm bán của Chú luôn an toàn tuyệt đối 100% ạ!"
 
 ---
 
@@ -1874,7 +1874,7 @@
 * **a)** Tất cả các cột mốc trên đều bảo đảm đối tác nhận xe đúng hẹn và tự tin khai trương thuận lợi. ⭐ **[ĐÁP ÁN ĐÚNG]**
 * **b)** Ngày 3–4: Đóng gói trang thiết bị, dụng cụ bếp chuyên dụng và chuẩn bị xe hoàn chỉnh.
 * **c)** Ngày 5–7: Vận chuyển xe tận nơi, bàn giao đồng phục, chứng nhận ATTP và chuyển giao video tay nghề.
-* **d)** Ngày 1–2: Tiếp nhận thông tin, hoàn tất hồ sơ và xưởng tiến hành in ấn decal theo kích thước chuẩn.
+* **d)** Ngày 1–2: Tiếp nhận thông tin, hoàn tất hồ sơ và công ty tiến hành in ấn decal theo kích thước chuẩn.
 
 > **Đáp án: a).** Quy trình Onboarding 5-7 ngày chuẩn hóa từng khâu, bảo đảm nhận xe đẹp và sẵn sàng khai trương.
 > 💬 *Câu thoại thực chiến:* "Dạ quy trình Onboarding 5-7 ngày chuẩn hóa từng bước: Lên hồ sơ -> In ấn decal -> Đóng gói đồ bếp -> Bàn giao xe tận nhà và chuyển giao video tay nghề. Chú nhận xe là tự tin khai trương ngay ạ!"
@@ -2069,7 +2069,7 @@
 * **d)** Tôn trọng nguồn vốn và công sức xây dựng điểm bán của đối tác khi gặp hoàn cảnh riêng phải dừng bán.
 
 > **Đáp án: a).** Hỗ trợ sang nhượng 0đ là chính sách nhân văn giúp chủ xe bảo toàn vốn khi gặp việc bất khả kháng.
-> 💬 *Câu thoại thực chiến:* "Dạ lỡ có việc bất khả kháng cần dừng bán, công ty hỗ trợ kết nối sang nhượng điểm bán hoàn toàn miễn phí 0 đồng để Chú thu hồi vốn an toàn, không lo bị bỏ mặc hay mất vốn Chú nha!"
+> 💬 *Câu thoại thực chiến:* "Dạ lỡ có việc bất khả kháng cần dừng bán, công ty hỗ trợ kết nối sang nhượng điểm bán hoàn toàn miễn phí 0 đồng để Chú thu hồi vốn an toàn, không lo bị mất vốn Chú nha!"
 
 ---
 
@@ -2436,9 +2436,9 @@
 
 ---
 
-### **Câu 200.** Chào mừng bạn gia nhập đội ngũ Chuyên viên Tư vấn Nhượng quyền Nhà Má Hải! Những giá trị cốt lõi nào định hình phong cách làm việc của chúng ta?
+### **Câu 200.** Chào mừng bạn gia nhập đội ngũ Chuyên viên Tư vấn Nhượng quyền Nhà Má Hải! Những ưu điểm thực tế nào định hình phong cách làm việc của chúng ta?
 
-* **a)** Tận tâm lắng nghe, thấu cảm sâu sắc hoàn cảnh và nỗi lo của từng người lao động khi khởi sự kinh doanh.
+* **a)** Tận tâm lắng nghe, thấu cảm sâu sắc hoàn cảnh và nỗi lo của từng người lao động khi chuẩn bị mở xe.
 * **b)** Chân thành đồng hành, tư vấn giải pháp vừa vặn nhất với túi tiền và luôn giữ trọn chữ Tín trong từng cam kết.
 * **c)** Tự hào cùng nhau kiến tạo sinh kế ấm no cho hàng ngàn gia đình và lan tỏa bữa sáng dinh dưỡng cho cộng đồng.
 * **d)** Tất cả các giá trị trên đều hợp thành tinh thần bất diệt: 'Cùng Nhau Kiếm Cơm — Cùng Nhau Ấm No' của Người Nhà Má Hải! ⭐ **[ĐÁP ÁN ĐÚNG]**
