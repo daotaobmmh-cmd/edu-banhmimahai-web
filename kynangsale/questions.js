@@ -32,7 +32,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Gói 4,8 triệu tối ưu cho người đã có xe: Nhận đủ decal nhận diện, đồng phục, chứng nhận ATTP, Sổ tay bán hàng và hướng dẫn kỹ thuật chiên chả để mở bán ngay.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ Chị có sẵn xe ở nhà rồi thì mình chọn Gói 4,8 triệu thôi Chị nghen. Bên em dán lại bộ decal cam mới toanh, gửi áo nón đồng phục với Sổ tay hướng dẫn chiên chả là sáng mai Chị tự tin mở bán kiếm tiền liền luôn ạ!"
   },
   {
     "id": "sale-2",
@@ -61,7 +61,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Giá sàn khuyến nghị 15.000đ/ổ vừa túi tiền đại đa số người lao động, học sinh, sinh viên, giúp xe bánh mì bán nhanh 70–100 ổ mỗi sáng.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ 15 ngàn một ổ là mức giá bình dân vừa túi tiền người lao động với học sinh Chú nè. Bán giá này người ta tấp vào mua nhanh lắm, mỗi sáng Chú bán 70-80 ổ là gom về tiền lời ròng hơn 400 ngàn bỏ túi gọn gàng rồi ạ!"
   },
   {
     "id": "sale-3",
@@ -90,7 +90,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Chính sách 3 KHÔNG nhất quán 13 năm của Má Hải: 0đ phí hàng tháng, 0% chia sẻ doanh thu và 0đ phí gia hạn hàng năm.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ bên con cam kết rõ ràng: không thu phí thương hiệu hàng tháng, không trích phần trăm doanh thu và tái ký hàng năm cũng 0 đồng luôn. Cô Chú bán được bao nhiêu là gom trọn tiền lời bấy nhiêu, không lo bị ai cắt xén đồng nào đâu ạ!"
   },
   {
     "id": "sale-4",
@@ -119,7 +119,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Vốn nhẹ + Mặt bằng hiên nhà rẻ + Lời ròng dày 35% là kiềng 3 chân giúp chủ xe thu hồi vốn nhanh sau 1–2 tháng mở bán.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ vốn mình bỏ ra có mấy triệu nhẹ tênh à Cô ơi, mặt bằng hiên nhà sáng thuê có 1-2 triệu, mỗi ổ mình lời ròng hơn 5 ngàn. Cô bán chăm chỉ chừng 1 tới 2 tháng đầu là lấy lại trọn vẹn tiền vốn ban đầu rồi, từ tháng sau là tiền lời ròng tích lũy cho nhà mình luôn ạ!"
   },
   {
     "id": "sale-5",
@@ -148,7 +148,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Chả cá sợi Má Hải đạt chuẩn cao cấp 17% đạm từ cá biển tươi, tinh bột dưới 6%, vượt trội hoàn toàn so với chả cá chợ độn bột (chỉ 5-8% đạm).",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ chả cá Má Hải bên con làm từ cá biển tươi nguyên chất đạt 17% đạm chứ không có độn bột như chả chợ đâu Chị ơi. Chị chiên lên sợi chả nó phồng vàng ươm, dai ngọt mọng nước, khách ăn một lần là nghiền ghé mua hoài luôn đó ạ!"
   },
   {
     "id": "sale-6",
@@ -177,7 +177,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Gói 7,5 triệu trang bị sẵn xe inox tiêu chuẩn mới và nhận diện thương hiệu hoàn chỉnh.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ Gói 7,5 triệu bên em bàn giao nguyên chiếc xe inox mới tinh có sẵn tủ kính chắn gió với bộ decal cam nổi bật. Em gửi thêm áo nón, Giấy chứng nhận ATTP với video chỉ dẫn chiên chả tận tay, Cô Chú chỉ việc nhận xe là mở bán ngon lành ạ!"
   },
   {
     "id": "sale-7",
@@ -206,7 +206,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Gói 10,3 triệu trang bị đầy đủ xe và trọn bộ dụng cụ bếp chuyên dụng, giúp người mở xe sẵn sàng bán ngay.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ Gói 10,3 triệu là trọn gói 'A tới Z' luôn nè Chú. Xe cộ, decal, đồng phục có đủ, lại thêm trọn bộ bếp gas khè, chảo chiên sâu lòng, khay, kẹp, xẻng chiên chuyên dụng. Chú không cần tốn công đi chợ lùng mua từng món đồ nghề rời rạc ở ngoài đâu ạ!"
   },
   {
     "id": "sale-8",
@@ -235,7 +235,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Map Tracker khóa bảo vệ độc quyền cự ly tối thiểu 300m tại đô thị đặc biệt để bảo đảm doanh số cho chủ xe.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ ở TP.HCM với Hà Nội phố xá đông đúc, hệ thống Map Tracker bên con khóa cứng cự ly tối thiểu 300 mét giữa các xe. Điểm bán của Cô Chú được bảo vệ độc quyền trọn vẹn khu vực, không bao giờ lo bị xe khác mở sát bên cạnh giành khách đâu nè!"
   },
   {
     "id": "sale-9",
@@ -264,7 +264,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Cự ly bảo vệ 500m tại Đô thị loại I & II giúp chủ xe an tâm khai thác trọn vẹn lượng khách quen trong khu vực.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ ở các thị xã, thành phố tỉnh lẻ thì bên con khóa cự ly bảo vệ 500 mét Chị nha. Khoảng cách này vừa vặn với mật độ dân cư đô thị tỉnh, bảo đảm Chị gom trọn lượng khách quen đi làm, đi học quanh khu vực mà không lo đụng hàng ạ!"
   },
   {
     "id": "sale-10",
@@ -293,7 +293,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Cự ly 1.000m tại nông thôn bảo đảm một điểm bán bao trọn khu dân cư trung tâm mà không lo bị cạnh tranh.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ ở quê hay khu vực huyện, xã thì bên con khóa bảo vệ nguyên bán kính 1.000 mét (1 cây số) luôn Cô ơi. Một mình xe của Cô bao trọn khu trung tâm chợ xã hoặc trục đường chính, bà con quanh vùng ăn sáng là ghé xe Cô hết ạ!"
   },
   {
     "id": "sale-11",
@@ -322,7 +322,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Chính sách bảo chứng an toàn vốn 60 ngày hoàn tối đa 2,8 triệu và hỗ trợ sang nhượng 0đ giúp chủ xe an tâm tuyệt đối.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ buôn bán thì ai cũng muốn suôn sẻ, nhưng lỡ trong 2 tháng đầu Cô Chú gặp việc gia đình bất khả kháng không bán tiếp được, công ty có chính sách hỗ trợ thu hồi lại xe hoàn tối đa 2,8 triệu hoặc hỗ trợ sang nhượng 0 đồng để Cô Chú an tâm không bị mất trắng vốn ạ!"
   },
   {
     "id": "sale-12",
@@ -351,7 +351,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Chả cá sợi chiên cực nhanh chỉ 1-2 phút, giúp phục vụ bánh mì nóng giòn chỉ trong 1 phút mỗi lượt khách.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ sợi chả cá Má Hải chiên siêu nhanh luôn Chú ơi, dầu nóng 160-170 độ Chú thả vào đảo nhẹ chừng 1 đến 2 phút là sợi chả phồng vàng ruộm, thơm nức mũi rồi. Khách ghé xe chờ chừng 1 phút là có ổ bánh mì nóng giòn cầm tay đi làm liền ạ!"
   },
   {
     "id": "sale-13",
@@ -380,7 +380,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Khung giờ 5h30–9h00 sáng tập trung 90% nhu cầu ăn sáng nhanh mang đi, tối ưu công sức người bán.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ Cô Chú chỉ cần đứng bán đúng 3 tiếng rưỡi buổi sáng từ 5h30 đến 9h00 thôi ạ. Khung giờ này dòng người đi làm, học sinh đi học đông nhất, bán liên tay là hết bánh. Bán xong dọn dẹp gọn gàng, cả ngày rảnh rang chăm lo nhà cửa hoặc làm thêm việc khác, khỏe re à Cô Chú!"
   },
   {
     "id": "sale-14",
@@ -409,7 +409,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Sốt Tứ Vị gia công nhà máy quốc tế FSSC 22000 & Intertek, bảo đảm hương vị độc quyền và an toàn thực phẩm 100%.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ nước sốt Tứ Vị này là công thức độc quyền 13 năm của Má Hải, gia công tại nhà máy đạt chuẩn quốc tế FSSC 22000 đàng hoàng Chị nghen. Vị chua ngọt cay mặn đậm đà ngấm vào từng sợi chả, ăn tới đâu thấm tới đó, ngoài chợ không ai bắt chước được đâu ạ!"
   },
   {
     "id": "sale-15",
@@ -438,7 +438,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Mô hình giúp người lao động làm chủ kinh tế, tự do thời gian và có thu nhập ổn định mỗi ngày.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ mô hình này vốn nhẹ, làm có 3,5 tiếng sáng mà ngày nào cũng có tiền tươi bỏ túi. Lại có thương hiệu 13 năm với nguồn nguyên liệu chuẩn chỉnh giao tận nơi, Cô Chú làm chủ công việc của mình vừa tự do vừa an tâm bền vững ạ!"
   },
   {
     "id": "sale-16",
@@ -467,7 +467,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Map Tracker số hóa kiểm tra tọa độ vệ tinh chuẩn xác trong 5 phút, bảo đảm tính minh bạch và độc quyền.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ Chú chỉ cần đứng tại vị trí hiên nhà bấm gửi định vị Zalo qua cho con, trong vòng 5 phút là hệ thống Map Tracker vệ tinh quét ra kết quả liền. Con chụp gửi Chú xem rõ ranh giới cự ly 300m chung quanh, minh bạch và yên tâm tuyệt đối ạ!"
   },
   {
     "id": "sale-17",
@@ -496,7 +496,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Cọc Đợt 1 đúng 2.000.000đ để khóa tọa độ Map Tracker, được cấn trừ 100% khi thanh toán nhận xe.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ thủ tục cọc bên con rõ ràng lắm Chị ơi: Mình cọc Đợt 1 đúng 2 triệu vào tài khoản công ty để khóa tọa độ Map Tracker và xưởng lên khung làm xe cho Chị. Khoản cọc này được trừ 100% vào tiền xe khi Chị nhận bàn giao đợt 2 nha Chị!"
   },
   {
     "id": "sale-18",
@@ -525,7 +525,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Tiền cọc 2 triệu được cấn trừ 100% vào tiền xe và kích hoạt bảo vệ tọa độ độc quyền trên Map Tracker.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ tiền cọc 2 triệu là để bên em giữ chỗ độc quyền trên bản đồ vệ tinh cho Chú, đồng thời xưởng bắt đầu in decal theo kích thước xe. Chú nhận xe nghiệm thu hài lòng mới thanh toán phần tiền còn lại, an toàn 100% luôn Chú nha!"
   },
   {
     "id": "sale-19",
@@ -554,7 +554,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Tái ký hợp đồng hàng năm miễn phí 0 đồng, gắn bó lâu dài cùng chủ xe trên tinh thần đồng minh kiếm cơm.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ sau 1 năm hết hạn hợp đồng, bên con làm thủ tục tái ký tiếp cho Cô hoàn toàn miễn phí 0 đồng luôn nè. Chỉ cần Cô giữ chuẩn chất lượng chả cá Má Hải và vệ sinh sạch sẽ là mình đồng hành cùng nhau buôn bán kiếm cơm trọn đời luôn ạ!"
   },
   {
     "id": "sale-20",
@@ -583,7 +583,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Trọn bộ ấn phẩm khai trương giúp điểm bán nổi bật trên tuyến phố ngay từ ngày mở bán đầu tiên.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ ngày khai trương bên em gửi tặng kèm trọn bộ băng rôn cờ phướn cam rực rỡ, bảng menu giá với standee nổi bật Chị nha. Treo lên trước hiên nhà là bà con đi đường từ xa 50 mét đã thấy xe bánh mì sáng bừng, tấp vào mua nườm nượp liền ạ!"
   },
   {
     "id": "sale-21",
@@ -612,7 +612,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Rót sốt ra chén nhỏ và chan muỗng là thao tác chuẩn giúp định lượng sốt vừa vặn và bánh giòn ngon.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ sốt Tứ Vị công ty đóng chai tiện lợi lắm Chú ơi. Mỗi sáng mở bán Chú rót một lượng vừa đủ ra chén nhỏ, dùng muỗng chan đều 1 dòng dọc thân bánh. Thao tác vừa sạch sẽ, vừa không bị vương vãi, bánh giữ giòn lâu ăn ngon tuyệt vời ạ!"
   },
   {
     "id": "sale-22",
@@ -641,7 +641,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Túi giấy chuyên dụng vừa an toàn vệ sinh, vừa hút dầu giữ bánh giòn, vừa nâng cao hình ảnh chuyên nghiệp.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ túi giấy Má Hải làm từ giấy an toàn thực phẩm chuyên dụng đó Chị. Bánh mì chiên chả cá nóng hổi bỏ vào túi giấy nó hút bớt dầu thừa, giữ bánh giòn rụm mà khách cầm ăn không bị dính mỡ ra tay, nhìn lịch sự và sạch sẽ lắm ạ!"
   },
   {
     "id": "sale-23",
@@ -670,7 +670,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Hệ thống kho vận liên kết chành xe phủ khắp các tỉnh, giao hàng nhanh chóng, tươi mới và đúng hẹn.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ Chị ở tỉnh thì cứ mở App đặt hàng trên điện thoại là công ty đóng thùng xốp bảo quản gửi chành xe quen giao tận nơi cho Chị liền. Có lịch trình xe chạy rõ ràng, hàng tới nơi chả cá vẫn mát lạnh tươi roi rói, Chị không lo bị đứt hàng đâu nè!"
   },
   {
     "id": "sale-24",
@@ -699,7 +699,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Tư vấn trung thực, chân thành, đặt quyền lợi của người lao động lên hàng đầu là kim chỉ nam 13 năm qua.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ bên con tư vấn là trên tinh thần người đồng minh kiếm cơm, có sao nói vậy chứ không có vẽ vời viễn cảnh xa xôi Chú ơi. Con tính toán chi phí giá vốn thực tế từng đồng để Chú thấy rõ đường đi nước bước trước khi bỏ vốn mở xe ạ!"
   },
   {
     "id": "sale-25",
@@ -728,7 +728,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Má Hải phụng sự cộng đồng bằng bữa sáng chất lượng và trao sinh kế ấm no bền vững cho bà con.",
-    "quote": "Bên con luôn đồng hành minh bạch, hỗ trợ tận tâm để Cô Chú an tâm buôn bán có lời mỗi ngày ạ!"
+    "quote": "Dạ hơn 1.200 điểm bán Má Hải trên cả nước là hơn 1.200 gia đình có việc làm ấm no mỗi sáng đó Cô. Con mong muốn được đồng hành cùng Cô mở thêm một điểm bán thành công để bà con khu phố mình có bữa sáng ngon lành, sạch sẽ ạ!"
   },
   {
     "id": "sale-26",
@@ -757,7 +757,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Khách tiềm năng cao đã sẵn sàng mọi nguồn lực, cần tư vấn nhanh gọn và chốt cọc giữ vị trí đẹp.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ Chú đã sẵn vốn với có người đứng bán rồi thì để con quét Map Tracker kiểm tra cự ly hiên nhà Chú liền nha. Vị trí đạt chuẩn là con hỗ trợ Chú chốt cọc giữ chỗ ngay kẻo người khác mở trước mất mặt bằng đẹp tiếc lắm Chú ơi!"
   },
   {
     "id": "sale-27",
@@ -786,7 +786,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Tư vấn tiêu chuẩn hiên nhà + Quét Map Tracker + Gợi ý liên kết tạp hóa giúp khách dễ dàng có mặt bằng đẹp.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ Chị có vốn sẵn mà chưa tìm ra mặt bằng thì đừng lo Chị nha. Chị cứ dạo quanh các trục đường gần nhà lúc 6h sáng, thấy hiên nhà dân nào trống hoặc trước quán cà phê, tiệm tạp hóa thuận chiều đi làm là mình ghé hỏi thuê buổi sáng 1-2 triệu, dễ lắm Chị nè!"
   },
   {
     "id": "sale-28",
@@ -815,7 +815,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Tạo nhóm Zalo 3 bên giúp thông tin minh bạch, giải tỏa băn khoăn về uy tín thương hiệu và tạo sự đồng thuận trong gia đình.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ chuyện mở xe kinh doanh cho cả gia đình thì cần cả hai Vợ Chồng cùng đồng thuận mới an tâm Chị ha. Hay là Chị cho em xin phép kết bạn Zalo lập nhóm 3 người, em gửi bài toán kinh tế với video thực tế để Anh Nhà cùng xem và hiểu rõ nghen Chị!"
   },
   {
     "id": "sale-29",
@@ -844,7 +844,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Bộ giải pháp Má Hải (vốn nhẹ, Map Tracker, cầm tay chỉ việc, bảo hiểm vốn 60 ngày) tháo gỡ trọn vẹn mọi nút thắt.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ con hiểu người mới khởi nghiệp ai cũng lo lắng về vốn, mặt bằng với tay nghề hết Chú ơi. Nhưng mô hình Má Hải thiết kế tinh gọn cầm tay chỉ việc, vốn chỉ vài triệu, lại có video hướng dẫn tận tay nên Chú an tâm là làm được ngay sau 1 ngày à!"
   },
   {
     "id": "sale-30",
@@ -873,7 +873,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Quy trình 4 bước CRM chuẩn mực: Chuẩn bị -> Phân loại -> Tư vấn giải pháp -> Cập nhật dữ liệu.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ trước khi gọi điện cho Chị là em đã mở hồ sơ ghi nhớ kỹ hoàn cảnh với mong muốn của Chị rồi nè. Em luôn theo sát để khi nào Chị tìm được mặt bằng là em hỗ trợ quét vị trí vệ tinh liền cho Chị nha!"
   },
   {
     "id": "sale-31",
@@ -902,7 +902,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Tâm thế 'Giúp' là lắng nghe chân thành, tư vấn gói vừa túi tiền để bà con mở xe có lời bền vững.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ bên con không phải bán hàng ép uổng gì đâu Cô ơi, tâm thế tụi con là 'Giúp'. Cô có bao nhiêu vốn con tư vấn gói vừa vặn bấy nhiêu, chỉ cho Cô chỗ thuê hiên nhà rẻ để Cô mở xe buôn bán có đồng ra đồng vào ấm no cho gia đình ạ!"
   },
   {
     "id": "sale-32",
@@ -931,7 +931,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Mô hình Má Hải thiết kế tinh gọn 'cầm tay chỉ việc', người chưa từng kinh doanh cũng thành thạo sau 1 ngày.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ Chị chưa từng buôn bán ngày nào cũng không sao hết Chị nha! Có cuốn Sổ tay bán hàng chỉ dẫn từng bước từ 5h sáng chuẩn bị ra sao, cộng thêm video thao tác chiên chả thực tế, Chị nhìn qua là làm thuần thục ngon lành liền ạ!"
   },
   {
     "id": "sale-33",
@@ -960,7 +960,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Kinh doanh trung thực 50/50: Nền tảng công ty tốt + sự chăm chỉ của chủ xe = thành công vững chắc.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ con nói thiệt tình với Chú là ngày đầu mở bán mình cần thời gian làm quen và gom khách quen, bán tầm 50-70 ổ là đẹp lắm rồi. Chứ con không hứa lèo bảo đảm trăm hai trăm ổ liền đâu, mình làm ăn thật thà, chăm chỉ là khách quen tới tấp Chú nè!"
   },
   {
     "id": "sale-34",
@@ -989,7 +989,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Tôn trọng giờ giấc, kiên nhẫn lắng nghe và giữ đúng lời hẹn là phẩm chất của tư vấn viên chuyên nghiệp.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ em nhớ hôm trước Chị dặn gọi lại lúc 2h chiều vì sáng Chị bận việc nhà. Em gọi đúng giờ Chị dặn để gửi thêm thông tin chi tiết qua Zalo cho Chị xem thong thả nghen!"
   },
   {
     "id": "sale-35",
@@ -1018,7 +1018,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Tiền cọc 2 triệu cấn trừ 100% vào tiền xe, bảo đảm minh bạch tài chính tuyệt đối.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ Chú hoàn toàn yên tâm nha, khoản cọc 2 triệu Đợt 1 bên con có phiếu thu mộc đỏ đàng hoàng, và được cấn trừ trọn vẹn 100% vào tiền xe khi Chú nhận bàn giao đợt 2, không mất đi đâu một đồng nào của Chú hết ạ!"
   },
   {
     "id": "sale-36",
@@ -1047,7 +1047,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Video trực quan sinh động giúp khách hàng thấy rõ quy trình đơn giản, xóa tan nỗi sợ không làm được.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ để Chị dễ hình dung thì em gửi qua Zalo cho Chị 3 đoạn video ngắn nha: một clip chiên chả cá phồng vàng 1 phút, một clip chan sốt kẹp bánh và hình ảnh các xe thực tế bán đắt hàng sáng sớm để Chị xem cho an tâm nghen!"
   },
   {
     "id": "sale-37",
@@ -1076,7 +1076,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Bảo quản thùng giữ nhiệt và chiên từng mẻ nhỏ bảo đảm chả cá luôn giòn thơm, nóng hổi và chuẩn vệ sinh.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ chả cá sợi giao tới nơi Chị cứ cất ngăn đông tủ lạnh, tối trước ngày bán Chị bỏ xuống ngăn mát cho rã đông tự nhiên. Sáng ra sợi chả mềm tơi, Chị bỏ thùng giữ nhiệt mang ra xe chiên từng mẻ là sợi chả phồng vàng giòn rụm liền ạ!"
   },
   {
     "id": "sale-38",
@@ -1105,7 +1105,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Hỗ trợ trực tuyến 24/7 qua Hotline và Zalo kỹ thuật giúp chủ xe yên tâm vận hành mỗi sáng.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ trong suốt quá trình bán hàng mỗi sáng, bất kỳ lúc nào Cô cần hỗ trợ về bếp gas hay kỹ thuật chiên chả là cứ gọi số Hotline hoặc nhắn Zalo kỹ thuật, tụi con luôn túc trực từ 5h sáng để hướng dẫn Cô liền tay ạ!"
   },
   {
     "id": "sale-39",
@@ -1134,7 +1134,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Khách đã sẵn sàng thì chốt cọc khóa vị trí ngay để tránh người khác mở trước làm mất mặt bằng đẹp.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ mọi thứ Chú đã chuẩn bị sẵn sàng hết rồi thì hôm nay mình làm thủ tục cọc 2 triệu khóa vị trí Map Tracker Chú nha. Xưởng bên con nhận thông tin là bắt đầu làm xe liền, 5-7 ngày sau là xe về tới tận nhà Chú mở bán khai trương ạ!"
   },
   {
     "id": "sale-40",
@@ -1163,7 +1163,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Cập nhật CRM đầy đủ giúp tư vấn viên theo sát tiến độ, chăm sóc chu đáo và thấu cảm từng khách hàng.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ mọi thông tin trao đổi với Chị em đều ghi chú cẩn thận trên hệ thống để theo sát hỗ trợ Chị chu đáo nhất, Chị cần kiểm tra vị trí nào là em hỗ trợ ngay không để Chị phải chờ đợi lâu ạ!"
   },
   {
     "id": "sale-41",
@@ -1192,7 +1192,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Khuyến khích khách ra xem thực tế các xe Má Hải bán đắt hàng ca sáng là bằng chứng thuyết phục nhất.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ chuyện hỏi thăm người quen là rất tốt Chú ơi, hoặc sáng mai tầm 6h30 Chú cứ ghé thử xe Má Hải gần nhà mình xem thực tế bà con đứng mua đông đúc ra sao, Chú ăn thử ổ bánh nóng hổi là Chú cảm nhận rõ ràng nhất luôn ạ!"
   },
   {
     "id": "sale-42",
@@ -1221,7 +1221,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Sổ tay bán hàng là cẩm nang cầm tay chỉ việc thực tế, giúp người mới nắm vững quy trình sau 1 ngày.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ cuốn Sổ tay bán hàng này là đúc kết kinh nghiệm thực chiến 13 năm của hơn 1.200 chủ xe đó Chị. Chị để sẵn trên xe, cần xem cách ướp rau răm hay kỹ thuật chêm dầu lửa gas là mở ra có liền, tiện lợi như có người chỉ dẫn bên cạnh ạ!"
   },
   {
     "id": "sale-43",
@@ -1250,7 +1250,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Má Hải luôn nhân văn: Có chính sách bảo chứng thu hồi xe 60 ngày (hoàn tối đa 2,8tr) và hỗ trợ sang nhượng 0đ.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ chính sách bảo hiểm vốn 60 ngày là cam kết nhân văn của Má Hải để Cô Chú an tâm khởi sự. Lỡ có việc gia đình bất khả kháng không thể tiếp tục, công ty hỗ trợ thu hồi xe hoàn tối đa 2,8 triệu tùy hiện trạng thực tế Cô nha!"
   },
   {
     "id": "sale-44",
@@ -1279,7 +1279,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Quy trình đào tạo online trực quan qua video, Sổ tay bán hàng và hệ thống App đặt hàng 24/7 tiện lợi.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ gia nhập chuỗi Má Hải Chị được hướng dẫn từ A tới Z qua video trực quan, Sổ tay cầm tay chỉ việc với App đặt hàng 24/7. Chị ngồi ở nhà cũng nắm vững 100% tay nghề làm bánh mì ngon chuẩn vị Chị nghen!"
   },
   {
     "id": "sale-45",
@@ -1308,7 +1308,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Vốn mở xe Má Hải chỉ từ 4,8tr - 10,3tr, rẻ hơn rất nhiều so với các thương hiệu khác (30-70tr), giúp hoàn vốn siêu tốc.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ so với mấy thương hiệu ngoài kia bắt bỏ ra 40-50 triệu tiền nhượng quyền, thì mở xe Má Hải vốn chỉ có từ 4,8 triệu đến 10,3 triệu thôi Chú ơi. Vốn nhẹ tênh, không sợ chôn vốn lớn, bán 1-2 tháng là thu hồi vốn an toàn rồi ạ!"
   },
   {
     "id": "sale-46",
@@ -1337,7 +1337,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Phân loại giúp tối ưu hiệu quả tư vấn, chăm sóc đúng người đúng thời điểm và nâng cao tỷ lệ mở xe thành công.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ em luôn phân loại và theo sát nhu cầu của từng Khách hàng để hỗ trợ đúng lúc nhất. Khách nào cần mở xe gấp thì em hỗ trợ quét vị trí liền tay, Khách nào đang tìm mặt bằng thì em đồng hành hướng dẫn tiêu chuẩn chọn hiên nhà ạ!"
   },
   {
     "id": "sale-47",
@@ -1366,7 +1366,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Không cập nhật CRM sẽ dẫn đến quên thông tin hoặc chăm sóc trùng lặp, là hành vi thiếu chuyên nghiệp.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ sau mỗi cuộc trao đổi là em cập nhật ngay thông tin vào hồ sơ để lần sau gọi lại em nắm trọn vẹn tiến độ của Chị, không làm mất thời gian hỏi lại những điều Chị đã chia sẻ ạ!"
   },
   {
     "id": "sale-48",
@@ -1395,7 +1395,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Xe Má Hải thiết kế tinh gọn bán mang đi, đặt lùi trong hiên nhà, bán 5h30-9h00, bảo đảm văn minh đô thị.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ chiếc xe Má Hải thiết kế tinh gọn lắm Cô ơi, đặt lùi gọn trong hiên nhà bán từ 5h30 tới 9h00 là dọn dẹp sạch bóng trả lại mặt bằng cho chủ nhà. Vừa văn minh, vừa sạch sẽ nên chính quyền và bà con lối xóm ai cũng ủng hộ ạ!"
   },
   {
     "id": "sale-49",
@@ -1424,7 +1424,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Giá vốn chuẩn 9.500đ - 10.000đ/ổ giúp chủ xe có lợi nhuận ròng 5.000đ - 5.500đ/ổ (tương đương ~35% biên lợi nhuận).",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ con tính cụ thể cho Chú xem nha: Vỏ bánh, chả cá sợi 17% đạm, sốt Tứ Vị, rau dưa với túi giấy giá vốn tầm 9,5k đến 10k/ổ. Chú bán giá 15k là nắm chắc tiền lời ròng 5k đến 5,5k mỗi ổ bỏ túi rồi đó Chú!"
   },
   {
     "id": "sale-50",
@@ -1453,7 +1453,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Trên Map Tracker, toàn bộ địa bàn TP.HCM (gồm cả các huyện ngoại thành) đều khóa bảo vệ cự ly thống nhất 300m.",
-    "quote": "Bên con luôn hướng dẫn tận tình từng bước để Cô Chú chuẩn bị chu đáo và mở bán thuận lợi nhất ạ!"
+    "quote": "Dạ ở Củ Chi, Hóc Môn, Bình Chánh hay bất kỳ đâu thuộc TP.HCM thì hệ thống Map Tracker bên con đều khóa bảo vệ cự ly thống nhất 300 mét Chị nha. Vị trí của Chị được bảo đảm độc quyền trọn vẹn, không lo ai mở cạnh tranh ạ!"
   },
   {
     "id": "sale-51",
@@ -1482,7 +1482,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Tam giác vàng: Đông người + Thuận chiều đi làm + Dễ tấp xe mua mang đi trong 1 phút.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ chọn hiên nhà Chú cứ nhớ quy tắc Tam Giác Vàng giùm con: Chỗ đông người qua lại lúc 6h-8h sáng, thuận chiều đi làm và vỉa hè dễ tấp xe vào mua 1 phút là bảo đảm buôn bán đắt hàng Chú nha!"
   },
   {
     "id": "sale-52",
@@ -1511,7 +1511,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Khách mua sáng vội đi làm nên chỉ tấp lề cùng chiều, thuận tiện và an toàn nhất.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ khách mua bánh mì sáng người ta vội đi làm lắm Chị ơi, nên xe mình phải nằm ngay bên tay phải thuận chiều xe chạy thì người ta mới tiện tấp vào lề mua. Chứ nằm bên ngược chiều là khách ngại băng qua đường đông đúc nguy hiểm lắm nè!"
   },
   {
     "id": "sale-53",
@@ -1540,7 +1540,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Liên kết hiên nhà cà phê, tạp hóa giúp tiết kiệm chi phí và cộng hưởng khách quen sẵn có.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ thuê hiên nhà sáng trước quán cà phê hay tiệm tạp hóa là lợi đủ đường Chú ơi: Tiền thuê rẻ có 1-2 triệu, lại có sẵn khách uống cà phê ghé mua bánh mì ăn sáng, đôi bên cùng có lợi vui vẻ lắm ạ!"
   },
   {
     "id": "sale-54",
@@ -1569,7 +1569,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Mái che + Lối lên xuống dễ dàng + Chỗ cất xe gọn gàng bảo đảm ca bán sáng diễn ra thuận lợi.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ hiên nhà có mái che mưa nắng với lối dắt xe bằng phẳng là lý tưởng nhất Cô nha. Sáng sớm Cô đẩy xe ra bán ráo riết tới 9h dắt xe vào góc hiên gửi lại, vừa an toàn vừa đỡ tốn công đẩy xe đi xa ạ!"
   },
   {
     "id": "sale-55",
@@ -1598,7 +1598,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Phản hồi kết quả Map Tracker trong 5 phút giúp khách hàng giữ được mặt bằng đẹp, tránh người khác thuê mất.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ Chú gửi vị trí qua Zalo là trong vòng 5 phút chuyên viên bên con kiểm tra vệ tinh Map Tracker báo kết quả liền cho Chú, để Chú kịp chốt thuê mặt bằng đẹp kẻo người ta cho người khác thuê mất ạ!"
   },
   {
     "id": "sale-56",
@@ -1627,7 +1627,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Tuân thủ cự ly 300m là nguyên tắc bất di bất dịch để bảo vệ doanh số cho toàn bộ hệ thống.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ nếu vị trí này quét ra cách xe cũ dưới 300m thì bên con buộc phải từ chối để bảo vệ quyền lợi cho chủ xe trước Chị nha. Bù lại em sẽ đồng hành cùng Chị tìm vị trí khác cách đó 300m trên cùng tuyến đường, vị trí mới cũng đông khách không kém đâu ạ!"
   },
   {
     "id": "sale-57",
@@ -1656,7 +1656,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Map Tracker xử lý dữ liệu vệ tinh trong 5 phút, minh bạch và bảo đảm độc quyền tuyệt đối cự ly bảo vệ.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ hệ thống Map Tracker bên em dùng bản đồ số hóa vệ tinh chuẩn xác 100% Chú ơi. Nhập tọa độ vào là máy tự động đo bán kính 300m, minh bạch rõ ràng từng mét, bảo đảm quyền lợi độc quyền cho Chú tuyệt đối ạ!"
   },
   {
     "id": "sale-58",
@@ -1685,7 +1685,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Cổng trường, khu công nghiệp, tòa nhà văn phòng và ngã ba/ngã tư là những vị trí vàng đắt khách.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ mặt bằng gần cổng trường học, khu công nghiệp hay tòa nhà văn phòng là những 'vị trí vàng' đó Chị. Sáng sớm dòng người đổ ra đi làm, đi học nườm nượp, Chị làm bánh nhanh tay là bán trăm ổ mỗi sáng khỏe re ạ!"
   },
   {
     "id": "sale-59",
@@ -1714,7 +1714,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Đường cao tốc và dải phân cách cứng làm giảm khả năng dừng đỗ an toàn của khách hàng.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ đường có dải phân cách cứng cao hoặc đường xe chạy tốc độ nhanh quá thì mình không nên thuê Cô nha, vì người đi đường khó quan sát và không thể tấp xe vào lề an toàn để mua bánh được ạ!"
   },
   {
     "id": "sale-60",
@@ -1743,7 +1743,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Điểm bán trường học cần thao tác phục vụ siêu nhanh để phụ huynh kịp giờ đưa con vào lớp.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ điểm bán gần cổng trường học thì cao điểm nhất là từ 6h00 đến 7h15 sáng Chú nè. Phụ huynh chở con đi học tấp vào mua nhanh trong 1 phút, Chú chuẩn bị sẵn bánh giòn chả nóng là bán liên hồi không kịp thở luôn đó Chú!"
   },
   {
     "id": "sale-61",
@@ -1772,7 +1772,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Chính sách bảo vệ cự ly 300m được thực thi nghiêm ngặt, minh bạch và bảo vệ tối đa quyền lợi cho mọi chủ xe.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ vị trí cách xe cũ 150m thì hệ thống bắt buộc khóa để bảo vệ doanh số cho chủ xe cũ Chị nha. Em hướng dẫn Chị khảo sát nhích lên trên một đoạn tầm 350m, vị trí đó vừa thoáng vừa đúng chuẩn độc quyền Map Tracker cho Chị ạ!"
   },
   {
     "id": "sale-62",
@@ -1801,7 +1801,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Khu vực văn phòng, cơ quan hành chính có lượng khách quen ổn định và coi trọng vệ sinh ATTP.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ trước cổng cơ quan hành chính hay tòa nhà văn phòng thì khách rất thích ăn bánh mì chả cá Má Hải vì sạch sẽ, giòn nóng và đầy đủ dinh dưỡng. Khách văn phòng ăn quen là sáng nào cũng ghé ủng hộ Chú đều đặn ạ!"
   },
   {
     "id": "sale-63",
@@ -1830,7 +1830,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Rõ ràng khung giờ, giữ vệ sinh tinh tươm và thanh toán đúng hẹn giúp chủ nhà luôn yêu quý, tạo điều kiện.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ khi thuê hiên nhà người dân, mình cứ thỏa thuận rõ ràng khung giờ bán từ 5h30 đến 9h00 sáng, giữ gìn vệ sinh sạch bóng và thanh toán tiền thuê đúng hẹn là chủ nhà quý mến, tạo điều kiện buôn bán lâu dài lắm Cô ơi!"
   },
   {
     "id": "sale-64",
@@ -1859,7 +1859,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Thuê hiên nhà sáng 1-2 triệu giúp cắt giảm 80% chi phí cố định so với thuê mặt bằng nguyên căn.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ xe bánh mì mình chỉ bán 3,5 tiếng buổi sáng rồi dọn gọn gàng, thuê hiên nhà có 1-2 triệu là tối ưu nhất rồi Chị. Thuê chi nguyên căn cả chục triệu mỗi tháng cho nặng gánh chi phí cố định uổng lắm Chị nè!"
   },
   {
     "id": "sale-65",
@@ -1888,7 +1888,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Đặt cách ngã tư 20-30m sau giao lộ giúp khách vừa qua đèn đỏ dễ dàng tấp xe vào lề mua bánh an toàn.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ gần ngã tư đèn đỏ thì Chú đặt xe cách ngã tư tầm 20-30 mét sau khi vừa qua giao lộ Chú nha. Khách vừa dừng đèn đỏ xong chạy qua là thấy ngay xe mình, tấp vào lề mua bánh cực kỳ an toàn và thuận tiện ạ!"
   },
   {
     "id": "sale-66",
@@ -1917,7 +1917,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Bán tại hiên nhà mình là lợi thế vàng: 0đ tiền mặt bằng, lời ròng trọn vẹn và an tâm buôn bán lâu dài.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ nhà mình có sẵn mặt tiền hiên nhà là lợi thế vô giá luôn đó Cô! Cô tiết kiệm trọn vẹn 100% tiền thuê mặt bằng, lại bán cho bà con hàng xóm quen thuộc, tiền lời ròng Cô gom trọn vẹn mỗi ngày luôn ạ!"
   },
   {
     "id": "sale-67",
@@ -1946,7 +1946,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Tránh các vị trí ngõ cụt, công trình che chắn hoặc vỉa hè quá cao gây bất tiện cho người mua.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ những chỗ trong hẻm cụt sâu hoặc mặt tiền bị che khuất bởi công trình xây dựng thì mình bỏ qua Chị nha, mình chọn mặt tiền đường chính thoáng đãng để đón trọn lượng khách đi làm buổi sáng ạ!"
   },
   {
     "id": "sale-68",
@@ -1975,7 +1975,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Chợ sáng tập trung lưu lượng người mua đồ ăn khổng lồ, là mảnh đất màu mỡ cho xe bánh mì.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ mặt bằng gần chợ dân sinh buổi sáng là đông khách dữ lắm Chú ơi. Bà con đi chợ sáng mua đồ ăn cho cả nhà, tiện thể ghé xe Chú mua 2-3 ổ bánh mì mang về cho con cháu ăn sáng luôn đó Chú!"
   },
   {
     "id": "sale-69",
@@ -2004,7 +2004,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Khu vực bệnh viện có nhu cầu ăn sáng nóng, sạch, nhanh cực kỳ cao và liên tục từ 5h30 sáng.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ khu vực gần bệnh viện hay trung tâm y tế thì nhu cầu ăn sáng nóng hổi, sạch sẽ cực kỳ cao từ 5h30 sáng luôn Cô. Ổ bánh mì Má Hải có chứng nhận ATTP rõ ràng nên người nhà và y bác sĩ rất tin tưởng ghé mua ạ!"
   },
   {
     "id": "sale-70",
@@ -2033,7 +2033,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Hình ảnh trực diện + góc nhìn thuận chiều + GPS vệ tinh giúp duyệt mặt bằng chuẩn xác trong 5 phút.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ Chị đứng tại hiên nhà chụp giùm em 3 tấm hình nha: một tấm chụp thẳng mặt tiền, một tấm chụp hướng xe chạy tới và bấm nút chia sẻ vị trí GPS trên Zalo là em kiểm tra duyệt điểm cho Chị trong 5 phút liền ạ!"
   },
   {
     "id": "sale-71",
@@ -2062,7 +2062,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Liên kết vỉa hè cửa hàng tiện lợi cần xin phép rõ ràng và giữ lối đi thông thoáng cho khách vào mua sắm.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ thuê vỉa hè trước cửa hàng tiện lợi thì Chị liên hệ chủ nhà xin phép rõ ràng và đặt xe lùi gọn gàng nha. Lượng khách trẻ ghé mua đồ buổi sáng rất đông, kết hợp mua bánh mì là doanh số tăng vèo vèo luôn đó Chị!"
   },
   {
     "id": "sale-72",
@@ -2091,7 +2091,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Khóa cự ly 300m giúp bảo vệ doanh số cho từng chủ xe, tạo nên một cộng đồng đoàn kết và phát triển bền vững.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ chính sách khóa cự ly 300 mét là kim chỉ nam 13 năm qua của Má Hải đó Chú. Nhờ giữ đúng khoảng cách này mà hơn 1.200 chủ xe trong hệ thống ai cũng có vùng khách riêng, buôn bán ổn định không ai giẫm chân ai ạ!"
   },
   {
     "id": "sale-73",
@@ -2120,7 +2120,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Cổng chính + Sảnh đón + Lối tấp xe thuận tiện là 3 yếu tố vàng giúp xe chung cư bán trên 100 ổ/sáng.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ ở khu chung cư thì vị trí cổng chính lối ra vào hoặc sảnh đón xe buýt là đắc địa nhất Chị nha. Cư dân sáng sớm đổ ra đi làm tấp xe vào mua bánh mì nóng giòn trong 1 phút là giải pháp ăn sáng số 1 của họ luôn ạ!"
   },
   {
     "id": "sale-74",
@@ -2149,7 +2149,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Nhà chờ xe buýt tập trung dòng người chờ xe, mua nhanh 1 phút là giải pháp ăn sáng hoàn hảo.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ trạm xe buýt là chỗ tập trung dòng người chờ xe 5-10 phút nè Cô. Trong lúc chờ xe bà con ghé xe Cô mua ổ bánh mì lót dạ ăn sáng trên đường đi làm, vừa tiện lợi vừa bán được số lượng lớn mỗi sáng ạ!"
   },
   {
     "id": "sale-75",
@@ -2178,7 +2178,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Hệ thống Map Tracker hoạt động minh bạch, chuẩn xác theo thuật toán: Đạt chuẩn 300m là phê duyệt ngay.",
-    "quote": "Bên con kiểm tra Map Tracker vệ tinh chuẩn xác trong 5 phút để bảo vệ quyền lợi độc quyền tốt nhất cho Cô Chú ạ!"
+    "quote": "Dạ vị trí Chú chọn đo trên Map Tracker đạt đúng 300 mét là hệ thống phê duyệt đạt chuẩn ngay lập tức Chú nha. Bên con làm việc chuẩn xác theo bản đồ vệ tinh, đạt cự ly là cấp phép để Chú yên tâm chuẩn bị mở xe ạ!"
   },
   {
     "id": "sale-76",
@@ -2207,7 +2207,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "17% đạm cá biển tươi + Tinh bột <6% + Quy trình ATTP khép kín tạo nên thương hiệu chả cá sợi số 1.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ chả cá sợi Má Hải làm từ 100% cá biển tươi đạt chuẩn 17% đạm, tinh bột dưới 6% Chị nha. Sợi chả chiên lên vàng giòn, dai ngọt tự nhiên chứ không bở bã hay ngậm dầu như các loại chả trôi nổi ngoài chợ đâu ạ!"
   },
   {
     "id": "sale-77",
@@ -2236,7 +2236,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Nhiệt độ chuẩn 160–170°C giúp sợi chả chín phồng tức thì, ráo dầu và giữ trọn độ ẩm ngọt bên trong.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ nhiệt độ dầu chuẩn nhất là từ 160 đến 170 độ C Chú nha. Dầu sủi tăm tăm Chú thả chả vào là sợi chả phồng to nổi lên liền, vừa chín giòn rụm bên ngoài mà bên trong vẫn ngọt mọng nước, không bị ngấm dầu Chú nè!"
   },
   {
     "id": "sale-78",
@@ -2265,7 +2265,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Sốt Tứ Vị sản xuất nhà máy FSSC 22000 theo công thức độc quyền là bí quyết giữ chân khách 13 năm qua.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ nước sốt Tứ Vị Má Hải được gia công tại nhà máy FSSC 22000 theo công thức bí truyền 13 năm độc quyền đó Chị. Vị chua cay mặn ngọt hòa quyện sóng sánh, chan vào bánh mì là đậm đà từ đầu tới cuối ổ bánh luôn ạ!"
   },
   {
     "id": "sale-79",
@@ -2294,7 +2294,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Rạch bánh -> Rau dưa -> Chả cá giòn -> Chan sốt Tứ Vị -> Bọc túi giấy: Hoàn thành trong 1 phút!",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ quy trình làm bánh mì 1 phút siêu nhanh: Rạch bánh -> Cho dưa leo, rau răm, ớt -> Gắp chả cá giòn nóng -> Chan 1 dòng sốt Tứ Vị -> Bỏ túi giấy trao khách. 5 bước gọn gàng khách không phải chờ lâu Chú ha!"
   },
   {
     "id": "sale-80",
@@ -2323,7 +2323,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Rã đông ngăn mát giữ 100% vị ngọt đạm cá biển và giúp sợi chả chiên phồng vàng giòn chuẩn vị.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ tối trước ngày bán Chị bỏ túi chả từ ngăn đông xuống ngăn mát tủ lạnh rã đông tự nhiên nha. Sáng ra sợi chả mềm tơi, thả vào dầu nóng là phồng giòn vàng ươm, giữ trọn 100% vị ngọt tự nhiên của cá biển ạ!"
   },
   {
     "id": "sale-81",
@@ -2352,7 +2352,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Đeo găng tay và nón đồng phục là quy chuẩn bắt buộc để bảo đảm ATTP và tạo niềm tin với khách hàng.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ khi làm bánh Cô Chú nhớ đeo găng tay nilon với đội nón đồng phục cam giùm con nghen. Khách hàng đứng mua nhìn thấy mình làm bánh sạch sẽ, tinh tươm là họ tin tưởng và thành khách ruột của mình dài dài ạ!"
   },
   {
     "id": "sale-82",
@@ -2381,7 +2381,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Chan muỗng dọc thân bánh giúp sốt thấm đều, giữ bánh giòn và thể hiện quy chuẩn phục vụ chuyên nghiệp.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ Chị dùng muỗng múc sốt chan đều một dòng dọc thân bánh mì nha. Sốt sẽ ngấm đều từng sợi chả cá và rau dưa, cắn miếng nào cũng đậm đà trọn vị mà vỏ bánh vẫn giữ được độ giòn rụm thơm ngon ạ!"
   },
   {
     "id": "sale-83",
@@ -2410,7 +2410,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Dưa leo giòn mát + Rau răm thơm nồng + Ớt tươi là bộ 3 rau dưa chuẩn vị làm bừng sáng ổ bánh mì chả cá.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ dưa leo giòn mát, rau răm thơm nồng với ớt xắt cay nhẹ là bộ 3 rau dưa hoàn hảo cho bánh mì chả cá đó Chú. Kết hợp cùng chả cá sợi nóng giòn và sốt Tứ Vị tạo nên hương vị thơm ngon ăn hoài không ngán ạ!"
   },
   {
     "id": "sale-84",
@@ -2439,7 +2439,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Bảo quản tủ kính chắn gió và nhập bánh nóng mỗi sáng bảo đảm ổ bánh luôn giòn rụm thơm lừng.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ bánh mì nhập từ lò sáng sớm Chị cứ xếp ngay ngắn trong tủ kính chắn gió sạch sẽ nha. Cửa kính đóng kín giúp ngăn bụi đường và giữ cho ổ bánh mì luôn nóng giòn rụm trao tay khách hàng ạ!"
   },
   {
     "id": "sale-85",
@@ -2468,7 +2468,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Chiên từng mẻ nhỏ giúp chả luôn nóng giòn, thơm nức mũi và kích thích khách ghé mua.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ kinh nghiệm là Chú chiên từng mẻ nhỏ gối đầu liên tục nha. Khách tới thấy chảo chả cá bốc khói thơm nức, gắp sợi chả nóng hổi bỏ vào bánh là kích thích vị giác người mua dữ lắm Chú ơi!"
   },
   {
     "id": "sale-86",
@@ -2497,7 +2497,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Dầu ăn rõ nguồn gốc và thay mới định kỳ bảo đảm an toàn sức khỏe và chất lượng chả cá thơm ngon.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ dầu chiên Chị chọn loại dầu thực vật có thương hiệu uy tín đàng hoàng nha. Chiên xong ca sáng Chị lọc cặn sạch sẽ và thay dầu mới định kỳ để bảo đảm sức khỏe cho bà con và giữ chả luôn vàng đẹp Chị nè!"
   },
   {
     "id": "sale-87",
@@ -2526,7 +2526,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Vệ sinh tinh tươm mặt xe và quét dọn hiên nhà sau ca bán thể hiện tác phong kinh doanh văn minh.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ 9h sáng kết thúc ca bán, Cô Chú tắt gas an toàn, lau sạch mặt xe inox, gom rác sạch sẽ trả lại hiên nhà tinh tươm nha. Xe sạch bóng, hiên nhà ngăn nắp là chủ nhà quý mến và khách hàng nhìn vào rất ưng bụng ạ!"
   },
   {
     "id": "sale-88",
@@ -2555,7 +2555,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Giấy chứng nhận ATTP là lá chắn pháp lý giúp chủ xe hoàn toàn an tâm kinh doanh trên toàn quốc.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ Giấy chứng nhận ATTP của công ty cấp bản sao công chứng Chú cứ lồng khung kính treo trang trọng trên xe nha. Khách nhìn thấy có chứng nhận an toàn thực phẩm là họ an tâm mua cho cả gia đình ăn sáng mỗi ngày ạ!"
   },
   {
     "id": "sale-89",
@@ -2584,7 +2584,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "1 dòng sốt vừa đủ đậm đà, giữ bánh giòn rụm và không bị lem ướt ra bao bì túi giấy.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ sốt Tứ Vị bên con cô đặc đậm đà lắm nên Chị chỉ cần chan đúng 1 dòng dọc thân bánh là vừa vặn trọn vị rồi Chị nha. Không cần chan nhiều làm ướt mềm vỏ bánh mì đâu nè!"
   },
   {
     "id": "sale-90",
@@ -2613,7 +2613,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Bảo quản ngăn đông -18°C và xuất nhập theo hạn dùng giúp chả cá luôn tươi ngon như vừa mới sản xuất.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ túi chả cá đông lạnh nguyên bao bì Chú cứ bảo quản ngăn đông -18 độ C thoải mái nha. Khi nào bán tới đâu mình lấy ra rã đông tới đó, chất lượng chả cá bảo đảm tươi ngon như mới xuất xưởng ạ!"
   },
   {
     "id": "sale-91",
@@ -2642,7 +2642,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Linh hoạt phục vụ theo sở thích của khách với nụ cười thân thiện giúp giữ chân khách quen lâu dài.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ khách dặn không ăn cay hay không ăn rau răm thì Chị cứ vui vẻ làm theo sở thích của khách nha. Nụ cười niềm nở và sự chu đáo chiều lòng khách là bí quyết giữ chân khách quen suốt 13 năm qua đó Chị!"
   },
   {
     "id": "sale-92",
@@ -2671,7 +2671,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Màu cam năng động kích thích vị giác, nổi bật trên phố và tượng trưng cho sự ấm áp của Nhà Má Hải.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ màu cam là màu của sự ấm áp, năng động và kích thích vị giác buổi sáng đó Cô. Chiếc xe cam với áo nón đồng phục cam nổi bật từ xa 50 mét giúp bà con đi đường nhận ra ngay thương hiệu Má Hải ạ!"
   },
   {
     "id": "sale-93",
@@ -2700,7 +2700,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Rửa sạch và lau khô dụng cụ bếp mỗi ngày giúp bảo đảm vệ sinh tuyệt đối và tăng tuổi thọ thiết bị.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ kẹp gắp, khay đựng với xẻng chiên Chú rửa sạch bằng nước rửa chén và lau khô ráo sau mỗi ca bán Chú nha. Dụng cụ inox sáng bóng, sạch sẽ giúp đồ nghề bền bỉ và khách nhìn vào thấy rất an tâm ạ!"
   },
   {
     "id": "sale-94",
@@ -2729,7 +2729,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Rạch bánh chuẩn tạo khoang chứa nhân đầy đặn, giữ trọn vẹn rau chả và nước sốt bên trong.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ rạch bánh mì Chị rạch một đường thẳng vừa đủ sâu dọc thân bánh để tạo khoang chứa đầy đặn rau chả Chị nha. Tránh làm đứt rời ổ bánh để khi khách cầm ăn không bị rơi rớt nhân ra ngoài ạ!"
   },
   {
     "id": "sale-95",
@@ -2758,7 +2758,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Sợi chả phồng to, nổi đều, vàng ươm sau 1-2 phút là dấu hiệu chín tới giòn ngon nhất.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ khi sợi chả cá phồng to nổi đều trên mặt dầu và chuyển sang màu vàng óng ánh là chín giòn tới rồi Chú nha. Chú dùng xẻng vớt ra khay ráo dầu liền để sợi chả giữ được độ giòn rụm thơm ngon nhất ạ!"
   },
   {
     "id": "sale-96",
@@ -2787,7 +2787,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Trao bánh 2 tay kèm nụ cười thân thiện và lời cảm ơn chân thành là bí quyết giữ chân khách quen 13 năm.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ khi trao bánh Chị cầm túi giấy bằng 2 tay kèm nụ cười tươi: 'Dạ bánh mì nóng giòn của Cô/Chú đây ạ, con cảm ơn!'. Khách nhận bánh ấm nóng và lời chào thân thiện là ngày nào cũng nhớ ghé xe Chị mua thôi nè!"
   },
   {
     "id": "sale-97",
@@ -2816,7 +2816,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Chất lượng số 1 + Mạng lưới 1.200 điểm bán + Tinh thần phụng sự tạo nên vị thế vững chắc của Má Hải suốt 13 năm.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ 13 năm qua Má Hải luôn giữ vững vị thế số 1 nhờ chất lượng chả cá 17% đạm, sốt Tứ Vị độc quyền và văn hóa phục vụ tử tế đó Chú. Gia nhập chuỗi là Chú đứng trên vai người khổng lồ có sẵn niềm tin của hàng triệu khách hàng rồi ạ!"
   },
   {
     "id": "sale-98",
@@ -2845,7 +2845,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Thay dầu mới định kỳ và lọc sạch cặn dầu sau ca bán bảo đảm an toàn thực phẩm và chất lượng chả cá thơm ngon.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ dầu chiên có dấu hiệu sẫm màu là Chị trút bỏ và thay 100% dầu mới sạch sẽ liền Chị nha. Tuyệt đối không dùng dầu cũ cháy khét để giữ gìn sức khỏe cho khách hàng và uy tín lâu dài của điểm bán mình ạ!"
   },
   {
     "id": "sale-99",
@@ -2874,7 +2874,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Rau răm vừa ấm bụng vừa khử tanh và kích thích vị giác, là nét duyên ẩm thực độc đáo của Má Hải.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ rau răm có tính ấm nồng kết hợp với chả cá biển tính hàn giúp ấm bụng và làm dậy mùi thơm béo ngậy của chả cá chiên. Nét ẩm thực truyền thống độc đáo này làm khách ăn một lần là nhớ mãi hương vị Má Hải đó Cô!"
   },
   {
     "id": "sale-100",
@@ -2903,7 +2903,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Bảng giá niêm yết công khai, bán đúng giá giúp khách hàng an tâm và tin tưởng tuyệt đối vào thương hiệu.",
-    "quote": "Bên con luôn tuân thủ nghiêm ngặt quy chuẩn ATTP để từng ổ bánh mì đến tay khách luôn nóng giòn và an toàn nhất ạ!"
+    "quote": "Dạ bảng menu giá niêm yết 15k rõ ràng trước mặt xe giúp khách đi đường an tâm ghé mua Chú nha. Bán đúng giá niêm yết tạo sự tin tưởng tuyệt đối và giữ gìn uy tín thương hiệu đồng nhất trên toàn quốc ạ!"
   },
   {
     "id": "sale-101",
@@ -2932,7 +2932,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Đồng cảm -> Hỏi mở tháo gỡ băn khoăn -> Hẹn giờ gọi lại là 3 bước chuẩn mực khi khách cần suy nghĩ thêm.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ con hiểu Cô Chú cần suy nghĩ và bàn bạc thêm với gia đình cho kỹ lưỡng nè. Con xin phép gửi bản tóm tắt chi phí giá vốn qua Zalo, tầm chiều mai 2h con gọi lại giải đáp thêm cho Cô Chú thong thả nghen!"
   },
   {
     "id": "sale-102",
@@ -2961,7 +2961,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Sản phẩm khác biệt + Giá bình dân 15k + Phục vụ 1 phút giúp xe Má Hải luôn có tệp khách quen riêng biệt.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ khu vực có nhiều hàng quán ăn sáng chứng tỏ nhu cầu ăn sáng của bà con ở đó rất lớn Chị ơi! Bánh Mì Má Hải mang hương vị chả cá 17% đạm giòn nóng độc quyền với giá 15k bình dân, Chị an tâm là mình luôn có tệp khách ruột riêng ạ!"
   },
   {
     "id": "sale-103",
@@ -2990,7 +2990,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Tư vấn gói 4,8tr hoặc 7,5tr giúp người lao động mở xe với vốn nhỏ, tự chủ kinh tế và an toàn tuyệt đối.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ vốn mình có tầm 5 triệu thì Chị tận dụng xe có sẵn ở nhà để chọn Gói 4,8 triệu, hoặc chọn Gói 7,5 triệu và dùng đồ bếp ở nhà Chị nè. Khởi sự nhẹ vốn, bán 1-2 tháng là hoàn vốn rồi, an toàn tuyệt đối luôn Chị nha!"
   },
   {
     "id": "sale-104",
@@ -3019,7 +3019,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Hướng dẫn tiêu chuẩn + Quét Map Tracker 5 phút + Gợi ý liên kết giúp khách giải tỏa hoàn toàn nỗi lo mặt bằng.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ chuyện tìm mặt bằng Chú đừng lo lắng nha, con sẽ đồng hành hướng dẫn Chú tiêu chuẩn tìm hiên nhà sáng 1-2 triệu. Chú thấy chỗ nào ưng ý cứ gửi định vị qua Zalo là con quét Map Tracker kiểm tra cự ly liền tay cho Chú ạ!"
   },
   {
     "id": "sale-105",
@@ -3048,7 +3048,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Bảo chứng thu hồi xe 60 ngày + Sang nhượng 0đ + Hòa vốn 40-50 ổ giúp giảm thiểu tối đa rủi ro cho người khởi nghiệp.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ Má Hải có chính sách bảo chứng an toàn vốn trong 60 ngày đầu hỗ trợ thu hồi xe hoàn tối đa 2,8 triệu hoặc hỗ trợ sang nhượng 0 đồng Chị ơi. Công ty luôn giữ tâm thế đồng minh chia sẻ rủi ro nên Chị hoàn toàn yên tâm bỏ vốn ạ!"
   },
   {
     "id": "sale-106",
@@ -3077,7 +3077,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Cung cấp số liệu minh bạch và lập nhóm Zalo 3 bên trao đổi trực tiếp giúp giải tỏa nỗi lo của người thân.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ chuyện mở xe làm ăn lớn cho gia đình thì cần Anh Nhà đồng thuận mới vui vẻ Chị ha. Chị cho em lập nhóm Zalo 3 người, em gửi bài toán kinh tế giá vốn lời lãi minh bạch để Anh xem là Anh ủng hộ Chị liền ạ!"
   },
   {
     "id": "sale-107",
@@ -3106,7 +3106,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Thương hiệu lớn + Sốt Tứ Vị độc quyền + Khóa cự ly 300m là 3 vũ khí mà người tự mở ngoài không thể có được.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ tự mua xe ngoài thì không có thương hiệu Má Hải 13 năm, không có sốt Tứ Vị độc quyền và cũng không được bảo vệ độc quyền 300m Chú ơi. Vào chuỗi Má Hải vốn có mấy triệu mà có sẵn niềm tin của hàng triệu khách hàng rồi ạ!"
   },
   {
     "id": "sale-108",
@@ -3135,7 +3135,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Đóng thùng xốp chuyên dụng + Chành xe giao trong ngày + Cam kết 1 đổi 1 bảo đảm nguyên liệu luôn tươi mới.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ chả cá gửi về tỉnh được đóng thùng xốp chuyên dụng bảo quản lạnh liên tục gửi chành xe quen giao trong ngày Chị nha. Tới nơi chả cá vẫn mát lạnh tươi rói, nếu có bất kỳ sự cố gì công ty bảo hành 1 đổi 1 miễn phí cho Chị liền ạ!"
   },
   {
     "id": "sale-109",
@@ -3164,7 +3164,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Hiên nhà mái che + Bán qua Zalo/điện thoại + Giao hàng lân cận giúp xe bánh mì chủ động vượt qua ngày mưa.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ buôn bán sáng mình chọn hiên nhà có mái che vững chắc Chú nha. Trời mưa mình có áo mưa đồng phục, lại đẩy mạnh nhận đặt bánh qua Zalo giao tận nơi cho các văn phòng, trường học lân cận là doanh số vẫn chạy đều đều ạ!"
   },
   {
     "id": "sale-110",
@@ -3193,7 +3193,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Tuyển sinh viên làm ca sáng 3 tiếng hoặc tận dụng người thân là giải pháp tuyển người đứng bán tối ưu nhất.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ tìm người phụ bán ca sáng Chị cứ đăng tin tuyển mấy bạn sinh viên làm thêm 3 tiếng từ 5h30 đến 8h30, hoặc nhờ người thân trong nhà phụ bán. Thời gian làm việc ngắn gọn buổi sáng nên rất dễ kiếm người phụ Chị nè!"
   },
   {
     "id": "sale-111",
@@ -3222,7 +3222,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Gia nhập chuỗi chỉ từ 4,8tr tiết kiệm hơn nhiều so với tự mua sắm máy móc và tự thử nghiệm công thức.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ tự đi học làm bánh mì chả cá tốn nhiều tiền bạc thử nghiệm máy móc mà chưa chắc ra được vị ngon chuẩn ATTP Chú ơi. Gia nhập Má Hải từ 4,8 triệu là Chú nhận trọn bộ giải pháp 13 năm sẵn sàng mở bán có lời ngay ngày mai rồi ạ!"
   },
   {
     "id": "sale-112",
@@ -3251,7 +3251,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Chả cá chưa chiên bảo quản ngăn đông dùng tiếp bình thường, chủ động điều chỉnh lượng nhập để hạn chế dư thừa.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ chả cá sợi chưa chiên Chị cứ bọc kín cất ngăn đông tủ lạnh sáng sau bán tiếp bình thường Chị nha. Còn lượng bánh mì thì sau vài ngày đầu bán quen Chị sẽ chủ động cân đối lượng nhập vừa vặn, không lo bị dư thừa đâu ạ!"
   },
   {
     "id": "sale-113",
@@ -3280,7 +3280,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Lên đơn gộp 5-7 ngày qua chành xe liên kết giúp tối ưu cước vận chuyển và chủ động nguồn hàng tươi mới.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ ở tỉnh thì Chú chủ động lên đơn gộp nguyên liệu đủ bán cho 5-7 ngày trên App nha. Gửi gộp một chuyến chành xe cước phí chia ra mỗi ổ bánh mì có vài chục đồng à, vừa tiết kiệm chi phí vừa không lo đứt hàng Chú nè!"
   },
   {
     "id": "sale-114",
@@ -3309,7 +3309,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Bộ ấn phẩm nổi bật + Hướng dẫn kỹ thuật từ xa + Mẹo hút khách giúp ngày khai trương đạt kết quả tốt nhất.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ ngày khai trương bên em gửi trọn bộ cờ phướn, standee, bảng menu cam nổi bật Chị nha. Sáng sớm chuyên viên gọi điện hỗ trợ kỹ thuật từ xa và chỉ dẫn các mẹo thu hút khách để Chị khai trương buôn may bán đắt ạ!"
   },
   {
     "id": "sale-115",
@@ -3338,7 +3338,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Sảnh đón cổng chính + Lối tấp xe gọn gàng + Phối hợp ban quản lý giúp điểm bán chung cư khai thác tối đa doanh số.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ ở chung cư Chú chọn vị trí sảnh đón hoặc gần cổng chính nơi cư dân đổ ra đi làm 6h-8h sáng Chú nha. Xe đặt gọn gàng trong hiên, cư dân tấp xe mua ổ bánh mì nóng giòn trong 1 phút là Chú bán trăm ổ mỗi sáng khỏe re ạ!"
   },
   {
     "id": "sale-116",
@@ -3367,7 +3367,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Hỗ trợ quét Map Tracker vị trí mới miễn phí và cập nhật hệ thống nhanh chóng khi đối tác cần dời điểm bán.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ sau này Chị muốn dời xe sang chỗ khác đông khách hơn thì công ty hỗ trợ quét Map Tracker vị trí mới hoàn toàn miễn phí Chị nha. Đạt chuẩn 300m là công ty cập nhật hệ thống cho Chị dời xe ngay, không thu thêm phí nào hết ạ!"
   },
   {
     "id": "sale-117",
@@ -3396,7 +3396,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Dụng cụ chuẩn + Thao tác đúng kỹ thuật + Tập dượt trước giúp người mới thành thạo và tuyệt đối an toàn.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ đồ nghề bên con trang bị kẹp gắp dài với xẻng chiên chuyên dụng an toàn tuyệt đối Chú ơi. Chú xem qua video chỉ dẫn cách thả chả nhẹ từ mép chảo là dầu không bao giờ bắn, đứng bếp chiên chả an toàn và nhẹ nhàng lắm Chú nha!"
   },
   {
     "id": "sale-118",
@@ -3425,7 +3425,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Tập trung chuyên môn hóa bánh mì chả cá giúp phục vụ siêu nhanh 1 phút và định vị thương hiệu sâu sắc.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ xe mình chuyên môn hóa bánh mì chả cá để làm bánh siêu tốc 1 phút và định vị thương hiệu sâu sắc trong lòng khách hàng Chị nè. Khách ghé xe là nhớ ngay bánh mì chả cá Má Hải giòn nóng, thơm ngon số 1 ạ!"
   },
   {
     "id": "sale-119",
@@ -3454,7 +3454,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Xe giao tận nhà bằng xe tải/chành xe, đẩy bộ nhẹ nhàng trên hiên nhà, hoàn toàn không cần bằng lái xe.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ xe bánh mì được vận chuyển nguyên chiếc bằng xe tải giao tận nhà Chú nha. Xe có bánh đẩy chịu lực nhẹ nhàng, sáng đẩy bộ vài mét ra hiên bán rồi đẩy vào cất, hoàn toàn không cần bằng lái xe máy gì đâu Chú ơi!"
   },
   {
     "id": "sale-120",
@@ -3483,7 +3483,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Má Hải luôn đồng hành và tạo điều kiện tối đa để các gia đình mở rộng chuỗi điểm bán tăng thêm thu nhập.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ gia đình mình mở thêm xe thứ 2, thứ 3 là công ty ưu tiên xét duyệt Map Tracker và hỗ trợ gói Onboarding tận tình liền Chị nha. Rất nhiều gia đình trong hệ thống Má Hải đã mở chuỗi 2-3 xe thu nhập 30-40 triệu mỗi tháng đó Chị!"
   },
   {
     "id": "sale-121",
@@ -3512,7 +3512,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Thanh toán 2 đợt chuẩn mực: Cọc 2tr Đợt 1 -> Thanh toán phần còn lại khi nhận bàn giao xe Đợt 2.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ quy trình thanh toán rõ ràng 2 đợt Chú nha: Đợt 1 cọc 2 triệu khóa vị trí Map Tracker và làm xe. Đợt 2 xe về tận nhà Chú kiểm tra nghiệm thu hài lòng mới thanh toán nốt phần tiền còn lại, minh bạch tuyệt đối ạ!"
   },
   {
     "id": "sale-122",
@@ -3541,7 +3541,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Hợp đồng minh bạch, nhân văn, tập trung bảo vệ chất lượng ATTP và cam kết chính sách 3 KHÔNG trọn đời.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ hợp đồng bên con xây dựng trên tinh thần đồng minh kiếm cơm, chỉ yêu cầu Cô Chú tuân thủ nguyên liệu chính hãng và ATTP thôi. Cam kết chính sách 3 KHÔNG trọn đời bảo vệ quyền lợi tối đa cho Cô Chú ạ!"
   },
   {
     "id": "sale-123",
@@ -3570,7 +3570,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Sẵn sàng hỗ trợ mẫu trải nghiệm và khuyến khích ăn thử thực tế để khách cảm nhận chất lượng đỉnh cao của Má Hải.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ Chị muốn ăn thử chả cá với sốt Tứ Vị thì em sẵn sàng gửi mẫu thử về tận nhà cho gia đình trải nghiệm thực tế nha. Hoặc sáng mai Chị ghé xe Má Hải gần nhất ăn thử ổ bánh nóng hổi là cảm nhận chất lượng đỉnh cao liền ạ!"
   },
   {
     "id": "sale-124",
@@ -3599,7 +3599,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Chủ xe hoàn toàn làm chủ thời gian kinh doanh, không bị gián đoạn quyền lợi hay thu hồi xe khi có việc bận gia đình.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ Chú làm chủ công việc của mình nên có việc bận gia đình cứ chủ động nghỉ vài ngày bình thường Chú nha. Chỉ cần điều chỉnh lịch đặt hàng trên App là được, vị trí Map Tracker 300m vẫn bảo lưu an toàn trọn vẹn cho Chú ạ!"
   },
   {
     "id": "sale-125",
@@ -3628,7 +3628,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Chuyên môn hóa chả cá sợi mang lại bản sắc độc quyền, quy trình sạch sẽ và tốc độ phục vụ siêu nhanh 1 phút.",
-    "quote": "Bên con luôn lắng nghe và đồng hành tháo gỡ từng băn khoăn để Cô Chú hoàn toàn an tâm khởi sự ạ!"
+    "quote": "Dạ chuyên môn hóa chả cá sợi 13 năm giúp Má Hải định hình bản sắc độc quyền, quy trình sạch sẽ không khói bụi và tốc độ phục vụ siêu nhanh 1 phút. Nhờ vậy mà điểm bán của Chị luôn giữ vững vị thế độc tôn trên tuyến phố ạ!"
   },
   {
     "id": "sale-126",
@@ -3657,7 +3657,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Chuẩn bị chu đáo 30 phút đầu ngày giúp ca bán diễn ra trơn tru, phục vụ nhanh chóng và không bị lúng túng.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ 5h00 sáng Cô Chú chuẩn bị 30 phút lau xe sạch sẽ, chêm dầu vào chảo và sắp xếp rau dưa, nước sốt ngay ngắn nha. Chuẩn bị chu đáo là 5h30 mở bán đón những lượt khách đầu tiên cực kỳ thong thả, trơn tru ạ!"
   },
   {
     "id": "sale-127",
@@ -3686,7 +3686,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Thả 1 sợi chả thử sủi tăm nổi lên ngay là mẹo dân gian chuẩn xác nhận biết dầu đạt 160-170°C.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ mẹo thử dầu dân gian dễ lắm Chú ơi: Chú thả 1 sợi chả nhỏ vào chảo, thấy sủi tăm lăn tăn và sợi chả phồng vàng nổi lên ngay là dầu đã đạt chuẩn 160-170 độ C rồi, thả chả vào chiên ngon lành Chú nha!"
   },
   {
     "id": "sale-128",
@@ -3715,7 +3715,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Thả nhẹ từ mép chảo và đảo nhẹ giúp chả phồng tơi đều và tuyệt đối không bị bắn dầu.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ khi chiên Chị dùng kẹp gắp lượng chả vừa phải, thả nhẹ từ mép chảo vào trong và dùng xẻng đảo nhẹ nha. Sợi chả sẽ tơi đều, phồng to óng ả mà dầu không bao giờ bị bắn ra ngoài Chị nè!"
   },
   {
     "id": "sale-129",
@@ -3744,7 +3744,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Để ráo dầu giúp sợi chả khô ráo, giữ độ giòn và bảo đảm bánh mì không bị ngấm dầu ỉu mềm.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ chả chiên xong vớt ra khay ráo dầu cho chảy hết dầu thừa Cô nha. Sợi chả sẽ khô ráo, giữ độ giòn ngọt lâu hơn và khi gắp vào bánh mì không làm ỉu mềm vỏ bánh, khách ăn ngon miệng không bị ngán ạ!"
   },
   {
     "id": "sale-130",
@@ -3773,7 +3773,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Rau dưa ráo nước, đậy kín trong tủ kính giúp giữ trọn vị tươi giòn và bảo đảm vệ sinh ATTP.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ dưa leo với rau răm Chú rửa sạch để ráo nước xắt lát bỏ hộp đậy kín trong tủ kính nha. Rau dưa ráo nước giữ được độ giòn mát suốt ca bán và bảo đảm an toàn vệ sinh thực phẩm tuyệt đối Chú ha!"
   },
   {
     "id": "sale-131",
@@ -3802,7 +3802,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Chan muỗng 1 dòng dọc thân bánh giúp sốt thấm đều, định lượng chuẩn và thao tác tinh tươm.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ dùng muỗng chan 1 dòng sốt Tứ Vị dọc thân bánh là định lượng vừa vặn chuẩn vị Chị nha. Sốt ngấm đều vào từng sợi chả cá và rau dưa, cắn miếng nào cũng đậm đà mà thao tác lại sạch sẽ tinh tươm ạ!"
   },
   {
     "id": "sale-132",
@@ -3831,7 +3831,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Chiên gối đầu + Rạch bánh sẵn + Phối hợp 2 người giúp phục vụ thần tốc 30-45 giây/khách vào giờ cao điểm.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ giờ cao điểm 7h sáng khách đông, Chú chiên gối đầu sẵn chảo chả trên khay ráo dầu và rạch sẵn vỏ bánh nha. Hai người phối hợp nhịp nhàng là 30-45 giây xong 1 ổ bánh, khách không phải chờ lâu Chú ơi!"
   },
   {
     "id": "sale-133",
@@ -3860,7 +3860,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Xe dùng gas độc lập, nhập bánh nóng sáng sớm, không cần lò nướng điện cồng kềnh tốn kém.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ xe mình dùng bếp gas độc lập và bánh mì nhập nóng sáng sớm từ lò nên không cần lò nướng điện cồng kềnh tốn điện Cô nha. Vừa tiết kiệm tiền điện cho chủ nhà, vừa tinh gọn dễ dọn dẹp mỗi sáng ạ!"
   },
   {
     "id": "sale-134",
@@ -3889,7 +3889,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Kiểm tra van gas, khóa van sau ca bán và đặt bình gas thông thoáng bảo đảm an toàn cháy nổ 100%.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ an toàn bình gas Chú nhớ kiểm tra van khóa đầu ngày và khóa van gas cẩn thận sau ca bán 9h00 nha. Bình gas đặt đứng thông thoáng giúp bảo đảm an toàn cháy nổ 100% cho điểm bán của Chú ạ!"
   },
   {
     "id": "sale-135",
@@ -3918,7 +3918,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Rã đông mềm tơi + Tách sợi khi thả + Đảo nhẹ giúp sợi chả tơi đều và phồng vàng giòn rụm.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ để chả không bị dính chùm thì Chị nhớ rã đông mềm tơi trong ngăn mát trước nha. Khi thả vào dầu nóng dùng kẹp tách nhẹ và đảo xẻng là từng sợi chả tơi xốp, phồng vàng giòn rụm liền Chị nè!"
   },
   {
     "id": "sale-136",
@@ -3947,7 +3947,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Lọc cặn dầu sau ca bán giúp dầu luôn trong, không bị khét và giữ trọn vị thơm ngon cho mẻ chả sau.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ sau ca bán 9h00 Chú tắt bếp để dầu nguội tự nhiên rồi lọc qua rây trút vào can đậy kín nha. Lòng chảo lau sạch sẽ, dầu lọc cặn giúp mẻ chả sáng hôm sau luôn thơm ngon và chảo bền lâu Chú ha!"
   },
   {
     "id": "sale-137",
@@ -3976,7 +3976,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Nhớ sở thích khách quen + Nụ cười niềm nở + Trao bánh 2 tay là bí quyết vàng tạo dựng lượng khách ruột.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ khách quen ghé xe Chị nhớ sở thích như 'ít cay' hay 'nhiều rau' và cười tươi chào hỏi ân cần nha. Sự chu đáo và nụ cười thân thiện là bí quyết giữ chân khách ruột ăn bánh mì của Chị suốt nhiều năm đó ạ!"
   },
   {
     "id": "sale-138",
@@ -4005,7 +4005,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Mở bán đúng 5h30 sáng giúp giữ trọn vẹn tệp khách quen đi làm sớm và không để khách bị lỡ bữa sáng.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ mở bán đúng 5h30 sáng mỗi ngày là chìa khóa gom trọn khách quen đi làm sớm Chú ơi. Khách thấy mình bán đều đặn đúng giờ là họ tạo thói quen ghé mua mỗi sáng, không bao giờ lo mất khách ạ!"
   },
   {
     "id": "sale-139",
@@ -4034,7 +4034,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Phục vụ đơn lớn theo dây chuyền + Đóng gói túi lớn sạch sẽ giúp đáp ứng đơn hàng đông người hoàn hảo.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ khách mua 10-20 ổ cho công ty thì Chị chiên mẻ chả lớn và làm bánh theo dây chuyền nhanh gọn nha. Xếp bánh vào túi lớn sạch sẽ trao khách kèm lời cảm ơn là công ty họ đặt hàng dài dài luôn Chị nè!"
   },
   {
     "id": "sale-140",
@@ -4063,7 +4063,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Lắc đều chai + Rót vừa đủ ra chén + Đậy nắp kín giúp sốt luôn sánh mịn và giữ trọn hương vị độc quyền.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ chai sốt Tứ Vị Chú nhớ lắc đều trước khi rót ra chén nhỏ để gia vị hòa quyện thơm ngon nha. Rót lượng vừa đủ dùng, đậy kín nắp chai bảo quản thoáng mát là sốt luôn sánh mịn chuẩn vị Chú ha!"
   },
   {
     "id": "sale-141",
@@ -4092,7 +4092,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Dầu quá nóng, chiên quá lâu hoặc dầu cũ là các lỗi kỹ thuật cần tránh để chả luôn vàng phồng giòn ngọt.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ chiên chả Chị giữ lửa gas vừa phải 160-170 độ chiên trong 1-2 phút thôi nha. Đừng để dầu quá nóng hoặc chiên quá lâu làm sợi chả bị khô bã, giữ đúng độ giòn ngọt mọng nước là khách mê liền ạ!"
   },
   {
     "id": "sale-142",
@@ -4121,7 +4121,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Đồng phục cam chuyên nghiệp tạo niềm tin vệ sinh và giúp khách dễ dàng nhận diện thương hiệu từ xa.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ mặc áo thun đồng phục cam và đội nón Má Hải nhìn người bán tinh tươm, chuyên nghiệp lắm Cô ơi. Khách từ xa 50 mét nhìn thấy đồng phục cam là yên tâm tấp vào mua vì biết đây là điểm bán chính hãng ạ!"
   },
   {
     "id": "sale-143",
@@ -4150,7 +4150,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Thanh toán QR tiện lợi, xác nhận nhanh qua thông báo giúp phục vụ nhanh và tránh thất thoát tiền bạc.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ thanh toán mã QR ngân hàng Chú in dán sắc nét trước xe nha. Khách quét mã chuyển tiền nghe chuông báo 'ting ting' là xong, vừa hiện đại, tiện lợi lại không lo nhầm lẫn tiền thối Chú ha!"
   },
   {
     "id": "sale-144",
@@ -4179,7 +4179,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Tủ kính sáng bóng vừa ngăn bụi hiệu quả vừa giúp khách nhìn thấy quy trình chế biến sạch sẽ, an tâm.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ tủ kính chắn gió Chị nhớ lau chùi sáng bóng mỗi sáng nha. Khách đứng mua nhìn thấy quy trình làm bánh sạch sẽ, tinh tươm bên trong là họ an tâm tuyệt đối và giới thiệu thêm bạn bè ghé mua ạ!"
   },
   {
     "id": "sale-145",
@@ -4208,7 +4208,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Sắp xếp 1 chiều theo quy trình làm bánh giúp thao tác siêu tốc 1 phút và bảo đảm an toàn vệ sinh.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ sắp xếp bàn thao tác 1 chiều: Vỏ bánh -> Khay rau -> Chảo chả -> Chén sốt -> Túi giấy giúp tay mình di chuyển liên tục, làm bánh siêu tốc trong 1 phút mà không bị vướng víu Cô nha!"
   },
   {
     "id": "sale-146",
@@ -4237,7 +4237,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Chả chiên bốc khói thơm lừng + Bánh nóng giòn trao tận tay là sức hút tuyệt vời vào những buổi sáng se lạnh.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ sáng sớm trời se lạnh hay mưa phùn, Chú chiên chảo chả bốc khói thơm nức mũi trao ổ bánh nóng giòn tận tay là khách cảm động và thích thú dữ lắm, ăn một lần là nhớ mãi Chú ơi!"
   },
   {
     "id": "sale-147",
@@ -4266,7 +4266,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Túi giấy hút dầu giữ bánh giòn lâu, an toàn sức khỏe và nâng tầm hình ảnh chuyên nghiệp cho điểm bán.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ túi giấy Má Hải hút dầu giữ bánh giòn lâu và nhìn rất lịch sự Chị nha. Tuyệt đối không dùng túi nilon làm đọng hơi nước ỉu bánh mì, túi giấy chuyên dụng giúp nâng tầm hình ảnh điểm bán của Chị ạ!"
   },
   {
     "id": "sale-148",
@@ -4295,7 +4295,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Kiểm tra bọt xà phòng và vệ sinh đầu đốt bếp định kỳ giúp bảo đảm an toàn tuyệt đối và tiết kiệm gas.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ định kỳ hàng tuần Chú lấy nước bọt xà phòng quét quanh van gas và dây dẫn để kiểm tra rò rỉ nha. Thao tác đơn giản vài phút mà giúp điểm bán của Chú luôn an toàn tuyệt đối 100% ạ!"
   },
   {
     "id": "sale-149",
@@ -4324,7 +4324,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Bán thêm chả cá sợi chiên mang về kèm sốt Tứ Vị là cách tuyệt vời để tăng thêm thu nhập mỗi sáng.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ khách hỏi mua riêng chả cá sợi chiên về ăn cơm gia đình thì Chị cứ vui vẻ cân bán và tặng kèm bịch sốt Tứ Vị nha. Vừa chiều lòng khách, vừa gia tăng thêm tiền lời mỗi sáng cho Chị nữa nè!"
   },
   {
     "id": "sale-150",
@@ -4353,7 +4353,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Xe bánh mì sạch tinh tươm là biển quảng cáo uy tín nhất giúp thu hút khách quen và buôn may bán đắt.",
-    "quote": "Bên con luôn gìn giữ từng khâu chế biến tinh tươm để mỗi ổ bánh mì trao tay khách luôn nóng giòn trọn vị ạ!"
+    "quote": "Dạ chiếc xe bánh mì sạch bóng tinh tươm là biển quảng cáo uy tín nhất của Cô Chú đó ạ. Người đi đường nhìn thấy xe sạch sẽ, người bán ân cần là họ tin tưởng ghé mua, buôn may bán đắt mỗi ngày ạ!"
   },
   {
     "id": "sale-151",
@@ -4382,7 +4382,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Hợp đồng pháp nhân minh bạch, sở hữu xe trọn đời và cam kết bảo vệ cự ly 300m bằng văn bản.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ hợp đồng hợp tác ký kết bằng văn bản pháp nhân công ty minh bạch, sở hữu xe trọn đời và cam kết bảo vệ cự ly 300m rõ ràng từng điều khoản để Cô Chú hoàn toàn yên tâm đầu tư lâu dài ạ!"
   },
   {
     "id": "sale-152",
@@ -4411,7 +4411,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Chính sách 3 KHÔNG (0đ phí tháng, 0% chia doanh thu, 0đ tái ký) giúp chủ xe giữ trọn 100% lợi nhuận.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ chính sách 3 KHÔNG: 0đ phí tháng, 0% chia doanh thu, 0đ phí tái ký giúp Chị giữ trọn 100% tiền lời ròng làm ra. Chị bán càng chăm chỉ thì tiền tích lũy cho gia đình càng nhiều Chị nha!"
   },
   {
     "id": "sale-153",
@@ -4440,7 +4440,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Quy trình Onboarding 5-7 ngày chuẩn hóa từng khâu, bảo đảm nhận xe đẹp và sẵn sàng khai trương.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ quy trình Onboarding 5-7 ngày chuẩn hóa từng bước: Lên hồ sơ -> In ấn decal -> Đóng gói đồ bếp -> Bàn giao xe tận nhà và chuyển giao video tay nghề. Chú nhận xe là tự tin khai trương ngay ạ!"
   },
   {
     "id": "sale-154",
@@ -4469,7 +4469,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Nghiệm thu xe + Đồ bếp + Đồng phục + Chứng nhận ATTP đầy đủ theo biên bản bàn giao.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ khi nhận xe Chị kiểm tra khung xe inox sáng bóng, decal dán phẳng phiu, đồ bếp đầy đủ với đồng phục, chứng nhận ATTP theo đúng biên bản bàn giao để Chị hoàn toàn hài lòng Chị nghen!"
   },
   {
     "id": "sale-155",
@@ -4498,7 +4498,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Bảo hành kỹ thuật xe inox và hỗ trợ kỹ thuật online 24/7 giúp chủ xe an tâm sử dụng lâu dài.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ khung xe inox bảo hành kỹ thuật chắc chắn, trong quá trình bán có bất kỳ thắc mắc nào về bếp gas hay linh kiện là chuyên viên kỹ thuật hỗ trợ hướng dẫn Chú tận tình 24/7 Chú nha!"
   },
   {
     "id": "sale-156",
@@ -4527,7 +4527,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Hotline trực sớm 5h00 + Zalo kỹ thuật phản hồi ngay giúp chủ xe giải quyết mọi sự cố ca sáng.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ sáng sớm bán hàng có bất kỳ sự cố phát sinh nào Cô cứ gọi ngay số Hotline hoặc nhắn nhóm Zalo kỹ thuật nha, tụi con túc trực từ 5h sáng để đồng hành xử lý liền tay cùng Cô ạ!"
   },
   {
     "id": "sale-157",
@@ -4556,7 +4556,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Bình ổn giá nguyên liệu đầu vào giúp bảo vệ biên lợi nhuận 35% của chủ xe luôn vững vàng.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ Má Hải luôn có chính sách bình ổn giá nguyên liệu đầu vào để bảo đảm tiền lời ròng của Chị luôn ổn định ở mức 5k-5,5k mỗi ổ, không lo thị trường bên ngoài tăng giá thất thường Chị nè!"
   },
   {
     "id": "sale-158",
@@ -4585,7 +4585,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Nguyên liệu chính hãng bảo đảm chất lượng đồng nhất, bảo vệ uy tín thương hiệu và an toàn thực phẩm 100%.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ sử dụng nguyên liệu chả cá 17% đạm và sốt Tứ Vị chính hãng là để bảo đảm chất lượng đồng nhất và bảo vệ quyền lợi pháp lý, ATTP an toàn tuyệt đối cho chính điểm bán của Chú đó ạ!"
   },
   {
     "id": "sale-159",
@@ -4614,7 +4614,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Cộng đồng hơn 1.200 chủ xe là mái nhà chung gắn kết, cùng sẻ chia kinh nghiệm và hỗ trợ nhau buôn may bán đắt.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ cộng đồng hơn 1.200 chủ xe 'Đồng nghiệp Nhà Má Hải' là mái nhà chung gắn kết, cùng chia sẻ kinh nghiệm thực chiến và hỗ trợ nhau buôn may bán đắt mỗi sáng đó Cô ơi!"
   },
   {
     "id": "sale-160",
@@ -4643,7 +4643,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Bảo mật dữ liệu tọa độ và thông tin đối tác nhằm bảo vệ an toàn tối đa cho từng điểm bán.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ thông tin cá nhân và tọa độ điểm bán của Chị được công ty bảo mật số hóa tuyệt đối trên hệ thống, bảo đảm quyền khai thác kinh doanh độc quyền an toàn trọn đời cho Chị nha!"
   },
   {
     "id": "sale-161",
@@ -4672,7 +4672,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Ưu tiên xét duyệt Map Tracker và đồng hành tư vấn quản lý giúp đối tác dễ dàng nhân rộng điểm bán.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ khi Chú muốn mở thêm xe thứ 2, thứ 3 cho người nhà bán là công ty ưu tiên quét Map Tracker và đồng hành tư vấn quản lý chuỗi điểm bán gia đình để Chú nhân đôi thu nhập Chú nha!"
   },
   {
     "id": "sale-162",
@@ -4701,7 +4701,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Bán hàng văn minh: Đặt xe trong hiên nhà, giữ sạch vỉa hè và bảo đảm an toàn ATTP.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ bán hàng văn minh: Đặt xe gọn trong hiên nhà, giữ sạch sẽ vỉa hè và bảo đảm an toàn thực phẩm giúp điểm bán của Chị luôn được chính quyền và bà con khu phố yêu thương, ủng hộ ạ!"
   },
   {
     "id": "sale-163",
@@ -4730,7 +4730,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Truyền thông thương hiệu toàn quốc và định vị bản đồ số giúp điểm bán thu hút khách hàng liên tục.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ thương hiệu Bánh Mì Má Hải thường xuyên được quảng bá trên báo đài, mạng xã hội và định vị bản đồ số, giúp thực khách quanh khu vực dễ dàng tìm đến xe của Cô mua bánh mỗi sáng ạ!"
   },
   {
     "id": "sale-164",
@@ -4759,7 +4759,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Sổ tay bán hàng chuẩn hóa tay nghề và văn hóa phục vụ ân cần, tạo nên bản sắc độc đáo của Má Hải.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ cuốn Sổ tay bán hàng chuẩn hóa tay nghề và văn hóa phục vụ ân cần của Người Nhà Má Hải, giúp Chú tự tin trở thành người làm chủ chuyên nghiệp và tự hào về điểm bán của mình ạ!"
   },
   {
     "id": "sale-165",
@@ -4788,7 +4788,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Xem kỹ video chiên chả + Mặc đồng phục + Thái độ ân cần giúp người bán thay vận hành trơn tru.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ hôm nào bận việc nhờ người nhà bán thay, Chị chỉ cần cho người nhà xem video chiên chả 1 phút và nhắc mặc đồng phục, niềm nở với khách là ca bán diễn ra trơn tru ngon lành Chị nè!"
   },
   {
     "id": "sale-166",
@@ -4817,7 +4817,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Tái ký miễn phí 0đ hàng năm giúp chủ xe an tâm xây dựng sự nghiệp kinh doanh bền vững lâu dài.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ hợp đồng 1 năm hết hạn bên con làm thủ tục tái ký tiếp hoàn toàn miễn phí 0 đồng cho Chú nha. Vị trí Map Tracker và các chính sách ưu đãi vẫn duy trì trọn vẹn trọn đời cho Chú ạ!"
   },
   {
     "id": "sale-167",
@@ -4846,7 +4846,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Chữ TÂM sẻ chia và chữ TÍN giữ trọn cam kết là nền tảng giúp Má Hải đồng hành cùng hơn 1.200 đối tác.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ chữ TÂM sẻ chia và chữ TÍN giữ trọn cam kết là nền tảng 13 năm qua của Má Hải. Tụi con luôn đồng hành sát cánh để Cô Chú an tâm buôn bán kiếm cơm ấm no cho gia đình ạ!"
   },
   {
     "id": "sale-168",
@@ -4875,7 +4875,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Hơn 1,5 triệu ổ bánh mì mỗi tháng là minh chứng hùng hồn nhất cho sức sống mãnh liệt của thương hiệu Má Hải.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ hơn 1,5 triệu ổ bánh mì phục vụ bà con mỗi tháng trên cả nước là minh chứng hùng hồn nhất cho sức sống và sự tin yêu tuyệt đối của người tiêu dùng đối với Bánh Mì Má Hải đó Chị!"
   },
   {
     "id": "sale-169",
@@ -4904,7 +4904,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Hỗ trợ sang nhượng 0đ là chính sách nhân văn giúp chủ xe bảo toàn vốn khi gặp việc bất khả kháng.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ lỡ có việc bất khả kháng cần dừng bán, công ty hỗ trợ kết nối sang nhượng điểm bán hoàn toàn miễn phí 0 đồng để Chú thu hồi vốn an toàn, không lo bị bỏ mặc hay mất vốn Chú nha!"
   },
   {
     "id": "sale-170",
@@ -4933,7 +4933,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Giải thích cặn kẽ, trung thực, tôn trọng quyền tự chủ của khách là chuẩn mực của tư vấn viên Má Hải.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ tư vấn viên Má Hải luôn giải thích cặn kẽ từng điều khoản, trung thực về chi phí và tôn trọng quyền tự chủ của Cô Chú, luôn đồng hành như người thân trong gia đình ạ!"
   },
   {
     "id": "sale-171",
@@ -4962,7 +4962,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Giấy chứng nhận ATTP bảo vệ pháp lý và là tem bảo chứng niềm tin tuyệt đối với người tiêu dùng.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ Giấy chứng nhận ATTP lồng khung kính treo trên xe là tấm lá chắn bảo vệ pháp lý và là bảo chứng niềm tin vững chắc nhất để khách hàng an tâm chọn mua bánh mì của Chị mỗi sáng ạ!"
   },
   {
     "id": "sale-172",
@@ -4991,7 +4991,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Kiểm nghiệm định kỳ bảo đảm 17% đạm cá tươi và an toàn tuyệt đối, không hóa chất độc hại.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ chả cá Má Hải kiểm nghiệm định kỳ bảo đảm 17% đạm cá biển tươi và an toàn 100% không hóa chất bảo quản, giữ gìn uy tín thương hiệu và sức khỏe cho thực khách suốt 13 năm qua Chú ha!"
   },
   {
     "id": "sale-173",
@@ -5020,7 +5020,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Chủ xe tự mua rau dưa và dầu ăn uy tín tại chợ, riêng chả cá sợi và sốt Tứ Vị lấy chính hãng Má Hải.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ rau dưa với dầu ăn Chị cứ chủ động mua tại chợ gần nhà cho tươi ngon tiết kiệm, riêng Chả cá sợi và Sốt Tứ Vị lấy chính hãng Má Hải để giữ đúng hương vị độc quyền Chị nghen!"
   },
   {
     "id": "sale-174",
@@ -5049,7 +5049,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "0% chia sẻ doanh thu giúp chủ xe hưởng trọn thành quả lao động, bán càng nhiều lời càng lớn.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ công ty không thu phần trăm doanh thu để Cô Chú hưởng trọn 100% thành quả lao động của mình. Cô Chú bán càng nhiều thì tiền lời gom về cho gia đình càng lớn ạ!"
   },
   {
     "id": "sale-175",
@@ -5078,7 +5078,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Đồng hành tận tâm + Giữ trọn chữ Tín + Cùng kiến tạo tương lai ấm no là lời hứa danh dự của Má Hải.",
-    "quote": "Bên con luôn cam kết đồng hành minh bạch, trọn chữ Tín để Cô Chú an tâm làm ăn lâu dài ạ!"
+    "quote": "Dạ lời hứa danh dự của Người Nhà Má Hải: Đồng hành tận tâm — Giữ trọn chữ Tín — Cùng Cô Chú kiến tạo tương lai ấm no, hạnh phúc bền vững trên mọi chặng đường ạ!"
   },
   {
     "id": "sale-176",
@@ -5107,7 +5107,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Mặt bằng hiên 1-2tr + Lời 5k-5,5k/ổ giúp xe chỉ cần bán 40-50 ổ là hòa vốn và bắt đầu có lời.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ thuê hiên nhà sáng có 1-2 triệu, mỗi ổ lời hơn 5 ngàn nên Chú chỉ cần bán tầm 40-50 ổ là hòa vốn chi phí ngày rồi. Từ ổ thứ 51 trở đi là tiền lời ròng bỏ túi nguyên vẹn Chú nha!"
   },
   {
     "id": "sale-177",
@@ -5136,7 +5136,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Bán 80 ổ/sáng mang lại tiền lời ròng 12-13 triệu/tháng chỉ sau 3,5 tiếng làm việc mỗi sáng.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ bán trung bình 80 ổ mỗi sáng là Chị nắm chắc tiền lời ròng hơn 400 ngàn mỗi ngày, một tháng tích lũy 12 đến 13 triệu gọn gàng chỉ sau 3,5 tiếng làm việc buổi sáng đó Chị!"
   },
   {
     "id": "sale-178",
@@ -5165,7 +5165,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Bán 120 ổ/sáng mang lại thu nhập khủng 18-20 triệu/tháng, cao hơn nhiều công việc văn phòng.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ khi điểm bán đạt 120 ổ mỗi sáng là thu nhập Chú lên tới 18-20 triệu mỗi tháng luôn rồi, cao hơn lương làm việc văn phòng hay tăng ca xí nghiệp 10-12 tiếng vất vả nhiều lắm Chú ơi!"
   },
   {
     "id": "sale-179",
@@ -5194,7 +5194,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Mở đúng 5h30 + Phục vụ 1 phút thân thiện + Nhận đơn giao tận nơi giúp tăng gấp đôi sản lượng.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ mở đúng 5h30 sáng, làm bánh giòn nóng trong 1 phút kèm nụ cười thân thiện và nhận đơn giao tận nơi là bí quyết vàng để Chị bứt phá doanh số từ 50 lên 100 ổ mỗi sáng Chị nè!"
   },
   {
     "id": "sale-180",
@@ -5223,7 +5223,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Đơn hàng công ty 10-30 ổ/lần giúp chủ xe tối ưu doanh số và chủ động nguyên liệu chuẩn bị.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ kết nối nhận đặt bánh giao tận nơi cho các công ty, trường học quanh khu vực mỗi lần 10-20 ổ là Chú tiêu thụ số lượng lớn nhanh chóng và có nguồn khách hàng doanh nghiệp ổn định Chú ha!"
   },
   {
     "id": "sale-181",
@@ -5252,7 +5252,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Hoàn vốn siêu tốc 1-2 tháng: Vốn đầu tư nhẹ chia cho tiền lời ròng hàng ngày giúp thu hồi vốn cực nhanh.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ vốn đầu tư có mấy triệu chia cho tiền lời 300k-500k mỗi ngày thì Cô Chú bán chừng 1 đến 2 tháng là thu hồi trọn vẹn vốn ban đầu rồi, từ tháng sau là tiền lời ròng tự do cho nhà mình ạ!"
   },
   {
     "id": "sale-182",
@@ -5281,7 +5281,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Lửa gas chuẩn + Định lượng sốt vừa vặn + Bảo quản rau chả tốt giúp tiết kiệm chi phí tối đa.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ giữ lửa gas vừa vặn, chan sốt định lượng 1 muỗng chuẩn và bảo quản rau chả chu đáo giúp Chị tiết kiệm tối đa chi phí và gom thêm tiền lời ròng mỗi ca bán Chị nghen!"
   },
   {
     "id": "sale-183",
@@ -5310,7 +5310,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Mỗi năm tích lũy 140-200 triệu tiền lời ròng, giúp gia đình làm chủ kinh tế và phát triển tương lai.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ mỗi tháng tích lũy 12-18 triệu là sau 1 năm gia đình Chú có trong tay 140 đến 200 triệu tiền lời ròng, làm chủ kinh tế và lo cho con cái học hành thành đạt Chú ơi!"
   },
   {
     "id": "sale-184",
@@ -5339,7 +5339,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Tri ân quà nhỏ + Lời cảm ơn chân thành giúp thắt chặt sợi dây tình cảm gắn bó với khách quen.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ thỉnh thoảng tặng kèm ly trà tắc mát lạnh hay gửi lời cảm ơn chân thành nhân dịp kỷ niệm mở bán giúp khách quen cảm động và gắn bó ruột thịt với xe của Cô suốt đời luôn đó Cô!"
   },
   {
     "id": "sale-185",
@@ -5368,7 +5368,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Nhu cầu ăn sáng thiết yếu + Giá bình dân 15k + Không chi phí cố định lớn giúp mô hình bất chấp mọi biến động.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ bánh mì là món ăn sáng thiết yếu giá 15k bình dân ai cũng ăn mỗi ngày, lại không gánh nặng mặt bằng lớn nên mô hình xe Má Hải bất chấp mọi biến động kinh tế Chị nha!"
   },
   {
     "id": "sale-186",
@@ -5397,7 +5397,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Tách bạch vốn - lời + Tích lũy mỗi ngày + Theo dõi sản lượng giúp chủ xe quản lý tài chính khoa học.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ bí quyết là Chú tách bạch rõ ràng tiền vốn nhập hàng ngày mai với tiền lời ròng tích lũy, cất riêng tiền lời mỗi ngày là Chú thấy rõ thành quả lao động của mình tăng lên từng ngày Chú ha!"
   },
   {
     "id": "sale-187",
@@ -5426,7 +5426,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Chuỗi 2-3 xe gia đình mang lại thu nhập 35-50 triệu/tháng nhờ vận hành tinh gọn và nhập hàng gộp.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ phát triển chuỗi 2-3 xe gia đình phân công người thân đứng bán sáng 3 tiếng rưỡi giúp gia đình Chị nâng thu nhập lên 35 đến 50 triệu mỗi tháng, kinh tế vững vàng vượt bậc Chị nè!"
   },
   {
     "id": "sale-188",
@@ -5455,7 +5455,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Xe inox cao cấp siêu bền trên 5 năm, khấu hao mỗi ngày chỉ vài ngàn đồng, không đáng kể.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ xe inox cao cấp gia công siêu bền trên 5 năm nên chi phí khấu hao mỗi ngày có vài ngàn đồng à, gần như bằng 0, Chú yên tâm khai thác kinh doanh bền bỉ lâu dài Chú nha!"
   },
   {
     "id": "sale-189",
@@ -5484,7 +5484,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Ứng xử tử tế, giữ vệ sinh sạch sẽ giúp chủ nhà yêu quý và tạo điều kiện kinh doanh thuận lợi lâu dài.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ đối xử tử tế, quét dọn hiên nhà sạch sẽ và gửi tặng chủ nhà ổ bánh mì nóng giòn là chủ nhà thương mến, tạo điều kiện thuận lợi và giữ giá thuê ổn định suốt nhiều năm Cô ơi!"
   },
   {
     "id": "sale-190",
@@ -5513,7 +5513,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Mùi thơm nức mũi + Thao tác tươi vui + Hiệu ứng dừng xe tạo nên sức hút đám đông tự nhiên mỗi sáng.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ chảo chả bốc khói thơm nức mũi, người bán tươi cười nhanh nhẹn và vài xe máy tấp vào mua là tạo hiệu ứng đám đông kích thích bà con đi đường ghé mua tấp nập liền Chị nè!"
   },
   {
     "id": "sale-191",
@@ -5542,7 +5542,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Con số thực tế: Lời 5k-5,5k/ổ, bán 80 ổ/sáng kiếm 12-13 triệu/tháng chỉ với 3,5 tiếng làm việc buổi sáng.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ con số thực tế: Lời ròng 5k-5,5k mỗi ổ (~35% biên lợi nhuận), bán 80 ổ kiếm hơn 400 ngàn mỗi sáng, tháng bỏ túi 12-13 triệu tiền tươi thóc thật, không lo nợ nần Chú ơi!"
   },
   {
     "id": "sale-192",
@@ -5571,7 +5571,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Bán 3,5 tiếng sáng thu nhập 12-18 triệu, chiều rảnh rỗi chăm sóc gia đình hoặc làm thêm công việc khác.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ bán 3 tiếng rưỡi buổi sáng thu nhập 12-18 triệu, thời gian còn lại trong ngày Chị hoàn toàn tự do chăm sóc con cái hoặc làm thêm việc khác, vừa khỏe người vừa tự chủ cuộc sống Chị ha!"
   },
   {
     "id": "sale-193",
@@ -5600,7 +5600,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Siêng năng kỷ luật + Sạch sẽ ATTP + Nụ cười chân thành là chìa khóa vàng đưa đến sự thành công bền vững.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ siêng năng mở bán đúng 5h30 sáng, làm bánh sạch sẽ đạt chuẩn ATTP và luôn nở nụ cười chân thành là chìa khóa vàng giúp Cô Chú buôn may bán đắt và phát đạt bền lâu ạ!"
   },
   {
     "id": "sale-194",
@@ -5629,7 +5629,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Má Hải là người bạn đồng hành tin cậy, trao sinh kế ấm no và nâng tầm ẩm thực đường phố Việt Nam.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ Má Hải tự hào là người bạn đồng minh tin cậy của bà con lao động suốt 13 năm qua, luôn trao sinh kế ấm no và nâng tầm nét đẹp ẩm thực đường phố Việt Nam Chị nè!"
   },
   {
     "id": "sale-195",
@@ -5658,7 +5658,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "'Cùng Nhau Kiếm Cơm - Cùng Nhau Ấm No' là triết lý sống và kim chỉ nam dẫn đường suốt 13 năm qua.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ 'Cùng Nhau Kiếm Cơm — Cùng Nhau Ấm No' là triết lý sống thiêng liêng của Má Hải, công ty và đối tác là những người đồng minh chân thành, cùng nhau xây dựng cuộc sống thịnh vượng ạ!"
   },
   {
     "id": "sale-196",
@@ -5687,7 +5687,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "1.200 điểm bán + 1,5 triệu bữa sáng/tháng + Thương hiệu số 1 là niềm tự hào to lớn của Nhà Má Hải.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ hơn 1.200 điểm bán tạo việc làm ấm no cho hàng ngàn gia đình và 1,5 triệu bữa sáng dinh dưỡng mỗi tháng là niềm tự hào to lớn mà Má Hải cùng Cô Chú đã chung tay kiến tạo nên ạ!"
   },
   {
     "id": "sale-197",
@@ -5716,7 +5716,7 @@ const questions = [
     ],
     "correctAnswer": "a",
     "explanation": "Lời chúc buôn may bán đắt, khách quen tấp nập và ấm no bền vững là lời chúc chân thành, thực tế nhất.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ con kính chúc Cô Chú buôn may bán đắt, mỗi sáng tấp nập khách quen, hết bánh thật sớm và luôn dồi dào sức khỏe, ấm no hạnh phúc cùng Bánh Mì Má Hải nghen Cô Chú!"
   },
   {
     "id": "sale-198",
@@ -5745,7 +5745,7 @@ const questions = [
     ],
     "correctAnswer": "b",
     "explanation": "Trang bị đầy đủ kiến thức, kỹ năng thực chiến và văn hóa phụng sự giúp học viên tự tin thành công.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ nắm vững 200 câu hỏi thực chiến này là bạn đã trang bị đầy đủ kiến thức, kỹ năng và cái tâm phụng sự chân thành để tự tin trở thành Chuyên viên Tư vấn Nhượng quyền xuất sắc rồi đó!"
   },
   {
     "id": "sale-199",
@@ -5774,7 +5774,7 @@ const questions = [
     ],
     "correctAnswer": "c",
     "explanation": "Đặt đối tác lên trên hết + Trung thực tận tâm + Tự hào lan tỏa ẩm thực là sức mạnh của Người Nhà Má Hải.",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ thông điệp cốt lõi: Đặt sự ấm no của chủ xe lên hàng đầu, luôn trung thực giữ chữ Tín và tự hào lan tỏa bữa sáng chất lượng là sức mạnh bất diệt của Người Nhà Má Hải!"
   },
   {
     "id": "sale-200",
@@ -5803,7 +5803,7 @@ const questions = [
     ],
     "correctAnswer": "d",
     "explanation": "Tận tâm lắng nghe - Chân thành đồng hành - Cùng nhau kiến tạo sinh kế ấm no là tinh thần bất diệt của Má Hải!",
-    "quote": "Bên con luôn nỗ lực hết mình để đồng hành cùng Cô Chú xây dựng tương lai ấm no, hạnh phúc ạ!"
+    "quote": "Dạ chào mừng bạn đến với đại gia đình Má Hải! Hãy cùng nhau tận tâm lắng nghe, chân thành đồng hành và kiến tạo sinh kế ấm no bền vững cho bà con lao động trên khắp mọi miền tổ quốc nhé!"
   }
 ];
 
