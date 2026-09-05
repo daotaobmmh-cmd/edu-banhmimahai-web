@@ -56,7 +56,7 @@ if deploy_url:
 
 # Step 5: Live HTTP Readback Verification
 print("\n[ 5/5 ] Executing Mandatory Live HTTP Readback...")
-test_url = "https://daotao.banhmimahai.vn/kynangsale/questions.js?v=20260824_kns_master200"
+test_url = "https://daotao.banhmimahai.vn/kynangsale/questions.js?v=20260905_ssot_master200_v5"
 req = urllib.request.Request(test_url, headers={'User-Agent': 'Mozilla/5.0'})
 try:
     with urllib.request.urlopen(req, timeout=10) as resp:

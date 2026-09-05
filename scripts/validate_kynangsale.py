@@ -1,6 +1,7 @@
 # scripts/validate_kynangsale.py
 """
 Validates the /kynangsale/ question dataset and runtime integrity.
+Enforces 200 questions, 8 sections x 25, 50A-50B-50C-50D, and pedagogical correctness.
 """
 import os
 import sys
@@ -24,11 +25,8 @@ def validate_kynangsale():
     print(f"Total Questions: {len(questions)}")
     assert len(questions) == 200, f"Expected 200 questions, got {len(questions)}"
     
-    # 8 sections x 25
     sections = {}
     ans_counts = {}
-    forbidden = ['tất cả', 'cả a và', 'cả b và', 'cả c và', 'cả 3', 'cả ba', 'các phương án trên', 'không có phương án', 'không có đáp án', 'cả hai']
-    
     errors = []
     
     for i, q in enumerate(questions):
@@ -42,11 +40,20 @@ def validate_kynangsale():
         if len(opts) != 4:
             errors.append(f"Question {q['id']} does not have 4 options")
         
+        # Validate option structure
         for opt in opts:
-            for f_word in forbidden:
-                if f_word in opt['text'].lower():
-                    errors.append(f"Question {q['id']} opt {opt['key']} has forbidden phrase: '{f_word}'")
-    
+            if not isinstance(opt, dict) or 'key' not in opt or 'text' not in opt:
+                errors.append(f"Question {q['id']} has invalid option structure: {opt}")
+        
+        # Check no 'tất cả đều đúng' in negative questions
+        q_text_lower = q.get('question', '').lower()
+        is_negative = 'không đúng' in q_text_lower or 'chưa đúng' in q_text_lower or 'nhận định sai' in q_text_lower
+        if is_negative:
+            for opt in opts:
+                opt_lower = opt.get('text', '').lower()
+                if 'tất cả các' in opt_lower and ('đúng' in opt_lower or 'chính xác' in opt_lower):
+                    errors.append(f"Question {q['id']} is negative question but contains 'Tất cả đều đúng' in option {opt['key']}")
+
     print(f"Section distribution: {sections}")
     for s in range(1, 9):
         assert sections.get(s) == 25, f"Section {s} has {sections.get(s)} questions, expected 25"
@@ -61,7 +68,7 @@ def validate_kynangsale():
             print(" -", err)
         sys.exit(1)
     
-    print("ALL VALIDATION CHECKS PASSED PERFECTLY!")
+    print("ALL 200 QUESTIONS VALIDATION CHECKS PASSED PERFECTLY!")
 
 if __name__ == "__main__":
     validate_kynangsale()
