@@ -9,7 +9,8 @@ function app() {
         
         // Learner State
         learnerName: '',
-        phoneNumber: '', // Số điện thoại học viên
+        learnerEmail: '', // Địa chỉ Gmail học viên
+        phoneNumber: '', // Backward compatibility alias
         
         // Questions Data
         allQuestions: [],
@@ -93,7 +94,8 @@ function app() {
             // Load learner info from localStorage
             if (typeof localStorage !== 'undefined') {
                 this.learnerName = localStorage.getItem('kynangsale:learnerName') || '';
-                this.phoneNumber = localStorage.getItem('kynangsale:phoneNumber') || '';
+                this.learnerEmail = localStorage.getItem('kynangsale:learnerEmail') || localStorage.getItem('kynangsale:phoneNumber') || '';
+                this.phoneNumber = this.learnerEmail;
                 
                 // Check dataset version in localStorage
                 const savedVersion = localStorage.getItem('kynangsale:datasetVersion');
@@ -139,6 +141,10 @@ function app() {
             // Watch changes to adjust certificate text sizes
             if (typeof this.$watch === 'function') {
                 this.$watch('learnerName', () => this.adjustCertLayout());
+                this.$watch('learnerEmail', () => {
+                    this.phoneNumber = this.learnerEmail;
+                    this.adjustCertLayout();
+                });
                 this.$watch('phoneNumber', () => this.adjustCertLayout());
                 this.$watch('currentView', (view) => {
                     if (view === 'result') {
@@ -502,7 +508,7 @@ function app() {
         // Test Mode: Start test
         startTest() {
             const name = this.learnerName.trim();
-            const phone = this.phoneNumber.trim();
+            const email = (this.learnerEmail || this.phoneNumber || '').trim();
 
             if (!name || name.length > 100) {
                 alert('Vui lòng nhập họ và tên học viên (từ 1 đến 100 ký tự) trên màn hình chính trước khi bắt đầu bài thi.');
@@ -510,16 +516,17 @@ function app() {
                 return;
             }
 
-            const phoneRegex = /^(03|05|07|08|09)\d{8}$/;
-            if (!phone || !phoneRegex.test(phone)) {
-                alert('Vui lòng nhập số điện thoại hợp lệ (10 chữ số, ví dụ 0901234567) trên màn hình chính trước khi bắt đầu bài thi.');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                alert('Vui lòng nhập địa chỉ Gmail hợp lệ (ví dụ: nguyenvanan@gmail.com) trên màn hình chính trước khi bắt đầu bài thi.');
                 this.currentView = 'gate';
                 return;
             }
 
             // Save info
             localStorage.setItem('kynangsale:learnerName', name);
-            localStorage.setItem('kynangsale:phoneNumber', phone);
+            localStorage.setItem('kynangsale:learnerEmail', email);
+            localStorage.setItem('kynangsale:phoneNumber', email);
 
             // Generate stable attemptId for this attempt
             if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
@@ -667,10 +674,13 @@ function app() {
             this.testDurationSeconds = diffSecs;
 
             // Build initial payload with timing contract fields
+            const emailVal = (this.learnerEmail || this.phoneNumber || '').trim();
             const initialPayload = {
                 attemptId: this.testAttemptId,
                 learnerName: this.learnerName.trim(),
-                phoneNumber: this.phoneNumber.trim(),
+                email: emailVal,
+                learnerEmail: emailVal,
+                phoneNumber: emailVal,
                 testAnswers: this.testAnswers,
                 testQuestions: this.testQuestions.map(q => q.id),
                 pageUrl: window.location.href,
@@ -686,7 +696,8 @@ function app() {
             // Save last result
             localStorage.setItem('kynangsale:lastResult', JSON.stringify({
                 name: this.learnerName.trim(),
-                phoneNumber: this.phoneNumber.trim(),
+                email: emailVal,
+                phoneNumber: emailVal,
                 correct,
                 pass: this.resultPassed,
                 threshold,
@@ -789,7 +800,7 @@ function app() {
         // Study Mode: Enter study view
         startStudy() {
             const name = this.learnerName.trim();
-            const phone = this.phoneNumber.trim();
+            const email = (this.learnerEmail || this.phoneNumber || '').trim();
             if (!name) {
                 alert('Vui lòng nhập họ và tên học viên trước khi bắt đầu.');
                 return;
@@ -797,8 +808,9 @@ function app() {
             
             // Save info
             localStorage.setItem('kynangsale:learnerName', name);
-            if (phone) {
-                localStorage.setItem('kynangsale:phoneNumber', phone);
+            if (email) {
+                localStorage.setItem('kynangsale:learnerEmail', email);
+                localStorage.setItem('kynangsale:phoneNumber', email);
             }
             
             this.currentView = 'study';
@@ -815,9 +827,12 @@ function app() {
                 this.guardErrorText = '';
             }
 
+            const emailVal = (this.learnerEmail || this.phoneNumber || '').trim();
             const payload = {
                 learnerName: this.learnerName,
-                phoneNumber: this.phoneNumber,
+                email: emailVal,
+                learnerEmail: emailVal,
+                phoneNumber: emailVal,
                 stableId: q.stableId || q.id,
                 displayNumber: q.displayNumber || 0,
                 sectionNo: q.sectionNo,
@@ -902,7 +917,7 @@ function app() {
         adjustCertLayout(retryCount = 0) {
             this.$nextTick(() => {
                 const nameEl = document.getElementById('certificate-name');
-                const phoneEl = document.getElementById('certificate-phone') || document.getElementById('certificate-address');
+                const phoneEl = document.getElementById('certificate-email') || document.getElementById('certificate-phone') || document.getElementById('certificate-address');
                 if (nameEl) {
                     // Retry layout computation if element has 0 width (not rendered yet)
                     if (nameEl.scrollWidth === 0 && retryCount < 10) {

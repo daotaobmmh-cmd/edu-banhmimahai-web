@@ -217,8 +217,8 @@
                         <input type="text" x-model="learnerName" @input="localStorage.setItem('kynangsale:learnerName', learnerName)" placeholder="Nhập họ và tên học viên" class="w-full px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none transition-all font-medium text-slate-800 text-sm" />
                     </div>
                     <div>
-                        <label class="block text-slate-500 font-bold text-xs mb-1 uppercase tracking-wider font-quicksand">Số điện thoại <span class="text-error">*</span></label>
-                        <input type="tel" x-model="phoneNumber" @input="localStorage.setItem('kynangsale:phoneNumber', phoneNumber)" placeholder="Nhập số điện thoại (10 chữ số)" class="w-full px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none transition-all font-medium text-slate-800 text-sm" />
+                        <label class="block text-slate-500 font-bold text-xs mb-1 uppercase tracking-wider font-quicksand">Địa chỉ Gmail học viên <span class="text-error">*</span></label>
+                        <input type="email" x-model="learnerEmail" @input="localStorage.setItem('kynangsale:learnerEmail', learnerEmail); phoneNumber = learnerEmail; localStorage.setItem('kynangsale:phoneNumber', learnerEmail)" placeholder="Nhập địa chỉ Gmail (ví dụ: hoten@gmail.com)" class="w-full px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-1 focus:ring-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none transition-all font-medium text-slate-800 text-sm" />
                     </div>
                 </div>
             </div>
@@ -500,7 +500,7 @@
                              <div class="flex flex-col items-center justify-center flex-1" style="margin-top: 16px; margin-bottom: 16px;">
                                  <p class="text-[16px] text-slate-400 font-bold uppercase tracking-[0.15em] font-quicksand leading-normal">Bánh Mì Má Hải trân trọng chứng nhận Anh/Chị:</p>
                                  <h2 id="certificate-name" class="text-[64px] font-bold text-slate-800 uppercase tracking-wide font-quicksand" x-text="learnerName" style="margin-top: 16px; line-height: 1.4; white-space: nowrap; transition: font-size 0.1s; overflow: visible; width: auto; max-width: 100%;"></h2>
-                                 <div id="certificate-phone" class="text-[20px] text-slate-500 font-bold mx-auto font-quicksand" x-text="'Số điện thoại: ' + phoneNumber" style="margin-top: 12px; line-height: 1.4; white-space: nowrap; transition: font-size 0.1s; overflow: visible; width: auto; max-width: 100%;"></div>
+                                 <div id="certificate-email" class="text-[20px] text-slate-500 font-bold mx-auto font-quicksand" x-text="'Gmail: ' + (learnerEmail || phoneNumber)" style="margin-top: 12px; line-height: 1.4; white-space: nowrap; transition: font-size 0.1s; overflow: visible; width: auto; max-width: 100%;"></div>
                                  
                                  <div class="w-16 h-[2px] bg-primary/25 my-6"></div>
                                  
@@ -547,7 +547,7 @@
                         <div class="p-2.5 sm:p-3 bg-slate-50 rounded-xl border border-slate-100">
                             <div class="text-[9px] font-bold text-slate-400 uppercase mb-0.5">Học viên</div>
                             <div class="font-bold text-slate-700 text-xs truncate" x-text="learnerName"></div>
-                            <div class="text-[10px] text-slate-500 mt-0.5 truncate" x-text="phoneNumber || 'Chưa nhập SĐT'"></div>
+                            <div class="text-[10px] text-slate-500 mt-0.5 truncate" x-text="(learnerEmail || phoneNumber) || 'Chưa nhập Gmail'"></div>
                         </div>
                         <div class="p-2.5 sm:p-3 bg-slate-50 rounded-xl border border-slate-100">
                             <div class="text-[9px] font-bold text-slate-400 uppercase mb-0.5">Thời gian làm</div>

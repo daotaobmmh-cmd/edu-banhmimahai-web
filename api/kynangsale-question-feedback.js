@@ -45,7 +45,7 @@ module.exports = async function handler(req, res) {
   }
   const feedbackText = rawFeedbackText;
   const learnerName = String(body.learnerName || '').trim().slice(0, 100);
-  const phoneNumber = String(body.phoneNumber || '').trim().slice(0, 50);
+  const phoneNumber = String(body.learnerEmail || body.email || body.phoneNumber || '').trim().slice(0, 100);
   const stableId = String(body.stableId || '').trim();
   const displayNumber = String(body.displayNumber || '').trim();
   const sectionNo = String(body.sectionNo || '').trim();

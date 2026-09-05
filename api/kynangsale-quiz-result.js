@@ -78,7 +78,8 @@ module.exports = async function handler(req, res) {
   const body = req.body || {};
   const attemptId = String(body.attemptId || '').trim();
   const learnerName = String(body.learnerName || '').trim();
-  const phoneNumber = String(body.phoneNumber || '').trim();
+  const learnerEmail = String(body.learnerEmail || body.email || body.phoneNumber || '').trim();
+  const phoneNumber = learnerEmail;
   const testAnswers = body.testAnswers;
   const rawQuestions = body.testQuestions;
   const rawStartedAt = body.startedAt;
@@ -95,9 +96,10 @@ module.exports = async function handler(req, res) {
     return res.status(400).json({ ok: false, error: 'Họ tên không được để trống và không vượt quá 100 ký tự.' });
   }
 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const phoneRegex = /^(03|05|07|08|09)\d{8}$/;
-  if (!phoneNumber || !phoneRegex.test(phoneNumber)) {
-    return res.status(400).json({ ok: false, error: 'Số điện thoại không hợp lệ (yêu cầu 10 chữ số).' });
+  if (!learnerEmail || (!emailRegex.test(learnerEmail) && !phoneRegex.test(learnerEmail))) {
+    return res.status(400).json({ ok: false, error: 'Địa chỉ Gmail / Email không hợp lệ.' });
   }
 
   if (!Array.isArray(rawQuestions) || rawQuestions.length !== 60) {
