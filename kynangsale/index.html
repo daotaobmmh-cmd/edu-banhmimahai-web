@@ -169,25 +169,29 @@
     <div id="app-container">
     
     <!-- Header -->
-    <header class="flex justify-between items-center px-4 sm:px-8 h-16 sm:h-20 w-full fixed top-0 left-0 z-50 bg-white border-b border-slate-100 shadow-sm">
-        <div class="flex items-center gap-2.5 sm:gap-3">
-            <img src="/kynangsale/logo.png?v=20260824_final" class="h-9 sm:h-12 w-auto object-contain cursor-pointer transition-transform hover:scale-105" @click="currentView = 'gate'" alt="Logo Má Hải" />
-            <h1 @click="currentView = 'gate'" tabindex="0" class="font-bold text-lg sm:text-xl tracking-tight text-primary cursor-pointer font-quicksand focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none rounded-lg p-1">BÁNH MÌ MÁ HẢI</h1>
+    <header class="flex justify-between items-center px-3.5 sm:px-8 h-16 sm:h-20 w-full fixed top-0 left-0 z-50 bg-white border-b border-slate-100 shadow-xs">
+        <!-- Left: Logo -->
+        <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+            <img src="/kynangsale/logo.png?v=20260905_ssot_master200_v5" class="h-8 sm:h-11 w-auto object-contain cursor-pointer transition-transform hover:scale-105" @click="currentView = 'gate'" alt="Logo Bánh Mì Má Hải" />
+            <h1 @click="currentView = 'gate'" tabindex="0" class="hidden md:inline-block font-bold text-lg sm:text-xl tracking-tight text-primary cursor-pointer font-quicksand focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none rounded-lg p-1">BÁNH MÌ MÁ HẢI</h1>
         </div>
-        <nav class="flex bg-slate-100/80 p-1 rounded-xl items-center absolute left-1/2 -translate-x-1/2">
-            <button :class="currentView === 'study' ? 'bg-white text-primary shadow-sm font-bold' : 'text-slate-600 hover:text-slate-900 font-medium'" @click="startStudy()" class="px-2.5 py-1 sm:px-4 sm:py-1.5 rounded-lg transition-all text-[13px] sm:text-sm focus-visible:outline-none font-quicksand">
-                <span class="inline md:hidden">Luyện tập</span>
-                <span class="hidden md:inline">Luyện tập</span>
+
+        <!-- Center: Nav Tabs (Flex Child, Zero Overlap) -->
+        <nav class="flex bg-slate-100/90 p-1 rounded-xl items-center shadow-xs mx-1 sm:mx-0">
+            <button :class="currentView === 'study' ? 'bg-white text-primary shadow-sm font-bold' : 'text-slate-600 hover:text-slate-900 font-medium'" @click="startStudy()" class="px-2.5 py-1 sm:px-4 sm:py-1.5 rounded-lg transition-all text-xs sm:text-sm focus-visible:outline-none font-quicksand whitespace-nowrap">
+                <span>Luyện tập</span>
             </button>
-            <button :class="currentView === 'test' ? 'bg-white text-primary shadow-sm font-bold' : 'text-slate-600 hover:text-slate-900 font-medium'" @click="startTest()" class="px-2.5 py-1 sm:px-4 sm:py-1.5 rounded-lg transition-all text-[13px] sm:text-sm focus-visible:outline-none font-quicksand">
-                <span class="inline md:hidden">Thi</span>
-                <span class="hidden md:inline">Thi chính thức</span>
+            <button :class="currentView === 'test' ? 'bg-white text-primary shadow-sm font-bold' : 'text-slate-600 hover:text-slate-900 font-medium'" @click="startTest()" class="px-2.5 py-1 sm:px-4 sm:py-1.5 rounded-lg transition-all text-xs sm:text-sm focus-visible:outline-none font-quicksand whitespace-nowrap">
+                <span class="inline sm:hidden">Thi</span>
+                <span class="hidden sm:inline">Thi chính thức</span>
             </button>
         </nav>
-        <div class="flex items-center">
-            <button @click="showGuide = true" class="flex items-center justify-center gap-2 w-10 h-10 md:w-auto md:h-auto md:px-5 md:py-2 rounded-full bg-slate-50 text-slate-600 hover:bg-slate-100 transition-all font-quicksand font-bold text-sm focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none" aria-label="Hướng dẫn">
-                <span class="material-symbols-outlined text-[20px] flex-shrink-0 w-5 h-5 flex items-center justify-center">help</span>
-                <span class="hidden md:inline">Hướng dẫn</span>
+
+        <!-- Right: Help Button -->
+        <div class="flex items-center flex-shrink-0">
+            <button @click="showGuide = true" class="flex items-center justify-center gap-1.5 w-9 h-9 sm:w-auto sm:h-auto sm:px-4 sm:py-2 rounded-full bg-slate-50 text-slate-600 hover:bg-slate-100 transition-all font-quicksand font-bold text-xs sm:text-sm focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none" aria-label="Hướng dẫn">
+                <span class="material-symbols-outlined text-[18px] sm:text-[20px] flex-shrink-0 w-5 h-5 flex items-center justify-center">help</span>
+                <span class="hidden sm:inline">Hướng dẫn</span>
             </button>
         </div>
     </header>
@@ -307,9 +311,9 @@
                         
                         <div class="grid grid-cols-1 gap-2.5 sm:gap-3">
                             <template :key="idx" x-for="(opt, idx) in currentStudyQuestion?.options">
-                                <button :class="getStudyOptionClass(opt)" :disabled="studyProgress[currentStudyQuestion.id] !== undefined" @click="selectStudyAnswer(opt.key)" class="group flex items-center justify-between min-h-[40px] py-2 px-3 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                                <button :class="getStudyOptionClass(opt)" :disabled="studyProgress[currentStudyQuestion.id] !== undefined" @click="selectStudyAnswer(opt.key)" class="group flex items-center justify-between min-h-[44px] py-2.5 px-3.5 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none active:scale-[0.99]">
                                     <div class="flex items-center flex-1 min-w-0">
-                                        <span :class="getStudyLetterClass(opt)" class="w-[28px] h-[28px] sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold mr-2.5 sm:mr-3 transition-colors text-[13px] sm:text-base" x-text="opt.key"></span>
+                                        <span :class="getStudyLetterClass(opt)" class="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold mr-2.5 sm:mr-3 transition-colors text-xs sm:text-base" x-text="opt.key"></span>
                                         <span class="flex-1 min-w-0 text-[14px] sm:text-base leading-snug font-medium text-slate-700 text-left" x-text="opt.text"></span>
                                     </div>
                                     
@@ -406,9 +410,9 @@
                             
                             <div class="grid grid-cols-1 gap-2.5 sm:gap-3">
                                 <template :key="idx" x-for="(opt, idx) in currentTestQuestion?.options">
-                                    <button :class="testAnswers[currentTestQuestion.id] === opt.key ? 'border-secondary bg-secondary/5 border-2 font-semibold' : 'border-slate-100 hover:border-slate-200 border-2'" @click="selectTestAnswer(opt.key)" class="flex items-center justify-between min-h-[40px] py-2 px-3 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full text-left focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none">
+                                    <button :class="testAnswers[currentTestQuestion.id] === opt.key ? 'border-secondary bg-secondary/5 border-2 font-semibold shadow-xs' : 'border-slate-100 hover:border-slate-200 border-2 active:bg-slate-50'" @click="selectTestAnswer(opt.key)" class="flex items-center justify-between min-h-[44px] py-2.5 px-3.5 sm:min-h-[48px] sm:py-3 sm:px-4 rounded-xl border-2 transition-all w-full text-left focus-visible:ring-2 focus-visible:ring-secondary focus-visible:outline-none active:scale-[0.99]">
                                         <div class="flex items-center flex-1 min-w-0">
-                                            <span :class="testAnswers[currentTestQuestion.id] === opt.key ? 'bg-secondary text-white' : 'bg-slate-50 text-slate-400'" class="w-[28px] h-[28px] sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold mr-2.5 sm:mr-3 text-[13px] sm:text-base" x-text="opt.key"></span>
+                                            <span :class="testAnswers[currentTestQuestion.id] === opt.key ? 'bg-secondary text-white shadow-xs' : 'bg-slate-50 text-slate-400'" class="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center rounded-lg font-bold mr-2.5 sm:mr-3 text-xs sm:text-base transition-colors" x-text="opt.key"></span>
                                             <span class="text-slate-700 font-medium text-[14px] sm:text-base leading-snug" x-text="opt.text"></span>
                                         </div>
                                     </button>
