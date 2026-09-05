@@ -159,6 +159,9 @@ function app() {
                         }
                     }
                 });
+                this.$watch('testCurrentIndex', () => {
+                    this.scrollActiveGridItemIntoView();
+                });
             }
 
             // Set initialization flag and hide fallback UI
@@ -309,22 +312,23 @@ function app() {
 
         focusActiveQuestionTarget() {
             this.$nextTick(() => {
+                const focusOptions = { preventScroll: true };
                 if (this.currentView === 'study') {
                     if (this.$refs.practiceQuestionHeading && typeof this.$refs.practiceQuestionHeading.focus === 'function') {
-                        this.$refs.practiceQuestionHeading.focus();
+                        this.$refs.practiceQuestionHeading.focus(focusOptions);
                         return;
                     }
                     if (this.$refs.practiceQuestionCard && typeof this.$refs.practiceQuestionCard.focus === 'function') {
-                        this.$refs.practiceQuestionCard.focus();
+                        this.$refs.practiceQuestionCard.focus(focusOptions);
                         return;
                     }
                 } else if (this.currentView === 'test') {
                     if (this.$refs.testQuestionHeading && typeof this.$refs.testQuestionHeading.focus === 'function') {
-                        this.$refs.testQuestionHeading.focus();
+                        this.$refs.testQuestionHeading.focus(focusOptions);
                         return;
                     }
                     if (this.$refs.testQuestionCard && typeof this.$refs.testQuestionCard.focus === 'function') {
-                        this.$refs.testQuestionCard.focus();
+                        this.$refs.testQuestionCard.focus(focusOptions);
                         return;
                     }
                 }
@@ -334,7 +338,7 @@ function app() {
                                        document.getElementById('test-question-card') ||
                                        document.getElementById('result-card');
                 if (fallbackTarget && typeof fallbackTarget.focus === 'function') {
-                    fallbackTarget.focus();
+                    fallbackTarget.focus(focusOptions);
                 }
             });
         },
@@ -347,10 +351,14 @@ function app() {
                 
                 if (targetElement) {
                     const rect = targetElement.getBoundingClientRect();
-                    const absoluteTop = window.pageYOffset + rect.top;
-                    const offset = 80;
+                    const currentScrollY = window.scrollY !== undefined ? window.scrollY : (window.pageYOffset || 0);
+                    const absoluteTop = currentScrollY + rect.top;
+                    const headerHeight = window.innerWidth < 640 ? 64 : 80;
+                    const offset = headerHeight + 12;
+                    const targetY = Math.max(0, Math.round(absoluteTop - offset));
+                    
                     window.scrollTo({
-                        top: Math.max(0, absoluteTop - offset),
+                        top: targetY,
                         behavior: 'smooth'
                     });
                 } else {
@@ -362,6 +370,24 @@ function app() {
                 this.focusActiveQuestionTarget();
             });
         },
+
+        scrollActiveGridItemIntoView() {
+            this.$nextTick(() => {
+                const container = document.getElementById('test-question-grid-container');
+                const activeGridItem = document.getElementById('test-grid-item-' + this.testCurrentIndex);
+                if (container && activeGridItem) {
+                    const itemOffsetTop = activeGridItem.offsetTop;
+                    const itemHeight = activeGridItem.offsetHeight;
+                    const containerHeight = container.clientHeight;
+                    const targetScrollTop = itemOffsetTop - (containerHeight / 2) + (itemHeight / 2);
+                    container.scrollTo({
+                        top: Math.max(0, Math.round(targetScrollTop)),
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        },
+
 
         // Study Mode: select section
         selectSection(index) {
@@ -584,6 +610,7 @@ function app() {
             this.guardNavigation(() => {
                 this.testCurrentIndex = Math.max(0, this.testCurrentIndex - 1);
                 this.scrollToTopOrActiveQuestion();
+                this.scrollActiveGridItemIntoView();
             });
         },
         nextTestQuestion() {
@@ -591,6 +618,7 @@ function app() {
                 if (this.testCurrentIndex < 59) {
                     this.testCurrentIndex++;
                     this.scrollToTopOrActiveQuestion();
+                    this.scrollActiveGridItemIntoView();
                 } else {
                     this.showConfirmSubmit = true;
                 }
@@ -600,6 +628,7 @@ function app() {
             this.guardNavigation(() => {
                 this.testCurrentIndex = index;
                 this.scrollToTopOrActiveQuestion();
+                this.scrollActiveGridItemIntoView();
             });
         },
 

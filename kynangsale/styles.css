@@ -3,6 +3,7 @@
 html {
     overflow-y: scroll;
     scrollbar-gutter: stable;
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
