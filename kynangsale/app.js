@@ -372,21 +372,7 @@ function app() {
         },
 
         scrollActiveGridItemIntoView() {
-            this.$nextTick(() => {
-                const container = document.getElementById('test-question-grid-container');
-                const activeGridItem = document.getElementById('test-grid-item-' + this.testCurrentIndex);
-                if (container && activeGridItem) {
-                    const containerRect = container.getBoundingClientRect();
-                    const itemRect = activeGridItem.getBoundingClientRect();
-                    const currentScrollTop = container.scrollTop;
-                    const itemRelativeTop = (itemRect.top - containerRect.top) + currentScrollTop;
-                    const targetScrollTop = itemRelativeTop - (container.clientHeight / 2) + (itemRect.height / 2);
-                    container.scrollTo({
-                        top: Math.max(0, Math.round(targetScrollTop)),
-                        behavior: 'smooth'
-                    });
-                }
-            });
+            // Grid 60 câu hiện đã hiển thị toàn bộ 100% không còn thanh cuộn ẩn bên trong
         },
 
 
