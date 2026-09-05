@@ -438,7 +438,7 @@
                         <h3 class="font-bold text-slate-800 mb-4 flex items-center gap-2 border-b border-slate-50 pb-2">
                             <span class="material-symbols-outlined text-secondary">grid_view</span> Bảng câu hỏi (60 câu)
                         </h3>
-                        <div id="test-question-grid-container" class="grid grid-cols-[repeat(auto-fill,minmax(40px,1fr))] gap-2 max-h-[380px] overflow-y-auto custom-scrollbar p-1 scroll-smooth">
+                        <div id="test-question-grid-container" class="relative grid grid-cols-[repeat(auto-fill,minmax(40px,1fr))] gap-2 max-h-[380px] overflow-y-auto custom-scrollbar p-1 scroll-smooth">
                             <template :key="idx" x-for="(q, idx) in testQuestions">
                                 <div :id="'test-grid-item-' + idx"
                                     :class="[

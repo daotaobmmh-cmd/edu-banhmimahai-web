@@ -376,10 +376,11 @@ function app() {
                 const container = document.getElementById('test-question-grid-container');
                 const activeGridItem = document.getElementById('test-grid-item-' + this.testCurrentIndex);
                 if (container && activeGridItem) {
-                    const itemOffsetTop = activeGridItem.offsetTop;
-                    const itemHeight = activeGridItem.offsetHeight;
-                    const containerHeight = container.clientHeight;
-                    const targetScrollTop = itemOffsetTop - (containerHeight / 2) + (itemHeight / 2);
+                    const containerRect = container.getBoundingClientRect();
+                    const itemRect = activeGridItem.getBoundingClientRect();
+                    const currentScrollTop = container.scrollTop;
+                    const itemRelativeTop = (itemRect.top - containerRect.top) + currentScrollTop;
+                    const targetScrollTop = itemRelativeTop - (container.clientHeight / 2) + (itemRect.height / 2);
                     container.scrollTo({
                         top: Math.max(0, Math.round(targetScrollTop)),
                         behavior: 'smooth'
@@ -387,6 +388,7 @@ function app() {
                 }
             });
         },
+
 
 
         // Study Mode: select section
