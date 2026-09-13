@@ -65,27 +65,35 @@ function getThresholdForUnit(unit) {
 }
 
 module.exports = async function handler(req, res) {
-  const host = req.headers.host || '';
+  const host = (req.headers['x-forwarded-host'] || req.headers.host || '').toLowerCase().split(':')[0];
   const originHeader = req.headers.origin || req.headers.referer || '';
   let originUrl = null;
+  let originHost = '';
   
   if (originHeader) {
     try {
       originUrl = new URL(originHeader);
+      originHost = originUrl.hostname.toLowerCase();
     } catch (e) {
       return res.status(403).json({ ok: false, error: 'Invalid Origin format.' });
     }
   }
 
-  const isVercelApp = host === 'edu-banhmimahai-web.vercel.app' || (host.startsWith('edu-banhmimahai-web-') && host.endsWith('.vercel.app'));
-  const isApprovedHost = isVercelApp || host === 'daotao.banhmimahai.vn' || host.startsWith('localhost:') || host.startsWith('127.0.0.1:');
+  const isApprovedDomain = (d) => {
+    if (!d) return true;
+    return d === 'daotao.banhmimahai.vn' || 
+           d.endsWith('.banhmimahai.vn') || 
+           d.endsWith('.vercel.app') || 
+           d === 'localhost' || 
+           d === '127.0.0.1';
+  };
 
-  if (!isApprovedHost || !originUrl || originUrl.host !== host) {
+  if (!isApprovedDomain(host) || (originHost && !isApprovedDomain(originHost))) {
     return res.status(403).json({ ok: false, error: 'Forbidden. Origin mismatch or unauthorized host.' });
   }
 
   if (req.method === 'OPTIONS') {
-    res.setHeader('Access-Control-Allow-Origin', originUrl.origin);
+    if (originUrl) res.setHeader('Access-Control-Allow-Origin', originUrl.origin);
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     return res.status(204).end();

@@ -90,7 +90,7 @@ for sec_no in sorted(sections_map.keys()):
         correct_ans = q.get('correctAnswer', '').upper()
         explanation = q.get('explanation', '')
         
-        md_content += f"### Câu {num:03d} [{q_id}]\n"
+        md_content += f"### Câu {num} (Mã: {q_id})\n"
         md_content += f"**Đề bài:** {question_text}\n\n"
         
         for opt in options:
@@ -98,7 +98,7 @@ for sec_no in sorted(sections_map.keys()):
             opt_text = opt.get('text', '')
             is_correct = (opt_key == correct_ans)
             mark = "[x]" if is_correct else "[ ]"
-            md_content += f"- {mark} **{opt_key}.** {opt_text}\n"
+            md_content += f"- {mark} **{opt_key}**: {opt_text}\n"
         
         md_content += f"\n> **Đáp án đúng:** `{correct_ans}`\n"
         if explanation:

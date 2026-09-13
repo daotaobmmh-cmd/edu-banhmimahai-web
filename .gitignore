@@ -11,3 +11,4 @@ tmp/
 *.zip
 .vercel
 .wrangler
+.env*

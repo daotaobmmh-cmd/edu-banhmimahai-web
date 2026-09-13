@@ -680,7 +680,7 @@ function app() {
             try {
                 const controller = new AbortController();
                 const timer = setTimeout(() => controller.abort(), 10000);
-                const res = await fetch('/api/quiz-result', {
+                const res = await fetch('/api/quiz-result/', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload),
@@ -768,7 +768,7 @@ function app() {
             };
 
             try {
-                const res = await fetch('/api/question-feedback', {
+                const res = await fetch('/api/question-feedback/', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload)

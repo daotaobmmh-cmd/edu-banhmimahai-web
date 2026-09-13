@@ -1,5 +1,10 @@
 {
   "trailingSlash": true,
+  "functions": {
+    "api/*.js": {
+      "includeFiles": "kynangsale/**,hoinhap/**,nhuongquyen/**"
+    }
+  },
   "rewrites": [
     { "source": "/kynansale", "destination": "/kynangsale/" },
     { "source": "/kynansale/:match*", "destination": "/kynangsale/:match*" }

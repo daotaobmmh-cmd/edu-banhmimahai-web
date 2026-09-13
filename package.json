@@ -1,0 +1,9 @@
+{
+  "name": "edu-banhmimahai-web",
+  "version": "1.0.0",
+  "scripts": {
+    "checkpoint": "node scripts/create_chot_checkpoint.mjs",
+    "rollback": "node scripts/rollback_chot.mjs",
+    "lint:rules": "node scripts/lint_rules_conflict.mjs"
+  }
+}
