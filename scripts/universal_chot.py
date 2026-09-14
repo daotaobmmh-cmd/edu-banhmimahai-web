@@ -46,7 +46,7 @@ DEFAULT_CONFIG = {
         "phase_3_git_snapshot": {
             "stage_whitelist": [
                 "rules/", "workflows/", "scripts/", "data/", "tests/", "schemas/",
-                "reports/", "docs/", "hoinhap/", "kynangsale/", "nhuongquyen/",
+                "reports/", "docs/", "hoinhap/", "kynangsale/", "nhuongquyen/", "api/",
                 "assets/", "images/", "config/", ".agents/", "AGENTS.md",
                 "README.md", "package.json", "vercel.json", "chot.config.json", "index.html"
             ],
