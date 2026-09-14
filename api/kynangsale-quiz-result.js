@@ -203,54 +203,67 @@ module.exports = async function handler(req, res) {
   if (!global.kynangsaleQuizResultCache) global.kynangsaleQuizResultCache = new Map();
   global.kynangsaleQuizResultCache.set(attemptId, resultPayload);
 
-  // Background Notion Async Sync
+  // Robust Notion Sync with Timeout Fallback
   const NOTION_TOKEN = process.env.NOTION_TOKEN;
   const NOTION_QUIZ_RESULT_DATA_SOURCE_ID = process.env.NOTION_QUIZ_RESULT_DATA_SOURCE_ID;
 
   if (NOTION_TOKEN && NOTION_QUIZ_RESULT_DATA_SOURCE_ID) {
-    (async () => {
-      try {
-        const DATASET_VERSION = 'kynangsale-v1.0';
-        const displayName = `${learnerName} (${phoneNumber})`;
-        const derivedPageUrl = `${originUrl.origin}/kynangsale/`;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000);
+    try {
+      const DATASET_VERSION = 'kynangsale-v1.0';
+      const displayName = `${learnerName} (${phoneNumber})`;
+      const originBase = (originUrl && originUrl.origin) ? originUrl.origin : (host ? `https://${host}` : 'https://daotao.banhmimahai.vn');
+      const derivedPageUrl = `${originBase}/kynangsale/`;
 
-        const notionPayload = {
-          parent: { database_id: NOTION_QUIZ_RESULT_DATA_SOURCE_ID },
-          properties: {
-            'Result ID': { title: [{ type: 'text', text: { content: attemptId } }] },
-            'Họ tên': { rich_text: [{ type: 'text', text: { content: displayName } }] },
-            'Điểm': { number: score },
-            'Tổng số câu': { number: 60 },
-            'Ngưỡng đạt': { number: threshold },
-            'Kết quả': { status: { name: passed ? 'Đạt' : 'Chưa đạt' } },
-            'Thời gian bắt đầu': { date: { start: startedAt } },
-            'Thời gian nộp': { date: { start: submittedAt } },
-            'Thời lượng (giây)': { number: durationSeconds },
-            'Thời lượng (phút)': { number: durationMinutes },
-            'URL': { url: derivedPageUrl },
-            'Chế độ': { select: { name: 'Thi chính thức' } },
-            'Dataset version': { rich_text: [{ type: 'text', text: { content: DATASET_VERSION } }] },
-            'Số câu sai': { number: wrong },
-            'Số câu chưa trả lời': { number: unanswered }
-          }
-        };
+      const notionPayload = {
+        parent: { database_id: NOTION_QUIZ_RESULT_DATA_SOURCE_ID },
+        properties: {
+          'Result ID': { title: [{ type: 'text', text: { content: attemptId } }] },
+          'Họ tên': { rich_text: [{ type: 'text', text: { content: displayName } }] },
+          'Đơn vị': { select: { name: 'Bộ phận Phát triển nhượng quyền' } },
+          'Điểm': { number: score },
+          'Tổng số câu': { number: 60 },
+          'Ngưỡng đạt': { number: threshold },
+          'Kết quả': { status: { name: passed ? 'Đạt' : 'Chưa đạt' } },
+          'Thời gian bắt đầu': { date: { start: startedAt } },
+          'Thời gian nộp': { date: { start: submittedAt } },
+          'Thời lượng (giây)': { number: durationSeconds },
+          'Thời lượng (phút)': { number: durationMinutes },
+          'URL': { url: derivedPageUrl },
+          'Chế độ': { select: { name: 'Thi chính thức' } },
+          'Dataset version': { rich_text: [{ type: 'text', text: { content: DATASET_VERSION } }] },
+          'Số câu sai': { number: wrong },
+          'Số câu chưa trả lời': { number: unanswered }
+        }
+      };
 
-        const fetchFn = global.customFetch || fetch;
-        await fetchFn('https://api.notion.com/v1/pages', {
-          method: 'POST',
-          headers: {
-            authorization: `Bearer ${NOTION_TOKEN}`,
-            'content-type': 'application/json',
-            'notion-version': NOTION_VERSION
-          },
-          body: JSON.stringify(notionPayload)
-        });
-      } catch (err) {
-        console.error('Async Notion sync background notice:', err.message);
+      const fetchFn = global.customFetch || fetch;
+      const notionRes = await fetchFn('https://api.notion.com/v1/pages', {
+        method: 'POST',
+        headers: {
+          authorization: `Bearer ${NOTION_TOKEN}`,
+          'content-type': 'application/json',
+          'notion-version': NOTION_VERSION
+        },
+        body: JSON.stringify(notionPayload),
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+
+      if (!notionRes.ok) {
+        const errorText = await notionRes.text().catch(() => '');
+        console.error(`Notion sync failed with HTTP ${notionRes.status}:`, errorText);
+      } else {
+        console.log(`Notion sync succeeded for attemptId ${attemptId}`);
       }
-    })().catch(() => {});
+    } catch (err) {
+      clearTimeout(timeoutId);
+      console.error('Notion sync notice:', err.message);
+    }
   }
 
   // Instant 200 OK Response to client!
   return res.status(200).json({ ok: true, ...resultPayload });
 };
+
