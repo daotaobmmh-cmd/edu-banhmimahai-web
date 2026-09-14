@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "pre_tool_hooks": [
+    {
+      "name": "ControlPlanePathGuard",
+      "description": "Prevents unauthorized agents from writing to protected control-plane paths",
+      "handler": "scripts/guardrails/pre_tool_guard.py",
+      "action_on_violation": "deny"
+    }
+  ]
+}

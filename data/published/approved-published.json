@@ -1,0 +1,46 @@
+{
+  "published_at": "2026-08-13T14:29:05.245363+00:00",
+  "approval_id": "appr-slice2-test",
+  "total_published": 1,
+  "questions": [
+    {
+      "id": "SLICE2-001",
+      "module": "hoinhap",
+      "question": "Sample Question",
+      "options": [
+        {
+          "id": "opt_a",
+          "text": "A"
+        },
+        {
+          "id": "opt_b",
+          "text": "B"
+        },
+        {
+          "id": "opt_c",
+          "text": "C"
+        },
+        {
+          "id": "opt_d",
+          "text": "D"
+        }
+      ],
+      "correct_option_id": "opt_a",
+      "evidence": {
+        "document_id": "doc-01",
+        "document_sha256": "abc123hash",
+        "quote": "Sample Question",
+        "verification": "exact_match"
+      },
+      "extraction_type": "verbatim",
+      "status": "approved",
+      "provenance": {
+        "run_id": "test-run-slice2",
+        "workflow_version": "v7.0",
+        "model": "pro",
+        "generated_at": "2026-08-13T20:00:00Z"
+      },
+      "approval_id": "appr-slice2-test"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QuestionV3Schema",
+  "type": "object",
+  "properties": {
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "module": { "type": "string", "enum": ["hoinhap", "nhuongquyen"] },
+          "question": { "type": "string" },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "text": { "type": "string" }
+              },
+              "required": ["id", "text"]
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "correct_option_id": { "type": "string" },
+          "evidence": {
+            "type": "object",
+            "properties": {
+              "document_id": { "type": "string" },
+              "document_sha256": { "type": "string" },
+              "page": { "type": "integer" },
+              "section": { "type": "string" },
+              "quote": { "type": "string" },
+              "verification": { "type": "string", "enum": ["exact_match", "normalized_match"] }
+            },
+            "required": ["document_id", "document_sha256", "quote", "verification"]
+          },
+          "extraction_type": { "type": "string", "enum": ["verbatim", "inferred", "cross_section"] },
+          "status": { "type": "string", "enum": ["draft", "in_review", "approved", "rejected"] },
+          "approval_id": { "type": ["string", "null"] },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "run_id": { "type": "string" },
+              "workflow_version": { "type": "string" },
+              "model": { "type": "string" },
+              "generated_at": { "type": "string" }
+            },
+            "required": ["run_id", "workflow_version", "model", "generated_at"]
+          }
+        },
+        "required": ["id", "module", "question", "options", "correct_option_id", "evidence", "extraction_type", "status", "provenance"]
+      }
+    }
+  },
+  "required": ["questions"]
+}

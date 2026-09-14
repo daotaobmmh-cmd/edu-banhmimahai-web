@@ -1,0 +1,28 @@
+{
+  "baseline_version": "v0.1.0",
+  "project_name": "edu-banhmimahai-web",
+  "expected_status": "passed",
+  "expected_min_questions": 170,
+  "required_files": [
+    "AGENTS.md",
+    "danh_sach_cau_hoi_hoinhap.md",
+    "rules/global-safety.md",
+    "rules/quiz-content-rules.md",
+    "rules/web-ui-standards.md",
+    "rules/deploy-safety.md",
+    "workflows/task-router.md",
+    "workflows/add-quiz-questions.md",
+    "workflows/update-ui-component.md",
+    "workflows/preview-changes.md",
+    "workflows/controlled-deploy.md",
+    "workflows/validate-result.md",
+    "workflows/final-report.md",
+    "schemas/question-bank.json",
+    "schemas/task-log.json",
+    "schemas/improvement-proposal.json",
+    "scripts/validate_questions.py",
+    "scripts/check_duplicate_questions.py",
+    "scripts/compare_html_delta.py",
+    "scripts/run_regression.py"
+  ]
+}

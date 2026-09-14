@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TaskLogSchema",
+  "type": "object",
+  "properties": {
+    "task_id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "workflow_used": { "type": "string" },
+    "human_approval_granted": { "type": "boolean" },
+    "modified_files": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "regression_status": {
+      "type": "string",
+      "enum": ["passed", "failed", "skipped"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["success", "failed", "rolled_back"]
+    }
+  },
+  "required": ["task_id", "timestamp", "workflow_used", "human_approval_granted", "status"]
+}

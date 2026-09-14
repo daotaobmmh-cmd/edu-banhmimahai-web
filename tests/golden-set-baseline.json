@@ -1,0 +1,15 @@
+{
+  "baseline_metadata": {
+    "title": "Educational Golden Baseline Set (20 Questions)",
+    "owner": "Trí Long / Tilog",
+    "status": "Awaiting Human Independent Compilation (Deadline: 2026-08-15)",
+    "total_questions_target": 20,
+    "metrics_tracked": [
+      "answer_match_accuracy",
+      "source_ref_grounding_accuracy",
+      "source_quote_verbatim_accuracy"
+    ],
+    "instructions": "Anh Trí Long / Tilog sẽ trực tiếp soạn và nhập 20 câu hỏi chuẩn từ tài liệu gốc vào mảng 'golden_questions' bên dưới. Agent tuyệt đối không tự động sinh dữ liệu cho file này."
+  },
+  "golden_questions": []
+}

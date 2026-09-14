@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-09-14T04:36:55.366179+00:00",
+  "overall_status": "passed",
+  "total_tests": 4,
+  "passed_tests": 4,
+  "failed_tests": 0,
+  "details": [
+    {
+      "name": "Validate Question Bank Syntax",
+      "target": "danh_sach_cau_hoi_hoinhap.md",
+      "status": "passed",
+      "parsed_questions": 171,
+      "errors": []
+    },
+    {
+      "name": "Check Duplicate Questions",
+      "target": "danh_sach_cau_hoi_hoinhap.md",
+      "status": "passed",
+      "unique_codes": 171,
+      "duplicates": []
+    },
+    {
+      "name": "Inspect Root Index HTML",
+      "target": "index.html",
+      "status": "passed",
+      "errors": []
+    },
+    {
+      "name": "Inspect HoiNhap Index HTML",
+      "target": "hoinhap/index.html",
+      "status": "passed",
+      "errors": []
+    }
+  ]
+}

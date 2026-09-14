@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project_name": "edu-banhmimahai-web",
+  "project_code": "WEB",
+  "tag_prefix": "checkpoint-WEB",
+  "version_file": "package.json",
+  "pipeline": {
+    "phase_1_regression": {
+      "command": "python scripts/run_regression.py",
+      "required": true,
+      "description": "Functional validation of question bank, duplicate checking, and HTML syntax"
+    },
+    "phase_2_integrity_audit": {
+      "command": "python scripts/audit_web_integrity.py",
+      "required": true,
+      "description": "Cross-rule conflict, mobile responsiveness, sales persona, brand token & secret audit"
+    },
+    "phase_3_git_snapshot": {
+      "stage_whitelist": [
+        "rules/",
+        "workflows/",
+        "scripts/",
+        "data/",
+        "tests/",
+        "schemas/",
+        "reports/",
+        "docs/",
+        "hoinhap/",
+        "kynangsale/",
+        "nhuongquyen/",
+        "assets/",
+        "images/",
+        "config/",
+        ".agents/",
+        "AGENTS.md",
+        "README.md",
+        "package.json",
+        "vercel.json",
+        "chot.config.json",
+        "index.html"
+      ],
+      "commit_convention": "CHOT({TAG}): {DESCRIPTION}"
+    },
+    "phase_4_checkpoint_tag": {
+      "tag_format": "{PREFIX}-{NUMBER:02d}",
+      "annotation_template": "Release Checkpoint {TAG} - {TIMESTAMP}"
+    }
+  }
+}

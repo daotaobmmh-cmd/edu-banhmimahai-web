@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "registered_sources": [
+    {
+      "document_id": "Cam_Nang_Hoi_Nhap_VSF_2026-08-13",
+      "title": "Cẩm nang Hội nhập Viet Street Food",
+      "file_type": "markdown",
+      "effective_date": "2026-08-13",
+      "document_sha256": "9ca9e6ecc226b9c7e1403749e5c62dec405b5f31cdcec58cc9b25283bbd64cfc",
+      "status": "active"
+    },
+    {
+      "document_id": "Sale_Policy_V1_09.06.2026",
+      "title": "Chính sách nhượng quyền Viet Street Food V1",
+      "file_type": "markdown",
+      "effective_date": "2026-06-09",
+      "document_sha256": "c7b02f1c55fc8d8264ef1cfbc76d241d19f7794ccdffa45636b9c084b027281a",
+      "status": "active"
+    }
+  ]
+}

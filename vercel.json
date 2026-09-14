@@ -6,7 +6,8 @@
     }
   },
   "rewrites": [
-    { "source": "/kynansale", "destination": "/kynangsale/" },
+    { "source": "/moxe", "destination": "/kynangsale/index.html" },
+    { "source": "/kynansale", "destination": "/kynangsale/index.html" },
     { "source": "/kynansale/:match*", "destination": "/kynangsale/:match*" }
   ]
 }

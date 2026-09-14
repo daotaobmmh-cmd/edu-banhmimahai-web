@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ImprovementProposalSchema",
+  "type": "object",
+  "properties": {
+    "proposal_id": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "target_component": { "type": "string" },
+    "approval_status": {
+      "type": "string",
+      "enum": ["pending", "approved", "rejected"]
+    },
+    "applied": { "type": "boolean" },
+    "created_at": { "type": "string" }
+  },
+  "required": ["proposal_id", "title", "description", "target_component", "approval_status", "applied"]
+}

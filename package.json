@@ -2,8 +2,11 @@
   "name": "edu-banhmimahai-web",
   "version": "1.0.0",
   "scripts": {
-    "checkpoint": "node scripts/create_chot_checkpoint.mjs",
-    "rollback": "node scripts/rollback_chot.mjs",
-    "lint:rules": "node scripts/lint_rules_conflict.mjs"
+    "chot": "python scripts/universal_chot.py",
+    "checkpoint": "python scripts/universal_chot.py",
+    "rollback": "python scripts/universal_chot.py --rollback",
+    "lint:rules": "node scripts/lint_rules_conflict.mjs",
+    "audit": "python scripts/audit_web_integrity.py",
+    "regression": "python scripts/run_regression.py"
   }
 }
