@@ -65,3 +65,11 @@ Khi giải quyết xong một vấn đề thuộc 2 nhóm trên, Agent hãy:
 2. Nêu rõ đề xuất: Nên **"Chốt vào file rules"** hay **"Gợi ý dùng `/learn`"**.
 3. Hỏi ý kiến người dùng trước khi trực tiếp sửa file rules hoặc chuyển sang tác vụ khác.
 
+## 3.4. Quy Chuẩn Kiến Trúc Dữ Liệu Đào Tạo & Đồng Bộ Serverless (RULE-EDU-DATA-001)
+- **Cấp Thẩm Quyền**: `TIER 1 - ARCHITECTURAL STANDARD`.
+- **Mã định danh**: `RULE-EDU-DATA-001`.
+- **Nguyên tắc cốt lõi**:
+  1. **Tách biệt Database theo Chương trình Đào tạo**: Mỗi luồng/chương trình đào tạo (Hội nhập nhân viên nội bộ `/hoinhap/` vs Kỹ năng sale nhượng quyền `/kynangsale/`) bắt buộc phải có Notion Database riêng biệt, tương thích đúng schema thuộc tính học viên (Họ tên + Phòng ban vs Họ tên + SĐT/Email) và ngưỡng đạt chuẩn riêng (25/30 vs 48/60). Tuyệt đối không dồn chung vào một database gây ô nhiễm schema và sai lệch dữ liệu báo cáo.
+  2. **Cơ chế Đồng bộ Serverless Bất biến (Resilient Serverless Sync Pattern)**: Trên môi trường Serverless (Vercel / Node Function), tuyệt đối KHÔNG kích hoạt background promise ngầm không await (`(async () => {})()`) vì container sẽ bị đóng băng/hủy ngay khi trả HTTP response. Bắt buộc phải `await` kết nối ghi Notion, kèm `AbortController` (timeout tối đa 6 giây) và khối `try/catch` bọc ngoài để đảm bảo tính sẵn sàng (high availability), không làm nghẽn trải nghiệm người dùng ngay cả khi Notion API bị trễ hoặc ngắt kết nối.
+
+
