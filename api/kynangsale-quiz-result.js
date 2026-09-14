@@ -203,16 +203,15 @@ module.exports = async function handler(req, res) {
   if (!global.kynangsaleQuizResultCache) global.kynangsaleQuizResultCache = new Map();
   global.kynangsaleQuizResultCache.set(attemptId, resultPayload);
 
-  // Robust Notion Sync with Timeout Fallback
+  // Robust Notion Sync with Timeout Fallback (Dedicated KNS Database)
   const NOTION_TOKEN = process.env.NOTION_TOKEN;
-  const NOTION_QUIZ_RESULT_DATA_SOURCE_ID = process.env.NOTION_QUIZ_RESULT_DATA_SOURCE_ID;
+  const NOTION_QUIZ_RESULT_DATA_SOURCE_ID = process.env.NOTION_KYNANGSALE_QUIZ_RESULT_DATA_SOURCE_ID || '3db655b6-1eba-81bb-8d79-e1377db471a7';
 
   if (NOTION_TOKEN && NOTION_QUIZ_RESULT_DATA_SOURCE_ID) {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 6000);
     try {
       const DATASET_VERSION = 'kynangsale-v1.0';
-      const displayName = `${learnerName} (${phoneNumber})`;
       const originBase = (originUrl && originUrl.origin) ? originUrl.origin : (host ? `https://${host}` : 'https://daotao.banhmimahai.vn');
       const derivedPageUrl = `${originBase}/kynangsale/`;
 
@@ -220,8 +219,8 @@ module.exports = async function handler(req, res) {
         parent: { database_id: NOTION_QUIZ_RESULT_DATA_SOURCE_ID },
         properties: {
           'Result ID': { title: [{ type: 'text', text: { content: attemptId } }] },
-          'Họ tên': { rich_text: [{ type: 'text', text: { content: displayName } }] },
-          'Đơn vị': { select: { name: 'Bộ phận Phát triển nhượng quyền' } },
+          'Họ tên': { rich_text: [{ type: 'text', text: { content: learnerName } }] },
+          'SĐT / Email': { rich_text: [{ type: 'text', text: { content: phoneNumber } }] },
           'Điểm': { number: score },
           'Tổng số câu': { number: 60 },
           'Ngưỡng đạt': { number: threshold },
