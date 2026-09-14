@@ -6,14 +6,10 @@
     }
   },
   "redirects": [
-    { "source": "/moxe", "destination": "/kynangsale/", "permanent": false },
-    { "source": "/moxe/:match*", "destination": "/kynangsale/:match*", "permanent": false },
     { "source": "/kynansale", "destination": "/kynangsale/", "permanent": false },
     { "source": "/kynansale/:match*", "destination": "/kynangsale/:match*", "permanent": false }
   ],
   "rewrites": [
-    { "source": "/moxe", "destination": "/kynangsale/index.html" },
-    { "source": "/moxe/", "destination": "/kynangsale/index.html" },
     { "source": "/kynansale", "destination": "/kynangsale/index.html" },
     { "source": "/kynansale/", "destination": "/kynangsale/index.html" },
     { "source": "/kynansale/:match*", "destination": "/kynangsale/:match*" }
